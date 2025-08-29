@@ -50,6 +50,181 @@ class PopupApp {
   }
 
   /**
+   * 动态创建编辑模态框
+   */
+  createEditModal() {
+    // 如果已存在编辑模态框，先移除
+    if (this.editModal) {
+      this.editModal.remove();
+    }
+
+    // 创建模态框HTML
+    const modalHTML = `
+      <div class="modal" id="editTaskModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-header-content">
+              <div class="modal-title-row">
+                <h3 id="modalTitle">Edit Task</h3>
+                <span class="status-value" id="taskStatusValue" style="display: none;">New</span>
+              </div>
+            </div>
+            <button class="modal-close" id="closeEditModal">&times;</button>
+          </div>
+          <form class="task-form" id="editTaskForm">
+            <div class="form-group">
+              <label for="editTaskTitle">Task Title *</label>
+              <input type="text" id="editTaskTitle" name="title" required maxlength="50" placeholder="Enter task title">
+            </div>
+            
+            <div class="form-group">
+              <label for="editTaskDescription">Task Description</label>
+              <textarea id="editTaskDescription" name="description" maxlength="200" placeholder="Enter task description (optional)"></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label>Importance Level *</label>
+              <div class="importance-selector">
+                <button type="button" class="importance-btn" data-importance="1">1</button>
+                <button type="button" class="importance-btn" data-importance="2">2</button>
+                <button type="button" class="importance-btn" data-importance="3">3</button>
+                <button type="button" class="importance-btn" data-importance="4">4</button>
+                <button type="button" class="importance-btn" data-importance="5">5</button>
+                <button type="button" class="importance-btn" data-importance="6">6</button>
+                <button type="button" class="importance-btn" data-importance="7">7</button>
+                <button type="button" class="importance-btn" data-importance="8">8</button>
+                <button type="button" class="importance-btn" data-importance="9">9</button>
+                <button type="button" class="importance-btn" data-importance="10">10</button>
+              </div>
+              <div class="importance-labels">
+                <span>Not Important</span>
+                <span>Very Important</span>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="editTaskDueDate">Due Date *</label>
+              <div class="date-time-inputs">
+                <input type="date" id="editTaskDueDate" name="dueDate" required>
+                <input type="time" id="editTaskDueTime" name="dueTime" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="editTaskCategory">Task Category</label>
+              <select id="editTaskCategory" name="category">
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="study">Study</option>
+                <option value="health">Health</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- 任务状态选择器（仅在编辑模式下显示） -->
+            <div class="form-group" id="editTaskStatusGroup" style="display:ne;">
+              <label for="editTaskStatus">Task Status</label>
+              <select id="editTaskStatus" name="status">
+                <option value="new">New</option>
+                <option value="doing">Doing</option>
+                <option value="overdue">Overdue</option>
+                <option value="completed">Complete</option>
+                <option value="rejected">Reject</option>
+              </select>
+            </div>
+            
+            <div class="form-actions">
+              <div class="form-actions-left">
+                <button type="button" class="btn btn-danger" id="editDeleteTaskBtn" style="display: none;">Delete Task</button>
+              </div>
+              <div class="form-actions-right">
+                <button type="button" class="btn btn-secondary" id="editCancelTask">Cancel</button>
+                <button type="submit" class="btn btn-primary">Save Task</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    `;
+
+    // 创建DOM元素
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = modalHTML;
+    this.editModal = tempDiv.firstElementChild;
+
+    // 添加到页面
+    document.body.appendChild(this.editModal);
+
+    // 绑定事件
+    this.bindEditModalEvents();
+  }
+
+  /**
+   * 绑定编辑模态框事件
+   */
+  bindEditModalEvents() {
+    // 关闭按钮
+    const closeBtn = this.editModal.querySelector('#closeEditModal');
+    closeBtn.addEventListener('click', () => {
+      this.closeEditModal();
+    });
+
+    // 取消按钮
+    const cancelBtn = this.editModal.querySelector('#editCancelTask');
+    cancelBtn.addEventListener('click', () => {
+      this.closeEditModal();
+    });
+
+    // 表单提交
+    const form = this.editModal.querySelector('#editTaskForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      this.saveTask();
+    });
+
+    // 重要性选择器
+    const importanceBtns = this.editModal.querySelectorAll('.importance-btn');
+    importanceBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        importanceBtns.forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+      });
+    });
+
+
+
+    // 点击遮罩关闭
+    this.editModal.addEventListener('click', (e) => {
+      if (e.target === this.editModal) {
+        this.closeEditModal();
+      }
+    });
+
+    // 键盘事件
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && this.editModal.classList.contains('show')) {
+        this.closeEditModal();
+      }
+    });
+  }
+
+  /**
+   * 关闭编辑模态框
+   */
+  closeEditModal() {
+    if (this.editModal) {
+      this.editModal.classList.remove('show');
+      // 延迟移除DOM元素，等待动画完成
+      setTimeout(() => {
+        if (this.editModal && this.editModal.parentNode) {
+          this.editModal.remove();
+          this.editModal = null;
+        }
+      }, 300);
+    }
+  }
+
+  /**
    * 初始化矩阵渲染器
    */
   initMatrixRenderer() {
@@ -112,14 +287,7 @@ class PopupApp {
       });
     }
 
-    // 任务表单
-    const taskForm = document.getElementById('taskForm');
-    if (taskForm) {
-      taskForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        this.saveTask();
-      });
-    }
+
 
     // 模态框关闭
     const closeModalBtns = document.querySelectorAll('.modal-close, #cancelTask, #cancelSettings');
@@ -170,13 +338,7 @@ class PopupApp {
       });
     }
 
-    // 重要性选择器
-    const importanceBtns = document.querySelectorAll('.importance-btn');
-    importanceBtns.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        this.selectImportance(parseInt(e.target.dataset.importance));
-      });
-    });
+
 
 
 
@@ -259,14 +421,21 @@ class PopupApp {
    */
   showAddTaskModal() {
     this.selectedTask = null;
+    
+    // 创建动态编辑模态框
+    this.createEditModal();
+    
+    // 重置表单
     this.resetTaskForm();
-    this.showModal('taskModal');
-    document.getElementById('modalTitle').textContent = 'Add New Task';
+    
+    // 设置标题
+    this.editModal.querySelector('#modalTitle').textContent = 'Add New Task';
     
     // 隐藏编辑模式特有的元素
-    document.getElementById('taskStatusValue').style.display = 'none';
-    document.getElementById('taskStatusGroup').style.display = 'none';
-    document.getElementById('deleteTaskBtn').style.display = 'none';
+    this.hideEditModeElements();
+    
+    // 显示模态框
+    this.editModal.classList.add('show');
   }
 
   /**
@@ -274,12 +443,21 @@ class PopupApp {
    */
   editTask(task) {
     this.selectedTask = task;
+    
+    // 创建动态编辑模态框
+    this.createEditModal();
+    
+    // 填充表单
     this.fillTaskForm(task);
-    this.showModal('taskModal');
-    document.getElementById('modalTitle').textContent = 'Edit Task';
+    
+    // 设置标题
+    this.editModal.querySelector('#modalTitle').textContent = 'Edit Task';
     
     // 显示编辑模式特有的元素
     this.showEditModeElements(task);
+    
+    // 显示模态框
+    this.editModal.classList.add('show');
   }
 
   /**
@@ -287,6 +465,11 @@ class PopupApp {
    */
   createTaskAtPosition(coordinates, quadrantKey) {
     this.selectedTask = null;
+    
+    // 创建动态编辑模态框
+    this.createEditModal();
+    
+    // 重置表单
     this.resetTaskForm();
     
     // 根据象限和坐标位置设置默认值
@@ -299,16 +482,19 @@ class PopupApp {
     const defaultDate = new Date();
     defaultDate.setTime(defaultDate.getTime() + defaultTime);
     
-    document.getElementById('taskDueDate').value = defaultDate.toISOString().split('T')[0];
-    document.getElementById('taskDueTime').value = defaultDate.toTimeString().slice(0, 5);
+    this.editModal.querySelector('#editTaskDueDate').value = defaultDate.toISOString().split('T')[0];
+    this.editModal.querySelector('#editTaskDueTime').value = defaultDate.toTimeString().slice(0, 5);
     
     // 存储坐标信息用于任务定位
     this.pendingCoordinates = coordinates && coordinates.x !== undefined && coordinates.y !== undefined ? coordinates : null;
     this.pendingQuadrantKey = quadrantKey;
     this.originalDefaults = { importance: defaultImportance, time: defaultTime };
     
-    this.showModal('taskModal');
-    document.getElementById('modalTitle').textContent = 'Add New Task';
+    // 设置标题
+    this.editModal.querySelector('#modalTitle').textContent = 'Add New Task';
+    
+    // 显示模态框
+    this.editModal.classList.add('show');
     
     // 添加位置变化提示
     this.addPositionChangeWarning();
@@ -318,7 +504,9 @@ class PopupApp {
    * 重置任务表单
    */
   resetTaskForm() {
-    const form = document.getElementById('taskForm');
+    if (!this.editModal) return;
+    
+    const form = this.editModal.querySelector('#editTaskForm');
     if (form) {
       form.reset();
       
@@ -326,8 +514,8 @@ class PopupApp {
       const tomorrow = new Date();
       tomorrow.setDate(tomorrow.getDate() + 1);
       
-      document.getElementById('taskDueDate').value = tomorrow.toISOString().split('T')[0];
-      document.getElementById('taskDueTime').value = '09:00';
+      this.editModal.querySelector('#editTaskDueDate').value = tomorrow.toISOString().split('T')[0];
+      this.editModal.querySelector('#editTaskDueTime').value = '09:00';
       
       // 重置选择器
       this.selectImportance(5);
@@ -338,13 +526,15 @@ class PopupApp {
    * 填充任务表单
    */
   fillTaskForm(task) {
-    document.getElementById('taskTitle').value = task.title;
-    document.getElementById('taskDescription').value = task.description;
-    document.getElementById('taskCategory').value = task.category;
+    if (!this.editModal) return;
+    
+    this.editModal.querySelector('#editTaskTitle').value = task.title;
+    this.editModal.querySelector('#editTaskDescription').value = task.description;
+    this.editModal.querySelector('#editTaskCategory').value = task.category;
     
     const dueDate = new Date(task.dueDate);
-    document.getElementById('taskDueDate').value = dueDate.toISOString().split('T')[0];
-    document.getElementById('taskDueTime').value = dueDate.toTimeString().slice(0, 5);
+    this.editModal.querySelector('#editTaskDueDate').value = dueDate.toISOString().split('T')[0];
+    this.editModal.querySelector('#editTaskDueTime').value = dueDate.toTimeString().slice(0, 5);
     
     this.selectImportance(task.importance);
   }
@@ -353,10 +543,16 @@ class PopupApp {
    * 选择重要性
    */
   selectImportance(importance) {
-    document.querySelectorAll('.importance-btn').forEach(btn => {
+    if (!this.editModal) return;
+    
+    this.editModal.querySelectorAll('.importance-btn').forEach(btn => {
       btn.classList.remove('selected');
     });
-    document.querySelector(`[data-importance="${importance}"]`).classList.add('selected');
+    
+    const selectedBtn = this.editModal.querySelector(`[data-importance="${importance}"]`);
+    if (selectedBtn) {
+      selectedBtn.classList.add('selected');
+    }
   }
 
   /**
@@ -422,6 +618,8 @@ class PopupApp {
    * 添加位置变化警告
    */
   addPositionChangeWarning() {
+    if (!this.editModal) return;
+    
     // 移除现有的警告
     this.removePositionChangeWarning();
     
@@ -440,7 +638,7 @@ class PopupApp {
     `;
     
     // 插入到表单顶部
-    const form = document.getElementById('taskForm');
+    const form = this.editModal.querySelector('#editTaskForm');
     form.insertBefore(warning, form.firstChild);
     
     // 添加事件监听器
@@ -461,19 +659,21 @@ class PopupApp {
    * 添加表单变化监听器
    */
   addFormChangeListeners() {
+    if (!this.editModal) return;
+    
     // 重要性按钮变化监听
-    document.querySelectorAll('.importance-btn').forEach(btn => {
+    this.editModal.querySelectorAll('.importance-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         this.checkPositionChange();
       });
     });
     
     // 日期时间变化监听
-    document.getElementById('taskDueDate').addEventListener('change', () => {
+    this.editModal.querySelector('#editTaskDueDate').addEventListener('change', () => {
       this.checkPositionChange();
     });
     
-    document.getElementById('taskDueTime').addEventListener('change', () => {
+    this.editModal.querySelector('#editTaskDueTime').addEventListener('change', () => {
       this.checkPositionChange();
     });
   }
@@ -482,11 +682,12 @@ class PopupApp {
    * 检查位置是否发生变化
    */
   checkPositionChange() {
-    if (!this.originalDefaults) return;
+    if (!this.originalDefaults || !this.editModal) return;
     
-    const currentImportance = parseInt(document.querySelector('.importance-btn.selected').dataset.importance);
-    const currentDate = document.getElementById('taskDueDate').value;
-    const currentTime = document.getElementById('taskDueTime').value;
+    const selectedBtn = this.editModal.querySelector('.importance-btn.selected');
+    const currentImportance = selectedBtn ? parseInt(selectedBtn.dataset.importance) : 5;
+    const currentDate = this.editModal.querySelector('#editTaskDueDate').value;
+    const currentTime = this.editModal.querySelector('#editTaskDueTime').value;
     
     const currentDateTime = new Date(`${currentDate}T${currentTime}`);
     const currentTimeDiff = currentDateTime.getTime() - new Date().getTime();
@@ -560,7 +761,7 @@ class PopupApp {
       }
 
       if (result) {
-        this.closeModal();
+        this.closeEditModal();
         await this.loadData();
         
         // 如果是从Task Manager打开的编辑，刷新Task Manager的任务列表
@@ -584,13 +785,16 @@ class PopupApp {
    * 获取任务表单数据
    */
   getTaskFormData() {
-    const title = document.getElementById('taskTitle').value;
-    const description = document.getElementById('taskDescription').value;
-    const category = document.getElementById('taskCategory').value;
-    const dueDate = document.getElementById('taskDueDate').value;
-    const dueTime = document.getElementById('taskDueTime').value;
+    if (!this.editModal) return null;
     
-    const importance = parseInt(document.querySelector('.importance-btn.selected').dataset.importance);
+    const title = this.editModal.querySelector('#editTaskTitle').value;
+    const description = this.editModal.querySelector('#editTaskDescription').value;
+    const category = this.editModal.querySelector('#editTaskCategory').value;
+    const dueDate = this.editModal.querySelector('#editTaskDueDate').value;
+    const dueTime = this.editModal.querySelector('#editTaskDueTime').value;
+    
+    const selectedBtn = this.editModal.querySelector('.importance-btn.selected');
+    const importance = selectedBtn ? parseInt(selectedBtn.dataset.importance) : 5;
     
     const dueDateTime = new Date(`${dueDate}T${dueTime}`);
     
@@ -604,9 +808,14 @@ class PopupApp {
     
     // 如果是编辑模式，包含任务状态
     if (this.selectedTask) {
-      const statusSelect = document.getElementById('taskStatus');
-      if (statusSelect && statusSelect.style.display !== 'none') {
-        formData.status = statusSelect.value;
+      const statusValue = this.editModal.querySelector('#taskStatusValue');
+      if (statusValue && statusValue.style.display !== 'none') {
+        const currentStatus = this.getStatusFromDisplayText(statusValue.textContent);
+        // 只有当状态是completed或rejected时才保存，否则保持原状态
+        if (currentStatus === 'completed' || currentStatus === 'rejected') {
+          formData.status = currentStatus;
+        }
+        // 如果是自动计算状态（new, doing, overdue），不设置status，保持原状态
       }
     }
     
@@ -641,8 +850,10 @@ class PopupApp {
    * 显示编辑模式特有的元素
    */
   showEditModeElements(task) {
+    if (!this.editModal) return;
+    
     // 显示任务状态显示
-    const statusValue = document.getElementById('taskStatusValue');
+    const statusValue = this.editModal.querySelector('#taskStatusValue');
     statusValue.style.display = 'inline-block';
     
     // 根据任务状态和时间计算显示状态
@@ -650,31 +861,77 @@ class PopupApp {
     statusValue.textContent = this.getStatusDisplayText(taskStatus);
     statusValue.className = `status-value status-${taskStatus}`;
     
-    // 显示任务状态选择器
-    const statusGroup = document.getElementById('taskStatusGroup');
-    const statusSelect = document.getElementById('taskStatus');
-    statusGroup.style.display = 'block';
-    statusSelect.value = taskStatus;
+    // 隐藏任务状态选择器（不再使用下拉框）
+    const statusGroup = this.editModal.querySelector('#editTaskStatusGroup');
+    statusGroup.style.display = 'none';
     
-    // 移除之前的事件监听器（避免重复绑定）
-    statusSelect.removeEventListener('change', this.handleStatusChange);
-    
-    // 绑定状态选择器变化事件
-    this.handleStatusChange = (e) => {
-      const newStatus = e.target.value;
-      statusValue.textContent = this.getStatusDisplayText(newStatus);
-      statusValue.className = `status-value status-${newStatus}`;
-    };
-    statusSelect.addEventListener('change', this.handleStatusChange);
+    // 绑定状态值点击事件
+    statusValue.addEventListener('click', () => {
+      this.toggleStatusSelection(statusValue, task);
+    });
     
     // 显示删除按钮
-    document.getElementById('deleteTaskBtn').style.display = 'block';
+    this.editModal.querySelector('#editDeleteTaskBtn').style.display = 'block';
     
     // 绑定删除按钮事件
-    const deleteBtn = document.getElementById('deleteTaskBtn');
+    const deleteBtn = this.editModal.querySelector('#editDeleteTaskBtn');
     deleteBtn.onclick = () => {
       this.deleteTaskFromEdit(task.id);
     };
+  }
+
+  /**
+   * 切换状态选择
+   */
+  toggleStatusSelection(statusValue, task) {
+    const currentStatus = this.getStatusFromDisplayText(statusValue.textContent);
+    
+    // 如果当前状态是completed，切换到rejected
+    if (currentStatus === 'completed') {
+      statusValue.textContent = this.getStatusDisplayText('rejected');
+      statusValue.className = 'status-value status-rejected';
+    }
+    // 如果当前状态是rejected，切换回自动计算状态
+    else if (currentStatus === 'rejected') {
+      const autoStatus = this.calculateTaskStatus(task);
+      statusValue.textContent = this.getStatusDisplayText(autoStatus);
+      statusValue.className = `status-value status-${autoStatus}`;
+    }
+    // 如果当前是自动计算状态（new, doing, overdue），切换到completed
+    else {
+      statusValue.textContent = this.getStatusDisplayText('completed');
+      statusValue.className = 'status-value status-completed';
+    }
+  }
+
+  /**
+   * 根据显示文本获取状态值
+   */
+  getStatusFromDisplayText(displayText) {
+    const statusMap = {
+      'New': 'new',
+      'Doing': 'doing',
+      'Overdue': 'overdue',
+      'Complete': 'completed',
+      'Reject': 'rejected'
+    };
+    return statusMap[displayText] || 'doing';
+  }
+
+  /**
+   * 隐藏编辑模式特有的元素
+   */
+  hideEditModeElements() {
+    if (!this.editModal) return;
+    
+    // 隐藏任务状态显示
+    this.editModal.querySelector('#taskStatusValue').style.display = 'none';
+    
+    // 隐藏任务状态选择器
+    this.editModal.querySelector('#editTaskStatusGroup').style.display = 'none';
+    
+    // 隐藏删除按钮
+    this.editModal.querySelector('#editDeleteTaskBtn').style.display = 'none';
   }
 
   /**
@@ -728,7 +985,7 @@ class PopupApp {
         const success = await this.taskManager.deleteTask(taskId);
         if (success) {
           showNotification('Task deleted successfully', 'success');
-          this.closeModal();
+          this.closeEditModal();
           await this.loadData();
         } else {
           showNotification('Failed to delete task', 'error');
@@ -1039,14 +1296,23 @@ class PopupApp {
     let tasks = await this.taskManager.getTasks();
     
     switch (filter) {
-      case 'pending':
-        tasks = tasks.filter(task => task.status === 'pending');
+      case 'doing':
+        tasks = tasks.filter(task => {
+          const status = this.calculateTaskStatus(task);
+          return status === 'doing';
+        });
+        break;
+      case 'overdue':
+        tasks = tasks.filter(task => {
+          const status = this.calculateTaskStatus(task);
+          return status === 'overdue';
+        });
         break;
       case 'completed':
         tasks = tasks.filter(task => task.status === 'completed');
         break;
-      case 'overdue':
-        tasks = tasks.filter(task => task.isOverdue());
+      case 'rejected':
+        tasks = tasks.filter(task => task.status === 'rejected');
         break;
       default:
         // 'all' - 显示所有任务

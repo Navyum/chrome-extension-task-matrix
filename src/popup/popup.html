@@ -57,92 +57,7 @@
 
   </div>
 
-  <!-- 添加任务弹窗 -->
-  <div class="modal" id="taskModal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="modal-header-content">
-          <div class="modal-title-row">
-            <h3 id="modalTitle">Add New Task</h3>
-            <span class="status-value" id="taskStatusValue" style="display: none;">New</span>
-          </div>
-        </div>
-        <button class="modal-close" id="closeModal">&times;</button>
-      </div>
-      <form class="task-form" id="taskForm">
-        <div class="form-group">
-          <label for="taskTitle">Task Title *</label>
-          <input type="text" id="taskTitle" name="title" required maxlength="50" placeholder="Enter task title">
-        </div>
-        
-        <div class="form-group">
-          <label for="taskDescription">Task Description</label>
-          <textarea id="taskDescription" name="description" maxlength="200" placeholder="Enter task description (optional)"></textarea>
-        </div>
-        
-        <div class="form-group">
-          <label>Importance Level *</label>
-          <div class="importance-selector">
-            <button type="button" class="importance-btn" data-importance="1">1</button>
-            <button type="button" class="importance-btn" data-importance="2">2</button>
-            <button type="button" class="importance-btn" data-importance="3">3</button>
-            <button type="button" class="importance-btn" data-importance="4">4</button>
-            <button type="button" class="importance-btn" data-importance="5">5</button>
-            <button type="button" class="importance-btn" data-importance="6">6</button>
-            <button type="button" class="importance-btn" data-importance="7">7</button>
-            <button type="button" class="importance-btn" data-importance="8">8</button>
-            <button type="button" class="importance-btn" data-importance="9">9</button>
-            <button type="button" class="importance-btn" data-importance="10">10</button>
-          </div>
-          <div class="importance-labels">
-            <span>Not Important</span>
-            <span>Very Important</span>
-          </div>
-        </div>
-        
-        <div class="form-group">
-          <label for="taskDueDate">Due Date *</label>
-          <div class="date-time-inputs">
-            <input type="date" id="taskDueDate" name="dueDate" required>
-            <input type="time" id="taskDueTime" name="dueTime" required>
-          </div>
-        </div>
-        
-        <div class="form-group">
-          <label for="taskCategory">Task Category</label>
-          <select id="taskCategory" name="category">
-            <option value="work">Work</option>
-            <option value="personal">Personal</option>
-            <option value="study">Study</option>
-            <option value="health">Health</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-
-        <!-- 任务状态选择器（仅在编辑模式下显示） -->
-        <div class="form-group" id="taskStatusGroup" style="display: none;">
-          <label for="taskStatus">Task Status</label>
-          <select id="taskStatus" name="status">
-            <option value="new">New</option>
-            <option value="doing">Doing</option>
-            <option value="overdue">Overdue</option>
-            <option value="completed">Complete</option>
-            <option value="rejected">Reject</option>
-          </select>
-        </div>
-        
-        <div class="form-actions">
-          <div class="form-actions-left">
-            <button type="button" class="btn btn-danger" id="deleteTaskBtn" style="display: none;">Delete Task</button>
-          </div>
-          <div class="form-actions-right">
-            <button type="button" class="btn btn-secondary" id="cancelTask">Cancel</button>
-            <button type="submit" class="btn btn-primary">Save Task</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
+  <!-- 动态编辑模态框将在这里创建 -->
 
   <!-- 任务管理模态框 -->
   <div class="modal" id="taskManagerModal">
@@ -154,14 +69,21 @@
       <div class="task-manager-content">
         <!-- 过滤器 -->
         <div class="filter-section">
-          <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="pending">Pending</button>
-            <button class="filter-btn" data-filter="completed">Completed</button>
-            <button class="filter-btn" data-filter="overdue">Overdue</button>
-          </div>
-          <div class="search-box">
-            <input type="text" id="taskSearch" placeholder="Search tasks...">
+          <div class="filter-row">
+            <div class="filter-buttons">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="doing">Doing</button>
+              <button class="filter-btn" data-filter="overdue">OverDue</button>
+              <button class="filter-btn" data-filter="completed">Completed</button>
+              <button class="filter-btn" data-filter="rejected">Reject</button>
+            </div>
+            <div class="search-box">
+              <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35"/>
+              </svg>
+              <input type="text" id="taskSearch" placeholder="Search tasks...">
+            </div>
           </div>
         </div>
 
