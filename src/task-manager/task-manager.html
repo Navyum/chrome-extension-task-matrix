@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMatrix Pro - 任务管理</title>
+  <!-- CSS will be injected by webpack -->
+</head>
+<body>
+  <div class="app-container">
+    <!-- 顶部导航栏 -->
+    <header class="header">
+      <div class="header-left">
+        <h1 class="logo">任务管理</h1>
+      </div>
+      <div class="header-right">
+        <button class="icon-button" id="backBtn" title="返回矩阵">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+        </button>
+        <button class="icon-button" id="settingsBtn" title="设置">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+      <!-- 左侧边栏 -->
+      <aside class="sidebar">
+        <div class="sidebar-section">
+          <h3 class="section-title">任务管理</h3>
+          <button class="btn btn-primary" id="addTaskBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+            添加任务
+          </button>
+        </div>
+
+        <div class="sidebar-section">
+          <h3 class="section-title">任务列表</h3>
+          <div class="task-filters">
+            <button class="filter-btn active" data-filter="all">全部任务</button>
+            <button class="filter-btn" data-filter="pending">未完成</button>
+            <button class="filter-btn" data-filter="completed">已完成</button>
+            <button class="filter-btn" data-filter="overdue">超期</button>
+          </div>
+          <div class="task-list" id="taskList">
+            <!-- 任务列表将通过JavaScript动态生成 -->
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <h3 class="section-title">快速统计</h3>
+          <div class="stats-cards">
+            <div class="stat-card">
+              <div class="stat-number" id="totalTasks">0</div>
+              <div class="stat-label">总任务</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="completedTasks">0</div>
+              <div class="stat-label">已完成</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="completionRate">0%</div>
+              <div class="stat-label">完成率</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- 主内容区 -->
+      <section class="content-area">
+        <div class="content-header">
+          <h2>任务详情</h2>
+          <div class="content-actions">
+            <button class="btn btn-secondary" id="exportBtn">导出数据</button>
+            <button class="btn btn-secondary" id="importBtn">导入数据</button>
+          </div>
+        </div>
+        <div class="task-details" id="taskDetails">
+          <div class="empty-state">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14,2 14,8 20,8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10,9 9,9 8,9"/>
+            </svg>
+            <h3>选择任务查看详情</h3>
+            <p>从左侧任务列表中选择一个任务来查看详细信息</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <span id="statusText">就绪</span>
+      </div>
+      <div class="footer-right">
+        <button class="btn btn-secondary" id="helpBtn">帮助</button>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 任务添加/编辑弹窗 -->
+  <div class="modal" id="taskModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">添加新任务</h3>
+        <button class="modal-close" id="closeModal">&times;</button>
+      </div>
+      <form class="task-form" id="taskForm">
+        <div class="form-group">
+          <label for="taskTitle">任务标题 *</label>
+          <input id="taskTitle" name="title" required maxlength="50" placeholder="输入任务标题">
+        </div>
+        <div class="form-group">
+          <label for="taskDescription">任务描述</label>
+          <textarea id="taskDescription" name="description" maxlength="200" placeholder="输入任务描述（可选）"></textarea>
+        </div>
+        <div class="form-group">
+          <label>重要性等级 *</label>
+          <div class="importance-selector">
+            <button type="button" class="importance-btn" data-importance="1">1</button>
+            <button type="button" class="importance-btn" data-importance="2">2</button>
+            <button type="button" class="importance-btn" data-importance="3">3</button>
+            <button type="button" class="importance-btn" data-importance="4">4</button>
+            <button type="button" class="importance-btn" data-importance="5">5</button>
+            <button type="button" class="importance-btn" data-importance="6">6</button>
+            <button type="button" class="importance-btn" data-importance="7">7</button>
+            <button type="button" class="importance-btn" data-importance="8">8</button>
+            <button type="button" class="importance-btn" data-importance="9">9</button>
+            <button type="button" class="importance-btn" data-importance="10">10</button>
+          </div>
+          <div class="importance-labels">
+            <span>不重要</span>
+            <span>极其重要</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="taskDueDate">完成时间 *</label>
+          <div class="date-time-inputs">
+            <input type="date" id="taskDueDate" name="dueDate" required>
+            <input type="time" id="taskDueTime" name="dueTime" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="taskCategory">任务分类</label>
+          <select id="taskCategory" name="category">
+            <option value="work">工作</option>
+            <option value="personal">个人</option>
+            <option value="study">学习</option>
+            <option value="health">健康</option>
+            <option value="other">其他</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>任务颜色</label>
+          <div class="color-selector">
+            <button type="button" class="color-btn" data-color="#EF4444" style="background-color: #EF4444;"></button>
+            <button type="button" class="color-btn" data-color="#F59E0B" style="background-color: #F59E0B;"></button>
+            <button type="button" class="color-btn" data-color="#10B981" style="background-color: #10B981;"></button>
+            <button type="button" class="color-btn" data-color="#3B82F6" style="background-color: #3B82F6;"></button>
+            <button type="button" class="color-btn" data-color="#8B5CF6" style="background-color: #8B5CF6;"></button>
+            <button type="button" class="color-btn" data-color="#EC4899" style="background-color: #EC4899;"></button>
+            <button type="button" class="color-btn" data-color="#6B7280" style="background-color: #6B7280;"></button>
+            <button type="button" class="color-btn" data-color="#000000" style="background-color: #000000;"></button>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary" id="cancelTask">取消</button>
+          <button type="submit" class="btn btn-primary">保存任务</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 帮助弹窗 -->
+  <div class="modal" id="helpModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>使用帮助</h3>
+        <button class="modal-close" id="closeHelpModal">&times;</button>
+      </div>
+      <div class="help-content">
+        <h4>任务管理说明</h4>
+        <div class="help-section">
+          <h5>添加任务</h5>
+          <p>点击"添加任务"按钮创建新任务，设置重要性等级和完成时间。</p>
+        </div>
+        <div class="help-section">
+          <h5>任务筛选</h5>
+          <p>使用筛选按钮查看不同状态的任务：全部、未完成、已完成、超期。</p>
+        </div>
+        <div class="help-section">
+          <h5>任务操作</h5>
+          <p>点击任务可以查看详情、编辑或删除任务。</p>
+        </div>
+        <h4>快捷键</h4>
+        <ul>
+          <li><kbd>Ctrl+N</kbd> 新建任务</li>
+          <li><kbd>Ctrl+F</kbd> 搜索任务</li>
+          <li><kbd>Ctrl+S</kbd> 保存任务</li>
+          <li><kbd>Esc</kbd> 关闭弹窗</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="task-manager.js"></script>
+</body>
+</html> 
