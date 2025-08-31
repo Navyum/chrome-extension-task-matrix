@@ -51,6 +51,23 @@ export class Matrix {
   }
 
   /**
+   * 添加任务到矩阵
+   */
+  addTask(task) {
+    // 只添加进行中的任务到矩阵
+    if (task.status === 'doing') {
+      this.assignTask(task);
+    }
+  }
+
+  /**
+   * 获取所有任务
+   */
+  getAllTasks() {
+    return Object.values(this.quadrants).flatMap(quadrant => quadrant.tasks);
+  }
+
+  /**
    * 获取任务所属象限
    */
   getQuadrantKey(task) {
@@ -116,17 +133,21 @@ export class Matrix {
   }
 
   /**
-   * 获取总统计信息
+   * 获取矩阵统计信息
    */
-  getTotalStats() {
-    const allTasks = Object.values(this.quadrants).flatMap(quadrant => quadrant.tasks);
+  getStats() {
+    const allTasks = this.getAllTasks();
+    const total = allTasks.length;
+    const completed = allTasks.filter(task => task.status === 'completed').length;
+    const doing = allTasks.filter(task => task.status === 'doing').length;
+    const rejected = allTasks.filter(task => task.status === 'rejected').length;
     
     return {
-      total: allTasks.length,
-      completed: allTasks.filter(task => task.status === 'completed').length,
-      pending: allTasks.filter(task => task.status === 'pending').length,
-      overdue: allTasks.filter(task => task.isOverdue()).length,
-      completionRate: allTasks.length > 0 ? 
+      total,
+      completed,
+      doing,
+      rejected,
+      completionRate: total > 0 ? 
         (allTasks.filter(task => task.status === 'completed').length / allTasks.length) * 100 : 0
     };
   }

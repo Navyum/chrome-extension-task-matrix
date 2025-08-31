@@ -15,22 +15,15 @@
         <div class="current-time" id="currentTime"></div>
       </div>
       <div class="header-right">
-        <div class="matrix-actions">
-          <button class="icon-button" id="addTaskBtn" title="Add Task">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 5v14M5 12h14"/>
-            </svg>
-          </button>
-          <button class="icon-button" id="taskManagerBtn" title="Task Manager">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-              <polyline points="14,2 14,8 20,8"/>
-              <line x1="16" y1="13" x2="8" y2="13"/>
-              <line x1="16" y1="17" x2="8" y2="17"/>
-              <polyline points="10,9 9,9 8,9"/>
-            </svg>
-          </button>
-        </div>
+        <button class="icon-button" id="taskManagerBtn" title="Task Manager">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14,2 14,8 20,8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+            <polyline points="10,9 9,9 8,9"/>
+          </svg>
+        </button>
         <button class="icon-button" id="settingsBtn" title="Settings">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
@@ -66,53 +59,27 @@
         <h3>Task Manager</h3>
         <button class="modal-close" id="closeTaskManagerModal">&times;</button>
       </div>
-      <div class="task-manager-content">
-        <!-- 过滤器 -->
-        <div class="filter-section">
-          <div class="filter-row">
-            <div class="filter-buttons">
-              <button class="filter-btn active" data-filter="all">All</button>
-              <button class="filter-btn" data-filter="doing">Doing</button>
-              <button class="filter-btn" data-filter="overdue">OverDue</button>
-              <button class="filter-btn" data-filter="completed">Completed</button>
-              <button class="filter-btn" data-filter="rejected">Reject</button>
-            </div>
-            <div class="search-box">
-              <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="11" cy="11" r="8"/>
-                <path d="m21 21-4.35-4.35"/>
-              </svg>
-              <input type="text" id="taskSearch" placeholder="Search tasks...">
-            </div>
+              <div class="task-manager-content">
+          <!-- 过滤器和搜索 -->
+          <div class="task-controls">
+            <select id="taskFilter" class="task-filter">
+              <option value="all">All Tasks</option>
+              <option value="doing">Doing</option>
+              <option value="overdue">Overdue</option>
+              <option value="completed">Completed</option>
+              <option value="rejected">Rejected</option>
+            </select>
+            <input type="text" id="taskSearch" class="task-search" placeholder="Search tasks...">
           </div>
-        </div>
 
-        <!-- 任务列表 -->
+          <!-- 任务列表 -->
         <div class="task-list-container">
           <div class="task-list" id="taskList">
             <!-- 任务列表将通过JavaScript动态生成 -->
           </div>
         </div>
 
-        <!-- 统计信息 -->
-        <div class="stats-section">
-          <div class="stat-item">
-            <span class="stat-label">Total:</span>
-            <span class="stat-value" id="totalTasks">0</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-label">Completed:</span>
-            <span class="stat-value" id="completedTasks">0</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-label">Pending:</span>
-            <span class="stat-value" id="pendingTasks">0</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-label">Overdue:</span>
-            <span class="stat-value" id="overdueTasks">0</span>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>

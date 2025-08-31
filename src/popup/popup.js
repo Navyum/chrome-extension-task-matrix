@@ -21,18 +21,21 @@ class PopupApp {
   }
 
   /**
-   * 初始化应用
+   * 初始化
    */
   async init() {
     try {
+      // 数据迁移：将pending状态转换为doing状态
+      await this.taskManager.migratePendingToDoing();
+      
       // 初始化矩阵渲染器
       this.initMatrixRenderer();
       
-      // 绑定事件
-      this.bindEvents();
-      
       // 加载数据
       await this.loadData();
+      
+      // 绑定事件
+      this.bindEvents();
       
       // 启动矩阵自动更新
       this.matrixManager.startAutoUpdate();
@@ -121,17 +124,7 @@ class PopupApp {
               </select>
             </div>
 
-            <!-- 任务状态选择器（仅在编辑模式下显示） -->
-            <div class="form-group" id="editTaskStatusGroup" style="display:ne;">
-              <label for="editTaskStatus">Task Status</label>
-              <select id="editTaskStatus" name="status">
-                <option value="new">New</option>
-                <option value="doing">Doing</option>
-                <option value="overdue">Overdue</option>
-                <option value="completed">Complete</option>
-                <option value="rejected">Reject</option>
-              </select>
-            </div>
+
             
             <div class="form-actions">
               <div class="form-actions-left">
@@ -314,12 +307,12 @@ class PopupApp {
     }
 
     // 任务管理过滤器
-    const taskManagerFilterBtns = document.querySelectorAll('#taskManagerModal .filter-btn');
-    taskManagerFilterBtns.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        this.setTaskManagerFilter(e.target.dataset.filter);
+    const taskFilter = document.getElementById('taskFilter');
+    if (taskFilter) {
+      taskFilter.addEventListener('change', (e) => {
+        this.setTaskManagerFilter(e.target.value);
       });
-    });
+    }
 
     // 任务搜索
     const taskSearch = document.getElementById('taskSearch');
@@ -478,12 +471,73 @@ class PopupApp {
     // 设置默认重要性
     this.selectImportance(defaultImportance);
     
-    // 设置默认时间
+    // 设置默认时间 - 修复跨天日期计算
     const defaultDate = new Date();
-    defaultDate.setTime(defaultDate.getTime() + defaultTime);
+    const hoursToAdd = defaultTime / (60 * 60 * 1000); // 转换为小时
     
-    this.editModal.querySelector('#editTaskDueDate').value = defaultDate.toISOString().split('T')[0];
-    this.editModal.querySelector('#editTaskDueTime').value = defaultDate.toTimeString().slice(0, 5);
+    // 根据时间长度正确计算日期和时间
+    if (hoursToAdd >= 24) {
+      // 超过24小时，需要跨天
+      const daysToAdd = Math.floor(hoursToAdd / 24);
+      const remainingHours = hoursToAdd % 24;
+      
+      // 设置日期
+      defaultDate.setDate(defaultDate.getDate() + daysToAdd);
+      
+      // 设置时间
+      const currentHours = defaultDate.getHours();
+      const newHours = currentHours + remainingHours;
+      
+      if (newHours >= 24) {
+        // 如果时间超过24小时，再增加一天
+        defaultDate.setDate(defaultDate.getDate() + 1);
+        defaultDate.setHours(newHours - 24);
+      } else {
+        defaultDate.setHours(newHours);
+      }
+    } else {
+      // 24小时内，精确到分钟级计算
+      const totalMinutesToAdd = hoursToAdd * 60; // 转换为分钟
+      const currentMinutes = defaultDate.getMinutes();
+      const currentHours = defaultDate.getHours();
+      
+      // 计算新的分钟和小时
+      const newTotalMinutes = currentMinutes + totalMinutesToAdd;
+      const newHours = Math.floor(newTotalMinutes / 60);
+      const newMinutes = newTotalMinutes % 60;
+      
+      // 检查是否会跨天
+      const finalHours = currentHours + newHours;
+      
+      if (finalHours >= 24) {
+        // 会跨天，增加一天并调整小时
+        defaultDate.setDate(defaultDate.getDate() + 1);
+        defaultDate.setHours(finalHours - 24);
+        defaultDate.setMinutes(newMinutes);
+      } else {
+        // 不跨天，直接设置小时和分钟
+        defaultDate.setHours(finalHours);
+        defaultDate.setMinutes(newMinutes);
+      }
+    }
+    
+    // 设置日期和时间到表单
+    const year = defaultDate.getFullYear();
+    const month = String(defaultDate.getMonth() + 1).padStart(2, '0');
+    const day = String(defaultDate.getDate()).padStart(2, '0');
+    const hours = String(defaultDate.getHours()).padStart(2, '0');
+    const minutes = String(defaultDate.getMinutes()).padStart(2, '0');
+    
+    this.editModal.querySelector('#editTaskDueDate').value = `${year}-${month}-${day}`;
+    this.editModal.querySelector('#editTaskDueTime').value = `${hours}:${minutes}`;
+    
+    console.log(`=== 双击创建任务默认时间计算 ===`);
+    console.log(`计算的时间偏移: ${hoursToAdd}小时`);
+    console.log(`当前时间: ${new Date().toLocaleString()}`);
+    console.log(`计算的默认时间: ${defaultDate.toLocaleString()}`);
+    console.log(`设置的日期: ${year}-${month}-${day}`);
+    console.log(`设置的时间: ${hours}:${minutes}`);
+    console.log(`===============================`);
     
     // 存储坐标信息用于任务定位
     this.pendingCoordinates = coordinates && coordinates.x !== undefined && coordinates.y !== undefined ? coordinates : null;
@@ -566,7 +620,16 @@ class PopupApp {
     if (coordinates && coordinates.x !== undefined && coordinates.y !== undefined) {
       // 根据X坐标位置计算默认时间
       const hours = this.matrixRenderer.getTimeFromXCoordinate(coordinates.x);
-      defaultTime = hours * 60 * 60 * 1000; // 转换为毫秒
+      
+      // 处理时间值：确保非负值
+      let adjustedHours = hours;
+      if (hours < 0) {
+        // 超期任务，设置为当前时间（0小时）
+        adjustedHours = 0;
+        console.log(`检测到超期任务，将时间调整为: ${adjustedHours}小时`);
+      }
+      
+      defaultTime = adjustedHours * 60 * 60 * 1000; // 转换为毫秒
       
       // 根据Y坐标位置计算默认重要性
       const margin = 30;
@@ -580,12 +643,16 @@ class PopupApp {
       defaultImportance = Math.round(1 + (relativeImportance * 9)); // 1-10
       
       console.log(`=== 双击位置计算默认值 ===`);
+      console.log(`X坐标: ${coordinates.x}`);
       console.log(`Y坐标: ${coordinates.y}`);
       console.log(`Y轴高度: ${yAxisHeight}`);
       console.log(`相对Y位置: ${relativeY.toFixed(3)}`);
       console.log(`相对重要性: ${relativeImportance.toFixed(3)}`);
       console.log(`计算的重要性: ${defaultImportance}`);
-      console.log(`计算的时间: ${hours}小时`);
+      console.log(`原始计算时间: ${hours}小时`);
+      console.log(`调整后时间: ${adjustedHours}小时`);
+      console.log(`时间毫秒: ${defaultTime}`);
+      console.log(`象限: ${quadrantKey}`);
       console.log(`========================`);
     } else {
       // 如果没有坐标，根据象限设置默认值
@@ -609,6 +676,12 @@ class PopupApp {
           defaultTime = 30 * 24 * 60 * 60 * 1000;
           break;
       }
+      
+      console.log(`=== 象限默认值计算 ===`);
+      console.log(`象限: ${quadrantKey}`);
+      console.log(`默认重要性: ${defaultImportance}`);
+      console.log(`默认时间: ${defaultTime / (60 * 60 * 1000)}小时`);
+      console.log(`=====================`);
     }
     
     return { defaultImportance, defaultTime };
@@ -730,7 +803,11 @@ class PopupApp {
   async saveTask() {
     try {
       const formData = this.getTaskFormData();
-      
+      if (!formData) {
+        showNotification('Failed to get form data', 'error');
+        return;
+      }
+
       if (!formData.title.trim()) {
         showNotification('Please enter a task title', 'warning');
         return;
@@ -770,6 +847,12 @@ class PopupApp {
           delete this.selectedTask.fromTaskManager;
           // 刷新Task Manager的任务列表
           this.renderTaskManagerList();
+        } else {
+          // 如果不是从Task Manager打开的，但Task Manager模态框是打开的，也要刷新
+          const taskManagerModal = document.getElementById('taskManagerModal');
+          if (taskManagerModal && taskManagerModal.classList.contains('show')) {
+            await this.loadTaskManagerData();
+          }
         }
       } else {
         showNotification('Save failed', 'error');
@@ -796,7 +879,31 @@ class PopupApp {
     const selectedBtn = this.editModal.querySelector('.importance-btn.selected');
     const importance = selectedBtn ? parseInt(selectedBtn.dataset.importance) : 5;
     
-    const dueDateTime = new Date(`${dueDate}T${dueTime}`);
+    // 修复跨天处理：使用本地时间创建日期对象
+    let dueDateTime;
+    if (dueDate && dueTime) {
+      // 解析日期和时间
+      const [year, month, day] = dueDate.split('-').map(Number);
+      const [hours, minutes] = dueTime.split(':').map(Number);
+      
+      // 创建本地日期时间对象
+      dueDateTime = new Date(year, month - 1, day, hours, minutes, 0, 0);
+      
+      // 转换为ISO字符串
+      const dueDateISO = dueDateTime.toISOString();
+      
+      console.log(`=== 任务时间处理 ===`);
+      console.log(`输入日期: ${dueDate}`);
+      console.log(`输入时间: ${dueTime}`);
+      console.log(`解析的年月日: ${year}-${month}-${day}`);
+      console.log(`解析的时分: ${hours}:${minutes}`);
+      console.log(`创建的日期对象: ${dueDateTime.toLocaleString()}`);
+      console.log(`ISO字符串: ${dueDateISO}`);
+      console.log(`=====================`);
+    } else {
+      // 如果没有日期或时间，使用当前时间
+      dueDateTime = new Date();
+    }
     
     const formData = {
       title: title.trim(),
@@ -811,6 +918,7 @@ class PopupApp {
       const statusValue = this.editModal.querySelector('#taskStatusValue');
       if (statusValue && statusValue.style.display !== 'none') {
         const currentStatus = this.getStatusFromDisplayText(statusValue.textContent);
+        
         // 只有当状态是completed或rejected时才保存，否则保持原状态
         if (currentStatus === 'completed' || currentStatus === 'rejected') {
           formData.status = currentStatus;
@@ -861,9 +969,7 @@ class PopupApp {
     statusValue.textContent = this.getStatusDisplayText(taskStatus);
     statusValue.className = `status-value status-${taskStatus}`;
     
-    // 隐藏任务状态选择器（不再使用下拉框）
-    const statusGroup = this.editModal.querySelector('#editTaskStatusGroup');
-    statusGroup.style.display = 'none';
+
     
     // 绑定状态值点击事件
     statusValue.addEventListener('click', () => {
@@ -927,8 +1033,7 @@ class PopupApp {
     // 隐藏任务状态显示
     this.editModal.querySelector('#taskStatusValue').style.display = 'none';
     
-    // 隐藏任务状态选择器
-    this.editModal.querySelector('#editTaskStatusGroup').style.display = 'none';
+
     
     // 隐藏删除按钮
     this.editModal.querySelector('#editDeleteTaskBtn').style.display = 'none';
@@ -938,10 +1043,11 @@ class PopupApp {
    * 计算任务状态
    */
   calculateTaskStatus(task) {
-    // 如果任务已经是completed或rejected状态，保持原状态
+    // 如果任务已经是completed或rejected状态，保持原状态（这些是手动设置的状态）
     if (task.status === 'completed') return 'completed';
     if (task.status === 'rejected') return 'rejected';
     
+    // 对于其他状态（doing, new, overdue），根据时间重新计算
     const now = new Date();
     const createdTime = new Date(task.createdAt);
     const dueTime = new Date(task.dueDate);
@@ -1176,6 +1282,12 @@ class PopupApp {
     const taskList = document.getElementById('taskList');
     if (!taskList) return;
 
+    // 如果没有传递tasks参数，重新加载任务数据
+    if (!tasks) {
+      this.loadTaskManagerData();
+      return;
+    }
+
     taskList.innerHTML = '';
     
     if (tasks.length === 0) {
@@ -1273,24 +1385,39 @@ class PopupApp {
   updateTaskStats(tasks) {
     const total = tasks.length;
     const completed = tasks.filter(task => task.status === 'completed').length;
-    const pending = tasks.filter(task => task.status === 'pending').length;
+    const doing = tasks.filter(task => task.status === 'doing').length;
     const overdue = tasks.filter(task => task.isOverdue()).length;
 
-    document.getElementById('totalTasks').textContent = total;
-    document.getElementById('completedTasks').textContent = completed;
-    document.getElementById('pendingTasks').textContent = pending;
-    document.getElementById('overdueTasks').textContent = overdue;
+    // 安全地更新统计信息，检查元素是否存在
+    const totalTasksElement = document.getElementById('totalTasks');
+    const completedTasksElement = document.getElementById('completedTasks');
+    const doingTasksElement = document.getElementById('doingTasks');
+    const overdueTasksElement = document.getElementById('overdueTasks');
+
+    if (totalTasksElement) {
+      totalTasksElement.textContent = total;
+    }
+    if (completedTasksElement) {
+      completedTasksElement.textContent = completed;
+    }
+    if (doingTasksElement) {
+      doingTasksElement.textContent = doing;
+    }
+    if (overdueTasksElement) {
+      overdueTasksElement.textContent = overdue;
+    }
   }
 
   /**
    * 设置任务管理过滤器
    */
   async setTaskManagerFilter(filter) {
-    // 更新按钮状态
-    document.querySelectorAll('#taskManagerModal .filter-btn').forEach(btn => {
-      btn.classList.remove('active');
-    });
-    document.querySelector(`#taskManagerModal [data-filter="${filter}"]`).classList.add('active');
+    // 更新下拉框状态
+    const taskFilter = document.getElementById('taskFilter');
+    if (taskFilter) {
+      taskFilter.value = filter;
+      taskFilter.setAttribute('data-selected', filter);
+    }
 
     // 获取过滤后的任务
     let tasks = await this.taskManager.getTasks();
@@ -1328,20 +1455,35 @@ class PopupApp {
    * 搜索任务
    */
   async searchTasks(query) {
-    if (!query.trim()) {
-      await this.loadTaskManagerData();
-      return;
+    const searchBox = document.querySelector('.search-box');
+    const searchInput = document.getElementById('taskSearch');
+    
+    // 添加加载状态
+    if (searchBox) {
+      searchBox.classList.add('loading');
     }
+    
+    try {
+      if (!query.trim()) {
+        await this.loadTaskManagerData();
+        return;
+      }
 
-    const tasks = await this.taskManager.getTasks();
-    const filteredTasks = tasks.filter(task => 
-      task.title.toLowerCase().includes(query.toLowerCase()) ||
-      task.description.toLowerCase().includes(query.toLowerCase())
-    );
+      const tasks = await this.taskManager.getTasks();
+      const filteredTasks = tasks.filter(task => 
+        task.title.toLowerCase().includes(query.toLowerCase()) ||
+        task.description.toLowerCase().includes(query.toLowerCase())
+      );
 
-    // 按截止时间排序
-    const sortedTasks = this.sortTasksByDueTime(filteredTasks);
-    this.renderTaskManagerList(sortedTasks);
+      // 按截止时间排序
+      const sortedTasks = this.sortTasksByDueTime(filteredTasks);
+      this.renderTaskManagerList(sortedTasks);
+    } finally {
+      // 移除加载状态
+      if (searchBox) {
+        searchBox.classList.remove('loading');
+      }
+    }
   }
 
   /**

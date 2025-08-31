@@ -30,28 +30,32 @@ export class MatrixManager {
   }
 
   /**
-   * 更新矩阵
+   * 更新矩阵数据
    */
   async updateMatrix() {
     try {
-      // 获取所有未完成的任务
-      const tasks = await this.taskManager.getTasks({ status: 'pending' });
+      console.log('=== MatrixManager.updateMatrix 开始 ===');
       
-      // 清空所有象限
-      this.matrix.clearTasks();
+      // 获取所有进行中的任务
+      const tasks = await this.taskManager.getTasks({ status: 'doing' });
+      console.log('获取到doing状态的任务数:', tasks.length);
       
-      // 重新分配任务到象限
+      // 创建矩阵实例
+      this.matrix = new Matrix();
+      
+      // 将任务添加到矩阵中
       tasks.forEach(task => {
-        this.matrix.assignTask(task);
+        console.log(`添加任务到矩阵: ${task.title} (${task.status})`);
+        this.matrix.addTask(task);
       });
       
-      // 触发矩阵更新事件
-      this.emitEvent('matrixUpdated', this.matrix);
+      console.log('矩阵更新完成');
+      console.log('=== MatrixManager.updateMatrix 结束 ===');
       
       return this.matrix;
     } catch (error) {
       console.error('更新矩阵失败:', error);
-      return this.matrix;
+      return null;
     }
   }
 
@@ -67,7 +71,7 @@ export class MatrixManager {
    */
   getMatrixStats() {
     const stats = this.matrix.getQuadrantStats();
-    const totalStats = this.matrix.getTotalStats();
+    const totalStats = this.matrix.getStats();
     
     return {
       quadrants: stats,

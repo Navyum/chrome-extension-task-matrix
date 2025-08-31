@@ -11,8 +11,7 @@ module.exports = (env, argv) => {
     background: './src/background/background.js',
     popup: './src/popup/popup.js',
     options: './src/options/options.js',
-    content: './src/content/content.js',
-    'task-manager': './src/task-manager/task-manager.js'
+    content: './src/content/content.js'
   },
     output: {
       path: path.resolve(__dirname, 'dist'),
@@ -65,11 +64,7 @@ module.exports = (env, argv) => {
       filename: 'options.html',
       chunks: ['options']
     }),
-    new HtmlWebpackPlugin({
-      template: './src/task-manager/task-manager.html',
-      filename: 'task-manager.html',
-      chunks: ['task-manager']
-    }),
+
       ...(isProduction ? [new MiniCssExtractPlugin()] : [])
     ],
     resolve: {
