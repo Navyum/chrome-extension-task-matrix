@@ -25,6 +25,15 @@ export class MatrixRenderer {
     // 存储当前矩阵数据
     this.currentMatrix = null;
     
+    // 存储当前悬停的圆点引用
+    this.currentHoveredCircle = null;
+    
+    // 存储当前悬停的任务ID
+    this.currentHoveredTaskId = null;
+    
+    // 防抖定时器
+    this.hoverDebounceTimer = null;
+    
     console.log(`MatrixRenderer初始化: ${this.width}x${this.height}`);
   }
 
@@ -96,6 +105,16 @@ export class MatrixRenderer {
     
     // 清空任务信息
     this.taskInfo = [];
+    
+    // 重置悬停圆点引用
+    this.currentHoveredCircle = null;
+    this.currentHoveredTaskId = null; // 重置任务ID
+    
+    // 清理防抖定时器
+    if (this.hoverDebounceTimer) {
+      clearTimeout(this.hoverDebounceTimer);
+      this.hoverDebounceTimer = null;
+    }
   }
 
   /**
@@ -173,7 +192,7 @@ export class MatrixRenderer {
       console.log(`Using calculated coordinates for "${task.title}": (${x}, ${y})`);
     }
 
-    const radius = 8;
+    const radius = 6;
     const color = await this.getTaskColor(task);
     
     console.log(`Drawing task "${task.title}" at position (${x}, ${y}) with color ${color}`);
@@ -185,7 +204,7 @@ export class MatrixRenderer {
       .attr('r', radius)
       .attr('fill', color)
       .attr('stroke', '#ffffff')
-      .attr('stroke-width', 2)
+      .attr('stroke-width', 1.5)
       .attr('data-task-id', task.id)
       .attr('cursor', 'pointer')
       .on('mouseenter', () => this.handleTaskHover(task, x, y))
@@ -241,13 +260,13 @@ export class MatrixRenderer {
     const timeDiff = dueDate.getTime() - now.getTime();
     const hours = timeDiff / (1000 * 60 * 60);
     
-    // X轴映射：使用新的刻度映射方法
+    // X轴映射：使用新的分钟级精度时间坐标映射
     let x;
     if (hours <= 0) {
-      // 已超期：最右边
-      x = this.width - margin;
+      // 已超期：使用新的超期时间计算逻辑
+      x = this.getXCoordinateFromTime(hours);
     } else {
-      // 使用新的时间坐标映射
+      // 使用新的时间坐标映射（支持分钟级精度）
       x = this.getXCoordinateFromTime(hours);
     }
     
@@ -260,7 +279,7 @@ export class MatrixRenderer {
     let y = margin + ((1 - relativeImportance) * yAxisHeight);
     
     // 确保坐标在有效范围内
-    x = Math.max(margin, Math.min(this.width - margin, x));
+    x = Math.max(margin - 20, Math.min(this.width - margin + 20, x)); // 允许超期和超远期任务超出边界
     y = Math.max(margin, Math.min(this.height - margin, y));
     
     // 调试信息
@@ -269,7 +288,10 @@ export class MatrixRenderer {
       title: task.title,
       importance: importance,
       dueDate: task.dueDate,
-      hoursLeft: hours
+      hoursLeft: hours,
+      minutesLeft: hours * 60,
+      status: task.status,
+      coordinates: task.coordinates
     });
     console.log(`Matrix Dimensions:`, {
       width: this.width,
@@ -280,10 +302,12 @@ export class MatrixRenderer {
     });
     console.log(`X-Axis Calculation:`, {
       hours: hours,
+      minutes: hours * 60,
       isOverdue: hours <= 0,
-      isToday: hours > 0 && hours <= 24,
-      isFuture: hours > 24,
-      relativePosition: hours <= 24 ? (hours / 24) : (hours > 24 ? ((hours - 24) / (744 - 24)) : 0)
+      isUrgent: hours <= 24, // 24小时内为紧急
+      isVeryUrgent: hours <= 1, // 1小时内为非常紧急
+      xCoordinate: x,
+      xPosition: x < (this.width / 2) ? 'left' : 'right'
     });
     console.log(`Y-Axis Calculation:`, {
       importance: importance,
@@ -365,21 +389,43 @@ export class MatrixRenderer {
     const rightHalf = xAxisWidth / 2;
     const leftHalf = xAxisWidth / 2;
     
-    // 定义刻度数据模型（相对于原点的偏移时间）
-    const timeTicks = [
-      { label: 'Now', hoursFromOrigin: -24, x: this.width - margin },           // 原点前24小时
-      { label: '1h', hoursFromOrigin: -23, x: centerX + (0.75 * rightHalf) },   // 原点前23小时
-      { label: '6h', hoursFromOrigin: -18, x: centerX + (0.5 * rightHalf) },    // 原点前18小时
-      { label: '12h', hoursFromOrigin: -12, x: centerX + (0.25 * rightHalf) },  // 原点前12小时
-      { label: '24h', hoursFromOrigin: 0, x: centerX },                         // 原点（当前时间+24小时）
-      { label: '3d', hoursFromOrigin: 48, x: centerX - (0.25 * leftHalf) },     // 原点后48小时
-      { label: '7d', hoursFromOrigin: 144, x: centerX - (0.5 * leftHalf) },     // 原点后144小时
-      { label: '14d', hoursFromOrigin: 312, x: centerX - (0.75 * leftHalf) },   // 原点后312小时
-      { label: '31d', hoursFromOrigin: 720, x: margin }                         // 原点后720小时
+    // 定义右侧区域的刻度点（紧急区域：0-24小时）
+    const rightTicks = [
+      { label: 'Now', hours: 0, x: this.width - margin },                    // 当前时间（最右侧）
+      { label: '30m', hours: 0.5, x: centerX + (0.8 * rightHalf) },         // 30分钟后
+      { label: '1h', hours: 1, x: centerX + (0.6 * rightHalf) },            // 1小时后
+      { label: '4h', hours: 4, x: centerX + (0.4 * rightHalf) },            // 4小时后
+      { label: '12h', hours: 12, x: centerX + (0.2 * rightHalf) },          // 12小时后
+      { label: '24h', hours: 24, x: centerX }                               // 24小时后（中心点）
     ];
     
-    // 绘制所有刻度标签
-    timeTicks.forEach(tick => {
+    // 定义左侧区域的刻度点（非紧急区域：24小时-31天）
+    const leftTicks = [
+      { label: '24h', hours: 24, x: centerX },                         // 24小时后（中心点）
+      { label: '3d', hours: 72, x: centerX - (0.25 * leftHalf) },      // 3天后
+      { label: '7d', hours: 168, x: centerX - (0.5 * leftHalf) },      // 7天后
+      { label: '14d', hours: 336, x: centerX - (0.75 * leftHalf) },    // 14天后
+      { label: '31d', hours: 744, x: margin }                          // 31天后（最左侧）
+    ];
+    
+    // 绘制右侧刻度标签（紧急区域，更密集）
+    rightTicks.forEach(tick => {
+      this.axesGroup.append('text')
+        .attr('x', tick.x)
+        .attr('y', centerY + tickLength + 15)
+        .attr('text-anchor', 'middle')
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif')
+        .attr('font-size', '11px')
+        .attr('fill', '#6B7280')
+        .text(tick.label);
+    });
+    
+    // 绘制左侧刻度标签（非紧急区域）
+    leftTicks.forEach(tick => {
+      // 跳过24h，因为右侧已经绘制了
+      if (tick.hours === 24) return;
+      
       this.axesGroup.append('text')
         .attr('x', tick.x)
         .attr('y', centerY + tickLength + 15)
@@ -393,63 +439,6 @@ export class MatrixRenderer {
   }
 
   /**
-   * 根据X坐标计算对应的时间（小时）
-   */
-  getTimeFromXCoordinate(x) {
-    const margin = 30;
-    const centerX = this.width / 2;
-    const xAxisWidth = this.width - 2 * margin;
-    const rightHalf = xAxisWidth / 2;
-    const leftHalf = xAxisWidth / 2;
-    
-    // 定义刻度数据模型（相对于原点的偏移时间）
-    const timeTicks = [
-      { label: 'Now', hoursFromOrigin: -24, x: this.width - margin },           // 原点前24小时
-      { label: '1h', hoursFromOrigin: -23, x: centerX + (0.75 * rightHalf) },   // 原点前23小时
-      { label: '6h', hoursFromOrigin: -18, x: centerX + (0.5 * rightHalf) },    // 原点前18小时
-      { label: '12h', hoursFromOrigin: -12, x: centerX + (0.25 * rightHalf) },  // 原点前12小时
-      { label: '24h', hoursFromOrigin: 0, x: centerX },                         // 原点（当前时间+24小时）
-      { label: '3d', hoursFromOrigin: 48, x: centerX - (0.25 * leftHalf) },     // 原点后48小时
-      { label: '7d', hoursFromOrigin: 144, x: centerX - (0.5 * leftHalf) },     // 原点后144小时
-      { label: '14d', hoursFromOrigin: 312, x: centerX - (0.75 * leftHalf) },   // 原点后312小时
-      { label: '31d', hoursFromOrigin: 720, x: margin }                         // 原点后720小时
-    ];
-    
-    // 计算原点时间（当前时间+24小时）
-    const now = new Date();
-    const originTime = new Date(now.getTime() + 24 * 60 * 60 * 1000);
-    
-    // 找到最近的刻度点
-    let minDistance = Infinity;
-    let closestTick = timeTicks[0];
-    
-    for (const tick of timeTicks) {
-      const distance = Math.abs(x - tick.x);
-      if (distance < minDistance) {
-        minDistance = distance;
-        closestTick = tick;
-      }
-    }
-    
-    // 计算实际时间：原点时间 + 偏移时间
-    const actualTime = new Date(originTime.getTime() + closestTick.hoursFromOrigin * 60 * 60 * 1000);
-    
-    // 返回相对于当前时间的小时数
-    const hoursFromNow = (actualTime.getTime() - now.getTime()) / (1000 * 60 * 60);
-    
-    console.log(`=== X坐标时间计算 ===`);
-    console.log(`X坐标: ${x}`);
-    console.log(`当前时间: ${now.toLocaleString()}`);
-    console.log(`原点时间: ${originTime.toLocaleString()}`);
-    console.log(`最近刻度: ${closestTick.label} (偏移: ${closestTick.hoursFromOrigin}h)`);
-    console.log(`实际时间: ${actualTime.toLocaleString()}`);
-    console.log(`相对当前时间: ${hoursFromNow.toFixed(1)}小时`);
-    console.log(`=====================`);
-    
-    return Math.max(0, hoursFromNow);
-  }
-
-  /**
    * 根据时间（小时）计算X坐标
    */
   getXCoordinateFromTime(hours) {
@@ -459,52 +448,327 @@ export class MatrixRenderer {
     const rightHalf = xAxisWidth / 2;
     const leftHalf = xAxisWidth / 2;
     
-    // 定义刻度数据模型（相对于原点的偏移时间）
-    const timeTicks = [
-      { label: 'Now', hoursFromOrigin: -24, x: this.width - margin },           // 原点前24小时
-      { label: '1h', hoursFromOrigin: -23, x: centerX + (0.75 * rightHalf) },   // 原点前23小时
-      { label: '6h', hoursFromOrigin: -18, x: centerX + (0.5 * rightHalf) },    // 原点前18小时
-      { label: '12h', hoursFromOrigin: -12, x: centerX + (0.25 * rightHalf) },  // 原点前12小时
-      { label: '24h', hoursFromOrigin: 0, x: centerX },                         // 原点（当前时间+24小时）
-      { label: '3d', hoursFromOrigin: 48, x: centerX - (0.25 * leftHalf) },     // 原点后48小时
-      { label: '7d', hoursFromOrigin: 144, x: centerX - (0.5 * leftHalf) },     // 原点后144小时
-      { label: '14d', hoursFromOrigin: 312, x: centerX - (0.75 * leftHalf) },   // 原点后312小时
-      { label: '31d', hoursFromOrigin: 720, x: margin }                         // 原点后720小时
+    // 重新定义时间轴逻辑：
+    // 最右侧（Now）：当前时间（0小时）
+    // 中心点：24小时后
+    // 最左侧：远期时间（31天后）
+    
+    // 添加边界容差，确保一致性
+    const boundaryTolerance = 0.5; // 0.5小时的容差
+    
+    // 判断是否在右侧（紧急区域：0-24小时）
+    if (hours >= 0 && hours <= 24 + boundaryTolerance) {
+      // 右侧区域：使用线性插值进行分钟级精确计算
+      return this.getXCoordinateFromRightSideTime(hours, centerX, rightHalf, margin);
+    } else if (hours > 24 + boundaryTolerance) {
+      // 左侧区域：使用原有的刻度点逻辑
+      return this.getXCoordinateFromLeftSideTime(hours, centerX, leftHalf, margin);
+    } else {
+      // 超期任务（hours < 0）：最右侧
+      return this.width - margin;
+    }
+  }
+
+  /**
+   * 右侧区域（紧急区域）的精确X坐标计算
+   */
+  getXCoordinateFromRightSideTime(hours, centerX, rightHalf, margin) {
+    // 重新定义右侧区域的刻度点
+    // 时间范围：0小时（Now）到24小时（中心点）
+    const rightTicks = [
+      { label: 'Now', hours: 0, x: this.width - margin },                    // 当前时间（最右侧）
+      { label: '30m', hours: 0.5, x: centerX + (0.8 * rightHalf) },         // 30分钟后
+      { label: '1h', hours: 1, x: centerX + (0.6 * rightHalf) },            // 1小时后
+      { label: '4h', hours: 4, x: centerX + (0.4 * rightHalf) },            // 4小时后
+      { label: '12h', hours: 12, x: centerX + (0.2 * rightHalf) },          // 12小时后
+      { label: '24h', hours: 24, x: centerX }                               // 24小时后（中心点）
     ];
     
-    // 计算原点时间（当前时间+24小时）
-    const now = new Date();
-    const originTime = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+    // 找到时间所在的区间
+    let startTick = rightTicks[0];
+    let endTick = rightTicks[0];
     
-    // 计算目标时间（当前时间 + 指定小时数）
-    const targetTime = new Date(now.getTime() + hours * 60 * 60 * 1000);
+    for (let i = 0; i < rightTicks.length - 1; i++) {
+      if (hours >= rightTicks[i].hours && hours <= rightTicks[i + 1].hours) {
+        startTick = rightTicks[i];
+        endTick = rightTicks[i + 1];
+        break;
+      }
+    }
     
-    // 计算相对于原点的时间偏移
-    const hoursFromOrigin = (targetTime.getTime() - originTime.getTime()) / (1000 * 60 * 60);
+    // 计算线性插值
+    const totalTimeRange = endTick.hours - startTick.hours;
+    const currentTimeOffset = hours - startTick.hours;
+    const ratio = totalTimeRange > 0 ? currentTimeOffset / totalTimeRange : 0;
     
-    // 找到最接近的时间刻度点
+    // 计算X坐标插值
+    const startX = startTick.x;
+    const endX = endTick.x;
+    const interpolatedX = startX + (endX - startX) * ratio;
+    
+    console.log(`=== 右侧时间X坐标计算（精确模式）===`);
+    console.log(`目标时间: ${hours.toFixed(2)}小时`);
+    console.log(`区间: ${startTick.label} (${startTick.hours}h) - ${endTick.label} (${endTick.hours}h)`);
+    console.log(`插值比例: ${(ratio * 100).toFixed(1)}%`);
+    console.log(`X坐标插值: ${startX} + ${((endX - startX) * ratio).toFixed(1)} = ${interpolatedX.toFixed(1)}`);
+    console.log(`=====================================`);
+    
+    return interpolatedX;
+  }
+
+  /**
+   * 左侧区域（非紧急区域）的X坐标计算
+   */
+  getXCoordinateFromLeftSideTime(hours, centerX, leftHalf, margin) {
+    // 定义左侧区域的刻度点
+    // 时间范围：24小时（中心点）到31天（最左侧）
+    const leftTicks = [
+      { label: '24h', hours: 24, x: centerX },                         // 24小时后（中心点）
+      { label: '3d', hours: 72, x: centerX - (0.25 * leftHalf) },      // 3天后
+      { label: '7d', hours: 168, x: centerX - (0.5 * leftHalf) },      // 7天后
+      { label: '14d', hours: 336, x: centerX - (0.75 * leftHalf) },    // 14天后
+      { label: '31d', hours: 744, x: margin }                          // 31天后（最左侧）
+    ];
+    
+    // 处理超过31天的任务
+    if (hours > 744) {
+      const extraHours = hours - 744;
+      const maxExtraHours = 744; // 额外显示30天
+      const extraRatio = Math.min(1, extraHours / maxExtraHours);
+      const x = margin - (extraRatio * 20); // 在左边界基础上再向左延伸20px
+      
+      console.log(`=== 超远期任务X坐标计算 ===`);
+      console.log(`超远期时间: ${extraHours.toFixed(2)}小时`);
+      console.log(`超远期比例: ${(extraRatio * 100).toFixed(1)}%`);
+      console.log(`X坐标: ${x.toFixed(1)}`);
+      console.log(`=====================`);
+      
+      return x;
+    }
+    
+    // 找到时间所在的区间
+    let startTick = leftTicks[0];
+    let endTick = leftTicks[0];
+    
+    for (let i = 0; i < leftTicks.length - 1; i++) {
+      if (hours >= leftTicks[i].hours && hours <= leftTicks[i + 1].hours) {
+        startTick = leftTicks[i];
+        endTick = leftTicks[i + 1];
+        break;
+      }
+    }
+    
+    // 如果没找到区间，使用最近点
+    if (startTick === endTick) {
     let minDistance = Infinity;
-    let closestTick = timeTicks[0];
+      let closestTick = leftTicks[0];
     
-    for (const tick of timeTicks) {
-      const distance = Math.abs(hoursFromOrigin - tick.hoursFromOrigin);
+      for (const tick of leftTicks) {
+        const distance = Math.abs(hours - tick.hours);
       if (distance < minDistance) {
         minDistance = distance;
         closestTick = tick;
       }
     }
     
-    console.log(`=== 时间X坐标计算 ===`);
-    console.log(`目标时间: ${hours}小时后`);
-    console.log(`当前时间: ${now.toLocaleString()}`);
-    console.log(`原点时间: ${originTime.toLocaleString()}`);
-    console.log(`目标时间: ${targetTime.toLocaleString()}`);
-    console.log(`相对原点偏移: ${hoursFromOrigin.toFixed(1)}小时`);
-    console.log(`最近刻度: ${closestTick.label} (偏移: ${closestTick.hoursFromOrigin}h)`);
-    console.log(`X坐标: ${closestTick.x}`);
+      console.log(`=== 左侧时间X坐标计算（最近点）===`);
+      console.log(`目标时间: ${hours.toFixed(2)}小时`);
+      console.log(`最近刻度: ${closestTick.label} (${closestTick.hours}h)`);
+      console.log(`X坐标: ${closestTick.x}`);
+      console.log(`=====================`);
+      
+      return closestTick.x;
+    }
+    
+    // 计算线性插值
+    const totalTimeRange = endTick.hours - startTick.hours;
+    const currentTimeOffset = hours - startTick.hours;
+    const ratio = totalTimeRange > 0 ? currentTimeOffset / totalTimeRange : 0;
+    
+    // 计算X坐标插值
+    const startX = startTick.x;
+    const endX = endTick.x;
+    const interpolatedX = startX + (endX - startX) * ratio;
+    
+    console.log(`=== 左侧时间X坐标计算（插值模式）===`);
+    console.log(`目标时间: ${hours.toFixed(2)}小时`);
+    console.log(`区间: ${startTick.label} (${startTick.hours}h) - ${endTick.label} (${endTick.hours}h)`);
+    console.log(`插值比例: ${(ratio * 100).toFixed(1)}%`);
+    console.log(`X坐标插值: ${startX} + ${((endX - startX) * ratio).toFixed(1)} = ${interpolatedX.toFixed(1)}`);
     console.log(`=====================`);
     
-    return closestTick.x;
+    return interpolatedX;
+  }
+
+  /**
+   * 根据X坐标计算对应的时间（小时）
+   */
+  getTimeFromXCoordinate(x) {
+    const margin = 30;
+    const centerX = this.width / 2;
+    const xAxisWidth = this.width - 2 * margin;
+    const rightHalf = xAxisWidth / 2;
+    const leftHalf = xAxisWidth / 2;
+    
+    // 重新定义时间轴逻辑：
+    // 最右侧（Now）：当前时间（0小时）
+    // 中心点：24小时后
+    // 最左侧：远期时间（31天后）
+    
+    // 添加边界容差，避免在中心点附近跳变
+    const boundaryTolerance = 2; // 2px的容差
+    
+    // 判断是否在右侧（紧急区域）
+    if (x >= centerX - boundaryTolerance) {
+      // 右侧区域：使用线性插值进行分钟级精确计算
+      return this.getTimeFromRightSideCoordinate(x, centerX, rightHalf, margin);
+    } else {
+      // 左侧区域：使用原有的刻度点逻辑
+      return this.getTimeFromLeftSideCoordinate(x, centerX, leftHalf, margin);
+    }
+  }
+
+  /**
+   * 右侧区域（紧急区域）的精确时间计算
+   */
+  getTimeFromRightSideCoordinate(x, centerX, rightHalf, margin) {
+    // 定义右侧区域的刻度点
+    // 时间范围：0小时（Now）到24小时（中心点）
+    const rightTicks = [
+      { label: 'Now', hours: 0, x: this.width - margin },                    // 当前时间（最右侧）
+      { label: '30m', hours: 0.5, x: centerX + (0.8 * rightHalf) },         // 30分钟后
+      { label: '1h', hours: 1, x: centerX + (0.6 * rightHalf) },            // 1小时后
+      { label: '4h', hours: 4, x: centerX + (0.4 * rightHalf) },            // 4小时后
+      { label: '12h', hours: 12, x: centerX + (0.2 * rightHalf) },          // 12小时后
+      { label: '24h', hours: 24, x: centerX }                               // 24小时后（中心点）
+    ];
+    
+    // 找到X坐标所在的区间
+    let startTick = rightTicks[0];
+    let endTick = rightTicks[0];
+    let foundInterval = false;
+    
+    // 修复区间判断逻辑：X坐标从右到左递减，时间从右到左递增
+    for (let i = 0; i < rightTicks.length - 1; i++) {
+      // 检查X坐标是否在当前区间内
+      // 注意：X坐标从右到左递减，所以需要反向比较
+      if (x <= rightTicks[i].x && x >= rightTicks[i + 1].x) {
+        startTick = rightTicks[i];
+        endTick = rightTicks[i + 1];
+        foundInterval = true;
+        break;
+      }
+    }
+    
+    // 如果没找到区间，使用最近点
+    if (!foundInterval) {
+      let minDistance = Infinity;
+      let closestTick = rightTicks[0];
+      
+      for (const tick of rightTicks) {
+        const distance = Math.abs(x - tick.x);
+        if (distance < minDistance) {
+          minDistance = distance;
+          closestTick = tick;
+        }
+      }
+      
+      console.log(`=== 右侧X坐标时间计算（最近点）===`);
+      console.log(`X坐标: ${x}`);
+      console.log(`中心点: ${centerX}`);
+      console.log(`最近刻度: ${closestTick.label} (${closestTick.hours}h)`);
+      console.log(`=====================`);
+      
+      return closestTick.hours;
+    }
+    
+    // 计算线性插值
+    const totalDistance = startTick.x - endTick.x; // 注意：从右到左
+    const currentDistance = startTick.x - x; // 从右到左的距离
+    const ratio = totalDistance > 0 ? currentDistance / totalDistance : 0;
+    
+    // 计算时间插值（分钟级精度）
+    const startHours = startTick.hours;
+    const endHours = endTick.hours;
+    const interpolatedHours = startHours + (endHours - startHours) * ratio;
+    
+    console.log(`=== 右侧X坐标时间计算（精确模式）===`);
+    console.log(`X坐标: ${x}`);
+    console.log(`中心点: ${centerX}`);
+    console.log(`区间: ${startTick.label} (${startTick.x}) - ${endTick.label} (${endTick.x})`);
+    console.log(`插值比例: ${(ratio * 100).toFixed(1)}%`);
+    console.log(`时间插值: ${startHours}h + ${((endHours - startHours) * ratio).toFixed(2)}h = ${interpolatedHours.toFixed(2)}h`);
+    console.log(`=====================================`);
+    
+    return Math.max(0, interpolatedHours);
+  }
+
+  /**
+   * 左侧区域（非紧急区域）的时间计算
+   */
+  getTimeFromLeftSideCoordinate(x, centerX, leftHalf, margin) {
+    // 定义左侧区域的刻度点
+    // 时间范围：24小时（中心点）到31天（最左侧）
+    const leftTicks = [
+      { label: '24h', hours: 24, x: centerX },                         // 24小时后（中心点）
+      { label: '3d', hours: 72, x: centerX - (0.25 * leftHalf) },      // 3天后
+      { label: '7d', hours: 168, x: centerX - (0.5 * leftHalf) },      // 7天后
+      { label: '14d', hours: 336, x: centerX - (0.75 * leftHalf) },    // 14天后
+      { label: '31d', hours: 744, x: margin }                          // 31天后（最左侧）
+    ];
+    
+    // 找到最近的刻度点
+    let minDistance = Infinity;
+    let closestTick = leftTicks[0];
+    
+    for (const tick of leftTicks) {
+      const distance = Math.abs(x - tick.x);
+      if (distance < minDistance) {
+        minDistance = distance;
+        closestTick = tick;
+      }
+    }
+    
+    // 计算线性插值
+    let startTick = leftTicks[0];
+    let endTick = leftTicks[0];
+    
+    for (let i = 0; i < leftTicks.length - 1; i++) {
+      if (x >= leftTicks[i + 1].x && x <= leftTicks[i].x) {
+        startTick = leftTicks[i + 1];
+        endTick = leftTicks[i];
+        break;
+      }
+    }
+    
+    // 如果没找到区间，使用最近点
+    if (startTick === endTick) {
+      console.log(`=== 左侧X坐标时间计算（最近点）===`);
+      console.log(`X坐标: ${x}`);
+      console.log(`最近刻度: ${closestTick.label} (${closestTick.hours}h)`);
+    console.log(`=====================`);
+    
+      return closestTick.hours;
+    }
+    
+    // 计算线性插值
+    const totalDistance = endTick.x - startTick.x;
+    const currentDistance = x - startTick.x;
+    const ratio = totalDistance > 0 ? currentDistance / totalDistance : 0;
+    
+    // 计算时间插值
+    const startHours = startTick.hours;
+    const endHours = endTick.hours;
+    const interpolatedHours = startHours + (endHours - startHours) * ratio;
+    
+    console.log(`=== 左侧X坐标时间计算（插值模式）===`);
+    console.log(`X坐标: ${x}`);
+    console.log(`区间: ${startTick.label} (${startTick.x}) - ${endTick.label} (${endTick.x})`);
+    console.log(`插值比例: ${(ratio * 100).toFixed(1)}%`);
+    console.log(`时间插值: ${startHours}h + ${((endHours - startHours) * ratio).toFixed(2)}h = ${interpolatedHours.toFixed(2)}h`);
+    console.log(`=====================`);
+    
+    return interpolatedHours;
   }
 
   /**
@@ -583,16 +847,79 @@ export class MatrixRenderer {
    * 处理任务悬停
    */
   handleTaskHover(task, x, y) {
+    // 清除之前的防抖定时器
+    if (this.hoverDebounceTimer) {
+      clearTimeout(this.hoverDebounceTimer);
+      this.hoverDebounceTimer = null;
+    }
+    
+    // 防止重复处理同一个任务的悬停
+    if (this.currentHoveredTaskId === task.id) {
+      return;
+    }
+    
+    // 立即重置所有圆点的大小
+    this.resetAllCircleSizes();
+    
+    this.currentHoveredTaskId = task.id;
     this.svg.style('cursor', 'pointer');
-    this.showTaskTooltip(task, x, y);
+    
+    // 添加悬停效果：轻微放大圆点
+    const circle = this.svg.select(`circle[data-task-id="${task.id}"]`);
+    if (!circle.empty()) {
+      // 标记当前悬停的圆点
+      this.currentHoveredCircle = circle;
+      circle.transition()
+        .duration(200)
+        .attr('r', 8) // 悬停时稍微放大
+        .attr('stroke-width', 2);
+    }
+    
+    // 延迟显示tooltip，避免快速移动时的闪烁
+    this.hoverDebounceTimer = setTimeout(() => {
+      this.showTaskTooltip(task, x, y);
+    }, 200); // 200ms延迟
   }
+
+  /**
+   * 重置所有圆点的大小
+   */
+  resetAllCircleSizes() {
+      this.svg.selectAll('circle[data-task-id]').each((d, i, nodes) => {
+        const circle = d3.select(nodes[i]);
+        const currentRadius = parseFloat(circle.attr('r'));
+        if (currentRadius > 6) {
+          circle.transition()
+            .duration(200)
+            .attr('r', 6)
+            .attr('stroke-width', 1.5);
+        }
+      });
+    }
 
   /**
    * 处理任务离开
    */
   handleTaskLeave() {
-    this.svg.style('cursor', 'default');
-    this.hideTaskTooltip();
+    // 清除悬停定时器
+    if (this.hoverDebounceTimer) {
+      clearTimeout(this.hoverDebounceTimer);
+      this.hoverDebounceTimer = null;
+    }
+    
+    // 设置防抖延迟，避免快速移动时的闪动
+    this.hoverDebounceTimer = setTimeout(() => {
+      // 清除当前悬停的任务ID
+      this.currentHoveredTaskId = null;
+      this.svg.style('cursor', 'default');
+      this.hideTaskTooltip();
+      
+      // 重置所有圆点的大小
+      this.resetAllCircleSizes();
+      this.currentHoveredCircle = null;
+      
+      this.hoverDebounceTimer = null;
+    }, 100); // 减少延迟到100ms，提高响应性
   }
 
   /**
@@ -664,283 +991,4 @@ export class MatrixRenderer {
       const description = task.description.trim();
       let remainingText = description;
       
-      console.log('Original description:', `"${description}"`);
-      console.log('Description length:', description.length, 'characters');
-      
-      while (remainingText.length > 0 && descriptionLines.length < 3) {
-        let line = '';
-        
-        // 计算当前文本能容纳的最大字符数
-        const maxCharsForCurrentText = getMaxCharsForWidth(remainingText, availableWidth);
-        
-        if (remainingText.length <= maxCharsForCurrentText) {
-          line = remainingText;
-          remainingText = '';
-          console.log(`Line ${descriptionLines.length + 1} (fits): "${line}" (${line.length} chars, width: ${getTextWidth(line)}px)`);
-        } else {
-          // 尝试在空格处换行
-          let breakPoint = maxCharsForCurrentText;
-          while (breakPoint > 0 && remainingText[breakPoint] !== ' ') {
-            breakPoint--;
-          }
-          
-          if (breakPoint === 0) {
-            // 没有找到空格，强制截断
-            breakPoint = maxCharsForCurrentText;
-            console.log(`No space found, forcing break at ${breakPoint}`);
-          } else {
-            console.log(`Found space at position ${breakPoint}`);
-          }
-          
-          line = remainingText.substring(0, breakPoint).trim();
-          remainingText = remainingText.substring(breakPoint).trim();
-          console.log(`Line ${descriptionLines.length + 1} (split): "${line}" (${line.length} chars, width: ${getTextWidth(line)}px)`);
-          console.log(`Remaining text: "${remainingText}" (${remainingText.length} chars)`);
-        }
-        
-        descriptionLines.push(line);
-      }
-      
-      // 如果还有剩余文本且已经达到3行，添加省略号
-      if (remainingText.length > 0 && descriptionLines.length >= 3) {
-        const lastLine = descriptionLines[descriptionLines.length - 1];
-        // 计算为省略号留出空间后的最大字符数
-        const maxCharsForEllipsis = getMaxCharsForWidth(lastLine + '...', availableWidth) - 3;
-        console.log(`Adding ellipsis. Last line: "${lastLine}" (${lastLine.length} chars, width: ${getTextWidth(lastLine)}px)`);
-        console.log(`maxChars for ellipsis: ${maxCharsForEllipsis} chars`);
-        
-        if (lastLine.length > maxCharsForEllipsis) {
-          const truncatedLine = lastLine.substring(0, maxCharsForEllipsis) + '...';
-          descriptionLines[descriptionLines.length - 1] = truncatedLine;
-          console.log(`Truncated to: "${truncatedLine}" (${truncatedLine.length} chars, width: ${getTextWidth(truncatedLine)}px)`);
-        }
-      }
-      
-      console.log('Final description lines:', descriptionLines);
-      console.log('Total lines:', descriptionLines.length);
-    } else {
-      console.log('No description to process');
-    }
-    console.log('=== End Description Calculation ===');
-    
-    // 计算最佳位置，避免越界
-    let tooltipX = x + margin;
-    let tooltipY = y - margin;
-    
-    // 检查右边界
-    if (tooltipX + tooltipWidth > this.width) {
-      tooltipX = x - tooltipWidth - margin;
-    }
-    
-    // 检查左边界
-    if (tooltipX < 0) {
-      tooltipX = margin;
-    }
-    
-    // 检查下边界
-    if (tooltipY + tooltipHeight > this.height) {
-      tooltipY = y - tooltipHeight - margin;
-    }
-    
-    // 检查上边界
-    if (tooltipY < 0) {
-      tooltipY = margin;
-    }
-    
-    const tooltip = this.svg.append('g')
-      .attr('class', 'task-tooltip')
-      .attr('transform', `translate(${tooltipX}, ${tooltipY})`);
-    
-    // 创建背景矩形
-    tooltip.append('rect')
-      .attr('width', tooltipWidth)
-      .attr('height', tooltipHeight)
-      .attr('rx', 8)
-      .attr('ry', 8)
-      .attr('fill', 'rgba(17, 24, 39, 0.95)')
-      .attr('stroke', 'rgba(255, 255, 255, 0.2)')
-      .attr('stroke-width', 1)
-      .style('filter', 'drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3))');
-    
-    // 任务标题
-    tooltip.append('text')
-      .attr('x', padding)
-      .attr('y', 20)
-      .attr('font-family', '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif')
-      .attr('font-size', '13px')
-      .attr('font-weight', '600')
-      .attr('fill', '#ffffff')
-      .text(this.truncateText(task.title, 35));
-    
-    // 任务描述（支持换行）
-    if (descriptionLines.length > 0) {
-      const lineHeight = 16;
-      descriptionLines.forEach((line, index) => {
-        tooltip.append('text')
-          .attr('x', padding)
-          .attr('y', 42 + index * lineHeight)
-          .attr('font-family', '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif')
-          .attr('font-size', '11px')
-          .attr('fill', '#d1d5db')
-          .text(line);
-      });
-    }
-    
-    // 截止时间
-    const dueDate = new Date(task.dueDate);
-    const now = new Date();
-    const timeDiff = dueDate.getTime() - now.getTime();
-    const hours = timeDiff / (1000 * 60 * 60);
-    
-    let timeText = '';
-    if (hours < 0) {
-      // 超期：根据超期时间长度显示不同格式
-      const overdueHours = Math.abs(hours);
-      if (overdueHours < 1) {
-        // 超期不到1小时：显示分钟
-        const minutes = Math.ceil(overdueHours * 60);
-        timeText = `Overdue ${minutes}m`;
-      } else if (overdueHours < 24) {
-        // 超期1-24小时：显示小时和分钟
-        const wholeHours = Math.floor(overdueHours);
-        const minutes = Math.ceil((overdueHours - wholeHours) * 60);
-        if (minutes === 60) {
-          timeText = `Overdue ${wholeHours + 1}h`;
-        } else {
-          timeText = `Overdue ${wholeHours}h ${minutes}m`;
-        }
-      } else {
-        // 超期超过1天：显示天数
-        const overdueDays = Math.ceil(overdueHours / 24);
-        timeText = `Overdue ${overdueDays}d`;
-      }
-    } else if (hours < 1) {
-      // 不到1小时：显示分钟
-      const minutes = Math.ceil(hours * 60);
-      timeText = `Due in ${minutes}m`;
-    } else if (hours < 24) {
-      // 1-24小时：显示小时和分钟
-      const wholeHours = Math.floor(hours);
-      const minutes = Math.ceil((hours - wholeHours) * 60);
-      if (minutes === 60) {
-        timeText = `Due in ${wholeHours + 1}h`;
-      } else {
-        timeText = `Due in ${wholeHours}h ${minutes}m`;
-      }
-    } else {
-      // 超过1天：显示具体日期
-      timeText = `Due ${dueDate.toLocaleDateString()}`;
-    }
-    
-    tooltip.append('text')
-      .attr('x', 12)
-      .attr('y', tooltipHeight - 12)
-      .attr('font-family', '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif')
-      .attr('font-size', '11px')
-      .attr('fill', hours < 0 ? '#ef4444' : '#10b981')
-      .text(timeText);
-  }
-
-  /**
-   * 隐藏任务提示框
-   */
-  hideTaskTooltip() {
-    this.svg.selectAll('.task-tooltip').remove();
-  }
-
-  /**
-   * 获取指定位置的任务
-   */
-  getTaskAtPosition(x, y) {
-    if (!this.taskInfo) return null;
-    
-    return this.taskInfo.find(task => {
-      const bounds = task.bounds;
-      const distance = Math.sqrt((x - bounds.x) ** 2 + (y - bounds.y) ** 2);
-      return distance <= bounds.radius;
-    });
-  }
-
-  /**
-   * 处理背景双击
-   */
-  handleBackgroundDoubleClick(event) {
-    const rect = this.svg.node().getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
-    
-    // 检查是否点击在任务上
-    const task = this.getTaskAtPosition(x, y);
-    if (task) {
-      // 如果点击在任务上，不创建新任务
-      return;
-    }
-    
-    // 计算坐标对应的象限和位置
-    const quadrantKey = this.getQuadrantFromCoordinates(x, y);
-    const coordinates = { x, y };
-    
-    if (this.onBackgroundDoubleClick) {
-      this.onBackgroundDoubleClick(coordinates, quadrantKey);
-    }
-  }
-
-  /**
-   * 根据坐标获取象限
-   */
-  getQuadrantFromCoordinates(x, y) {
-    const centerX = this.width / 2;
-    const centerY = this.height / 2;
-    
-    const isImportant = y < centerY; // 上半部分为重要
-    const isUrgent = x > centerX;    // 右半部分为紧急
-    
-    if (isImportant && isUrgent) {
-      return 'q1'; // 重要且紧急
-    } else if (isImportant && !isUrgent) {
-      return 'q2'; // 重要不紧急
-    } else if (!isImportant && isUrgent) {
-      return 'q3'; // 紧急不重要
-    } else {
-      return 'q4'; // 不重要不紧急
-    }
-  }
-
-  /**
-   * 设置任务双击回调
-   */
-  onTaskDoubleClick(callback) {
-    this.onTaskDoubleClick = callback;
-  }
-
-  /**
-   * 设置背景双击回调
-   */
-  onBackgroundDoubleClick(callback) {
-    this.onBackgroundDoubleClick = callback;
-  }
-
-  /**
-   * 更新矩阵数据并重新渲染
-   */
-  async updateMatrix(matrix) {
-    this.currentMatrix = matrix;
-    this.taskInfo = []; // 清空任务信息
-    await this.render(matrix);
-  }
-
-  /**
-   * 调整画布大小
-   */
-  resize() {
-    this.width = this.container.clientWidth || 480;
-    this.height = this.container.clientHeight || 380;
-    
-    // 重新初始化SVG
-    this.initSVG();
-    
-    if (this.currentMatrix) {
-      this.render(this.currentMatrix);
-    }
-  }
-} 
+      console.log('Original description:', `

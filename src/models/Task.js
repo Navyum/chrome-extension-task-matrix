@@ -2,15 +2,16 @@
  * 任务数据模型
  */
 export class Task {
-  constructor(id, title, description, importance, dueDate, category, status = 'pending', coordinates = null) {
+  constructor(id, title, description, importance, dueDate, category, status = 'doing', coordinates = null) {
     this.id = id;
     this.title = title;
-    this.description = description || '';
-    this.importance = importance; // 0-5级
+    this.description = description;
+    this.importance = importance;
     this.dueDate = dueDate;
-    this.category = category || 'default';
-    this.status = status; // pending, completed, cancelled
-    this.coordinates = coordinates; // 任务在矩阵中的坐标位置
+    this.category = category;
+    this.color = this.getDefaultColor();
+    this.status = status; // doing, completed, rejected
+    this.coordinates = coordinates;
     this.createdAt = new Date();
     this.updatedAt = new Date();
     this.completedAt = null;
@@ -35,10 +36,27 @@ export class Task {
   }
 
   /**
+   * 获取默认颜色
+   */
+  getDefaultColor() {
+    // 根据重要性返回默认颜色
+    if (this.importance >= 8) {
+      return '#EF4444'; // 红色 - 非常重要
+    } else if (this.importance >= 6) {
+      return '#F59E0B'; // 橙色 - 重要
+    } else if (this.importance >= 4) {
+      return '#3B82F6'; // 蓝色 - 中等
+    } else {
+      return '#9CA3AF'; // 灰色 - 不重要
+    }
+  }
+
+  /**
    * 判断任务是否紧急
    */
   async isUrgent() {
-    if (this.status === 'completed') return false;
+    // 如果任务已经完成或拒绝，不算紧急
+    if (this.status === 'completed' || this.status === 'rejected') return false;
     
     const remaining = this.getTimeRemaining();
     const hours = remaining / (1000 * 60 * 60);
@@ -71,6 +89,14 @@ export class Task {
   }
 
   /**
+   * 标记为拒绝
+   */
+  markAsRejected() {
+    this.status = 'rejected';
+    this.updatedAt = new Date();
+  }
+
+  /**
    * 标记为取消
    */
   markAsCancelled() {
@@ -90,7 +116,8 @@ export class Task {
    * 检查是否超期
    */
   isOverdue() {
-    if (this.status === 'completed') return false;
+    // 如果任务已经完成或拒绝，不算超期
+    if (this.status === 'completed' || this.status === 'rejected') return false;
     return new Date(this.dueDate) < new Date();
   }
 
@@ -191,11 +218,14 @@ export class Task {
       obj.importance,
       obj.dueDate,
       obj.category,
-      obj.color,
       obj.status,
       obj.coordinates
     );
     
+    // 设置颜色
+    task.color = obj.color;
+    
+    // 设置时间
     task.createdAt = new Date(obj.createdAt);
     task.updatedAt = new Date(obj.updatedAt);
     task.completedAt = obj.completedAt ? new Date(obj.completedAt) : null;

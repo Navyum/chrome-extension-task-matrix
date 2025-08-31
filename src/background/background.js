@@ -16,10 +16,19 @@ class BackgroundService {
   }
 
   /**
-   * 初始化后台服务
+   * 初始化
    */
   async init() {
     try {
+      // 数据迁移：将pending状态转换为doing状态
+      await this.taskManager.migratePendingToDoing();
+      
+      // 初始化任务管理器
+      await this.taskManager.init();
+      
+      // 初始化矩阵管理器
+      await this.matrixManager.init();
+      
       // 设置图标徽章
       this.setupBadge();
       
@@ -32,9 +41,9 @@ class BackgroundService {
       // 初始化通知权限
       await this.requestNotificationPermission();
       
-      console.log('后台服务初始化完成');
+      console.log('Background script initialized successfully');
     } catch (error) {
-      console.error('后台服务初始化失败:', error);
+      console.error('Background script initialization failed:', error);
     }
   }
 
@@ -44,33 +53,90 @@ class BackgroundService {
   setupBadge() {
     this.updateBadge();
     
-    // 每5分钟更新一次徽章
+    // 每分钟更新一次徽章（用于倒计时）
     setInterval(() => {
       this.updateBadge();
-    }, 5 * 60 * 1000);
+    }, 60 * 1000); // 每分钟更新一次
+    
+    // 当有紧急任务时，每30秒更新一次
+    setInterval(async () => {
+      try {
+        const tasks = await this.taskManager.getTasks();
+        const doingTasks = tasks.filter(task => task.status === 'doing');
+        
+        // 检查是否有紧急任务（剩余时间少于15分钟）
+        const hasUrgentTask = doingTasks.some(task => {
+          const timeLeft = task.getTimeRemaining();
+          const minutesLeft = timeLeft / (1000 * 60);
+          return minutesLeft > 0 && minutesLeft <= 15;
+        });
+        
+        if (hasUrgentTask) {
+          this.updateBadge();
+        }
+      } catch (error) {
+        console.error('检查紧急任务失败:', error);
+      }
+    }, 30 * 1000); // 每30秒检查一次
   }
 
   /**
-   * 更新图标徽章
+   * 更新扩展图标徽章
    */
   async updateBadge() {
     try {
-      const stats = await this.taskManager.getTaskStats();
-      const pendingCount = stats.pending;
-      const overdueCount = stats.overdue;
+      const tasks = await this.taskManager.getTasks();
+      const doingTasks = tasks.filter(task => task.status === 'doing');
       
-      // 设置徽章文本
-      if (pendingCount > 0) {
-        chrome.action.setBadgeText({ text: pendingCount.toString() });
+      // 查找最近到期的任务（剩余时间少于30分钟）
+      let urgentTask = null;
+      let minTimeLeft = Infinity;
+      
+      for (const task of doingTasks) {
+        const timeLeft = task.getTimeRemaining();
+        const minutesLeft = timeLeft / (1000 * 60);
         
-        // 根据超期任务数量设置徽章颜色
-        if (overdueCount > 0) {
-          chrome.action.setBadgeBackgroundColor({ color: '#EF4444' }); // 红色
-        } else {
-          chrome.action.setBadgeBackgroundColor({ color: '#3B82F6' }); // 蓝色
+        // 如果任务剩余时间少于30分钟且大于0（未超期）
+        if (minutesLeft > 0 && minutesLeft <= 30 && minutesLeft < minTimeLeft) {
+          urgentTask = task;
+          minTimeLeft = minutesLeft;
         }
+      }
+      
+      if (urgentTask) {
+        // 根据剩余时间显示不同的倒计时格式
+        let badgeText;
+        let badgeColor;
+        
+        if (minTimeLeft <= 5) {
+          // 少于5分钟：显示精确到分钟的倒计时
+          const minutesLeft = Math.ceil(minTimeLeft);
+          badgeText = `${minutesLeft}m`;
+          badgeColor = '#DC2626'; // 深红色表示非常紧急
+        } else if (minTimeLeft <= 15) {
+          // 5-15分钟：显示分钟倒计时
+          const minutesLeft = Math.ceil(minTimeLeft);
+          badgeText = `${minutesLeft}m`;
+          badgeColor = '#EF4444'; // 红色表示紧急
+        } else {
+          // 15-30分钟：显示分钟倒计时
+          const minutesLeft = Math.ceil(minTimeLeft);
+          badgeText = `${minutesLeft}m`;
+          badgeColor = '#F59E0B'; // 橙色表示警告
+        }
+        
+        chrome.action.setBadgeText({ text: badgeText });
+        chrome.action.setBadgeBackgroundColor({ color: badgeColor });
+        console.log(`显示倒计时: ${urgentTask.title} - ${badgeText}`);
       } else {
-        chrome.action.setBadgeText({ text: '' });
+        // 显示进行中的任务数量
+        const doingCount = doingTasks.length;
+        if (doingCount > 0) {
+          chrome.action.setBadgeText({ text: doingCount.toString() });
+          chrome.action.setBadgeBackgroundColor({ color: '#3B82F6' }); // 蓝色表示正常
+        } else {
+          chrome.action.setBadgeText({ text: '' });
+        }
       }
     } catch (error) {
       console.error('更新徽章失败:', error);
@@ -90,10 +156,10 @@ class BackgroundService {
       periodInMinutes: 24 * 60 // 每24小时重复
     });
     
-    // 设置任务检查
+    // 设置任务检查（更频繁，用于倒计时）
     chrome.alarms.create('taskCheck', {
-      delayInMinutes: 5, // 5分钟后开始
-      periodInMinutes: 30 // 每30分钟检查一次
+      delayInMinutes: 1, // 1分钟后开始
+      periodInMinutes: 1 // 每1分钟检查一次
     });
   }
 
@@ -145,6 +211,29 @@ class BackgroundService {
   }
 
   /**
+   * 检查即将到期的任务并发送通知
+   */
+  async checkUrgentTasks() {
+    try {
+      const tasks = await this.taskManager.getTasks();
+      const doingTasks = tasks.filter(task => task.status === 'doing');
+      
+      for (const task of doingTasks) {
+        const timeLeft = task.getTimeRemaining();
+        const minutesLeft = timeLeft / (1000 * 60);
+        
+        // 如果任务剩余时间少于5分钟且大于0（未超期）
+        if (minutesLeft > 0 && minutesLeft <= 5) {
+          const message = `任务"${task.title}"即将到期，剩余${Math.ceil(minutesLeft)}分钟！`;
+          await this.showNotification('任务即将到期', message);
+        }
+      }
+    } catch (error) {
+      console.error('检查即将到期任务失败:', error);
+    }
+  }
+
+  /**
    * 处理定时任务
    */
   async handleAlarm(alarm) {
@@ -155,6 +244,9 @@ class BackgroundService {
           break;
         case 'taskCheck':
           await this.checkOverdueTasks();
+          await this.checkUrgentTasks(); // 检查即将到期的任务
+          // 同时更新徽章（用于倒计时）
+          await this.updateBadge();
           break;
         default:
           console.log('未知的定时任务:', alarm.name);
@@ -165,18 +257,19 @@ class BackgroundService {
   }
 
   /**
-   * 发送每日提醒
+   * 发送每日任务提醒
    */
   async sendDailyReminder() {
     try {
       const stats = await this.taskManager.getTaskStats();
-      const matrixStats = this.matrixManager.getMatrixStats();
+      const message = `今日任务提醒：\n总任务：${stats.total}个\n进行中：${stats.doing}个\n已完成：${stats.completed}个\n完成率：${stats.completionRate}%`;
       
-      if (stats.total > 0) {
-        const message = `今日任务提醒：\n总任务：${stats.total}个\n待完成：${stats.pending}个\n已完成：${stats.completed}个\n完成率：${stats.completionRate}%`;
-        
-        await this.showNotification('TaskMatrix Pro 每日提醒', message);
-      }
+      chrome.notifications.create({
+        type: 'basic',
+        iconUrl: 'assets/icons/icon48.png',
+        title: 'TaskMatrix Pro - 每日提醒',
+        message: message
+      });
     } catch (error) {
       console.error('发送每日提醒失败:', error);
     }
@@ -214,20 +307,27 @@ class BackgroundService {
   /**
    * 处理任务事件
    */
-  handleTaskEvent(eventName, data) {
-    switch (eventName) {
-      case 'taskAdded':
-        this.handleTaskAdded(data);
-        break;
-      case 'taskCompleted':
-        this.handleTaskCompleted(data);
-        break;
-      case 'taskUpdated':
-        this.handleTaskUpdated(data);
-        break;
-      case 'taskDeleted':
-        this.handleTaskDeleted(data);
-        break;
+  async handleTaskEvent(eventName, data) {
+    try {
+      switch (eventName) {
+        case 'taskAdded':
+          await this.handleTaskAdded(data);
+          break;
+        case 'taskCompleted':
+          await this.handleTaskCompleted(data);
+          break;
+        case 'taskUpdated':
+          await this.handleTaskUpdated(data);
+          break;
+        case 'taskDeleted':
+          await this.handleTaskDeleted(data);
+          break;
+      }
+      
+      // 所有任务事件后都更新徽章
+      await this.updateBadge();
+    } catch (error) {
+      console.error('处理任务事件失败:', error);
     }
   }
 
@@ -260,7 +360,7 @@ class BackgroundService {
   /**
    * 处理任务更新
    */
-  handleTaskUpdated(task) {
+  async handleTaskUpdated(task) {
     // 可以在这里添加任务更新后的逻辑
     console.log('任务已更新:', task.title);
   }
@@ -268,7 +368,7 @@ class BackgroundService {
   /**
    * 处理任务删除
    */
-  handleTaskDeleted(data) {
+  async handleTaskDeleted(data) {
     console.log('任务已删除:', data.taskId);
   }
 
