@@ -24,6 +24,8 @@ export class TaskManager {
         'doing', // 默认状态改为doing
         taskData.coordinates
       );
+      
+      await task.updateColor(); // 异步更新颜色
 
       const success = await this.storage.saveTask(task);
       if (success) {
@@ -34,57 +36,6 @@ export class TaskManager {
     } catch (error) {
       console.error('添加任务失败:', error);
       return null;
-    }
-  }
-
-  /**
-   * 数据迁移：将pending状态转换为doing状态
-   */
-  async migratePendingToDoing() {
-    try {
-      const tasks = await this.storage.getTasks();
-      console.log('=== 数据迁移开始 ===');
-      console.log('总任务数:', tasks.length);
-      console.log('任务状态分布:', {
-        pending: tasks.filter(t => t.status === 'pending').length,
-        doing: tasks.filter(t => t.status === 'doing').length,
-        completed: tasks.filter(t => t.status === 'completed').length,
-        rejected: tasks.filter(t => t.status === 'rejected').length,
-        cancelled: tasks.filter(t => t.status === 'cancelled').length
-      });
-      
-      let hasChanges = false;
-      
-      for (const task of tasks) {
-        if (task.status === 'pending') {
-          console.log(`迁移任务状态: ${task.title} (${task.id}) - pending -> doing`);
-          task.status = 'doing';
-          task.updatedAt = new Date();
-          hasChanges = true;
-        }
-      }
-      
-      if (hasChanges) {
-        const taskObjects = tasks.map(task => task.toObject());
-        await this.storage.storage.set({ tasks: taskObjects });
-        console.log('数据迁移完成：pending -> doing');
-        console.log('迁移后状态分布:', {
-          pending: tasks.filter(t => t.status === 'pending').length,
-          doing: tasks.filter(t => t.status === 'doing').length,
-          completed: tasks.filter(t => t.status === 'completed').length,
-          rejected: tasks.filter(t => t.status === 'rejected').length,
-          cancelled: tasks.filter(t => t.status === 'cancelled').length
-        });
-        this.emitEvent('tasksMigrated', { count: tasks.filter(t => t.status === 'doing').length });
-      } else {
-        console.log('无需迁移：没有pending状态的任务');
-      }
-      
-      console.log('=== 数据迁移结束 ===');
-      return hasChanges;
-    } catch (error) {
-      console.error('数据迁移失败:', error);
-      return false;
     }
   }
 
@@ -122,6 +73,7 @@ export class TaskManager {
       const success = await this.storage.updateTask(taskId, updates);
       if (success) {
         const updatedTask = await this.getTaskById(taskId);
+        await updatedTask.updateColor(); // 异步更新颜色
         this.emitEvent('taskUpdated', updatedTask);
         return updatedTask;
       }
@@ -159,7 +111,7 @@ export class TaskManager {
 
       const success = await this.storage.updateTask(taskId, {
         status: 'completed',
-        completedAt: new Date()
+        completedAt: Date.now() // 存储时间戳
       });
 
       if (success) {

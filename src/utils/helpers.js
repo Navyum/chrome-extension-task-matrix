@@ -38,31 +38,65 @@ export function throttle(func, limit) {
 /**
  * 格式化日期
  */
-export function formatDate(date, format = 'YYYY-MM-DD') {
-  const d = new Date(date);
+export function formatDate(date) {
+  const d = new Date(date); // date可以是时间戳，所以这里是正确的
   const year = d.getFullYear();
   const month = String(d.getMonth() + 1).padStart(2, '0');
   const day = String(d.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+/**
+ * 格式化时间
+ */
+export function formatTime(date) {
+  const d = new Date(date); // date可以是时间戳，所以这里是正确的
   const hours = String(d.getHours()).padStart(2, '0');
   const minutes = String(d.getMinutes()).padStart(2, '0');
-  const seconds = String(d.getSeconds()).padStart(2, '0');
+  return `${hours}:${minutes}`;
+}
 
-  return format
-    .replace('YYYY', year)
-    .replace('MM', month)
-    .replace('DD', day)
-    .replace('HH', hours)
-    .replace('mm', minutes)
-    .replace('ss', seconds);
+/**
+ * 计算两个日期之间的小时差
+ */
+export function getHoursDifference(date1, date2) {
+  const d1 = new Date(date1);
+  const d2 = new Date(date2);
+  const diff = Math.abs(d1.getTime() - d2.getTime());
+  return diff / (1000 * 60 * 60);
+}
+
+/**
+ * 获取今天和明天的日期字符串
+ */
+export function getTodayAndTomorrowDates() {
+  const today = Date.now();
+  const tomorrow = today + (24 * 60 * 60 * 1000); // 直接使用时间戳计算
+
+  return {
+    today: formatDate(today),
+    tomorrow: formatDate(tomorrow)
+  };
+}
+
+/**
+ * 检查两个日期是否是同一天
+ */
+export function isSameDay(date1, date2) {
+  const d1 = new Date(date1);
+  const d2 = new Date(date2);
+  return d1.getFullYear() === d2.getFullYear() &&
+         d1.getMonth() === d2.getMonth() &&
+         d1.getDate() === d2.getDate();
 }
 
 /**
  * 格式化相对时间
  */
 export function formatRelativeTime(date) {
-  const now = new Date();
-  const target = new Date(date);
-  const diffMs = now - target;
+  const now = Date.now(); // 直接使用时间戳
+  const target = new Date(date); // date可以是时间戳
+  const diffMs = now - target.getTime(); // 直接使用时间戳进行计算
   const diffSeconds = Math.floor(diffMs / 1000);
   const diffMinutes = Math.floor(diffSeconds / 60);
   const diffHours = Math.floor(diffMinutes / 60);
@@ -86,22 +120,22 @@ export function daysBetween(date1, date2) {
   const oneDay = 24 * 60 * 60 * 1000;
   const first = new Date(date1);
   const second = new Date(date2);
-  return Math.round(Math.abs((first - second) / oneDay));
+  return Math.round(Math.abs((first.getTime() - second.getTime()) / oneDay)); // 直接使用时间戳进行计算
 }
 
 /**
  * 获取日期范围
  */
 export function getDateRange(type) {
-  const now = new Date();
-  const start = new Date();
+  const now = Date.now(); // 直接使用时间戳
+  const start = new Date(now); // 从当前时间戳创建Date对象进行操作
   
   switch (type) {
     case 'today':
       start.setHours(0, 0, 0, 0);
       break;
     case 'week':
-      start.setDate(now.getDate() - now.getDay());
+      start.setDate(new Date(now).getDate() - new Date(now).getDay()); // 使用新的now
       start.setHours(0, 0, 0, 0);
       break;
     case 'month':
@@ -113,11 +147,11 @@ export function getDateRange(type) {
       start.setHours(0, 0, 0, 0);
       break;
     default:
-      start.setDate(now.getDate() - 7);
+      start.setDate(new Date(now).getDate() - 7); // 使用新的now
       start.setHours(0, 0, 0, 0);
   }
   
-  return { start, end: now };
+  return { start: start.getTime(), end: now }; // 返回时间戳
 }
 
 /**
@@ -158,19 +192,21 @@ export function deepClone(obj) {
     return new Date(obj.getTime());
   }
   
-  if (obj instanceof Array) {
-    return obj.map(item => deepClone(item));
+  if (Array.isArray(obj)) {
+    const copy = [];
+    for (const item of obj) {
+      copy.push(deepClone(item));
+    }
+    return copy;
   }
   
-  if (typeof obj === 'object') {
-    const cloned = {};
-    for (const key in obj) {
-      if (obj.hasOwnProperty(key)) {
-        cloned[key] = deepClone(obj[key]);
-      }
+  const copy = {};
+  for (const key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      copy[key] = deepClone(obj[key]);
     }
-    return cloned;
   }
+  return copy;
 }
 
 /**

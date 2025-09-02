@@ -9,11 +9,10 @@ export class Task {
     this.importance = importance;
     this.dueDate = dueDate;
     this.category = category;
-    this.color = this.getDefaultColor();
     this.status = status; // doing, completed, rejected
     this.coordinates = coordinates;
-    this.createdAt = new Date();
-    this.updatedAt = new Date();
+    this.createdAt = Date.now(); // 存储时间戳
+    this.updatedAt = Date.now(); // 存储时间戳
     this.completedAt = null;
   }
 
@@ -21,7 +20,7 @@ export class Task {
    * 根据重要性和紧急程度获取颜色
    */
   async getColor() {
-    const isImportant = this.importance >= 5; // 重要性5级以上为重要
+    const isImportant = this.importance >= (1+10)/2; // 重要性5级以上为重要
     const isUrgent = await this.isUrgent(); // 根据剩余时间判断紧急程度
     
     if (isImportant && isUrgent) {
@@ -84,8 +83,8 @@ export class Task {
    */
   markAsCompleted() {
     this.status = 'completed';
-    this.completedAt = new Date();
-    this.updatedAt = new Date();
+    this.completedAt = Date.now(); // 存储时间戳
+    this.updatedAt = Date.now(); // 存储时间戳
   }
 
   /**
@@ -93,7 +92,7 @@ export class Task {
    */
   markAsRejected() {
     this.status = 'rejected';
-    this.updatedAt = new Date();
+    this.updatedAt = Date.now(); // 存储时间戳
   }
 
   /**
@@ -101,7 +100,7 @@ export class Task {
    */
   markAsCancelled() {
     this.status = 'cancelled';
-    this.updatedAt = new Date();
+    this.updatedAt = Date.now(); // 存储时间戳
   }
 
   /**
@@ -109,7 +108,14 @@ export class Task {
    */
   update(updates) {
     Object.assign(this, updates);
-    this.updatedAt = new Date();
+    this.updatedAt = Date.now(); // 存储时间戳
+  }
+
+  /**
+   * 更新任务的颜色，主要用于异步计算颜色后设置
+   */
+  async updateColor() {
+    this.color = await this.getColor();
   }
 
   /**
@@ -118,16 +124,14 @@ export class Task {
   isOverdue() {
     // 如果任务已经完成或拒绝，不算超期
     if (this.status === 'completed' || this.status === 'rejected') return false;
-    return new Date(this.dueDate) < new Date();
+    return this.dueDate < Date.now(); // 直接比较时间戳
   }
 
   /**
    * 获取剩余时间（毫秒）
    */
   getTimeRemaining() {
-    const now = new Date();
-    const due = new Date(this.dueDate);
-    return due - now;
+    return this.dueDate - Date.now(); // 直接比较时间戳
   }
 
   /**
@@ -142,48 +146,60 @@ export class Task {
    * 获取剩余时间描述
    */
   getTimeRemainingText() {
-    const remaining = this.getTimeRemaining();
+    // 确保dueDate是有效的时间戳
+    if (typeof this.dueDate !== 'number' || isNaN(this.dueDate)) {
+      console.warn('Invalid or missing dueDate timestamp for task:', this.id, this.title);
+      // === 新增调试日志 ===
+      console.error('DEBUG: Invalid dueDate detected!', {
+        taskId: this.id,
+        taskTitle: this.title,
+        dueDateValue: this.dueDate,
+        dueDateType: typeof this.dueDate,
+        isNaNResult: isNaN(this.dueDate)
+      });
+      // ====================
+      return 'Invalid due date';
+    }
     
+    const remaining = this.getTimeRemaining(); // 毫秒
+    
+    // 处理超期任务
     if (remaining < 0) {
-      // 超期：根据超期时间长度显示不同格式
       const overdueMs = Math.abs(remaining);
-      const overdueHours = overdueMs / (1000 * 60 * 60);
-      const overdueMinutes = overdueMs / (1000 * 60);
+      const overdueMinutes = Math.floor(overdueMs / (1000 * 60));
+      const overdueHours = Math.floor(overdueMinutes / 60);
+      const overdueDays = Math.floor(overdueHours / 24);
       
-      if (overdueHours < 1) {
-        // 超期不到1小时：显示分钟
-        const minutes = Math.ceil(overdueMinutes);
-        return `Overdue ${minutes}m`;
-      } else if (overdueHours < 24) {
-        // 超期1-24小时：显示小时和分钟
-        const wholeHours = Math.floor(overdueHours);
-        const minutes = Math.ceil((overdueHours - wholeHours) * 60);
-        if (minutes === 60) {
-          return `Overdue ${wholeHours + 1}h`;
-        } else {
-          return `Overdue ${wholeHours}h ${minutes}m`;
-        }
+      if (overdueDays >= 1) {
+        // 超期大于1天，显示具体超期日期
+        const overdueDate = new Date(this.dueDate);
+        return `Overdue ${overdueDate.toLocaleDateString()}`;
+      } else if (overdueHours >= 1) {
+        // 超期1小时到1天，显示小时和分钟
+        const minutes = overdueMinutes % 60;
+        return `Overdue ${overdueHours}h ${minutes}m`;
       } else {
-        // 超期超过1天：显示天数
-        const days = Math.ceil(overdueHours / 24);
-        return `Overdue ${days} day${days > 1 ? 's' : ''}`;
+        // 超期不到1小时，显示分钟
+        return `Overdue ${overdueMinutes}m`;
       }
     }
+    
+    // 处理未超期任务
+    const totalMinutes = Math.floor(remaining / (1000 * 60));
+    const days = Math.floor(totalMinutes / (24 * 60));
+    const hours = Math.floor((totalMinutes % (24 * 60)) / 60);
+    const minutes = totalMinutes % 60;
 
-    const days = Math.floor(remaining / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
-
-    if (days > 0) {
-      // 超过1天：显示具体日期
+    if (days >= 1) {
+      // 剩余大于1天，显示具体到期日期
       const dueDate = new Date(this.dueDate);
-      return `Due ${dueDate.toLocaleDateString()}`;
-    } else if (hours > 0) {
-      // 1-24小时：显示小时和分钟
-      return `${hours}h ${minutes}m left`;
+      return `Due at ${dueDate.toLocaleDateString()}`;
+    } else if (hours >= 1) {
+      // 剩余1小时到1天，显示小时和分钟
+      return `Due in ${hours}h ${minutes}m`;
     } else {
-      // 不到1小时：只显示分钟
-      return `${minutes}m left`;
+      // 剩余不到1小时，显示分钟
+      return `Due in ${minutes}m`;
     }
   }
 
@@ -226,9 +242,9 @@ export class Task {
     task.color = obj.color;
     
     // 设置时间
-    task.createdAt = new Date(obj.createdAt);
-    task.updatedAt = new Date(obj.updatedAt);
-    task.completedAt = obj.completedAt ? new Date(obj.completedAt) : null;
+    task.createdAt = obj.createdAt; // obj.createdAt 应为时间戳
+    task.updatedAt = obj.updatedAt; // obj.updatedAt 应为时间戳
+    task.completedAt = obj.completedAt || null; // obj.completedAt 应为时间戳或null
     
     return task;
   }

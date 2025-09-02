@@ -44,10 +44,11 @@ export class MatrixManager {
       this.matrix = new Matrix();
       
       // 将任务添加到矩阵中
-      tasks.forEach(task => {
+      for (const task of tasks) { // 使用for...of循环支持await
         console.log(`添加任务到矩阵: ${task.title} (${task.status})`);
+        await task.updateColor(); // 异步更新颜色
         this.matrix.addTask(task);
-      });
+      }
       
       console.log('矩阵更新完成');
       console.log('=== MatrixManager.updateMatrix 结束 ===');
@@ -256,15 +257,15 @@ export class MatrixManager {
   async getTimeTrendAnalysis(days = 30) {
     try {
       const tasks = await this.taskManager.getTasks();
-      const endDate = new Date();
-      const startDate = new Date(endDate.getTime() - (days * 24 * 60 * 60 * 1000));
+      const endDate = Date.now(); // 直接使用时间戳
+      const startDate = endDate - (days * 24 * 60 * 60 * 1000); // 直接使用时间戳进行计算
       
       // 按日期分组任务
       const dailyStats = {};
-      const currentDate = new Date(startDate);
+      const currentDate = new Date(startDate); // 用于循环，这里需要Date对象
       
-      while (currentDate <= endDate) {
-        const dateKey = currentDate.toISOString().split('T')[0];
+      while (currentDate.getTime() <= endDate) {
+        const dateKey = currentDate.toLocaleDateString(); // 使用toLocaleDateString显示本地日期
         dailyStats[dateKey] = {
           created: 0,
           completed: 0,
@@ -275,20 +276,20 @@ export class MatrixManager {
       
       // 统计每日数据
       tasks.forEach(task => {
-        const createdDate = new Date(task.createdAt).toISOString().split('T')[0];
+        const createdDate = new Date(task.createdAt).toLocaleDateString(); // 使用toLocaleDateString显示本地日期
         if (dailyStats[createdDate]) {
           dailyStats[createdDate].created++;
         }
         
         if (task.status === 'completed' && task.completedAt) {
-          const completedDate = new Date(task.completedAt).toISOString().split('T')[0];
+          const completedDate = new Date(task.completedAt).toLocaleDateString(); // 使用toLocaleDateString显示本地日期
           if (dailyStats[completedDate]) {
             dailyStats[completedDate].completed++;
           }
         }
         
         if (task.isOverdue()) {
-          const overdueDate = new Date().toISOString().split('T')[0];
+          const overdueDate = new Date(Date.now()).toLocaleDateString(); // 使用toLocaleDateString显示本地日期
           if (dailyStats[overdueDate]) {
             dailyStats[overdueDate].overdue++;
           }
