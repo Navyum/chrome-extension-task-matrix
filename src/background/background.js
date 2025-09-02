@@ -20,8 +20,6 @@ class BackgroundService {
    */
   async init() {
     try {
-      // 数据迁移：将pending状态转换为doing状态
-      await this.taskManager.migratePendingToDoing();
       
       // 初始化任务管理器
       await this.taskManager.init();
@@ -379,53 +377,73 @@ class BackgroundService {
     try {
       switch (message.type) {
         case 'getStats':
-          const stats = await this.taskManager.getTaskStats();
-          sendResponse({ success: true, data: stats });
+          { // 块级作用域
+            const stats = await this.taskManager.getTaskStats();
+            sendResponse({ success: true, data: stats });
+          }
           break;
           
         case 'getMatrixStats':
-          const matrixStats = this.matrixManager.getMatrixStats();
-          sendResponse({ success: true, data: matrixStats });
+          { // 块级作用域
+            const matrixStats = this.matrixManager.getMatrixStats();
+            sendResponse({ success: true, data: matrixStats });
+          }
           break;
           
         case 'addTask':
-          const newTask = await this.taskManager.addTask(message.data);
-          sendResponse({ success: !!newTask, data: newTask });
+          { // 块级作用域
+            const newTask = await this.taskManager.addTask(message.data);
+            sendResponse({ success: !!newTask, data: newTask });
+          }
           break;
           
         case 'updateTask':
-          const updatedTask = await this.taskManager.updateTask(message.taskId, message.data);
-          sendResponse({ success: !!updatedTask, data: updatedTask });
+          { // 块级作用域
+            const updatedTask = await this.taskManager.updateTask(message.taskId, message.data);
+            sendResponse({ success: !!updatedTask, data: updatedTask });
+          }
           break;
           
         case 'deleteTask':
-          const success = await this.taskManager.deleteTask(message.taskId);
-          sendResponse({ success });
+          { // 块级作用域
+            const success = await this.taskManager.deleteTask(message.taskId);
+            sendResponse({ success });
+          }
           break;
           
         case 'completeTask':
-          const completed = await this.taskManager.markTaskAsCompleted(message.taskId);
-          sendResponse({ success: completed });
+          { // 块级作用域
+            const completed = await this.taskManager.markTaskAsCompleted(message.taskId);
+            sendResponse({ success: completed });
+          }
           break;
           
         case 'getTasks':
-          const tasks = await this.taskManager.getTasks(message.filter);
-          sendResponse({ success: true, data: tasks });
+          { // 块级作用域
+            const tasks = await this.taskManager.getTasks(message.filter);
+            sendResponse({ success: true, data: tasks });
+          }
           break;
           
         case 'exportData':
-          const exportData = await this.storageManager.exportData();
-          sendResponse({ success: !!exportData, data: exportData });
+          { // 块级作用域
+            const exportData = await this.storageManager.exportData();
+            sendResponse({ success: !!exportData, data: exportData });
+          }
           break;
           
         case 'importData':
-          const importSuccess = await this.storageManager.importData(message.data);
-          sendResponse({ success: importSuccess });
+          { // 块级作用域
+            const importSuccess = await this.storageManager.importData(message.data);
+            sendResponse({ success: importSuccess });
+          }
           break;
           
         case 'updateBadge':
-          this.updateBadge();
-          sendResponse({ success: true });
+          { // 块级作用域
+            this.updateBadge();
+            sendResponse({ success: true });
+          }
           break;
           
         default:
@@ -497,7 +515,7 @@ class BackgroundService {
           title: '欢迎使用 TaskMatrix Pro',
           description: '这是一个示例任务，您可以删除它',
           importance: 3,
-          dueDate: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString(), // 明天
+          dueDate: Date.now() + 24 * 60 * 60 * 1000, // 明天（时间戳）
           category: 'other',
           color: '#3B82F6'
         },
@@ -505,7 +523,7 @@ class BackgroundService {
           title: '查看使用帮助',
           description: '点击帮助按钮了解如何使用艾森豪威尔矩阵',
           importance: 4,
-          dueDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString(), // 后天
+          dueDate: Date.now() + 2 * 24 * 60 * 60 * 1000, // 后天（时间戳）
           category: 'study',
           color: '#10B981'
         }

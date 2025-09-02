@@ -3,6 +3,8 @@
  * 在网页中注入TaskMatrix Pro功能
  */
 
+import { Task } from '../models/Task';
+
 class ContentScript {
   constructor() {
     this.isInitialized = false;
@@ -75,7 +77,7 @@ class ContentScript {
       right: 20px;
       width: 56px;
       height: 56px;
-      background: #2563EB;
+      background: #165DFF;
       border-radius: 50%;
       box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
       cursor: pointer;
@@ -362,7 +364,12 @@ class ContentScript {
   setDefaultDate() {
     const tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);
-    const dateString = tomorrow.toISOString().split('T')[0];
+    
+    const year = tomorrow.getFullYear();
+    const month = String(tomorrow.getMonth() + 1).padStart(2, '0');
+    const day = String(tomorrow.getDate()).padStart(2, '0');
+    
+    const dateString = `${year}-${month}-${day}`;
     document.getElementById('taskmatrix-due-date').value = dateString;
   }
 
@@ -444,9 +451,9 @@ class ContentScript {
         title,
         description,
         importance,
-        dueDate: new Date(dueDate + 'T09:00:00').toISOString(),
+        dueDate: new Date(dueDate + 'T09:00:00').getTime(), // 转换为时间戳
         category,
-        color: this.getDefaultColor(importance)
+        color: new Task({importance: importance}).getDefaultColor()
       };
       
       // 发送消息给后台脚本
@@ -465,21 +472,6 @@ class ContentScript {
       console.error('保存快速任务失败:', error);
       this.showNotification('保存失败', 'error');
     }
-  }
-
-  /**
-   * 获取默认颜色
-   */
-  getDefaultColor(importance) {
-    const colors = {
-      0: '#9CA3AF',
-      1: '#D1D5DB',
-      2: '#FCD34D',
-      3: '#F59E0B',
-      4: '#EF4444',
-      5: '#DC2626'
-    };
-    return colors[importance] || colors[3];
   }
 
   /**

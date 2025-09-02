@@ -71,13 +71,14 @@ export class Matrix {
    * 获取任务所属象限
    */
   getQuadrantKey(task) {
-    const urgency = this.calculateUrgency(task.dueDate);
-    const importance = task.importance;
-
-    // 重要性映射
-    const isImportant = importance >= 5;
-    const isUrgent = urgency >= 0.6;
-
+    // this.urgentThreshold是异步加载的，这里需要同步访问
+    // 假设this.urgentThreshold在constructor中或init方法中已经加载并设置
+    // 否则需要在MatrixManager中确保它被传递给Matrix实例
+    const urgentThresholdMs = (this.urgentThreshold || 24) * 60 * 60 * 1000; // 默认24小时，转换为毫秒
+    
+    const isImportant = task.importance >= 5.5; // 重要性5.5以上为重要
+    const isUrgent = task.getTimeRemaining() <= urgentThresholdMs;
+    
     if (isImportant && isUrgent) {
       return 'q1'; // 重要且紧急
     } else if (isImportant && !isUrgent) {
@@ -86,30 +87,6 @@ export class Matrix {
       return 'q3'; // 紧急不重要
     } else {
       return 'q4'; // 不重要不紧急
-    }
-  }
-
-  /**
-   * 计算紧急程度
-   */
-  calculateUrgency(dueDate) {
-    const now = new Date();
-    const due = new Date(dueDate);
-    const diffMs = due - now;
-    const diffDays = diffMs / (1000 * 60 * 60 * 24);
-
-    if (diffMs < 0) {
-      return 1.0; // 已超期
-    } else if (diffDays <= 1) {
-      return 0.8 + (1 - diffDays) * 0.2; // 24小时内
-    } else if (diffDays <= 3) {
-      return 0.6 + (3 - diffDays) / 2 * 0.2; // 3天内
-    } else if (diffDays <= 7) {
-      return 0.4 + (7 - diffDays) / 4 * 0.2; // 1周内
-    } else if (diffDays <= 30) {
-      return 0.2 + (30 - diffDays) / 23 * 0.2; // 1月内
-    } else {
-      return 0.2; // 超过1月
     }
   }
 

@@ -3,7 +3,7 @@
  */
 import './options.css';
 import { StorageManager } from '../services/StorageManager.js';
-import { showNotification, confirmDialog } from '../utils/helpers.js';
+import { showNotification, confirmDialog, formatDate } from '../utils/helpers.js'; // 导入formatDate
 
 class OptionsPage {
   constructor() {
@@ -201,10 +201,9 @@ class OptionsPage {
    */
   async exportData() {
     try {
-      const data = await this.storageManager.exportData();
-      
+      const data = await this.storageManager.getSettings();
       if (data) {
-        const filename = `taskmatrix-settings-${new Date().toISOString().split('T')[0]}.json`;
+        const filename = `taskmatrix-settings-${formatDate(Date.now())}.json`; // 使用formatDate辅助函数
         const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
         const url = URL.createObjectURL(blob);
         
@@ -216,9 +215,9 @@ class OptionsPage {
         document.body.removeChild(link);
         URL.revokeObjectURL(url);
         
-        showNotification('数据导出成功', 'success');
+        showNotification('Settings exported successfully', 'success');
       } else {
-        showNotification('导出失败', 'error');
+        showNotification('No settings to export', 'warning');
       }
     } catch (error) {
       console.error('导出数据失败:', error);
@@ -293,11 +292,13 @@ class OptionsPage {
     try {
       switch (action) {
         case 'clearData':
-          const success = await this.storageManager.clearTasks();
-          if (success) {
-            showNotification('数据已清空', 'success');
-          } else {
-            showNotification('清空数据失败', 'error');
+          { // 块级作用域
+            const success = await this.storageManager.clearTasks();
+            if (success) {
+              showNotification('数据已清空', 'success');
+            } else {
+              showNotification('清空数据失败', 'error');
+            }
           }
           break;
       }

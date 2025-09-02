@@ -155,7 +155,7 @@ export class StorageManager {
       
       return {
         version: '1.0.0',
-        exportDate: new Date().toISOString(),
+        exportDate: new Date(Date.now()).toISOString(), // 统一使用时间戳并转换为UTC ISO字符串
         tasks: tasks.map(task => task.toObject()),
         settings
       };
