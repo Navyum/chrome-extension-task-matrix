@@ -188,7 +188,7 @@ class BackgroundService {
     this.checkUrgentTasks();
     
     // 使用设置中的检查间隔
-    const interval = (this.settings.urgentReminderInterval || 1) * 60 * 1000; // 转换为毫秒
+    const interval = (this.settings.urgentReminderInterval || 10) * 60 * 1000; // 转换为毫秒
     this.taskCheckInterval = setInterval(() => {
       this.checkUrgentTasks();
     }, interval);
@@ -233,7 +233,7 @@ class BackgroundService {
           const timeRemaining = task.dueDate - now;
           
           // 检查是否在阈值时间内到期
-          if (timeRemaining <= threshold) {
+          if (timeRemaining > 0 && timeRemaining <= threshold) {
             hasUrgentTask = true;
             urgentTaskCount++;
             

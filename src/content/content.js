@@ -2,6 +2,9 @@
  * Content Script
  * Inject TaskMatrix Pro functionality into web pages
  */
+
+import { Task } from '../models/Task';
+
 class ContentScript {
   constructor() {
     this.isInitialized = false;
