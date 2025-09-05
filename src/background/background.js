@@ -102,8 +102,31 @@ class BackgroundService {
           sendResponse({ success: true, message: 'Task monitoring stopped' });
           break;
           
+        case 'editTask': {
+          // 任务被编辑，重新检查紧急任务
+          console.log('Task edited, checking urgent tasks...');
+          this.checkUrgentTasks();
+          sendResponse({ success: true, message: 'Task edit processed' });
+          break;
+        }
+        
+        case 'addTask': {
+          // 任务被添加，重新检查紧急任务
+          console.log('Task added, checking urgent tasks...');
+          this.checkUrgentTasks();
+          sendResponse({ success: true, message: 'Task add processed' });
+          break;
+        }
+        
+        case 'deleteTask': {
+          // 任务被删除，重新检查紧急任务
+          console.log('Task deleted, checking urgent tasks...');
+          this.checkUrgentTasks();
+          sendResponse({ success: true, message: 'Task delete processed' });
+          break;
+        }
+          
         default:
-          console.log('Unknown message type:', message.type);
           sendResponse({ success: false, error: 'Unknown message type' });
       }
       
@@ -327,6 +350,14 @@ class BackgroundService {
       // 设置默认工具提示
       chrome.action.setTitle({
         title: 'TaskMatrix Pro - 智能任务管理'
+      });
+
+      chrome.action.setIcon({
+        path: {
+          "16": "assets/icons/icon16.png",
+          "48": "assets/icons/icon48.png",
+          "128": "assets/icons/icon128.png"
+        }
       });
       
       console.log('Extension icon reset to default state');

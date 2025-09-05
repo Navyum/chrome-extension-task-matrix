@@ -1082,6 +1082,8 @@ class PopupApp {
           showNotification('Task updated successfully', 'success');
           // 清除重新计算的坐标信息
           this.recalculatedCoordinates = null;
+          // 通知background script任务已编辑
+          await this.sendMessageToBackground('editTask');
         }
       } else {
         // 添加任务
@@ -1095,6 +1097,8 @@ class PopupApp {
         result = await this.taskManager.addTask(formData);
         if (result) {
           showNotification('Task added successfully', 'success');
+          // 通知background script任务已添加
+          await this.sendMessageToBackground('addTask');
         }
       }
 
@@ -1394,6 +1398,8 @@ class PopupApp {
           showNotification('Task deleted successfully', 'success');
           this.closeEditModal();
           await this.loadData();
+          // 通知background script任务已删除
+          await this.sendMessageToBackground('deleteTask');
         } else {
           showNotification('Failed to delete task', 'error');
         }
@@ -1973,6 +1979,8 @@ class PopupApp {
         await this.loadTaskManagerData();
         await this.loadData(); // 刷新主界面
         showNotification('Task deleted successfully', 'success');
+        // 通知background script任务已删除
+        await this.sendMessageToBackground('deleteTask');
       }
     } catch (error) {
       console.error('删除任务失败:', error);
@@ -2155,6 +2163,18 @@ class PopupApp {
   /**
    * 从任务管理器添加任务
    */
+  /**
+   * 发送消息到background script
+   */
+  async sendMessageToBackground(messageType) {
+    try {
+      const response = await chrome.runtime.sendMessage({ type: messageType });
+      console.log(`Message ${messageType} sent to background:`, response);
+    } catch (error) {
+      console.error(`Failed to send ${messageType} message to background:`, error);
+    }
+  }
+
   addTaskFromManager() {
     // 不关闭Task Manager模态框，让添加任务模态框在Task Manager之上显示
     this.selectedTask = null;
