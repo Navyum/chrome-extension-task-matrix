@@ -5,15 +5,7 @@
   "description": "Intelligent task management plugin based on Eisenhower Matrix, helping you manage task priorities through visualization",
   
   "permissions": [
-    "storage",
-    "notifications",
-    "alarms",
-    "windows",
-    "activeTab"
-  ],
-  
-  "host_permissions": [
-    "<all_urls>"
+    "storage"
   ],
   
   "background": {
