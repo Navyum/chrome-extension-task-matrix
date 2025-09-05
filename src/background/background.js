@@ -233,7 +233,7 @@ class BackgroundService {
           const timeRemaining = task.dueDate - now;
           
           // 检查是否在阈值时间内到期
-          if (timeRemaining > 0 && timeRemaining <= threshold) {
+          if (timeRemaining <= threshold) {
             hasUrgentTask = true;
             urgentTaskCount++;
             
