@@ -148,7 +148,7 @@ export class StorageManager {
       
       // 界面配置
       theme: 'light',                    // 主题：light/dark
-      language: 'zh-CN'                  // 语言：zh-CN/en-US
+      language: 'en-US'                  // 语言：zh-CN/en-US
     };
   }
 

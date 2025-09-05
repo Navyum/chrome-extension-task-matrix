@@ -1988,21 +1988,31 @@ class PopupApp {
       const settings = await this.storageManager.getSettings();
       
       // 紧急任务提醒配置
-      document.getElementById('enableUrgentReminder').checked = settings.enableUrgentReminder !== false;
-      document.getElementById('urgentReminderThreshold').value = settings.urgentReminderThreshold || 30;
-      document.getElementById('urgentReminderInterval').value = settings.urgentReminderInterval || 10;
+      const enableUrgentReminderEl = document.getElementById('enableUrgentReminder');
+      if (enableUrgentReminderEl) {
+        enableUrgentReminderEl.checked = settings.enableUrgentReminder !== false;
+      }
+      
+      const urgentReminderThresholdEl = document.getElementById('urgentReminderThreshold');
+      if (urgentReminderThresholdEl) {
+        urgentReminderThresholdEl.value = settings.urgentReminderThreshold || 30;
+      }
+      
+      const urgentReminderIntervalEl = document.getElementById('urgentReminderInterval');
+      if (urgentReminderIntervalEl) {
+        urgentReminderIntervalEl.value = settings.urgentReminderInterval || 10;
+      }
       
       // 图标提醒配置
-      document.getElementById('enableIconBadge').checked = settings.enableIconBadge !== false;
-      document.getElementById('enableIconTitle').checked = settings.enableIconTitle !== false;
+      const enableIconBadgeEl = document.getElementById('enableIconBadge');
+      if (enableIconBadgeEl) {
+        enableIconBadgeEl.checked = settings.enableIconBadge !== false;
+      }
       
-      // 通知配置
-      document.getElementById('enableNotifications').checked = settings.enableNotifications !== false;
-      document.getElementById('notificationSound').checked = settings.notificationSound !== false;
-      
-      // 界面配置
-      document.getElementById('theme').value = settings.theme || 'light';
-      document.getElementById('language').value = settings.language || 'zh-CN';
+      const enableIconTitleEl = document.getElementById('enableIconTitle');
+      if (enableIconTitleEl) {
+        enableIconTitleEl.checked = settings.enableIconTitle !== false;
+      }
       
     } catch (error) {
       console.error('加载设置失败:', error);
@@ -2025,18 +2035,16 @@ class PopupApp {
         enableIconBadge: formData.get('enableIconBadge') === 'on',
         enableIconTitle: formData.get('enableIconTitle') === 'on',
         
-        // 通知配置
-        enableNotifications: formData.get('enableNotifications') === 'on',
-        notificationSound: formData.get('notificationSound') === 'on',
-        
-        // 界面配置
-        theme: formData.get('theme') || 'light',
-        language: formData.get('language') || 'zh-CN'
+        // 保留其他设置的默认值
+        enableNotifications: true,
+        notificationSound: true,
+        theme: 'light',
+        language: 'en-US'
       };
 
       await this.storageManager.saveSettings(settings);
       this.closeSettingsModal();
-      showNotification('设置保存成功', 'success');
+      showNotification('Settings saved successfully', 'success');
       
       // 通知background script设置已更新
       if (chrome.runtime?.id) {
@@ -2052,7 +2060,7 @@ class PopupApp {
       
     } catch (error) {
       console.error('保存设置失败:', error);
-      showNotification('保存设置失败', 'error');
+      showNotification('Failed to save settings', 'error');
     }
   }
 
