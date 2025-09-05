@@ -776,10 +776,18 @@ body {
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
 }
 
+/* 表单操作 */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
 .form-actions-left {
   display: flex;
   gap: 12px;
-  margin-right: auto;
 }
 
 .form-actions-right {
@@ -1434,6 +1442,7 @@ body {
   color: #111827;
   margin-bottom: 16px;
   padding-bottom: 8px;
+  border-bottom: 2px solid #3b82f6;
 }
 
 /* 表单组样式调整 */
@@ -1516,8 +1525,13 @@ body {
   justify-content: flex-end;
   align-items: center;
   padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
   gap: 10px;
 }
+
+.form-actions-left {
+  margin-right: auto;
+} 
 
 /* 报告模态框样式 */
 .report-modal {

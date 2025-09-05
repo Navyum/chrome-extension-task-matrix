@@ -142,13 +142,13 @@ export class StorageManager {
       enableIconBadge: true,             // 是否显示图标徽章
       enableIconTitle: true,             // 是否显示图标工具提示
       
-      // 通知配置（保留默认值）
+      // 通知配置
       enableNotifications: true,         // 是否启用通知
       notificationSound: true,           // 是否播放提示音
       
-      // 界面配置（保留默认值）
+      // 界面配置
       theme: 'light',                    // 主题：light/dark
-      language: 'en-US'                  // 语言：en-US
+      language: 'zh-CN'                  // 语言：zh-CN/en-US
     };
   }
 

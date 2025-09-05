@@ -6,12 +6,14 @@ import { StorageManager } from '../services/StorageManager.js';
 import { TaskManager } from '../services/TaskManager.js';
 import { MatrixManager } from '../services/MatrixManager.js';
 import { MatrixRenderer } from '../renderers/MatrixRenderer.js';
-import { ReportManager } from '../reports/ReportManager.js';import { showNotification, confirmDialog, debounce } from '../utils/helpers.js';
+import { ReportManager } from '../reports/ReportManager.js';
+import { showNotification, confirmDialog, debounce } from '../utils/helpers.js';
 // 导入图标
 import closeIcon from '../../assets/icons/close.svg';
 import detailIcon from '../../assets/icons/detail.svg';
 import settingIcon from '../../assets/icons/setting.svg';
 import helpIcon from '../../assets/icons/help.svg';
+import reportIcon from '../../assets/icons/report.svg';
 // 使用 + 号符合添加任务的语义
 import plusIcon from '../../assets/icons/add.svg'; // doing.svg 包含一个加号
 
@@ -20,7 +22,10 @@ class PopupApp {
     this.storageManager = new StorageManager();
     this.taskManager = new TaskManager(this.storageManager);
     this.matrixManager = new MatrixManager(this.taskManager);
-    this.reportManager = new ReportManager(this.taskManager);    this.matrixRenderer = null;
+    this.matrixRenderer = null;
+    
+    // 初始化报告管理器
+    this.reportManager = new ReportManager(this.taskManager);
     
     // 初始化排序状态
     this.sortState = { sortBy: 'dueDate', sortOrder: 'asc' };
@@ -37,14 +42,10 @@ class PopupApp {
       this.initMatrixRenderer();
       
       // 设置按钮图标
-
-    // 报告按钮
-    const reportBtn = document.getElementById('reportBtn');
-    if (reportBtn) {
-      reportBtn.addEventListener('click', () => {
-        this.showReportModal();
-      });
-    }      this.setupIcons();
+      this.setupIcons();
+      
+      // 初始化报告模态框
+      await this.initReportModal();
       
       // 加载数据
       await this.loadData();
@@ -64,6 +65,16 @@ class PopupApp {
     } catch (error) {
       console.error('初始化失败:', error);
       this.updateStatus('Initialization Failed');
+    }
+  }
+
+  /**
+   * 初始化报告模态框
+   */
+  async initReportModal() {
+    const reportModal = document.getElementById('reportModal');
+    if (reportModal) {
+      await this.reportManager.initReportModal(reportModal);
     }
   }
 
@@ -90,16 +101,15 @@ class PopupApp {
     }
     
     // 设置按钮
-
+    const settingsBtn = document.getElementById('settingsBtn');
+    if (settingsBtn) {
+      settingsBtn.innerHTML = `<img src="${settingIcon}" alt="Settings">`;
+    }
+    
     // 报告按钮
     const reportBtn = document.getElementById('reportBtn');
     if (reportBtn) {
-      reportBtn.addEventListener('click', () => {
-        this.showReportModal();
-      });
-    }    const settingsBtn = document.getElementById('settingsBtn');
-    if (settingsBtn) {
-      settingsBtn.innerHTML = `<img src="${settingIcon}" alt="Settings">`;
+      reportBtn.innerHTML = `<img src="${reportIcon}" alt="Report">`;
     }
     
     // 帮助按钮
@@ -388,17 +398,18 @@ class PopupApp {
 
 
     // 设置按钮
+    const settingsBtn = document.getElementById('settingsBtn');
+    if (settingsBtn) {
+      settingsBtn.addEventListener('click', () => {
+        this.showSettingsModal();
+      });
+    }
 
     // 报告按钮
     const reportBtn = document.getElementById('reportBtn');
     if (reportBtn) {
       reportBtn.addEventListener('click', () => {
         this.showReportModal();
-      });
-    }    const settingsBtn = document.getElementById('settingsBtn');
-    if (settingsBtn) {
-      settingsBtn.addEventListener('click', () => {
-        this.showSettingsModal();
       });
     }
 
@@ -433,6 +444,14 @@ class PopupApp {
     if (closeSettingsModal) {
       closeSettingsModal.addEventListener('click', () => {
         this.closeSettingsModal();
+      });
+    }
+
+    // 报告模态框关闭
+    const closeReportModal = document.getElementById('closeReportModal');
+    if (closeReportModal) {
+      closeReportModal.addEventListener('click', () => {
+        this.closeReportModal();
       });
     }
 
@@ -1526,30 +1545,7 @@ class PopupApp {
   /**
    * 显示设置模态框
    */
-
-  /**
-   * 显示报告模态框
-   */
-  async showReportModal() {
-    const modal = document.getElementById('reportModal');
-    if (modal) {
-      modal.classList.add('show');
-      // 初始化报告管理器
-      if (this.reportManager) {
-        await this.reportManager.initReportModal(modal);
-      }
-    }
-  }
-
-  /**
-   * 关闭报告模态框
-   */
-  closeReportModal() {
-    const modal = document.getElementById('reportModal');
-    if (modal) {
-      modal.classList.remove('show');
-    }
-  }  async showSettingsModal() {
+  async showSettingsModal() {
     const modal = document.getElementById('settingsModal');
     if (modal) {
       modal.classList.add('show');
@@ -1991,12 +1987,23 @@ class PopupApp {
     try {
       const settings = await this.storageManager.getSettings();
       
-      document.getElementById('urgentThreshold').value = settings.urgentThreshold || 24;
-      document.getElementById('dailyReminder').checked = settings.dailyReminder !== false;
-      document.getElementById('reminderTime').value = settings.reminderTime || '09:00';
-      document.getElementById('overdueAlert').checked = settings.overdueAlert !== false;
-      document.getElementById('autoRefresh').checked = settings.autoRefresh !== false;
-      document.getElementById('refreshInterval').value = settings.refreshInterval || 5;
+      // 紧急任务提醒配置
+      document.getElementById('enableUrgentReminder').checked = settings.enableUrgentReminder !== false;
+      document.getElementById('urgentReminderThreshold').value = settings.urgentReminderThreshold || 30;
+      document.getElementById('urgentReminderInterval').value = settings.urgentReminderInterval || 10;
+      
+      // 图标提醒配置
+      document.getElementById('enableIconBadge').checked = settings.enableIconBadge !== false;
+      document.getElementById('enableIconTitle').checked = settings.enableIconTitle !== false;
+      
+      // 通知配置
+      document.getElementById('enableNotifications').checked = settings.enableNotifications !== false;
+      document.getElementById('notificationSound').checked = settings.notificationSound !== false;
+      
+      // 界面配置
+      document.getElementById('theme').value = settings.theme || 'light';
+      document.getElementById('language').value = settings.language || 'zh-CN';
+      
     } catch (error) {
       console.error('加载设置失败:', error);
     }
@@ -2009,20 +2016,43 @@ class PopupApp {
     try {
       const formData = new FormData(document.getElementById('settingsForm'));
       const settings = {
-        urgentThreshold: parseInt(formData.get('urgentThreshold')),
-        dailyReminder: formData.get('dailyReminder') === 'on',
-        reminderTime: formData.get('reminderTime'),
-        overdueAlert: formData.get('overdueAlert') === 'on',
-        autoRefresh: formData.get('autoRefresh') === 'on',
-        refreshInterval: parseInt(formData.get('refreshInterval'))
+        // 紧急任务提醒配置
+        enableUrgentReminder: formData.get('enableUrgentReminder') === 'on',
+        urgentReminderThreshold: parseInt(formData.get('urgentReminderThreshold')) || 30,
+        urgentReminderInterval: parseInt(formData.get('urgentReminderInterval')) || 10,
+        
+        // 图标提醒配置
+        enableIconBadge: formData.get('enableIconBadge') === 'on',
+        enableIconTitle: formData.get('enableIconTitle') === 'on',
+        
+        // 通知配置
+        enableNotifications: formData.get('enableNotifications') === 'on',
+        notificationSound: formData.get('notificationSound') === 'on',
+        
+        // 界面配置
+        theme: formData.get('theme') || 'light',
+        language: formData.get('language') || 'zh-CN'
       };
 
       await this.storageManager.saveSettings(settings);
       this.closeSettingsModal();
-      showNotification('Settings saved successfully', 'success');
+      showNotification('设置保存成功', 'success');
+      
+      // 通知background script设置已更新
+      if (chrome.runtime?.id) {
+        try {
+          await chrome.runtime.sendMessage({ 
+            type: 'settingsUpdated', 
+            settings: settings 
+          });
+        } catch (error) {
+          console.log('无法通知background script设置更新:', error);
+        }
+      }
+      
     } catch (error) {
       console.error('保存设置失败:', error);
-      showNotification('Failed to save settings', 'error');
+      showNotification('保存设置失败', 'error');
     }
   }
 
@@ -2139,6 +2169,41 @@ class PopupApp {
     // 显示模态框
     this.editModal.classList.add('show');
   }
+
+  /**
+   * 显示报告模态框
+   */
+  async showReportModal() {
+    await this.reportManager.showReport();
+  }
+
+  /**
+   * 关闭报告模态框
+   */
+  closeReportModal() {
+    const modal = document.getElementById('reportModal');
+    if (modal) {
+      modal.classList.remove('show');
+    }
+  }
+
+  /**
+   * 格式化日期
+   */
+  formatDate(date, period) {
+    if (period === 'week') {
+      // 格式化为 "MM/DD" 格式
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const day = String(date.getDate()).padStart(2, '0');
+      return `${month}/${day}`;
+    } else {
+      // 格式化为 "YYYY-MM" 格式
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      return `${year}-${month}`;
+    }
+  }
+
 }
 
 // 初始化应用
