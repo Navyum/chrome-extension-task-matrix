@@ -20,18 +20,38 @@ export class Task {
    * 根据重要性和紧急程度获取颜色
    */
   async getColor() {
-    const isImportant = this.importance >= (1+10)/2; // 重要性5级以上为重要
+    const isImportant = this.importance >= 5.5; // 重要性5.5级以上为重要
     const isUrgent = await this.isUrgent(); // 根据剩余时间判断紧急程度
     
+    // === 添加调试日志 ===
+    console.log(`[Task.getColor] 任务 "${this.title}" 颜色计算:`, {
+      taskId: this.id,
+      importance: this.importance,
+      importanceThreshold: 5.5,
+      isImportant: isImportant,
+      isUrgent: isUrgent,
+      dueDate: this.dueDate,
+      currentTime: Date.now(),
+      timeRemaining: this.getTimeRemaining(),
+      timeRemainingHours: this.getTimeRemaining() / (1000 * 60 * 60)
+    });
+    
+    let color;
     if (isImportant && isUrgent) {
-      return '#EF4444'; // 红色 - 重要且紧急
+      color = '#EF4444'; // 红色 - 重要且紧急 (Q1)
+      console.log(`[Task.getColor] 分配颜色: ${color} (Q1: 重要且紧急)`);
     } else if (isImportant && !isUrgent) {
-      return '#10B981'; // 黄色 - 重要不紧急
-    } else if (!isImportant && isUrgent) {
-      return '#F59E0B'; // 绿色 - 不重要紧急
+      color = '#10B981'; // 绿色 - 重要不紧急 (Q2)
+      console.log(`[Task.getColor] 分配颜色: ${color} (Q2: 重要不紧急)`);
+    } else if (!isImportant && !isUrgent) {
+      color = '#9CA3AF'; // 灰色 - 不重要不紧急 (Q3)
+      console.log(`[Task.getColor] 分配颜色: ${color} (Q3: 不重要不紧急)`);
     } else {
-      return '#9CA3AF'; // 灰色 - 不重要不紧急
+      color = '#F59E0B'; // 黄色 - 不重要紧急 (Q4)
+      console.log(`[Task.getColor] 分配颜色: ${color} (Q4: 不重要紧急)`);
     }
+    
+    return color;
   }
 
   /**
@@ -238,8 +258,33 @@ export class Task {
       obj.coordinates
     );
     
+    // === 添加调试日志 ===
+    console.log(`[Task.fromObject] 从存储恢复任务 "${obj.title}":`, {
+      taskId: obj.id,
+      storedColor: obj.color,
+      importance: obj.importance,
+      dueDate: obj.dueDate,
+      currentTime: Date.now(),
+      timeRemaining: task.getTimeRemaining(),
+      timeRemainingHours: task.getTimeRemaining() / (1000 * 60 * 60)
+    });
+    
     // 设置颜色
     task.color = obj.color;
+    
+    // === 检查颜色是否需要更新 ===
+    const shouldUpdateColor = async () => {
+      const currentColor = await task.getColor();
+      if (currentColor !== obj.color) {
+        console.log(`[Task.fromObject] 颜色需要更新: 存储=${obj.color} -> 当前=${currentColor}`);
+        task.color = currentColor;
+      } else {
+        console.log(`[Task.fromObject] 颜色无需更新: ${obj.color}`);
+      }
+    };
+    
+    // 异步更新颜色
+    shouldUpdateColor();
     
     // 设置时间
     task.createdAt = obj.createdAt; // obj.createdAt 应为时间戳

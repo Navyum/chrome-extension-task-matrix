@@ -10,7 +10,6 @@ module.exports = (env, argv) => {
       entry: {
     background: './src/background/background.js',
     popup: './src/popup/popup.js',
-    options: './src/options/options.js',
     content: './src/content/content.js'
   },
     output: {
@@ -59,11 +58,7 @@ module.exports = (env, argv) => {
       filename: 'popup.html',
       chunks: ['popup']
     }),
-    new HtmlWebpackPlugin({
-      template: './src/options/options.html',
-      filename: 'options.html',
-      chunks: ['options']
-    }),
+
 
       ...(isProduction ? [new MiniCssExtractPlugin()] : [])
     ],
