@@ -14,20 +14,20 @@ export class Matrix {
       },
       q2: {
         name: 'Important & Not Urgent',
-        color: '#2563EB',
+        color: '#10B981',
         description: 'Schedule it',
         tasks: []
       },
       q3: {
-        name: 'Urgent & Not Important',
-        color: '#F59E0B',
-        description: 'Delegate it',
-        tasks: []
-      },
-      q4: {
         name: 'Not Important & Not Urgent',
         color: '#9CA3AF',
         description: 'Eliminate it',
+        tasks: []
+      },
+      q4: {
+        name: 'Not Important & Urgent',
+        color: '#F59E0B',
+        description: 'Delegate it',
         tasks: []
       }
     };
@@ -83,10 +83,10 @@ export class Matrix {
       return 'q1'; // 重要且紧急
     } else if (isImportant && !isUrgent) {
       return 'q2'; // 重要不紧急
-    } else if (!isImportant && isUrgent) {
-      return 'q3'; // 紧急不重要
+    } else if (!isImportant && !isUrgent) {
+      return 'q3'; // 不重要不紧急
     } else {
-      return 'q4'; // 不重要不紧急
+      return 'q4'; // 不重要紧急
     }
   }
 

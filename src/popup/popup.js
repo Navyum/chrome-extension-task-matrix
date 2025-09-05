@@ -6,7 +6,7 @@ import { StorageManager } from '../services/StorageManager.js';
 import { TaskManager } from '../services/TaskManager.js';
 import { MatrixManager } from '../services/MatrixManager.js';
 import { MatrixRenderer } from '../renderers/MatrixRenderer.js';
-import { showNotification, confirmDialog, debounce } from '../utils/helpers.js';
+import { ReportManager } from '../reports/ReportManager.js';import { showNotification, confirmDialog, debounce } from '../utils/helpers.js';
 // 导入图标
 import closeIcon from '../../assets/icons/close.svg';
 import detailIcon from '../../assets/icons/detail.svg';
@@ -20,7 +20,7 @@ class PopupApp {
     this.storageManager = new StorageManager();
     this.taskManager = new TaskManager(this.storageManager);
     this.matrixManager = new MatrixManager(this.taskManager);
-    this.matrixRenderer = null;
+    this.reportManager = new ReportManager(this.taskManager);    this.matrixRenderer = null;
     
     // 初始化排序状态
     this.sortState = { sortBy: 'dueDate', sortOrder: 'asc' };
@@ -37,7 +37,14 @@ class PopupApp {
       this.initMatrixRenderer();
       
       // 设置按钮图标
-      this.setupIcons();
+
+    // 报告按钮
+    const reportBtn = document.getElementById('reportBtn');
+    if (reportBtn) {
+      reportBtn.addEventListener('click', () => {
+        this.showReportModal();
+      });
+    }      this.setupIcons();
       
       // 加载数据
       await this.loadData();
@@ -83,7 +90,14 @@ class PopupApp {
     }
     
     // 设置按钮
-    const settingsBtn = document.getElementById('settingsBtn');
+
+    // 报告按钮
+    const reportBtn = document.getElementById('reportBtn');
+    if (reportBtn) {
+      reportBtn.addEventListener('click', () => {
+        this.showReportModal();
+      });
+    }    const settingsBtn = document.getElementById('settingsBtn');
     if (settingsBtn) {
       settingsBtn.innerHTML = `<img src="${settingIcon}" alt="Settings">`;
     }
@@ -374,7 +388,14 @@ class PopupApp {
 
 
     // 设置按钮
-    const settingsBtn = document.getElementById('settingsBtn');
+
+    // 报告按钮
+    const reportBtn = document.getElementById('reportBtn');
+    if (reportBtn) {
+      reportBtn.addEventListener('click', () => {
+        this.showReportModal();
+      });
+    }    const settingsBtn = document.getElementById('settingsBtn');
     if (settingsBtn) {
       settingsBtn.addEventListener('click', () => {
         this.showSettingsModal();
@@ -1505,7 +1526,30 @@ class PopupApp {
   /**
    * 显示设置模态框
    */
-  async showSettingsModal() {
+
+  /**
+   * 显示报告模态框
+   */
+  async showReportModal() {
+    const modal = document.getElementById('reportModal');
+    if (modal) {
+      modal.classList.add('show');
+      // 初始化报告管理器
+      if (this.reportManager) {
+        await this.reportManager.initReportModal(modal);
+      }
+    }
+  }
+
+  /**
+   * 关闭报告模态框
+   */
+  closeReportModal() {
+    const modal = document.getElementById('reportModal');
+    if (modal) {
+      modal.classList.remove('show');
+    }
+  }  async showSettingsModal() {
     const modal = document.getElementById('settingsModal');
     if (modal) {
       modal.classList.add('show');

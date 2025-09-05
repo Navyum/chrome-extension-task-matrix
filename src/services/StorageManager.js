@@ -133,15 +133,22 @@ export class StorageManager {
    */
   getDefaultSettings() {
     return {
-      theme: 'light',
-      language: 'zh-CN',
-      notifications: true,
-      autoRefresh: true,
-      refreshInterval: 5, // 分钟
-      urgentThreshold: 24, // 小时
-      showCompleted: false,
-      defaultImportance: 5,
-      defaultCategory: 'default'
+      // 紧急任务提醒配置
+      enableUrgentReminder: true,        // 是否开启紧急任务提醒
+      urgentReminderThreshold: 30,       // 紧急提醒阈值（分钟）
+      urgentReminderInterval: 10,        // 提醒检查间隔（分钟）
+      
+      // 图标提醒配置
+      enableIconBadge: true,             // 是否显示图标徽章
+      enableIconTitle: true,             // 是否显示图标工具提示
+      
+      // 通知配置（保留默认值）
+      enableNotifications: true,         // 是否启用通知
+      notificationSound: true,           // 是否播放提示音
+      
+      // 界面配置（保留默认值）
+      theme: 'light',                    // 主题：light/dark
+      language: 'en-US'                  // 语言：en-US
     };
   }
 

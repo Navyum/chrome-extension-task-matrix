@@ -259,10 +259,8 @@ export class MatrixRenderer {
     const coordinates = this.calculateTaskCoordinates(task);
     x = coordinates.x;
     y = coordinates.y;
-    console.log(`Using calculated coordinates for "${task.title}": (${x}, ${y})`);
-
     const radius = 6;
-    const color = await this.getTaskColor(task);
+    const color = await task.getColor();
     
     console.log(`Drawing task "${task.title}" at position (${x}, ${y}) with color ${color}`);
     
@@ -285,24 +283,6 @@ export class MatrixRenderer {
     
     // 存储任务信息用于交互
     this.storeTaskInfo(task, x, y, radius);
-  }
-
-
-
-
-
-  /**
-   * 获取任务颜色
-   */
-  async getTaskColor(task) {
-    if (task.status === 'completed') {
-      return '#10B981'; // 绿色 - 已完成
-    } else if (task.isOverdue()) {
-      return '#EF4444'; // 红色 - 超期
-    } else {
-      // 使用任务的自定义颜色逻辑
-      return await task.getColor();
-    }
   }
 
   /**
@@ -451,6 +431,7 @@ export class MatrixRenderer {
         .attr('font-family', '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif')
         .attr('font-size', '11px')
         .attr('fill', '#6B7280')
+        .attr('pointer-events', 'none')
         .text(scale.label);
     });
   }
@@ -664,6 +645,7 @@ export class MatrixRenderer {
       .attr('font-size', '14px')
       .attr('font-weight', 'bold')
       .attr('fill', '#374151')
+      .style('pointer-events', 'none')
       .text('Not Urgent');
     
     // Urgent: 放在X轴右边缘的右上方
@@ -676,6 +658,7 @@ export class MatrixRenderer {
       .attr('font-size', '14px')
       .attr('font-weight', 'bold')
       .attr('fill', '#374151')
+      .style('pointer-events', 'none')
       .text('Urgent');
     
     // Y轴标签 - 重要程度
@@ -689,6 +672,7 @@ export class MatrixRenderer {
       .attr('font-size', '14px')
       .attr('font-weight', 'bold')
       .attr('fill', '#374151')
+      .style('pointer-events', 'none')
       .text('Important');
     
     // Not Important: 放在Y轴下边缘的右下方
@@ -701,6 +685,7 @@ export class MatrixRenderer {
       .attr('font-size', '14px')
       .attr('font-weight', 'bold')
       .attr('fill', '#374151')
+      .style('pointer-events', 'none')
       .text('Not Important');
   }
 
