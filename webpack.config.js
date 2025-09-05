@@ -50,7 +50,6 @@ module.exports = (env, argv) => {
         patterns: [
           { from: 'manifest.json', to: 'manifest.json' },
           { from: 'assets/icons', to: 'assets/icons' },
-          { from: 'assets/images', to: 'assets/images', noErrorOnMissing: true }
         ]
       }),
           new HtmlWebpackPlugin({
