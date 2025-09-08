@@ -1287,7 +1287,7 @@ class PopupApp {
     // 绑定删除按钮事件
     const deleteBtn = this.editModal.querySelector('#editDeleteTaskBtn');
     deleteBtn.onclick = () => {
-      this.deleteTaskFromEdit(task.id);
+      this.deleteTask(task.id);
     };
   }
 
@@ -1385,33 +1385,6 @@ class PopupApp {
     };
     return statusMap[status] || 'Doing';
   }
-
-  /**
-   * 从编辑模态框删除任务
-   */
-  async deleteTaskFromEdit(taskId) {
-    try {
-      const confirmed = await confirmDialog('Are you sure you want to delete this task? This action cannot be undone.', 'Delete Task');
-      if (confirmed) {
-        const success = await this.taskManager.deleteTask(taskId);
-        if (success) {
-          showNotification('Task deleted successfully', 'success');
-          this.closeEditModal();
-          await this.loadData();
-          // 通知background script任务已删除
-          await this.sendMessageToBackground('deleteTask');
-        } else {
-          showNotification('Failed to delete task', 'error');
-        }
-      }
-    } catch (error) {
-      console.error('Failed to delete task:', error);
-      showNotification('Failed to delete task', 'error');
-    }
-  }
-
-
-
   /**
    * 显示模态框
    */
@@ -1969,21 +1942,26 @@ class PopupApp {
   }
 
   /**
-   * 删除任务
-   */
+  * 从编辑模态框删除任务
+  */
   async deleteTask(taskId) {
     try {
-      const confirmed = await confirmDialog('Are you sure you want to delete this task?');
+      const confirmed = await confirmDialog('Are you sure you want to delete this task? This action cannot be undone.', 'Delete Task');
       if (confirmed) {
-        await this.taskManager.deleteTask(taskId);
-        await this.loadTaskManagerData();
-        await this.loadData(); // 刷新主界面
-        showNotification('Task deleted successfully', 'success');
-        // 通知background script任务已删除
-        await this.sendMessageToBackground('deleteTask');
+        const success = await this.taskManager.deleteTask(taskId);
+        if (success) {
+          showNotification('Task deleted successfully', 'success');
+          await this.loadTaskManagerData();
+          await this.loadData();
+          this.closeEditModal();
+          // 通知background script任务已删除
+          await this.sendMessageToBackground('deleteTask');
+        } else {
+          showNotification('Failed to delete task', 'error');
+        }
       }
     } catch (error) {
-      console.error('删除任务失败:', error);
+      console.error('Failed to delete task:', error);
       showNotification('Failed to delete task', 'error');
     }
   }
