@@ -65,7 +65,8 @@ export class StorageManager {
   async deleteTask(taskId) {
     try {
       const tasks = await this.getTasks();
-      const filteredTasks = tasks.filter(task => task.id !== taskId);
+      console.log('[StorageManager.deleteTask] 开始删除任务:', taskId);
+      console.log('[StorageManager.deleteTask] 删除前任务数量:', tasks.length);      const filteredTasks = tasks.filter(task => task.id !== taskId);
       const taskObjects = filteredTasks.map(task => task.toObject());
       await this.storage.set({ tasks: taskObjects });
       return true;
