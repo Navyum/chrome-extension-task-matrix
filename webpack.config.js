@@ -7,11 +7,11 @@ module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
 
   return {
-      entry: {
-    background: './src/background/background.js',
-    popup: './src/popup/popup.js',
-    content: './src/content/content.js'
-  },
+    entry: {
+        background: './src/background/background.js',
+        popup: './src/popup/popup.js',
+        content: './src/content/content.js'
+    },
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: '[name].js',
