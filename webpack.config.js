@@ -40,7 +40,7 @@ module.exports = (env, argv) => {
           test: /\.(png|jpg|jpeg|gif|svg)$/,
           type: 'asset/resource',
           generator: {
-            filename: 'assets/images/[name][ext]'
+            filename: 'assets/icons/[name][ext]'
           }
         }
       ]
@@ -49,13 +49,13 @@ module.exports = (env, argv) => {
       new CopyPlugin({
         patterns: [
           { from: 'manifest.json', to: 'manifest.json' },
-          { from: 'assets/icons', to: 'assets/icons' },
+          { from: 'assets/icons', to: 'assets/icons' }
         ]
       }),
-          new HtmlWebpackPlugin({
-      template: './src/popup/popup.html',
-      filename: 'popup.html',
-      chunks: ['popup']
+      new HtmlWebpackPlugin({
+        template: './src/popup/popup.html',
+        filename: 'popup.html',
+        chunks: ['popup']
     }),
 
 
