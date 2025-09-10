@@ -29,6 +29,8 @@ class PopupApp {
     
     // 初始化排序状态
     this.sortState = { sortBy: 'dueDate', sortOrder: 'asc' };
+    // 初始化当前任务筛选器状态
+    this.currentTaskFilter = 'doing'; // 默认筛选为doing
     
     this.init();
   }
@@ -1494,20 +1496,24 @@ class PopupApp {
     const modal = document.getElementById('taskManagerModal');
     if (modal) {
       modal.classList.add('show');
-      // 确保默认选中 'Doing' 标签
+      
+      // 使用保存的筛选器状态而不是硬编码的'doing'
+      const currentFilter = this.currentTaskFilter || 'doing'; // 默认为doing
+      
+      // 更新UI中的active状态
       document.querySelectorAll('#taskFilter .tab-button').forEach(button => {
         button.classList.remove('active');
       });
-      const doingButton = document.querySelector('#taskFilter .tab-button[data-filter="doing"]');
-      if (doingButton) {
-        doingButton.classList.add('active');
+      const activeButton = document.querySelector(`#taskFilter .tab-button[data-filter="${currentFilter}"]`);
+      if (activeButton) {
+        activeButton.classList.add('active');
       }
       
       // 绑定搜索图标点击事件
       this.bindSearchEvents();
-      
+      // 使用保存的筛选器状态
+      await this.setTaskManagerFilter(currentFilter);
       await this.loadTaskManagerData();
-      this.setTaskManagerFilter('doing'); // 默认筛选为'doing'
     }
   }
 
@@ -1548,12 +1554,14 @@ class PopupApp {
   async loadTaskManagerData() {
     try {
       // 在加载数据时也应用当前的筛选器
-      await this.setTaskManagerFilter(this.currentTaskFilter);
-      const tasks = await this.taskManager.getTasks();
-      // 按截止时间排序：由近到远
-      const sortedTasks = this.sortTasksByDueTime(tasks);
-      this.renderTaskManagerList(sortedTasks);
-      this.updateTaskStats(sortedTasks);
+      if (this.currentTaskFilter) {
+        await this.setTaskManagerFilter(this.currentTaskFilter);
+      } else {
+        const tasks = await this.taskManager.getTasks();
+        // 按截止时间排序：由近到远
+        const sortedTasks = this.sortTasksByDueTime(tasks);
+        this.renderTaskManagerList(sortedTasks);
+      }
     } catch (error) {
       console.error('加载任务管理数据失败:', error);
     }
@@ -1814,6 +1822,15 @@ class PopupApp {
    */
   async setTaskManagerFilter(filter) {
     this.currentTaskFilter = filter; // 更新当前筛选器状态
+
+    // 更新UI中的active状态
+    document.querySelectorAll('#taskFilter .tab-button').forEach(button => {
+      button.classList.remove('active');
+    });
+    const activeButton = document.querySelector(`#taskFilter .tab-button[data-filter="${filter}"]`);
+    if (activeButton) {
+      activeButton.classList.add('active');
+    }
 
     // 获取过滤后的任务
     let tasks = await this.taskManager.getTasks();
