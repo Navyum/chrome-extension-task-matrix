@@ -6,7 +6,7 @@ import { Task } from '../models/Task.js';
 
 export class StorageManager {
   constructor() {
-    this.storage = chrome.storage.local;
+    this.storage = browser.storage.local;
   }
 
   /**
@@ -225,7 +225,7 @@ export class StorageManager {
    * 监听存储变化
    */
   onStorageChanged(callback) {
-    chrome.storage.onChanged.addListener((changes, namespace) => {
+    browser.storage.onChanged.addListener((changes, namespace) => {
       if (namespace === 'local') {
         callback(changes);
       }

@@ -44,7 +44,7 @@ class BackgroundService {
       console.log('Setting up message listener...');
       
       // 添加消息监听器
-      chrome.runtime.onMessage.addListener(this.messageHandler.bind(this));
+      browser.runtime.onMessage.addListener(this.messageHandler.bind(this));
       
       console.log('Message listener set up successfully');
     } catch (error) {
@@ -298,7 +298,7 @@ class BackgroundService {
     try {
       if (hasUrgentTask) {
         // 设置紧急提醒图标
-        chrome.action.setIcon({
+        browser.browserAction.setIcon({
           path: {
             "16": "assets/icons/clock16.png",
             "48": "assets/icons/clock48.png",
@@ -308,24 +308,24 @@ class BackgroundService {
         
         // 根据设置决定是否显示徽章
         if (this.settings && this.settings.enableIconBadge) {
-          chrome.action.setBadgeText({
+          browser.browserAction.setBadgeText({
             text: urgentTaskCount.toString()
           });
           
           // 设置徽章背景色为红色（紧急）
-          chrome.action.setBadgeBackgroundColor({
+          browser.browserAction.setBadgeBackgroundColor({
             color: '#EF4444'
           });
         } else {
           // 如果禁用徽章，清除它
-          chrome.action.setBadgeText({
+          browser.browserAction.setBadgeText({
             text: ''
           });
         }
         
         // 根据设置决定是否显示工具提示
         if (this.settings && this.settings.enableIconTitle) {
-          chrome.action.setTitle({
+          browser.browserAction.setTitle({
             title: `TaskMatrix Pro - ${urgentTaskCount} urgent task(s) due soon!`
           });
         }
@@ -343,16 +343,16 @@ class BackgroundService {
   resetExtensionIcon() {
     try {
       // 清除徽章
-      chrome.action.setBadgeText({
+      browser.browserAction.setBadgeText({
         text: ''
       });
       
       // 设置默认工具提示
-      chrome.action.setTitle({
+      browser.browserAction.setTitle({
         title: 'TaskMatrix Pro - 智能任务管理'
       });
 
-      chrome.action.setIcon({
+      browser.browserAction.setIcon({
         path: {
           "16": "assets/icons/icon16.png",
           "48": "assets/icons/icon48.png",
@@ -429,17 +429,17 @@ class BackgroundService {
 const backgroundService = new BackgroundService();
 
 // 监听插件卸载
-chrome.runtime.onSuspend.addListener(() => {
+browser.runtime.onSuspend.addListener(() => {
   console.log('Extension suspending, cleaning up...');
   backgroundService.stopTaskMonitoring();
 });
 
 // 监听插件启动
-chrome.runtime.onStartup.addListener(() => {
+browser.runtime.onStartup.addListener(() => {
   console.log('Extension starting up...');
 });
 
 // 监听插件安装/更新
-chrome.runtime.onInstalled.addListener((details) => {
+browser.runtime.onInstalled.addListener((details) => {
   console.log('Extension installed/updated:', details.reason);
 }); 

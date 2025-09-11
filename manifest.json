@@ -1,21 +1,23 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "TaskMatrix Pro",
   "version": "1.0.0",
-  "description": "Intelligent task management plugin based on Eisenhower Matrix, helping you manage task priorities through visualization",
+  "description": "TaskMatrix Pro is a smart task management plugin based on the Eisenhower Matrix, helping you manage task priorities visually",
   
   "permissions": [
-    "storage"
+    "storage",
+    "activeTab",
+    "tabs"
   ],
   
   "background": {
-    "service_worker": "background.js",
-    "type": "module"
+    "scripts": ["background.js"],
+    "persistent": false
   },
   
-  "action": {
+  "browser_action": {
     "default_popup": "popup.html",
-    "default_title": "TaskMatrix Pro - Intelligent Task Management",
+    "default_title": "TaskMatrix Pro - Smart Task Management",
     "default_icon": {
       "16": "assets/icons/icon16.png",
       "48": "assets/icons/icon48.png",
@@ -38,19 +40,23 @@
   ],
   
   "web_accessible_resources": [
-    {
-      "resources": ["assets/*"],
-      "matches": ["<all_urls>"]
-    }
+    "assets/*"
   ],
   
   "commands": {
-    "_execute_action": {
+    "_execute_browser_action": {
       "suggested_key": {
         "default": "Ctrl+Shift+T",
         "mac": "Command+Shift+T"
       },
-      "description": "Open TaskMatrix Pro"
+      "description": "open TaskMatrix Pro"
+    }
+  },
+  
+  "applications": {
+    "gecko": {
+      "id": "taskmatrix-pro@example.com",
+      "strict_min_version": "78.0"
     }
   }
-} 
+}

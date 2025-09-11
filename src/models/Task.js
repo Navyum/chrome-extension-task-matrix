@@ -91,7 +91,7 @@ export class Task {
   async getUrgentThreshold() {
     // 从Chrome Storage获取设置，默认为24小时
     try {
-      const result = await chrome.storage.local.get(['settings']);
+      const result = await browser.storage.local.get(['settings']);
       return result.settings?.urgentThreshold || 24;
     } catch (error) {
       return 24; // 默认24小时

@@ -2050,9 +2050,9 @@ class PopupApp {
       showNotification('Settings saved successfully', 'success');
       
       // 通知background script设置已更新
-      if (chrome.runtime?.id) {
+      if (browser.runtime?.id) {
         try {
-          await chrome.runtime.sendMessage({ 
+          await browser.runtime.sendMessage({ 
             type: 'settingsUpdated', 
             settings: settings 
           });
@@ -2163,7 +2163,7 @@ class PopupApp {
    */
   async sendMessageToBackground(messageType) {
     try {
-      const response = await chrome.runtime.sendMessage({ type: messageType });
+      const response = await browser.runtime.sendMessage({ type: messageType });
       console.log(`Message ${messageType} sent to background:`, response);
     } catch (error) {
       console.error(`Failed to send ${messageType} message to background:`, error);
