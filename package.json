@@ -1,19 +1,22 @@
 {
-  "name": "taskmatrix-pro",
+  "name": "taskmatrix-pro-firefox",
   "version": "1.0.0",
-  "description": "基于艾森豪威尔矩阵的Chrome任务管理插件",
+  "description": "基于艾森豪威尔矩阵的Firefox任务管理插件",
   "main": "background/background.js",
   "scripts": {
     "build": "webpack --mode production",
+    "build:firefox": "npm run clean && npm run build && npm run package:firefox",
     "dev": "webpack --mode development --watch",
     "test": "jest",
     "lint": "eslint src/**/*.js",
     "format": "prettier --write src/**/*.js",
     "clean": "rm -rf dist",
-    "package": "npm run clean && npm run build && zip -r taskmatrix-pro.zip dist/"
+    "package": "npm run clean && npm run build && zip -r taskmatrix-pro-firefox.zip dist/",
+    "package:firefox": "cd dist && zip -r ../taskmatrix-pro-firefox.xpi *"
   },
   "keywords": [
-    "chrome-extension",
+    "firefox-extension",
+    "firefox-addon",
     "task-management",
     "eisenhower-matrix",
     "productivity",
@@ -42,7 +45,7 @@
     "date-fns": "^2.30.0"
   },
   "browserslist": [
-    "Chrome >= 88"
+    "Firefox >= 78"
   ],
   "jest": {
     "testEnvironment": "jsdom",

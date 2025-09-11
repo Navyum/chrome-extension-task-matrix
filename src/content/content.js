@@ -75,7 +75,7 @@ class ContentScript {
    * 监听来自后台的消息
    */
   listenToBackground() {
-    chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
       switch (message.type) {
         case 'backgroundReady':
           console.log('Received background ready message:', message.message);
