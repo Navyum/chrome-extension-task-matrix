@@ -8,6 +8,17 @@
     "storage"
   ],
   
+  "data_collection_permissions": {
+    "description": "此扩展仅使用本地存储来保存用户的任务数据，不会收集或传输任何个人信息。",
+    "data_types": [
+      "任务标题和描述（仅本地存储）",
+      "任务优先级和状态（仅本地存储）",
+      "任务创建和完成时间（仅本地存储）"
+    ],
+    "data_usage": "所有数据仅用于在用户设备上提供任务管理功能，不会发送到任何外部服务器。",
+    "data_retention": "数据仅存储在用户的浏览器本地存储中，用户可随时删除。"
+  },
+  
   "background": {
     "scripts": ["background.js"],
     "persistent": false
