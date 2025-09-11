@@ -81,4 +81,4 @@ jobs:
           - 支持跨浏览器使用
           - 可视化任务优先级管理
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
