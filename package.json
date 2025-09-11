@@ -11,14 +11,14 @@
     "build:pack": "npm run build:all && npm run pack:chrome && npm run pack:firefox",
     "pack:chrome": "mkdir -pv build && cd dist/chrome && zip -r ../../build/taskmatrix-pro-chrome.zip *",
     "pack:firefox": "mkdir -pv build && cd dist/firefox && zip -r ../../build/taskmatrix-pro-firefox.xpi *",
-    "pack:all": "npm run pack:chrome && npm run pack:firefox",
     "dev": "webpack --mode development --watch",
     "dev:chrome": "webpack --mode development --watch --env browser=chrome",
     "dev:firefox": "webpack --mode development --watch --env browser=firefox",
     "test": "jest",
     "lint": "eslint src/**/*.js",
     "format": "prettier --write src/**/*.js",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "release": "./scripts/release.sh"
   },
   "keywords": [
     "chrome-extension",

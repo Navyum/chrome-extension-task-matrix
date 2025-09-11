@@ -1,0 +1,84 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*'  # 当推送以 v 开头的 tag 时触发
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Build Chrome extension
+      run: npm run build:chrome
+      
+    - name: Build Firefox extension
+      run: npm run build:firefox
+      
+    - name: Create Chrome package
+      run: |
+        mkdir -p build
+        cd dist/chrome
+        zip -r ../../build/taskmatrix-pro-chrome.zip *
+        
+    - name: Create Firefox package
+      run: |
+        cd dist/firefox
+        zip -r ../../build/taskmatrix-pro-firefox.xpi *
+        
+    - name: Get tag name
+      id: get_tag
+      run: echo "TAG_NAME=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+      
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: ${{ steps.get_tag.outputs.TAG_NAME }}
+        name: Release ${{ steps.get_tag.outputs.TAG_NAME }}
+        draft: false
+        prerelease: false
+        files: |
+          build/taskmatrix-pro-chrome.zip
+          build/taskmatrix-pro-firefox.xpi
+        body: |
+          ## TaskMatrix Pro ${{ steps.get_tag.outputs.TAG_NAME }}
+          
+          ### 下载链接
+          - **Chrome 扩展**: `taskmatrix-pro-chrome.zip`
+          - **Firefox 扩展**: `taskmatrix-pro-firefox.xpi`
+          
+          ### 安装说明
+          
+          #### Chrome 安装
+          1. 下载 `taskmatrix-pro-chrome.zip` 文件
+          2. 解压 zip 文件
+          3. 打开 Chrome 浏览器，访问 `chrome://extensions/`
+          4. 开启"开发者模式"
+          5. 点击"加载已解压的扩展程序"
+          6. 选择解压后的文件夹
+          
+          #### Firefox 安装
+          1. 下载 `taskmatrix-pro-firefox.xpi` 文件
+          2. 打开 Firefox 浏览器，访问 `about:addons`
+          3. 点击齿轮图标，选择"从文件安装附加组件"
+          4. 选择下载的 `.xpi` 文件
+          
+          ### 更新内容
+          - 基于艾森豪威尔矩阵的智能任务管理
+          - 支持跨浏览器使用
+          - 可视化任务优先级管理
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
