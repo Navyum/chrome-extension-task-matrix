@@ -6,6 +6,17 @@
 import { StorageManager } from '../services/StorageManager.js';
 import { Task } from '../models/Task.js';
 
+// 浏览器API适配器
+const browserAPI = (() => {
+  if (typeof browser !== 'undefined') {
+    return browser;
+  } else if (typeof chrome !== 'undefined') {
+    return chrome;
+  } else {
+    throw new Error('Neither browser nor chrome API is available');
+  }
+})();
+
 // 简化的后台服务类
 class BackgroundService {
   constructor() {
@@ -44,7 +55,7 @@ class BackgroundService {
       console.log('Setting up message listener...');
       
       // 添加消息监听器
-      chrome.runtime.onMessage.addListener(this.messageHandler.bind(this));
+      browserAPI.runtime.onMessage.addListener(this.messageHandler.bind(this));
       
       console.log('Message listener set up successfully');
     } catch (error) {
@@ -292,13 +303,14 @@ class BackgroundService {
   }
 
   /**
-   * 更新插件图标
+   * 更新插件图标 - 跨浏览器兼容版本
    */
   updateExtensionIcon(hasUrgentTask, urgentTaskCount) {
     try {
       if (hasUrgentTask) {
         // 设置紧急提醒图标
-        chrome.action.setIcon({
+        const actionAPI = browserAPI.action || browserAPI.browserAction;
+        actionAPI.setIcon({
           path: {
             "16": "assets/icons/clock16.png",
             "48": "assets/icons/clock48.png",
@@ -308,24 +320,24 @@ class BackgroundService {
         
         // 根据设置决定是否显示徽章
         if (this.settings && this.settings.enableIconBadge) {
-          chrome.action.setBadgeText({
+          actionAPI.setBadgeText({
             text: urgentTaskCount.toString()
           });
           
           // 设置徽章背景色为红色（紧急）
-          chrome.action.setBadgeBackgroundColor({
+          actionAPI.setBadgeBackgroundColor({
             color: '#EF4444'
           });
         } else {
           // 如果禁用徽章，清除它
-          chrome.action.setBadgeText({
+          actionAPI.setBadgeText({
             text: ''
           });
         }
         
         // 根据设置决定是否显示工具提示
         if (this.settings && this.settings.enableIconTitle) {
-          chrome.action.setTitle({
+          actionAPI.setTitle({
             title: `TaskMatrix Pro - ${urgentTaskCount} urgent task(s) due soon!`
           });
         }
@@ -338,21 +350,23 @@ class BackgroundService {
   }
 
   /**
-   * 重置插件图标为默认状态
+   * 重置插件图标为默认状态 - 跨浏览器兼容版本
    */
   resetExtensionIcon() {
     try {
+      const actionAPI = browserAPI.action || browserAPI.browserAction;
+      
       // 清除徽章
-      chrome.action.setBadgeText({
+      actionAPI.setBadgeText({
         text: ''
       });
       
       // 设置默认工具提示
-      chrome.action.setTitle({
+      actionAPI.setTitle({
         title: 'TaskMatrix Pro - 智能任务管理'
       });
 
-      chrome.action.setIcon({
+      actionAPI.setIcon({
         path: {
           "16": "assets/icons/icon16.png",
           "48": "assets/icons/icon48.png",
@@ -429,17 +443,17 @@ class BackgroundService {
 const backgroundService = new BackgroundService();
 
 // 监听插件卸载
-chrome.runtime.onSuspend.addListener(() => {
+browserAPI.runtime.onSuspend.addListener(() => {
   console.log('Extension suspending, cleaning up...');
   backgroundService.stopTaskMonitoring();
 });
 
 // 监听插件启动
-chrome.runtime.onStartup.addListener(() => {
+browserAPI.runtime.onStartup.addListener(() => {
   console.log('Extension starting up...');
 });
 
 // 监听插件安装/更新
-chrome.runtime.onInstalled.addListener((details) => {
+browserAPI.runtime.onInstalled.addListener((details) => {
   console.log('Extension installed/updated:', details.reason);
-}); 
+});

@@ -1,12 +1,23 @@
 /**
- * 存储管理服务
- * 负责与Chrome Storage API交互
+ * 存储管理服务 - 跨浏览器兼容版本
+ * 负责与浏览器Storage API交互
  */
 import { Task } from '../models/Task.js';
 
+// 浏览器API适配器
+const browserAPI = (() => {
+  if (typeof browser !== 'undefined') {
+    return browser;
+  } else if (typeof chrome !== 'undefined') {
+    return chrome;
+  } else {
+    throw new Error('Neither browser nor chrome API is available');
+  }
+})();
+
 export class StorageManager {
   constructor() {
-    this.storage = chrome.storage.local;
+    this.storage = browserAPI.storage.local;
   }
 
   /**
@@ -66,7 +77,8 @@ export class StorageManager {
     try {
       const tasks = await this.getTasks();
       console.log('[StorageManager.deleteTask] 开始删除任务:', taskId);
-      console.log('[StorageManager.deleteTask] 删除前任务数量:', tasks.length);      const filteredTasks = tasks.filter(task => task.id !== taskId);
+      console.log('[StorageManager.deleteTask] 删除前任务数量:', tasks.length);
+      const filteredTasks = tasks.filter(task => task.id !== taskId);
       const taskObjects = filteredTasks.map(task => task.toObject());
       await this.storage.set({ tasks: taskObjects });
       return true;
@@ -163,7 +175,7 @@ export class StorageManager {
       
       return {
         version: '1.0.0',
-        exportDate: new Date(Date.now()).toISOString(), // 统一使用时间戳并转换为UTC ISO字符串
+        exportDate: new Date(Date.now()).toISOString(),
         tasks: tasks.map(task => task.toObject()),
         settings
       };
@@ -225,10 +237,10 @@ export class StorageManager {
    * 监听存储变化
    */
   onStorageChanged(callback) {
-    chrome.storage.onChanged.addListener((changes, namespace) => {
+    browserAPI.storage.onChanged.addListener((changes, namespace) => {
       if (namespace === 'local') {
         callback(changes);
       }
     });
   }
-} 
+}

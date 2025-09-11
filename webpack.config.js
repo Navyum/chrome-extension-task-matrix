@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
+  const browser = env.browser || 'chrome'; // 默认构建 Chrome
 
   return {
     entry: {
@@ -13,9 +14,9 @@ module.exports = (env, argv) => {
         content: './src/content/content.js'
     },
     output: {
-      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, `dist/${browser}`),
       filename: '[name].js',
-      clean: true
+      clean: false // 不自动清理，因为我们要同时构建多个浏览器
     },
     module: {
       rules: [
@@ -48,7 +49,7 @@ module.exports = (env, argv) => {
     plugins: [
       new CopyPlugin({
         patterns: [
-          { from: 'manifest.json', to: 'manifest.json' },
+          { from: `manifests/${browser}.json`, to: 'manifest.json' },
           { from: 'assets/icons', to: 'assets/icons' }
         ]
       }),
@@ -56,9 +57,7 @@ module.exports = (env, argv) => {
         template: './src/popup/popup.html',
         filename: 'popup.html',
         chunks: ['popup']
-    }),
-
-
+      }),
       ...(isProduction ? [new MiniCssExtractPlugin()] : [])
     ],
     resolve: {
@@ -85,4 +84,4 @@ module.exports = (env, argv) => {
       }
     }
   };
-}; 
+};
