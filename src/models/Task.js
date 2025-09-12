@@ -1,6 +1,17 @@
 /**
  * 任务数据模型
  */
+// 浏览器API适配器
+const browserAPI = (() => {
+  if (typeof browser !== 'undefined') {
+    return browser;
+  } else if (typeof chrome !== 'undefined') {
+    return chrome;
+  } else {
+    throw new Error('Neither browser nor chrome API is available');
+  }
+})();
+
 export class Task {
   constructor(id, title, description, importance, dueDate, category, status = 'doing', coordinates = null) {
     this.id = id;
@@ -91,7 +102,7 @@ export class Task {
   async getUrgentThreshold() {
     // 从Chrome Storage获取设置，默认为24小时
     try {
-      const result = await chrome.storage.local.get(['settings']);
+      const result = await browserAPI.storage.local.get(['settings']);
       return result.settings?.urgentThreshold || 24;
     } catch (error) {
       return 24; // 默认24小时

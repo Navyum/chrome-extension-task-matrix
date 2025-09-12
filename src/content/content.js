@@ -4,6 +4,16 @@
  */
 
 import { Task } from '../models/Task';
+// 浏览器API适配器
+const browserAPI = (() => {
+  if (typeof browser !== 'undefined') {
+    return browser;
+  } else if (typeof chrome !== 'undefined') {
+    return chrome;
+  } else {
+    throw new Error('Neither browser nor chrome API is available');
+  }
+})();
 
 class ContentScript {
   constructor() {
@@ -75,7 +85,7 @@ class ContentScript {
    * 监听来自后台的消息
    */
   listenToBackground() {
-    chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    browserAPI.runtime.onMessage.addListener((message, sender, sendResponse) => {
       switch (message.type) {
         case 'backgroundReady':
           console.log('Received background ready message:', message.message);
