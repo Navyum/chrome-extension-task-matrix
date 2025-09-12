@@ -17,6 +17,17 @@ import reportIcon from '../../assets/icons/report.svg';
 // 使用 + 号符合添加任务的语义
 import plusIcon from '../../assets/icons/add.svg'; // doing.svg 包含一个加号
 
+// 浏览器API适配器
+const browserAPI = (() => {
+  if (typeof browser !== 'undefined') {
+    return browser;
+  } else if (typeof chrome !== 'undefined') {
+    return chrome;
+  } else {
+    throw new Error('Neither browser nor chrome API is available');
+  }
+})();
+
 class PopupApp {
   constructor() {
     this.storageManager = new StorageManager();
@@ -2050,9 +2061,9 @@ class PopupApp {
       showNotification('Settings saved successfully', 'success');
       
       // 通知background script设置已更新
-      if (chrome.runtime?.id) {
+      if (browserAPI.runtime?.id) {
         try {
-          await chrome.runtime.sendMessage({ 
+          await browserAPI.runtime.sendMessage({ 
             type: 'settingsUpdated', 
             settings: settings 
           });
@@ -2163,7 +2174,7 @@ class PopupApp {
    */
   async sendMessageToBackground(messageType) {
     try {
-      const response = await chrome.runtime.sendMessage({ type: messageType });
+      const response = await browserAPI.runtime.sendMessage({ type: messageType });
       console.log(`Message ${messageType} sent to background:`, response);
     } catch (error) {
       console.error(`Failed to send ${messageType} message to background:`, error);
