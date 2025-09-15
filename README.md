@@ -3,7 +3,7 @@
 <div align="center">
 
 [![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Install-blue?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/qr-code-generator-scanner/fejgdbdgmplakfakmkgbbcefmchldhdf) [![Firefox Add-ons](https://img.shields.io/badge/Firefox%20Add--ons-Install-orange?logo=firefox&logoColor=white&style=for-the-badge)](https://addons.mozilla.org/zh-CN/firefox/addon/taskmatrix-pro/)
-[![Version](https://img.shields.io/badge/version-1.0.0-green?style=for-the-badge)](https://chrome.google.com/webstore/detail/qr-code-generator-scanner/fejgdbdgmplakfakmkgbbcefmchldhdf)
+[![Version](https://img.shields.io/badge/version-1.2.3-green?style=for-the-badge)](https://chrome.google.com/webstore/detail/qr-code-generator-scanner/fejgdbdgmplakfakmkgbbcefmchldhdf)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 
 <img src="assets/icons/icon128.png" alt="Task Matrix Pro" width="128" height="128">
