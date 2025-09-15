@@ -1,6 +1,14 @@
 # TaskMatrix Pro
 
-基于艾森豪威尔矩阵的智能任务管理Chrome插件，帮助您通过可视化方式管理任务优先级，提高工作效率。
+<div align="center">
+
+[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Install-blue?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/qr-code-generator-scanner/fejgdbdgmplakfakmkgbbcefmchldhdf) [![Firefox Add-ons](https://img.shields.io/badge/Firefox%20Add--ons-Install-orange?logo=firefox&logoColor=white&style=for-the-badge)](https://addons.mozilla.org/zh-CN/firefox/addon/taskmatrix-pro/)
+[![Version](https://img.shields.io/badge/version-1.0.0-green?style=for-the-badge)](https://chrome.google.com/webstore/detail/qr-code-generator-scanner/fejgdbdgmplakfakmkgbbcefmchldhdf)
+[![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
+
+<img src="icons/icon128.png" alt="Task Matrix Pro" width="128" height="128">
+
+**基于艾森豪威尔矩阵的智能任务管理Chrome插件，帮助您通过可视化方式管理任务优先级，提高工作效率。**
 
 ## 🚀 功能特性
 
@@ -17,6 +25,35 @@
 - **实时更新**: 矩阵每5分钟自动刷新
 - **拖拽交互**: 支持任务拖拽调整位置
 - **快捷键支持**: 提高操作效率
+
+## 📸 功能展示
+
+<div align="center">
+
+### 🏠 主页 - 艾森豪威尔矩阵
+<img src="assets/images/1-1.png" alt="主页二维四象限页面" width="800">
+
+*直观的四象限任务分布，帮助您清晰掌握任务优先级*
+
+### 📋 任务管理
+<img src="assets/images/2-1.png" alt="任务管理页面" width="800">
+
+*完整的任务管理界面，支持添加、编辑、删除任务*
+
+### 📊 可视化报告 - 完成率统计
+<img src="assets/images/3-1.png" alt="可视化报告完成率页面" width="800">
+
+*详细的任务完成率分析，追踪您的工作效率*
+
+### 📈 可视化报告 - 时间趋势
+<img src="assets/images/4-1.png" alt="可视化报告时间趋势页面" width="800">
+
+*时间趋势分析，了解您的工作模式和效率变化*
+
+</div>
+
+> 💡 **推荐**: 从 [Chrome Web Store](https://chrome.google.com/webstore/detail/qr-code-generator-scanner/fejgdbdgmplakfakmkgbbcefmchldhdf) 或 [Firefox Add-ons](https://addons.mozilla.org/zh-CN/firefox/addon/taskmatrix-pro/) 下载体验完整功能！
+
 
 ## 📦 安装说明
 
