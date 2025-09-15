@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "TaskMatrix Pro",
-  "version": "1.0.0",
-  "description": "Intelligent task management plugin based on Eisenhower Matrix, helping you manage task priorities through visualization",
+  "name": "TaskMatrix Pro: Free Task Manager & Tools",
+  "version": "1.2.4",
+  "description": "Free Chrome browser extension for intelligent task management. Visualize and organize your tasks with powerful tools and screen-friendly interface. Perfect for Microsoft users seeking efficient task prioritization.",
   
   "permissions": [
     "storage"
@@ -15,7 +15,7 @@
   
   "action": {
     "default_popup": "popup.html",
-    "default_title": "TaskMatrix Pro - Intelligent Task Management",
+    "default_title": "TaskMatrix Pro: Free Task Manager & Tools",
     "default_icon": {
       "16": "assets/icons/icon16.png",
       "48": "assets/icons/icon48.png",
