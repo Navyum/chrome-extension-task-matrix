@@ -6,9 +6,11 @@
 [![Version](https://img.shields.io/badge/version-1.0.0-green?style=for-the-badge)](https://chrome.google.com/webstore/detail/qr-code-generator-scanner/fejgdbdgmplakfakmkgbbcefmchldhdf)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 
-<img src="icons/icon128.png" alt="Task Matrix Pro" width="128" height="128">
+<img src="assets/icons/icon128.png" alt="Task Matrix Pro" width="128" height="128">
 
 **基于艾森豪威尔矩阵的智能任务管理Chrome插件，帮助您通过可视化方式管理任务优先级，提高工作效率。**
+
+</div>
 
 ## 🚀 功能特性
 
