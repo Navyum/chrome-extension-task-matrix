@@ -118,7 +118,7 @@ export class HeatmapChart {
     this.chartContainer.innerHTML = '';
     
     if (sourceData.sources.length === 0) {
-      this.chartContainer.innerHTML = '<div style="text-align: center; padding: 50px;">No data available</div>';
+      this.chartContainer.innerHTML = '<div style="text-align: center; padding: 50px;">No enough data to generate heatmap</div>';
       return;
     }
     
