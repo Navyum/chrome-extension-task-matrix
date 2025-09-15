@@ -309,9 +309,9 @@ chore: 构建过程或辅助工具的变动
 
 ## 📞 联系我们
 
-- **项目主页**: [GitHub Repository](https://github.com/your-username/taskmatrix-pro)
-- **问题反馈**: [Issues](https://github.com/your-username/taskmatrix-pro/issues)
-- **功能建议**: [Discussions](https://github.com/your-username/taskmatrix-pro/discussions)
+- **项目主页**: [GitHub Repository](https://github.com/Navyum/chrome-extension-task-matrix)
+- **问题反馈**: [Issues](https://github.com/Navyum/chrome-extension-task-matrix/issues)
+- **功能建议**: [Discussions](https://github.com/Navyum/chrome-extension-task-matrix/discussions)
 
 ## 🙏 致谢
 
@@ -319,4 +319,4 @@ chore: 构建过程或辅助工具的变动
 
 ---
 
-**TaskMatrix Pro** - 让任务管理更高效，让时间更有价值！ 
+**TaskMatrix Pro** - 让任务管理更高效，让时间更有价值！
