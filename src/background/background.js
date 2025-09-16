@@ -454,9 +454,11 @@ browserAPI.runtime.onStartup.addListener(() => {
   console.log('Extension starting up...');
 });
 
+
 // 监听插件安装/更新
 browserAPI.runtime.onInstalled.addListener((details) => {
   console.log('Extension installed/updated:', details.reason);
+  
   if (details.reason === browserAPI.runtime.OnInstalledReason.INSTALL) {
     browserAPI.runtime.setUninstallURL('https://forms.gle/Qm4ASuPqckZaYpBE9');
   }
