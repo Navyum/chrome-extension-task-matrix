@@ -13,6 +13,7 @@
         "strict_min_version":"49.0",
         "id": "taskmatrix-pro-navyum@gmail.com",
         "data_collection_permissions": {
+          "required":[]
         }
       }
     },
