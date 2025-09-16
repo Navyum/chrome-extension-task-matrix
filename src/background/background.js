@@ -153,6 +153,7 @@ class BackgroundService {
    * 初始化
    */
   async init() {
+
     try {
       console.log('Background script starting initialization...');
       
@@ -456,4 +457,7 @@ browserAPI.runtime.onStartup.addListener(() => {
 // 监听插件安装/更新
 browserAPI.runtime.onInstalled.addListener((details) => {
   console.log('Extension installed/updated:', details.reason);
+  if (details.reason === browserAPI.runtime.OnInstalledReason.INSTALL) {
+    browserAPI.runtime.setUninstallURL('https://forms.gle/Qm4ASuPqckZaYpBE9');
+  }
 });

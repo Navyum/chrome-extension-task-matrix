@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "TaskMatrix Pro: Free Task Manager & Tools",
   "version": "1.2.4",
-  "description": "Free Chrome browser extension for intelligent task management. Visualize and organize your tasks with powerful tools and screen-friendly interface.",
+  "description": "Free Chrome browser extension for intelligent tasks.Visualize your tasks with powerful tools and screen-friendly interface",
   
   "permissions": [
     "storage"
