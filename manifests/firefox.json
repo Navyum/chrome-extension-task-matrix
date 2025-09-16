@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "TaskMatrix Pro: Free Task Manager & Tools",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "基于艾森豪威尔矩阵的智能任务管理插件，通过可视化帮助您管理任务优先级",
   
   "permissions": [
@@ -10,11 +10,9 @@
   
   "browser_specific_settings": {
       "gecko": {
-        "id": "taskmatrix-pro@example.com",
-        "data_collection": {
-          "collects_user_data": false, 
-          "collects_browsing_data": false,
-          "data_shared_with_third_parties": false
+        "strict_min_version":"49.0",
+        "id": "taskmatrix-pro-navyum@gmail.com",
+        "data_collection_permissions": {
         }
       }
     },
@@ -47,13 +45,6 @@
         "mac": "Command+Shift+T"
       },
       "description": "打开 TaskMatrix Pro"
-    }
-  },
-  
-  "applications": {
-    "gecko": {
-      "id": "taskmatrix-pro@example.com",
-      "strict_min_version": "78.0"
     }
   }
 }
