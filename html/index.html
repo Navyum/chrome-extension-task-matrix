@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMatrix Pro - 基于艾森豪威尔矩阵的任务管理插件</title>
+    <meta name="description" content="使用TaskMatrix Pro高效管理任务，基于艾森豪威尔矩阵原理，帮助您提升生产力，轻松组织和管理日常任务。">
+    <meta name="keywords" content="任务管理,艾森豪威尔矩阵,生产力工具,时间管理,浏览器插件,Chrome扩展,Firefox插件,任务跟踪,效率提升">
+    <meta name="author" content="TaskMatrix Pro">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="zh-CN">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://taskmatri.camscanner.top/">
+    <meta property="og:title" content="TaskMatrix Pro - 基于艾森豪威尔矩阵的任务管理插件">
+    <meta property="og:description" content="使用TaskMatrix Pro高效管理任务，基于艾森豪威尔矩阵原理，帮助您提升生产力，轻松组织和管理日常任务。">
+    <meta property="og:image" content="https://taskmatri.camscanner.top/assets/icons/icon128.png">
+    <meta property="og:site_name" content="TaskMatrix Pro">
+    <meta property="og:locale" content="zh_CN">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://taskmatri.camscanner.top/">
+    <meta property="twitter:title" content="TaskMatrix Pro - 基于艾森豪威尔矩阵的任务管理插件">
+    <meta property="twitter:description" content="使用TaskMatrix Pro高效管理任务，基于艾森豪威尔矩阵原理，帮助您提升生产力，轻松组织和管理日常任务。">
+    <meta property="twitter:image" content="https://taskmatri.camscanner.top/assets/icons/icon128.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://taskmatri.camscanner.top/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/icon16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icon128.png">
+    <link rel="shortcut icon" href="assets/icons/icon32.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/icons/icon32.png" alt="TaskMatrix Pro" class="logo-icon">
+                <span class="logo-text" data-en="TaskMatrix Pro" data-zh="TaskMatrix Pro">TaskMatrix Pro</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#features" class="nav-link" data-en="Features" data-zh="功能特色">Features</a>
+                <a href="#faq" class="nav-link" data-en="FAQ" data-zh="常见问题">FAQ</a>
+                <a href="#install" class="nav-link" data-en="Install" data-zh="立即安装">Install</a>
+            </div>
+            <div class="nav-controls">
+                <div class="language-selector">
+                    <button class="lang-btn" id="lang-btn">
+                        <span class="lang-flag">🇺🇸</span>
+                        <span class="lang-text">EN</span>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-option" data-lang="en">
+                            <span class="lang-flag">🇺🇸</span>
+                            <span>English</span>
+                        </button>
+                        <button class="lang-option" data-lang="zh">
+                            <span class="lang-flag">🇨🇳</span>
+                            <span>中文</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主横幅区域 -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span data-en="Streamline your<br><span class='highlight'>productivity effortlessly</span>" data-zh="轻松提升您的<br><span class='highlight'>生产力效率</span>">
+                        Streamline your<br><span class="highlight">productivity effortlessly</span>
+                    </span>
+                </h1>
+                <p class="hero-description" data-en="Intelligent Task Management with Eisenhower Matrix. Create tasks, track your time, and stay efficient—all within your browser. Install now and take your productivity to the next level." data-zh="基于艾森豪威尔矩阵原理，创建任务、跟踪时间、保持高效——全部在您的浏览器中完成。立即安装，将您的生产力提升到新水平。">
+                    Intelligent Task Management with Eisenhower Matrix. Create tasks, track your time, and stay efficient—all within your browser. Install now and take your productivity to the next level.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://chromewebstore.google.com/detail/fejgdbdgmplakfakmkgbbcefmchldhdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <img src="assets/icons/icon16.png" alt="Chrome" class="btn-icon">
+                        <span data-en="Add to Chrome" data-zh="添加到 Chrome">Add to Chrome</span>
+                    </a>
+                    <a href="https://addons.mozilla.org/zh-CN/firefox/addon/taskmatrix-pro/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <img src="assets/icons/icon16.png" alt="Firefox" class="btn-icon">
+                        <span data-en="Add to Firefox" data-zh="添加到 Firefox">Add to Firefox</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="matrix-demo">
+                    <!-- 坐标轴 -->
+                    <div class="matrix-axes">
+                        <!-- 水平轴 (紧急程度) -->
+                        <div class="axis horizontal-axis">
+                            <div class="axis-label left" data-en="Not Urgent" data-zh="不紧急">Not Urgent</div>
+                            <div class="axis-label right" data-en="Urgent" data-zh="紧急">Urgent</div>
+                        </div>
+                        
+                        <!-- 垂直轴 (重要程度) -->
+                        <div class="axis vertical-axis">
+                            <div class="axis-label top" data-en="Important" data-zh="重要">Important</div>
+                            <div class="axis-label bottom" data-en="Not Important" data-zh="不重要">Not Important</div>
+                        </div>
+                    </div>
+                    
+                    <!-- 矩阵网格 -->
+                    <div class="matrix-grid">
+                        <div class="matrix-quadrant urgent-important">
+                            <h3 data-en="Urgent & Important" data-zh="紧急且重要">Urgent & Important</h3>
+                            <div class="task-item" data-en="Handle complaints" data-zh="处理客户投诉">Handle complaints</div>
+                            <div class="task-item" data-en="Project deadline" data-zh="项目截止日期">Project deadline</div>
+                        </div>
+                        <div class="matrix-quadrant important-not-urgent">
+                            <h3 data-en="Important, Not Urgent" data-zh="重要不紧急">Important, Not Urgent</h3>
+                            <div class="task-item" data-en="Learn new skills" data-zh="学习新技能">Learn new skills</div>
+                            <div class="task-item" data-en="Health checkup" data-zh="健康检查">Health checkup</div>
+                        </div>
+                        <div class="matrix-quadrant urgent-not-important">
+                            <h3 data-en="Urgent, Not Important" data-zh="紧急不重要">Urgent, Not Important</h3>
+                            <div class="task-item" data-en="Reply to emails" data-zh="回复邮件">Reply to emails</div>
+                            <div class="task-item" data-en="Schedule meetings" data-zh="会议安排">Schedule meetings</div>
+                        </div>
+                        <div class="matrix-quadrant not-urgent-not-important">
+                            <h3 data-en="Not Urgent, Not Important" data-zh="不紧急不重要">Not Urgent, Not Important</h3>
+                            <div class="task-item" data-en="Social media" data-zh="社交媒体">Social media</div>
+                            <div class="task-item" data-en="Entertainment" data-zh="娱乐活动">Entertainment</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能特色区域 -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title" data-en="Main features of our extension" data-zh="我们插件的主要功能">Main features of our extension</h2>
+            <p class="section-subtitle" data-en="Equipped with essential features to enhance productivity for professionals and freelancers." data-zh="配备增强专业人员和自由职业者生产力的基本功能。">Equipped with essential features to enhance productivity for professionals and freelancers.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <img src="assets/icons/report.svg" alt="Export Data">
+                        </div>
+                        <h3 data-en="Export Data to CSV" data-zh="导出数据到CSV">Export Data to CSV</h3>
+                    </div>
+                    <p data-en="Easily export your task data to CSV format for detailed analysis or record-keeping. Keep track of your productivity and maintain organized records with just a click." data-zh="轻松将任务数据导出为CSV格式，用于详细分析或记录保存。只需点击一下即可跟踪您的生产力并维护有序记录。">Easily export your task data to CSV format for detailed analysis or record-keeping. Keep track of your productivity and maintain organized records with just a click.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <img src="assets/icons/setting.svg" alt="User-Friendly">
+                        </div>
+                        <h3 data-en="User-Friendly Experience" data-zh="用户友好体验">User-Friendly Experience</h3>
+                    </div>
+                    <p data-en="Enjoy a seamless, intuitive interface designed for ease of use. Manage tasks and track your time effortlessly, without any learning curve, to stay focused on what matters." data-zh="享受专为易用性设计的无缝、直观界面。轻松管理任务和跟踪时间，无需学习曲线，专注于重要事项。">Enjoy a seamless, intuitive interface designed for ease of use. Manage tasks and track your time effortlessly, without any learning curve, to stay focused on what matters.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <img src="assets/icons/award.svg" alt="Clean Design">
+                        </div>
+                        <h3 data-en="Clean and Streamlined Design" data-zh="简洁流畅设计">Clean and Streamlined Design</h3>
+                    </div>
+                    <p data-en="Experience a clean, streamlined design that keeps your focus on productivity. The minimal interface ensures an uncluttered workspace, making task management simple and efficient." data-zh="体验简洁、流畅的设计，让您专注于生产力。最小化界面确保工作空间整洁，使任务管理简单高效。">Experience a clean, streamlined design that keeps your focus on productivity. The minimal interface ensures an uncluttered workspace, making task management simple and efficient.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <img src="assets/icons/clock.png" alt="Task Timers">
+                        </div>
+                        <h3 data-en="Task Timers for Accurate Tracking" data-zh="任务计时器精确跟踪">Task Timers for Accurate Tracking</h3>
+                    </div>
+                    <p data-en="Use built-in timers to track the time spent on each task. Start, pause, and stop timers to monitor your productivity and gain actionable insights." data-zh="使用内置计时器跟踪每个任务花费的时间。开始、暂停和停止计时器来监控您的生产力并获得可操作的见解。">Use built-in timers to track the time spent on each task. Start, pause, and stop timers to monitor your productivity and gain actionable insights.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <img src="assets/icons/complete.svg" alt="Local-First">
+                        </div>
+                        <h3 data-en="Local-First Architecture" data-zh="本地优先架构">Local-First Architecture</h3>
+                    </div>
+                    <p data-en="Work with a local-first approach that ensures your data is always stored on your device. Enjoy fast performance and privacy, even when offline." data-zh="采用本地优先方法，确保您的数据始终存储在设备上。享受快速性能和隐私保护，即使离线也能正常工作。">Work with a local-first approach that ensures your data is always stored on your device. Enjoy fast performance and privacy, even when offline.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <img src="assets/icons/detail.svg" alt="Intuitive Scheduling">
+                        </div>
+                        <h3 data-en="Intuitive Task Scheduling" data-zh="直观任务调度">Intuitive Task Scheduling</h3>
+                    </div>
+                    <p data-en="Plan your day with features like drag-and-drop scheduling, due dates, and priority settings. Organize your tasks effectively to stay on top of your goals." data-zh="通过拖放调度、截止日期和优先级设置等功能规划您的一天。有效组织任务以保持目标进度。">Plan your day with features like drag-and-drop scheduling, due dates, and priority settings. Organize your tasks effectively to stay on top of your goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题区域 -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title" data-en="Still have some doubts?" data-zh="还有一些疑问？">Still have some doubts?</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9,18 15,12 9,6"></polyline>
+                        </svg>
+                        <span data-en="What does this app do?" data-zh="这个应用是做什么的？">What does this app do?</span>
+                    </h3>
+                    <p data-en="This app helps users manage tasks efficiently by creating, organizing, and tracking them while monitoring time spent. It boosts productivity with a simple workflow, helping users stay on top of their tasks." data-zh="这个应用通过创建、组织和跟踪任务来帮助用户高效管理任务，同时监控时间花费。它通过简单的工作流程提升生产力，帮助用户掌控任务。">This app helps users manage tasks efficiently by creating, organizing, and tracking them while monitoring time spent. It boosts productivity with a simple workflow, helping users stay on top of their tasks.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9,18 15,12 9,6"></polyline>
+                        </svg>
+                        <span data-en="How can this app solve my problem?" data-zh="这个应用如何解决我的问题？">How can this app solve my problem?</span>
+                    </h3>
+                    <p data-en="This app helps you stay productive by simplifying task creation, organization, and time tracking, making it easier to stay on schedule and maximize efficiency." data-zh="这个应用通过简化任务创建、组织和时间跟踪来帮助您保持生产力，让您更容易按计划进行并最大化效率。">This app helps you stay productive by simplifying task creation, organization, and time tracking, making it easier to stay on schedule and maximize efficiency.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9,18 15,12 9,6"></polyline>
+                        </svg>
+                        <span data-en="What makes this app different from others?" data-zh="这个应用与其他应用有什么不同？">What makes this app different from others?</span>
+                    </h3>
+                    <p data-en="This app stands out with its seamless integration of task creation and time tracking, all within an intuitive interface." data-zh="这个应用以其在直观界面中无缝集成任务创建和时间跟踪而脱颖而出。">This app stands out with its seamless integration of task creation and time tracking, all within an intuitive interface.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9,18 15,12 9,6"></polyline>
+                        </svg>
+                        <span data-en="Are there any costs involved?" data-zh="是否涉及任何费用？">Are there any costs involved?</span>
+                    </h3>
+                    <p data-en="No, there are no costs involved. The extension is completely free to use." data-zh="不，不涉及任何费用。该插件完全免费使用。">No, there are no costs involved. The extension is completely free to use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 安装区域 -->
+    <section class="install" id="install">
+        <div class="container">
+            <div class="install-content">
+                <h2 class="install-title" data-en="Install our extension now!" data-zh="立即安装我们的插件！">Install our extension now!</h2>
+                <p class="install-description" data-en="Effortlessly organize your tasks, seamlessly track your time, and boost your productivity." data-zh="轻松组织您的任务，无缝跟踪您的时间，提升您的生产力。">Effortlessly organize your tasks, seamlessly track your time, and boost your productivity.</p>
+                
+                <div class="install-buttons">
+                    <a href="https://chromewebstore.google.com/detail/fejgdbdgmplakfakmkgbbcefmchldhdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <img src="assets/icons/icon16.png" alt="Chrome" class="btn-icon">
+                        <span data-en="Add to Chrome" data-zh="添加到 Chrome">Add to Chrome</span>
+                    </a>
+                    <a href="https://addons.mozilla.org/zh-CN/firefox/addon/taskmatrix-pro/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <img src="assets/icons/icon16.png" alt="Firefox" class="btn-icon">
+                        <span data-en="Add to Firefox" data-zh="添加到 Firefox">Add to Firefox</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/icons/icon32.png" alt="TaskMatrix Pro" class="logo-icon">
+                    <span class="logo-text">TaskMatrix Pro</span>
+                </div>
+                <div class="footer-links">
+                    <a href="terms.html" class="footer-link" data-en="Terms" data-zh="条款">Terms</a>
+                    <a href="privacy.html" class="footer-link" data-en="Privacy Policy" data-zh="隐私政策">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-en="&copy; 2025 TaskMatrix Pro. All rights reserved." data-zh="&copy; 2025 TaskMatrix Pro. 保留所有权利。">&copy; 2025 TaskMatrix Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "TaskMatrix Pro",
+        "description": "基于艾森豪威尔矩阵原理的智能任务管理浏览器插件，帮助用户高效管理任务、跟踪时间、提升生产力。",
+        "url": "https://taskmatrixpro.com/",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": ["Chrome", "Firefox"],
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "150"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "TaskMatrix Pro Team"
+        },
+        "screenshot": "https://taskmatrixpro.com/assets/icons/icon128.png",
+        "softwareVersion": "1.0.0",
+        "datePublished": "2024-12-22",
+        "dateModified": "2024-12-22",
+        "inLanguage": ["zh-CN", "en"],
+        "keywords": "任务管理,艾森豪威尔矩阵,生产力工具,时间管理,浏览器插件,Chrome扩展,Firefox插件,任务跟踪,效率提升",
+        "featureList": [
+            "基于艾森豪威尔矩阵的任务分类",
+            "智能时间跟踪",
+            "数据导出到CSV",
+            "本地优先架构",
+            "直观的用户界面",
+            "多语言支持"
+        ]
+    }
+    </script>
+</body>
+</html>
