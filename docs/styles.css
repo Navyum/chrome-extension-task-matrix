@@ -1097,6 +1097,21 @@ body {
 
 /* 响应式设计 */
 @media (max-width: 768px) {
+    .matrix-quadrant {
+        padding: var(--spacing-sm);
+    }
+
+    /* 移动端矩阵象限标题字体调整 */
+    .matrix-quadrant h3 {
+        font-size: 0.7rem;
+    }
+    
+    /* 移动端任务项字体调整 */
+    .task-item {
+        font-size: 0.5rem;
+        padding: var(--spacing-xs) var(--spacing-xs);
+    }
+
     .nav-menu {
         position: fixed;
         top: 70px;
@@ -1186,6 +1201,20 @@ body {
 }
 
 @media (max-width: 480px) {
+    .matrix-quadrant {
+        padding: var(--spacing-sm);
+    }
+    /* 小屏幕矩阵象限标题字体进一步调整 */
+    .matrix-quadrant h3 {
+        font-size: 0.7rem;
+    }
+    
+    /* 小屏幕任务项字体进一步调整 */
+    .task-item {
+        font-size: 0.5rem;
+        padding: 2px 4px;
+    }
+
     .container {
         padding: 0 var(--spacing-md);
     }
