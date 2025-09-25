@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
   "name": "TaskMatrix Pro: Free Task Manager & Tools",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "基于艾森豪威尔矩阵的智能任务管理插件，通过可视化帮助您管理任务优先级",
-  "homepage_url": "https://taskmatrix.camscanner.top/",
+  "homepage_url": "https://taskmatrix.camscanner.top",
   
   "permissions": [
     "storage"
