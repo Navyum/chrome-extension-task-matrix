@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
   "name": "TaskMatrix Pro: Free Task Manager & Tools",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Free Chrome browser extension for intelligent tasks.Visualize your tasks with powerful tools and screen-friendly interface",
-  "homepage_url": "https://taskmatrix.camscanner.top/",
+  "homepage_url": "https://taskmatrix.camscanner.top",
   
   "permissions": [
     "storage"
