@@ -91,29 +91,6 @@ export function isSameDay(date1, date2) {
 }
 
 /**
- * 格式化相对时间
- */
-export function formatRelativeTime(date) {
-  const now = Date.now(); // 直接使用时间戳
-  const target = new Date(date); // date可以是时间戳
-  const diffMs = now - target.getTime(); // 直接使用时间戳进行计算
-  const diffSeconds = Math.floor(diffMs / 1000);
-  const diffMinutes = Math.floor(diffSeconds / 60);
-  const diffHours = Math.floor(diffMinutes / 60);
-  const diffDays = Math.floor(diffHours / 24);
-
-  if (diffDays > 0) {
-    return `${diffDays}天前`;
-  } else if (diffHours > 0) {
-    return `${diffHours}小时前`;
-  } else if (diffMinutes > 0) {
-    return `${diffMinutes}分钟前`;
-  } else {
-    return '刚刚';
-  }
-}
-
-/**
  * 计算两个日期之间的天数
  */
 export function daysBetween(date1, date2) {

@@ -26,7 +26,7 @@ module.exports = (env, argv) => {
           use: {
             loader: 'babel-loader',
             options: {
-              presets: ['@babel/preset-env']
+              envName: isProduction ? 'production' : 'development'
             }
           }
         },
