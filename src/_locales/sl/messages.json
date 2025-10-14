@@ -680,55 +680,159 @@
     "description": "Vpogled o previsoki stopnji dokončanja Q3"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Kvadrant Q1 (pomembno in nujno) predstavlja $percentage% vseh nalog, kar kaže na izboljšanje načrtovanja nalog z hitrim reševanjem pomembnih nalog za preprečevanje nujnih situacij.",
+    "message": "Kvadrant Q1 (pomembno in nujno) predstavlja $1% vseh nalog, kar kaže na izboljšanje načrtovanja nalog z hitrim reševanjem pomembnih nalog za preprečevanje nujnih situacij.",
     "description": "Vpogled o visokem odstotku nalog Q1"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Kvadrant Q4 (ne pomembno vendar nujno) predstavlja $percentage% vseh nalog, prosimo, da pregledate vire teh nizko prioritetnih vendar nujnih nalog in optimizirate proces odzivanja na nujne primere.",
+    "message": "Kvadrant Q4 (ne pomembno vendar nujno) predstavlja $1% vseh nalog, prosimo, da pregledate vire teh nizko prioritetnih vendar nujnih nalog in optimizirate proces odzivanja na nujne primere.",
     "description": "Vpogled o visokem odstotku nalog Q4"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "Naloge «$source» dosegajo $q1Rate% stopnjo dokončanja v Q1 (pomembno in nujno), vendar le $q2Rate% v Q2 (pomembno vendar ne nujno), kar kaže, da je prioriteta izvajanja nalog nadzorovana z «zunanjim pritiskom», ne z notranjim strateškim fokusom.",
+    "message": "Naloge «$1» dosegajo $2% stopnjo dokončanja v Q1 (pomembno in nujno), vendar le $3% v Q2 (pomembno vendar ne nujno), kar kaže, da je prioriteta izvajanja nalog nadzorovana z «zunanjim pritiskom», ne z notranjim strateškim fokusom.",
     "description": "Vpogled o stopnji dokončanja nalog vira Q1 vs Q2"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "Naloge «$source» imajo nizko stopnjo dokončanja ($q4Rate%) v Q4 (ne pomembno vendar nujno), prosimo, da preverite, ali je problem v definiciji prioritete «začasnih nalog».",
+    "message": "Naloge «$1» imajo nizko stopnjo dokončanja ($2%) v Q4 (ne pomembno vendar nujno), prosimo, da preverite, ali je problem v definiciji prioritete «začasnih nalog».",
     "description": "Vpogled o nizki stopnji dokončanja nalog Q4"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "«$source» je zelo koncentriran v kvadrantu $quadrant ($quadrantName), predstavlja $percentage%. Prosimo, da pregledate racionalnost načrtovanja nalog.",
+    "message": "«$1» je zelo koncentriran v kvadrantu $2 ($2Name), predstavlja $1%. Prosimo, da pregledate racionalnost načrtovanja nalog.",
     "description": "Vpogled o visoki koncentraciji nalog v enem kvadrantu"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "«$highSource» ima najvišjo stopnjo dokončanja ($highRate%) v $highQuadrant, «$lowSource» ima najnižjo ($lowRate%) v $lowQuadrant, kar kaže na jasno razliko v prioritetah obdelave različnih vrst nalog.",
+    "message": "«$1» ima najvišjo stopnjo dokončanja ($3%) v $2, «$4» ima najnižjo ($6%) v $5, kar kaže na jasno razliko v prioritetah obdelave različnih vrst nalog.",
     "description": "Vpogled o razliki v stopnji dokončanja med viri"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "$percentage% nalog v Q1 (pomembno in nujno) je v čakanju več kot 3 dni, kar kaže na morebitno pomanjkanje virov za pomembne naloge ali nepričakovane težave. Prosimo, da razmislite o razdelitvi nalog ali dodatni podpori.",
+    "message": "$1% nalog v Q1 (pomembno in nujno) je v čakanju več kot 3 dni, kar kaže na morebitno pomanjkanje virov za pomembne naloge ali nepričakovane težave. Prosimo, da razmislite o razdelitvi nalog ali dodatni podpori.",
     "description": "Vpogled o visokem času, porabljenem za naloge Q1 v čakanju"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Povprečni čas dokončanja dokončanih nalog Q4 (ne pomembno vendar nujno) je $q4Time dni, kar bistveno presega $q2Time dni Q2 (pomembno vendar ne nujno), kar kaže, da «začasne nujne naloge» porabljajo več virov. Prosimo, da optimizirate proces odzivanja na nujne primere.",
+    "message": "Povprečni čas dokončanja dokončanih nalog Q4 (ne pomembno vendar nujno) je $1 dni, kar bistveno presega $2 dni Q2 (pomembno vendar ne nujno), kar kaže, da «začasne nujne naloge» porabljajo več virov. Prosimo, da optimizirate proces odzivanja na nujne primere.",
     "description": "Vpogled o času dokončanja Q4 vs Q2"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Povprečni čas obdelave nalog v čakanju ($pendingTime dni) je bistveno višji od dokončanih nalog ($completedTime dni). Prosimo, da se osredotočite na naloge, ki so dolgo v čakanju, in prilagodite strategijo ali dodelitev virov po potrebi.",
+    "message": "Povprečni čas obdelave nalog v čakanju ($1 dni) je bistveno višji od dokončanih nalog ($2 dni). Prosimo, da se osredotočite na naloge, ki so dolgo v čakanju, in prilagodite strategijo ali dodelitev virov po potrebi.",
     "description": "Vpogled o času nalog v čakanju vs dokončanih"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "Obseg nalog $quadrantLabel se je spremenil od $from do $to za $direction $rate%, kar kaže na pomembne nihanja. Prosimo, da se osredotočite na ravnovesje dodelitve nalog.",
+    "message": "Obseg nalog $1 se je spremenil od $2 do $3 za $4 $5%, kar kaže na pomembne nihanja. Prosimo, da se osredotočite na ravnovesje dodelitve nalog.",
     "description": "Vpogled o nihanju obsega nalog kvadranta"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "Stopnja dokončanja nalog $quadrantLabel kaže na stabilen trend rasti, kar kaže na izboljšanje delovne aktivnosti.",
+    "message": "Stopnja dokončanja nalog $1 kaže na stabilen trend rasti, kar kaže na izboljšanje delovne aktivnosti.",
     "description": "Vpogled o trendu rasti stopnje dokončanja"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "Stopnja dokončanja nalog $quadrantLabel kaže na stabilen trend padanja, kar zahteva pozornost na probleme izvršne aktivnosti.",
+    "message": "Stopnja dokončanja nalog $1 kaže na stabilen trend padanja, kar zahteva pozornost na probleme izvršne aktivnosti.",
     "description": "Vpogled o trendu padanja stopnje dokončanja"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Naloge Q2 (pomembno vendar ne nujno) se še naprej kopičijo brez izboljšanja stopnje dokončanja, kar odraža, da «strateške naloge» niso integrirane v običajni načrt izvajanja, kar prinaša tveganje «kopičenja zamud».",
     "description": "Vpogled o kopičenju nalog Q2"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Pravila analize vpogledov",
+    "description": "Naslov razdelka pravil analize vpogledov"
+  },
+  "completionRateAnalysis": {
+    "message": "Analiza stopnje dokončanja",
+    "description": "Naslov modula analize stopnje dokončanja"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Cilj analize: Analizirati porazdelitev stopnje dokončanja nalog po kvadrantih na podlagi teorije Eisenhowerjeve matrike",
+    "description": "Opis cilja analize stopnje dokončanja"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Glavna pravila vpogledov:",
+    "description": "Naslov pravil analize stopnje dokončanja"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Zaznavanje nizke stopnje dokončanja Q2 (<70% povprečja drugih kvadrantov)",
+    "description": "Pravilo za zaznavanje nizke stopnje dokončanja Q2"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Zaznavanje visoke stopnje dokončanja Q3 (>85% in >120% Q1)",
+    "description": "Pravilo za zaznavanje visoke stopnje dokončanja Q3"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Zaznavanje visokega odstotka nalog Q1/Q4 (>40%/>30%)",
+    "description": "Pravilo za zaznavanje visokega odstotka nalog Q1/Q4"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Križna analiza virov",
+    "description": "Naslov modula križne analize virov"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Cilj analize: Analizirati porazdelitev stopnje dokončanja različnih virov nalog po kvadrantih",
+    "description": "Opis cilja križne analize virov"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Glavna pravila vpogledov:",
+    "description": "Naslov pravil križne analize virov"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Zaznavanje razlike v stopnji dokončanja Q1 visoka Q2 nizka",
+    "description": "Pravilo za zaznavanje razlike v stopnji dokončanja Q1 visoka Q2 nizka"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Zaznavanje nizke stopnje dokončanja Q4",
+    "description": "Pravilo za zaznavanje nizke stopnje dokončanja Q4"
+  },
+  "sourceConcentrationRule": {
+    "message": "Zaznavanje prekomerne koncentracije virov nalog (>60%)",
+    "description": "Pravilo za zaznavanje prekomerne koncentracije virov nalog"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Zaznavanje razlike v stopnji dokončanja med viri (>50%)",
+    "description": "Pravilo za zaznavanje razlike v stopnji dokončanja med viri"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Analiza časovne učinkovitosti",
+    "description": "Naslov modula analize časovne učinkovitosti"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Cilj analize: Analizirati časovno učinkovitost nalog in racionalnost razporeditve virov",
+    "description": "Opis cilja analize časovne učinkovitosti"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Glavna pravila vpogledov:",
+    "description": "Naslov pravil analize časovne učinkovitosti"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Zaznavanje dolgega časa, porabljenega za naloge Q1 v teku (>3 dni in >50%)",
+    "description": "Pravilo za zaznavanje dolgega časa na nalogah Q1 v teku"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Zaznavanje primerjave povprečnega časa Q4 proti Q2 (Q4>Q2×1.5)",
+    "description": "Pravilo za zaznavanje primerjave povprečnega časa Q4 proti Q2"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Zaznavanje primerjave časa med nalogami v teku in dokončanimi (>2x)",
+    "description": "Pravilo za zaznavanje primerjave časa med nalogami v teku in dokončanimi"
+  },
+  "trendAnalysis": {
+    "message": "Analiza trendov",
+    "description": "Naslov modula analize trendov"
+  },
+  "trendAnalysisGoal": {
+    "message": "Cilj analize: Spremljati učinkovitost strategij upravljanja nalog in smeri izboljšav",
+    "description": "Opis cilja analize trendov"
+  },
+  "trendAnalysisRules": {
+    "message": "Glavna pravila vpogledov:",
+    "description": "Naslov pravil analize trendov"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Zaznavanje nihanja obsega nalog (>50% sprememba)",
+    "description": "Pravilo za zaznavanje nihanja obsega nalog"
+  },
+  "completionRateTrendRule": {
+    "message": "Analiza trenda stopnje dokončanja (3 zaporedna obdobja gor/dol)",
+    "description": "Pravilo analize trenda stopnje dokončanja"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Zaznavanje kopičenja nalog Q2 (70% povečanje časovnih točk)",
+    "description": "Pravilo za zaznavanje kopičenja nalog Q2"
   }
 }

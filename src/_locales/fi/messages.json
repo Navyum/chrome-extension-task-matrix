@@ -680,55 +680,159 @@
     "description": "Oivallus Q3:n liian korkeasta valmistumisasteen"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Q1-kvadrantin (tärkeä ja kiireellinen) tehtävät muodostavat $percentage% kaikista tehtävistä, osoittaen tehtävien suunnittelun parantumista, tärkeiden tehtävien aikainen käsittely välttääkseen kiireelliset tilanteet.",
+    "message": "Q1-kvadrantin (tärkeä ja kiireellinen) tehtävät muodostavat $1% kaikista tehtävistä, osoittaen tehtävien suunnittelun parantumista, tärkeiden tehtävien aikainen käsittely välttääkseen kiireelliset tilanteet.",
     "description": "Oivallus Q1:n korkeasta tehtävien prosentista"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Q4-kvadrantin (ei tärkeä mutta kiireellinen) tehtävät muodostavat $percentage% kaikista tehtävistä, ole hyvä ja tarkista näiden matalan prioriteetin mutta kiireellisten tehtävien lähteet, optimoi hätätilanteiden vastausprosessi.",
+    "message": "Q4-kvadrantin (ei tärkeä mutta kiireellinen) tehtävät muodostavat $1% kaikista tehtävistä, ole hyvä ja tarkista näiden matalan prioriteetin mutta kiireellisten tehtävien lähteet, optimoi hätätilanteiden vastausprosessi.",
     "description": "Oivallus Q4:n korkeasta tehtävien prosentista"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "«$source»-tehtävät saavuttavat $q1Rate% valmistumisasteen Q1:ssä (tärkeä ja kiireellinen), mutta vain $q2Rate% Q2:ssa (tärkeä mutta ei kiireellinen), osoittaen että tehtävien toteutusprioriteetti ohjataan «ulkoisella paineella», ei sisäisellä strategisella fokuksella.",
+    "message": "«$1»-tehtävät saavuttavat $2% valmistumisasteen Q1:ssä (tärkeä ja kiireellinen), mutta vain $3% Q2:ssa (tärkeä mutta ei kiireellinen), osoittaen että tehtävien toteutusprioriteetti ohjataan «ulkoisella paineella», ei sisäisellä strategisella fokuksella.",
     "description": "Oivallus lähteen tehtävien Q1 vs Q2 valmistumisasteen"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "«$source»-tehtävillä on matala valmistumisaste ($q4Rate%) Q4:ssä (ei tärkeä mutta kiireellinen), täytyy vahvistaa onko ongelma «väliaikaisten tehtävien» prioriteetin määrittelyssä.",
+    "message": "«$1»-tehtävillä on matala valmistumisaste ($2%) Q4:ssä (ei tärkeä mutta kiireellinen), täytyy vahvistaa onko ongelma «väliaikaisten tehtävien» prioriteetin määrittelyssä.",
     "description": "Oivallus Q4:n tehtävien matalasta valmistumisasteen"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "«$source» on erittäin keskittynyt $quadrant-kvadranttiin ($quadrantName), muodostaen $percentage%. Ole hyvä ja tarkista tehtävien suunnittelun järkevyys.",
+    "message": "«$1» on erittäin keskittynyt $2-kvadranttiin ($2Name), muodostaen $1%. Ole hyvä ja tarkista tehtävien suunnittelun järkevyys.",
     "description": "Oivallus tehtävien korkeasta keskittymisestä yhteen kvadranttiin"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "«$highSource»:lla on korkein valmistumisaste ($highRate%) $highQuadrant:ssa, kun «$lowSource»:lla on matalin ($lowRate%) $lowQuadrant:ssa, näyttäen selkeän eron eri tehtävätyyppien käsittelyprioriteeteissa.",
+    "message": "«$1»:lla on korkein valmistumisaste ($3%) $2:ssa, kun «$4»:lla on matalin ($6%) $5:ssa, näyttäen selkeän eron eri tehtävätyyppien käsittelyprioriteeteissa.",
     "description": "Oivallus lähteiden välisestä valmistumisasteen erosta"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1:llä (tärkeä ja kiireellinen) on $percentage% odottavia tehtäviä jotka vievät yli 3 päivää, osoittaen mahdollista resurssipulaa tai odottamattomia vaikeuksia ydintehtävien kanssa. Ole hyvä ja harkitse tehtävän hajottamista tai lisätukea.",
+    "message": "Q1:llä (tärkeä ja kiireellinen) on $1% odottavia tehtäviä jotka vievät yli 3 päivää, osoittaen mahdollista resurssipulaa tai odottamattomia vaikeuksia ydintehtävien kanssa. Ole hyvä ja harkitse tehtävän hajottamista tai lisätukea.",
     "description": "Oivallus Q1:n odottavista tehtävistä korkealla käytettynä ajalla"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Q4:n (ei tärkeä mutta kiireellinen) valmiiden tehtävien keskimääräinen valmistumisaika on $q4Time päivää, ylittäen huomattavasti Q2:n $q2Time päivää (tärkeä mutta ei kiireellinen), osoittaen että «väliaikaiset kiireelliset tehtävät» vievät liikaa resursseja. Ole hyvä ja optimoi hätätilanteiden vastausprosessi.",
+    "message": "Q4:n (ei tärkeä mutta kiireellinen) valmiiden tehtävien keskimääräinen valmistumisaika on $1 päivää, ylittäen huomattavasti Q2:n $2 päivää (tärkeä mutta ei kiireellinen), osoittaen että «väliaikaiset kiireelliset tehtävät» vievät liikaa resursseja. Ole hyvä ja optimoi hätätilanteiden vastausprosessi.",
     "description": "Oivallus Q4 vs Q2:n tehtävien valmistumisajasta"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Odotettavien tehtävien keskimääräinen käsittelyaika ($pendingTime päivää) on merkittävästi korkeampi kuin valmiiden tehtävien ($completedTime päivää). Ole hyvä ja keskity pitkään odottaviin tehtäviin ja säädä strategiaa tai resurssien allokointia tarpeen mukaan.",
+    "message": "Odotettavien tehtävien keskimääräinen käsittelyaika ($1 päivää) on merkittävästi korkeampi kuin valmiiden tehtävien ($2 päivää). Ole hyvä ja keskity pitkään odottaviin tehtäviin ja säädä strategiaa tai resurssien allokointia tarpeen mukaan.",
     "description": "Oivallus odottavien vs valmiiden tehtävien ajasta"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "$quadrantLabel-tehtävien määrä vaihtelee $from:sta $to:hon $direction $rate%, näyttäen merkittäviä vaihteluita. Ole hyvä ja harkitse keskittymistä tehtävien allokointitasapainoon.",
+    "message": "$1-tehtävien määrä vaihtelee $2:sta $3:hon $4 $5%, näyttäen merkittäviä vaihteluita. Ole hyvä ja harkitse keskittymistä tehtävien allokointitasapainoon.",
     "description": "Oivallus kvadrantin tehtävien määrän vaihtelusta"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "$quadrantLabel-tehtävien valmistumisaste näyttää kestävää nousutrendiä, osoittaen työtoiminnan parantumista.",
+    "message": "$1-tehtävien valmistumisaste näyttää kestävää nousutrendiä, osoittaen työtoiminnan parantumista.",
     "description": "Oivallus valmistumisasteen nousutrendistä"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "$quadrantLabel-tehtävien valmistumisaste näyttää kestävää laskutrendiä, joka vaatii huomiota toteuttavan toiminnan ongelmiin.",
+    "message": "$1-tehtävien valmistumisaste näyttää kestävää laskutrendiä, joka vaatii huomiota toteuttavan toiminnan ongelmiin.",
     "description": "Oivallus valmistumisasteen laskutrendistä"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Q2-tehtävät (tärkeä mutta ei kiireellinen) jatkavat kertymistä ilman valmistumisasteen parantumista, heijastaen että «strategiset tehtävät» eivät ole integroitu säännölliseen toteutussuunnitelmaan, tuoden riskin «viivästysten kertymisestä».",
     "description": "Oivallus Q2:n tehtävien kertymisestä"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Oivallus Analyysi Säännöt",
+    "description": "Oivallus analyysi sääntöjen osion otsikko"
+  },
+  "completionRateAnalysis": {
+    "message": "Valmistumisaste Analyysi",
+    "description": "Valmistumisaste analyysi moduulin otsikko"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Analyysi Tavoite: Analysoi tehtävien valmistumisasteen jakautumista kvadranttien mukaan Eisenhower Matrix -teorian perusteella",
+    "description": "Valmistumisaste analyysi tavoitteen kuvaus"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Pääasialliset Oivallus Säännöt:",
+    "description": "Valmistumisaste analyysi sääntöjen otsikko"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Q2 matala valmistumisaste havainto (<70% muiden kvadranttien keskiarvosta)",
+    "description": "Q2 matala valmistumisaste havainto sääntö"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Q3 korkea valmistumisaste havainto (>85% ja >120% Q1:stä)",
+    "description": "Q3 korkea valmistumisaste havainto sääntö"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Q1/Q4 korkea tehtävä prosentti havainto (>40%/>30%)",
+    "description": "Q1/Q4 korkea tehtävä prosentti havainto sääntö"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Lähde Ristiin Analyysi",
+    "description": "Lähde ristiin analyysi moduulin otsikko"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Analyysi Tavoite: Analysoi eri tehtävä lähteiden valmistumisasteen jakautumista kvadranttien mukaan",
+    "description": "Lähde ristiin analyysi tavoitteen kuvaus"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Pääasialliset Oivallus Säännöt:",
+    "description": "Lähde ristiin analyysi sääntöjen otsikko"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Q1 korkea Q2 matala valmistumisaste ero havainto",
+    "description": "Q1 korkea Q2 matala valmistumisaste ero havainto sääntö"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Q4 matala valmistumisaste havainto",
+    "description": "Q4 matala valmistumisaste havainto sääntö"
+  },
+  "sourceConcentrationRule": {
+    "message": "Tehtävä lähde ylikonsentraatio havainto (>60%)",
+    "description": "Tehtävä lähde ylikonsentraatio havainto sääntö"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Lähde valmistumisaste ero havainto (>50%)",
+    "description": "Lähde valmistumisaste ero havainto sääntö"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Aika Tehokkuus Analyysi",
+    "description": "Aika tehokkuus analyysi moduulin otsikko"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Analyysi Tavoite: Analysoi tehtävien aika tehokkuutta ja resurssien allokointi rationaalisuutta",
+    "description": "Aika tehokkuus analyysi tavoitteen kuvaus"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Pääasialliset Oivallus Säännöt:",
+    "description": "Aika tehokkuus analyysi sääntöjen otsikko"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Q1 meneillään oleva tehtävä pitkä aika käytetty havainto (>3 päivää ja >50%)",
+    "description": "Q1 meneillään oleva tehtävä pitkä aika käytetty havainto sääntö"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Q4 vs Q2 keskimääräinen aika vertailu havainto (Q4>Q2×1.5)",
+    "description": "Q4 vs Q2 keskimääräinen aika vertailu havainto sääntö"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Meneillään vs valmiit tehtävä aika vertailu havainto (>2x)",
+    "description": "Meneillään vs valmiit tehtävä aika vertailu havainto sääntö"
+  },
+  "trendAnalysis": {
+    "message": "Trendi Analyysi",
+    "description": "Trendi analyysi moduulin otsikko"
+  },
+  "trendAnalysisGoal": {
+    "message": "Analyysi Tavoite: Seuraa tehtävä hallintastrategioiden tehokkuutta ja parannussuuntia",
+    "description": "Trendi analyysi tavoitteen kuvaus"
+  },
+  "trendAnalysisRules": {
+    "message": "Pääasialliset Oivallus Säännöt:",
+    "description": "Trendi analyysi sääntöjen otsikko"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Tehtävä määrä vaihtelu havainto (>50% muutos)",
+    "description": "Tehtävä määrä vaihtelu havainto sääntö"
+  },
+  "completionRateTrendRule": {
+    "message": "Valmistumisaste trendi analyysi (3 peräkkäistä jaksoa ylös/alas)",
+    "description": "Valmistumisaste trendi analyysi sääntö"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Q2 tehtävä kertyminen havainto (70% aika pistettä lisäys)",
+    "description": "Q2 tehtävä kertyminen havainto sääntö"
   }
 }

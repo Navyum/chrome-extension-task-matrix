@@ -680,55 +680,159 @@
     "description": "Insight sobre la taxa de finalització massa alta de Q3"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "El quadrant Q1 (important i urgent) representa $percentage% de totes les tasques, mostrant millora en la planificació de tasques resolent ràpidament tasques importants per prevenir situacions urgents.",
+    "message": "El quadrant Q1 (important i urgent) representa $1% de totes les tasques, mostrant millora en la planificació de tasques resolent ràpidament tasques importants per prevenir situacions urgents.",
     "description": "Insight sobre l'alt percentatge de tasques de Q1"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "El quadrant Q4 (no important però urgent) representa $percentage% de totes les tasques, si us plau, reviseu les fonts d'aquestes tasques de baixa prioritat però urgents i optimitzeu el procés de resposta a casos urgents.",
+    "message": "El quadrant Q4 (no important però urgent) representa $1% de totes les tasques, si us plau, reviseu les fonts d'aquestes tasques de baixa prioritat però urgents i optimitzeu el procés de resposta a casos urgents.",
     "description": "Insight sobre l'alt percentatge de tasques de Q4"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "Les tasques «$source» aconsegueixen una taxa de finalització de $q1Rate% en Q1 (important i urgent), però només $q2Rate% en Q2 (important però no urgent), mostrant que la prioritat d'execució de tasques està controlada per «pressió externa», no per focus estratègic intern.",
+    "message": "Les tasques «$1» aconsegueixen una taxa de finalització de $2% en Q1 (important i urgent), però només $3% en Q2 (important però no urgent), mostrant que la prioritat d'execució de tasques està controlada per «pressió externa», no per focus estratègic intern.",
     "description": "Insight sobre la taxa de finalització de tasques de font Q1 vs Q2"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "Les tasques «$source» tenen una taxa de finalització baixa ($q4Rate%) en Q4 (no important però urgent), si us plau, verifiqueu si hi ha un problema en la definició de prioritat de «tasques temporals».",
+    "message": "Les tasques «$1» tenen una taxa de finalització baixa ($2%) en Q4 (no important però urgent), si us plau, verifiqueu si hi ha un problema en la definició de prioritat de «tasques temporals».",
     "description": "Insight sobre la taxa de finalització baixa de tasques de Q4"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "«$source» està altament concentrat en el quadrant $quadrant ($quadrantName), representant $percentage%. Si us plau, reviseu la racionalitat de la planificació de tasques.",
+    "message": "«$1» està altament concentrat en el quadrant $2 ($2Name), representant $1%. Si us plau, reviseu la racionalitat de la planificació de tasques.",
     "description": "Insight sobre l'alta concentració de tasques en un quadrant"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "«$highSource» té la taxa de finalització més alta ($highRate%) en $highQuadrant, «$lowSource» té la més baixa ($lowRate%) en $lowQuadrant, mostrant una clara diferència en les prioritats de processament de diferents tipus de tasques.",
+    "message": "«$1» té la taxa de finalització més alta ($3%) en $2, «$4» té la més baixa ($6%) en $5, mostrant una clara diferència en les prioritats de processament de diferents tipus de tasques.",
     "description": "Insight sobre la diferència de taxa de finalització entre fonts"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "$percentage% de tasques en Q1 (important i urgent) estan pendents durant més de 3 dies, mostrant possible escassetat de recursos per a tasques importants o dificultats inesperades. Si us plau, considereu la divisió de tasques o suport addicional.",
+    "message": "$1% de tasques en Q1 (important i urgent) estan pendents durant més de 3 dies, mostrant possible escassetat de recursos per a tasques importants o dificultats inesperades. Si us plau, considereu la divisió de tasques o suport addicional.",
     "description": "Insight sobre l'alt temps gastat en tasques pendents de Q1"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "El temps mitjà de finalització de tasques completades de Q4 (no important però urgent) és $q4Time dies, superant significativament els $q2Time dies de Q2 (important però no urgent), mostrant que «tasques urgents temporals» estan utilitzant més recursos. Si us plau, optimitzeu el procés de resposta a casos urgents.",
+    "message": "El temps mitjà de finalització de tasques completades de Q4 (no important però urgent) és $1 dies, superant significativament els $2 dies de Q2 (important però no urgent), mostrant que «tasques urgents temporals» estan utilitzant més recursos. Si us plau, optimitzeu el procés de resposta a casos urgents.",
     "description": "Insight sobre el temps de finalització de Q4 vs Q2"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "El temps mitjà de processament de tasques pendents ($pendingTime dies) és significativament més alt que les tasques completades ($completedTime dies). Si us plau, centreu-vos en tasques que han estat pendents durant molt temps i ajusteu l'estratègia o l'assignació de recursos segons sigui necessari.",
+    "message": "El temps mitjà de processament de tasques pendents ($1 dies) és significativament més alt que les tasques completades ($2 dies). Si us plau, centreu-vos en tasques que han estat pendents durant molt temps i ajusteu l'estratègia o l'assignació de recursos segons sigui necessari.",
     "description": "Insight sobre el temps de tasques pendents vs completades"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "El volum de tasques de $quadrantLabel ha fluctuat de $from a $to per $direction $rate%, mostrant fluctuacions significatives. Si us plau, centreu-vos en l'equilibri de l'assignació de tasques.",
+    "message": "El volum de tasques de $1 ha fluctuat de $2 a $3 per $4 $5%, mostrant fluctuacions significatives. Si us plau, centreu-vos en l'equilibri de l'assignació de tasques.",
     "description": "Insight sobre la fluctuació del volum de tasques de quadrant"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "La taxa de finalització de tasques de $quadrantLabel mostra una tendència estable d'augment, mostrant millora en l'activitat laboral.",
+    "message": "La taxa de finalització de tasques de $1 mostra una tendència estable d'augment, mostrant millora en l'activitat laboral.",
     "description": "Insight sobre la tendència d'augment de la taxa de finalització"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "La taxa de finalització de tasques de $quadrantLabel mostra una tendència estable de disminució, requerint atenció en problemes d'activitat executiva.",
+    "message": "La taxa de finalització de tasques de $1 mostra una tendència estable de disminució, requerint atenció en problemes d'activitat executiva.",
     "description": "Insight sobre la tendència de disminució de la taxa de finalització"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Les tasques de Q2 (important però no urgent) continuen acumulant-se sense millora en la taxa de finalització, reflectint que «tasques estratègiques» no estan integrades en el pla d'execució ordinari, portant risc d'«acumulació de retards».",
     "description": "Insight sobre l'acumulació de tasques de Q2"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Regles d'Anàlisi d'Insights",
+    "description": "Títol de la secció de regles d'anàlisi d'insights"
+  },
+  "completionRateAnalysis": {
+    "message": "Anàlisi de Taxa de Finalització",
+    "description": "Títol del mòdul d'anàlisi de taxa de finalització"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Objectiu de l'Anàlisi: Analitzar la distribució de la taxa de finalització de tasques per quadrants basada en la teoria de la Matriu d'Eisenhower",
+    "description": "Descripció de l'objectiu d'anàlisi de taxa de finalització"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Regles Principals d'Insights:",
+    "description": "Títol de les regles d'anàlisi de taxa de finalització"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Detecció de taxa baixa de finalització Q2 (<70% de la mitjana d'altres quadrants)",
+    "description": "Regla de detecció de taxa baixa de finalització Q2"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Detecció de taxa alta de finalització Q3 (>85% i >120% de Q1)",
+    "description": "Regla de detecció de taxa alta de finalització Q3"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Detecció d'alta percentatge de tasques Q1/Q4 (>40%/>30%)",
+    "description": "Regla de detecció d'alta percentatge de tasques Q1/Q4"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Anàlisi Creuada de Fonts",
+    "description": "Títol del mòdul d'anàlisi creuada de fonts"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Objectiu de l'Anàlisi: Analitzar la distribució de la taxa de finalització de diferents fonts de tasques per quadrants",
+    "description": "Descripció de l'objectiu d'anàlisi creuada de fonts"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Regles Principals d'Insights:",
+    "description": "Títol de les regles d'anàlisi creuada de fonts"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Detecció de diferència de taxa de finalització Q1 alta Q2 baixa",
+    "description": "Regla de detecció de diferència de taxa de finalització Q1 alta Q2 baixa"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Detecció de taxa baixa de finalització Q4",
+    "description": "Regla de detecció de taxa baixa de finalització Q4"
+  },
+  "sourceConcentrationRule": {
+    "message": "Detecció de sobreconcentració de fonts de tasques (>60%)",
+    "description": "Regla de detecció de sobreconcentració de fonts de tasques"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Detecció de diferència de taxa de finalització entre fonts (>50%)",
+    "description": "Regla de detecció de diferència de taxa de finalització entre fonts"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Anàlisi d'Eficiència Temporal",
+    "description": "Títol del mòdul d'anàlisi d'eficiència temporal"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Objectiu de l'Anàlisi: Analitzar l'eficiència temporal de les tasques i la racionalitat de l'assignació de recursos",
+    "description": "Descripció de l'objectiu d'anàlisi d'eficiència temporal"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Regles Principals d'Insights:",
+    "description": "Títol de les regles d'anàlisi d'eficiència temporal"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Detecció de temps llarg gastat en tasques Q1 en curs (>3 dies i >50%)",
+    "description": "Regla de detecció de temps llarg gastat en tasques Q1 en curs"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Detecció de comparació de temps mitjà Q4 vs Q2 (Q4>Q2×1.5)",
+    "description": "Regla de detecció de comparació de temps mitjà Q4 vs Q2"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Detecció de comparació de temps entre tasques en curs i finalitzades (>2x)",
+    "description": "Regla de detecció de comparació de temps entre tasques en curs i finalitzades"
+  },
+  "trendAnalysis": {
+    "message": "Anàlisi de Tendències",
+    "description": "Títol del mòdul d'anàlisi de tendències"
+  },
+  "trendAnalysisGoal": {
+    "message": "Objectiu de l'Anàlisi: Seguir l'efectivitat de les estratègies de gestió de tasques i les direccions de millora",
+    "description": "Descripció de l'objectiu d'anàlisi de tendències"
+  },
+  "trendAnalysisRules": {
+    "message": "Regles Principals d'Insights:",
+    "description": "Títol de les regles d'anàlisi de tendències"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Detecció de fluctuació del volum de tasques (>50% canvi)",
+    "description": "Regla de detecció de fluctuació del volum de tasques"
+  },
+  "completionRateTrendRule": {
+    "message": "Anàlisi de tendència de taxa de finalització (3 períodes consecutius amunt/avall)",
+    "description": "Regla d'anàlisi de tendència de taxa de finalització"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Detecció d'acumulació de tasques Q2 (increment 70% punts temporals)",
+    "description": "Regla de detecció d'acumulació de tasques Q2"
   }
 }

@@ -680,55 +680,159 @@
     "description": "Innsikt om Q3 fullføringsgrad som er for høy"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Q1 (Viktig & Haster) kvadrant oppgaver utgjør $percentage% av totale oppgaver, som tyder på forbedring i oppgaveplanlegging, håndter viktige oppgaver tidlig for å unngå haster situasjoner.",
+    "message": "Q1 (Viktig & Haster) kvadrant oppgaver utgjør $1% av totale oppgaver, som tyder på forbedring i oppgaveplanlegging, håndter viktige oppgaver tidlig for å unngå haster situasjoner.",
     "description": "Innsikt om høy Q1 oppgaver prosent"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Q4 (Ikke Viktig & Haster) kvadrant oppgaver utgjør $percentage% av totale oppgaver, gjennomgå kildene til disse lavprioritets men haster oppgaver, optimaliser nødsituasjonsresponsprosesser.",
+    "message": "Q4 (Ikke Viktig & Haster) kvadrant oppgaver utgjør $1% av totale oppgaver, gjennomgå kildene til disse lavprioritets men haster oppgaver, optimaliser nødsituasjonsresponsprosesser.",
     "description": "Innsikt om høy Q4 oppgaver prosent"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "\"$source\" oppgaver i Q1 (Viktig & Haster) oppnår $q1Rate% fullføringsgrad, men bare $q2Rate% i Q2 (Viktig & Ikke Haster), som indikerer at oppgaveutførelseprioritet drives av \"ekstern press\" snarere enn intern strategisk fokus.",
+    "message": "\"$1\" oppgaver i Q1 (Viktig & Haster) oppnår $2% fullføringsgrad, men bare $3% i Q2 (Viktig & Ikke Haster), som indikerer at oppgaveutførelseprioritet drives av \"ekstern press\" snarere enn intern strategisk fokus.",
     "description": "Innsikt om kilde oppgaver Q1 vs Q2 fullføringsgrader"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "\"$source\" oppgaver i Q4 (Ikke Viktig & Haster) har lav fullføringsgrad ($q4Rate%), trenger å bekrefte om \"midlertidige oppgaver\" har prioriteringsdefinisjonsproblem.",
+    "message": "\"$1\" oppgaver i Q4 (Ikke Viktig & Haster) har lav fullføringsgrad ($2%), trenger å bekrefte om \"midlertidige oppgaver\" har prioriteringsdefinisjonsproblem.",
     "description": "Innsikt om Q4 oppgaver lav fullføringsgrad"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "\"$source\" er høyt konsentrert i $quadrant ($quadrantName) kvadrant, som utgjør $percentage%. Gjennomgå oppgaveplanlegging for rimelighet.",
+    "message": "\"$1\" er høyt konsentrert i $2 ($2Name) kvadrant, som utgjør $1%. Gjennomgå oppgaveplanlegging for rimelighet.",
     "description": "Innsikt om oppgaver som er høyt konsentrert i en kvadrant"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "\"$highSource\" i $highQuadrant har høyeste fullføringsgrad ($highRate%), mens \"$lowSource\" i $lowQuadrant har laveste ($lowRate%), som viser tydelige forskjeller i behandlingsprioritet for forskjellige oppgavetyper.",
+    "message": "\"$1\" i $2 har høyeste fullføringsgrad ($3%), mens \"$4\" i $5 har laveste ($6%), som viser tydelige forskjeller i behandlingsprioritet for forskjellige oppgavetyper.",
     "description": "Innsikt om fullføringsgradsforskjeller mellom kilder"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1 (Viktig & Haster) har $percentage% ventende oppgaver som tar mer enn 3 dager, som indikerer potensiell ressursmangel eller uventede vanskeligheter i kjerneoppgaver. Vurder oppgaveoppdeling eller ytterligere støtte.",
+    "message": "Q1 (Viktig & Haster) har $1% ventende oppgaver som tar mer enn 3 dager, som indikerer potensiell ressursmangel eller uventede vanskeligheter i kjerneoppgaver. Vurder oppgaveoppdeling eller ytterligere støtte.",
     "description": "Innsikt om Q1 ventende oppgaver som tar for lang tid"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Q4 (Ikke Viktig & Haster) fullførte oppgaver i gjennomsnitt $q4Time dager, langt overstiger Q2 (Viktig & Ikke Haster) på $q2Time dager, som indikerer at \"midlertidige haster oppgaver\" over-okkuperer ressurser. Optimaliser nødsituasjonsresponsprosesser.",
+    "message": "Q4 (Ikke Viktig & Haster) fullførte oppgaver i gjennomsnitt $1 dager, langt overstiger Q2 (Viktig & Ikke Haster) på $2 dager, som indikerer at \"midlertidige haster oppgaver\" over-okkuperer ressurser. Optimaliser nødsituasjonsresponsprosesser.",
     "description": "Innsikt om Q4 vs Q2 oppgavefullføringstider"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Gjennomsnittlig behandlingstid for ventende oppgaver ($pendingTime dager) er betydelig høyere enn fullførte oppgaver ($completedTime dager). Fokuser på langt fastsittende oppgaver og juster strategi eller ressursallokering ved behov.",
+    "message": "Gjennomsnittlig behandlingstid for ventende oppgaver ($1 dager) er betydelig høyere enn fullførte oppgaver ($2 dager). Fokuser på langt fastsittende oppgaver og juster strategi eller ressursallokering ved behov.",
     "description": "Innsikt om ventende vs fullførte oppgavetider"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "$quadrantLabel oppgavevolum $direction $rate% fra $from til $to, som viser betydelig fluktuasjon. Vurder å fokusere på oppgaveallokeringsbalanse.",
+    "message": "$1 oppgavevolum $4 $5% fra $2 til $3, som viser betydelig fluktuasjon. Vurder å fokusere på oppgaveallokeringsbalanse.",
     "description": "Innsikt om oppgavevolumfluktuasjon"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "$quadrantLabel oppgavefullføringsgrad viser en vedvarende oppadgående trend, som indikerer forbedret arbeidsverksamhet.",
+    "message": "$1 oppgavefullføringsgrad viser en vedvarende oppadgående trend, som indikerer forbedret arbeidsverksamhet.",
     "description": "Innsikt om fullføringsgrad oppadgående trend"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "$quadrantLabel oppgavefullføringsgrad viser en vedvarende nedadgående trend, som krever oppmerksomhet på utførelsesverksamhetsproblem.",
+    "message": "$1 oppgavefullføringsgrad viser en vedvarende nedadgående trend, som krever oppmerksomhet på utførelsesverksamhetsproblem.",
     "description": "Innsikt om fullføringsgrad nedadgående trend"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Q2 (Viktig & Ikke Haster) oppgaver fortsetter å akkumulere uten forbedring i fullføringsgrad, som reflekterer at \"strategiske oppgaver\" ikke er integrert i regelmessige utførelseprogrammer, som presenterer en \"forsinkelsesakkumulering\" risiko.",
     "description": "Innsikt om Q2 oppgaver akkumulering"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Innblikk Analyse Regler",
+    "description": "Tittel for innblikk analyse regler seksjon"
+  },
+  "completionRateAnalysis": {
+    "message": "Fullføringsgrad Analyse",
+    "description": "Tittel for fullføringsgrad analyse modul"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Analyse Mål: Analyser fordelingen av oppgave fullføringsgrad per kvadrant basert på Eisenhower Matrix teori",
+    "description": "Beskrivelse av fullføringsgrad analyse mål"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Hoved Innblikk Regler:",
+    "description": "Tittel for fullføringsgrad analyse regler"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Q2 lav fullføringsgrad deteksjon (<70% av andre kvadranter gjennomsnitt)",
+    "description": "Q2 lav fullføringsgrad deteksjon regel"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Q3 høy fullføringsgrad deteksjon (>85% og >120% av Q1)",
+    "description": "Q3 høy fullføringsgrad deteksjon regel"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Q1/Q4 høy oppgave prosent deteksjon (>40%/>30%)",
+    "description": "Q1/Q4 høy oppgave prosent deteksjon regel"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Kilde Kryssanalyse",
+    "description": "Tittel for kilde kryssanalyse modul"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Analyse Mål: Analyser fullføringsgrad fordeling av forskjellige oppgave kilder per kvadrant",
+    "description": "Beskrivelse av kilde kryssanalyse mål"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Hoved Innblikk Regler:",
+    "description": "Tittel for kilde kryssanalyse regler"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Q1 høy Q2 lav fullføringsgrad forskjell deteksjon",
+    "description": "Q1 høy Q2 lav fullføringsgrad forskjell deteksjon regel"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Q4 lav fullføringsgrad deteksjon",
+    "description": "Q4 lav fullføringsgrad deteksjon regel"
+  },
+  "sourceConcentrationRule": {
+    "message": "Oppgave kilde overkonsentrasjon deteksjon (>60%)",
+    "description": "Oppgave kilde overkonsentrasjon deteksjon regel"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Kilde fullføringsgrad forskjell deteksjon (>50%)",
+    "description": "Kilde fullføringsgrad forskjell deteksjon regel"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Tid Effektivitet Analyse",
+    "description": "Tittel for tid effektivitet analyse modul"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Analyse Mål: Analyser oppgave tid effektivitet og ressurs allokering rasjonalitet",
+    "description": "Beskrivelse av tid effektivitet analyse mål"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Hoved Innblikk Regler:",
+    "description": "Tittel for tid effektivitet analyse regler"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Q1 pågående oppgave lang tid brukt deteksjon (>3 dager og >50%)",
+    "description": "Q1 pågående oppgave lang tid brukt deteksjon regel"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Q4 vs Q2 gjennomsnittlig tid sammenligning deteksjon (Q4>Q2×1.5)",
+    "description": "Q4 vs Q2 gjennomsnittlig tid sammenligning deteksjon regel"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Pågående vs fullførte oppgave tid sammenligning deteksjon (>2x)",
+    "description": "Pågående vs fullførte oppgave tid sammenligning deteksjon regel"
+  },
+  "trendAnalysis": {
+    "message": "Trend Analyse",
+    "description": "Tittel for trend analyse modul"
+  },
+  "trendAnalysisGoal": {
+    "message": "Analyse Mål: Spor effektiviteten av oppgave håndteringsstrategier og forbedringsretninger",
+    "description": "Beskrivelse av trend analyse mål"
+  },
+  "trendAnalysisRules": {
+    "message": "Hoved Innblikk Regler:",
+    "description": "Tittel for trend analyse regler"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Oppgave volum fluktuasjon deteksjon (>50% endring)",
+    "description": "Oppgave volum fluktuasjon deteksjon regel"
+  },
+  "completionRateTrendRule": {
+    "message": "Fullføringsgrad trend analyse (3 påfølgende perioder opp/ned)",
+    "description": "Fullføringsgrad trend analyse regel"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Q2 oppgave akkumulering deteksjon (70% tid punkter økning)",
+    "description": "Q2 oppgave akkumulering deteksjon regel"
   }
 }

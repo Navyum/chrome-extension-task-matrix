@@ -680,55 +680,159 @@
     "description": "Insight sur le taux de finalisation de Q3 étant trop élevé"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Les tâches du quadrant Q1 (Important et Urgent) représentent $percentage% du total des tâches, suggérant une amélioration dans la planification des tâches, gérer les tâches importantes tôt pour éviter les situations urgentes.",
+    "message": "Les tâches du quadrant Q1 (Important et Urgent) représentent $1% du total des tâches, suggérant une amélioration dans la planification des tâches, gérer les tâches importantes tôt pour éviter les situations urgentes.",
     "description": "Insight sur le pourcentage élevé de tâches Q1"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Les tâches du quadrant Q4 (Non Important et Urgent) représentent $percentage% du total des tâches, examiner les sources de ces tâches de faible priorité mais urgentes, optimiser les processus de réponse d'urgence.",
+    "message": "Les tâches du quadrant Q4 (Non Important et Urgent) représentent $1% du total des tâches, examiner les sources de ces tâches de faible priorité mais urgentes, optimiser les processus de réponse d'urgence.",
     "description": "Insight sur le pourcentage élevé de tâches Q4"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "Les tâches \"$source\" en Q1 (Important et Urgent) atteignent $q1Rate% de taux de finalisation, mais seulement $q2Rate% en Q2 (Important et Non Urgent), indiquant que la priorité d'exécution des tâches est motivée par la \"pression externe\" plutôt que par le focus stratégique interne.",
+    "message": "Les tâches \"$1\" en Q1 (Important et Urgent) atteignent $2% de taux de finalisation, mais seulement $3% en Q2 (Important et Non Urgent), indiquant que la priorité d'exécution des tâches est motivée par la \"pression externe\" plutôt que par le focus stratégique interne.",
     "description": "Insight sur les taux de finalisation des tâches de source Q1 vs Q2"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "Les tâches \"$source\" en Q4 (Non Important et Urgent) ont un faible taux de finalisation ($q4Rate%), doivent confirmer si les \"tâches temporaires\" ont des problèmes de définition de priorité.",
+    "message": "Les tâches \"$1\" en Q4 (Non Important et Urgent) ont un faible taux de finalisation ($2%), doivent confirmer si les \"tâches temporaires\" ont des problèmes de définition de priorité.",
     "description": "Insight sur le faible taux de finalisation des tâches Q4"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "\"$source\" sont hautement concentrées dans le quadrant $quadrant ($quadrantName), représentant $percentage%. Examiner la planification des tâches pour la raisonnabilité.",
+    "message": "\"$1\" sont hautement concentrées dans le quadrant $2 ($2Name), représentant $1%. Examiner la planification des tâches pour la raisonnabilité.",
     "description": "Insight sur les tâches hautement concentrées dans un quadrant"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "\"$highSource\" en $highQuadrant a le taux de finalisation le plus élevé ($highRate%), tandis que \"$lowSource\" en $lowQuadrant a le plus faible ($lowRate%), montrant des différences claires dans la priorité de traitement pour différents types de tâches.",
+    "message": "\"$1\" en $2 a le taux de finalisation le plus élevé ($3%), tandis que \"$4\" en $5 a le plus faible ($6%), montrant des différences claires dans la priorité de traitement pour différents types de tâches.",
     "description": "Insight sur les différences de taux de finalisation entre sources"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1 (Important et Urgent) a $percentage% de tâches en attente prenant plus de 3 jours, indiquant une possible pénurie de ressources ou difficulté inattendue dans les tâches centrales. Considérer la décomposition des tâches ou un support supplémentaire.",
+    "message": "Q1 (Important et Urgent) a $1% de tâches en attente prenant plus de 3 jours, indiquant une possible pénurie de ressources ou difficulté inattendue dans les tâches centrales. Considérer la décomposition des tâches ou un support supplémentaire.",
     "description": "Insight sur les tâches en attente Q1 prenant trop de temps"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Les tâches terminées de Q4 (Non Important et Urgent) moyennent $q4Time jours, dépassant largement Q2 (Important et Non Urgent) à $q2Time jours, indiquant que les \"tâches urgentes temporaires\" sur-occupent les ressources. Optimiser les processus de réponse d'urgence.",
+    "message": "Les tâches terminées de Q4 (Non Important et Urgent) moyennent $1 jours, dépassant largement Q2 (Important et Non Urgent) à $2 jours, indiquant que les \"tâches urgentes temporaires\" sur-occupent les ressources. Optimiser les processus de réponse d'urgence.",
     "description": "Insight sur les temps de finalisation des tâches Q4 vs Q2"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Le temps de traitement moyen pour les tâches en attente ($pendingTime jours) est significativement plus élevé que les tâches terminées ($completedTime jours). Se concentrer sur les tâches bloquées depuis longtemps et ajuster la stratégie ou l'allocation de ressources si nécessaire.",
+    "message": "Le temps de traitement moyen pour les tâches en attente ($1 jours) est significativement plus élevé que les tâches terminées ($2 jours). Se concentrer sur les tâches bloquées depuis longtemps et ajuster la stratégie ou l'allocation de ressources si nécessaire.",
     "description": "Insight sur les temps des tâches en attente vs terminées"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "Le volume de tâches $quadrantLabel $direction de $rate% de $from à $to, montrant une fluctuation significative. Considérer se concentrer sur l'équilibre d'allocation des tâches.",
+    "message": "Le volume de tâches $1 $4 de $5% de $2 à $3, montrant une fluctuation significative. Considérer se concentrer sur l'équilibre d'allocation des tâches.",
     "description": "Insight sur la fluctuation du volume de tâches"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "Le taux de finalisation des tâches $quadrantLabel montre une tendance ascendante soutenue, indiquant une efficacité de travail améliorée.",
+    "message": "Le taux de finalisation des tâches $1 montre une tendance ascendante soutenue, indiquant une efficacité de travail améliorée.",
     "description": "Insight sur la tendance ascendante du taux de finalisation"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "Le taux de finalisation des tâches $quadrantLabel montre une tendance descendante soutenue, nécessitant une attention aux problèmes d'efficacité d'exécution.",
+    "message": "Le taux de finalisation des tâches $1 montre une tendance descendante soutenue, nécessitant une attention aux problèmes d'efficacité d'exécution.",
     "description": "Insight sur la tendance descendante du taux de finalisation"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Les tâches Q2 (Important et Non Urgent) continuent de s'accumuler sans amélioration du taux de finalisation, reflétant que les \"tâches stratégiques\" ne sont pas intégrées dans les plans d'exécution réguliers, présentant un risque d'\"accumulation de procrastination\".",
     "description": "Insight sur l'accumulation des tâches Q2"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Règles d'Analyse d'Insight",
+    "description": "Titre de la section des règles d'analyse d'insight"
+  },
+  "completionRateAnalysis": {
+    "message": "Analyse du Taux de Finalisation",
+    "description": "Titre du module d'analyse du taux de finalisation"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Objectif d'Analyse : Analyser la distribution du taux de finalisation des tâches par quadrant basée sur la théorie de la Matrice d'Eisenhower",
+    "description": "Description de l'objectif d'analyse du taux de finalisation"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Règles d'Insight Principales :",
+    "description": "Titre des règles d'analyse du taux de finalisation"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Détection de faible taux de finalisation Q2 (<70% de la moyenne des autres quadrants)",
+    "description": "Règle de détection de faible taux de finalisation Q2"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Détection de taux de finalisation élevé Q3 (>85% et >120% de Q1)",
+    "description": "Règle de détection de taux de finalisation élevé Q3"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Détection de pourcentage élevé de tâches Q1/Q4 (>40%/>30%)",
+    "description": "Règle de détection de pourcentage élevé de tâches Q1/Q4"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Analyse Croisée des Sources",
+    "description": "Titre du module d'analyse croisée des sources"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Objectif d'Analyse : Analyser la distribution du taux de finalisation de différentes sources de tâches par quadrant",
+    "description": "Description de l'objectif d'analyse croisée des sources"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Règles d'Insight Principales :",
+    "description": "Titre des règles d'analyse croisée des sources"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Détection de différence de taux de finalisation Q1 élevé Q2 faible",
+    "description": "Règle de détection de différence de taux de finalisation Q1 élevé Q2 faible"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Détection de faible taux de finalisation Q4",
+    "description": "Règle de détection de faible taux de finalisation Q4"
+  },
+  "sourceConcentrationRule": {
+    "message": "Détection de sur-concentration des sources de tâches (>60%)",
+    "description": "Règle de détection de sur-concentration des sources de tâches"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Détection de différence de taux de finalisation entre sources (>50%)",
+    "description": "Règle de détection de différence de taux de finalisation entre sources"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Analyse de l'Efficacité Temporelle",
+    "description": "Titre du module d'analyse de l'efficacité temporelle"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Objectif d'Analyse : Analyser l'efficacité temporelle des tâches et la rationalité de l'allocation des ressources",
+    "description": "Description de l'objectif d'analyse de l'efficacité temporelle"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Règles d'Insight Principales :",
+    "description": "Titre des règles d'analyse de l'efficacité temporelle"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Détection de temps passé long sur tâches Q1 en cours (>3 jours et >50%)",
+    "description": "Règle de détection de temps passé long sur tâches Q1 en cours"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Détection de comparaison de temps moyen Q4 vs Q2 (Q4>Q2×1.5)",
+    "description": "Règle de détection de comparaison de temps moyen Q4 vs Q2"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Détection de comparaison de temps entre tâches en cours et finalisées (>2x)",
+    "description": "Règle de détection de comparaison de temps entre tâches en cours et finalisées"
+  },
+  "trendAnalysis": {
+    "message": "Analyse de Tendance",
+    "description": "Titre du module d'analyse de tendance"
+  },
+  "trendAnalysisGoal": {
+    "message": "Objectif d'Analyse : Suivre l'efficacité des stratégies de gestion des tâches et les directions d'amélioration",
+    "description": "Description de l'objectif d'analyse de tendance"
+  },
+  "trendAnalysisRules": {
+    "message": "Règles d'Insight Principales :",
+    "description": "Titre des règles d'analyse de tendance"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Détection de fluctuation du volume de tâches (>50% de changement)",
+    "description": "Règle de détection de fluctuation du volume de tâches"
+  },
+  "completionRateTrendRule": {
+    "message": "Analyse de tendance du taux de finalisation (3 périodes consécutives hausse/baisse)",
+    "description": "Règle d'analyse de tendance du taux de finalisation"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Détection d'accumulation de tâches Q2 (augmentation de 70% des points temporels)",
+    "description": "Règle de détection d'accumulation de tâches Q2"
   }
 }

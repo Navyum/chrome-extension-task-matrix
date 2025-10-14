@@ -680,55 +680,159 @@
     "description": "Thông tin chi tiết về tỷ lệ hoàn thành Q3 quá cao"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Q1 (Quan Trọng và Khẩn Cấp) góc phần tư nhiệm vụ chiếm $percentage% tổng số nhiệm vụ, cho thấy cải thiện trong lập kế hoạch nhiệm vụ, xử lý các nhiệm vụ quan trọng sớm để tránh các tình huống khẩn cấp.",
+    "message": "Q1 (Quan Trọng và Khẩn Cấp) góc phần tư nhiệm vụ chiếm $1% tổng số nhiệm vụ, cho thấy cải thiện trong lập kế hoạch nhiệm vụ, xử lý các nhiệm vụ quan trọng sớm để tránh các tình huống khẩn cấp.",
     "description": "Thông tin chi tiết về phần trăm nhiệm vụ Q1 cao"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Q4 (Không Quan Trọng và Khẩn Cấp) góc phần tư nhiệm vụ chiếm $percentage% tổng số nhiệm vụ, xem xét nguồn gốc của những nhiệm vụ ưu tiên thấp nhưng khẩn cấp này, tối ưu hóa các quy trình phản ứng khẩn cấp.",
+    "message": "Q4 (Không Quan Trọng và Khẩn Cấp) góc phần tư nhiệm vụ chiếm $1% tổng số nhiệm vụ, xem xét nguồn gốc của những nhiệm vụ ưu tiên thấp nhưng khẩn cấp này, tối ưu hóa các quy trình phản ứng khẩn cấp.",
     "description": "Thông tin chi tiết về phần trăm nhiệm vụ Q4 cao"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "\"$source\" nhiệm vụ trong Q1 (Quan Trọng và Khẩn Cấp) đạt $q1Rate% tỷ lệ hoàn thành, nhưng chỉ $q2Rate% trong Q2 (Quan Trọng và Không Khẩn Cấp), cho thấy ưu tiên thực hiện nhiệm vụ được điều khiển bởi \"áp lực bên ngoài\" thay vì tập trung chiến lược nội bộ.",
+    "message": "\"$1\" nhiệm vụ trong Q1 (Quan Trọng và Khẩn Cấp) đạt $2% tỷ lệ hoàn thành, nhưng chỉ $3% trong Q2 (Quan Trọng và Không Khẩn Cấp), cho thấy ưu tiên thực hiện nhiệm vụ được điều khiển bởi \"áp lực bên ngoài\" thay vì tập trung chiến lược nội bộ.",
     "description": "Thông tin chi tiết về tỷ lệ hoàn thành nhiệm vụ nguồn Q1 vs Q2"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "\"$source\" nhiệm vụ trong Q4 (Không Quan Trọng và Khẩn Cấp) có tỷ lệ hoàn thành thấp ($q4Rate%), cần xác nhận xem \"nhiệm vụ tạm thời\" có vấn đề định nghĩa ưu tiên hay không.",
+    "message": "\"$1\" nhiệm vụ trong Q4 (Không Quan Trọng và Khẩn Cấp) có tỷ lệ hoàn thành thấp ($2%), cần xác nhận xem \"nhiệm vụ tạm thời\" có vấn đề định nghĩa ưu tiên hay không.",
     "description": "Thông tin chi tiết về tỷ lệ hoàn thành nhiệm vụ Q4 thấp"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "\"$source\" tập trung cao độ trong góc phần tư $quadrant ($quadrantName), chiếm $percentage%. Xem xét lập kế hoạch nhiệm vụ về tính hợp lý.",
+    "message": "\"$1\" tập trung cao độ trong góc phần tư $2 ($2Name), chiếm $1%. Xem xét lập kế hoạch nhiệm vụ về tính hợp lý.",
     "description": "Thông tin chi tiết về nhiệm vụ tập trung cao độ trong một góc phần tư"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "\"$highSource\" trong $highQuadrant có tỷ lệ hoàn thành cao nhất ($highRate%), trong khi \"$lowSource\" trong $lowQuadrant có thấp nhất ($lowRate%), cho thấy sự khác biệt rõ ràng trong ưu tiên xử lý cho các loại nhiệm vụ khác nhau.",
+    "message": "\"$1\" trong $2 có tỷ lệ hoàn thành cao nhất ($3%), trong khi \"$4\" trong $5 có thấp nhất ($6%), cho thấy sự khác biệt rõ ràng trong ưu tiên xử lý cho các loại nhiệm vụ khác nhau.",
     "description": "Thông tin chi tiết về sự khác biệt tỷ lệ hoàn thành giữa các nguồn"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1 (Quan Trọng và Khẩn Cấp) có $percentage% nhiệm vụ chờ xử lý mất hơn 3 ngày, cho thấy thiếu hụt tài nguyên tiềm ẩn hoặc khó khăn bất ngờ trong các nhiệm vụ cốt lõi. Xem xét chia nhỏ nhiệm vụ hoặc hỗ trợ thêm.",
+    "message": "Q1 (Quan Trọng và Khẩn Cấp) có $1% nhiệm vụ chờ xử lý mất hơn 3 ngày, cho thấy thiếu hụt tài nguyên tiềm ẩn hoặc khó khăn bất ngờ trong các nhiệm vụ cốt lõi. Xem xét chia nhỏ nhiệm vụ hoặc hỗ trợ thêm.",
     "description": "Thông tin chi tiết về nhiệm vụ chờ xử lý Q1 mất quá nhiều thời gian"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Q4 (Không Quan Trọng và Khẩn Cấp) nhiệm vụ hoàn thành trung bình $q4Time ngày, vượt xa Q2 (Quan Trọng và Không Khẩn Cấp) ở $q2Time ngày, cho thấy \"nhiệm vụ khẩn cấp tạm thời\" chiếm quá nhiều tài nguyên. Tối ưu hóa các quy trình phản ứng khẩn cấp.",
+    "message": "Q4 (Không Quan Trọng và Khẩn Cấp) nhiệm vụ hoàn thành trung bình $1 ngày, vượt xa Q2 (Quan Trọng và Không Khẩn Cấp) ở $2 ngày, cho thấy \"nhiệm vụ khẩn cấp tạm thời\" chiếm quá nhiều tài nguyên. Tối ưu hóa các quy trình phản ứng khẩn cấp.",
     "description": "Thông tin chi tiết về thời gian hoàn thành nhiệm vụ Q4 vs Q2"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Thời gian xử lý trung bình của nhiệm vụ chờ xử lý ($pendingTime ngày) cao hơn đáng kể so với nhiệm vụ hoàn thành ($completedTime ngày). Tập trung vào các nhiệm vụ bị kẹt lâu và điều chỉnh chiến lược hoặc phân bổ tài nguyên khi cần thiết.",
+    "message": "Thời gian xử lý trung bình của nhiệm vụ chờ xử lý ($1 ngày) cao hơn đáng kể so với nhiệm vụ hoàn thành ($2 ngày). Tập trung vào các nhiệm vụ bị kẹt lâu và điều chỉnh chiến lược hoặc phân bổ tài nguyên khi cần thiết.",
     "description": "Thông tin chi tiết về thời gian nhiệm vụ chờ xử lý vs hoàn thành"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "$quadrantLabel khối lượng nhiệm vụ $direction $rate% từ $from đến $to, cho thấy biến động đáng kể. Xem xét tập trung vào cân bằng phân bổ nhiệm vụ.",
+    "message": "$1 khối lượng nhiệm vụ $4 $5% từ $2 đến $3, cho thấy biến động đáng kể. Xem xét tập trung vào cân bằng phân bổ nhiệm vụ.",
     "description": "Thông tin chi tiết về biến động khối lượng nhiệm vụ góc phần tư"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "$quadrantLabel tỷ lệ hoàn thành nhiệm vụ cho thấy xu hướng tăng liên tục, cho thấy hoạt động làm việc được cải thiện.",
+    "message": "$1 tỷ lệ hoàn thành nhiệm vụ cho thấy xu hướng tăng liên tục, cho thấy hoạt động làm việc được cải thiện.",
     "description": "Thông tin chi tiết về xu hướng tăng tỷ lệ hoàn thành"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "$quadrantLabel tỷ lệ hoàn thành nhiệm vụ cho thấy xu hướng giảm liên tục, cần chú ý đến các vấn đề hoạt động thực hiện.",
+    "message": "$1 tỷ lệ hoàn thành nhiệm vụ cho thấy xu hướng giảm liên tục, cần chú ý đến các vấn đề hoạt động thực hiện.",
     "description": "Thông tin chi tiết về xu hướng giảm tỷ lệ hoàn thành"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Q2 (Quan Trọng và Không Khẩn Cấp) nhiệm vụ tiếp tục tích lũy mà không cải thiện tỷ lệ hoàn thành, phản ánh rằng \"nhiệm vụ chiến lược\" không được tích hợp vào các chương trình thực hiện thường xuyên, điều này tạo ra rủi ro \"tích lũy chậm trễ\".",
     "description": "Thông tin chi tiết về sự tích lũy nhiệm vụ Q2"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Quy Tắc Phân Tích Thông Tin Chi Tiết",
+    "description": "Tiêu đề phần quy tắc phân tích thông tin chi tiết"
+  },
+  "completionRateAnalysis": {
+    "message": "Phân Tích Tỷ Lệ Hoàn Thành",
+    "description": "Tiêu đề mô-đun phân tích tỷ lệ hoàn thành"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Mục Tiêu Phân Tích: Phân tích phân bố tỷ lệ hoàn thành nhiệm vụ theo góc phần tư dựa trên lý thuyết Ma Trận Eisenhower",
+    "description": "Mô tả mục tiêu phân tích tỷ lệ hoàn thành"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Quy Tắc Thông Tin Chi Tiết Chính:",
+    "description": "Tiêu đề quy tắc phân tích tỷ lệ hoàn thành"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Phát hiện tỷ lệ hoàn thành thấp Q2 (<70% trung bình các góc phần tư khác)",
+    "description": "Quy tắc phát hiện tỷ lệ hoàn thành thấp Q2"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Phát hiện tỷ lệ hoàn thành cao Q3 (>85% và >120% của Q1)",
+    "description": "Quy tắc phát hiện tỷ lệ hoàn thành cao Q3"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Phát hiện tỷ lệ phần trăm nhiệm vụ cao Q1/Q4 (>40%/>30%)",
+    "description": "Quy tắc phát hiện tỷ lệ phần trăm nhiệm vụ cao Q1/Q4"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Phân Tích Chéo Nguồn",
+    "description": "Tiêu đề mô-đun phân tích chéo nguồn"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Mục Tiêu Phân Tích: Phân tích phân bố tỷ lệ hoàn thành của các nguồn nhiệm vụ khác nhau theo góc phần tư",
+    "description": "Mô tả mục tiêu phân tích chéo nguồn"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Quy Tắc Thông Tin Chi Tiết Chính:",
+    "description": "Tiêu đề quy tắc phân tích chéo nguồn"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Phát hiện sự khác biệt tỷ lệ hoàn thành Q1 cao Q2 thấp",
+    "description": "Quy tắc phát hiện sự khác biệt tỷ lệ hoàn thành Q1 cao Q2 thấp"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Phát hiện tỷ lệ hoàn thành thấp Q4",
+    "description": "Quy tắc phát hiện tỷ lệ hoàn thành thấp Q4"
+  },
+  "sourceConcentrationRule": {
+    "message": "Phát hiện tập trung quá mức nguồn nhiệm vụ (>60%)",
+    "description": "Quy tắc phát hiện tập trung quá mức nguồn nhiệm vụ"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Phát hiện sự khác biệt tỷ lệ hoàn thành giữa các nguồn (>50%)",
+    "description": "Quy tắc phát hiện sự khác biệt tỷ lệ hoàn thành giữa các nguồn"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Phân Tích Hiệu Quả Thời Gian",
+    "description": "Tiêu đề mô-đun phân tích hiệu quả thời gian"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Mục Tiêu Phân Tích: Phân tích hiệu quả thời gian của nhiệm vụ và tính hợp lý của phân bổ tài nguyên",
+    "description": "Mô tả mục tiêu phân tích hiệu quả thời gian"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Quy Tắc Thông Tin Chi Tiết Chính:",
+    "description": "Tiêu đề quy tắc phân tích hiệu quả thời gian"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Phát hiện thời gian dài dành cho nhiệm vụ Q1 đang thực hiện (>3 ngày và >50%)",
+    "description": "Quy tắc phát hiện thời gian dài dành cho nhiệm vụ Q1 đang thực hiện"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Phát hiện so sánh thời gian trung bình Q4 vs Q2 (Q4>Q2×1.5)",
+    "description": "Quy tắc phát hiện so sánh thời gian trung bình Q4 vs Q2"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Phát hiện so sánh thời gian giữa nhiệm vụ đang thực hiện và đã hoàn thành (>2x)",
+    "description": "Quy tắc phát hiện so sánh thời gian giữa nhiệm vụ đang thực hiện và đã hoàn thành"
+  },
+  "trendAnalysis": {
+    "message": "Phân Tích Xu Hướng",
+    "description": "Tiêu đề mô-đun phân tích xu hướng"
+  },
+  "trendAnalysisGoal": {
+    "message": "Mục Tiêu Phân Tích: Theo dõi hiệu quả của các chiến lược quản lý nhiệm vụ và hướng cải thiện",
+    "description": "Mô tả mục tiêu phân tích xu hướng"
+  },
+  "trendAnalysisRules": {
+    "message": "Quy Tắc Thông Tin Chi Tiết Chính:",
+    "description": "Tiêu đề quy tắc phân tích xu hướng"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Phát hiện biến động khối lượng nhiệm vụ (>50% thay đổi)",
+    "description": "Quy tắc phát hiện biến động khối lượng nhiệm vụ"
+  },
+  "completionRateTrendRule": {
+    "message": "Phân tích xu hướng tỷ lệ hoàn thành (3 giai đoạn liên tiếp tăng/giảm)",
+    "description": "Quy tắc phân tích xu hướng tỷ lệ hoàn thành"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Phát hiện tích lũy nhiệm vụ Q2 (tăng 70% điểm thời gian)",
+    "description": "Quy tắc phát hiện tích lũy nhiệm vụ Q2"
   }
 }

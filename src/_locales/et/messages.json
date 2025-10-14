@@ -680,55 +680,159 @@
     "description": "Ülevaade Q3 liiga kõrgest lõpetamise määrast"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Q1 kvadrandi (tähtis ja kiireloomuline) ülesanded moodustavad $percentage% kõigist ülesannetest, näidates ülesannete planeerimise paranemist, tähtsate ülesannete varajane käsitlemine kiireloomuliste olukordade vältimiseks.",
+    "message": "Q1 kvadrandi (tähtis ja kiireloomuline) ülesanded moodustavad $1% kõigist ülesannetest, näidates ülesannete planeerimise paranemist, tähtsate ülesannete varajane käsitlemine kiireloomuliste olukordade vältimiseks.",
     "description": "Ülevaade Q1 kõrgest ülesannete protsendist"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Q4 kvadrandi (mitte tähtis aga kiireloomuline) ülesanded moodustavad $percentage% kõigist ülesannetest, palun vaadake üle nende madala prioriteediga aga kiireloomuliste ülesannete allikad, optimeerige hädaolukordade vastamise protsess.",
+    "message": "Q4 kvadrandi (mitte tähtis aga kiireloomuline) ülesanded moodustavad $1% kõigist ülesannetest, palun vaadake üle nende madala prioriteediga aga kiireloomuliste ülesannete allikad, optimeerige hädaolukordade vastamise protsess.",
     "description": "Ülevaade Q4 kõrgest ülesannete protsendist"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "«$source» ülesanded saavutavad $q1Rate% lõpetamise määra Q1-s (tähtis ja kiireloomuline), aga ainult $q2Rate% Q2-s (tähtis aga mitte kiireloomuline), näidates et ülesannete täitmise prioriteet on juhitud «välise survega», mitte sisemise strateegilise fookusega.",
+    "message": "«$1» ülesanded saavutavad $2% lõpetamise määra Q1-s (tähtis ja kiireloomuline), aga ainult $3% Q2-s (tähtis aga mitte kiireloomuline), näidates et ülesannete täitmise prioriteet on juhitud «välise survega», mitte sisemise strateegilise fookusega.",
     "description": "Ülevaade allika ülesannete Q1 vs Q2 lõpetamise määrast"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "«$source» ülesannetel on madal lõpetamise määr ($q4Rate%) Q4-s (mitte tähtis aga kiireloomuline), tuleb kinnitada kas on probleem «ajutiste ülesannete» prioriteedi määratlemisega.",
+    "message": "«$1» ülesannetel on madal lõpetamise määr ($2%) Q4-s (mitte tähtis aga kiireloomuline), tuleb kinnitada kas on probleem «ajutiste ülesannete» prioriteedi määratlemisega.",
     "description": "Ülevaade Q4 ülesannete madalast lõpetamise määrast"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "«$source» on väga kontsentreeritud $quadrant kvandrandis ($quadrantName), moodustades $percentage%. Palun vaadake üle ülesannete planeerimise ratsionaalsus.",
+    "message": "«$1» on väga kontsentreeritud $2 kvandrandis ($2Name), moodustades $1%. Palun vaadake üle ülesannete planeerimise ratsionaalsus.",
     "description": "Ülevaade ülesannete kõrgest kontsentreerumisest ühte kvadrandi"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "«$highSource» on kõrgeim lõpetamise määr ($highRate%) $highQuadrant-s, samas kui «$lowSource» on madalaim ($lowRate%) $lowQuadrant-s, näidates selget erinevust erinevate ülesannete tüüpide töötlemise prioriteetides.",
+    "message": "«$1» on kõrgeim lõpetamise määr ($3%) $2-s, samas kui «$4» on madalaim ($6%) $5-s, näidates selget erinevust erinevate ülesannete tüüpide töötlemise prioriteetides.",
     "description": "Ülevaade allikate vahelisest lõpetamise määra erinevusest"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1-l (tähtis ja kiireloomuline) on $percentage% ootel ülesandeid mis võtavad üle 3 päeva, näidates võimalikku ressursside puudust või ootamatuid raskusi põhiülesannetega. Palun kaaluge ülesande jagamist või täiendavat tuge.",
+    "message": "Q1-l (tähtis ja kiireloomuline) on $1% ootel ülesandeid mis võtavad üle 3 päeva, näidates võimalikku ressursside puudust või ootamatuid raskusi põhiülesannetega. Palun kaaluge ülesande jagamist või täiendavat tuge.",
     "description": "Ülevaade Q1 ootel ülesannetest kõrge kulutatud ajaga"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Q4 (mitte tähtis aga kiireloomuline) lõpetatud ülesannete keskmine lõpetamise aeg on $q4Time päeva, ületades märkimisväärselt Q2 $q2Time päeva (tähtis aga mitte kiireloomuline), näidates et «ajutised kiireloomulised ülesanded» võtavad liiga palju ressursse. Palun optimeerige hädaolukordade vastamise protsess.",
+    "message": "Q4 (mitte tähtis aga kiireloomuline) lõpetatud ülesannete keskmine lõpetamise aeg on $1 päeva, ületades märkimisväärselt Q2 $2 päeva (tähtis aga mitte kiireloomuline), näidates et «ajutised kiireloomulised ülesanded» võtavad liiga palju ressursse. Palun optimeerige hädaolukordade vastamise protsess.",
     "description": "Ülevaade Q4 vs Q2 ülesannete lõpetamise ajast"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Ootel ülesannete keskmine töötlemise aeg ($pendingTime päeva) on märkimisväärselt kõrgem kui lõpetatud ülesannete ($completedTime päeva). Palun keskenduge ülesannetele mis jäävad kauaks ootele ja kohandage strateegiat või ressursside jaotust vastavalt vajadusele.",
+    "message": "Ootel ülesannete keskmine töötlemise aeg ($1 päeva) on märkimisväärselt kõrgem kui lõpetatud ülesannete ($2 päeva). Palun keskenduge ülesannetele mis jäävad kauaks ootele ja kohandage strateegiat või ressursside jaotust vastavalt vajadusele.",
     "description": "Ülevaade ootel vs lõpetatud ülesannete ajast"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "$quadrantLabel ülesannete maht kõigub $from-st $to-sse $direction $rate%, näidates märkimisväärseid kõikumisi. Palun kaaluge keskendumist ülesannete jaotuse tasakaalule.",
+    "message": "$1 ülesannete maht kõigub $2-st $3-sse $4 $5%, näidates märkimisväärseid kõikumisi. Palun kaaluge keskendumist ülesannete jaotuse tasakaalule.",
     "description": "Ülevaade kvadrandi ülesannete mahu kõikumisest"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "$quadrantLabel ülesannete lõpetamise määr näitab püsivat ülespoole trendi, näidates töötegevuse paranemist.",
+    "message": "$1 ülesannete lõpetamise määr näitab püsivat ülespoole trendi, näidates töötegevuse paranemist.",
     "description": "Ülevaade lõpetamise määra ülespoole trendist"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "$quadrantLabel ülesannete lõpetamise määr näitab püsivat allapoole trendi, mis vajab tähelepanu täitva tegevuse probleemidele.",
+    "message": "$1 ülesannete lõpetamise määr näitab püsivat allapoole trendi, mis vajab tähelepanu täitva tegevuse probleemidele.",
     "description": "Ülevaade lõpetamise määra allapoole trendist"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Q2 ülesanded (tähtis aga mitte kiireloomuline) jätkavad kuhjumist ilma lõpetamise määra paranemiseta, peegeldades et «strateegilised ülesanded» pole integreeritud tavalisse täitmise plaanisse, toomades riski «viivituste kuhjumisest».",
     "description": "Ülevaade Q2 ülesannete kuhjumisest"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Insight-analüüsi reeglid",
+    "description": "Insight-analüüsi reeglite jaotise pealkiri"
+  },
+  "completionRateAnalysis": {
+    "message": "Lõpetamise määra analüüs",
+    "description": "Lõpetamise määra analüüsi mooduli pealkiri"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Analüüsi eesmärk: Analüüsida ülesannete lõpetamise määra jaotust kvadrantide lõikes Eisenhoweri maatriksi teooria alusel",
+    "description": "Lõpetamise määra analüüsi eesmärgi kirjeldus"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Põhised insight-reeglid:",
+    "description": "Lõpetamise määra analüüsi reeglite pealkiri"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Q2 madala lõpetamise määra tuvastus (<70% teiste kvadrantide keskmisest)",
+    "description": "Q2 madala lõpetamise määra tuvastuse reegel"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Q3 kõrge lõpetamise määra tuvastus (>85% ja >120% Q1-st)",
+    "description": "Q3 kõrge lõpetamise määra tuvastuse reegel"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Q1/Q4 kõrge ülesannete osakaalu tuvastus (>40%/>30%)",
+    "description": "Q1/Q4 kõrge ülesannete osakaalu tuvastuse reegel"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Allikate ristanalüüs",
+    "description": "Allikate ristanalüüsi mooduli pealkiri"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Analüüsi eesmärk: Analüüsida eri ülesandeallikate lõpetamise määra jaotust kvadrantide lõikes",
+    "description": "Allikate ristanalüüsi eesmärgi kirjeldus"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Põhised insight-reeglid:",
+    "description": "Allikate ristanalüüsi reeglite pealkiri"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Q1 kõrge, Q2 madal lõpetamise määra erinevuse tuvastus",
+    "description": "Q1 kõrge, Q2 madal lõpetamise määra erinevuse reegel"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Q4 madala lõpetamise määra tuvastus",
+    "description": "Q4 madala lõpetamise määra tuvastuse reegel"
+  },
+  "sourceConcentrationRule": {
+    "message": "Ülesandeallika liigsest koondumisest teatamine (>60%)",
+    "description": "Ülesandeallika liigsest koondumisest teavituse reegel"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Allikate vahelise lõpetamise määra erinevuse tuvastus (>50%)",
+    "description": "Allikate vahelise lõpetamise määra erinevuse reegel"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Ajaefektiivsuse analüüs",
+    "description": "Ajaefektiivsuse analüüsi mooduli pealkiri"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Analüüsi eesmärk: Analüüsida ülesannete ajaefektiivsust ja ressursside jaotuse ratsionaalsust",
+    "description": "Ajaefektiivsuse analüüsi eesmärgi kirjeldus"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Põhised insight-reeglid:",
+    "description": "Ajaefektiivsuse analüüsi reeglite pealkiri"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Q1 pooleli olevate ülesannete pika ajakulu tuvastus (>3 päeva ja >50%)",
+    "description": "Q1 pooleli olevate ülesannete pika ajakulu reegel"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Q4 vs Q2 keskmise aja võrdluse tuvastus (Q4>Q2×1.5)",
+    "description": "Q4 vs Q2 keskmise aja võrdluse reegel"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Pooleliolevate vs lõpetatud ülesannete ajakulu võrdluse tuvastus (>2x)",
+    "description": "Pooleliolevate vs lõpetatud ülesannete ajakulu võrdluse reegel"
+  },
+  "trendAnalysis": {
+    "message": "Trendianalüüs",
+    "description": "Trendianalüüsi mooduli pealkiri"
+  },
+  "trendAnalysisGoal": {
+    "message": "Analüüsi eesmärk: Jälgida ülesandehalduse strateegiate tõhusust ja parendussuundi",
+    "description": "Trendianalüüsi eesmärgi kirjeldus"
+  },
+  "trendAnalysisRules": {
+    "message": "Põhised insight-reeglid:",
+    "description": "Trendianalüüsi reeglite pealkiri"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Ülesannete mahu kõikumise tuvastus (>50% muutus)",
+    "description": "Ülesannete mahu kõikumise reegel"
+  },
+  "completionRateTrendRule": {
+    "message": "Lõpetamise määra trendi analüüs (3 järjestikust perioodi tõus/langus)",
+    "description": "Lõpetamise määra trendi analüüsi reegel"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Q2 ülesannete kuhjumise tuvastus (70% ajapunktidest kasv)",
+    "description": "Q2 ülesannete kuhjumise tuvastuse reegel"
   }
 }

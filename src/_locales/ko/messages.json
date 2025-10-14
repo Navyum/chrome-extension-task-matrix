@@ -680,55 +680,159 @@
     "description": "Q3 완료율이 너무 높은 것에 대한 인사이트"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Q1 (중요하고 긴급함) 사분면 작업이 전체 작업의 $percentage%를 차지하여 작업 계획의 개선을 시사합니다. 긴급한 상황을 피하기 위해 중요한 작업을 조기에 처리하세요.",
+    "message": "Q1 (중요하고 긴급함) 사분면 작업이 전체 작업의 $1%를 차지하여 작업 계획의 개선을 시사합니다. 긴급한 상황을 피하기 위해 중요한 작업을 조기에 처리하세요.",
     "description": "Q1 작업의 높은 비율에 대한 인사이트"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Q4 (중요하지 않지만 긴급함) 사분면 작업이 전체 작업의 $percentage%를 차지합니다. 이러한 낮은 우선순위이지만 긴급한 작업의 소스를 검토하고 긴급 대응 프로세스를 최적화하세요.",
+    "message": "Q4 (중요하지 않지만 긴급함) 사분면 작업이 전체 작업의 $1%를 차지합니다. 이러한 낮은 우선순위이지만 긴급한 작업의 소스를 검토하고 긴급 대응 프로세스를 최적화하세요.",
     "description": "Q4 작업의 높은 비율에 대한 인사이트"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "Q1 (중요하고 긴급함)의 \"$source\" 작업은 $q1Rate%의 완료율을 달성하지만, Q2 (중요하지만 긴급하지 않음)에서는 $q2Rate%에 불과하여 작업 실행 우선순위가 내부의 전략적 초점이 아닌 \"외부 압력\"에 의해 구동되고 있음을 나타냅니다.",
+    "message": "Q1 (중요하고 긴급함)의 \"$1\" 작업은 $2%의 완료율을 달성하지만, Q2 (중요하지만 긴급하지 않음)에서는 $3%에 불과하여 작업 실행 우선순위가 내부의 전략적 초점이 아닌 \"외부 압력\"에 의해 구동되고 있음을 나타냅니다.",
     "description": "소스 작업의 Q1 대 Q2 완료율에 대한 인사이트"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "Q4 (중요하지 않지만 긴급함)의 \"$source\" 작업은 낮은 완료율 ($q4Rate%)을 가지고 있어 \"임시 작업\"에 우선순위 정의 문제가 있는지 확인해야 합니다.",
+    "message": "Q4 (중요하지 않지만 긴급함)의 \"$1\" 작업은 낮은 완료율 ($2%)을 가지고 있어 \"임시 작업\"에 우선순위 정의 문제가 있는지 확인해야 합니다.",
     "description": "Q4 작업의 낮은 완료율에 대한 인사이트"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "\"$source\"가 $quadrant ($quadrantName) 사분면에 높게 집중되어 $percentage%를 차지합니다. 작업 계획의 합리성을 검토하세요.",
+    "message": "\"$1\"가 $2 ($2Name) 사분면에 높게 집중되어 $1%를 차지합니다. 작업 계획의 합리성을 검토하세요.",
     "description": "작업이 한 사분면에 집중되어 있는 것에 대한 인사이트"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "$highQuadrant의 \"$highSource\"는 가장 높은 완료율 ($highRate%)을 가지고 있는 반면, $lowQuadrant의 \"$lowSource\"는 가장 낮은 ($lowRate%) 완료율을 보여 서로 다른 작업 유형의 처리 우선순위에 명확한 차이가 있음을 나타냅니다.",
+    "message": "$2의 \"$1\"는 가장 높은 완료율 ($3%)을 가지고 있는 반면, $5의 \"$4\"는 가장 낮은 ($6%) 완료율을 보여 서로 다른 작업 유형의 처리 우선순위에 명확한 차이가 있음을 나타냅니다.",
     "description": "소스 간 완료율 차이에 대한 인사이트"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1 (중요하고 긴급함)은 3일 이상 소요되는 대기 작업이 $percentage%로 핵심 작업에서 잠재적인 리소스 부족이나 예상치 못한 어려움을 나타냅니다. 작업 분해나 추가 지원을 고려하세요.",
+    "message": "Q1 (중요하고 긴급함)은 3일 이상 소요되는 대기 작업이 $1%로 핵심 작업에서 잠재적인 리소스 부족이나 예상치 못한 어려움을 나타냅니다. 작업 분해나 추가 지원을 고려하세요.",
     "description": "Q1 대기 작업이 너무 오래 걸리는 것에 대한 인사이트"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Q4 (중요하지 않지만 긴급함) 완료 작업은 평균 $q4Time일로 Q2 (중요하지만 긴급하지 않음)의 $q2Time일을 크게 초과하여 \"임시 긴급 작업\"이 리소스를 과도하게 점유하고 있음을 나타냅니다. 긴급 대응 프로세스를 최적화하세요.",
+    "message": "Q4 (중요하지 않지만 긴급함) 완료 작업은 평균 $1일로 Q2 (중요하지만 긴급하지 않음)의 $2일을 크게 초과하여 \"임시 긴급 작업\"이 리소스를 과도하게 점유하고 있음을 나타냅니다. 긴급 대응 프로세스를 최적화하세요.",
     "description": "Q4 대 Q2 작업 완료 시간에 대한 인사이트"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "대기 작업의 평균 처리 시간 ($pendingTime일)이 완료 작업 ($completedTime일)보다 현저히 높습니다. 오랫동안 막혀있는 작업에 집중하고 필요시 전략이나 리소스 할당을 조정하세요.",
+    "message": "대기 작업의 평균 처리 시간 ($1일)이 완료 작업 ($2일)보다 현저히 높습니다. 오랫동안 막혀있는 작업에 집중하고 필요시 전략이나 리소스 할당을 조정하세요.",
     "description": "대기 대 완료 작업 시간에 대한 인사이트"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "$quadrantLabel 작업 볼륨이 $from에서 $to까지 $rate% $direction하여 상당한 변동을 보입니다. 작업 할당 균형에 집중하는 것을 고려하세요.",
+    "message": "$1 작업 볼륨이 $2에서 $3까지 $5% $4하여 상당한 변동을 보입니다. 작업 할당 균형에 집중하는 것을 고려하세요.",
     "description": "작업 볼륨 변동에 대한 인사이트"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "$quadrantLabel 작업 완료율이 지속적인 상승 트렌드를 보여 작업 효율성의 개선을 나타냅니다.",
+    "message": "$1 작업 완료율이 지속적인 상승 트렌드를 보여 작업 효율성의 개선을 나타냅니다.",
     "description": "완료율 상승 트렌드에 대한 인사이트"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "$quadrantLabel 작업 완료율이 지속적인 하락 트렌드를 보여 실행 효율성 문제에 주의가 필요합니다.",
+    "message": "$1 작업 완료율이 지속적인 하락 트렌드를 보여 실행 효율성 문제에 주의가 필요합니다.",
     "description": "완료율 하락 트렌드에 대한 인사이트"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Q2 (중요하지만 긴급하지 않음) 작업이 완료율 개선 없이 계속 누적되어 \"전략적 작업\"이 정기적인 실행 계획에 통합되지 않았음을 반영하며 \"미루기 누적\" 위험을 제시합니다.",
     "description": "Q2 작업 누적에 대한 인사이트"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 인사이트 분석 규칙",
+    "description": "인사이트 분석 규칙 섹션 제목"
+  },
+  "completionRateAnalysis": {
+    "message": "완료율 분석",
+    "description": "완료율 분석 모듈 제목"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "분석 목표: 아이젠하워 매트릭스 이론을 기반으로 각 사분면의 작업 완료율 분포 분석",
+    "description": "완료율 분석 목표 설명"
+  },
+  "completionRateAnalysisRules": {
+    "message": "주요 인사이트 규칙:",
+    "description": "완료율 분석 규칙 제목"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Q2 낮은 완료율 감지 (<70% 다른 사분면 평균)",
+    "description": "Q2 낮은 완료율 감지 규칙"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Q3 높은 완료율 감지 (>85% 및 >Q1의 120%)",
+    "description": "Q3 높은 완료율 감지 규칙"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Q1/Q4 높은 작업 비율 감지 (>40%/>30%)",
+    "description": "Q1/Q4 높은 작업 비율 감지 규칙"
+  },
+  "sourceCrossAnalysis": {
+    "message": "소스 교차 분석",
+    "description": "소스 교차 분석 모듈 제목"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "분석 목표: 다른 작업 소스의 각 사분면에서의 완료율 분포 분석",
+    "description": "소스 교차 분석 목표 설명"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "주요 인사이트 규칙:",
+    "description": "소스 교차 분석 규칙 제목"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Q1 높은 Q2 낮은 완료율 차이 감지",
+    "description": "Q1 높은 Q2 낮은 완료율 차이 감지 규칙"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Q4 낮은 완료율 감지",
+    "description": "Q4 낮은 완료율 감지 규칙"
+  },
+  "sourceConcentrationRule": {
+    "message": "작업 소스 과도 집중 감지 (>60%)",
+    "description": "작업 소스 과도 집중 감지 규칙"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "소스 간 완료율 차이 감지 (>50%)",
+    "description": "소스 간 완료율 차이 감지 규칙"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "시간 효율성 분석",
+    "description": "시간 효율성 분석 모듈 제목"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "분석 목표: 작업의 시간 효율성과 리소스 할당 합리성 분석",
+    "description": "시간 효율성 분석 목표 설명"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "주요 인사이트 규칙:",
+    "description": "시간 효율성 분석 규칙 제목"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Q1 진행 중 작업 장시간 소요 감지 (>3일 및 >50%)",
+    "description": "Q1 진행 중 작업 장시간 소요 감지 규칙"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Q4 대 Q2 평균 시간 비교 감지 (Q4>Q2×1.5)",
+    "description": "Q4 대 Q2 평균 시간 비교 감지 규칙"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "진행 중 대 완료 작업 시간 비교 감지 (>2배)",
+    "description": "진행 중 대 완료 작업 시간 비교 감지 규칙"
+  },
+  "trendAnalysis": {
+    "message": "트렌드 분석",
+    "description": "트렌드 분석 모듈 제목"
+  },
+  "trendAnalysisGoal": {
+    "message": "분석 목표: 작업 관리 전략의 효과성과 개선 방향 추적",
+    "description": "트렌드 분석 목표 설명"
+  },
+  "trendAnalysisRules": {
+    "message": "주요 인사이트 규칙:",
+    "description": "트렌드 분석 규칙 제목"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "작업량 변동 감지 (>50% 변화)",
+    "description": "작업량 변동 감지 규칙"
+  },
+  "completionRateTrendRule": {
+    "message": "완료율 트렌드 분석 (연속 3기간 상승/하락)",
+    "description": "완료율 트렌드 분석 규칙"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Q2 작업 누적 감지 (70% 시간점 증가)",
+    "description": "Q2 작업 누적 감지 규칙"
   }
 }

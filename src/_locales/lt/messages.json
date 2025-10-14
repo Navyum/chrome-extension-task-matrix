@@ -680,55 +680,159 @@
     "description": "Įžvalga apie per aukštą Q3 atlikimo lygį"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Q1 kvadranto (svarbu ir skubu) užduotys sudaro $percentage% visų užduočių, rodant užduočių planavimo pagerėjimą, anksti sprendžiant svarbias užduotis, kad būtų išvengta skubių situacijų.",
+    "message": "Q1 kvadranto (svarbu ir skubu) užduotys sudaro $1% visų užduočių, rodant užduočių planavimo pagerėjimą, anksti sprendžiant svarbias užduotis, kad būtų išvengta skubių situacijų.",
     "description": "Įžvalga apie aukštą Q1 užduočių procentą"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Q4 kvadranto (nesvarbu, bet skubu) užduotys sudaro $percentage% visų užduočių, prašome peržiūrėti šių žemo prioriteto, bet skubių užduočių šaltinius, optimizuoti skubių atvejų atsako procesą.",
+    "message": "Q4 kvadranto (nesvarbu, bet skubu) užduotys sudaro $1% visų užduočių, prašome peržiūrėti šių žemo prioriteto, bet skubių užduočių šaltinius, optimizuoti skubių atvejų atsako procesą.",
     "description": "Įžvalga apie aukštą Q4 užduočių procentą"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "«$source» užduotys pasiekia $q1Rate% atlikimo lygį Q1 (svarbu ir skubu), bet tik $q2Rate% Q2 (svarbu, bet neskubu), rodant, kad užduočių vykdymo prioritetas yra valdomas «išoriniu spaudimu», o ne vidiniu strateginiu fokusu.",
+    "message": "«$1» užduotys pasiekia $2% atlikimo lygį Q1 (svarbu ir skubu), bet tik $3% Q2 (svarbu, bet neskubu), rodant, kad užduočių vykdymo prioritetas yra valdomas «išoriniu spaudimu», o ne vidiniu strateginiu fokusu.",
     "description": "Įžvalga apie Q1 vs Q2 šaltinio užduočių atlikimo lygį"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "«$source» užduotys turi žemą atlikimo lygį ($q4Rate%) Q4 (nesvarbu, bet skubu), reikia patvirtinti, ar yra problema su «laikinių užduočių» prioriteto apibrėžimu.",
+    "message": "«$1» užduotys turi žemą atlikimo lygį ($2%) Q4 (nesvarbu, bet skubu), reikia patvirtinti, ar yra problema su «laikinių užduočių» prioriteto apibrėžimu.",
     "description": "Įžvalga apie žemą Q4 užduočių atlikimo lygį"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "«$source» yra labai koncentruotas $quadrant kvadrante ($quadrantName), sudarant $percentage%. Prašome peržiūrėti užduočių planavimo racionalumą.",
+    "message": "«$1» yra labai koncentruotas $2 kvadrante ($2Name), sudarant $1%. Prašome peržiūrėti užduočių planavimo racionalumą.",
     "description": "Įžvalga apie aukštą užduočių koncentraciją viename kvadrante"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "«$highSource» turi aukščiausią atlikimo lygį ($highRate%) $highQuadrant, o «$lowSource» turi žemiausią ($lowRate%) $lowQuadrant, rodant akivaizdų skirtingų tipų užduočių apdorojimo prioritetų skirtumą.",
+    "message": "«$1» turi aukščiausią atlikimo lygį ($3%) $2, o «$4» turi žemiausią ($6%) $5, rodant akivaizdų skirtingų tipų užduočių apdorojimo prioritetų skirtumą.",
     "description": "Įžvalga apie atlikimo lygio skirtumą tarp šaltinių"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1 (svarbu ir skubu) turi $percentage% užduočių laukiančių, kurios trunka ilgiau nei 3 dienos, rodant galimą išteklių trūkumą arba netikėtus sunkumus su pagrindinėmis užduotimis. Prašome apsvarstyti užduoties padalijimą arba papildomą paramą.",
+    "message": "Q1 (svarbu ir skubu) turi $1% užduočių laukiančių, kurios trunka ilgiau nei 3 dienos, rodant galimą išteklių trūkumą arba netikėtus sunkumus su pagrindinėmis užduotimis. Prašome apsvarstyti užduoties padalijimą arba papildomą paramą.",
     "description": "Įžvalga apie Q1 laukiančias užduotis su aukštu išleidžiamu laiku"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Vidutinis Q4 (nesvarbu, bet skubu) atliktų užduočių atlikimo laikas yra $q4Time dienų, žymiai viršijant $q2Time dienų Q2 (svarbu, bet neskubu), rodant, kad «laikinos skubios užduotys» per daug užima išteklius. Prašome optimizuoti skubių atvejų atsako procesą.",
+    "message": "Vidutinis Q4 (nesvarbu, bet skubu) atliktų užduočių atlikimo laikas yra $1 dienų, žymiai viršijant $2 dienų Q2 (svarbu, bet neskubu), rodant, kad «laikinos skubios užduotys» per daug užima išteklius. Prašome optimizuoti skubių atvejų atsako procesą.",
     "description": "Įžvalga apie Q4 vs Q2 atlikimo laiką"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Vidutinis laukiančių užduočių apdorojimo laikas ($pendingTime dienų) yra žymiai didesnis nei atliktų užduočių ($completedTime dienų). Prašome sutelkti dėmesį į užduotis, kurios ilgai laukia, ir pagal poreikį pritaikyti strategiją arba išteklių paskirstymą.",
+    "message": "Vidutinis laukiančių užduočių apdorojimo laikas ($1 dienų) yra žymiai didesnis nei atliktų užduočių ($2 dienų). Prašome sutelkti dėmesį į užduotis, kurios ilgai laukia, ir pagal poreikį pritaikyti strategiją arba išteklių paskirstymą.",
     "description": "Įžvalga apie laukiančių vs atliktų užduočių laiką"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "$quadrantLabel užduočių kiekis svyruoja nuo $from iki $to $direction $rate%, rodant reikšmingus svyravimus. Prašome apsvarstyti sutelkti dėmesį į užduočių paskirstymo balansą.",
+    "message": "$1 užduočių kiekis svyruoja nuo $2 iki $3 $4 $5%, rodant reikšmingus svyravimus. Prašome apsvarstyti sutelkti dėmesį į užduočių paskirstymo balansą.",
     "description": "Įžvalga apie kvadranto užduočių kiekio svyravimą"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "$quadrantLabel užduočių atlikimo lygis rodo tvarų kylančią tendenciją, rodant darbo veiklos pagerėjimą.",
+    "message": "$1 užduočių atlikimo lygis rodo tvarų kylančią tendenciją, rodant darbo veiklos pagerėjimą.",
     "description": "Įžvalga apie kylančią atlikimo lygio tendenciją"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "$quadrantLabel užduočių atlikimo lygis rodo tvarų leidžiamą tendenciją, reikalaujantį dėmesio vykdomosios veiklos problemoms.",
+    "message": "$1 užduočių atlikimo lygis rodo tvarų leidžiamą tendenciją, reikalaujantį dėmesio vykdomosios veiklos problemoms.",
     "description": "Įžvalga apie leidžiamą atlikimo lygio tendenciją"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Q2 (svarbu, bet neskubu) užduotys toliau kaupiasi be atlikimo lygio pagerėjimo, atspindint, kad «strateginės užduotys» nėra integruotos į reguliarų vykdymo planą, nešant «vėlavimo kaupimosi» riziką.",
     "description": "Įžvalga apie Q2 užduočių kaupimąsi"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Įžvalgų analizės taisyklės",
+    "description": "Įžvalgų analizės taisyklių skyriaus pavadinimas"
+  },
+  "completionRateAnalysis": {
+    "message": "Užbaigimo rodiklio analizė",
+    "description": "Užbaigimo rodiklio analizės modulio pavadinimas"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Analizės tikslas: Analizuoti užduočių užbaigimo rodiklio pasiskirstymą kvadrantuose remiantis Eisenhower matricos teorija",
+    "description": "Užbaigimo rodiklio analizės tikslo aprašymas"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Pagrindinės įžvalgų taisyklės:",
+    "description": "Užbaigimo rodiklio analizės taisyklių pavadinimas"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Žemas Q2 užbaigimo rodiklis aptikimas (<70% kitų kvadrantų vidurkio)",
+    "description": "Žemo Q2 užbaigimo rodiklio aptikimo taisyklė"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Aukštas Q3 užbaigimo rodiklis aptikimas (>85% ir >120% nuo Q1)",
+    "description": "Aukšto Q3 užbaigimo rodiklio aptikimo taisyklė"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Aukštas Q1/Q4 užduočių procentas aptikimas (>40%/>30%)",
+    "description": "Aukšto Q1/Q4 užduočių procento aptikimo taisyklė"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Šaltinių kryžminė analizė",
+    "description": "Šaltinių kryžminės analizės modulio pavadinimas"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Analizės tikslas: Analizuoti skirtingų užduočių šaltinių užbaigimo rodiklio pasiskirstymą kvadrantuose",
+    "description": "Šaltinių kryžminės analizės tikslo aprašymas"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Pagrindinės įžvalgų taisyklės:",
+    "description": "Šaltinių kryžminės analizės taisyklių pavadinimas"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Q1 aukštas Q2 žemas užbaigimo rodiklio skirtumo aptikimas",
+    "description": "Q1 aukštas Q2 žemas užbaigimo rodiklio skirtumo taisyklė"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Žemas Q4 užbaigimo rodiklis aptikimas",
+    "description": "Žemo Q4 užbaigimo rodiklio aptikimo taisyklė"
+  },
+  "sourceConcentrationRule": {
+    "message": "Užduočių šaltinio per didelės koncentracijos aptikimas (>60%)",
+    "description": "Užduočių šaltinio per didelės koncentracijos aptikimo taisyklė"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Užbaigimo rodiklio skirtumo tarp šaltinių aptikimas (>50%)",
+    "description": "Užbaigimo rodiklio skirtumo tarp šaltinių aptikimo taisyklė"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Laiko efektyvumo analizė",
+    "description": "Laiko efektyvumo analizės modulio pavadinimas"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Analizės tikslas: Analizuoti užduočių laiko efektyvumą ir išteklių paskirstymo racionalumą",
+    "description": "Laiko efektyvumo analizės tikslo aprašymas"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Pagrindinės įžvalgų taisyklės:",
+    "description": "Laiko efektyvumo analizės taisyklių pavadinimas"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Ilgo laiko sąnaudų Q1 vykdomoms užduotims aptikimas (>3 dienos ir >50%)",
+    "description": "Ilgo laiko sąnaudų Q1 užduotims taisyklė"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Vidutinio laiko palyginimo Q4 ir Q2 aptikimas (Q4>Q2×1.5)",
+    "description": "Vidutinio laiko palyginimo Q4 ir Q2 taisyklė"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Vykdomų ir užbaigtų užduočių laiko palyginimo aptikimas (>2x)",
+    "description": "Vykdomų ir užbaigtų užduočių laiko palyginimo taisyklė"
+  },
+  "trendAnalysis": {
+    "message": "Tendencijų analizė",
+    "description": "Tendencijų analizės modulio pavadinimas"
+  },
+  "trendAnalysisGoal": {
+    "message": "Analizės tikslas: Stebėti užduočių valdymo strategijų veiksmingumą ir tobulinimo kryptis",
+    "description": "Tendencijų analizės tikslo aprašymas"
+  },
+  "trendAnalysisRules": {
+    "message": "Pagrindinės įžvalgų taisyklės:",
+    "description": "Tendencijų analizės taisyklių pavadinimas"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Užduočių apimties svyravimo aptikimas (>50% pokytis)",
+    "description": "Užduočių apimties svyravimo taisyklė"
+  },
+  "completionRateTrendRule": {
+    "message": "Užbaigimo rodiklio tendencijos analizė (3 iš eilės periodai aukštyn/žemyn)",
+    "description": "Užbaigimo rodiklio tendencijos analizės taisyklė"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Q2 užduočių kaupimosi aptikimas (70% laiko taškų padidėjimas)",
+    "description": "Q2 užduočių kaupimosi aptikimo taisyklė"
   }
 }
