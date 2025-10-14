@@ -459,7 +459,6 @@
     "message": "TB",
     "description": "Terabytes unit"
   },
-
   "frequencyOfCheckingTaskStatus": {
     "message": "Frequency of checking task status in the background",
     "description": "Description for task status checking frequency"
@@ -682,55 +681,159 @@
     "description": "Insight about Q3 completion rate being too high"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Q1 (Important & Urgent) quadrant tasks account for $percentage% of total tasks, suggesting improvement in task planning, handle important tasks early to avoid urgent situations.",
+    "message": "Q1 (Important & Urgent) quadrant tasks account for $1% of total tasks, suggesting improvement in task planning, handle important tasks early to avoid urgent situations.",
     "description": "Insight about Q1 tasks percentage being high"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Q4 (Not Important & Urgent) quadrant tasks account for $percentage% of total tasks, review the sources of these low-priority but urgent tasks, optimize emergency response processes.",
+    "message": "Q4 (Not Important & Urgent) quadrant tasks account for $1% of total tasks, review the sources of these low-priority but urgent tasks, optimize emergency response processes.",
     "description": "Insight about Q4 tasks percentage being high"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "\"$source\" tasks in Q1 (Important & Urgent) achieve $q1Rate% completion rate, but only $q2Rate% in Q2 (Important & Not Urgent), indicating task execution priority is driven by \"external pressure\" rather than internal strategic focus.",
+    "message": "\"$1\" tasks in Q1 (Important & Urgent) achieve $2% completion rate, but only $3% in Q2 (Important & Not Urgent), indicating task execution priority is driven by \"external pressure\" rather than internal strategic focus.",
     "description": "Insight about source tasks Q1 vs Q2 completion rates"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "\"$source\" tasks in Q4 (Not Important & Urgent) have low completion rate ($q4Rate%), need to confirm if \"temporary tasks\" have priority definition issues.",
+    "message": "\"$1\" tasks in Q4 (Not Important & Urgent) have low completion rate ($2%), need to confirm if \"temporary tasks\" have priority definition issues.",
     "description": "Insight about Q4 tasks low completion rate"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "\"$source\" are highly concentrated in $quadrant ($quadrantName) quadrant, accounting for $percentage%. Review task planning for reasonableness.",
+    "message": "\"$1\" are highly concentrated in $2 ($3) quadrant, accounting for $4%. Review task planning for reasonableness.",
     "description": "Insight about tasks being concentrated in one quadrant"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "\"$highSource\" in $highQuadrant has highest completion rate ($highRate%), while \"$lowSource\" in $lowQuadrant has lowest ($lowRate%), showing clear differences in processing priority for different task types.",
+    "message": "\"$1\" in $2 has highest completion rate ($3%), while \"$4\" in $5 has lowest ($6%), showing clear differences in processing priority for different task types.",
     "description": "Insight about completion rate differences between sources"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1 (Important & Urgent) has $percentage% of pending tasks taking over 3 days, indicating potential resource shortage or unexpected difficulty in core tasks. Consider task breakdown or additional support.",
+    "message": "Q1 (Important & Urgent) has $1% of pending tasks taking over 3 days, indicating potential resource shortage or unexpected difficulty in core tasks. Consider task breakdown or additional support.",
     "description": "Insight about Q1 pending tasks taking too long"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Q4 (Not Important & Urgent) completed tasks average $q4Time days, far exceeding Q2 (Important & Not Urgent) at $q2Time days, indicating \"temporary urgent tasks\" over-occupying resources. Optimize emergency response processes.",
+    "message": "Q4 (Not Important & Urgent) completed tasks average $1 days, far exceeding Q2 (Important & Not Urgent) at $2 days, indicating \"temporary urgent tasks\" over-occupying resources. Optimize emergency response processes.",
     "description": "Insight about Q4 vs Q2 task completion times"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Average processing time for pending tasks ($pendingTime days) is significantly higher than completed tasks ($completedTime days). Focus on long-stuck tasks and adjust strategy or resource allocation when necessary.",
+    "message": "Average processing time for pending tasks ($1 days) is significantly higher than completed tasks ($2 days). Focus on long-stuck tasks and adjust strategy or resource allocation when necessary.",
     "description": "Insight about pending vs completed task times"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "$quadrantLabel task volume $direction by $rate% from $from to $to, showing significant fluctuation. Consider focusing on task allocation balance.",
+    "message": "$1 task volume $4 by $5% from $2 to $3, showing significant fluctuation. Consider focusing on task allocation balance.",
     "description": "Insight about task volume fluctuation"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "$quadrantLabel task completion rate shows a sustained upward trend, indicating improved work efficiency.",
+    "message": "$1 task completion rate shows a sustained upward trend, indicating improved work efficiency.",
     "description": "Insight about completion rate upward trend"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "$quadrantLabel task completion rate shows a sustained downward trend, requiring attention to execution efficiency issues.",
+    "message": "$1 task completion rate shows a sustained downward trend, requiring attention to execution efficiency issues.",
     "description": "Insight about completion rate downward trend"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Q2 (Important & Not Urgent) tasks continue to accumulate without improvement in completion rate, reflecting that \"strategic tasks\" are not integrated into regular execution plans, posing a \"procrastination accumulation\" risk.",
     "description": "Insight about Q2 tasks accumulation"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Insight Analysis Rules",
+    "description": "Insight analysis rules section title"
+  },
+  "completionRateAnalysis": {
+    "message": "Completion Rate Analysis",
+    "description": "Completion rate analysis module title"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Analysis Goal: Analyze task completion rate distribution across quadrants based on Eisenhower Matrix theory",
+    "description": "Completion rate analysis goal description"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Main Insight Rules:",
+    "description": "Completion rate analysis rules title"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Q2 low completion rate detection (<70% of other quadrants average)",
+    "description": "Q2 low completion rate detection rule"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Q3 high completion rate detection (>85% and >120% of Q1)",
+    "description": "Q3 high completion rate detection rule"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Q1/Q4 high task percentage detection (>40%/>30%)",
+    "description": "Q1/Q4 high task percentage detection rule"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Source Cross Analysis",
+    "description": "Source cross analysis module title"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Analysis Goal: Analyze completion rate distribution of different task sources across quadrants",
+    "description": "Source cross analysis goal description"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Main Insight Rules:",
+    "description": "Source cross analysis rules title"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Q1 high Q2 low completion rate difference detection",
+    "description": "Q1 high Q2 low completion rate difference detection rule"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Q4 low completion rate detection",
+    "description": "Q4 low completion rate detection rule"
+  },
+  "sourceConcentrationRule": {
+    "message": "Task source over-concentration detection (>60%)",
+    "description": "Task source over-concentration detection rule"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Source completion rate difference detection (>50%)",
+    "description": "Source completion rate difference detection rule"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Time Efficiency Analysis",
+    "description": "Time efficiency analysis module title"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Analysis Goal: Analyze task time efficiency and resource allocation rationality",
+    "description": "Time efficiency analysis goal description"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Main Insight Rules:",
+    "description": "Time efficiency analysis rules title"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Q1 pending task long time spent detection (>3 days and >50%)",
+    "description": "Q1 pending task long time spent detection rule"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Q4 vs Q2 average time comparison detection (Q4>Q2×1.5)",
+    "description": "Q4 vs Q2 average time comparison detection rule"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Pending vs completed task time comparison detection (>2x)",
+    "description": "Pending vs completed task time comparison detection rule"
+  },
+  "trendAnalysis": {
+    "message": "Trend Analysis",
+    "description": "Trend analysis module title"
+  },
+  "trendAnalysisGoal": {
+    "message": "Analysis Goal: Track effectiveness of task management strategies and improvement directions",
+    "description": "Trend analysis goal description"
+  },
+  "trendAnalysisRules": {
+    "message": "Main Insight Rules:",
+    "description": "Trend analysis rules title"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Task volume fluctuation detection (>50% change)",
+    "description": "Task volume fluctuation detection rule"
+  },
+  "completionRateTrendRule": {
+    "message": "Completion rate trend analysis (3 consecutive periods up/down)",
+    "description": "Completion rate trend analysis rule"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Q2 task accumulation detection (70% time points increase)",
+    "description": "Q2 task accumulation detection rule"
   }
 }

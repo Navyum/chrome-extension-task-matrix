@@ -680,55 +680,159 @@
     "description": "Belepillantás a Q3 befejezési arányról, amely túl magas"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Q1 (Fontos és Sürgős) kvadráns feladatok $percentage%-ot tesznek ki az összes feladatból, ami javulást jelez a feladat tervezésben, kezelje a fontos feladatokat korán, hogy elkerülje a sürgős helyzeteket.",
+    "message": "Q1 (Fontos és Sürgős) kvadráns feladatok $1%-ot tesznek ki az összes feladatból, ami javulást jelez a feladat tervezésben, kezelje a fontos feladatokat korán, hogy elkerülje a sürgős helyzeteket.",
     "description": "Belepillantás a magas Q1 feladatok százalékáról"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Q4 (Nem Fontos és Sürgős) kvadráns feladatok $percentage%-ot tesznek ki az összes feladatból, tekintse át ezeknek az alacsony prioritású de sürgős feladatoknak a forrásait, optimalizálja a vészhelyzeti válasz folyamatokat.",
+    "message": "Q4 (Nem Fontos és Sürgős) kvadráns feladatok $1%-ot tesznek ki az összes feladatból, tekintse át ezeknek az alacsony prioritású de sürgős feladatoknak a forrásait, optimalizálja a vészhelyzeti válasz folyamatokat.",
     "description": "Belepillantás a magas Q4 feladatok százalékáról"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "\"$source\" feladatok a Q1-ben (Fontos és Sürgős) $q1Rate% befejezési arányt érnek el, de csak $q2Rate%-ot a Q2-ben (Fontos és Nem Sürgős), ami azt jelzi, hogy a feladat végrehajtási prioritás \"külső nyomás\" által van vezérelve, nem pedig belső stratégiai fókusz által.",
+    "message": "\"$1\" feladatok a Q1-ben (Fontos és Sürgős) $2% befejezési arányt érnek el, de csak $3%-ot a Q2-ben (Fontos és Nem Sürgős), ami azt jelzi, hogy a feladat végrehajtási prioritás \"külső nyomás\" által van vezérelve, nem pedig belső stratégiai fókusz által.",
     "description": "Belepillantás a forrás feladatok Q1 vs Q2 befejezési arányairól"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "\"$source\" feladatok a Q4-ben (Nem Fontos és Sürgős) alacsony befejezési aránnyal rendelkeznek ($q4Rate%), szükség van megerősítésre, hogy a \"ideiglenes feladatok\" prioritás definíciós problémával rendelkeznek-e.",
+    "message": "\"$1\" feladatok a Q4-ben (Nem Fontos és Sürgős) alacsony befejezési aránnyal rendelkeznek ($2%), szükség van megerősítésre, hogy a \"ideiglenes feladatok\" prioritás definíciós problémával rendelkeznek-e.",
     "description": "Belepillantás a Q4 feladatok alacsony befejezési arányáról"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "\"$source\" magasan koncentrálódik a $quadrant ($quadrantName) kvadránsban, $percentage%-ot tesz ki. Tekintse át a feladat tervezést az ésszerűségért.",
+    "message": "\"$1\" magasan koncentrálódik a $2 ($2Name) kvadránsban, $1%-ot tesz ki. Tekintse át a feladat tervezést az ésszerűségért.",
     "description": "Belepillantás a feladatokról, amelyek magasan koncentrálódnak egy kvadránsban"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "\"$highSource\" a $highQuadrant-ban a legmagasabb befejezési aránnyal rendelkezik ($highRate%), míg \"$lowSource\" a $lowQuadrant-ban a legalacsonyabbal ($lowRate%), ami egyértelmű különbségeket mutat a feldolgozási prioritásban a különböző feladat típusokhoz.",
+    "message": "\"$1\" a $2-ban a legmagasabb befejezési aránnyal rendelkezik ($3%), míg \"$4\" a $5-ban a legalacsonyabbal ($6%), ami egyértelmű különbségeket mutat a feldolgozási prioritásban a különböző feladat típusokhoz.",
     "description": "Belepillantás a befejezési arány különbségekről a források között"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1 (Fontos és Sürgős) $percentage% függőben lévő feladattal rendelkezik, amelyek több mint 3 napot vesznek igénybe, ami potenciális erőforrás hiányt vagy váratlan nehézségeket jelez a kulcs feladatokban. Fontolja meg a feladat felosztást vagy további támogatást.",
+    "message": "Q1 (Fontos és Sürgős) $1% függőben lévő feladattal rendelkezik, amelyek több mint 3 napot vesznek igénybe, ami potenciális erőforrás hiányt vagy váratlan nehézségeket jelez a kulcs feladatokban. Fontolja meg a feladat felosztást vagy további támogatást.",
     "description": "Belepillantás a Q1 függőben lévő feladatokról, amelyek túl sokáig tartanak"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Q4 (Nem Fontos és Sürgős) befejezett feladatok átlagosan $q4Time napot vesznek igénybe, jelentősen meghaladva a Q2-t (Fontos és Nem Sürgős) $q2Time nappal, ami azt jelzi, hogy az \"ideiglenes sürgős feladatok\" túlzottan lefoglalják az erőforrásokat. Optimalizálja a vészhelyzeti válasz folyamatokat.",
+    "message": "Q4 (Nem Fontos és Sürgős) befejezett feladatok átlagosan $1 napot vesznek igénybe, jelentősen meghaladva a Q2-t (Fontos és Nem Sürgős) $2 nappal, ami azt jelzi, hogy az \"ideiglenes sürgős feladatok\" túlzottan lefoglalják az erőforrásokat. Optimalizálja a vészhelyzeti válasz folyamatokat.",
     "description": "Belepillantás a Q4 vs Q2 feladat befejezési időkről"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "A függőben lévő feladatok átlagos feldolgozási ideje ($pendingTime nap) jelentősen magasabb, mint a befejezett feladatoké ($completedTime nap). Összpontosítson a hosszú ideje stagnáló feladatokra és szükség szerint állítsa be a stratégiát vagy erőforrás allokációt.",
+    "message": "A függőben lévő feladatok átlagos feldolgozási ideje ($1 nap) jelentősen magasabb, mint a befejezett feladatoké ($2 nap). Összpontosítson a hosszú ideje stagnáló feladatokra és szükség szerint állítsa be a stratégiát vagy erőforrás allokációt.",
     "description": "Belepillantás a függőben lévő vs befejezett feladat időkről"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "$quadrantLabel feladat mennyiség $direction $rate%-kal $from-tól $to-ig, ami jelentős ingadozást mutat. Fontolja meg a feladat allokáció egyensúlyára való összpontosítást.",
+    "message": "$1 feladat mennyiség $4 $5%-kal $2-tól $3-ig, ami jelentős ingadozást mutat. Fontolja meg a feladat allokáció egyensúlyára való összpontosítást.",
     "description": "Belepillantás a kvadráns feladat mennyiség ingadozásról"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "$quadrantLabel feladat befejezési arány tartós emelkedő trendet mutat, ami javuló munkatevékenységet jelez.",
+    "message": "$1 feladat befejezési arány tartós emelkedő trendet mutat, ami javuló munkatevékenységet jelez.",
     "description": "Belepillantás a befejezési arány emelkedő trendről"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "$quadrantLabel feladat befejezési arány tartós csökkenő trendet mutat, ami figyelmet igényel a végrehajtási tevékenység problémáira.",
+    "message": "$1 feladat befejezési arány tartós csökkenő trendet mutat, ami figyelmet igényel a végrehajtási tevékenység problémáira.",
     "description": "Belepillantás a befejezési arány csökkenő trendről"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Q2 (Fontos és Nem Sürgős) feladatok továbbra is felhalmozódnak befejezési arány javulás nélkül, ami azt tükrözi, hogy a \"stratégiai feladatok\" nincsenek integrálva a rendszeres végrehajtási programokba, ami \"késés felhalmozódás\" kockázatot jelent.",
     "description": "Belepillantás a Q2 feladatok felhalmozódásáról"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Belepillantás Elemzési Szabályok",
+    "description": "Belepillantás elemzési szabályok szakasz címe"
+  },
+  "completionRateAnalysis": {
+    "message": "Befejezési Arány Elemzés",
+    "description": "Befejezési arány elemzés modul címe"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Elemzés Célja: Feladatok befejezési arányának eloszlásának elemzése kvadránsok szerint az Eisenhower Mátrix elmélet alapján",
+    "description": "Befejezési arány elemzés céljának leírása"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Fő Belepillantás Szabályok:",
+    "description": "Befejezési arány elemzés szabályok címe"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Q2 alacsony befejezési arány észlelése (<70% más kvadránsok átlagától)",
+    "description": "Q2 alacsony befejezési arány észlelés szabálya"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Q3 magas befejezési arány észlelése (>85% és >120% Q1-től)",
+    "description": "Q3 magas befejezési arány észlelés szabálya"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Q1/Q4 magas feladat százalék észlelése (>40%/>30%)",
+    "description": "Q1/Q4 magas feladat százalék észlelés szabálya"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Forrás Kereszt Elemzés",
+    "description": "Forrás kereszt elemzés modul címe"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Elemzés Célja: Különböző feladat források befejezési arányának eloszlásának elemzése kvadránsok szerint",
+    "description": "Forrás kereszt elemzés céljának leírása"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Fő Belepillantás Szabályok:",
+    "description": "Forrás kereszt elemzés szabályok címe"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Q1 magas Q2 alacsony befejezési arány különbség észlelése",
+    "description": "Q1 magas Q2 alacsony befejezési arány különbség észlelés szabálya"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Q4 alacsony befejezési arány észlelése",
+    "description": "Q4 alacsony befejezési arány észlelés szabálya"
+  },
+  "sourceConcentrationRule": {
+    "message": "Feladat forrás túlkoncentráció észlelése (>60%)",
+    "description": "Feladat forrás túlkoncentráció észlelés szabálya"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Források közötti befejezési arány különbség észlelése (>50%)",
+    "description": "Források közötti befejezési arány különbség észlelés szabálya"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Idő Hatékonyság Elemzés",
+    "description": "Idő hatékonyság elemzés modul címe"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Elemzés Célja: Feladatok idő hatékonyságának és erőforrás allokáció racionalitásának elemzése",
+    "description": "Idő hatékonyság elemzés céljának leírása"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Fő Belepillantás Szabályok:",
+    "description": "Idő hatékonyság elemzés szabályok címe"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Q1 folyamatban lévő feladatokon hosszú idő eltöltés észlelése (>3 nap és >50%)",
+    "description": "Q1 folyamatban lévő feladatokon hosszú idő eltöltés észlelés szabálya"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Q4 vs Q2 átlagos idő összehasonlítás észlelése (Q4>Q2×1.5)",
+    "description": "Q4 vs Q2 átlagos idő összehasonlítás észlelés szabálya"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Folyamatban lévő vs befejezett feladat idő összehasonlítás észlelése (>2x)",
+    "description": "Folyamatban lévő vs befejezett feladat idő összehasonlítás észlelés szabálya"
+  },
+  "trendAnalysis": {
+    "message": "Trend Elemzés",
+    "description": "Trend elemzés modul címe"
+  },
+  "trendAnalysisGoal": {
+    "message": "Elemzés Célja: Feladat kezelési stratégiák hatékonyságának és fejlesztési irányok követése",
+    "description": "Trend elemzés céljának leírása"
+  },
+  "trendAnalysisRules": {
+    "message": "Fő Belepillantás Szabályok:",
+    "description": "Trend elemzés szabályok címe"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Feladat mennyiség ingadozás észlelése (>50% változás)",
+    "description": "Feladat mennyiség ingadozás észlelés szabálya"
+  },
+  "completionRateTrendRule": {
+    "message": "Befejezési arány trend elemzés (3 egymást követő időszak fel/le)",
+    "description": "Befejezési arány trend elemzés szabálya"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Q2 feladat felhalmozódás észlelése (70% időpont növekedés)",
+    "description": "Q2 feladat felhalmozódás észlelés szabálya"
   }
 }

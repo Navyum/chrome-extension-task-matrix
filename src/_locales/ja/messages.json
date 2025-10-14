@@ -680,55 +680,159 @@
     "description": "Q3完了率が高すぎることに関するインサイト"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Q1（重要かつ緊急）象限タスクが全タスクの$percentage%を占めており、タスク計画の改善を示唆しています。緊急な状況を避けるため、重要なタスクを早期に処理してください。",
+    "message": "Q1（重要かつ緊急）象限タスクが全タスクの$1%を占めており、タスク計画の改善を示唆しています。緊急な状況を避けるため、重要なタスクを早期に処理してください。",
     "description": "Q1タスクの高い割合に関するインサイト"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Q4（重要でないが緊急）象限タスクが全タスクの$percentage%を占めており、これらの低優先度だが緊急なタスクのソースを確認し、緊急対応プロセスを最適化してください。",
+    "message": "Q4（重要でないが緊急）象限タスクが全タスクの$1%を占めており、これらの低優先度だが緊急なタスクのソースを確認し、緊急対応プロセスを最適化してください。",
     "description": "Q4タスクの高い割合に関するインサイト"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "Q1（重要かつ緊急）の「$source」タスクは$q1Rate%の完了率を達成していますが、Q2（重要だが緊急でない）では$q2Rate%のみで、タスク実行の優先順位が内部の戦略的焦点ではなく「外部圧力」によって駆動されていることを示しています。",
+    "message": "Q1（重要かつ緊急）の「$1」タスクは$2%の完了率を達成していますが、Q2（重要だが緊急でない）では$3%のみで、タスク実行の優先順位が内部の戦略的焦点ではなく「外部圧力」によって駆動されていることを示しています。",
     "description": "ソースタスクのQ1対Q2完了率に関するインサイト"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "Q4（重要でないが緊急）の「$source」タスクは低い完了率（$q4Rate%）を持っており、「一時的なタスク」に優先度定義の問題があるかどうかを確認する必要があります。",
+    "message": "Q4（重要でないが緊急）の「$1」タスクは低い完了率（$2%）を持っており、「一時的なタスク」に優先度定義の問題があるかどうかを確認する必要があります。",
     "description": "Q4タスクの低完了率に関するインサイト"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "「$source」は$quadrant（$quadrantName）象限に高度に集中しており、$percentage%を占めています。タスク計画の合理性を確認してください。",
+    "message": "「$1」は$2（$2Name）象限に高度に集中しており、$1%を占めています。タスク計画の合理性を確認してください。",
     "description": "タスクが1つの象限に集中していることに関するインサイト"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "$highQuadrantの「$highSource」は最高の完了率（$highRate%）を持ち、$lowQuadrantの「$lowSource」は最低（$lowRate%）で、異なるタスクタイプの処理優先順位に明確な違いがあることを示しています。",
+    "message": "$2の「$1」は最高の完了率（$3%）を持ち、$5の「$4」は最低（$6%）で、異なるタスクタイプの処理優先順位に明確な違いがあることを示しています。",
     "description": "ソース間の完了率の違いに関するインサイト"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1（重要かつ緊急）は3日以上かかる保留タスクが$percentage%あり、コアタスクでの潜在的なリソース不足や予期しない困難を示しています。タスクの分解や追加サポートを検討してください。",
+    "message": "Q1（重要かつ緊急）は3日以上かかる保留タスクが$1%あり、コアタスクでの潜在的なリソース不足や予期しない困難を示しています。タスクの分解や追加サポートを検討してください。",
     "description": "Q1保留タスクが時間をかけすぎることに関するインサイト"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Q4（重要でないが緊急）の完了タスクは平均$q4Time日で、Q2（重要だが緊急でない）の$q2Time日を大幅に上回り、「一時的な緊急タスク」がリソースを過度に占有していることを示しています。緊急対応プロセスを最適化してください。",
+    "message": "Q4（重要でないが緊急）の完了タスクは平均$1日で、Q2（重要だが緊急でない）の$2日を大幅に上回り、「一時的な緊急タスク」がリソースを過度に占有していることを示しています。緊急対応プロセスを最適化してください。",
     "description": "Q4対Q2タスク完了時間に関するインサイト"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "保留タスクの平均処理時間（$pendingTime日）は完了タスク（$completedTime日）より大幅に高くなっています。長期間停滞しているタスクに焦点を当て、必要に応じて戦略やリソース配分を調整してください。",
+    "message": "保留タスクの平均処理時間（$1日）は完了タスク（$2日）より大幅に高くなっています。長期間停滞しているタスクに焦点を当て、必要に応じて戦略やリソース配分を調整してください。",
     "description": "保留対完了タスク時間に関するインサイト"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "$quadrantLabelタスクボリュームが$fromから$toまで$rate%$directionし、大きな変動を示しています。タスク配分バランスに焦点を当てることを検討してください。",
+    "message": "$1タスクボリュームが$2から$3まで$5%$4し、大きな変動を示しています。タスク配分バランスに焦点を当てることを検討してください。",
     "description": "タスクボリューム変動に関するインサイト"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "$quadrantLabelタスクの完了率は持続的な上昇トレンドを示し、作業効率の改善を示しています。",
+    "message": "$1タスクの完了率は持続的な上昇トレンドを示し、作業効率の改善を示しています。",
     "description": "完了率上昇トレンドに関するインサイト"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "$quadrantLabelタスクの完了率は持続的な下降トレンドを示し、実行効率の問題に注意が必要です。",
+    "message": "$1タスクの完了率は持続的な下降トレンドを示し、実行効率の問題に注意が必要です。",
     "description": "完了率下降トレンドに関するインサイト"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Q2（重要だが緊急でない）タスクは完了率の改善なしに蓄積し続けており、「戦略的タスク」が定期的な実行計画に統合されていないことを反映し、「先延ばし蓄積」のリスクを提示しています。",
     "description": "Q2タスク蓄積に関するインサイト"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 インサイト分析ルール",
+    "description": "インサイト分析ルールセクションタイトル"
+  },
+  "completionRateAnalysis": {
+    "message": "完了率分析",
+    "description": "完了率分析モジュールタイトル"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "分析目標：アイゼンハワー行列理論に基づいて各象限のタスク完了率分布を分析",
+    "description": "完了率分析目標の説明"
+  },
+  "completionRateAnalysisRules": {
+    "message": "主要インサイトルール：",
+    "description": "完了率分析ルールタイトル"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Q2低完了率検出（<70%他の象限平均）",
+    "description": "Q2低完了率検出ルール"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Q3高完了率検出（>85%かつ>Q1の120%）",
+    "description": "Q3高完了率検出ルール"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Q1/Q4高タスク割合検出（>40%/>30%）",
+    "description": "Q1/Q4高タスク割合検出ルール"
+  },
+  "sourceCrossAnalysis": {
+    "message": "ソースクロス分析",
+    "description": "ソースクロス分析モジュールタイトル"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "分析目標：異なるタスクソースの各象限での完了率分布を分析",
+    "description": "ソースクロス分析目標の説明"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "主要インサイトルール：",
+    "description": "ソースクロス分析ルールタイトル"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Q1高Q2低完了率差検出",
+    "description": "Q1高Q2低完了率差検出ルール"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Q4低完了率検出",
+    "description": "Q4低完了率検出ルール"
+  },
+  "sourceConcentrationRule": {
+    "message": "タスクソース過度集中検出（>60%）",
+    "description": "タスクソース過度集中検出ルール"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "ソース間完了率差検出（>50%）",
+    "description": "ソース間完了率差検出ルール"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "時間効率分析",
+    "description": "時間効率分析モジュールタイトル"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "分析目標：タスクの時間効率とリソース配分の合理性を分析",
+    "description": "時間効率分析目標の説明"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "主要インサイトルール：",
+    "description": "時間効率分析ルールタイトル"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Q1進行中タスク長時間消費検出（>3日かつ>50%）",
+    "description": "Q1進行中タスク長時間消費検出ルール"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Q4対Q2平均時間比較検出（Q4>Q2×1.5）",
+    "description": "Q4対Q2平均時間比較検出ルール"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "進行中対完了タスク時間比較検出（>2倍）",
+    "description": "進行中対完了タスク時間比較検出ルール"
+  },
+  "trendAnalysis": {
+    "message": "トレンド分析",
+    "description": "トレンド分析モジュールタイトル"
+  },
+  "trendAnalysisGoal": {
+    "message": "分析目標：タスク管理戦略の有効性と改善方向を追跡",
+    "description": "トレンド分析目標の説明"
+  },
+  "trendAnalysisRules": {
+    "message": "主要インサイトルール：",
+    "description": "トレンド分析ルールタイトル"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "タスク量変動検出（>50%変化）",
+    "description": "タスク量変動検出ルール"
+  },
+  "completionRateTrendRule": {
+    "message": "完了率トレンド分析（連続3期間上昇/下降）",
+    "description": "完了率トレンド分析ルール"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Q2タスク蓄積検出（70%時間点増加）",
+    "description": "Q2タスク蓄積検出ルール"
   }
 }

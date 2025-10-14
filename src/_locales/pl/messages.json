@@ -680,55 +680,159 @@
     "description": "Wgląd o zbyt wysokim wskaźniku ukończenia Q3"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Q1 (Ważne i Pilne) kwadrant zadania stanowią $percentage% wszystkich zadań, co wskazuje na poprawę w planowaniu zadań, obsługuj ważne zadania wcześnie, aby uniknąć sytuacji pilnych.",
+    "message": "Q1 (Ważne i Pilne) kwadrant zadania stanowią $1% wszystkich zadań, co wskazuje na poprawę w planowaniu zadań, obsługuj ważne zadania wcześnie, aby uniknąć sytuacji pilnych.",
     "description": "Wgląd o wysokim procencie zadań Q1"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Q4 (Nieważne i Pilne) kwadrant zadania stanowią $percentage% wszystkich zadań, przejrzyj źródła tych zadań o niskim priorytecie ale pilnych, zoptymalizuj procesy reagowania na sytuacje awaryjne.",
+    "message": "Q4 (Nieważne i Pilne) kwadrant zadania stanowią $1% wszystkich zadań, przejrzyj źródła tych zadań o niskim priorytecie ale pilnych, zoptymalizuj procesy reagowania na sytuacje awaryjne.",
     "description": "Wgląd o wysokim procencie zadań Q4"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "\"$source\" zadania w Q1 (Ważne i Pilne) osiągają $q1Rate% wskaźnik ukończenia, ale tylko $q2Rate% w Q2 (Ważne i Nie Pilne), co wskazuje, że priorytet wykonania zadań jest napędzany przez \"zewnętrzną presję\" raczej niż wewnętrzne strategiczne skupienie.",
+    "message": "\"$1\" zadania w Q1 (Ważne i Pilne) osiągają $2% wskaźnik ukończenia, ale tylko $3% w Q2 (Ważne i Nie Pilne), co wskazuje, że priorytet wykonania zadań jest napędzany przez \"zewnętrzną presję\" raczej niż wewnętrzne strategiczne skupienie.",
     "description": "Wgląd o wskaźnikach ukończenia zadań źródła Q1 vs Q2"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "\"$source\" zadania w Q4 (Nieważne i Pilne) mają niski wskaźnik ukończenia ($q4Rate%), potrzebują potwierdzenia czy \"tymczasowe zadania\" mają problem z definicją priorytetów.",
+    "message": "\"$1\" zadania w Q4 (Nieważne i Pilne) mają niski wskaźnik ukończenia ($2%), potrzebują potwierdzenia czy \"tymczasowe zadania\" mają problem z definicją priorytetów.",
     "description": "Wgląd o niskim wskaźniku ukończenia zadań Q4"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "\"$source\" jest wysoko skoncentrowane w $quadrant ($quadrantName) kwadrancie, stanowiąc $percentage%. Przejrzyj planowanie zadań pod kątem rozsądności.",
+    "message": "\"$1\" jest wysoko skoncentrowane w $2 ($2Name) kwadrancie, stanowiąc $1%. Przejrzyj planowanie zadań pod kątem rozsądności.",
     "description": "Wgląd o zadaniach wysoko skoncentrowanych w jednym kwadrancie"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "\"$highSource\" w $highQuadrant ma najwyższy wskaźnik ukończenia ($highRate%), podczas gdy \"$lowSource\" w $lowQuadrant ma najniższy ($lowRate%), co pokazuje wyraźne różnice w priorytecie przetwarzania dla różnych typów zadań.",
+    "message": "\"$1\" w $2 ma najwyższy wskaźnik ukończenia ($3%), podczas gdy \"$4\" w $5 ma najniższy ($6%), co pokazuje wyraźne różnice w priorytecie przetwarzania dla różnych typów zadań.",
     "description": "Wgląd o różnicach wskaźnika ukończenia między źródłami"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1 (Ważne i Pilne) ma $percentage% oczekujących zadań, które zajmują więcej niż 3 dni, co wskazuje na potencjalny brak zasobów lub nieoczekiwane trudności w zadaniach kluczowych. Rozważ podział zadań lub dodatkowe wsparcie.",
+    "message": "Q1 (Ważne i Pilne) ma $1% oczekujących zadań, które zajmują więcej niż 3 dni, co wskazuje na potencjalny brak zasobów lub nieoczekiwane trudności w zadaniach kluczowych. Rozważ podział zadań lub dodatkowe wsparcie.",
     "description": "Wgląd o oczekujących zadaniach Q1 zajmujących zbyt dużo czasu"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Q4 (Nieważne i Pilne) ukończone zadania średnio $q4Time dni, znacznie przekraczając Q2 (Ważne i Nie Pilne) na $q2Time dni, co wskazuje, że \"tymczasowe pilne zadania\" nadmiernie zajmują zasoby. Zoptymalizuj procesy reagowania na sytuacje awaryjne.",
+    "message": "Q4 (Nieważne i Pilne) ukończone zadania średnio $1 dni, znacznie przekraczając Q2 (Ważne i Nie Pilne) na $2 dni, co wskazuje, że \"tymczasowe pilne zadania\" nadmiernie zajmują zasoby. Zoptymalizuj procesy reagowania na sytuacje awaryjne.",
     "description": "Wgląd o czasach ukończenia zadań Q4 vs Q2"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Średni czas przetwarzania oczekujących zadań ($pendingTime dni) jest znacznie wyższy niż ukończonych zadań ($completedTime dni). Skup się na zadaniach długo zalegających i dostosuj strategię lub alokację zasobów w razie potrzeby.",
+    "message": "Średni czas przetwarzania oczekujących zadań ($1 dni) jest znacznie wyższy niż ukończonych zadań ($2 dni). Skup się na zadaniach długo zalegających i dostosuj strategię lub alokację zasobów w razie potrzeby.",
     "description": "Wgląd o czasach oczekujących vs ukończonych zadań"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "$quadrantLabel objętość zadań $direction $rate% od $from do $to, co pokazuje znaczną fluktuację. Rozważ skupienie się na równowadze alokacji zadań.",
+    "message": "$1 objętość zadań $4 $5% od $2 do $3, co pokazuje znaczną fluktuację. Rozważ skupienie się na równowadze alokacji zadań.",
     "description": "Wgląd o fluktuacji objętości zadań kwadrantu"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "$quadrantLabel wskaźnik ukończenia zadań pokazuje trwały trend wzrostowy, co wskazuje na poprawę aktywności pracy.",
+    "message": "$1 wskaźnik ukończenia zadań pokazuje trwały trend wzrostowy, co wskazuje na poprawę aktywności pracy.",
     "description": "Wgląd o trendzie wzrostowym wskaźnika ukończenia"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "$quadrantLabel wskaźnik ukończenia zadań pokazuje trwały trend spadkowy, co wymaga uwagi na problemy aktywności wykonania.",
+    "message": "$1 wskaźnik ukończenia zadań pokazuje trwały trend spadkowy, co wymaga uwagi na problemy aktywności wykonania.",
     "description": "Wgląd o trendzie spadkowym wskaźnika ukończenia"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Q2 (Ważne i Nie Pilne) zadania nadal się gromadzą bez poprawy wskaźnika ukończenia, co odzwierciedla, że \"zadania strategiczne\" nie są zintegrowane z regularnymi programami wykonania, co przedstawia ryzyko \"akumulacji opóźnień\".",
     "description": "Wgląd o akumulacji zadań Q2"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Zasady Analizy Wglądu",
+    "description": "Tytuł sekcji zasad analizy wglądu"
+  },
+  "completionRateAnalysis": {
+    "message": "Analiza Wskaźnika Ukończenia",
+    "description": "Tytuł modułu analizy wskaźnika ukończenia"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Cel Analizy: Analizować rozkład wskaźnika ukończenia zadań według kwadrantów na podstawie teorii Macierzy Eisenhowera",
+    "description": "Opis celu analizy wskaźnika ukończenia"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Główne Zasady Wglądu:",
+    "description": "Tytuł zasad analizy wskaźnika ukończenia"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Wykrywanie niskiego wskaźnika ukończenia Q2 (<70% średniej innych kwadrantów)",
+    "description": "Zasada wykrywania niskiego wskaźnika ukończenia Q2"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Wykrywanie wysokiego wskaźnika ukończenia Q3 (>85% i >120% Q1)",
+    "description": "Zasada wykrywania wysokiego wskaźnika ukończenia Q3"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Wykrywanie wysokiego procentu zadań Q1/Q4 (>40%/>30%)",
+    "description": "Zasada wykrywania wysokiego procentu zadań Q1/Q4"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Analiza Krzyżowa Źródeł",
+    "description": "Tytuł modułu analizy krzyżowej źródeł"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Cel Analizy: Analizować rozkład wskaźnika ukończenia różnych źródeł zadań według kwadrantów",
+    "description": "Opis celu analizy krzyżowej źródeł"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Główne Zasady Wglądu:",
+    "description": "Tytuł zasad analizy krzyżowej źródeł"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Wykrywanie różnicy wskaźnika ukończenia Q1 wysoki Q2 niski",
+    "description": "Zasada wykrywania różnicy wskaźnika ukończenia Q1 wysoki Q2 niski"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Wykrywanie niskiego wskaźnika ukończenia Q4",
+    "description": "Zasada wykrywania niskiego wskaźnika ukończenia Q4"
+  },
+  "sourceConcentrationRule": {
+    "message": "Wykrywanie nadmiernej koncentracji źródeł zadań (>60%)",
+    "description": "Zasada wykrywania nadmiernej koncentracji źródeł zadań"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Wykrywanie różnicy wskaźnika ukończenia między źródłami (>50%)",
+    "description": "Zasada wykrywania różnicy wskaźnika ukończenia między źródłami"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Analiza Efektywności Czasowej",
+    "description": "Tytuł modułu analizy efektywności czasowej"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Cel Analizy: Analizować efektywność czasową zadań i racjonalność alokacji zasobów",
+    "description": "Opis celu analizy efektywności czasowej"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Główne Zasady Wglądu:",
+    "description": "Tytuł zasad analizy efektywności czasowej"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Wykrywanie długiego czasu spędzonego na zadaniach Q1 w toku (>3 dni i >50%)",
+    "description": "Zasada wykrywania długiego czasu spędzonego na zadaniach Q1 w toku"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Wykrywanie porównania średniego czasu Q4 vs Q2 (Q4>Q2×1.5)",
+    "description": "Zasada wykrywania porównania średniego czasu Q4 vs Q2"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Wykrywanie porównania czasu między zadaniami w toku a ukończonymi (>2x)",
+    "description": "Zasada wykrywania porównania czasu między zadaniami w toku a ukończonymi"
+  },
+  "trendAnalysis": {
+    "message": "Analiza Trendów",
+    "description": "Tytuł modułu analizy trendów"
+  },
+  "trendAnalysisGoal": {
+    "message": "Cel Analizy: Śledzić skuteczność strategii zarządzania zadaniami i kierunki poprawy",
+    "description": "Opis celu analizy trendów"
+  },
+  "trendAnalysisRules": {
+    "message": "Główne Zasady Wglądu:",
+    "description": "Tytuł zasad analizy trendów"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Wykrywanie fluktuacji wolumenu zadań (>50% zmiany)",
+    "description": "Zasada wykrywania fluktuacji wolumenu zadań"
+  },
+  "completionRateTrendRule": {
+    "message": "Analiza trendu wskaźnika ukończenia (3 kolejne okresy wzrost/spadek)",
+    "description": "Zasada analizy trendu wskaźnika ukończenia"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Wykrywanie akumulacji zadań Q2 (wzrost 70% punktów czasowych)",
+    "description": "Zasada wykrywania akumulacji zadań Q2"
   }
 }

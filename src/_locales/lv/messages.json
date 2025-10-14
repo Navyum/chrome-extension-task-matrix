@@ -680,55 +680,159 @@
     "description": "Ieskats par pārāk augstu Q3 pabeigšanas līmeni"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Q1 kvadranta (svarīgi un steidzami) uzdevumi veido $percentage% no visiem uzdevumiem, rādot uzdevumu plānošanas uzlabošanos, agri risinot svarīgus uzdevumus, lai izvairītos no steidzamiem situācijām.",
+    "message": "Q1 kvadranta (svarīgi un steidzami) uzdevumi veido $1% no visiem uzdevumiem, rādot uzdevumu plānošanas uzlabošanos, agri risinot svarīgus uzdevumus, lai izvairītos no steidzamiem situācijām.",
     "description": "Ieskats par augstu Q1 uzdevumu procentu"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Q4 kvadranta (nav svarīgi, bet steidzami) uzdevumi veido $percentage% no visiem uzdevumiem, lūdzu, pārskatiet šo zemas prioritātes, bet steidzamo uzdevumu avotus, optimizējiet steidzamo gadījumu atbildes procesu.",
+    "message": "Q4 kvadranta (nav svarīgi, bet steidzami) uzdevumi veido $1% no visiem uzdevumiem, lūdzu, pārskatiet šo zemas prioritātes, bet steidzamo uzdevumu avotus, optimizējiet steidzamo gadījumu atbildes procesu.",
     "description": "Ieskats par augstu Q4 uzdevumu procentu"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "«$source» uzdevumi sasniedz $q1Rate% pabeigšanas līmeni Q1 (svarīgi un steidzami), bet tikai $q2Rate% Q2 (svarīgi, bet ne steidzami), rādot, ka uzdevumu izpildes prioritāte ir vadīta «ārējā spiediena», nevis iekšējā stratēģiskā fokusa.",
+    "message": "«$1» uzdevumi sasniedz $2% pabeigšanas līmeni Q1 (svarīgi un steidzami), bet tikai $3% Q2 (svarīgi, bet ne steidzami), rādot, ka uzdevumu izpildes prioritāte ir vadīta «ārējā spiediena», nevis iekšējā stratēģiskā fokusa.",
     "description": "Ieskats par Q1 vs Q2 avota uzdevumu pabeigšanas līmeni"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "«$source» uzdevumiem ir zems pabeigšanas līmenis ($q4Rate%) Q4 (nav svarīgi, bet steidzami), jāapstiprina, vai ir problēma ar «pagaidu uzdevumu» prioritātes definīciju.",
+    "message": "«$1» uzdevumiem ir zems pabeigšanas līmenis ($2%) Q4 (nav svarīgi, bet steidzami), jāapstiprina, vai ir problēma ar «pagaidu uzdevumu» prioritātes definīciju.",
     "description": "Ieskats par zemu Q4 uzdevumu pabeigšanas līmeni"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "«$source» ir ļoti koncentrēts $quadrant kvadrantā ($quadrantName), veidojot $percentage%. Lūdzu, pārskatiet uzdevumu plānošanas racionalitāti.",
+    "message": "«$1» ir ļoti koncentrēts $2 kvadrantā ($2Name), veidojot $1%. Lūdzu, pārskatiet uzdevumu plānošanas racionalitāti.",
     "description": "Ieskats par augstu uzdevumu koncentrāciju vienā kvadrantā"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "«$highSource» ir augstākais pabeigšanas līmenis ($highRate%) $highQuadrant, bet «$lowSource» ir zemākais ($lowRate%) $lowQuadrant, rādot acīmredzamu atšķirību dažādu tipu uzdevumu apstrādes prioritātēs.",
+    "message": "«$1» ir augstākais pabeigšanas līmenis ($3%) $2, bet «$4» ir zemākais ($6%) $5, rādot acīmredzamu atšķirību dažādu tipu uzdevumu apstrādes prioritātēs.",
     "description": "Ieskats par pabeigšanas līmeņa atšķirību starp avotiem"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1 (svarīgi un steidzami) ir $percentage% uzdevumu gaidīšanā, kas ilgst ilgāk nekā 3 dienas, rādot iespējamo resursu trūkumu vai negaidītus grūtības ar galvenajiem uzdevumiem. Lūdzu, apsveriet uzdevuma sadalīšanu vai papildu atbalstu.",
+    "message": "Q1 (svarīgi un steidzami) ir $1% uzdevumu gaidīšanā, kas ilgst ilgāk nekā 3 dienas, rādot iespējamo resursu trūkumu vai negaidītus grūtības ar galvenajiem uzdevumiem. Lūdzu, apsveriet uzdevuma sadalīšanu vai papildu atbalstu.",
     "description": "Ieskats par Q1 gaidīšanas uzdevumiem ar augstu iztērēto laiku"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Vidējais Q4 (nav svarīgi, bet steidzami) pabeigto uzdevumu pabeigšanas laiks ir $q4Time dienas, ievērojami pārsniedzot $q2Time dienu Q2 (svarīgi, bet ne steidzami), rādot, ka «pagaidu steidzami uzdevumi» pārāk daudz aizņem resursus. Lūdzu, optimizējiet steidzamo gadījumu atbildes procesu.",
+    "message": "Vidējais Q4 (nav svarīgi, bet steidzami) pabeigto uzdevumu pabeigšanas laiks ir $1 dienas, ievērojami pārsniedzot $2 dienu Q2 (svarīgi, bet ne steidzami), rādot, ka «pagaidu steidzami uzdevumi» pārāk daudz aizņem resursus. Lūdzu, optimizējiet steidzamo gadījumu atbildes procesu.",
     "description": "Ieskats par Q4 vs Q2 pabeigšanas laiku"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Vidējais gaidīšanas uzdevumu apstrādes laiks ($pendingTime dienas) ir ievērojami lielāks nekā pabeigto uzdevumu ($completedTime dienas). Lūdzu, koncentrējieties uz uzdevumiem, kas ilgi gaida, un pēc vajadzības pielāgojiet stratēģiju vai resursu piešķiršanu.",
+    "message": "Vidējais gaidīšanas uzdevumu apstrādes laiks ($1 dienas) ir ievērojami lielāks nekā pabeigto uzdevumu ($2 dienas). Lūdzu, koncentrējieties uz uzdevumiem, kas ilgi gaida, un pēc vajadzības pielāgojiet stratēģiju vai resursu piešķiršanu.",
     "description": "Ieskats par gaidīšanas vs pabeigto uzdevumu laiku"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "$quadrantLabel uzdevumu apjoms svārstās no $from līdz $to $direction $rate%, rādot ievērojamus svārstības. Lūdzu, apsveriet koncentrēties uz uzdevumu piešķiršanas līdzsvaru.",
+    "message": "$1 uzdevumu apjoms svārstās no $2 līdz $3 $4 $5%, rādot ievērojamus svārstības. Lūdzu, apsveriet koncentrēties uz uzdevumu piešķiršanas līdzsvaru.",
     "description": "Ieskats par kvadranta uzdevumu apjoma svārstībām"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "$quadrantLabel uzdevumu pabeigšanas līmenis rāda ilgtspējīgu augošu tendenci, rādot darba aktivitātes uzlabošanos.",
+    "message": "$1 uzdevumu pabeigšanas līmenis rāda ilgtspējīgu augošu tendenci, rādot darba aktivitātes uzlabošanos.",
     "description": "Ieskats par augošu pabeigšanas līmeņa tendenci"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "$quadrantLabel uzdevumu pabeigšanas līmenis rāda ilgtspējīgu dilstošu tendenci, kas prasa uzmanību izpildītās aktivitātes problēmām.",
+    "message": "$1 uzdevumu pabeigšanas līmenis rāda ilgtspējīgu dilstošu tendenci, kas prasa uzmanību izpildītās aktivitātes problēmām.",
     "description": "Ieskats par dilstošu pabeigšanas līmeņa tendenci"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Q2 (svarīgi, bet ne steidzami) uzdevumi turpina uzkrāties bez pabeigšanas līmeņa uzlabošanas, atspoguļojot, ka «stratēģiskie uzdevumi» nav integrēti regulārā izpildes plānā, nesot «kavēšanās uzkrāšanās» risku.",
     "description": "Ieskats par Q2 uzdevumu uzkrāšanos"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Iekšējo atziņu analīzes noteikumi",
+    "description": "Iekšējo atziņu analīzes noteikumu sadaļas nosaukums"
+  },
+  "completionRateAnalysis": {
+    "message": "Pabeigšanas līmeņa analīze",
+    "description": "Pabeigšanas līmeņa analīzes moduļa nosaukums"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Analīzes mērķis: Analizēt uzdevumu pabeigšanas līmeņa sadalījumu kvadrantos, balstoties uz Eisenhower matricas teoriju",
+    "description": "Pabeigšanas līmeņa analīzes mērķa apraksts"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Galvenie iekšējo atziņu noteikumi:",
+    "description": "Pabeigšanas līmeņa analīzes noteikumu nosaukums"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Q2 zema pabeigšanas līmeņa noteikšana (<70% no citu kvadrantu vidējā)",
+    "description": "Q2 zema pabeigšanas līmeņa noteikšanas noteikums"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Q3 augsta pabeigšanas līmeņa noteikšana (>85% un >120% no Q1)",
+    "description": "Q3 augsta pabeigšanas līmeņa noteikšanas noteikums"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Q1/Q4 augsta uzdevumu procenta noteikšana (>40%/>30%)",
+    "description": "Q1/Q4 augsta uzdevumu procenta noteikšanas noteikums"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Avotu krusteniskā analīze",
+    "description": "Avotu krusteniskās analīzes moduļa nosaukums"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Analīzes mērķis: Analizēt dažādu uzdevumu avotu pabeigšanas līmeņa sadalījumu kvadrantos",
+    "description": "Avotu krusteniskās analīzes mērķa apraksts"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Galvenie iekšējo atziņu noteikumi:",
+    "description": "Avotu krusteniskās analīzes noteikumu nosaukums"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Q1 augsts Q2 zems pabeigšanas līmeņa atšķirības noteikšana",
+    "description": "Q1 augsts Q2 zems pabeigšanas līmeņa atšķirības noteikšanas noteikums"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Q4 zema pabeigšanas līmeņa noteikšana",
+    "description": "Q4 zema pabeigšanas līmeņa noteikšanas noteikums"
+  },
+  "sourceConcentrationRule": {
+    "message": "Uzdevumu avotu pārlieku augstas koncentrācijas noteikšana (>60%)",
+    "description": "Uzdevumu avotu pārlieku augstas koncentrācijas noteikšanas noteikums"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Pabeigšanas līmeņa atšķirības starp avotiem noteikšana (>50%)",
+    "description": "Pabeigšanas līmeņa atšķirības starp avotiem noteikšanas noteikums"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Laika efektivitātes analīze",
+    "description": "Laika efektivitātes analīzes moduļa nosaukums"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Analīzes mērķis: Analizēt uzdevumu laika efektivitāti un resursu sadales racionalitāti",
+    "description": "Laika efektivitātes analīzes mērķa apraksts"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Galvenie iekšējo atziņu noteikumi:",
+    "description": "Laika efektivitātes analīzes noteikumu nosaukums"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Ilga laika patēriņa noteikšana Q1 procesā esošajiem uzdevumiem (>3 dienas un >50%)",
+    "description": "Ilga laika patēriņa noteikšanas noteikums Q1 uzdevumiem"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Vidējā laika salīdzināšanas noteikšana Q4 pret Q2 (Q4>Q2×1.5)",
+    "description": "Vidējā laika salīdzināšanas noteikšanas noteikums Q4 pret Q2"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Laika salīdzināšanas noteikšana starp procesā esošajiem un pabeigtajiem uzdevumiem (>2x)",
+    "description": "Laika salīdzināšanas noteikšanas noteikums starp procesā esošajiem un pabeigtajiem uzdevumiem"
+  },
+  "trendAnalysis": {
+    "message": "Tendenču analīze",
+    "description": "Tendenču analīzes moduļa nosaukums"
+  },
+  "trendAnalysisGoal": {
+    "message": "Analīzes mērķis: Sekot uzdevumu pārvaldības stratēģiju efektivitātei un uzlabojumu virzieniem",
+    "description": "Tendenču analīzes mērķa apraksts"
+  },
+  "trendAnalysisRules": {
+    "message": "Galvenie iekšējo atziņu noteikumi:",
+    "description": "Tendenču analīzes noteikumu nosaukums"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Uzdevumu apjoma svārstību noteikšana (>50% izmaiņas)",
+    "description": "Uzdevumu apjoma svārstību noteikšanas noteikums"
+  },
+  "completionRateTrendRule": {
+    "message": "Pabeigšanas līmeņa tendences analīze (3 secīgi periodi augšup/lejup)",
+    "description": "Pabeigšanas līmeņa tendences analīzes noteikums"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Q2 uzdevumu uzkrāšanās noteikšana (70% laika punktu pieaugums)",
+    "description": "Q2 uzdevumu uzkrāšanās noteikšanas noteikums"
   }
 }

@@ -680,55 +680,159 @@
     "description": "Insikt om Q3 slutförandegrad som är för hög"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Q1 (Viktigt & Brådskande) kvadrant uppgifter utgör $percentage% av totala uppgifter, vilket tyder på förbättring i uppgiftsplanering, hantera viktiga uppgifter tidigt för att undvika brådskande situationer.",
+    "message": "Q1 (Viktigt & Brådskande) kvadrant uppgifter utgör $1% av totala uppgifter, vilket tyder på förbättring i uppgiftsplanering, hantera viktiga uppgifter tidigt för att undvika brådskande situationer.",
     "description": "Insikt om hög Q1 uppgifter procent"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Q4 (Inte Viktigt & Brådskande) kvadrant uppgifter utgör $percentage% av totala uppgifter, granska källorna till dessa lågprioritets men brådskande uppgifter, optimera nödsituationsresponsprocesser.",
+    "message": "Q4 (Inte Viktigt & Brådskande) kvadrant uppgifter utgör $1% av totala uppgifter, granska källorna till dessa lågprioritets men brådskande uppgifter, optimera nödsituationsresponsprocesser.",
     "description": "Insikt om hög Q4 uppgifter procent"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "\"$source\" uppgifter i Q1 (Viktigt & Brådskande) uppnår $q1Rate% slutförandegrad, men endast $q2Rate% i Q2 (Viktigt & Inte Brådskande), vilket indikerar att uppgiftsutförandeprioritet drivs av \"extern press\" snarare än intern strategisk fokus.",
+    "message": "\"$1\" uppgifter i Q1 (Viktigt & Brådskande) uppnår $2% slutförandegrad, men endast $3% i Q2 (Viktigt & Inte Brådskande), vilket indikerar att uppgiftsutförandeprioritet drivs av \"extern press\" snarare än intern strategisk fokus.",
     "description": "Insikt om källa uppgifter Q1 vs Q2 slutförandegrader"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "\"$source\" uppgifter i Q4 (Inte Viktigt & Brådskande) har låg slutförandegrad ($q4Rate%), behöver bekräfta om \"tillfälliga uppgifter\" har prioriteringsdefinitionsproblem.",
+    "message": "\"$1\" uppgifter i Q4 (Inte Viktigt & Brådskande) har låg slutförandegrad ($2%), behöver bekräfta om \"tillfälliga uppgifter\" har prioriteringsdefinitionsproblem.",
     "description": "Insikt om Q4 uppgifter låg slutförandegrad"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "\"$source\" är högt koncentrerade i $quadrant ($quadrantName) kvadrant, vilket utgör $percentage%. Granska uppgiftsplanering för rimlighet.",
+    "message": "\"$1\" är högt koncentrerade i $2 ($2Name) kvadrant, vilket utgör $1%. Granska uppgiftsplanering för rimlighet.",
     "description": "Insikt om uppgifter som är högt koncentrerade i en kvadrant"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "\"$highSource\" i $highQuadrant har högsta slutförandegrad ($highRate%), medan \"$lowSource\" i $lowQuadrant har lägsta ($lowRate%), vilket visar tydliga skillnader i bearbetningsprioritet för olika uppgiftstyper.",
+    "message": "\"$1\" i $2 har högsta slutförandegrad ($3%), medan \"$4\" i $5 har lägsta ($6%), vilket visar tydliga skillnader i bearbetningsprioritet för olika uppgiftstyper.",
     "description": "Insikt om slutförandegradsskillnader mellan källor"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1 (Viktigt & Brådskande) har $percentage% väntande uppgifter som tar mer än 3 dagar, vilket indikerar potentiell resursbrist eller oväntade svårigheter i kärnuppgifter. Överväg uppgiftsuppdelning eller ytterligare stöd.",
+    "message": "Q1 (Viktigt & Brådskande) har $1% väntande uppgifter som tar mer än 3 dagar, vilket indikerar potentiell resursbrist eller oväntade svårigheter i kärnuppgifter. Överväg uppgiftsuppdelning eller ytterligare stöd.",
     "description": "Insikt om Q1 väntande uppgifter som tar för lång tid"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Q4 (Inte Viktigt & Brådskande) slutförda uppgifter i genomsnitt $q4Time dagar, långt överskrider Q2 (Viktigt & Inte Brådskande) på $q2Time dagar, vilket indikerar att \"tillfälliga brådskande uppgifter\" över-ockuperar resurser. Optimera nödsituationsresponsprocesser.",
+    "message": "Q4 (Inte Viktigt & Brådskande) slutförda uppgifter i genomsnitt $1 dagar, långt överskrider Q2 (Viktigt & Inte Brådskande) på $2 dagar, vilket indikerar att \"tillfälliga brådskande uppgifter\" över-ockuperar resurser. Optimera nödsituationsresponsprocesser.",
     "description": "Insikt om Q4 vs Q2 uppgiftsslutförandetider"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Genomsnittlig bearbetningstid för väntande uppgifter ($pendingTime dagar) är betydligt högre än slutförda uppgifter ($completedTime dagar). Fokusera på långt fastsittande uppgifter och justera strategi eller resursallokering vid behov.",
+    "message": "Genomsnittlig bearbetningstid för väntande uppgifter ($1 dagar) är betydligt högre än slutförda uppgifter ($2 dagar). Fokusera på långt fastsittande uppgifter och justera strategi eller resursallokering vid behov.",
     "description": "Insikt om väntande vs slutförda uppgiftstider"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "$quadrantLabel uppgiftsvolym $direction $rate% från $from till $to, vilket visar betydande fluktuation. Överväg att fokusera på uppgiftsallokeringsbalans.",
+    "message": "$1 uppgiftsvolym $4 $5% från $2 till $3, vilket visar betydande fluktuation. Överväg att fokusera på uppgiftsallokeringsbalans.",
     "description": "Insikt om uppgiftsvolymfluktuation"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "$quadrantLabel uppgiftsslutförandegrad visar en ihållande uppåtgående trend, vilket indikerar förbättrad arbetsverksamhet.",
+    "message": "$1 uppgiftsslutförandegrad visar en ihållande uppåtgående trend, vilket indikerar förbättrad arbetsverksamhet.",
     "description": "Insikt om slutförandegrad uppåtgående trend"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "$quadrantLabel uppgiftsslutförandegrad visar en ihållande nedåtgående trend, vilket kräver uppmärksamhet på utförandeverksamhetsproblem.",
+    "message": "$1 uppgiftsslutförandegrad visar en ihållande nedåtgående trend, vilket kräver uppmärksamhet på utförandeverksamhetsproblem.",
     "description": "Insikt om slutförandegrad nedåtgående trend"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Q2 (Viktigt & Inte Brådskande) uppgifter fortsätter att ackumuleras utan förbättring i slutförandegrad, vilket återspeglar att \"strategiska uppgifter\" inte är integrerade i regelbundna utförandeprogram, vilket presenterar en \"fördröjningsackumulering\" risk.",
     "description": "Insikt om Q2 uppgifter ackumulering"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Insikt Analys Regler",
+    "description": "Titel för insikt analys regler sektion"
+  },
+  "completionRateAnalysis": {
+    "message": "Slutförandegrad Analys",
+    "description": "Titel för slutförandegrad analys modul"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Analys Mål: Analysera fördelningen av uppgift slutförandegrad per kvadrant baserat på Eisenhower Matrix teori",
+    "description": "Beskrivning av slutförandegrad analys mål"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Huvud Insikt Regler:",
+    "description": "Titel för slutförandegrad analys regler"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Q2 låg slutförandegrad detektering (<70% av andra kvadranter genomsnitt)",
+    "description": "Q2 låg slutförandegrad detektering regel"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Q3 hög slutförandegrad detektering (>85% och >120% av Q1)",
+    "description": "Q3 hög slutförandegrad detektering regel"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Q1/Q4 hög uppgift procent detektering (>40%/>30%)",
+    "description": "Q1/Q4 hög uppgift procent detektering regel"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Källa Korsanalys",
+    "description": "Titel för källa korsanalys modul"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Analys Mål: Analysera slutförandegrad fördelning av olika uppgift källor per kvadrant",
+    "description": "Beskrivning av källa korsanalys mål"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Huvud Insikt Regler:",
+    "description": "Titel för källa korsanalys regler"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Q1 hög Q2 låg slutförandegrad skillnad detektering",
+    "description": "Q1 hög Q2 låg slutförandegrad skillnad detektering regel"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Q4 låg slutförandegrad detektering",
+    "description": "Q4 låg slutförandegrad detektering regel"
+  },
+  "sourceConcentrationRule": {
+    "message": "Uppgift källa överkoncentration detektering (>60%)",
+    "description": "Uppgift källa överkoncentration detektering regel"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Källa slutförandegrad skillnad detektering (>50%)",
+    "description": "Källa slutförandegrad skillnad detektering regel"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Tid Effektivitet Analys",
+    "description": "Titel för tid effektivitet analys modul"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Analys Mål: Analysera uppgift tid effektivitet och resurs allokering rationalitet",
+    "description": "Beskrivning av tid effektivitet analys mål"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Huvud Insikt Regler:",
+    "description": "Titel för tid effektivitet analys regler"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Q1 pågående uppgift lång tid spenderad detektering (>3 dagar och >50%)",
+    "description": "Q1 pågående uppgift lång tid spenderad detektering regel"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Q4 vs Q2 genomsnittlig tid jämförelse detektering (Q4>Q2×1.5)",
+    "description": "Q4 vs Q2 genomsnittlig tid jämförelse detektering regel"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Pågående vs slutförda uppgift tid jämförelse detektering (>2x)",
+    "description": "Pågående vs slutförda uppgift tid jämförelse detektering regel"
+  },
+  "trendAnalysis": {
+    "message": "Trend Analys",
+    "description": "Titel för trend analys modul"
+  },
+  "trendAnalysisGoal": {
+    "message": "Analys Mål: Spåra effektiviteten av uppgift hanteringsstrategier och förbättringsriktningar",
+    "description": "Beskrivning av trend analys mål"
+  },
+  "trendAnalysisRules": {
+    "message": "Huvud Insikt Regler:",
+    "description": "Titel för trend analys regler"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Uppgift volym fluktuation detektering (>50% förändring)",
+    "description": "Uppgift volym fluktuation detektering regel"
+  },
+  "completionRateTrendRule": {
+    "message": "Slutförandegrad trend analys (3 på varandra följande perioder upp/ned)",
+    "description": "Slutförandegrad trend analys regel"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Q2 uppgift ackumulering detektering (70% tid punkter ökning)",
+    "description": "Q2 uppgift ackumulering detektering regel"
   }
 }

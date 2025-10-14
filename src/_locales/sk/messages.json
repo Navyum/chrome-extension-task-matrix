@@ -680,55 +680,159 @@
     "description": "Poznatok o príliš vysokej miere dokončenia Q3"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Úlohy kvadrantu Q1 (dôležité a naliehavé) predstavujú $percentage% z celkového počtu úloh, ukazujúc zlepšenie v plánovaní úloh, skoré riešenie dôležitých úloh na vyhnutie sa naliehavým situáciám.",
+    "message": "Úlohy kvadrantu Q1 (dôležité a naliehavé) predstavujú $1% z celkového počtu úloh, ukazujúc zlepšenie v plánovaní úloh, skoré riešenie dôležitých úloh na vyhnutie sa naliehavým situáciám.",
     "description": "Poznatok o vysokom percente úloh Q1"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Úlohy kvadrantu Q4 (nie dôležité ale naliehavé) predstavujú $percentage% z celkového počtu úloh, prosím prehľadajte zdroje týchto úloh s nízkym prioritetom ale naliehavých, optimalizujte proces odpovede na núdzové prípady.",
+    "message": "Úlohy kvadrantu Q4 (nie dôležité ale naliehavé) predstavujú $1% z celkového počtu úloh, prosím prehľadajte zdroje týchto úloh s nízkym prioritetom ale naliehavých, optimalizujte proces odpovede na núdzové prípady.",
     "description": "Poznatok o vysokom percente úloh Q4"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "Úlohy «$source» dosahujú $q1Rate% mieru dokončenia v Q1 (dôležité a naliehavé), ale len $q2Rate% v Q2 (dôležité ale nie naliehavé), ukazujúc že priorita vykonávania úloh je riadená «vonkajším tlakom», nie vnútorným strategickým zameraním.",
+    "message": "Úlohy «$1» dosahujú $2% mieru dokončenia v Q1 (dôležité a naliehavé), ale len $3% v Q2 (dôležité ale nie naliehavé), ukazujúc že priorita vykonávania úloh je riadená «vonkajším tlakom», nie vnútorným strategickým zameraním.",
     "description": "Poznatok o miere dokončenia Q1 vs Q2 úloh zdroja"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "Úlohy «$source» majú nízku mieru dokončenia ($q4Rate%) v Q4 (nie dôležité ale naliehavé), treba potvrdiť či existuje problém s definovaním priority «dočasných úloh».",
+    "message": "Úlohy «$1» majú nízku mieru dokončenia ($2%) v Q4 (nie dôležité ale naliehavé), treba potvrdiť či existuje problém s definovaním priority «dočasných úloh».",
     "description": "Poznatok o nízkej miere dokončenia úloh Q4"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "«$source» je vysoko koncentrovaný v kvadrante $quadrant ($quadrantName), predstavujúc $percentage%. Prosím prehľadajte racionalitu plánovania úloh.",
+    "message": "«$1» je vysoko koncentrovaný v kvadrante $2 ($2Name), predstavujúc $1%. Prosím prehľadajte racionalitu plánovania úloh.",
     "description": "Poznatok o vysokej koncentrácii úloh v jednom kvadrante"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "«$highSource» má najvyššiu mieru dokončenia ($highRate%) v $highQuadrant, zatiaľ čo «$lowSource» má najnižšiu ($lowRate%) v $lowQuadrant, ukazujúc zjavný rozdiel v prioritách spracovania rôznych typov úloh.",
+    "message": "«$1» má najvyššiu mieru dokončenia ($3%) v $2, zatiaľ čo «$4» má najnižšiu ($6%) v $5, ukazujúc zjavný rozdiel v prioritách spracovania rôznych typov úloh.",
     "description": "Poznatok o rozdiele miery dokončenia medzi zdrojmi"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1 (dôležité a naliehavé) má $percentage% úloh čakajúcich ktoré trvajú viac ako 3 dni, ukazujúc možný nedostatok zdrojov alebo neočakávané ťažkosti s hlavnými úlohami. Prosím zvážte rozdelenie úlohy alebo dodatočnú podporu.",
+    "message": "Q1 (dôležité a naliehavé) má $1% úloh čakajúcich ktoré trvajú viac ako 3 dni, ukazujúc možný nedostatok zdrojov alebo neočakávané ťažkosti s hlavnými úlohami. Prosím zvážte rozdelenie úlohy alebo dodatočnú podporu.",
     "description": "Poznatok o úlohách Q1 čakajúcich s vysokým stráveným časom"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Priemerný čas dokončenia dokončených úloh Q4 (nie dôležité ale naliehavé) je $q4Time dní, výrazne presahujúc $q2Time dní Q2 (dôležité ale nie naliehavé), ukazujúc že «dočasné naliehavé úlohy» nadmerne zaberajú zdroje. Prosím optimalizujte proces odpovede na núdzové prípady.",
+    "message": "Priemerný čas dokončenia dokončených úloh Q4 (nie dôležité ale naliehavé) je $1 dní, výrazne presahujúc $2 dní Q2 (dôležité ale nie naliehavé), ukazujúc že «dočasné naliehavé úlohy» nadmerne zaberajú zdroje. Prosím optimalizujte proces odpovede na núdzové prípady.",
     "description": "Poznatok o čase dokončenia Q4 vs Q2"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Priemerný čas spracovania čakajúcich úloh ($pendingTime dní) je výrazne vyšší ako dokončené úlohy ($completedTime dní). Prosím zamerajte sa na úlohy ktoré zostávajú čakajúce dlhý čas a upravte stratégiu alebo alokáciu zdrojov podľa potreby.",
+    "message": "Priemerný čas spracovania čakajúcich úloh ($1 dní) je výrazne vyšší ako dokončené úlohy ($2 dní). Prosím zamerajte sa na úlohy ktoré zostávajú čakajúce dlhý čas a upravte stratégiu alebo alokáciu zdrojov podľa potreby.",
     "description": "Poznatok o čase čakajúcich vs dokončených úloh"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "Objem úloh $quadrantLabel kolíše od $from do $to $direction $rate%, ukazujúc významné kolísania. Prosím zvážte zameranie na rovnováhu alokácie úloh.",
+    "message": "Objem úloh $1 kolíše od $2 do $3 $4 $5%, ukazujúc významné kolísania. Prosím zvážte zameranie na rovnováhu alokácie úloh.",
     "description": "Poznatok o kolísaní objemu úloh kvadrantu"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "Miera dokončenia úloh $quadrantLabel ukazuje udržateľný vzostupný trend, ukazujúc zlepšenie pracovnej aktivity.",
+    "message": "Miera dokončenia úloh $1 ukazuje udržateľný vzostupný trend, ukazujúc zlepšenie pracovnej aktivity.",
     "description": "Poznatok o vzostupnom trende miery dokončenia"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "Miera dokončenia úloh $quadrantLabel ukazuje udržateľný zostupný trend, ktorý vyžaduje pozornosť na problémy výkonnej aktivity.",
+    "message": "Miera dokončenia úloh $1 ukazuje udržateľný zostupný trend, ktorý vyžaduje pozornosť na problémy výkonnej aktivity.",
     "description": "Poznatok o zostupnom trende miery dokončenia"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Úlohy Q2 (dôležité ale nie naliehavé) pokračujú v hromadení bez zlepšenia miery dokončenia, odrážajúc že «strategické úlohy» nie sú integrované do pravidelného plánu vykonávania, prinášajúc riziko «hromadenia oneskorení».",
     "description": "Poznatok o hromadení úloh Q2"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Pravidlá Analýzy Postrehov",
+    "description": "Nadpis sekcie pravidiel analýzy postrehov"
+  },
+  "completionRateAnalysis": {
+    "message": "Analýza Mier Dokončenia",
+    "description": "Nadpis modulu analýzy mier dokončenia"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Cieľ Analýzy: Analyzovať rozdelenie miery dokončenia úloh podľa kvadrantov na základe teórie Eisenhowerovej Matice",
+    "description": "Popis cieľa analýzy miery dokončenia"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Hlavné Pravidlá Postrehov:",
+    "description": "Nadpis pravidiel analýzy mier dokončenia"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Detekcia nízkej miery dokončenia Q2 (<70% priemeru ostatných kvadrantov)",
+    "description": "Pravidlo detekcie nízkej miery dokončenia Q2"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Detekcia vysokej miery dokončenia Q3 (>85% a >120% Q1)",
+    "description": "Pravidlo detekcie vysokej miery dokončenia Q3"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Detekcia vysokého percenta úloh Q1/Q4 (>40%/>30%)",
+    "description": "Pravidlo detekcie vysokého percenta úloh Q1/Q4"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Krížová Analýza Zdrojov",
+    "description": "Nadpis modulu krížovej analýzy zdrojov"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Cieľ Analýzy: Analyzovať rozdelenie miery dokončenia rôznych zdrojov úloh podľa kvadrantov",
+    "description": "Popis cieľa krížovej analýzy zdrojov"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Hlavné Pravidlá Postrehov:",
+    "description": "Nadpis pravidiel krížovej analýzy zdrojov"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Detekcia rozdielu miery dokončenia Q1 vysoká Q2 nízka",
+    "description": "Pravidlo detekcie rozdielu miery dokončenia Q1 vysoká Q2 nízka"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Detekcia nízkej miery dokončenia Q4",
+    "description": "Pravidlo detekcie nízkej miery dokončenia Q4"
+  },
+  "sourceConcentrationRule": {
+    "message": "Detekcia nadmernej koncentrácie zdrojov úloh (>60%)",
+    "description": "Pravidlo detekcie nadmernej koncentrácie zdrojov úloh"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Detekcia rozdielu miery dokončenia medzi zdrojmi (>50%)",
+    "description": "Pravidlo detekcie rozdielu miery dokončenia medzi zdrojmi"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Analýza Časovej Efektívnosti",
+    "description": "Nadpis modulu analýzy časovej efektívnosti"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Cieľ Analýzy: Analyzovať časovú efektívnosť úloh a racionalitu alokácie zdrojov",
+    "description": "Popis cieľa analýzy časovej efektívnosti"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Hlavné Pravidlá Postrehov:",
+    "description": "Nadpis pravidiel analýzy časovej efektívnosti"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Detekcia dlhého času stráveného na prebiehajúcich úlohách Q1 (>3 dni a >50%)",
+    "description": "Pravidlo detekcie dlhého času na úlohách Q1"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Detekcia porovnania priemerného času Q4 vs Q2 (Q4>Q2×1.5)",
+    "description": "Pravidlo detekcie porovnania priemerného času Q4 vs Q2"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Detekcia porovnania času medzi prebiehajúcimi a dokončenými úlohami (>2x)",
+    "description": "Pravidlo detekcie porovnania času medzi prebiehajúcimi a dokončenými úlohami"
+  },
+  "trendAnalysis": {
+    "message": "Analýza Trendov",
+    "description": "Nadpis modulu analýzy trendov"
+  },
+  "trendAnalysisGoal": {
+    "message": "Cieľ Analýzy: Sledovať efektívnosť stratégií riadenia úloh a smery zlepšenia",
+    "description": "Popis cieľa analýzy trendov"
+  },
+  "trendAnalysisRules": {
+    "message": "Hlavné Pravidlá Postrehov:",
+    "description": "Nadpis pravidiel analýzy trendov"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Detekcia kolísania objemu úloh (>50% zmena)",
+    "description": "Pravidlo detekcie kolísania objemu úloh"
+  },
+  "completionRateTrendRule": {
+    "message": "Analýza trendu miery dokončenia (3 po sebe idúce obdobia hore/dole)",
+    "description": "Pravidlo analýzy trendu miery dokončenia"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Detekcia hromadenia úloh Q2 (nárast 70% časových bodov)",
+    "description": "Pravidlo detekcie hromadenia úloh Q2"
   }
 }

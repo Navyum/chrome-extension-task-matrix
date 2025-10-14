@@ -680,55 +680,159 @@
     "description": "Insight sul tasso di completamento di Q3 che è troppo alto"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Le attività del quadrante Q1 (Importante e Urgente) rappresentano $percentage% del totale delle attività, suggerendo un miglioramento nella pianificazione delle attività, gestisci le attività importanti presto per evitare situazioni urgenti.",
+    "message": "Le attività del quadrante Q1 (Importante e Urgente) rappresentano $1% del totale delle attività, suggerendo un miglioramento nella pianificazione delle attività, gestisci le attività importanti presto per evitare situazioni urgenti.",
     "description": "Insight sull'alta percentuale di attività Q1"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Le attività del quadrante Q4 (Non Importante e Urgente) rappresentano $percentage% del totale delle attività, rivedi le fonti di queste attività a bassa priorità ma urgenti, ottimizza i processi di risposta di emergenza.",
+    "message": "Le attività del quadrante Q4 (Non Importante e Urgente) rappresentano $1% del totale delle attività, rivedi le fonti di queste attività a bassa priorità ma urgenti, ottimizza i processi di risposta di emergenza.",
     "description": "Insight sull'alta percentuale di attività Q4"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "Le attività \"$source\" in Q1 (Importante e Urgente) raggiungono $q1Rate% di tasso di completamento, ma solo $q2Rate% in Q2 (Importante e Non Urgente), indicando che la priorità di esecuzione delle attività è guidata dalla \"pressione esterna\" piuttosto che dal focus strategico interno.",
+    "message": "Le attività \"$1\" in Q1 (Importante e Urgente) raggiungono $2% di tasso di completamento, ma solo $3% in Q2 (Importante e Non Urgente), indicando che la priorità di esecuzione delle attività è guidata dalla \"pressione esterna\" piuttosto che dal focus strategico interno.",
     "description": "Insight sui tassi di completamento delle attività sorgente Q1 vs Q2"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "Le attività \"$source\" in Q4 (Non Importante e Urgente) hanno un basso tasso di completamento ($q4Rate%), devono confermare se le \"attività temporanee\" hanno problemi di definizione della priorità.",
+    "message": "Le attività \"$1\" in Q4 (Non Importante e Urgente) hanno un basso tasso di completamento ($2%), devono confermare se le \"attività temporanee\" hanno problemi di definizione della priorità.",
     "description": "Insight sul basso tasso di completamento delle attività Q4"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "\"$source\" sono altamente concentrate nel quadrante $quadrant ($quadrantName), rappresentando $percentage%. Rivedi la pianificazione delle attività per la ragionevolezza.",
+    "message": "\"$1\" sono altamente concentrate nel quadrante $2 ($2Name), rappresentando $1%. Rivedi la pianificazione delle attività per la ragionevolezza.",
     "description": "Insight sulle attività altamente concentrate in un quadrante"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "\"$highSource\" in $highQuadrant ha il tasso di completamento più alto ($highRate%), mentre \"$lowSource\" in $lowQuadrant ha il più basso ($lowRate%), mostrando chiare differenze nella priorità di elaborazione per diversi tipi di attività.",
+    "message": "\"$1\" in $2 ha il tasso di completamento più alto ($3%), mentre \"$4\" in $5 ha il più basso ($6%), mostrando chiare differenze nella priorità di elaborazione per diversi tipi di attività.",
     "description": "Insight sulle differenze di tasso di completamento tra sorgenti"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1 (Importante e Urgente) ha $percentage% di attività in attesa che richiedono più di 3 giorni, indicando una potenziale carenza di risorse o difficoltà inaspettate nelle attività centrali. Considera la scomposizione delle attività o supporto aggiuntivo.",
+    "message": "Q1 (Importante e Urgente) ha $1% di attività in attesa che richiedono più di 3 giorni, indicando una potenziale carenza di risorse o difficoltà inaspettate nelle attività centrali. Considera la scomposizione delle attività o supporto aggiuntivo.",
     "description": "Insight sulle attività in attesa Q1 che richiedono troppo tempo"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Le attività completate di Q4 (Non Importante e Urgente) in media $q4Time giorni, superando di gran lunga Q2 (Importante e Non Urgente) a $q2Time giorni, indicando che le \"attività urgenti temporanee\" sovra-occupano le risorse. Ottimizza i processi di risposta di emergenza.",
+    "message": "Le attività completate di Q4 (Non Importante e Urgente) in media $1 giorni, superando di gran lunga Q2 (Importante e Non Urgente) a $2 giorni, indicando che le \"attività urgenti temporanee\" sovra-occupano le risorse. Ottimizza i processi di risposta di emergenza.",
     "description": "Insight sui tempi di completamento delle attività Q4 vs Q2"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Il tempo di elaborazione medio per le attività in attesa ($pendingTime giorni) è significativamente più alto delle attività completate ($completedTime giorni). Concentrati sulle attività bloccate da tempo e aggiusta la strategia o l'allocazione delle risorse quando necessario.",
+    "message": "Il tempo di elaborazione medio per le attività in attesa ($1 giorni) è significativamente più alto delle attività completate ($2 giorni). Concentrati sulle attività bloccate da tempo e aggiusta la strategia o l'allocazione delle risorse quando necessario.",
     "description": "Insight sui tempi delle attività in attesa vs completate"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "Il volume delle attività $quadrantLabel $direction del $rate% da $from a $to, mostrando una fluttuazione significativa. Considera di concentrarti sull'equilibrio dell'allocazione delle attività.",
+    "message": "Il volume delle attività $1 $4 del $5% da $2 a $3, mostrando una fluttuazione significativa. Considera di concentrarti sull'equilibrio dell'allocazione delle attività.",
     "description": "Insight sulla fluttuazione del volume delle attività"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "Il tasso di completamento delle attività $quadrantLabel mostra una tendenza ascendente sostenuta, indicando un'efficienza lavorativa migliorata.",
+    "message": "Il tasso di completamento delle attività $1 mostra una tendenza ascendente sostenuta, indicando un'efficienza lavorativa migliorata.",
     "description": "Insight sulla tendenza ascendente del tasso di completamento"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "Il tasso di completamento delle attività $quadrantLabel mostra una tendenza discendente sostenuta, richiedendo attenzione ai problemi di efficienza di esecuzione.",
+    "message": "Il tasso di completamento delle attività $1 mostra una tendenza discendente sostenuta, richiedendo attenzione ai problemi di efficienza di esecuzione.",
     "description": "Insight sulla tendenza discendente del tasso di completamento"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Le attività Q2 (Importante e Non Urgente) continuano ad accumularsi senza miglioramento del tasso di completamento, riflettendo che le \"attività strategiche\" non sono integrate nei piani di esecuzione regolari, presentando un rischio di \"accumulo di procrastinazione\".",
     "description": "Insight sull'accumulo delle attività Q2"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Regole di Analisi Insight",
+    "description": "Titolo della sezione regole di analisi insight"
+  },
+  "completionRateAnalysis": {
+    "message": "Analisi Tasso di Completamento",
+    "description": "Titolo del modulo di analisi tasso di completamento"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Obiettivo di Analisi: Analizzare la distribuzione del tasso di completamento delle attività per quadrante basata sulla teoria della Matrice di Eisenhower",
+    "description": "Descrizione dell'obiettivo di analisi tasso di completamento"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Regole Insight Principali:",
+    "description": "Titolo delle regole di analisi tasso di completamento"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Rilevamento basso tasso di completamento Q2 (<70% della media degli altri quadranti)",
+    "description": "Regola di rilevamento basso tasso di completamento Q2"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Rilevamento alto tasso di completamento Q3 (>85% e >120% di Q1)",
+    "description": "Regola di rilevamento alto tasso di completamento Q3"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Rilevamento alta percentuale di attività Q1/Q4 (>40%/>30%)",
+    "description": "Regola di rilevamento alta percentuale di attività Q1/Q4"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Analisi Incrociata delle Fonti",
+    "description": "Titolo del modulo di analisi incrociata delle fonti"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Obiettivo di Analisi: Analizzare la distribuzione del tasso di completamento di diverse fonti di attività per quadrante",
+    "description": "Descrizione dell'obiettivo di analisi incrociata delle fonti"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Regole Insight Principali:",
+    "description": "Titolo delle regole di analisi incrociata delle fonti"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Rilevamento differenza tasso di completamento Q1 alto Q2 basso",
+    "description": "Regola di rilevamento differenza tasso di completamento Q1 alto Q2 basso"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Rilevamento basso tasso di completamento Q4",
+    "description": "Regola di rilevamento basso tasso di completamento Q4"
+  },
+  "sourceConcentrationRule": {
+    "message": "Rilevamento sovraconcentrazione fonti di attività (>60%)",
+    "description": "Regola di rilevamento sovraconcentrazione fonti di attività"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Rilevamento differenza tasso di completamento tra fonti (>50%)",
+    "description": "Regola di rilevamento differenza tasso di completamento tra fonti"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Analisi Efficienza Temporale",
+    "description": "Titolo del modulo di analisi efficienza temporale"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Obiettivo di Analisi: Analizzare l'efficienza temporale delle attività e la razionalità dell'allocazione delle risorse",
+    "description": "Descrizione dell'obiettivo di analisi efficienza temporale"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Regole Insight Principali:",
+    "description": "Titolo delle regole di analisi efficienza temporale"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Rilevamento tempo prolungato speso su attività Q2 in corso (>3 giorni e >50%)",
+    "description": "Regola di rilevamento tempo prolungato speso su attività Q1 in corso"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Rilevamento confronto tempo medio Q4 vs Q2 (Q4>Q2×1.5)",
+    "description": "Regola di rilevamento confronto tempo medio Q4 vs Q2"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Rilevamento confronto tempo tra attività in corso e completate (>2x)",
+    "description": "Regola di rilevamento confronto tempo tra attività in corso e completate"
+  },
+  "trendAnalysis": {
+    "message": "Analisi di Tendenza",
+    "description": "Titolo del modulo di analisi di tendenza"
+  },
+  "trendAnalysisGoal": {
+    "message": "Obiettivo di Analisi: Tracciare l'efficacia delle strategie di gestione delle attività e le direzioni di miglioramento",
+    "description": "Descrizione dell'obiettivo di analisi di tendenza"
+  },
+  "trendAnalysisRules": {
+    "message": "Regole Insight Principali:",
+    "description": "Titolo delle regole di analisi di tendenza"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Rilevamento fluttuazione volume attività (>50% di cambiamento)",
+    "description": "Regola di rilevamento fluttuazione volume attività"
+  },
+  "completionRateTrendRule": {
+    "message": "Analisi di tendenza tasso di completamento (3 periodi consecutivi salita/discesa)",
+    "description": "Regola di analisi di tendenza tasso di completamento"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Rilevamento accumulo attività Q2 (aumento del 70% dei punti temporali)",
+    "description": "Regola di rilevamento accumulo attività Q2"
   }
 }

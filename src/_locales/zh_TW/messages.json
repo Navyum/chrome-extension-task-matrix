@@ -680,55 +680,159 @@
     "description": "關於 Q3 完成率過高的洞察"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Q1（重要且緊急）象限任務佔總任務的 $percentage%，這表明任務規劃有所改善，及早處理重要任務以避免緊急情況。",
+    "message": "Q1（重要且緊急）象限任務佔總任務的 $1%，這表明任務規劃有所改善，及早處理重要任務以避免緊急情況。",
     "description": "關於 Q1 任務高百分比的洞察"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Q4（不重要但緊急）象限任務佔總任務的 $percentage%，請檢視這些低優先級但緊急任務的來源，優化應急響應流程。",
+    "message": "Q4（不重要但緊急）象限任務佔總任務的 $1%，請檢視這些低優先級但緊急任務的來源，優化應急響應流程。",
     "description": "關於 Q4 任務高百分比的洞察"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "「$source」任務在 Q1（重要且緊急）中達到 $q1Rate% 完成率，但在 Q2（重要但不緊急）中僅達到 $q2Rate%，這表明任務執行優先級由「外部壓力」驅動，而非內部戰略焦點。",
+    "message": "「$1」任務在 Q1（重要且緊急）中達到 $2% 完成率，但在 Q2（重要但不緊急）中僅達到 $3%，這表明任務執行優先級由「外部壓力」驅動，而非內部戰略焦點。",
     "description": "關於來源任務 Q1 vs Q2 完成率的洞察"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "「$source」任務在 Q4（不重要但緊急）中完成率較低（$q4Rate%），需要確認「臨時任務」是否存在優先級定義問題。",
+    "message": "「$1」任務在 Q4（不重要但緊急）中完成率較低（$2%），需要確認「臨時任務」是否存在優先級定義問題。",
     "description": "關於 Q4 任務低完成率的洞察"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "「$source」在 $quadrant（$quadrantName）象限中高度集中，佔 $percentage%。請檢視任務規劃的合理性。",
+    "message": "「$1」在 $2（$2Name）象限中高度集中，佔 $1%。請檢視任務規劃的合理性。",
     "description": "關於任務在單一象限中高度集中的洞察"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "「$highSource」在 $highQuadrant 中完成率最高（$highRate%），而「$lowSource」在 $lowQuadrant 中最低（$lowRate%），這顯示不同任務類型的處理優先級存在明顯差異。",
+    "message": "「$1」在 $2 中完成率最高（$3%），而「$4」在 $5 中最低（$6%），這顯示不同任務類型的處理優先級存在明顯差異。",
     "description": "關於來源間完成率差異的洞察"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1（重要且緊急）有 $percentage% 的待處理任務耗時超過 3 天，這表明核心任務可能存在資源不足或意外困難。請考慮任務分解或額外支援。",
+    "message": "Q1（重要且緊急）有 $1% 的待處理任務耗時超過 3 天，這表明核心任務可能存在資源不足或意外困難。請考慮任務分解或額外支援。",
     "description": "關於 Q1 待處理任務耗時過長的洞察"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Q4（不重要但緊急）已完成任務平均耗時 $q4Time 天，遠超 Q2（重要但不緊急）的 $q2Time 天，這表明「臨時緊急任務」過度佔用資源。請優化應急響應流程。",
+    "message": "Q4（不重要但緊急）已完成任務平均耗時 $1 天，遠超 Q2（重要但不緊急）的 $2 天，這表明「臨時緊急任務」過度佔用資源。請優化應急響應流程。",
     "description": "關於 Q4 vs Q2 任務完成時間的洞察"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "待處理任務的平均處理時間（$pendingTime 天）顯著高於已完成任務（$completedTime 天）。請專注於長期滯留的任務，並根據需要調整策略或資源分配。",
+    "message": "待處理任務的平均處理時間（$1 天）顯著高於已完成任務（$2 天）。請專注於長期滯留的任務，並根據需要調整策略或資源分配。",
     "description": "關於待處理 vs 已完成任務時間的洞察"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "$quadrantLabel 任務量從 $from 到 $to $direction $rate%，顯示顯著波動。請考慮專注於任務分配平衡。",
+    "message": "$1 任務量從 $2 到 $3 $4 $5%，顯示顯著波動。請考慮專注於任務分配平衡。",
     "description": "關於象限任務量波動的洞察"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "$quadrantLabel 任務完成率顯示持續上升趨勢，這表明工作活動有所改善。",
+    "message": "$1 任務完成率顯示持續上升趨勢，這表明工作活動有所改善。",
     "description": "關於完成率上升趨勢的洞察"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "$quadrantLabel 任務完成率顯示持續下降趨勢，這需要關注執行活動問題。",
+    "message": "$1 任務完成率顯示持續下降趨勢，這需要關注執行活動問題。",
     "description": "關於完成率下降趨勢的洞察"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Q2（重要但不緊急）任務繼續累積而完成率沒有改善，這反映「戰略任務」未整合到常規執行計劃中，這帶來「延遲累積」風險。",
     "description": "關於 Q2 任務累積的洞察"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 洞察分析規則",
+    "description": "洞察分析規則部分標題"
+  },
+  "completionRateAnalysis": {
+    "message": "完成率分析",
+    "description": "完成率分析模組標題"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "分析目標：基於艾森豪威爾矩陣理論分析各象限任務完成率分佈",
+    "description": "完成率分析目標說明"
+  },
+  "completionRateAnalysisRules": {
+    "message": "主要洞察規則：",
+    "description": "完成率分析規則標題"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Q2完成率過低檢測（<70%其他象限平均）",
+    "description": "Q2完成率過低檢測規則"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Q3完成率過高檢測（>85%且>Q1的120%）",
+    "description": "Q3完成率過高檢測規則"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Q1/Q4任務佔比過高檢測（>40%/>30%）",
+    "description": "Q1/Q4任務佔比過高檢測規則"
+  },
+  "sourceCrossAnalysis": {
+    "message": "來源交叉分析",
+    "description": "來源交叉分析模組標題"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "分析目標：分析不同任務來源在各象限的完成率分佈",
+    "description": "來源交叉分析目標說明"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "主要洞察規則：",
+    "description": "來源交叉分析規則標題"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Q1高Q2低完成率差異檢測",
+    "description": "Q1高Q2低完成率差異檢測規則"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Q4完成率過低檢測",
+    "description": "Q4完成率過低檢測規則"
+  },
+  "sourceConcentrationRule": {
+    "message": "任務來源過度集中檢測（>60%）",
+    "description": "任務來源過度集中檢測規則"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "來源間完成率差異檢測（>50%）",
+    "description": "來源間完成率差異檢測規則"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "時間效率分析",
+    "description": "時間效率分析模組標題"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "分析目標：分析任務的時間效率和資源分配合理性",
+    "description": "時間效率分析目標說明"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "主要洞察規則：",
+    "description": "時間效率分析規則標題"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Q1進行中任務耗時過長檢測（>3天且>50%）",
+    "description": "Q1進行中任務耗時過長檢測規則"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Q4與Q2平均耗時對比檢測（Q4>Q2×1.5）",
+    "description": "Q4與Q2平均耗時對比檢測規則"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "進行中與已完成任務時間對比檢測（>2倍）",
+    "description": "進行中與已完成任務時間對比檢測規則"
+  },
+  "trendAnalysis": {
+    "message": "趨勢分析",
+    "description": "趨勢分析模組標題"
+  },
+  "trendAnalysisGoal": {
+    "message": "分析目標：追蹤任務管理策略的有效性和改進方向",
+    "description": "趨勢分析目標說明"
+  },
+  "trendAnalysisRules": {
+    "message": "主要洞察規則：",
+    "description": "趨勢分析規則標題"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "任務量波動檢測（>50%變化）",
+    "description": "任務量波動檢測規則"
+  },
+  "completionRateTrendRule": {
+    "message": "完成率趨勢分析（連續3週期上升/下降）",
+    "description": "完成率趨勢分析規則"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Q2任務積累檢測（70%時間點增加）",
+    "description": "Q2任務積累檢測規則"
   }
 }

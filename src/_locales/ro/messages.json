@@ -680,55 +680,159 @@
     "description": "Insight despre rata de completare prea mare a Q3"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Sarcinile cadranului Q1 (important și urgent) reprezintă $percentage% din totalul sarcinilor, indicând o îmbunătățire a planificării sarcinilor, rezolvarea timpurie a sarcinilor importante pentru a evita situațiile urgente.",
+    "message": "Sarcinile cadranului Q1 (important și urgent) reprezintă $1% din totalul sarcinilor, indicând o îmbunătățire a planificării sarcinilor, rezolvarea timpurie a sarcinilor importante pentru a evita situațiile urgente.",
     "description": "Insight despre procentul mare de sarcini Q1"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Sarcinile cadranului Q4 (nu este important dar urgent) reprezintă $percentage% din totalul sarcinilor, te rog să revizuiești sursele acestor sarcini cu prioritate mică dar urgente, optimizează procesul de răspuns la urgențe.",
+    "message": "Sarcinile cadranului Q4 (nu este important dar urgent) reprezintă $1% din totalul sarcinilor, te rog să revizuiești sursele acestor sarcini cu prioritate mică dar urgente, optimizează procesul de răspuns la urgențe.",
     "description": "Insight despre procentul mare de sarcini Q4"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "Sarcinile «$source» ating $q1Rate% rata de completare în Q1 (important și urgent), dar doar $q2Rate% în Q2 (important dar nu urgent), indicând că prioritatea executării sarcinilor este condusă de «presiunea externă», nu de focusul strategic intern.",
+    "message": "Sarcinile «$1» ating $2% rata de completare în Q1 (important și urgent), dar doar $3% în Q2 (important dar nu urgent), indicând că prioritatea executării sarcinilor este condusă de «presiunea externă», nu de focusul strategic intern.",
     "description": "Insight despre rata de completare Q1 vs Q2 a sarcinilor sursă"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "Sarcinile «$source» au o rată de completare mică ($q4Rate%) în Q4 (nu este important dar urgent), trebuie să confirmi dacă există o problemă cu definirea priorității «sarcinilor temporare».",
+    "message": "Sarcinile «$1» au o rată de completare mică ($2%) în Q4 (nu este important dar urgent), trebuie să confirmi dacă există o problemă cu definirea priorității «sarcinilor temporare».",
     "description": "Insight despre rata de completare mică a sarcinilor Q4"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "«$source» este foarte concentrat în cadranul $quadrant ($quadrantName), reprezentând $percentage%. Te rog să revizuiești raționalitatea planificării sarcinilor.",
+    "message": "«$1» este foarte concentrat în cadranul $2 ($2Name), reprezentând $1%. Te rog să revizuiești raționalitatea planificării sarcinilor.",
     "description": "Insight despre concentrarea mare a sarcinilor într-un singur cadran"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "«$highSource» are cea mai mare rată de completare ($highRate%) în $highQuadrant, în timp ce «$lowSource» are cea mai mică ($lowRate%) în $lowQuadrant, arătând o diferență evidentă în prioritățile de procesare a diferitelor tipuri de sarcini.",
+    "message": "«$1» are cea mai mare rată de completare ($3%) în $2, în timp ce «$4» are cea mai mică ($6%) în $5, arătând o diferență evidentă în prioritățile de procesare a diferitelor tipuri de sarcini.",
     "description": "Insight despre diferența ratei de completare între surse"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1 (important și urgent) are $percentage% sarcini în așteptare care durează mai mult de 3 zile, indicând posibila lipsă de resurse sau dificultăți neașteptate cu sarcinile de bază. Te rog să iei în considerare descompunerea sarcinii sau suportul suplimentar.",
+    "message": "Q1 (important și urgent) are $1% sarcini în așteptare care durează mai mult de 3 zile, indicând posibila lipsă de resurse sau dificultăți neașteptate cu sarcinile de bază. Te rog să iei în considerare descompunerea sarcinii sau suportul suplimentar.",
     "description": "Insight despre sarcinile Q1 în așteptare cu timp mare petrecut"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Timpul mediu de completare a sarcinilor completate Q4 (nu este important dar urgent) este de $q4Time zile, depășind cu mult $q2Time zilele Q2 (important dar nu urgent), indicând că «sarcinile urgente temporare» ocupă excesiv resursele. Te rog să optimizezi procesul de răspuns la urgențe.",
+    "message": "Timpul mediu de completare a sarcinilor completate Q4 (nu este important dar urgent) este de $1 zile, depășind cu mult $2 zilele Q2 (important dar nu urgent), indicând că «sarcinile urgente temporare» ocupă excesiv resursele. Te rog să optimizezi procesul de răspuns la urgențe.",
     "description": "Insight despre timpul de completare Q4 vs Q2"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Timpul mediu de procesare a sarcinilor în așteptare ($pendingTime zile) este semnificativ mai mare decât sarcinile completate ($completedTime zile). Te rog să te concentrezi pe sarcinile care rămân mult timp în așteptare și să ajustezi strategia sau alocarea resurselor după cum este necesar.",
+    "message": "Timpul mediu de procesare a sarcinilor în așteptare ($1 zile) este semnificativ mai mare decât sarcinile completate ($2 zile). Te rog să te concentrezi pe sarcinile care rămân mult timp în așteptare și să ajustezi strategia sau alocarea resurselor după cum este necesar.",
     "description": "Insight despre timpul sarcinilor în așteptare vs completate"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "Volumul sarcinilor $quadrantLabel fluctuează de la $from la $to $direction $rate%, arătând fluctuații semnificative. Te rog să iei în considerare concentrarea pe echilibrul alocării sarcinilor.",
+    "message": "Volumul sarcinilor $1 fluctuează de la $2 la $3 $4 $5%, arătând fluctuații semnificative. Te rog să iei în considerare concentrarea pe echilibrul alocării sarcinilor.",
     "description": "Insight despre fluctuația volumului sarcinilor cadranului"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "Rata de completare a sarcinilor $quadrantLabel arată o tendință susținută ascendentă, indicând o îmbunătățire a activității de lucru.",
+    "message": "Rata de completare a sarcinilor $1 arată o tendință susținută ascendentă, indicând o îmbunătățire a activității de lucru.",
     "description": "Insight despre tendința ascendentă a ratei de completare"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "Rata de completare a sarcinilor $quadrantLabel arată o tendință susținută descendentă, care necesită atenție la problemele activității executive.",
+    "message": "Rata de completare a sarcinilor $1 arată o tendință susținută descendentă, care necesită atenție la problemele activității executive.",
     "description": "Insight despre tendința descendentă a ratei de completare"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Sarcinile Q2 (important dar nu urgent) continuă să se acumuleze fără îmbunătățirea ratei de completare, reflectând faptul că «sarcinile strategice» nu sunt integrate în planul regulat de execuție, ceea ce aduce riscul «acumulării întârzierilor».",
     "description": "Insight despre acumularea sarcinilor Q2"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Reguli de Analiză Insight",
+    "description": "Titlul secțiunii de reguli de analiză insight"
+  },
+  "completionRateAnalysis": {
+    "message": "Analiza Ratei de Completare",
+    "description": "Titlul modulului de analiză a ratei de completare"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Obiectivul Analizei: Analizarea distribuției ratei de completare a sarcinilor pe cadrane bazată pe teoria Matricei Eisenhower",
+    "description": "Descrierea obiectivului de analiză a ratei de completare"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Reguli Principale Insight:",
+    "description": "Titlul regulilor de analiză a ratei de completare"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Detectarea ratei scăzute de completare Q2 (<70% din media altor cadrane)",
+    "description": "Regula de detectare a ratei scăzute de completare Q2"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Detectarea ratei înalte de completare Q3 (>85% și >120% din Q1)",
+    "description": "Regula de detectare a ratei înalte de completare Q3"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Detectarea procentului înalt de sarcini Q1/Q4 (>40%/>30%)",
+    "description": "Regula de detectare a procentului înalt de sarcini Q1/Q4"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Analiza Încrucișată a Surselor",
+    "description": "Titlul modulului de analiză încrucișată a surselor"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Obiectivul Analizei: Analizarea distribuției ratei de completare a diferitelor surse de sarcini pe cadrane",
+    "description": "Descrierea obiectivului de analiză încrucișată a surselor"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Reguli Principale Insight:",
+    "description": "Titlul regulilor de analiză încrucișată a surselor"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Detectarea diferenței ratei de completare Q1 înaltă Q2 scăzută",
+    "description": "Regula de detectare a diferenței ratei de completare Q1 înaltă Q2 scăzută"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Detectarea ratei scăzute de completare Q4",
+    "description": "Regula de detectare a ratei scăzute de completare Q4"
+  },
+  "sourceConcentrationRule": {
+    "message": "Detectarea supraconcentrării surselor de sarcini (>60%)",
+    "description": "Regula de detectare a supraconcentrării surselor de sarcini"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Detectarea diferenței ratei de completare între surse (>50%)",
+    "description": "Regula de detectare a diferenței ratei de completare între surse"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Analiza Eficienței Timpului",
+    "description": "Titlul modulului de analiză a eficienței timpului"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Obiectivul Analizei: Analizarea eficienței timpului sarcinilor și raționalității alocării resurselor",
+    "description": "Descrierea obiectivului de analiză a eficienței timpului"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Reguli Principale Insight:",
+    "description": "Titlul regulilor de analiză a eficienței timpului"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Detectarea timpului lung petrecut pe sarcinile Q1 în desfășurare (>3 zile și >50%)",
+    "description": "Regula de detectare a timpului lung petrecut pe sarcinile Q1 în desfășurare"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Detectarea comparației timpului mediu Q4 vs Q2 (Q4>Q2×1.5)",
+    "description": "Regula de detectare a comparației timpului mediu Q4 vs Q2"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Detectarea comparației timpului între sarcinile în desfășurare și completate (>2x)",
+    "description": "Regula de detectare a comparației timpului între sarcinile în desfășurare și completate"
+  },
+  "trendAnalysis": {
+    "message": "Analiza Tendințelor",
+    "description": "Titlul modulului de analiză a tendințelor"
+  },
+  "trendAnalysisGoal": {
+    "message": "Obiectivul Analizei: Urmărirea eficacității strategiilor de management al sarcinilor și direcțiilor de îmbunătățire",
+    "description": "Descrierea obiectivului de analiză a tendințelor"
+  },
+  "trendAnalysisRules": {
+    "message": "Reguli Principale Insight:",
+    "description": "Titlul regulilor de analiză a tendințelor"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Detectarea fluctuației volumului sarcinilor (>50% schimbare)",
+    "description": "Regula de detectare a fluctuației volumului sarcinilor"
+  },
+  "completionRateTrendRule": {
+    "message": "Analiza tendinței ratei de completare (3 perioade consecutive în sus/jos)",
+    "description": "Regula de analiză a tendinței ratei de completare"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Detectarea acumulării sarcinilor Q2 (creștere 70% puncte temporale)",
+    "description": "Regula de detectare a acumulării sarcinilor Q2"
   }
 }

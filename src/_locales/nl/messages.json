@@ -680,55 +680,159 @@
     "description": "Inzicht over Q3 voltooiingspercentage dat te hoog is"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Q1 (Belangrijk & Urgent) kwadrant taken vertegenwoordigen $percentage% van alle taken, wat een verbetering in taakplanning suggereert, behandel belangrijke taken vroeg om urgente situaties te vermijden.",
+    "message": "Q1 (Belangrijk & Urgent) kwadrant taken vertegenwoordigen $1% van alle taken, wat een verbetering in taakplanning suggereert, behandel belangrijke taken vroeg om urgente situaties te vermijden.",
     "description": "Inzicht over hoge Q1 taken percentage"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Q4 (Niet Belangrijk & Urgent) kwadrant taken vertegenwoordigen $percentage% van alle taken, bekijk de bronnen van deze lage prioriteit maar urgente taken, optimaliseer noodsituatie responsprocessen.",
+    "message": "Q4 (Niet Belangrijk & Urgent) kwadrant taken vertegenwoordigen $1% van alle taken, bekijk de bronnen van deze lage prioriteit maar urgente taken, optimaliseer noodsituatie responsprocessen.",
     "description": "Inzicht over hoge Q4 taken percentage"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "\"$source\" taken in Q1 (Belangrijk & Urgent) bereiken $q1Rate% voltooiingspercentage, maar slechts $q2Rate% in Q2 (Belangrijk & Niet Urgent), wat aangeeft dat taak uitvoeringsprioriteit wordt aangedreven door \"externe druk\" in plaats van interne strategische focus.",
+    "message": "\"$1\" taken in Q1 (Belangrijk & Urgent) bereiken $2% voltooiingspercentage, maar slechts $3% in Q2 (Belangrijk & Niet Urgent), wat aangeeft dat taak uitvoeringsprioriteit wordt aangedreven door \"externe druk\" in plaats van interne strategische focus.",
     "description": "Inzicht over bron taken Q1 vs Q2 voltooiingspercentages"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "\"$source\" taken in Q4 (Niet Belangrijk & Urgent) hebben laag voltooiingspercentage ($q4Rate%), moeten bevestigen of \"tijdelijke taken\" prioriteitsdefinitie problemen hebben.",
+    "message": "\"$1\" taken in Q4 (Niet Belangrijk & Urgent) hebben laag voltooiingspercentage ($2%), moeten bevestigen of \"tijdelijke taken\" prioriteitsdefinitie problemen hebben.",
     "description": "Inzicht over Q4 taken laag voltooiingspercentage"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "\"$source\" zijn hoog geconcentreerd in $quadrant ($quadrantName) kwadrant, vertegenwoordigend $percentage%. Bekijk taakplanning voor redelijkheid.",
+    "message": "\"$1\" zijn hoog geconcentreerd in $2 ($2Name) kwadrant, vertegenwoordigend $1%. Bekijk taakplanning voor redelijkheid.",
     "description": "Inzicht over taken die hoog geconcentreerd zijn in één kwadrant"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "\"$highSource\" in $highQuadrant heeft hoogste voltooiingspercentage ($highRate%), terwijl \"$lowSource\" in $lowQuadrant laagste ($lowRate%) heeft, wat duidelijke verschillen toont in verwerkingsprioriteit voor verschillende taaktypen.",
+    "message": "\"$1\" in $2 heeft hoogste voltooiingspercentage ($3%), terwijl \"$4\" in $5 laagste ($6%) heeft, wat duidelijke verschillen toont in verwerkingsprioriteit voor verschillende taaktypen.",
     "description": "Inzicht over voltooiingspercentage verschillen tussen bronnen"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1 (Belangrijk & Urgent) heeft $percentage% van in behandeling zijnde taken die meer dan 3 dagen duren, wat wijst op mogelijke resource tekort of onverwachte moeilijkheden in kerntaken. Overweeg taak opsplitsing of extra ondersteuning.",
+    "message": "Q1 (Belangrijk & Urgent) heeft $1% van in behandeling zijnde taken die meer dan 3 dagen duren, wat wijst op mogelijke resource tekort of onverwachte moeilijkheden in kerntaken. Overweeg taak opsplitsing of extra ondersteuning.",
     "description": "Inzicht over Q1 in behandeling zijnde taken die te lang duren"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Q4 (Niet Belangrijk & Urgent) voltooide taken gemiddeld $q4Time dagen, ver overschrijdend Q2 (Belangrijk & Niet Urgent) op $q2Time dagen, wat aangeeft dat \"tijdelijke urgente taken\" resources over-occupieren. Optimaliseer noodsituatie responsprocessen.",
+    "message": "Q4 (Niet Belangrijk & Urgent) voltooide taken gemiddeld $1 dagen, ver overschrijdend Q2 (Belangrijk & Niet Urgent) op $2 dagen, wat aangeeft dat \"tijdelijke urgente taken\" resources over-occupieren. Optimaliseer noodsituatie responsprocessen.",
     "description": "Inzicht over Q4 vs Q2 taak voltooiingstijden"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Gemiddelde verwerkingstijd voor in behandeling zijnde taken ($pendingTime dagen) is significant hoger dan voltooide taken ($completedTime dagen). Focus op lang vastzittende taken en pas strategie of resource allocatie aan wanneer nodig.",
+    "message": "Gemiddelde verwerkingstijd voor in behandeling zijnde taken ($1 dagen) is significant hoger dan voltooide taken ($2 dagen). Focus op lang vastzittende taken en pas strategie of resource allocatie aan wanneer nodig.",
     "description": "Inzicht over in behandeling zijnde vs voltooide taaktijden"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "$quadrantLabel taak volume $direction $rate% van $from naar $to, wat significante fluctuatie toont. Overweeg focus op taak allocatie balans.",
+    "message": "$1 taak volume $4 $5% van $2 naar $3, wat significante fluctuatie toont. Overweeg focus op taak allocatie balans.",
     "description": "Inzicht over taak volume fluctuatie"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "$quadrantLabel taak voltooiingspercentage toont een aanhoudende opwaartse trend, wat verbeterde werkefficiëntie aangeeft.",
+    "message": "$1 taak voltooiingspercentage toont een aanhoudende opwaartse trend, wat verbeterde werkefficiëntie aangeeft.",
     "description": "Inzicht over voltooiingspercentage opwaartse trend"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "$quadrantLabel taak voltooiingspercentage toont een aanhoudende neerwaartse trend, wat aandacht vereist voor uitvoeringsefficiëntie problemen.",
+    "message": "$1 taak voltooiingspercentage toont een aanhoudende neerwaartse trend, wat aandacht vereist voor uitvoeringsefficiëntie problemen.",
     "description": "Inzicht over voltooiingspercentage neerwaartse trend"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Q2 (Belangrijk & Niet Urgent) taken blijven zich ophopen zonder verbetering in voltooiingspercentage, wat weerspiegelt dat \"strategische taken\" niet zijn geïntegreerd in reguliere uitvoeringsplannen, wat een \"uitstel accumulatie\" risico presenteert.",
     "description": "Inzicht over Q2 taken accumulatie"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Inzicht Analyse Regels",
+    "description": "Titel van de inzicht analyse regels sectie"
+  },
+  "completionRateAnalysis": {
+    "message": "Voltooiingspercentage Analyse",
+    "description": "Titel van de voltooiingspercentage analyse module"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Analyse Doel: Analyseer de distributie van taak voltooiingspercentage per kwadrant gebaseerd op de Eisenhower Matrix theorie",
+    "description": "Beschrijving van het voltooiingspercentage analyse doel"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Hoofd Inzicht Regels:",
+    "description": "Titel van de voltooiingspercentage analyse regels"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Q2 lage voltooiingspercentage detectie (<70% van andere kwadranten gemiddelde)",
+    "description": "Q2 lage voltooiingspercentage detectie regel"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Q3 hoge voltooiingspercentage detectie (>85% en >120% van Q1)",
+    "description": "Q3 hoge voltooiingspercentage detectie regel"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Q1/Q4 hoge taak percentage detectie (>40%/>30%)",
+    "description": "Q1/Q4 hoge taak percentage detectie regel"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Bron Kruisanalyse",
+    "description": "Titel van de bron kruisanalyse module"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Analyse Doel: Analyseer de voltooiingspercentage distributie van verschillende taak bronnen per kwadrant",
+    "description": "Beschrijving van het bron kruisanalyse doel"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Hoofd Inzicht Regels:",
+    "description": "Titel van de bron kruisanalyse regels"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Q1 hoog Q2 laag voltooiingspercentage verschil detectie",
+    "description": "Q1 hoog Q2 laag voltooiingspercentage verschil detectie regel"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Q4 lage voltooiingspercentage detectie",
+    "description": "Q4 lage voltooiingspercentage detectie regel"
+  },
+  "sourceConcentrationRule": {
+    "message": "Taak bron overconcentratie detectie (>60%)",
+    "description": "Taak bron overconcentratie detectie regel"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Bron voltooiingspercentage verschil detectie (>50%)",
+    "description": "Bron voltooiingspercentage verschil detectie regel"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Tijd Efficiëntie Analyse",
+    "description": "Titel van de tijd efficiëntie analyse module"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Analyse Doel: Analyseer taak tijd efficiëntie en resource allocatie rationaliteit",
+    "description": "Beschrijving van het tijd efficiëntie analyse doel"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Hoofd Inzicht Regels:",
+    "description": "Titel van de tijd efficiëntie analyse regels"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Q1 lopende taak lange tijd besteed detectie (>3 dagen en >50%)",
+    "description": "Q1 lopende taak lange tijd besteed detectie regel"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Q4 vs Q2 gemiddelde tijd vergelijking detectie (Q4>Q2×1.5)",
+    "description": "Q4 vs Q2 gemiddelde tijd vergelijking detectie regel"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Lopende vs voltooide taak tijd vergelijking detectie (>2x)",
+    "description": "Lopende vs voltooide taak tijd vergelijking detectie regel"
+  },
+  "trendAnalysis": {
+    "message": "Trend Analyse",
+    "description": "Titel van de trend analyse module"
+  },
+  "trendAnalysisGoal": {
+    "message": "Analyse Doel: Volg de effectiviteit van taak management strategieën en verbeteringsrichtingen",
+    "description": "Beschrijving van het trend analyse doel"
+  },
+  "trendAnalysisRules": {
+    "message": "Hoofd Inzicht Regels:",
+    "description": "Titel van de trend analyse regels"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Taak volume fluctuatie detectie (>50% verandering)",
+    "description": "Taak volume fluctuatie detectie regel"
+  },
+  "completionRateTrendRule": {
+    "message": "Voltooiingspercentage trend analyse (3 opeenvolgende periodes omhoog/omlaag)",
+    "description": "Voltooiingspercentage trend analyse regel"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Q2 taak accumulatie detectie (70% tijd punten toename)",
+    "description": "Q2 taak accumulatie detectie regel"
   }
 }

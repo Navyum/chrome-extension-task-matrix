@@ -680,55 +680,159 @@
     "description": "Einblick über zu hohe Q3-Abschlussrate"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Q1 (Wichtig & Dringend) Quadrant-Aufgaben machen $percentage% der Gesamtaufgaben aus, was auf eine Verbesserung der Aufgabenplanung hindeutet, wichtige Aufgaben früh bearbeiten, um dringende Situationen zu vermeiden.",
+    "message": "Q1 (Wichtig & Dringend) Quadrant-Aufgaben machen $1% der Gesamtaufgaben aus, was auf eine Verbesserung der Aufgabenplanung hindeutet, wichtige Aufgaben früh bearbeiten, um dringende Situationen zu vermeiden.",
     "description": "Einblick über hohen Q1-Aufgabenanteil"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Q4 (Nicht wichtig & Dringend) Quadrant-Aufgaben machen $percentage% der Gesamtaufgaben aus, überprüfen Sie die Quellen dieser niedrigpriorisierten aber dringenden Aufgaben, optimieren Sie Notfallreaktionsprozesse.",
+    "message": "Q4 (Nicht wichtig & Dringend) Quadrant-Aufgaben machen $1% der Gesamtaufgaben aus, überprüfen Sie die Quellen dieser niedrigpriorisierten aber dringenden Aufgaben, optimieren Sie Notfallreaktionsprozesse.",
     "description": "Einblick über hohen Q4-Aufgabenanteil"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "\"$source\" Aufgaben in Q1 (Wichtig & Dringend) erreichen $q1Rate% Abschlussrate, aber nur $q2Rate% in Q2 (Wichtig & Nicht dringend), was darauf hindeutet, dass die Aufgabenausführungspriorität von \"äußerem Druck\" angetrieben wird, anstatt von innerem strategischem Fokus.",
+    "message": "\"$1\" Aufgaben in Q1 (Wichtig & Dringend) erreichen $2% Abschlussrate, aber nur $3% in Q2 (Wichtig & Nicht dringend), was darauf hindeutet, dass die Aufgabenausführungspriorität von \"äußerem Druck\" angetrieben wird, anstatt von innerem strategischem Fokus.",
     "description": "Einblick über Quellenaufgaben Q1 vs Q2-Abschlussraten"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "\"$source\" Aufgaben in Q4 (Nicht wichtig & Dringend) haben niedrige Abschlussrate ($q4Rate%), müssen bestätigen, ob \"temporäre Aufgaben\" Prioritätsdefinitionsprobleme haben.",
+    "message": "\"$1\" Aufgaben in Q4 (Nicht wichtig & Dringend) haben niedrige Abschlussrate ($2%), müssen bestätigen, ob \"temporäre Aufgaben\" Prioritätsdefinitionsprobleme haben.",
     "description": "Einblick über Q4-Aufgaben niedrige Abschlussrate"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "\"$source\" sind hoch konzentriert im $quadrant ($quadrantName) Quadranten, machen $percentage% aus. Überprüfen Sie die Aufgabenplanung auf Vernünftigkeit.",
+    "message": "\"$1\" sind hoch konzentriert im $2 ($2Name) Quadranten, machen $1% aus. Überprüfen Sie die Aufgabenplanung auf Vernünftigkeit.",
     "description": "Einblick über Aufgaben, die in einem Quadranten konzentriert sind"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "\"$highSource\" in $highQuadrant hat höchste Abschlussrate ($highRate%), während \"$lowSource\" in $lowQuadrant niedrigste ($lowRate%) hat, zeigt klare Unterschiede in der Bearbeitungspriorität für verschiedene Aufgabentypen.",
+    "message": "\"$1\" in $2 hat höchste Abschlussrate ($3%), während \"$4\" in $5 niedrigste ($6%) hat, zeigt klare Unterschiede in der Bearbeitungspriorität für verschiedene Aufgabentypen.",
     "description": "Einblick über Abschlussratenunterschiede zwischen Quellen"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1 (Wichtig & Dringend) hat $percentage% ausstehende Aufgaben, die über 3 Tage dauern, was auf potenziellen Ressourcenmangel oder unerwartete Schwierigkeiten bei Kernaufgaben hindeutet. Betrachten Sie Aufgabenaufschlüsselung oder zusätzliche Unterstützung.",
+    "message": "Q1 (Wichtig & Dringend) hat $1% ausstehende Aufgaben, die über 3 Tage dauern, was auf potenziellen Ressourcenmangel oder unerwartete Schwierigkeiten bei Kernaufgaben hindeutet. Betrachten Sie Aufgabenaufschlüsselung oder zusätzliche Unterstützung.",
     "description": "Einblick über Q1-ausstehende Aufgaben, die zu lange dauern"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Q4 (Nicht wichtig & Dringend) abgeschlossene Aufgaben durchschnittlich $q4Time Tage, weit über Q2 (Wichtig & Nicht dringend) bei $q2Time Tagen, was darauf hindeutet, dass \"temporäre dringende Aufgaben\" Ressourcen überbeanspruchen. Optimieren Sie Notfallreaktionsprozesse.",
+    "message": "Q4 (Nicht wichtig & Dringend) abgeschlossene Aufgaben durchschnittlich $1 Tage, weit über Q2 (Wichtig & Nicht dringend) bei $2 Tagen, was darauf hindeutet, dass \"temporäre dringende Aufgaben\" Ressourcen überbeanspruchen. Optimieren Sie Notfallreaktionsprozesse.",
     "description": "Einblick über Q4 vs Q2-Aufgabenabschlusszeiten"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Durchschnittliche Bearbeitungszeit für ausstehende Aufgaben ($pendingTime Tage) ist deutlich höher als abgeschlossene Aufgaben ($completedTime Tage). Fokus auf lang feststeckende Aufgaben und Strategie oder Ressourcenallokation bei Bedarf anpassen.",
+    "message": "Durchschnittliche Bearbeitungszeit für ausstehende Aufgaben ($1 Tage) ist deutlich höher als abgeschlossene Aufgaben ($2 Tage). Fokus auf lang feststeckende Aufgaben und Strategie oder Ressourcenallokation bei Bedarf anpassen.",
     "description": "Einblick über ausstehende vs abgeschlossene Aufgabenzeiten"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "$quadrantLabel Aufgabenvolumen $direction um $rate% von $from bis $to, zeigt erhebliche Schwankung. Betrachten Sie Fokus auf Aufgabenallokationsbalance.",
+    "message": "$1 Aufgabenvolumen $4 um $5% von $2 bis $3, zeigt erhebliche Schwankung. Betrachten Sie Fokus auf Aufgabenallokationsbalance.",
     "description": "Einblick über Aufgabenvolumen-Schwankung"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "$quadrantLabel Aufgabenabschlussrate zeigt anhaltenden Aufwärtstrend, deutet auf verbesserte Arbeitseffizienz hin.",
+    "message": "$1 Aufgabenabschlussrate zeigt anhaltenden Aufwärtstrend, deutet auf verbesserte Arbeitseffizienz hin.",
     "description": "Einblick über Abschlussrate-Aufwärtstrend"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "$quadrantLabel Aufgabenabschlussrate zeigt anhaltenden Abwärtstrend, erfordert Aufmerksamkeit auf Ausführungseffizienzprobleme.",
+    "message": "$1 Aufgabenabschlussrate zeigt anhaltenden Abwärtstrend, erfordert Aufmerksamkeit auf Ausführungseffizienzprobleme.",
     "description": "Einblick über Abschlussrate-Abwärtstrend"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Q2 (Wichtig & Nicht dringend) Aufgaben häufen sich weiter an ohne Verbesserung der Abschlussrate, was widerspiegelt, dass \"strategische Aufgaben\" nicht in regelmäßige Ausführungspläne integriert sind, stellt ein \"Aufschiebungsansammlung\"-Risiko dar.",
     "description": "Einblick über Q2-Aufgabenansammlung"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Insight-Analyse-Regeln",
+    "description": "Titel des Insight-Analyse-Regeln-Abschnitts"
+  },
+  "completionRateAnalysis": {
+    "message": "Abschlussrate-Analyse",
+    "description": "Titel des Abschlussrate-Analyse-Moduls"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Analyseziel: Analyse der Aufgabenabschlussrate-Verteilung über Quadranten basierend auf der Eisenhower-Matrix-Theorie",
+    "description": "Beschreibung des Abschlussrate-Analyse-Ziels"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Haupt-Insight-Regeln:",
+    "description": "Titel der Abschlussrate-Analyse-Regeln"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Q2 niedrige Abschlussrate-Erkennung (<70% anderer Quadranten-Durchschnitt)",
+    "description": "Q2 niedrige Abschlussrate-Erkennungsregel"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Q3 hohe Abschlussrate-Erkennung (>85% und >120% von Q1)",
+    "description": "Q3 hohe Abschlussrate-Erkennungsregel"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Q1/Q4 hoher Aufgabenanteil-Erkennung (>40%/>30%)",
+    "description": "Q1/Q4 hoher Aufgabenanteil-Erkennungsregel"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Quellen-Kreuzanalyse",
+    "description": "Titel des Quellen-Kreuzanalyse-Moduls"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Analyseziel: Analyse der Abschlussrate-Verteilung verschiedener Aufgabenquellen über Quadranten",
+    "description": "Beschreibung des Quellen-Kreuzanalyse-Ziels"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Haupt-Insight-Regeln:",
+    "description": "Titel der Quellen-Kreuzanalyse-Regeln"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Q1 hoch Q2 niedrig Abschlussrate-Unterschied-Erkennung",
+    "description": "Q1 hoch Q2 niedrig Abschlussrate-Unterschied-Erkennungsregel"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Q4 niedrige Abschlussrate-Erkennung",
+    "description": "Q4 niedrige Abschlussrate-Erkennungsregel"
+  },
+  "sourceConcentrationRule": {
+    "message": "Aufgabenquellen-Überkonzentration-Erkennung (>60%)",
+    "description": "Aufgabenquellen-Überkonzentration-Erkennungsregel"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Quellen-Abschlussrate-Unterschied-Erkennung (>50%)",
+    "description": "Quellen-Abschlussrate-Unterschied-Erkennungsregel"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Zeiteffizienz-Analyse",
+    "description": "Titel des Zeiteffizienz-Analyse-Moduls"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Analyseziel: Analyse der Aufgabenzeiteffizienz und Ressourcenallokations-Rationalität",
+    "description": "Beschreibung des Zeiteffizienz-Analyse-Ziels"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Haupt-Insight-Regeln:",
+    "description": "Titel der Zeiteffizienz-Analyse-Regeln"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Q1 laufende Aufgaben lange Zeitaufwand-Erkennung (>3 Tage und >50%)",
+    "description": "Q1 laufende Aufgaben lange Zeitaufwand-Erkennungsregel"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Q4 vs Q2 durchschnittliche Zeitvergleich-Erkennung (Q4>Q2×1.5)",
+    "description": "Q4 vs Q2 durchschnittliche Zeitvergleich-Erkennungsregel"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Laufende vs abgeschlossene Aufgaben-Zeitvergleich-Erkennung (>2x)",
+    "description": "Laufende vs abgeschlossene Aufgaben-Zeitvergleich-Erkennungsregel"
+  },
+  "trendAnalysis": {
+    "message": "Trend-Analyse",
+    "description": "Titel des Trend-Analyse-Moduls"
+  },
+  "trendAnalysisGoal": {
+    "message": "Analyseziel: Verfolgung der Wirksamkeit von Aufgabenmanagement-Strategien und Verbesserungsrichtungen",
+    "description": "Beschreibung des Trend-Analyse-Ziels"
+  },
+  "trendAnalysisRules": {
+    "message": "Haupt-Insight-Regeln:",
+    "description": "Titel der Trend-Analyse-Regeln"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Aufgabenvolumen-Schwankung-Erkennung (>50% Änderung)",
+    "description": "Aufgabenvolumen-Schwankung-Erkennungsregel"
+  },
+  "completionRateTrendRule": {
+    "message": "Abschlussrate-Trend-Analyse (3 aufeinanderfolgende Perioden Aufwärts/Abwärts)",
+    "description": "Abschlussrate-Trend-Analyse-Regel"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Q2 Aufgaben-Akkumulation-Erkennung (70% Zeitpunkte Zunahme)",
+    "description": "Q2 Aufgaben-Akkumulation-Erkennungsregel"
   }
 }

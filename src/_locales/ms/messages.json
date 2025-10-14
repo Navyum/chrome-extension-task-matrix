@@ -680,55 +680,159 @@
     "description": "Pandangan tentang kadar penyelesaian Q3 yang terlalu tinggi"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Q1 (Penting dan Mendesak) kuadran tugas menyumbang $percentage% daripada jumlah tugas, yang menunjukkan peningkatan dalam perancangan tugas, uruskan tugas penting lebih awal untuk mengelakkan situasi mendesak.",
+    "message": "Q1 (Penting dan Mendesak) kuadran tugas menyumbang $1% daripada jumlah tugas, yang menunjukkan peningkatan dalam perancangan tugas, uruskan tugas penting lebih awal untuk mengelakkan situasi mendesak.",
     "description": "Pandangan tentang peratusan tugas Q1 yang tinggi"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Q4 (Tidak Penting dan Mendesak) kuadran tugas menyumbang $percentage% daripada jumlah tugas, semak sumber tugas keutamaan rendah tetapi mendesak ini, optimalkan proses respons kecemasan.",
+    "message": "Q4 (Tidak Penting dan Mendesak) kuadran tugas menyumbang $1% daripada jumlah tugas, semak sumber tugas keutamaan rendah tetapi mendesak ini, optimalkan proses respons kecemasan.",
     "description": "Pandangan tentang peratusan tugas Q4 yang tinggi"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "\"$source\" tugas di Q1 (Penting dan Mendesak) mencapai $q1Rate% kadar penyelesaian, tetapi hanya $q2Rate% di Q2 (Penting dan Tidak Mendesak), yang menunjukkan bahawa keutamaan pelaksanaan tugas didorong oleh \"tekanan luaran\" daripada fokus strategik dalaman.",
+    "message": "\"$1\" tugas di Q1 (Penting dan Mendesak) mencapai $2% kadar penyelesaian, tetapi hanya $3% di Q2 (Penting dan Tidak Mendesak), yang menunjukkan bahawa keutamaan pelaksanaan tugas didorong oleh \"tekanan luaran\" daripada fokus strategik dalaman.",
     "description": "Pandangan tentang kadar penyelesaian tugas sumber Q1 vs Q2"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "\"$source\" tugas di Q4 (Tidak Penting dan Mendesak) mempunyai kadar penyelesaian rendah ($q4Rate%), perlu mengesahkan sama ada \"tugas sementara\" mempunyai masalah definisi keutamaan.",
+    "message": "\"$1\" tugas di Q4 (Tidak Penting dan Mendesak) mempunyai kadar penyelesaian rendah ($2%), perlu mengesahkan sama ada \"tugas sementara\" mempunyai masalah definisi keutamaan.",
     "description": "Pandangan tentang kadar penyelesaian tugas Q4 yang rendah"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "\"$source\" sangat tertumpu di kuadran $quadrant ($quadrantName), menyumbang $percentage%. Semak perancangan tugas untuk kewajaran.",
+    "message": "\"$1\" sangat tertumpu di kuadran $2 ($2Name), menyumbang $1%. Semak perancangan tugas untuk kewajaran.",
     "description": "Pandangan tentang tugas yang sangat tertumpu di satu kuadran"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "\"$highSource\" di $highQuadrant mempunyai kadar penyelesaian tertinggi ($highRate%), sementara \"$lowSource\" di $lowQuadrant mempunyai terendah ($lowRate%), yang menunjukkan perbezaan jelas dalam keutamaan pemprosesan untuk pelbagai jenis tugas.",
+    "message": "\"$1\" di $2 mempunyai kadar penyelesaian tertinggi ($3%), sementara \"$4\" di $5 mempunyai terendah ($6%), yang menunjukkan perbezaan jelas dalam keutamaan pemprosesan untuk pelbagai jenis tugas.",
     "description": "Pandangan tentang perbezaan kadar penyelesaian antara sumber"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "Q1 (Penting dan Mendesak) mempunyai $percentage% tugas menunggu yang mengambil masa lebih daripada 3 hari, yang menunjukkan potensi kekurangan sumber atau kesukaran tidak dijangka dalam tugas teras. Pertimbangkan pembahagian tugas atau sokongan tambahan.",
+    "message": "Q1 (Penting dan Mendesak) mempunyai $1% tugas menunggu yang mengambil masa lebih daripada 3 hari, yang menunjukkan potensi kekurangan sumber atau kesukaran tidak dijangka dalam tugas teras. Pertimbangkan pembahagian tugas atau sokongan tambahan.",
     "description": "Pandangan tentang tugas menunggu Q1 yang mengambil masa terlalu lama"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Q4 (Tidak Penting dan Mendesak) tugas selesai purata $q4Time hari, jauh melebihi Q2 (Penting dan Tidak Mendesak) di $q2Time hari, yang menunjukkan bahawa \"tugas mendesak sementara\" terlalu menguasai sumber. Optimalkan proses respons kecemasan.",
+    "message": "Q4 (Tidak Penting dan Mendesak) tugas selesai purata $1 hari, jauh melebihi Q2 (Penting dan Tidak Mendesak) di $2 hari, yang menunjukkan bahawa \"tugas mendesak sementara\" terlalu menguasai sumber. Optimalkan proses respons kecemasan.",
     "description": "Pandangan tentang masa penyelesaian tugas Q4 vs Q2"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Masa pemprosesan purata tugas menunggu ($pendingTime hari) secara signifikan lebih tinggi daripada tugas selesai ($completedTime hari). Fokus pada tugas yang terperangkap lama dan sesuaikan strategi atau peruntukan sumber mengikut keperluan.",
+    "message": "Masa pemprosesan purata tugas menunggu ($1 hari) secara signifikan lebih tinggi daripada tugas selesai ($2 hari). Fokus pada tugas yang terperangkap lama dan sesuaikan strategi atau peruntukan sumber mengikut keperluan.",
     "description": "Pandangan tentang masa tugas menunggu vs selesai"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "$quadrantLabel isipadu tugas $direction $rate% dari $from ke $to, menunjukkan turun naik signifikan. Pertimbangkan fokus pada keseimbangan peruntukan tugas.",
+    "message": "$1 isipadu tugas $4 $5% dari $2 ke $3, menunjukkan turun naik signifikan. Pertimbangkan fokus pada keseimbangan peruntukan tugas.",
     "description": "Pandangan tentang turun naik isipadu tugas kuadran"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "$quadrantLabel kadar penyelesaian tugas menunjukkan trend menaik yang berterusan, yang menunjukkan peningkatan aktiviti kerja.",
+    "message": "$1 kadar penyelesaian tugas menunjukkan trend menaik yang berterusan, yang menunjukkan peningkatan aktiviti kerja.",
     "description": "Pandangan tentang trend menaik kadar penyelesaian"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "$quadrantLabel kadar penyelesaian tugas menunjukkan trend menurun yang berterusan, yang memerlukan perhatian pada masalah aktiviti pelaksanaan.",
+    "message": "$1 kadar penyelesaian tugas menunjukkan trend menurun yang berterusan, yang memerlukan perhatian pada masalah aktiviti pelaksanaan.",
     "description": "Pandangan tentang trend menurun kadar penyelesaian"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Q2 (Penting dan Tidak Mendesak) tugas terus terkumpul tanpa peningkatan kadar penyelesaian, yang mencerminkan bahawa \"tugas strategik\" tidak diintegrasikan ke dalam program pelaksanaan rutin, yang menimbulkan risiko \"pengumpulan kelewatan\".",
     "description": "Pandangan tentang pengumpulan tugas Q2"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Peraturan Analisis Insight",
+    "description": "Tajuk seksyen peraturan analisis insight"
+  },
+  "completionRateAnalysis": {
+    "message": "Analisis Kadar Penyelesaian",
+    "description": "Tajuk modul analisis kadar penyelesaian"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Matlamat Analisis: Menganalisis taburan kadar penyelesaian tugas mengikut kuadran berdasarkan teori Matriks Eisenhower",
+    "description": "Huraian matlamat analisis kadar penyelesaian"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Peraturan Insight Utama:",
+    "description": "Tajuk peraturan analisis kadar penyelesaian"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Pengesanan kadar penyelesaian rendah Q2 (<70% daripada purata kuadran lain)",
+    "description": "Peraturan pengesanan kadar penyelesaian rendah Q2"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Pengesanan kadar penyelesaian tinggi Q3 (>85% dan >120% daripada Q1)",
+    "description": "Peraturan pengesanan kadar penyelesaian tinggi Q3"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Pengesanan peratusan tugas tinggi Q1/Q4 (>40%/>30%)",
+    "description": "Peraturan pengesanan peratusan tugas tinggi Q1/Q4"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Analisis Silang Sumber",
+    "description": "Tajuk modul analisis silang sumber"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Matlamat Analisis: Menganalisis taburan kadar penyelesaian bagi pelbagai sumber tugas mengikut kuadran",
+    "description": "Huraian matlamat analisis silang sumber"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Peraturan Insight Utama:",
+    "description": "Tajuk peraturan analisis silang sumber"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Pengesanan perbezaan kadar penyelesaian Q1 tinggi Q2 rendah",
+    "description": "Peraturan pengesanan perbezaan kadar penyelesaian Q1 tinggi Q2 rendah"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Pengesanan kadar penyelesaian rendah Q4",
+    "description": "Peraturan pengesanan kadar penyelesaian rendah Q4"
+  },
+  "sourceConcentrationRule": {
+    "message": "Pengesanan tumpuan berlebihan sumber tugas (>60%)",
+    "description": "Peraturan pengesanan tumpuan berlebihan sumber tugas"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Pengesanan perbezaan kadar penyelesaian antara sumber (>50%)",
+    "description": "Peraturan pengesanan perbezaan kadar penyelesaian antara sumber"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Analisis Kecekapan Masa",
+    "description": "Tajuk modul analisis kecekapan masa"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Matlamat Analisis: Menganalisis kecekapan masa tugas dan kewajaran peruntukan sumber",
+    "description": "Huraian matlamat analisis kecekapan masa"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Peraturan Insight Utama:",
+    "description": "Tajuk peraturan analisis kecekapan masa"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Pengesanan masa lama dibelanjakan pada tugas Q1 yang sedang berlangsung (>3 hari dan >50%)",
+    "description": "Peraturan pengesanan masa lama pada tugas Q1 yang sedang berlangsung"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Pengesanan perbandingan masa purata Q4 vs Q2 (Q4>Q2×1.5)",
+    "description": "Peraturan pengesanan perbandingan masa purata Q4 vs Q2"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Pengesanan perbandingan masa antara tugas yang sedang berlangsung dan yang selesai (>2x)",
+    "description": "Peraturan pengesanan perbandingan masa antara tugas yang sedang berlangsung dan selesai"
+  },
+  "trendAnalysis": {
+    "message": "Analisis Trend",
+    "description": "Tajuk modul analisis trend"
+  },
+  "trendAnalysisGoal": {
+    "message": "Matlamat Analisis: Menjejaki keberkesanan strategi pengurusan tugas dan arah penambahbaikan",
+    "description": "Huraian matlamat analisis trend"
+  },
+  "trendAnalysisRules": {
+    "message": "Peraturan Insight Utama:",
+    "description": "Tajuk peraturan analisis trend"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Pengesanan turun naik volum tugas (>50% perubahan)",
+    "description": "Peraturan pengesanan turun naik volum tugas"
+  },
+  "completionRateTrendRule": {
+    "message": "Analisis trend kadar penyelesaian (3 tempoh berturut-turut naik/turun)",
+    "description": "Peraturan analisis trend kadar penyelesaian"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Pengesanan pengumpulan tugas Q2 (peningkatan 70% titik masa)",
+    "description": "Peraturan pengesanan pengumpulan tugas Q2"
   }
 }

@@ -680,55 +680,159 @@
     "description": "Insight tungkol sa masyadong mataas na completion rate ng Q3"
   },
   "q1TasksAccountForHighPercentage": {
-    "message": "Ang Quadrant Q1 (Mahalaga at Urgent) ay nagrerepresent ng $percentage% ng lahat ng tasks, na nagpapakita ng improvement sa task planning sa pamamagitan ng mabilis na pag-resolve ng important tasks para maiwasan ang urgent situations.",
+    "message": "Ang Quadrant Q1 (Mahalaga at Urgent) ay nagrerepresent ng $1% ng lahat ng tasks, na nagpapakita ng improvement sa task planning sa pamamagitan ng mabilis na pag-resolve ng important tasks para maiwasan ang urgent situations.",
     "description": "Insight tungkol sa mataas na percentage ng Q1 tasks"
   },
   "q4TasksAccountForHighPercentage": {
-    "message": "Ang Quadrant Q4 (Hindi Mahalaga pero Urgent) ay nagrerepresent ng $percentage% ng lahat ng tasks, pakireview ang sources ng mga low priority pero urgent tasks na ito at i-optimize ang urgent case response process.",
+    "message": "Ang Quadrant Q4 (Hindi Mahalaga pero Urgent) ay nagrerepresent ng $1% ng lahat ng tasks, pakireview ang sources ng mga low priority pero urgent tasks na ito at i-optimize ang urgent case response process.",
     "description": "Insight tungkol sa mataas na percentage ng Q4 tasks"
   },
   "sourceTasksQ1HighQ2Low": {
-    "message": "Ang «$source» tasks ay nakakakuha ng $q1Rate% completion rate sa Q1 (Mahalaga at Urgent), pero $q2Rate% lang sa Q2 (Mahalaga pero Hindi Urgent), na nagpapakita na ang task execution priority ay kinokontrol ng «external pressure», hindi ng internal strategic focus.",
+    "message": "Ang «$1» tasks ay nakakakuha ng $2% completion rate sa Q1 (Mahalaga at Urgent), pero $3% lang sa Q2 (Mahalaga pero Hindi Urgent), na nagpapakita na ang task execution priority ay kinokontrol ng «external pressure», hindi ng internal strategic focus.",
     "description": "Insight tungkol sa source Q1 vs Q2 tasks completion rate"
   },
   "sourceTasksQ4LowCompletionRate": {
-    "message": "Ang «$source» tasks ay may mababang completion rate ($q4Rate%) sa Q4 (Hindi Mahalaga pero Urgent), pakiverify kung may problema sa priority definition ng «temporary tasks».",
+    "message": "Ang «$1» tasks ay may mababang completion rate ($2%) sa Q4 (Hindi Mahalaga pero Urgent), pakiverify kung may problema sa priority definition ng «temporary tasks».",
     "description": "Insight tungkol sa mababang completion rate ng Q4 tasks"
   },
   "sourceTasksHighlyConcentratedInQuadrant": {
-    "message": "Ang «$source» ay highly concentrated sa quadrant $quadrant ($quadrantName), na nagrerepresent ng $percentage%. Pakireview ang rationality ng task planning.",
+    "message": "Ang «$1» ay highly concentrated sa quadrant $2 ($2Name), na nagrerepresent ng $1%. Pakireview ang rationality ng task planning.",
     "description": "Insight tungkol sa mataas na task concentration sa isang quadrant"
   },
   "sourceTasksCompletionRateDifference": {
-    "message": "Ang «$highSource» ay may pinakamataas na completion rate ($highRate%) sa $highQuadrant, ang «$lowSource» ay may pinakamababa ($lowRate%) sa $lowQuadrant, na nagpapakita ng malinaw na difference sa processing priorities ng different types ng tasks.",
+    "message": "Ang «$1» ay may pinakamataas na completion rate ($3%) sa $2, ang «$4» ay may pinakamababa ($6%) sa $5, na nagpapakita ng malinaw na difference sa processing priorities ng different types ng tasks.",
     "description": "Insight tungkol sa completion rate difference sa pagitan ng sources"
   },
   "q1PendingTasksHighTimeSpent": {
-    "message": "$percentage% ng tasks sa Q1 (Mahalaga at Urgent) ay pending ng mahigit sa 3 araw, na nagpapakita ng possible resource shortage para sa important tasks o unexpected difficulties. Pakiconsider ang task division o additional support.",
+    "message": "$1% ng tasks sa Q1 (Mahalaga at Urgent) ay pending ng mahigit sa 3 araw, na nagpapakita ng possible resource shortage para sa important tasks o unexpected difficulties. Pakiconsider ang task division o additional support.",
     "description": "Insight tungkol sa mataas na time spent sa Q1 pending tasks"
   },
   "q4CompletedTasksExceedQ2Time": {
-    "message": "Ang average completion time ng completed tasks ng Q4 (Hindi Mahalaga pero Urgent) ay $q4Time araw, na significantly lumalampas sa $q2Time araw ng Q2 (Mahalaga pero Hindi Urgent), na nagpapakita na ang «temporary urgent tasks» ay gumagamit ng mas maraming resources. Pakii-optimize ang urgent case response process.",
+    "message": "Ang average completion time ng completed tasks ng Q4 (Hindi Mahalaga pero Urgent) ay $1 araw, na significantly lumalampas sa $2 araw ng Q2 (Mahalaga pero Hindi Urgent), na nagpapakita na ang «temporary urgent tasks» ay gumagamit ng mas maraming resources. Pakii-optimize ang urgent case response process.",
     "description": "Insight tungkol sa Q4 vs Q2 completion time"
   },
   "pendingTasksAverageTimeHigher": {
-    "message": "Ang average processing time ng pending tasks ($pendingTime araw) ay significantly mas mataas kaysa sa completed tasks ($completedTime araw). Pakifocus sa tasks na matagal nang pending at i-adjust ang strategy o resource allocation ayon sa pangangailangan.",
+    "message": "Ang average processing time ng pending tasks ($1 araw) ay significantly mas mataas kaysa sa completed tasks ($2 araw). Pakifocus sa tasks na matagal nang pending at i-adjust ang strategy o resource allocation ayon sa pangangailangan.",
     "description": "Insight tungkol sa pending vs completed tasks time"
   },
   "quadrantTaskVolumeFluctuation": {
-    "message": "Ang $quadrantLabel task volume ay nag-fluctuate mula $from hanggang $to ng $direction $rate%, na nagpapakita ng significant fluctuations. Pakifocus sa task allocation balance.",
+    "message": "Ang $1 task volume ay nag-fluctuate mula $2 hanggang $3 ng $4 $5%, na nagpapakita ng significant fluctuations. Pakifocus sa task allocation balance.",
     "description": "Insight tungkol sa quadrant task volume fluctuation"
   },
   "quadrantCompletionRateUpwardTrend": {
-    "message": "Ang $quadrantLabel tasks completion rate ay nagpapakita ng stable upward trend, na nagpapakita ng improvement sa work activity.",
+    "message": "Ang $1 tasks completion rate ay nagpapakita ng stable upward trend, na nagpapakita ng improvement sa work activity.",
     "description": "Insight tungkol sa upward trend ng completion rate"
   },
   "quadrantCompletionRateDownwardTrend": {
-    "message": "Ang $quadrantLabel tasks completion rate ay nagpapakita ng stable downward trend, na nangangailangan ng attention sa executive activity problems.",
+    "message": "Ang $1 tasks completion rate ay nagpapakita ng stable downward trend, na nangangailangan ng attention sa executive activity problems.",
     "description": "Insight tungkol sa downward trend ng completion rate"
   },
   "q2TasksContinueToAccumulate": {
     "message": "Ang Q2 (Mahalaga pero Hindi Urgent) tasks ay patuloy na nag-a-accumulate nang walang improvement sa completion rate, na nagrereflect na ang «strategic tasks» ay hindi naka-integrate sa ordinary execution plan, na nagdudulot ng risk ng «delay accumulation».",
     "description": "Insight tungkol sa Q2 tasks accumulation"
+  },
+  "insightAnalysisRules": {
+    "message": "🔍 Mga Panuntunan sa Insight Analysis",
+    "description": "Pamagat ng seksyon ng mga panuntunan sa insight analysis"
+  },
+  "completionRateAnalysis": {
+    "message": "Pagsusuri ng Completion Rate",
+    "description": "Pamagat ng modyul ng pagsusuri ng completion rate"
+  },
+  "completionRateAnalysisGoal": {
+    "message": "Layunin ng Pagsusuri: Suriin ang distribusyon ng completion rate ng mga gawain ayon sa mga kwadrante batay sa teorya ng Eisenhower Matrix",
+    "description": "Paglalarawan ng layunin ng pagsusuri ng completion rate"
+  },
+  "completionRateAnalysisRules": {
+    "message": "Pangunahing Insight na Panuntunan:",
+    "description": "Pamagat ng mga panuntunan ng pagsusuri ng completion rate"
+  },
+  "q2LowCompletionRateRule": {
+    "message": "Pag-detect ng mababang completion rate ng Q2 (<70% ng average ng ibang kwadrante)",
+    "description": "Panuntunan sa pag-detect ng mababang completion rate ng Q2"
+  },
+  "q3HighCompletionRateRule": {
+    "message": "Pag-detect ng mataas na completion rate ng Q3 (>85% at >120% ng Q1)",
+    "description": "Panuntunan sa pag-detect ng mataas na completion rate ng Q3"
+  },
+  "q1q4HighPercentageRule": {
+    "message": "Pag-detect ng mataas na porsyento ng gawain sa Q1/Q4 (>40%/>30%)",
+    "description": "Panuntunan sa pag-detect ng mataas na porsyento ng gawain sa Q1/Q4"
+  },
+  "sourceCrossAnalysis": {
+    "message": "Cross Analysis ng Pinagmulan",
+    "description": "Pamagat ng modyul ng cross analysis ng pinagmulan"
+  },
+  "sourceCrossAnalysisGoal": {
+    "message": "Layunin ng Pagsusuri: Suriin ang distribusyon ng completion rate ng iba't ibang pinagmulan ng gawain ayon sa mga kwadrante",
+    "description": "Paglalarawan ng layunin ng cross analysis ng pinagmulan"
+  },
+  "sourceCrossAnalysisRules": {
+    "message": "Pangunahing Insight na Panuntunan:",
+    "description": "Pamagat ng mga panuntunan ng cross analysis ng pinagmulan"
+  },
+  "q1q2CompletionRateDiffRule": {
+    "message": "Pag-detect ng diperensya sa completion rate: mataas ang Q1, mababa ang Q2",
+    "description": "Panuntunan sa pag-detect ng diperensya sa completion rate Q1 mataas, Q2 mababa"
+  },
+  "q4LowCompletionRateRule": {
+    "message": "Pag-detect ng mababang completion rate ng Q4",
+    "description": "Panuntunan sa pag-detect ng mababang completion rate ng Q4"
+  },
+  "sourceConcentrationRule": {
+    "message": "Pag-detect ng sobrang konsentrasyon ng pinagmulan ng gawain (>60%)",
+    "description": "Panuntunan sa pag-detect ng sobrang konsentrasyon ng pinagmulan ng gawain"
+  },
+  "sourceCompletionRateDiffRule": {
+    "message": "Pag-detect ng diperensya sa completion rate sa pagitan ng mga pinagmulan (>50%)",
+    "description": "Panuntunan sa pag-detect ng diperensya sa completion rate sa pagitan ng mga pinagmulan"
+  },
+  "timeEfficiencyAnalysis": {
+    "message": "Pagsusuri ng Time Efficiency",
+    "description": "Pamagat ng modyul ng pagsusuri ng time efficiency"
+  },
+  "timeEfficiencyAnalysisGoal": {
+    "message": "Layunin ng Pagsusuri: Suriin ang time efficiency ng mga gawain at rasyonalidad ng alokasyon ng resources",
+    "description": "Paglalarawan ng layunin ng pagsusuri ng time efficiency"
+  },
+  "timeEfficiencyAnalysisRules": {
+    "message": "Pangunahing Insight na Panuntunan:",
+    "description": "Pamagat ng mga panuntunan ng pagsusuri ng time efficiency"
+  },
+  "q1LongTimeSpentRule": {
+    "message": "Pag-detect ng mahabang oras na ginugol sa Q1 na mga gawain na nasa proseso (>3 araw at >50%)",
+    "description": "Panuntunan sa pag-detect ng mahabang oras na ginugol sa Q1 na mga gawain"
+  },
+  "q4q2TimeComparisonRule": {
+    "message": "Pag-detect ng paghahambing ng average na oras Q4 vs Q2 (Q4>Q2×1.5)",
+    "description": "Panuntunan sa pag-detect ng paghahambing ng average na oras Q4 vs Q2"
+  },
+  "pendingCompletedTimeComparisonRule": {
+    "message": "Pag-detect ng paghahambing ng oras sa pagitan ng mga gawain na nasa proseso at natapos (>2x)",
+    "description": "Panuntunan sa pag-detect ng paghahambing ng oras sa pagitan ng mga gawain na nasa proseso at natapos"
+  },
+  "trendAnalysis": {
+    "message": "Pagsusuri ng Trend",
+    "description": "Pamagat ng modyul ng pagsusuri ng trend"
+  },
+  "trendAnalysisGoal": {
+    "message": "Layunin ng Pagsusuri: Subaybayan ang bisa ng mga estratehiya sa pamamahala ng gawain at mga direksyon ng pagpapabuti",
+    "description": "Paglalarawan ng layunin ng pagsusuri ng trend"
+  },
+  "trendAnalysisRules": {
+    "message": "Pangunahing Insight na Panuntunan:",
+    "description": "Pamagat ng mga panuntunan ng pagsusuri ng trend"
+  },
+  "taskVolumeFluctuationRule": {
+    "message": "Pag-detect ng pag-alon ng dami ng gawain (>50% pagbabago)",
+    "description": "Panuntunan sa pag-detect ng pag-alon ng dami ng gawain"
+  },
+  "completionRateTrendRule": {
+    "message": "Pagsusuri ng trend ng completion rate (3 magkasunod na panahon pataas/pababa)",
+    "description": "Panuntunan sa pagsusuri ng trend ng completion rate"
+  },
+  "q2TaskAccumulationRule": {
+    "message": "Pag-detect ng akumulasyon ng Q2 na gawain (70% pagtaas ng mga time points)",
+    "description": "Panuntunan sa pag-detect ng akumulasyon ng Q2 na gawain"
   }
 }
