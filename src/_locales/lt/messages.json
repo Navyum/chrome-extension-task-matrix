@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Nemokamas užduočių tvarkytuvas ir įrankis",
+    "description": "Programos pavadinimas"
+  },
+  "appDescription": {
+    "message": "Nemokamas Chrome plėtinys protingoms užduotims. Naudokite galingus įrankius ir patogų sąsają užduočių vizualizavimui",
+    "description": "Programos aprašymas"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Programos pavadinimas"
+  },
+  "taskManager": {
+    "message": "Užduočių tvarkytuvas",
+    "description": "Užduočių tvarkytuvo mygtuko pavadinimas"
+  },
+  "report": {
+    "message": "Ataskaita",
+    "description": "Ataskaitos mygtuko pavadinimas"
+  },
+  "settings": {
+    "message": "Nustatymai",
+    "description": "Nustatymų mygtuko pavadinimas"
+  },
+  "help": {
+    "message": "Pagalba",
+    "description": "Pagalbos mygtuko pavadinimas"
+  },
+  "addTask": {
+    "message": "Pridėti užduotį",
+    "description": "Užduoties pridėjimo mygtuko pavadinimas"
+  },
+  "close": {
+    "message": "Uždaryti",
+    "description": "Uždarymo mygtuko tekstas"
+  },
+  "editTask": {
+    "message": "Redaguoti užduotį",
+    "description": "Užduoties redagavimo modalinio lango pavadinimas"
+  },
+  "newTask": {
+    "message": "Nauja",
+    "description": "Naujos užduoties statusas"
+  },
+  "taskTitle": {
+    "message": "Užduoties pavadinimas *",
+    "description": "Užduoties pavadinimo žymė"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Įveskite užduoties pavadinimą",
+    "description": "Užduoties pavadinimo įvedimo lauko užpildiklis"
+  },
+  "taskDescription": {
+    "message": "Užduoties aprašymas",
+    "description": "Užduoties aprašymo žymė"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Įveskite užduoties aprašymą (neprivaloma)",
+    "description": "Užduoties aprašymo įvedimo lauko užpildiklis"
+  },
+  "importanceLevel": {
+    "message": "Svarbos lygis *",
+    "description": "Svarbos lygio žymė"
+  },
+  "notImportant": {
+    "message": "Nesvarbu",
+    "description": "Nesvarbu žymė"
+  },
+  "veryImportant": {
+    "message": "Labai svarbu",
+    "description": "Labai svarbu žymė"
+  },
+  "dueDate": {
+    "message": "Terminas *",
+    "description": "Termino žymė"
+  },
+  "taskCategory": {
+    "message": "Užduoties kategorija",
+    "description": "Užduoties kategorijos žymė"
+  },
+  "work": {
+    "message": "Darbas",
+    "description": "Darbo kategorija"
+  },
+  "personal": {
+    "message": "Asmeninis",
+    "description": "Asmeninio kategorija"
+  },
+  "study": {
+    "message": "Mokymasis",
+    "description": "Mokymosi kategorija"
+  },
+  "health": {
+    "message": "Sveikata",
+    "description": "Sveikatos kategorija"
+  },
+  "other": {
+    "message": "Kita",
+    "description": "Kitos kategorija"
+  },
+  "deleteTask": {
+    "message": "Ištrinti užduotį",
+    "description": "Užduoties ištrynimo mygtukas"
+  },
+  "cancel": {
+    "message": "Atšaukti",
+    "description": "Atšaukimo mygtukas"
+  },
+  "saveTask": {
+    "message": "Išsaugoti užduotį",
+    "description": "Užduoties išsaugojimo mygtukas"
+  },
+  "doing": {
+    "message": "Vykdoma",
+    "description": "Vykdoma statusas"
+  },
+  "overdue": {
+    "message": "Pavėluota",
+    "description": "Pavėluota statusas"
+  },
+  "completed": {
+    "message": "Atlikta",
+    "description": "Atlikta statusas"
+  },
+  "rejected": {
+    "message": "Atmesta",
+    "description": "Atmesta statusas"
+  },
+  "pending": {
+    "message": "Laukiant",
+    "description": "Laukimo statuso žymė"
+  },
+  "urgentTaskReminder": {
+    "message": "Skubios užduoties priminimas",
+    "description": "Skubios užduoties priminimo sekcijos pavadinimas"
+  },
+  "enableUrgentReminder": {
+    "message": "Įjungti skubios užduoties priminimą",
+    "description": "Skubios užduoties priminimo įjungimo patvirtinimo laukas"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Priminti keičiant piktogramą, kai užduotis artėja prie termino",
+    "description": "Skubios užduoties priminimo įjungimo aprašymas"
+  },
+  "reminderThreshold": {
+    "message": "Priminimo slenkstis (minutės)",
+    "description": "Priminimo slenksčio žymė"
+  },
+  "reminderThresholdDesc": {
+    "message": "Įjungti priminimą, kai užduočiai lieka mažiau laiko nei šis trukmės",
+    "description": "Priminimo slenksčio aprašymas"
+  },
+  "reminderInterval": {
+    "message": "Priminimo intervalas (minutės)",
+    "description": "Priminimo intervalo žymė"
+  },
+  "reminderIntervalDesc": {
+    "message": "Užduočių statuso tikrinimo dažnis fone",
+    "description": "Priminimo intervalo aprašymas"
+  },
+  "iconReminder": {
+    "message": "Piktogramos priminimas",
+    "description": "Piktogramos priminimo sekcijos pavadinimas"
+  },
+  "showIconBadge": {
+    "message": "Rodyti piktogramos žymeklį",
+    "description": "Piktogramos žymeklio rodymo patvirtinimo laukas"
+  },
+  "showIconBadgeDesc": {
+    "message": "Rodyti skubių užduočių skaičių plėtinio piktogramoje",
+    "description": "Piktogramos žymeklio rodymo aprašymas"
+  },
+  "showIconTooltip": {
+    "message": "Rodyti piktogramos tooltip",
+    "description": "Piktogramos tooltip rodymo patvirtinimo laukas"
+  },
+  "showIconTooltipDesc": {
+    "message": "Rodyti užduočių priminimo informaciją užvedus pelę ant piktogramos",
+    "description": "Piktogramos tooltip rodymo aprašymas"
+  },
+  "save": {
+    "message": "Išsaugoti",
+    "description": "Išsaugojimo mygtukas"
+  },
+  "quickStart": {
+    "message": "🚀 Greitas pradžia",
+    "description": "Greitos pradžios sekcijos pavadinimas"
+  },
+  "createTask": {
+    "message": "Sukurti užduotį:",
+    "description": "Užduoties kūrimo instrukcija"
+  },
+  "createTaskDesc": {
+    "message": "Dukart spustelėkite tuščią sritį",
+    "description": "Užduoties kūrimo aprašymas"
+  },
+  "editTaskDesc": {
+    "message": "Redaguoti užduotį:",
+    "description": "Užduoties redagavimo instrukcija"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Dukart spustelėkite esamą užduotį",
+    "description": "Užduoties redagavimo instrukcijos aprašymas"
+  },
+  "viewDetails": {
+    "message": "Peržiūrėti detales:",
+    "description": "Detalių peržiūros instrukcija"
+  },
+  "viewDetailsDesc": {
+    "message": "Užveskite pelę ant užduoties",
+    "description": "Detalių peržiūros aprašymas"
+  },
+  "taskManagerDesc": {
+    "message": "Užduočių tvarkytuvas:",
+    "description": "Užduočių tvarkytuvo instrukcija"
+  },
+  "taskManagerInstruction": {
+    "message": "Spustelėkite sąrašo piktogramą, kad pamatytumėte visas užduotis",
+    "description": "Užduočių tvarkytuvo instrukcijos aprašymas"
+  },
+  "analysisReport": {
+    "message": "Analizės ataskaita:",
+    "description": "Analizės ataskaitos instrukcija"
+  },
+  "analysisReportDesc": {
+    "message": "Spustelėkite grafiko piktogramą, kad pamatytumėte įžvalgas",
+    "description": "Analizės ataskaitos aprašymas"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Eisenhower užduočių matrica",
+    "description": "Eisenhower matricos sekcijos pavadinimas"
+  },
+  "q1Title": {
+    "message": "Q1: Svarbu ir skubu",
+    "description": "Q1 kvadranto pavadinimas"
+  },
+  "q1Desc": {
+    "message": "Daryk dabar. Kritinės užduotys, reikalaujančios nedelsiant dėmesio.",
+    "description": "Q1 kvadranto aprašymas"
+  },
+  "q2Title": {
+    "message": "Q2: Svarbu, bet neskubu",
+    "description": "Q2 kvadranto pavadinimas"
+  },
+  "q2Desc": {
+    "message": "Suplanuok laiką. Strateginės užduotys ilgalaikiam planavimui.",
+    "description": "Q2 kvadranto aprašymas"
+  },
+  "q3Title": {
+    "message": "Q3: Nesvarbu, bet skubu",
+    "description": "Q3 kvadranto pavadinimas"
+  },
+  "q3Desc": {
+    "message": "Perduok kitiems. Trukdžiai, kuriuos gali apdoroti kiti.",
+    "description": "Q3 kvadranto aprašymas"
+  },
+  "q4Title": {
+    "message": "Q4: Nesvarbu ir neskubu",
+    "description": "Q4 kvadranto pavadinimas"
+  },
+  "q4Desc": {
+    "message": "Pašalink. Laiko švaistymas, kurio reikia vengti.",
+    "description": "Q4 kvadranto aprašymas"
+  },
+  "confirm": {
+    "message": "Patvirtinti",
+    "description": "Patvirtinimo mygtukas"
+  },
+  "settingsSaved": {
+    "message": "Nustatymai sėkmingai išsaugoti",
+    "description": "Nustatymų išsaugojimo pranešimas"
+  },
+  "settingsSaveFailed": {
+    "message": "Nustatymų išsaugojimas nepavyko",
+    "description": "Nustatymų išsaugojimo klaidos pranešimas"
+  },
+  "allTasksCleared": {
+    "message": "Visos užduotys ištrintos",
+    "description": "Visų užduočių ištrynimo pranešimas"
+  },
+  "settingsApplied": {
+    "message": "Nustatymai pritaikyti",
+    "description": "Nustatymų pritaikymo pranešimas"
+  },
+  "taskMonitoringStarted": {
+    "message": "Užduočių stebėjimas pradėtas",
+    "description": "Užduočių stebėjimo pradėjimo pranešimas"
+  },
+  "taskMonitoringStopped": {
+    "message": "Užduočių stebėjimas sustabdytas",
+    "description": "Užduočių stebėjimo sustabdymo pranešimas"
+  },
+  "taskEditProcessed": {
+    "message": "Užduoties redagavimas apdorotas",
+    "description": "Užduoties redagavimo apdorojimo pranešimas"
+  },
+  "taskAddProcessed": {
+    "message": "Užduoties pridėjimas apdorotas",
+    "description": "Užduoties pridėjimo apdorojimo pranešimas"
+  },
+  "taskDeleteProcessed": {
+    "message": "Užduoties ištrynimas apdorotas",
+    "description": "Užduoties ištrynimo apdorojimo pranešimas"
+  },
+  "unknownMessageType": {
+    "message": "Nežinomas pranešimo tipas",
+    "description": "Nežinomo pranešimo tipo klaida"
+  },
+  "openTaskMatrix": {
+    "message": "Atidaryti TaskMatrix Pro",
+    "description": "TaskMatrix Pro atidarymo komandos aprašymas"
+  },
+  "ready": {
+    "message": "Paruošta",
+    "description": "Paruoštumo pranešimas"
+  },
+  "initializationFailed": {
+    "message": "Inicializavimas nepavyko",
+    "description": "Inicializavimo klaidos pranešimas"
+  },
+  "loading": {
+    "message": "Kraunama...",
+    "description": "Krovimo pranešimas"
+  },
+  "saving": {
+    "message": "Išsaugoma...",
+    "description": "Išsaugojimo pranešimas"
+  },
+  "failedToGetFormData": {
+    "message": "Formos duomenų gavimas nepavyko",
+    "description": "Formos duomenų gavimo klaidos pranešimas"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Prašome įvesti užduoties pavadinimą",
+    "description": "Įspėjimas, kai užduoties pavadinimas tuščias"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Užduotis sėkmingai atnaujinta",
+    "description": "Užduoties atnaujinimo sėkmės pranešimas"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Užduotis sėkmingai pridėta",
+    "description": "Užduoties pridėjimo sėkmės pranešimas"
+  },
+  "saveFailed": {
+    "message": "Išsaugojimas nepavyko",
+    "description": "Išsaugojimo klaidos pranešimas"
+  },
+  "taskNotFound": {
+    "message": "Užduotis nerasta",
+    "description": "Užduoties neradimo klaidos pranešimas"
+  },
+  "failedToEditTask": {
+    "message": "Užduoties redagavimas nepavyko",
+    "description": "Užduoties redagavimo klaidos pranešimas"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Užduotis sėkmingai atlikta",
+    "description": "Užduoties atlikimo sėkmės pranešimas"
+  },
+  "failedToCompleteTask": {
+    "message": "Užduoties atlikimas nepavyko",
+    "description": "Užduoties atlikimo klaidos pranešimas"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Ar tikrai norite ištrinti šią užduotį? Šio veiksmo negalima atšaukti.",
+    "description": "Užduoties ištrynimo patvirtinimo pranešimas"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Užduotis sėkmingai ištrinta",
+    "description": "Užduoties ištrynimo sėkmės pranešimas"
+  },
+  "failedToDeleteTask": {
+    "message": "Užduoties ištrynimas nepavyko",
+    "description": "Užduoties ištrynimo klaidos pranešimas"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Nustatymai sėkmingai išsaugoti",
+    "description": "Nustatymų išsaugojimo sėkmės pranešimas"
+  },
+  "failedToSaveSettings": {
+    "message": "Nustatymų išsaugojimas nepavyko",
+    "description": "Nustatymų išsaugojimo klaidos pranešimas"
+  },
+  "loadingDataFailed": {
+    "message": "Duomenų krovimas nepavyko",
+    "description": "Duomenų krovimo klaidos pranešimas"
+  },
+  "noTaskFound": {
+    "message": "Užduotis nerasta",
+    "description": "Tuščios būsenos pranešimas, kai užduotys nerastos"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Spustelėkite pliuso piktogramą, kad pridėtumėte savo pirmąją užduotį",
+    "description": "Pirmosios užduoties pridėjimo instrukcija tuščiai būsenai"
+  },
+  "allCaughtUp": {
+    "message": "Viskas atnaujinta!",
+    "description": "Tuščios būsenos pranešimas, kai nėra pavėluotų užduočių"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Nėra pavėluotų užduočių. Puikus darbas išlaikant viską tvarkoje!",
+    "description": "Tuščios būsenos pranešimas, kai nėra pavėluotų užduočių"
+  },
+  "noCompletedTasks": {
+    "message": "Nėra atliktų užduočių",
+    "description": "Tuščios būsenos pranešimas, kai nėra atliktų užduočių"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Dukart spustelėkite užduotį ir spustelėkite statuso žymeklį, kad pažymėtumėte ją kaip atliktą",
+    "description": "Užduoties pažymėjimo kaip atliktos instrukcija"
+  },
+  "noRejectedTasks": {
+    "message": "Nėra atmestų užduočių",
+    "description": "Tuščios būsenos pranešimas, kai nėra atmestų užduočių"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Dukart spustelėkite užduotį ir dukart spustelėkite statuso žymeklį, kad pažymėtumėte ją kaip atmestą",
+    "description": "Užduoties pažymėjimo kaip atmestos instrukcija"
+  },
+  "task": {
+    "message": "Užduotis:",
+    "description": "Užduoties žymeklio prefiksas"
+  },
+  "importance": {
+    "message": "Svarba:",
+    "description": "Svarbos žymė"
+  },
+  "noData": {
+    "message": "Nėra duomenų",
+    "description": "Pranešimas, kai grafike nėra duomenų"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Nepakanka duomenų šilumos žemėlapiui sukurti",
+    "description": "Pranešimas, kai nepakanka duomenų šilumos žemėlapiui"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Nepakanka užduočių duomenų sklaidos diagramai sukurti",
+    "description": "Pranešimas, kai nepakanka užduočių duomenų sklaidos diagramai"
+  },
+  "bytes": {
+    "message": "baitų",
+    "description": "Baitų vienetas"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Kilobaitų vienetas"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Megabaitų vienetas"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Gigabaitų vienetas"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Terabaitų vienetas"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Užduočių statuso tikrinimo dažnis fone",
+    "description": "Užduočių statuso tikrinimo dažnio aprašymas"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Rodyti skubių užduočių skaičių plėtinio piktogramoje",
+    "description": "Piktogramos žymeklio nustatymo aprašymas"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Rodyti užduočių priminimo informaciją užvedus pelę ant piktogramos",
+    "description": "Piktogramos antraštės nustatymo aprašymas"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Dukart spustelėkite tuščią sritį",
+    "description": "Užduoties kūrimo instrukcija"
+  },
+  "editTaskInstruction": {
+    "message": "Redaguoti užduotį:",
+    "description": "Užduoties redagavimo instrukcija"
+  },
+  "hoverOverTask": {
+    "message": "Užveskite pelę ant užduoties",
+    "description": "Užduoties detalių peržiūros instrukcija"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Spustelėkite sąrašo piktogramą, kad pamatytumėte visas užduotis",
+    "description": "Užduočių tvarkytuvo prieigos instrukcija"
+  },
+  "clickChartIconForInsights": {
+    "message": "Spustelėkite grafiko piktogramą, kad pamatytumėte įžvalgas",
+    "description": "Analizės ataskaitos prieigos instrukcija"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Eisenhower užduočių matrica",
+    "description": "Eisenhower užduočių matricos sekcijos pavadinimas"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Svarbu ir skubu",
+    "description": "Q1 kvadranto pavadinimas"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Daryk dabar. Kritinės užduotys, reikalaujančios nedelsiant dėmesio.",
+    "description": "Q1 kvadranto aprašymas"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Svarbu, bet neskubu",
+    "description": "Q2 kvadranto pavadinimas"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Suplanuok laiką. Strateginės užduotys ilgalaikiam planavimui.",
+    "description": "Q2 kvadranto aprašymas"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Nesvarbu, bet skubu",
+    "description": "Q3 kvadranto pavadinimas"
+  },
+  "delegateItInterruptions": {
+    "message": "Perduok kitiems. Trukdžiai, kuriuos gali apdoroti kiti.",
+    "description": "Q3 kvadranto aprašymas"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Nesvarbu ir neskubu",
+    "description": "Q4 kvadranto pavadinimas"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Pašalink. Laiko švaistymas, kurio reikia vengti.",
+    "description": "Q4 kvadranto aprašymas"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Įjungti priminimą, kai užduočiai lieka mažiau laiko nei šis trukmės",
+    "description": "Skubaus priminimo slenksčio nustatymo aprašymas"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Priminti keičiant piktogramą, kai užduotis artėja prie termino",
+    "description": "Skubaus priminimo nustatymo aprašymas"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Įjungti skubios užduoties priminimą",
+    "description": "Skubios užduoties priminimo įjungimo patvirtinimo lauko žymė"
+  },
+  "invalidDueDate": {
+    "message": "Neteisingas terminas",
+    "description": "Neteisingo termino klaidos pranešimas"
+  },
+  "dueAt": {
+    "message": "Terminas",
+    "description": "Prefiksas užduotims, kurios baigiasi tam tikrą datą"
+  },
+  "dueIn": {
+    "message": "Terminas per",
+    "description": "Prefiksas užduotims, kurios baigiasi per tam tikrą laiką"
+  },
+  "completionRate": {
+    "message": "Atlikimo lygis",
+    "description": "Atlikimo lygio kortelės pavadinimas"
+  },
+  "timeStatus": {
+    "message": "Laikas-Statusas",
+    "description": "Laiko-statuso kortelės pavadinimas"
+  },
+  "timeTrend": {
+    "message": "Laiko tendencija",
+    "description": "Laiko tendencijos kortelės pavadinimas"
+  },
+  "sourceCross": {
+    "message": "Šaltinis-Kryžius",
+    "description": "Šaltinio-kryžiaus kortelės pavadinimas"
+  },
+  "completionRateQuantity": {
+    "message": "Atlikimo lygis - Kiekis",
+    "description": "Atlikimo lygio grafiko pavadinimas"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Užduoties šaltinis - Atlikimo lygis",
+    "description": "Užduoties šaltinio atlikimo lygio grafiko pavadinimas"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Laikas - Atlikimo statuso sklaidos diagrama",
+    "description": "Laiko-atlikimo statuso sklaidos diagramos pavadinimas"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Savaitės/mėnesio tendencija",
+    "description": "Savaitės/mėnesio tendencijos grafiko pavadinimas"
+  },
+  "weekly": {
+    "message": "Savaitės",
+    "description": "Savaitės periodo mygtukas"
+  },
+  "monthly": {
+    "message": "Mėnesio",
+    "description": "Mėnesio periodo mygtukas"
+  },
+  "source": {
+    "message": "Šaltinis",
+    "description": "Šaltinio lentelės pavadinimas"
+  },
+  "low": {
+    "message": "Žemas (0-20%)",
+    "description": "Žemo atlikimo lygio žymė"
+  },
+  "mediumLow": {
+    "message": "Vidutinis-žemas (20-50%)",
+    "description": "Vidutinio-žemo atlikimo lygio žymė"
+  },
+  "mediumHigh": {
+    "message": "Vidutinis-aukštas (50-80%)",
+    "description": "Vidutinio-aukšto atlikimo lygio žymė"
+  },
+  "high": {
+    "message": "Aukštas (80-100%)",
+    "description": "Aukšto atlikimo lygio žymė"
+  },
+  "taskCost": {
+    "message": "Užduoties kaina (dienos)",
+    "description": "Užduoties kainos ašies žymė"
+  },
+  "taskImportance": {
+    "message": "Užduoties svarba",
+    "description": "Užduoties svarbos ašies žymė"
+  },
+  "taskCount": {
+    "message": "Užduočių skaičius",
+    "description": "Užduočių skaičiaus ašies žymė"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Kvadranto užduočių laiko statistika (dienos):",
+    "description": "Kvadranto užduočių laiko statistikos pavadinimas"
+  },
+  "quadrant": {
+    "message": "Kvadrantas",
+    "description": "Kvadranto lentelės pavadinimas"
+  },
+  "completedAvg": {
+    "message": "Atlikta (vidurkis)",
+    "description": "Atlikto vidurkio lentelės pavadinimas"
+  },
+  "completedMedian": {
+    "message": "Atlikta (mediana)",
+    "description": "Atliktos medianos lentelės pavadinimas"
+  },
+  "inProgressAvg": {
+    "message": "Vykdoma (vidurkis)",
+    "description": "Vykdomo vidurkio lentelės pavadinimas"
+  },
+  "inProgressMedian": {
+    "message": "Vykdoma (mediana)",
+    "description": "Vykdomos medianos lentelės pavadinimas"
+  },
+  "deepInsights": {
+    "message": "Gilūs įžvalgos",
+    "description": "Gilaus įžvalgų sekcijos pavadinimas"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Šiuo metu nepakanka duomenų įžvalgoms sukurti.",
+    "description": "Pranešimas, kai nėra duomenų įžvalgoms"
+  },
+  "importantUrgent": {
+    "message": "Svarbu ir skubu",
+    "description": "Q1 kvadranto žymė"
+  },
+  "importantNotUrgent": {
+    "message": "Svarbu, bet neskubu",
+    "description": "Q2 kvadranto žymė"
+  },
+  "notImportantNotUrgent": {
+    "message": "Nesvarbu ir neskubu",
+    "description": "Q3 kvadranto žymė"
+  },
+  "notImportantUrgent": {
+    "message": "Nesvarbu, bet skubu",
+    "description": "Q4 kvadranto žymė"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2 kvadranto (svarbu, bet neskubu) užduočių atlikimo lygis yra žymiai žemesnis nei kitų kvadrantų, atspindintis vykdomojo šališkumą «skubu svarbiau nei svarbu», kas gali lemti ilgalaikių strateginių tikslų vėlavimą.",
+    "description": "Įžvalga apie žemesnį Q2 atlikimo lygį"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3 kvadranto (nesvarbu ir neskubu) užduočių atlikimo lygis yra per aukštas, prašome atkreipti dėmesį į «neefektyvų užimtumą» - jei per daug energijos išleidžiama trivialioms užduotims, tai suspaudžia laiką pagrindinėms užduotims.",
+    "description": "Įžvalga apie per aukštą Q3 atlikimo lygį"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1 kvadranto (svarbu ir skubu) užduotys sudaro $percentage% visų užduočių, rodant užduočių planavimo pagerėjimą, anksti sprendžiant svarbias užduotis, kad būtų išvengta skubių situacijų.",
+    "description": "Įžvalga apie aukštą Q1 užduočių procentą"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4 kvadranto (nesvarbu, bet skubu) užduotys sudaro $percentage% visų užduočių, prašome peržiūrėti šių žemo prioriteto, bet skubių užduočių šaltinius, optimizuoti skubių atvejų atsako procesą.",
+    "description": "Įžvalga apie aukštą Q4 užduočių procentą"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "«$source» užduotys pasiekia $q1Rate% atlikimo lygį Q1 (svarbu ir skubu), bet tik $q2Rate% Q2 (svarbu, bet neskubu), rodant, kad užduočių vykdymo prioritetas yra valdomas «išoriniu spaudimu», o ne vidiniu strateginiu fokusu.",
+    "description": "Įžvalga apie Q1 vs Q2 šaltinio užduočių atlikimo lygį"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "«$source» užduotys turi žemą atlikimo lygį ($q4Rate%) Q4 (nesvarbu, bet skubu), reikia patvirtinti, ar yra problema su «laikinių užduočių» prioriteto apibrėžimu.",
+    "description": "Įžvalga apie žemą Q4 užduočių atlikimo lygį"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "«$source» yra labai koncentruotas $quadrant kvadrante ($quadrantName), sudarant $percentage%. Prašome peržiūrėti užduočių planavimo racionalumą.",
+    "description": "Įžvalga apie aukštą užduočių koncentraciją viename kvadrante"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "«$highSource» turi aukščiausią atlikimo lygį ($highRate%) $highQuadrant, o «$lowSource» turi žemiausią ($lowRate%) $lowQuadrant, rodant akivaizdų skirtingų tipų užduočių apdorojimo prioritetų skirtumą.",
+    "description": "Įžvalga apie atlikimo lygio skirtumą tarp šaltinių"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (svarbu ir skubu) turi $percentage% užduočių laukiančių, kurios trunka ilgiau nei 3 dienos, rodant galimą išteklių trūkumą arba netikėtus sunkumus su pagrindinėmis užduotimis. Prašome apsvarstyti užduoties padalijimą arba papildomą paramą.",
+    "description": "Įžvalga apie Q1 laukiančias užduotis su aukštu išleidžiamu laiku"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Vidutinis Q4 (nesvarbu, bet skubu) atliktų užduočių atlikimo laikas yra $q4Time dienų, žymiai viršijant $q2Time dienų Q2 (svarbu, bet neskubu), rodant, kad «laikinos skubios užduotys» per daug užima išteklius. Prašome optimizuoti skubių atvejų atsako procesą.",
+    "description": "Įžvalga apie Q4 vs Q2 atlikimo laiką"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Vidutinis laukiančių užduočių apdorojimo laikas ($pendingTime dienų) yra žymiai didesnis nei atliktų užduočių ($completedTime dienų). Prašome sutelkti dėmesį į užduotis, kurios ilgai laukia, ir pagal poreikį pritaikyti strategiją arba išteklių paskirstymą.",
+    "description": "Įžvalga apie laukiančių vs atliktų užduočių laiką"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabel užduočių kiekis svyruoja nuo $from iki $to $direction $rate%, rodant reikšmingus svyravimus. Prašome apsvarstyti sutelkti dėmesį į užduočių paskirstymo balansą.",
+    "description": "Įžvalga apie kvadranto užduočių kiekio svyravimą"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabel užduočių atlikimo lygis rodo tvarų kylančią tendenciją, rodant darbo veiklos pagerėjimą.",
+    "description": "Įžvalga apie kylančią atlikimo lygio tendenciją"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabel užduočių atlikimo lygis rodo tvarų leidžiamą tendenciją, reikalaujantį dėmesio vykdomosios veiklos problemoms.",
+    "description": "Įžvalga apie leidžiamą atlikimo lygio tendenciją"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2 (svarbu, bet neskubu) užduotys toliau kaupiasi be atlikimo lygio pagerėjimo, atspindint, kad «strateginės užduotys» nėra integruotos į reguliarų vykdymo planą, nešant «vėlavimo kaupimosi» riziką.",
+    "description": "Įžvalga apie Q2 užduočių kaupimąsi"
+  }
+}

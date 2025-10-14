@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: 免費任務管理器和工具",
+    "description": "應用程式名稱"
+  },
+  "appDescription": {
+    "message": "免費的 Chrome 瀏覽器擴充功能，用於智能任務。使用強大的工具和用戶友好的界面來視覺化您的任務",
+    "description": "應用程式描述"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "應用程式標題"
+  },
+  "taskManager": {
+    "message": "任務管理器",
+    "description": "任務管理器按鈕標題"
+  },
+  "report": {
+    "message": "報告",
+    "description": "報告按鈕標題"
+  },
+  "settings": {
+    "message": "設定",
+    "description": "設定按鈕標題"
+  },
+  "help": {
+    "message": "說明",
+    "description": "說明按鈕標題"
+  },
+  "addTask": {
+    "message": "新增任務",
+    "description": "新增任務按鈕標題"
+  },
+  "close": {
+    "message": "關閉",
+    "description": "關閉按鈕文字"
+  },
+  "editTask": {
+    "message": "編輯任務",
+    "description": "編輯任務模態框標題"
+  },
+  "newTask": {
+    "message": "新增",
+    "description": "新增任務狀態"
+  },
+  "taskTitle": {
+    "message": "任務標題 *",
+    "description": "任務標題標籤"
+  },
+  "taskTitlePlaceholder": {
+    "message": "輸入任務標題",
+    "description": "任務標題輸入欄位佔位符"
+  },
+  "taskDescription": {
+    "message": "任務描述",
+    "description": "任務描述標籤"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "輸入任務描述（可選）",
+    "description": "任務描述輸入欄位佔位符"
+  },
+  "importanceLevel": {
+    "message": "重要性等級 *",
+    "description": "重要性等級標籤"
+  },
+  "notImportant": {
+    "message": "不重要",
+    "description": "不重要標籤"
+  },
+  "veryImportant": {
+    "message": "非常重要",
+    "description": "非常重要標籤"
+  },
+  "dueDate": {
+    "message": "截止日期 *",
+    "description": "截止日期標籤"
+  },
+  "taskCategory": {
+    "message": "任務類別",
+    "description": "任務類別標籤"
+  },
+  "work": {
+    "message": "工作",
+    "description": "工作類別"
+  },
+  "personal": {
+    "message": "個人",
+    "description": "個人類別"
+  },
+  "study": {
+    "message": "學習",
+    "description": "學習類別"
+  },
+  "health": {
+    "message": "健康",
+    "description": "健康類別"
+  },
+  "other": {
+    "message": "其他",
+    "description": "其他類別"
+  },
+  "deleteTask": {
+    "message": "刪除任務",
+    "description": "刪除任務按鈕"
+  },
+  "cancel": {
+    "message": "取消",
+    "description": "取消按鈕"
+  },
+  "saveTask": {
+    "message": "儲存任務",
+    "description": "儲存任務按鈕"
+  },
+  "doing": {
+    "message": "進行中",
+    "description": "進行中狀態"
+  },
+  "overdue": {
+    "message": "逾期",
+    "description": "逾期狀態"
+  },
+  "completed": {
+    "message": "已完成",
+    "description": "已完成狀態"
+  },
+  "rejected": {
+    "message": "已拒絕",
+    "description": "已拒絕狀態"
+  },
+  "pending": {
+    "message": "待處理",
+    "description": "待處理狀態標籤"
+  },
+  "urgentTaskReminder": {
+    "message": "緊急任務提醒",
+    "description": "緊急任務提醒區段標題"
+  },
+  "enableUrgentReminder": {
+    "message": "啟用緊急任務提醒",
+    "description": "啟用緊急任務提醒核取方塊"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "當任務即將到期時，透過圖示變更來提醒",
+    "description": "啟用緊急任務提醒描述"
+  },
+  "reminderThreshold": {
+    "message": "提醒閾值（分鐘）",
+    "description": "提醒閾值標籤"
+  },
+  "reminderThresholdDesc": {
+    "message": "當任務剩餘時間少於此持續時間時，啟用提醒",
+    "description": "提醒閾值描述"
+  },
+  "reminderInterval": {
+    "message": "提醒間隔（分鐘）",
+    "description": "提醒間隔標籤"
+  },
+  "reminderIntervalDesc": {
+    "message": "在背景中檢查任務狀態的頻率",
+    "description": "提醒間隔描述"
+  },
+  "iconReminder": {
+    "message": "圖示提醒",
+    "description": "圖示提醒區段標題"
+  },
+  "showIconBadge": {
+    "message": "顯示圖示徽章",
+    "description": "顯示圖示徽章核取方塊"
+  },
+  "showIconBadgeDesc": {
+    "message": "在插件圖示上顯示緊急任務數量",
+    "description": "顯示圖示徽章描述"
+  },
+  "showIconTooltip": {
+    "message": "顯示圖示工具提示",
+    "description": "顯示圖示工具提示核取方塊"
+  },
+  "showIconTooltipDesc": {
+    "message": "將滑鼠懸停在圖示上時顯示任務提醒資訊",
+    "description": "顯示圖示工具提示描述"
+  },
+  "save": {
+    "message": "儲存",
+    "description": "儲存按鈕"
+  },
+  "quickStart": {
+    "message": "🚀 快速開始",
+    "description": "快速開始區段標題"
+  },
+  "createTask": {
+    "message": "建立任務：",
+    "description": "建立任務指示"
+  },
+  "createTaskDesc": {
+    "message": "在空白區域雙擊",
+    "description": "建立任務描述"
+  },
+  "editTaskDesc": {
+    "message": "編輯任務：",
+    "description": "編輯任務指示"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "在現有任務上雙擊",
+    "description": "編輯任務指示描述"
+  },
+  "viewDetails": {
+    "message": "檢視詳細資訊：",
+    "description": "檢視詳細資訊指示"
+  },
+  "viewDetailsDesc": {
+    "message": "將滑鼠懸停在任務上",
+    "description": "檢視詳細資訊描述"
+  },
+  "taskManagerDesc": {
+    "message": "任務管理器：",
+    "description": "任務管理器指示"
+  },
+  "taskManagerInstruction": {
+    "message": "點擊清單圖示以查看所有任務",
+    "description": "任務管理器指示描述"
+  },
+  "analysisReport": {
+    "message": "分析報告：",
+    "description": "分析報告指示"
+  },
+  "analysisReportDesc": {
+    "message": "點擊圖表圖示以查看洞察",
+    "description": "分析報告描述"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 艾森豪威爾任務矩陣",
+    "description": "艾森豪威爾矩陣區段標題"
+  },
+  "q1Title": {
+    "message": "Q1: 重要且緊急",
+    "description": "Q1 象限標題"
+  },
+  "q1Desc": {
+    "message": "立即執行。需要立即關注的關鍵任務。",
+    "description": "Q1 象限描述"
+  },
+  "q2Title": {
+    "message": "Q2: 重要但不緊急",
+    "description": "Q2 象限標題"
+  },
+  "q2Desc": {
+    "message": "安排時間。長期規劃的策略性任務。",
+    "description": "Q2 象限描述"
+  },
+  "q3Title": {
+    "message": "Q3: 不重要但緊急",
+    "description": "Q3 象限標題"
+  },
+  "q3Desc": {
+    "message": "委派他人。可由他人處理的中斷。",
+    "description": "Q3 象限描述"
+  },
+  "q4Title": {
+    "message": "Q4: 不重要且不緊急",
+    "description": "Q4 象限標題"
+  },
+  "q4Desc": {
+    "message": "消除。應該避免的時間浪費。",
+    "description": "Q4 象限描述"
+  },
+  "confirm": {
+    "message": "確認",
+    "description": "確認按鈕"
+  },
+  "settingsSaved": {
+    "message": "設定已成功儲存",
+    "description": "設定已儲存通知"
+  },
+  "settingsSaveFailed": {
+    "message": "儲存設定失敗",
+    "description": "儲存設定失敗通知"
+  },
+  "allTasksCleared": {
+    "message": "所有任務已清除",
+    "description": "所有任務已清除訊息"
+  },
+  "settingsApplied": {
+    "message": "設定已套用",
+    "description": "設定已套用訊息"
+  },
+  "taskMonitoringStarted": {
+    "message": "任務監控已開始",
+    "description": "任務監控已開始訊息"
+  },
+  "taskMonitoringStopped": {
+    "message": "任務監控已停止",
+    "description": "任務監控已停止訊息"
+  },
+  "taskEditProcessed": {
+    "message": "任務編輯已處理",
+    "description": "任務編輯已處理訊息"
+  },
+  "taskAddProcessed": {
+    "message": "任務新增已處理",
+    "description": "任務新增已處理訊息"
+  },
+  "taskDeleteProcessed": {
+    "message": "任務刪除已處理",
+    "description": "任務刪除已處理訊息"
+  },
+  "unknownMessageType": {
+    "message": "未知訊息類型",
+    "description": "未知訊息類型錯誤"
+  },
+  "openTaskMatrix": {
+    "message": "開啟 TaskMatrix Pro",
+    "description": "開啟 TaskMatrix Pro 指令描述"
+  },
+  "ready": {
+    "message": "就緒",
+    "description": "就緒狀態訊息"
+  },
+  "initializationFailed": {
+    "message": "初始化失敗",
+    "description": "初始化失敗狀態訊息"
+  },
+  "loading": {
+    "message": "載入中...",
+    "description": "載入中狀態訊息"
+  },
+  "saving": {
+    "message": "儲存中...",
+    "description": "儲存中狀態訊息"
+  },
+  "failedToGetFormData": {
+    "message": "無法取得表單資料",
+    "description": "無法取得表單資料時的錯誤訊息"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "請輸入任務標題",
+    "description": "任務標題為空時的警告訊息"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "任務已成功更新",
+    "description": "任務更新時的成功訊息"
+  },
+  "taskAddedSuccessfully": {
+    "message": "任務已成功新增",
+    "description": "任務新增時的成功訊息"
+  },
+  "saveFailed": {
+    "message": "儲存失敗",
+    "description": "儲存操作失敗時的錯誤訊息"
+  },
+  "taskNotFound": {
+    "message": "找不到任務",
+    "description": "找不到任務時的錯誤訊息"
+  },
+  "failedToEditTask": {
+    "message": "編輯任務失敗",
+    "description": "編輯任務失敗時的錯誤訊息"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "任務已成功完成",
+    "description": "任務完成時的成功訊息"
+  },
+  "failedToCompleteTask": {
+    "message": "完成任務失敗",
+    "description": "完成任務失敗時的錯誤訊息"
+  },
+  "areYouSureDeleteTask": {
+    "message": "您確定要刪除此任務嗎？此操作無法復原。",
+    "description": "刪除任務的確認訊息"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "任務已成功刪除",
+    "description": "任務刪除時的成功訊息"
+  },
+  "failedToDeleteTask": {
+    "message": "刪除任務失敗",
+    "description": "刪除任務失敗時的錯誤訊息"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "設定已成功儲存",
+    "description": "設定儲存時的成功訊息"
+  },
+  "failedToSaveSettings": {
+    "message": "儲存設定失敗",
+    "description": "儲存設定失敗時的錯誤訊息"
+  },
+  "loadingDataFailed": {
+    "message": "載入資料失敗",
+    "description": "載入資料失敗時的錯誤訊息"
+  },
+  "noTaskFound": {
+    "message": "找不到任務",
+    "description": "找不到任務時的空狀態訊息"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "點擊加號圖示以新增您的第一個任務",
+    "description": "新增第一個任務的空狀態指示"
+  },
+  "allCaughtUp": {
+    "message": "全部已更新！",
+    "description": "沒有逾期任務時的空狀態訊息"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "沒有逾期任務。在保持一切正常運作方面做得很好！",
+    "description": "沒有逾期任務時的空狀態訊息"
+  },
+  "noCompletedTasks": {
+    "message": "沒有已完成的任務",
+    "description": "沒有已完成任務時的空狀態訊息"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "在任務上雙擊並點擊狀態標籤以標記為已完成",
+    "description": "將任務標記為已完成的指示"
+  },
+  "noRejectedTasks": {
+    "message": "沒有已拒絕的任務",
+    "description": "沒有已拒絕任務時的空狀態訊息"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "在任務上雙擊並在狀態標籤上點擊兩次以標記為已拒絕",
+    "description": "將任務標記為已拒絕的指示"
+  },
+  "task": {
+    "message": "任務：",
+    "description": "任務標籤前綴"
+  },
+  "importance": {
+    "message": "重要性：",
+    "description": "重要性標籤"
+  },
+  "noData": {
+    "message": "沒有資料",
+    "description": "圖表沒有資料的訊息"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "資料不足以產生熱力圖",
+    "description": "熱力圖資料不足時的訊息"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "任務資料不足以產生散點圖",
+    "description": "散點圖資料不足時的訊息"
+  },
+  "bytes": {
+    "message": "位元組",
+    "description": "位元組單位"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "千位元組單位"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "百萬位元組單位"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "十億位元組單位"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "兆位元組單位"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "在背景中檢查任務狀態的頻率",
+    "description": "任務狀態檢查頻率的描述"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "在插件圖示上顯示緊急任務數量",
+    "description": "圖示徽章設定的描述"
+  },
+  "displayTaskReminderInformation": {
+    "message": "將滑鼠懸停在圖示上時顯示任務提醒資訊",
+    "description": "圖示標題設定的描述"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "在空白區域雙擊",
+    "description": "建立任務的指示"
+  },
+  "editTaskInstruction": {
+    "message": "編輯任務：",
+    "description": "編輯任務指示"
+  },
+  "hoverOverTask": {
+    "message": "將滑鼠懸停在任務上",
+    "description": "顯示任務詳細資訊的指示"
+  },
+  "clickListIconForAllTasks": {
+    "message": "點擊清單圖示以查看所有任務",
+    "description": "存取任務管理器的指示"
+  },
+  "clickChartIconForInsights": {
+    "message": "點擊圖表圖示以查看洞察",
+    "description": "存取分析報告的指示"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 艾森豪威爾任務矩陣",
+    "description": "艾森豪威爾任務矩陣區段標題"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: 重要且緊急",
+    "description": "Q1 象限標題"
+  },
+  "doItNowCriticalTasks": {
+    "message": "立即執行。需要立即關注的關鍵任務。",
+    "description": "Q1 象限描述"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: 重要但不緊急",
+    "description": "Q2 象限標題"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "安排時間。長期規劃的策略性任務。",
+    "description": "Q2 象限描述"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: 不重要但緊急",
+    "description": "Q3 象限標題"
+  },
+  "delegateItInterruptions": {
+    "message": "委派他人。可由他人處理的中斷。",
+    "description": "Q3 象限描述"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: 不重要且不緊急",
+    "description": "Q4 象限標題"
+  },
+  "eliminateItTimeWasters": {
+    "message": "消除。應該避免的時間浪費。",
+    "description": "Q4 象限描述"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "當任務剩餘時間少於此持續時間時，啟用提醒",
+    "description": "緊急提醒閾值設定的描述"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "當任務即將到期時，透過圖示變更來提醒",
+    "description": "緊急提醒設定的描述"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "啟用緊急任務提醒",
+    "description": "啟用緊急任務提醒核取方塊標籤"
+  },
+  "invalidDueDate": {
+    "message": "無效的截止日期",
+    "description": "無效截止日期的錯誤訊息"
+  },
+  "dueAt": {
+    "message": "截止於",
+    "description": "在特定日期到期的任務的截止於前綴"
+  },
+  "dueIn": {
+    "message": "截止於",
+    "description": "在特定時間內到期的任務的截止於前綴"
+  },
+  "completionRate": {
+    "message": "完成率",
+    "description": "完成率分頁標題"
+  },
+  "timeStatus": {
+    "message": "時間-狀態",
+    "description": "時間-狀態分頁標題"
+  },
+  "timeTrend": {
+    "message": "時間趨勢",
+    "description": "時間趨勢分頁標題"
+  },
+  "sourceCross": {
+    "message": "來源-交叉",
+    "description": "來源-交叉分頁標題"
+  },
+  "completionRateQuantity": {
+    "message": "完成率 - 數量",
+    "description": "完成率圖表標題"
+  },
+  "taskSourceCompletionRate": {
+    "message": "任務來源 - 完成率",
+    "description": "任務來源完成率圖表標題"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "時間 - 完成狀態散點圖",
+    "description": "時間完成狀態散點圖標題"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "每週/每月趨勢",
+    "description": "每週每月趨勢圖表標題"
+  },
+  "weekly": {
+    "message": "每週",
+    "description": "每週期間按鈕"
+  },
+  "monthly": {
+    "message": "每月",
+    "description": "每月期間按鈕"
+  },
+  "source": {
+    "message": "來源",
+    "description": "來源表格標題"
+  },
+  "low": {
+    "message": "低 (0-20%)",
+    "description": "低完成率標籤"
+  },
+  "mediumLow": {
+    "message": "中低 (20-50%)",
+    "description": "中低完成率標籤"
+  },
+  "mediumHigh": {
+    "message": "中高 (50-80%)",
+    "description": "中高完成率標籤"
+  },
+  "high": {
+    "message": "高 (80-100%)",
+    "description": "高完成率標籤"
+  },
+  "taskCost": {
+    "message": "任務成本（天）",
+    "description": "任務成本軸標籤"
+  },
+  "taskImportance": {
+    "message": "任務重要性",
+    "description": "任務重要性軸標籤"
+  },
+  "taskCount": {
+    "message": "任務數量",
+    "description": "任務數量軸標籤"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "象限任務時間統計（天）：",
+    "description": "象限任務時間統計標題"
+  },
+  "quadrant": {
+    "message": "象限",
+    "description": "象限表格標題"
+  },
+  "completedAvg": {
+    "message": "已完成（平均）",
+    "description": "已完成平均表格標題"
+  },
+  "completedMedian": {
+    "message": "已完成（中位數）",
+    "description": "已完成中位數表格標題"
+  },
+  "inProgressAvg": {
+    "message": "進行中（平均）",
+    "description": "進行中平均表格標題"
+  },
+  "inProgressMedian": {
+    "message": "進行中（中位數）",
+    "description": "進行中中位數表格標題"
+  },
+  "deepInsights": {
+    "message": "深度洞察",
+    "description": "深度洞察區段標題"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "目前沒有足夠的資料來產生洞察。",
+    "description": "洞察沒有資料的訊息"
+  },
+  "importantUrgent": {
+    "message": "重要且緊急",
+    "description": "Q1 象限標籤"
+  },
+  "importantNotUrgent": {
+    "message": "重要但不緊急",
+    "description": "Q2 象限標籤"
+  },
+  "notImportantNotUrgent": {
+    "message": "不重要且不緊急",
+    "description": "Q3 象限標籤"
+  },
+  "notImportantUrgent": {
+    "message": "不重要但緊急",
+    "description": "Q4 象限標籤"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2（重要但不緊急）象限任務完成率顯著低於其他象限，這反映了「緊急重於重要」的執行偏見，可能導致長期戰略目標延遲。",
+    "description": "關於 Q2 完成率較低的洞察"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3（不重要且不緊急）象限任務完成率過高，請注意「低效就業」- 如果過多精力花費在瑣碎任務上，這會壓縮核心任務的時間。",
+    "description": "關於 Q3 完成率過高的洞察"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1（重要且緊急）象限任務佔總任務的 $percentage%，這表明任務規劃有所改善，及早處理重要任務以避免緊急情況。",
+    "description": "關於 Q1 任務高百分比的洞察"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4（不重要但緊急）象限任務佔總任務的 $percentage%，請檢視這些低優先級但緊急任務的來源，優化應急響應流程。",
+    "description": "關於 Q4 任務高百分比的洞察"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "「$source」任務在 Q1（重要且緊急）中達到 $q1Rate% 完成率，但在 Q2（重要但不緊急）中僅達到 $q2Rate%，這表明任務執行優先級由「外部壓力」驅動，而非內部戰略焦點。",
+    "description": "關於來源任務 Q1 vs Q2 完成率的洞察"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "「$source」任務在 Q4（不重要但緊急）中完成率較低（$q4Rate%），需要確認「臨時任務」是否存在優先級定義問題。",
+    "description": "關於 Q4 任務低完成率的洞察"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "「$source」在 $quadrant（$quadrantName）象限中高度集中，佔 $percentage%。請檢視任務規劃的合理性。",
+    "description": "關於任務在單一象限中高度集中的洞察"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "「$highSource」在 $highQuadrant 中完成率最高（$highRate%），而「$lowSource」在 $lowQuadrant 中最低（$lowRate%），這顯示不同任務類型的處理優先級存在明顯差異。",
+    "description": "關於來源間完成率差異的洞察"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1（重要且緊急）有 $percentage% 的待處理任務耗時超過 3 天，這表明核心任務可能存在資源不足或意外困難。請考慮任務分解或額外支援。",
+    "description": "關於 Q1 待處理任務耗時過長的洞察"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Q4（不重要但緊急）已完成任務平均耗時 $q4Time 天，遠超 Q2（重要但不緊急）的 $q2Time 天，這表明「臨時緊急任務」過度佔用資源。請優化應急響應流程。",
+    "description": "關於 Q4 vs Q2 任務完成時間的洞察"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "待處理任務的平均處理時間（$pendingTime 天）顯著高於已完成任務（$completedTime 天）。請專注於長期滯留的任務，並根據需要調整策略或資源分配。",
+    "description": "關於待處理 vs 已完成任務時間的洞察"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabel 任務量從 $from 到 $to $direction $rate%，顯示顯著波動。請考慮專注於任務分配平衡。",
+    "description": "關於象限任務量波動的洞察"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabel 任務完成率顯示持續上升趨勢，這表明工作活動有所改善。",
+    "description": "關於完成率上升趨勢的洞察"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabel 任務完成率顯示持續下降趨勢，這需要關注執行活動問題。",
+    "description": "關於完成率下降趨勢的洞察"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2（重要但不緊急）任務繼續累積而完成率沒有改善，這反映「戰略任務」未整合到常規執行計劃中，這帶來「延遲累積」風險。",
+    "description": "關於 Q2 任務累積的洞察"
+  }
+}

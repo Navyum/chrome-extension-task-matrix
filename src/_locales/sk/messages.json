@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Bezplatný správca úloh a nástroj",
+    "description": "Názov aplikácie"
+  },
+  "appDescription": {
+    "message": "Bezplatné Chrome rozšírenie pre inteligentné úlohy. Použite výkonné nástroje a používateľsky prívetivé rozhranie na vizualizáciu vašich úloh",
+    "description": "Popis aplikácie"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Názov aplikácie"
+  },
+  "taskManager": {
+    "message": "Správca úloh",
+    "description": "Názov tlačidla správcu úloh"
+  },
+  "report": {
+    "message": "Správa",
+    "description": "Názov tlačidla správy"
+  },
+  "settings": {
+    "message": "Nastavenia",
+    "description": "Názov tlačidla nastavení"
+  },
+  "help": {
+    "message": "Pomoc",
+    "description": "Názov tlačidla pomoci"
+  },
+  "addTask": {
+    "message": "Pridať úlohu",
+    "description": "Názov tlačidla pridania úlohy"
+  },
+  "close": {
+    "message": "Zavrieť",
+    "description": "Text tlačidla zatvorenia"
+  },
+  "editTask": {
+    "message": "Upraviť úlohu",
+    "description": "Názov modálneho okna na úpravu úlohy"
+  },
+  "newTask": {
+    "message": "Nová",
+    "description": "Stav novej úlohy"
+  },
+  "taskTitle": {
+    "message": "Názov úlohy *",
+    "description": "Štítok názvu úlohy"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Zadajte názov úlohy",
+    "description": "Zástupný text poľa na zadanie názvu úlohy"
+  },
+  "taskDescription": {
+    "message": "Popis úlohy",
+    "description": "Štítok popisu úlohy"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Zadajte popis úlohy (voliteľné)",
+    "description": "Zástupný text poľa na zadanie popisu úlohy"
+  },
+  "importanceLevel": {
+    "message": "Úroveň dôležitosti *",
+    "description": "Štítok úrovne dôležitosti"
+  },
+  "notImportant": {
+    "message": "Nie je dôležité",
+    "description": "Štítok nie je dôležité"
+  },
+  "veryImportant": {
+    "message": "Veľmi dôležité",
+    "description": "Štítok veľmi dôležité"
+  },
+  "dueDate": {
+    "message": "Termín *",
+    "description": "Štítok termínu"
+  },
+  "taskCategory": {
+    "message": "Kategória úlohy",
+    "description": "Štítok kategórie úlohy"
+  },
+  "work": {
+    "message": "Práca",
+    "description": "Kategória práca"
+  },
+  "personal": {
+    "message": "Osobné",
+    "description": "Kategória osobné"
+  },
+  "study": {
+    "message": "Štúdium",
+    "description": "Kategória štúdium"
+  },
+  "health": {
+    "message": "Zdravie",
+    "description": "Kategória zdravie"
+  },
+  "other": {
+    "message": "Iné",
+    "description": "Kategória iné"
+  },
+  "deleteTask": {
+    "message": "Vymazať úlohu",
+    "description": "Tlačidlo na vymazanie úlohy"
+  },
+  "cancel": {
+    "message": "Zrušiť",
+    "description": "Tlačidlo zrušenia"
+  },
+  "saveTask": {
+    "message": "Uložiť úlohu",
+    "description": "Tlačidlo na uloženie úlohy"
+  },
+  "doing": {
+    "message": "V procese",
+    "description": "Stav v procese"
+  },
+  "overdue": {
+    "message": "Meškané",
+    "description": "Stav meškané"
+  },
+  "completed": {
+    "message": "Dokončené",
+    "description": "Stav dokončené"
+  },
+  "rejected": {
+    "message": "Odmietnuté",
+    "description": "Stav odmietnuté"
+  },
+  "pending": {
+    "message": "Čakajúce",
+    "description": "Štítok stavu čakajúce"
+  },
+  "urgentTaskReminder": {
+    "message": "Pripomienka naliehavých úloh",
+    "description": "Názov sekcie pripomienky naliehavých úloh"
+  },
+  "enableUrgentReminder": {
+    "message": "Povoliť pripomienku naliehavých úloh",
+    "description": "Začiarkavacie políčko na povolenie pripomienky naliehavých úloh"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Pripomínať zmenou ikony keď sa úloha blíži k termínu",
+    "description": "Popis povolenia pripomienky naliehavých úloh"
+  },
+  "reminderThreshold": {
+    "message": "Prah pripomienky (minúty)",
+    "description": "Štítok prahu pripomienky"
+  },
+  "reminderThresholdDesc": {
+    "message": "Povoliť pripomienku keď zostáva menej času ako táto doba trvania pre úlohu",
+    "description": "Popis prahu pripomienky"
+  },
+  "reminderInterval": {
+    "message": "Interval pripomienky (minúty)",
+    "description": "Štítok intervalu pripomienky"
+  },
+  "reminderIntervalDesc": {
+    "message": "Frekvencia kontroly stavu úloh na pozadí",
+    "description": "Popis intervalu pripomienky"
+  },
+  "iconReminder": {
+    "message": "Pripomienka ikony",
+    "description": "Názov sekcie pripomienky ikony"
+  },
+  "showIconBadge": {
+    "message": "Zobraziť odznak ikony",
+    "description": "Začiarkavacie políčko na zobrazenie odznaku ikony"
+  },
+  "showIconBadgeDesc": {
+    "message": "Zobraziť počet naliehavých úloh na ikone rozšírenia",
+    "description": "Popis zobrazenia odznaku ikony"
+  },
+  "showIconTooltip": {
+    "message": "Zobraziť tooltip ikony",
+    "description": "Začiarkavacie políčko na zobrazenie tooltip-u ikony"
+  },
+  "showIconTooltipDesc": {
+    "message": "Zobraziť informácie o pripomienke úloh pri prejdení myšou cez ikonu",
+    "description": "Popis zobrazenia tooltip-u ikony"
+  },
+  "save": {
+    "message": "Uložiť",
+    "description": "Tlačidlo uloženia"
+  },
+  "quickStart": {
+    "message": "🚀 Rýchly štart",
+    "description": "Názov sekcie rýchleho štartu"
+  },
+  "createTask": {
+    "message": "Vytvoriť úlohu:",
+    "description": "Inštrukcia na vytvorenie úlohy"
+  },
+  "createTaskDesc": {
+    "message": "Dvojité kliknutie na prázdnu oblasť",
+    "description": "Popis vytvorenia úlohy"
+  },
+  "editTaskDesc": {
+    "message": "Upraviť úlohu:",
+    "description": "Inštrukcia na úpravu úlohy"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Dvojité kliknutie na existujúcu úlohu",
+    "description": "Popis inštrukcie na úpravu úlohy"
+  },
+  "viewDetails": {
+    "message": "Zobraziť detaily:",
+    "description": "Inštrukcia na zobrazenie detailov"
+  },
+  "viewDetailsDesc": {
+    "message": "Prejsť myšou cez úlohu",
+    "description": "Popis zobrazenia detailov"
+  },
+  "taskManagerDesc": {
+    "message": "Správca úloh:",
+    "description": "Inštrukcia správcu úloh"
+  },
+  "taskManagerInstruction": {
+    "message": "Kliknite na ikonu zoznamu aby ste videli všetky úlohy",
+    "description": "Popis inštrukcie správcu úloh"
+  },
+  "analysisReport": {
+    "message": "Analytická správa:",
+    "description": "Inštrukcia analytickej správy"
+  },
+  "analysisReportDesc": {
+    "message": "Kliknite na ikonu grafu aby ste videli poznatky",
+    "description": "Popis analytickej správy"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Eisenhowerova matica úloh",
+    "description": "Názov sekcie Eisenhowerovej matice"
+  },
+  "q1Title": {
+    "message": "Q1: Dôležité a naliehavé",
+    "description": "Názov kvadrantu Q1"
+  },
+  "q1Desc": {
+    "message": "Urob teraz. Kritické úlohy ktoré vyžadujú okamžitú pozornosť.",
+    "description": "Popis kvadrantu Q1"
+  },
+  "q2Title": {
+    "message": "Q2: Dôležité ale nie naliehavé",
+    "description": "Názov kvadrantu Q2"
+  },
+  "q2Desc": {
+    "message": "Naplánuj čas. Strategické úlohy pre dlhodobé plánovanie.",
+    "description": "Popis kvadrantu Q2"
+  },
+  "q3Title": {
+    "message": "Q3: Nie dôležité ale naliehavé",
+    "description": "Názov kvadrantu Q3"
+  },
+  "q3Desc": {
+    "message": "Deleguj iným. Prerušenia ktoré môžu byť spracované inými.",
+    "description": "Popis kvadrantu Q3"
+  },
+  "q4Title": {
+    "message": "Q4: Nie dôležité a nie naliehavé",
+    "description": "Názov kvadrantu Q4"
+  },
+  "q4Desc": {
+    "message": "Eliminuj. Plytvanie časom ktoré by sa malo vyhnúť.",
+    "description": "Popis kvadrantu Q4"
+  },
+  "confirm": {
+    "message": "Potvrdiť",
+    "description": "Tlačidlo potvrdenia"
+  },
+  "settingsSaved": {
+    "message": "Nastavenia boli úspešne uložené",
+    "description": "Oznámenie o uložení nastavení"
+  },
+  "settingsSaveFailed": {
+    "message": "Ukladanie nastavení zlyhalo",
+    "description": "Oznámenie o chybe pri ukladaní nastavení"
+  },
+  "allTasksCleared": {
+    "message": "Všetky úlohy boli vymazané",
+    "description": "Správa o vymazaní všetkých úloh"
+  },
+  "settingsApplied": {
+    "message": "Nastavenia boli aplikované",
+    "description": "Správa o aplikovaní nastavení"
+  },
+  "taskMonitoringStarted": {
+    "message": "Sledovanie úloh bolo spustené",
+    "description": "Správa o spustení sledovania úloh"
+  },
+  "taskMonitoringStopped": {
+    "message": "Sledovanie úloh bolo zastavené",
+    "description": "Správa o zastavení sledovania úloh"
+  },
+  "taskEditProcessed": {
+    "message": "Úprava úlohy bola spracovaná",
+    "description": "Správa o spracovaní úpravy úlohy"
+  },
+  "taskAddProcessed": {
+    "message": "Pridanie úlohy bolo spracované",
+    "description": "Správa o spracovaní pridania úlohy"
+  },
+  "taskDeleteProcessed": {
+    "message": "Vymazanie úlohy bolo spracované",
+    "description": "Správa o spracovaní vymazania úlohy"
+  },
+  "unknownMessageType": {
+    "message": "Neznámy typ správy",
+    "description": "Chyba neznámeho typu správy"
+  },
+  "openTaskMatrix": {
+    "message": "Otvoriť TaskMatrix Pro",
+    "description": "Popis príkazu na otvorenie TaskMatrix Pro"
+  },
+  "ready": {
+    "message": "Pripravené",
+    "description": "Správa o pripravenosti"
+  },
+  "initializationFailed": {
+    "message": "Inicializácia zlyhala",
+    "description": "Správa o chybe pri inicializácii"
+  },
+  "loading": {
+    "message": "Načítavanie...",
+    "description": "Správa o načítavaní"
+  },
+  "saving": {
+    "message": "Ukladanie...",
+    "description": "Správa o ukladaní"
+  },
+  "failedToGetFormData": {
+    "message": "Získanie údajov formulára zlyhalo",
+    "description": "Správa o chybe pri získavaní údajov formulára"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Prosím zadajte názov úlohy",
+    "description": "Upozornenie keď je názov úlohy prázdny"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Úloha bola úspešne aktualizovaná",
+    "description": "Správa o úspechu pri aktualizácii úlohy"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Úloha bola úspešne pridaná",
+    "description": "Správa o úspechu pri pridávaní úlohy"
+  },
+  "saveFailed": {
+    "message": "Ukladanie zlyhalo",
+    "description": "Správa o chybe pri ukladaní"
+  },
+  "taskNotFound": {
+    "message": "Úloha nebola nájdená",
+    "description": "Správa o chybe keď úloha nie je nájdená"
+  },
+  "failedToEditTask": {
+    "message": "Úprava úlohy zlyhala",
+    "description": "Správa o chybe pri úprave úlohy"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Úloha bola úspešne dokončená",
+    "description": "Správa o úspechu pri dokončení úlohy"
+  },
+  "failedToCompleteTask": {
+    "message": "Dokončenie úlohy zlyhalo",
+    "description": "Správa o chybe pri dokončovaní úlohy"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Ste si istí že chcete vymazať túto úlohu? Táto akcia sa nedá vrátiť späť.",
+    "description": "Správa potvrdenia na vymazanie úlohy"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Úloha bola úspešne vymazaná",
+    "description": "Správa o úspechu pri vymazaní úlohy"
+  },
+  "failedToDeleteTask": {
+    "message": "Vymazanie úlohy zlyhalo",
+    "description": "Správa o chybe pri vymazávaní úlohy"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Nastavenia boli úspešne uložené",
+    "description": "Správa o úspechu pri ukladaní nastavení"
+  },
+  "failedToSaveSettings": {
+    "message": "Ukladanie nastavení zlyhalo",
+    "description": "Správa o chybe pri ukladaní nastavení"
+  },
+  "loadingDataFailed": {
+    "message": "Načítavanie údajov zlyhalo",
+    "description": "Správa o chybe pri načítavaní údajov"
+  },
+  "noTaskFound": {
+    "message": "Žiadna úloha nebola nájdená",
+    "description": "Správa prázdneho stavu keď úlohy nie sú nájdené"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Kliknite na ikonu plus aby ste pridali svoju prvú úlohu",
+    "description": "Inštrukcia na pridanie prvej úlohy pre prázdny stav"
+  },
+  "allCaughtUp": {
+    "message": "Všetko je aktuálne!",
+    "description": "Správa prázdneho stavu keď nie sú meškané úlohy"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Nie sú meškané úlohy. Výborná práca pri udržiavaní všetkého v poriadku!",
+    "description": "Správa prázdneho stavu keď nie sú meškané úlohy"
+  },
+  "noCompletedTasks": {
+    "message": "Nie sú dokončené úlohy",
+    "description": "Správa prázdneho stavu keď nie sú dokončené úlohy"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Dvojité kliknutie na úlohu a kliknutie na štítok stavu aby ste ju označili ako dokončenú",
+    "description": "Inštrukcia na označenie úlohy ako dokončenej"
+  },
+  "noRejectedTasks": {
+    "message": "Nie sú odmietnuté úlohy",
+    "description": "Správa prázdneho stavu keď nie sú odmietnuté úlohy"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Dvojité kliknutie na úlohu a dvojité kliknutie na štítok stavu aby ste ju označili ako odmietnutú",
+    "description": "Inštrukcia na označenie úlohy ako odmietnutej"
+  },
+  "task": {
+    "message": "Úloha:",
+    "description": "Predpona štítku úlohy"
+  },
+  "importance": {
+    "message": "Dôležitosť:",
+    "description": "Štítok dôležitosti"
+  },
+  "noData": {
+    "message": "Žiadne údaje",
+    "description": "Správa keď v grafe nie sú údaje"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Nedostatok údajov na vytvorenie tepelnej mapy",
+    "description": "Správa keď nie sú dostatočné údaje na tepelnú mapu"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Nedostatok údajov o úlohách na vytvorenie bodového grafu",
+    "description": "Správa keď nie sú dostatočné údaje o úlohách na bodový graf"
+  },
+  "bytes": {
+    "message": "bajtov",
+    "description": "Jednotka bajt"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Jednotka kilobajt"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Jednotka megabajt"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Jednotka gigabajt"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Jednotka terabajt"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Frekvencia kontroly stavu úloh na pozadí",
+    "description": "Popis frekvencie kontroly stavu úloh"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Zobraziť počet naliehavých úloh na ikone rozšírenia",
+    "description": "Popis nastavenia odznaku ikony"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Zobraziť informácie o pripomienke úloh pri prejdení myšou cez ikonu",
+    "description": "Popis nastavenia názvu ikony"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Dvojité kliknutie na prázdnu oblasť",
+    "description": "Inštrukcia na vytvorenie úlohy"
+  },
+  "editTaskInstruction": {
+    "message": "Upraviť úlohu:",
+    "description": "Inštrukcia na úpravu úlohy"
+  },
+  "hoverOverTask": {
+    "message": "Prejsť myšou cez úlohu",
+    "description": "Inštrukcia na zobrazenie detailov úlohy"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Kliknite na ikonu zoznamu aby ste videli všetky úlohy",
+    "description": "Inštrukcia na prístup k správcovi úloh"
+  },
+  "clickChartIconForInsights": {
+    "message": "Kliknite na ikonu grafu aby ste videli poznatky",
+    "description": "Inštrukcia na prístup k analytickej správe"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Eisenhowerova matica úloh",
+    "description": "Názov sekcie Eisenhowerovej matice úloh"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Dôležité a naliehavé",
+    "description": "Názov kvadrantu Q1"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Urob teraz. Kritické úlohy ktoré vyžadujú okamžitú pozornosť.",
+    "description": "Popis kvadrantu Q1"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Dôležité ale nie naliehavé",
+    "description": "Názov kvadrantu Q2"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Naplánuj čas. Strategické úlohy pre dlhodobé plánovanie.",
+    "description": "Popis kvadrantu Q2"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Nie dôležité ale naliehavé",
+    "description": "Názov kvadrantu Q3"
+  },
+  "delegateItInterruptions": {
+    "message": "Deleguj iným. Prerušenia ktoré môžu byť spracované inými.",
+    "description": "Popis kvadrantu Q3"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Nie dôležité a nie naliehavé",
+    "description": "Názov kvadrantu Q4"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Eliminuj. Plytvanie časom ktoré by sa malo vyhnúť.",
+    "description": "Popis kvadrantu Q4"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Povoliť pripomienku keď zostáva menej času ako táto doba trvania pre úlohu",
+    "description": "Popis nastavenia prahu naliehavej pripomienky"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Pripomínať zmenou ikony keď sa úloha blíži k termínu",
+    "description": "Popis nastavenia naliehavej pripomienky"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Povoliť pripomienku naliehavých úloh",
+    "description": "Štítok začiarkavacieho políčka na povolenie pripomienky naliehavých úloh"
+  },
+  "invalidDueDate": {
+    "message": "Neplatný termín",
+    "description": "Správa o chybe pre neplatný termín"
+  },
+  "dueAt": {
+    "message": "Termín v",
+    "description": "Predpona pre úlohy ktoré vypršia v určitý dátum"
+  },
+  "dueIn": {
+    "message": "Termín za",
+    "description": "Predpona pre úlohy ktoré vypršia za určitý čas"
+  },
+  "completionRate": {
+    "message": "Miera dokončenia",
+    "description": "Názov karty miery dokončenia"
+  },
+  "timeStatus": {
+    "message": "Čas-Stav",
+    "description": "Názov karty čas-stav"
+  },
+  "timeTrend": {
+    "message": "Časový trend",
+    "description": "Názov karty časového trendu"
+  },
+  "sourceCross": {
+    "message": "Zdroj-Kríženie",
+    "description": "Názov karty zdroj-kríženie"
+  },
+  "completionRateQuantity": {
+    "message": "Miera dokončenia - Množstvo",
+    "description": "Názov grafu miery dokončenia"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Zdroj úlohy - Miera dokončenia",
+    "description": "Názov grafu miery dokončenia zdroja úlohy"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Čas - Bodový graf stavu dokončenia",
+    "description": "Názov bodového grafu času-stavu dokončenia"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Týždenný/mesačný trend",
+    "description": "Názov grafu týždenného/mesačného trendu"
+  },
+  "weekly": {
+    "message": "Týždenný",
+    "description": "Tlačidlo týždenného obdobia"
+  },
+  "monthly": {
+    "message": "Mesačný",
+    "description": "Tlačidlo mesačného obdobia"
+  },
+  "source": {
+    "message": "Zdroj",
+    "description": "Názov tabuľky zdroj"
+  },
+  "low": {
+    "message": "Nízka (0-20%)",
+    "description": "Štítok nízkej miery dokončenia"
+  },
+  "mediumLow": {
+    "message": "Stredná-nízka (20-50%)",
+    "description": "Štítok strednej-nízkej miery dokončenia"
+  },
+  "mediumHigh": {
+    "message": "Stredná-vysoká (50-80%)",
+    "description": "Štítok strednej-vysokej miery dokončenia"
+  },
+  "high": {
+    "message": "Vysoká (80-100%)",
+    "description": "Štítok vysokej miery dokončenia"
+  },
+  "taskCost": {
+    "message": "Cena úlohy (dni)",
+    "description": "Štítok osi ceny úlohy"
+  },
+  "taskImportance": {
+    "message": "Dôležitosť úlohy",
+    "description": "Štítok osi dôležitosti úlohy"
+  },
+  "taskCount": {
+    "message": "Počet úloh",
+    "description": "Štítok osi počtu úloh"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Štatistika času úloh kvadrantu (dni):",
+    "description": "Názov štatistiky času úloh kvadrantu"
+  },
+  "quadrant": {
+    "message": "Kvadrant",
+    "description": "Názov tabuľky kvadrant"
+  },
+  "completedAvg": {
+    "message": "Dokončené (priemer)",
+    "description": "Názov tabuľky dokončené priemer"
+  },
+  "completedMedian": {
+    "message": "Dokončené (medián)",
+    "description": "Názov tabuľky dokončené medián"
+  },
+  "inProgressAvg": {
+    "message": "V procese (priemer)",
+    "description": "Názov tabuľky v procese priemer"
+  },
+  "inProgressMedian": {
+    "message": "V procese (medián)",
+    "description": "Názov tabuľky v procese medián"
+  },
+  "deepInsights": {
+    "message": "Hlboké poznatky",
+    "description": "Názov sekcie hlbokých poznatkov"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Momentálne nie sú dostatočné údaje na vytvorenie poznatkov.",
+    "description": "Správa keď nie sú údaje na poznatky"
+  },
+  "importantUrgent": {
+    "message": "Dôležité a naliehavé",
+    "description": "Štítok kvadrantu Q1"
+  },
+  "importantNotUrgent": {
+    "message": "Dôležité ale nie naliehavé",
+    "description": "Štítok kvadrantu Q2"
+  },
+  "notImportantNotUrgent": {
+    "message": "Nie dôležité a nie naliehavé",
+    "description": "Štítok kvadrantu Q3"
+  },
+  "notImportantUrgent": {
+    "message": "Nie dôležité ale naliehavé",
+    "description": "Štítok kvadrantu Q4"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Miera dokončenia úloh kvadrantu Q2 (dôležité ale nie naliehavé) je výrazne nižšia ako ostatné kvadranty, odrážajúc výkonné predsudky «naliehavé dôležitejšie ako dôležité», čo môže viesť k oneskoreniu dlhodobých strategických cieľov.",
+    "description": "Poznatok o nižšej miere dokončenia Q2"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Miera dokončenia úloh kvadrantu Q3 (nie dôležité a nie naliehavé) je príliš vysoká, prosím venujte pozornosť «neefektívnemu zamestnaniu» - ak sa príliš veľa energie míňa na triviálne úlohy, to stláča čas pre hlavné úlohy.",
+    "description": "Poznatok o príliš vysokej miere dokončenia Q3"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Úlohy kvadrantu Q1 (dôležité a naliehavé) predstavujú $percentage% z celkového počtu úloh, ukazujúc zlepšenie v plánovaní úloh, skoré riešenie dôležitých úloh na vyhnutie sa naliehavým situáciám.",
+    "description": "Poznatok o vysokom percente úloh Q1"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Úlohy kvadrantu Q4 (nie dôležité ale naliehavé) predstavujú $percentage% z celkového počtu úloh, prosím prehľadajte zdroje týchto úloh s nízkym prioritetom ale naliehavých, optimalizujte proces odpovede na núdzové prípady.",
+    "description": "Poznatok o vysokom percente úloh Q4"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "Úlohy «$source» dosahujú $q1Rate% mieru dokončenia v Q1 (dôležité a naliehavé), ale len $q2Rate% v Q2 (dôležité ale nie naliehavé), ukazujúc že priorita vykonávania úloh je riadená «vonkajším tlakom», nie vnútorným strategickým zameraním.",
+    "description": "Poznatok o miere dokončenia Q1 vs Q2 úloh zdroja"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "Úlohy «$source» majú nízku mieru dokončenia ($q4Rate%) v Q4 (nie dôležité ale naliehavé), treba potvrdiť či existuje problém s definovaním priority «dočasných úloh».",
+    "description": "Poznatok o nízkej miere dokončenia úloh Q4"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "«$source» je vysoko koncentrovaný v kvadrante $quadrant ($quadrantName), predstavujúc $percentage%. Prosím prehľadajte racionalitu plánovania úloh.",
+    "description": "Poznatok o vysokej koncentrácii úloh v jednom kvadrante"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "«$highSource» má najvyššiu mieru dokončenia ($highRate%) v $highQuadrant, zatiaľ čo «$lowSource» má najnižšiu ($lowRate%) v $lowQuadrant, ukazujúc zjavný rozdiel v prioritách spracovania rôznych typov úloh.",
+    "description": "Poznatok o rozdiele miery dokončenia medzi zdrojmi"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (dôležité a naliehavé) má $percentage% úloh čakajúcich ktoré trvajú viac ako 3 dni, ukazujúc možný nedostatok zdrojov alebo neočakávané ťažkosti s hlavnými úlohami. Prosím zvážte rozdelenie úlohy alebo dodatočnú podporu.",
+    "description": "Poznatok o úlohách Q1 čakajúcich s vysokým stráveným časom"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Priemerný čas dokončenia dokončených úloh Q4 (nie dôležité ale naliehavé) je $q4Time dní, výrazne presahujúc $q2Time dní Q2 (dôležité ale nie naliehavé), ukazujúc že «dočasné naliehavé úlohy» nadmerne zaberajú zdroje. Prosím optimalizujte proces odpovede na núdzové prípady.",
+    "description": "Poznatok o čase dokončenia Q4 vs Q2"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Priemerný čas spracovania čakajúcich úloh ($pendingTime dní) je výrazne vyšší ako dokončené úlohy ($completedTime dní). Prosím zamerajte sa na úlohy ktoré zostávajú čakajúce dlhý čas a upravte stratégiu alebo alokáciu zdrojov podľa potreby.",
+    "description": "Poznatok o čase čakajúcich vs dokončených úloh"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "Objem úloh $quadrantLabel kolíše od $from do $to $direction $rate%, ukazujúc významné kolísania. Prosím zvážte zameranie na rovnováhu alokácie úloh.",
+    "description": "Poznatok o kolísaní objemu úloh kvadrantu"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "Miera dokončenia úloh $quadrantLabel ukazuje udržateľný vzostupný trend, ukazujúc zlepšenie pracovnej aktivity.",
+    "description": "Poznatok o vzostupnom trende miery dokončenia"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "Miera dokončenia úloh $quadrantLabel ukazuje udržateľný zostupný trend, ktorý vyžaduje pozornosť na problémy výkonnej aktivity.",
+    "description": "Poznatok o zostupnom trende miery dokončenia"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Úlohy Q2 (dôležité ale nie naliehavé) pokračujú v hromadení bez zlepšenia miery dokončenia, odrážajúc že «strategické úlohy» nie sú integrované do pravidelného plánu vykonávania, prinášajúc riziko «hromadenia oneskorení».",
+    "description": "Poznatok o hromadení úloh Q2"
+  }
+}

@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: 免费任务管理工具",
+    "description": "应用程序名称"
+  },
+  "appDescription": {
+    "message": "基于艾森豪威尔矩阵的智能任务管理插件，通过可视化帮助您管理任务优先级",
+    "description": "应用程序描述"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "应用程序标题"
+  },
+  "taskManager": {
+    "message": "任务管理",
+    "description": "任务管理按钮标题"
+  },
+  "report": {
+    "message": "报告",
+    "description": "报告按钮标题"
+  },
+  "settings": {
+    "message": "设置",
+    "description": "设置按钮标题"
+  },
+  "help": {
+    "message": "帮助",
+    "description": "帮助按钮标题"
+  },
+  "addTask": {
+    "message": "添加任务",
+    "description": "添加任务按钮标题"
+  },
+  "close": {
+    "message": "关闭",
+    "description": "关闭按钮文本"
+  },
+  "editTask": {
+    "message": "编辑任务",
+    "description": "编辑任务模态框标题"
+  },
+  "newTask": {
+    "message": "新建",
+    "description": "新建任务状态"
+  },
+  "taskTitle": {
+    "message": "任务标题 *",
+    "description": "任务标题标签"
+  },
+  "taskTitlePlaceholder": {
+    "message": "请输入任务标题",
+    "description": "任务标题输入框占位符"
+  },
+  "taskDescription": {
+    "message": "任务描述",
+    "description": "任务描述标签"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "请输入任务描述（可选）",
+    "description": "任务描述输入框占位符"
+  },
+  "importanceLevel": {
+    "message": "重要程度 *",
+    "description": "重要程度标签"
+  },
+  "notImportant": {
+    "message": "不重要",
+    "description": "不重要标签"
+  },
+  "veryImportant": {
+    "message": "非常重要",
+    "description": "非常重要标签"
+  },
+  "dueDate": {
+    "message": "截止日期 *",
+    "description": "截止日期标签"
+  },
+  "taskCategory": {
+    "message": "任务分类",
+    "description": "任务分类标签"
+  },
+  "work": {
+    "message": "工作",
+    "description": "工作分类"
+  },
+  "personal": {
+    "message": "个人",
+    "description": "个人分类"
+  },
+  "study": {
+    "message": "学习",
+    "description": "学习分类"
+  },
+  "health": {
+    "message": "健康",
+    "description": "健康分类"
+  },
+  "other": {
+    "message": "其他",
+    "description": "其他分类"
+  },
+  "deleteTask": {
+    "message": "删除任务",
+    "description": "删除任务按钮"
+  },
+  "cancel": {
+    "message": "取消",
+    "description": "取消按钮"
+  },
+  "saveTask": {
+    "message": "保存任务",
+    "description": "保存任务按钮"
+  },
+  "doing": {
+    "message": "进行中",
+    "description": "进行中状态"
+  },
+  "overdue": {
+    "message": "已逾期",
+    "description": "已逾期状态"
+  },
+  "completed": {
+    "message": "已完成",
+    "description": "已完成状态"
+  },
+  "rejected": {
+    "message": "已拒绝",
+    "description": "已拒绝状态"
+  },
+  "pending": {
+    "message": "进行中",
+    "description": "进行中状态标签"
+  },
+  "urgentTaskReminder": {
+    "message": "紧急任务提醒",
+    "description": "紧急任务提醒部分标题"
+  },
+  "enableUrgentReminder": {
+    "message": "启用紧急任务提醒",
+    "description": "启用紧急任务提醒复选框"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "当任务即将到期时，通过图标变化提醒您",
+    "description": "启用紧急任务提醒描述"
+  },
+  "reminderThreshold": {
+    "message": "提醒阈值（分钟）",
+    "description": "提醒阈值标签"
+  },
+  "reminderThresholdDesc": {
+    "message": "当任务剩余时间少于此时长时，触发提醒",
+    "description": "提醒阈值描述"
+  },
+  "reminderInterval": {
+    "message": "提醒间隔（分钟）",
+    "description": "提醒间隔标签"
+  },
+  "reminderIntervalDesc": {
+    "message": "后台检查任务状态的频率",
+    "description": "提醒间隔描述"
+  },
+  "iconReminder": {
+    "message": "图标提醒",
+    "description": "图标提醒部分标题"
+  },
+  "showIconBadge": {
+    "message": "显示图标徽章",
+    "description": "显示图标徽章复选框"
+  },
+  "showIconBadgeDesc": {
+    "message": "在插件图标上显示紧急任务数量",
+    "description": "显示图标徽章描述"
+  },
+  "showIconTooltip": {
+    "message": "显示图标提示",
+    "description": "显示图标提示复选框"
+  },
+  "showIconTooltipDesc": {
+    "message": "悬停在图标上时显示任务提醒信息",
+    "description": "显示图标提示描述"
+  },
+  "save": {
+    "message": "保存",
+    "description": "保存按钮"
+  },
+  "quickStart": {
+    "message": "🚀 快速开始",
+    "description": "快速开始部分标题"
+  },
+  "createTask": {
+    "message": "创建任务：",
+    "description": "创建任务说明"
+  },
+  "createTaskDesc": {
+    "message": "双击空白区域",
+    "description": "创建任务描述"
+  },
+  "editTaskDesc": {
+    "message": "编辑任务：",
+    "description": "编辑任务说明"
+  },
+  "editTaskInstruction": {
+    "message": "双击现有任务",
+    "description": "编辑任务说明描述"
+  },
+  "viewDetails": {
+    "message": "查看详情：",
+    "description": "查看详情说明"
+  },
+  "viewDetailsDesc": {
+    "message": "悬停在任务上",
+    "description": "查看详情描述"
+  },
+  "taskManagerDesc": {
+    "message": "任务管理：",
+    "description": "任务管理说明"
+  },
+  "taskManagerInstruction": {
+    "message": "点击列表图标查看所有任务",
+    "description": "任务管理说明描述"
+  },
+  "analysisReport": {
+    "message": "分析报告：",
+    "description": "分析报告说明"
+  },
+  "analysisReportDesc": {
+    "message": "点击图表图标查看洞察",
+    "description": "分析报告描述"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 艾森豪威尔任务矩阵",
+    "description": "艾森豪威尔矩阵部分标题"
+  },
+  "q1Title": {
+    "message": "Q1：重要且紧急",
+    "description": "Q1象限标题"
+  },
+  "q1Desc": {
+    "message": "立即执行。需要立即关注的关键任务。",
+    "description": "Q1象限描述"
+  },
+  "q2Title": {
+    "message": "Q2：重要但不紧急",
+    "description": "Q2象限标题"
+  },
+  "q2Desc": {
+    "message": "安排执行。用于长期规划的战略任务。",
+    "description": "Q2象限描述"
+  },
+  "q3Title": {
+    "message": "Q3：不重要但紧急",
+    "description": "Q3象限标题"
+  },
+  "q3Desc": {
+    "message": "委托他人。可以由他人处理的干扰事项。",
+    "description": "Q3象限描述"
+  },
+  "q4Title": {
+    "message": "Q4：不重要且不紧急",
+    "description": "Q4象限标题"
+  },
+  "q4Desc": {
+    "message": "消除它。应该避免的时间浪费。",
+    "description": "Q4象限描述"
+  },
+  "confirm": {
+    "message": "确认",
+    "description": "确认按钮"
+  },
+  "settingsSaved": {
+    "message": "设置保存成功",
+    "description": "设置保存成功通知"
+  },
+  "settingsSaveFailed": {
+    "message": "设置保存失败",
+    "description": "设置保存失败通知"
+  },
+  "allTasksCleared": {
+    "message": "所有任务已清空",
+    "description": "所有任务已清空消息"
+  },
+  "settingsApplied": {
+    "message": "设置已应用",
+    "description": "设置已应用消息"
+  },
+  "taskMonitoringStarted": {
+    "message": "任务监控已启动",
+    "description": "任务监控已启动消息"
+  },
+  "taskMonitoringStopped": {
+    "message": "任务监控已停止",
+    "description": "任务监控已停止消息"
+  },
+  "taskEditProcessed": {
+    "message": "任务编辑已处理",
+    "description": "任务编辑已处理消息"
+  },
+  "taskAddProcessed": {
+    "message": "任务添加已处理",
+    "description": "任务添加已处理消息"
+  },
+  "taskDeleteProcessed": {
+    "message": "任务删除已处理",
+    "description": "任务删除已处理消息"
+  },
+  "unknownMessageType": {
+    "message": "未知消息类型",
+    "description": "未知消息类型错误"
+  },
+  "openTaskMatrix": {
+    "message": "打开 TaskMatrix Pro",
+    "description": "打开 TaskMatrix Pro 的命令描述"
+  },
+  "ready": {
+    "message": "就绪",
+    "description": "就绪状态消息"
+  },
+  "initializationFailed": {
+    "message": "初始化失败",
+    "description": "初始化失败状态消息"
+  },
+  "loading": {
+    "message": "加载中...",
+    "description": "加载状态消息"
+  },
+  "saving": {
+    "message": "保存中...",
+    "description": "保存状态消息"
+  },
+  "failedToGetFormData": {
+    "message": "获取表单数据失败",
+    "description": "无法获取表单数据时的错误消息"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "请输入任务标题",
+    "description": "任务标题为空时的警告消息"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "任务更新成功",
+    "description": "任务更新成功时的成功消息"
+  },
+  "taskAddedSuccessfully": {
+    "message": "任务添加成功",
+    "description": "任务添加成功时的成功消息"
+  },
+  "saveFailed": {
+    "message": "保存失败",
+    "description": "保存操作失败时的错误消息"
+  },
+  "taskNotFound": {
+    "message": "任务未找到",
+    "description": "任务未找到时的错误消息"
+  },
+  "failedToEditTask": {
+    "message": "编辑任务失败",
+    "description": "任务编辑失败时的错误消息"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "任务完成成功",
+    "description": "任务完成成功时的成功消息"
+  },
+  "failedToCompleteTask": {
+    "message": "完成任务失败",
+    "description": "任务完成失败时的错误消息"
+  },
+  "areYouSureDeleteTask": {
+    "message": "您确定要删除此任务吗？此操作无法撤销。",
+    "description": "删除任务确认消息"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "任务删除成功",
+    "description": "任务删除成功时的成功消息"
+  },
+  "failedToDeleteTask": {
+    "message": "删除任务失败",
+    "description": "任务删除失败时的错误消息"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "设置保存成功",
+    "description": "设置保存成功时的成功消息"
+  },
+  "failedToSaveSettings": {
+    "message": "保存设置失败",
+    "description": "设置保存失败时的错误消息"
+  },
+  "loadingDataFailed": {
+    "message": "加载数据失败",
+    "description": "数据加载失败时的错误消息"
+  },
+  "noTaskFound": {
+    "message": "未找到任务",
+    "description": "未找到任务时的空状态消息"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "点击加号图标添加您的第一个任务",
+    "description": "添加第一个任务的空状态说明"
+  },
+  "allCaughtUp": {
+    "message": "没有逾期任务！",
+    "description": "没有逾期任务时的空状态消息"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "没有逾期任务。保持一切井然有序，做得很好！",
+    "description": "没有逾期任务的空状态消息"
+  },
+  "noCompletedTasks": {
+    "message": "没有已完成的任务",
+    "description": "没有已完成任务时的空状态消息"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "双击任务并点击状态标签将其标记为已完成",
+    "description": "将任务标记为已完成的说明"
+  },
+  "noRejectedTasks": {
+    "message": "没有已拒绝的任务",
+    "description": "没有已拒绝任务时的空状态消息"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "双击任务并点击状态标签两次将其标记为已拒绝",
+    "description": "将任务标记为已拒绝的说明"
+  },
+  "task": {
+    "message": "任务：",
+    "description": "任务标签前缀"
+  },
+  "importance": {
+    "message": "重要性：",
+    "description": "重要性标签"
+  },
+  "noData": {
+    "message": "无数据",
+    "description": "图表无数据消息"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "数据不足，无法生成热力图",
+    "description": "热力图数据不足时的消息"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "任务数据不足，无法生成散点图",
+    "description": "散点图数据不足时的消息"
+  },
+  "bytes": {
+    "message": "字节",
+    "description": "字节单位"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "千字节单位"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "兆字节单位"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "千兆字节单位"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "太字节单位"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "在后台检查任务状态的频率",
+    "description": "任务状态检查频率的描述"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "在插件图标上显示紧急任务数量",
+    "description": "图标徽章设置的描述"
+  },
+  "displayTaskReminderInformation": {
+    "message": "悬停在图标上时显示任务提醒信息",
+    "description": "图标标题设置的描述"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "双击空白区域",
+    "description": "创建任务的说明"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "双击现有任务",
+    "description": "编辑任务的说明"
+  },
+  "hoverOverTask": {
+    "message": "悬停在任务上",
+    "description": "查看任务详情的说明"
+  },
+  "clickListIconForAllTasks": {
+    "message": "点击列表图标查看所有任务",
+    "description": "访问任务管理器的说明"
+  },
+  "clickChartIconForInsights": {
+    "message": "点击图表图标查看洞察",
+    "description": "访问分析报告的说明"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 艾森豪威尔任务矩阵",
+    "description": "艾森豪威尔任务矩阵部分标题"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1：重要且紧急",
+    "description": "Q1象限标题"
+  },
+  "doItNowCriticalTasks": {
+    "message": "立即执行。需要立即关注的关键任务。",
+    "description": "Q1象限描述"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2：重要但不紧急",
+    "description": "Q2象限标题"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "安排执行。用于长期规划的战略任务。",
+    "description": "Q2象限描述"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3：不重要但紧急",
+    "description": "Q3象限标题"
+  },
+  "delegateItInterruptions": {
+    "message": "委托他人。可以由他人处理的干扰。",
+    "description": "Q3象限描述"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4：不重要且不紧急",
+    "description": "Q4象限标题"
+  },
+  "eliminateItTimeWasters": {
+    "message": "消除它。应该避免的时间浪费。",
+    "description": "Q4象限描述"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "当任务剩余时间少于此时长时，触发提醒",
+    "description": "紧急提醒阈值设置的描述"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "当任务即将到期时，通过图标变化提醒您",
+    "description": "紧急提醒设置的描述"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "启用紧急任务提醒",
+    "description": "启用紧急任务提醒复选框标签"
+  },
+  "invalidDueDate": {
+    "message": "无效的截止日期",
+    "description": "无效截止日期的错误消息"
+  },
+  "dueAt": {
+    "message": "截止于",
+    "description": "特定日期截止任务的前缀"
+  },
+  "dueIn": {
+    "message": "剩余",
+    "description": "特定时间截止任务的前缀"
+  },
+  "completionRate": {
+    "message": "完成率",
+    "description": "完成率标签页标题"
+  },
+  "timeStatus": {
+    "message": "时间状态",
+    "description": "时间状态标签页标题"
+  },
+  "timeTrend": {
+    "message": "时间趋势",
+    "description": "时间趋势标签页标题"
+  },
+  "sourceCross": {
+    "message": "来源交叉",
+    "description": "来源交叉标签页标题"
+  },
+  "completionRateQuantity": {
+    "message": "完成率 - 数量",
+    "description": "完成率图表标题"
+  },
+  "taskSourceCompletionRate": {
+    "message": "任务来源 - 完成率",
+    "description": "任务来源完成率图表标题"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "时间 - 完成状态散点图",
+    "description": "时间完成状态散点图标题"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "周/月趋势",
+    "description": "周月趋势图表标题"
+  },
+  "weekly": {
+    "message": "周",
+    "description": "周期间按钮"
+  },
+  "monthly": {
+    "message": "月",
+    "description": "月期间按钮"
+  },
+  "source": {
+    "message": "来源",
+    "description": "来源表头"
+  },
+  "low": {
+    "message": "低 (0-20%)",
+    "description": "低完成率标签"
+  },
+  "mediumLow": {
+    "message": "中低 (20-50%)",
+    "description": "中低完成率标签"
+  },
+  "mediumHigh": {
+    "message": "中高 (50-80%)",
+    "description": "中高完成率标签"
+  },
+  "high": {
+    "message": "高 (80-100%)",
+    "description": "高完成率标签"
+  },
+  "taskCost": {
+    "message": "任务耗时（天）",
+    "description": "任务耗时轴标签"
+  },
+  "taskImportance": {
+    "message": "任务重要性",
+    "description": "任务重要性轴标签"
+  },
+  "taskCount": {
+    "message": "任务数量",
+    "description": "任务数量轴标签"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "象限任务时间统计（天）：",
+    "description": "象限任务时间统计标题"
+  },
+  "quadrant": {
+    "message": "象限",
+    "description": "象限表头"
+  },
+  "completedAvg": {
+    "message": "已完成（平均）",
+    "description": "已完成平均表头"
+  },
+  "completedMedian": {
+    "message": "已完成（中位数）",
+    "description": "已完成中位数表头"
+  },
+  "inProgressAvg": {
+    "message": "进行中（平均）",
+    "description": "进行中平均表头"
+  },
+  "inProgressMedian": {
+    "message": "进行中（中位数）",
+    "description": "进行中中位数表头"
+  },
+  "deepInsights": {
+    "message": "深度洞察",
+    "description": "深度洞察部分标题"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "目前没有足够的数据来生成洞察。",
+    "description": "洞察无数据消息"
+  },
+  "importantUrgent": {
+    "message": "重要且紧急",
+    "description": "Q1象限标签"
+  },
+  "importantNotUrgent": {
+    "message": "重要但不紧急",
+    "description": "Q2象限标签"
+  },
+  "notImportantNotUrgent": {
+    "message": "不重要且不紧急",
+    "description": "Q3象限标签"
+  },
+  "notImportantUrgent": {
+    "message": "不重要但紧急",
+    "description": "Q4象限标签"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2（重要但不紧急）象限任务完成率显著低于其他象限，反映了\"紧急优先于重要\"的执行偏差，可能导致长期战略目标延迟。",
+    "description": "关于Q2完成率较低的洞察"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3（不重要且不紧急）象限任务完成率过高，警惕\"无效忙碌\"——是否在琐碎任务上消耗过多精力，挤压核心任务时间。",
+    "description": "关于Q3完成率过高的洞察"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1（重要且紧急）象限任务占总任务的$percentage%，建议改进任务规划，提前处理重要任务以避免紧急情况。",
+    "description": "关于Q1任务占比高的洞察"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4（不重要但紧急）象限任务占总任务的$percentage%，审查这些低优先级但紧急任务的来源，优化应急响应流程。",
+    "description": "关于Q4任务占比高的洞察"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "\"$source\"任务在Q1（重要且紧急）象限完成率达到$q1Rate%，但在Q2（重要但不紧急）象限仅为$q2Rate%，表明任务执行优先级由\"外部压力\"驱动而非内部战略重点。",
+    "description": "关于来源任务Q1与Q2完成率的洞察"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "\"$source\"任务在Q4（不重要但紧急）象限完成率较低（$q4Rate%），需要确认\"临时任务\"是否存在优先级定义问题。",
+    "description": "关于Q4任务完成率低的洞察"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "\"$source\"任务高度集中在$quadrant（$quadrantName）象限，占比$percentage%。审查任务规划的合理性。",
+    "description": "关于任务集中在某一象限的洞察"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "\"$highSource\"在$highQuadrant象限完成率最高（$highRate%），而\"$lowSource\"在$lowQuadrant象限完成率最低（$lowRate%），显示不同任务类型的处理优先级存在明显差异。",
+    "description": "关于来源间完成率差异的洞察"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1（重要且紧急）象限有$percentage%的进行中任务耗时超过3天，表明核心任务可能存在资源不足或意外困难。考虑任务分解或额外支持。",
+    "description": "关于Q1进行中任务耗时过长的洞察"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Q4（不重要但紧急）象限已完成任务平均耗时$q4Time天，远超Q2（重要但不紧急）象限的$q2Time天，表明\"临时紧急任务\"过度占用资源。优化应急响应流程。",
+    "description": "关于Q4与Q2任务完成时间的洞察"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "进行中任务平均处理时间（$pendingTime天）显著高于已完成任务（$completedTime天）。关注长期卡住的任务，必要时调整策略或资源分配。",
+    "description": "关于进行中与已完成任务时间的洞察"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabel象限任务量从$from到$to $direction $rate%，显示显著波动。考虑关注任务分配平衡。",
+    "description": "关于任务量波动的洞察"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabel象限任务完成率呈现持续上升趋势，表明工作效率有所改善。",
+    "description": "关于完成率上升趋势的洞察"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabel象限任务完成率呈现持续下降趋势，需要关注执行效率问题。",
+    "description": "关于完成率下降趋势的洞察"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2（重要但不紧急）象限任务持续积累且完成率无改善，反映\"战略任务\"未纳入常规执行计划，存在\"拖延积累\"风险。",
+    "description": "关于Q2任务积累的洞察"
+  }
+}

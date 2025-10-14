@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Tasuta ülesannete haldur ja tööriist",
+    "description": "Rakenduse nimi"
+  },
+  "appDescription": {
+    "message": "Tasuta Chrome laiendus nutikatele ülesannetele. Kasutage võimsaid tööriistu ja kasutajasõbralikku liidest oma ülesannete visualiseerimiseks",
+    "description": "Rakenduse kirjeldus"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Rakenduse pealkiri"
+  },
+  "taskManager": {
+    "message": "Ülesannete haldur",
+    "description": "Ülesannete halduri nupu pealkiri"
+  },
+  "report": {
+    "message": "Aruanne",
+    "description": "Aruande nupu pealkiri"
+  },
+  "settings": {
+    "message": "Seaded",
+    "description": "Seadete nupu pealkiri"
+  },
+  "help": {
+    "message": "Abi",
+    "description": "Abi nupu pealkiri"
+  },
+  "addTask": {
+    "message": "Lisa ülesanne",
+    "description": "Ülesande lisamise nupu pealkiri"
+  },
+  "close": {
+    "message": "Sulge",
+    "description": "Sulge nupu tekst"
+  },
+  "editTask": {
+    "message": "Redigeeri ülesannet",
+    "description": "Ülesande redigeerimise modaalakna pealkiri"
+  },
+  "newTask": {
+    "message": "Uus",
+    "description": "Uue ülesande olek"
+  },
+  "taskTitle": {
+    "message": "Ülesande pealkiri *",
+    "description": "Ülesande pealkirja silt"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Sisesta ülesande pealkiri",
+    "description": "Ülesande pealkirja sisestusvälja kohatäide"
+  },
+  "taskDescription": {
+    "message": "Ülesande kirjeldus",
+    "description": "Ülesande kirjelduse silt"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Sisesta ülesande kirjeldus (valikuline)",
+    "description": "Ülesande kirjelduse sisestusvälja kohatäide"
+  },
+  "importanceLevel": {
+    "message": "Tähtsuse tase *",
+    "description": "Tähtsuse taseme silt"
+  },
+  "notImportant": {
+    "message": "Pole tähtis",
+    "description": "Pole tähtis silt"
+  },
+  "veryImportant": {
+    "message": "Väga tähtis",
+    "description": "Väga tähtis silt"
+  },
+  "dueDate": {
+    "message": "Tähtaeg *",
+    "description": "Tähtaja silt"
+  },
+  "taskCategory": {
+    "message": "Ülesande kategooria",
+    "description": "Ülesande kategooria silt"
+  },
+  "work": {
+    "message": "Töö",
+    "description": "Töö kategooria"
+  },
+  "personal": {
+    "message": "Isiklik",
+    "description": "Isiklik kategooria"
+  },
+  "study": {
+    "message": "Õppimine",
+    "description": "Õppimine kategooria"
+  },
+  "health": {
+    "message": "Tervis",
+    "description": "Tervis kategooria"
+  },
+  "other": {
+    "message": "Muu",
+    "description": "Muu kategooria"
+  },
+  "deleteTask": {
+    "message": "Kustuta ülesanne",
+    "description": "Ülesande kustutamise nupp"
+  },
+  "cancel": {
+    "message": "Tühista",
+    "description": "Tühista nupp"
+  },
+  "saveTask": {
+    "message": "Salvesta ülesanne",
+    "description": "Ülesande salvestamise nupp"
+  },
+  "doing": {
+    "message": "Töös",
+    "description": "Töös olek"
+  },
+  "overdue": {
+    "message": "Hilinenud",
+    "description": "Hilinenud olek"
+  },
+  "completed": {
+    "message": "Valmis",
+    "description": "Valmis olek"
+  },
+  "rejected": {
+    "message": "Tagasi lükatud",
+    "description": "Tagasi lükatud olek"
+  },
+  "pending": {
+    "message": "Ootel",
+    "description": "Ootel oleku silt"
+  },
+  "urgentTaskReminder": {
+    "message": "Kiireloomuliste ülesannete meeldetuletus",
+    "description": "Kiireloomuliste ülesannete meeldetuletuse sektsiooni pealkiri"
+  },
+  "enableUrgentReminder": {
+    "message": "Luba kiireloomuliste ülesannete meeldetuletus",
+    "description": "Kiireloomuliste ülesannete meeldetuletuse lubamise märkeruut"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Meenuta ikooni muutmisega kui ülesanne läheneb tähtaegale",
+    "description": "Kiireloomuliste ülesannete meeldetuletuse lubamise kirjeldus"
+  },
+  "reminderThreshold": {
+    "message": "Meeldetuletuse lävi (minutit)",
+    "description": "Meeldetuletuse läve silt"
+  },
+  "reminderThresholdDesc": {
+    "message": "Luba meeldetuletus kui ülesandele jääb vähem aega kui see kestus",
+    "description": "Meeldetuletuse läve kirjeldus"
+  },
+  "reminderInterval": {
+    "message": "Meeldetuletuse intervall (minutit)",
+    "description": "Meeldetuletuse intervalli silt"
+  },
+  "reminderIntervalDesc": {
+    "message": "Ülesannete oleku kontrollimise sagedus taustal",
+    "description": "Meeldetuletuse intervalli kirjeldus"
+  },
+  "iconReminder": {
+    "message": "Ikooni meeldetuletus",
+    "description": "Ikooni meeldetuletuse sektsiooni pealkiri"
+  },
+  "showIconBadge": {
+    "message": "Näita ikooni märki",
+    "description": "Ikooni märgi näitamise märkeruut"
+  },
+  "showIconBadgeDesc": {
+    "message": "Näita kiireloomuliste ülesannete arvu laienduse ikoonil",
+    "description": "Ikooni märgi näitamise kirjeldus"
+  },
+  "showIconTooltip": {
+    "message": "Näita ikooni tööriistakäsku",
+    "description": "Ikooni tööriistakäsu näitamise märkeruut"
+  },
+  "showIconTooltipDesc": {
+    "message": "Näita ülesannete meeldetuletuse teavet kui hiir on ikooni kohal",
+    "description": "Ikooni tööriistakäsu näitamise kirjeldus"
+  },
+  "save": {
+    "message": "Salvesta",
+    "description": "Salvesta nupp"
+  },
+  "quickStart": {
+    "message": "🚀 Kiire alustamine",
+    "description": "Kiire alustamise sektsiooni pealkiri"
+  },
+  "createTask": {
+    "message": "Loo ülesanne:",
+    "description": "Ülesande loomise juhend"
+  },
+  "createTaskDesc": {
+    "message": "Topeltklõps tühjal alal",
+    "description": "Ülesande loomise kirjeldus"
+  },
+  "editTaskDesc": {
+    "message": "Redigeeri ülesannet:",
+    "description": "Ülesande redigeerimise juhend"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Topeltklõps olemasoleval ülesandel",
+    "description": "Ülesande redigeerimise juhendi kirjeldus"
+  },
+  "viewDetails": {
+    "message": "Vaata üksikasju:",
+    "description": "Üksikasjade vaatamise juhend"
+  },
+  "viewDetailsDesc": {
+    "message": "Liiguta hiir ülesande kohale",
+    "description": "Üksikasjade vaatamise kirjeldus"
+  },
+  "taskManagerDesc": {
+    "message": "Ülesannete haldur:",
+    "description": "Ülesannete halduri juhend"
+  },
+  "taskManagerInstruction": {
+    "message": "Klõpsa nimekirja ikoonil et näha kõiki ülesandeid",
+    "description": "Ülesannete halduri juhendi kirjeldus"
+  },
+  "analysisReport": {
+    "message": "Analüüsi aruanne:",
+    "description": "Analüüsi aruande juhend"
+  },
+  "analysisReportDesc": {
+    "message": "Klõpsa graafiku ikoonil et näha ülevaateid",
+    "description": "Analüüsi aruande kirjeldus"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Eisenhoweri ülesannete maatriks",
+    "description": "Eisenhower maatriksi sektsiooni pealkiri"
+  },
+  "q1Title": {
+    "message": "Q1: Tähtis ja kiireloomuline",
+    "description": "Q1 kvadrandi pealkiri"
+  },
+  "q1Desc": {
+    "message": "Tee kohe. Kriitilised ülesanded mis vajavad kohest tähelepanu.",
+    "description": "Q1 kvadrandi kirjeldus"
+  },
+  "q2Title": {
+    "message": "Q2: Tähtis aga mitte kiireloomuline",
+    "description": "Q2 kvadrandi pealkiri"
+  },
+  "q2Desc": {
+    "message": "Planeeri aega. Strateegilised ülesanded pikaajalise planeerimise jaoks.",
+    "description": "Q2 kvadrandi kirjeldus"
+  },
+  "q3Title": {
+    "message": "Q3: Mitte tähtis aga kiireloomuline",
+    "description": "Q3 kvadrandi pealkiri"
+  },
+  "q3Desc": {
+    "message": "Delegeeri teistele. Katkestused mis saab teistega käsitleda.",
+    "description": "Q3 kvadrandi kirjeldus"
+  },
+  "q4Title": {
+    "message": "Q4: Mitte tähtis ega kiireloomuline",
+    "description": "Q4 kvadrandi pealkiri"
+  },
+  "q4Desc": {
+    "message": "Kõrvalda. Aja raiskamine mida tuleks vältida.",
+    "description": "Q4 kvadrandi kirjeldus"
+  },
+  "confirm": {
+    "message": "Kinnita",
+    "description": "Kinnita nupp"
+  },
+  "settingsSaved": {
+    "message": "Seaded salvestatud edukalt",
+    "description": "Seadete salvestamise teatis"
+  },
+  "settingsSaveFailed": {
+    "message": "Seadete salvestamine ebaõnnestus",
+    "description": "Seadete salvestamise veateatis"
+  },
+  "allTasksCleared": {
+    "message": "Kõik ülesanded kustutatud",
+    "description": "Kõigi ülesannete kustutamise sõnum"
+  },
+  "settingsApplied": {
+    "message": "Seaded rakendatud",
+    "description": "Seadete rakendamise sõnum"
+  },
+  "taskMonitoringStarted": {
+    "message": "Ülesannete jälgimine alustatud",
+    "description": "Ülesannete jälgimise alustamise sõnum"
+  },
+  "taskMonitoringStopped": {
+    "message": "Ülesannete jälgimine peatatud",
+    "description": "Ülesannete jälgimise peatamise sõnum"
+  },
+  "taskEditProcessed": {
+    "message": "Ülesande redigeerimine töödeldud",
+    "description": "Ülesande redigeerimise töötlemise sõnum"
+  },
+  "taskAddProcessed": {
+    "message": "Ülesande lisamine töödeldud",
+    "description": "Ülesande lisamise töötlemise sõnum"
+  },
+  "taskDeleteProcessed": {
+    "message": "Ülesande kustutamine töödeldud",
+    "description": "Ülesande kustutamise töötlemise sõnum"
+  },
+  "unknownMessageType": {
+    "message": "Tundmatu sõnumi tüüp",
+    "description": "Tundmatu sõnumi tüübi viga"
+  },
+  "openTaskMatrix": {
+    "message": "Ava TaskMatrix Pro",
+    "description": "TaskMatrix Pro avamise käsu kirjeldus"
+  },
+  "ready": {
+    "message": "Valmis",
+    "description": "Valmiduse sõnum"
+  },
+  "initializationFailed": {
+    "message": "Initsialiseerimine ebaõnnestus",
+    "description": "Initsialiseerimise veateatis"
+  },
+  "loading": {
+    "message": "Laadimine...",
+    "description": "Laadimise sõnum"
+  },
+  "saving": {
+    "message": "Salvestamine...",
+    "description": "Salvestamise sõnum"
+  },
+  "failedToGetFormData": {
+    "message": "Vormi andmete hankimine ebaõnnestus",
+    "description": "Vormi andmete hankimise veateatis"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Palun sisesta ülesande pealkiri",
+    "description": "Hoiatus kui ülesande pealkiri on tühi"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Ülesanne uuendatud edukalt",
+    "description": "Ülesande uuendamise õnnestumise sõnum"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Ülesanne lisatud edukalt",
+    "description": "Ülesande lisamise õnnestumise sõnum"
+  },
+  "saveFailed": {
+    "message": "Salvestamine ebaõnnestus",
+    "description": "Salvestamise veateatis"
+  },
+  "taskNotFound": {
+    "message": "Ülesannet ei leitud",
+    "description": "Veateatis kui ülesannet ei leita"
+  },
+  "failedToEditTask": {
+    "message": "Ülesande redigeerimine ebaõnnestus",
+    "description": "Ülesande redigeerimise veateatis"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Ülesanne lõpetatud edukalt",
+    "description": "Ülesande lõpetamise õnnestumise sõnum"
+  },
+  "failedToCompleteTask": {
+    "message": "Ülesande lõpetamine ebaõnnestus",
+    "description": "Ülesande lõpetamise veateatis"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Kas oled kindel, et soovid selle ülesande kustutada? Seda tegevust ei saa tagasi võtta.",
+    "description": "Ülesande kustutamise kinnitussõnum"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Ülesanne kustutatud edukalt",
+    "description": "Ülesande kustutamise õnnestumise sõnum"
+  },
+  "failedToDeleteTask": {
+    "message": "Ülesande kustutamine ebaõnnestus",
+    "description": "Ülesande kustutamise veateatis"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Seaded salvestatud edukalt",
+    "description": "Seadete salvestamise õnnestumise sõnum"
+  },
+  "failedToSaveSettings": {
+    "message": "Seadete salvestamine ebaõnnestus",
+    "description": "Seadete salvestamise veateatis"
+  },
+  "loadingDataFailed": {
+    "message": "Andmete laadimine ebaõnnestus",
+    "description": "Andmete laadimise veateatis"
+  },
+  "noTaskFound": {
+    "message": "Ülesannet ei leitud",
+    "description": "Tühja oleku sõnum kui ülesandeid ei leita"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Klõpsa pluss ikoonil et lisada oma esimene ülesanne",
+    "description": "Esimese ülesande lisamise juhend tühja oleku jaoks"
+  },
+  "allCaughtUp": {
+    "message": "Kõik ajakohane!",
+    "description": "Tühja oleku sõnum kui pole hilinenud ülesandeid"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Pole hilinenud ülesandeid. Suurepärane töö kõigi asjade korras hoidmisega!",
+    "description": "Tühja oleku sõnum kui pole hilinenud ülesandeid"
+  },
+  "noCompletedTasks": {
+    "message": "Pole lõpetatud ülesandeid",
+    "description": "Tühja oleku sõnum kui pole lõpetatud ülesandeid"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Topeltklõps ülesandel ja klõpsa oleku silti et märkida see lõpetatuks",
+    "description": "Ülesande märkimise lõpetatuks juhend"
+  },
+  "noRejectedTasks": {
+    "message": "Pole tagasi lükatud ülesandeid",
+    "description": "Tühja oleku sõnum kui pole tagasi lükatud ülesandeid"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Topeltklõps ülesandel ja topeltklõps oleku silti et märkida see tagasi lükatuks",
+    "description": "Ülesande märkimise tagasi lükatuks juhend"
+  },
+  "task": {
+    "message": "Ülesanne:",
+    "description": "Ülesande sildi eesliide"
+  },
+  "importance": {
+    "message": "Tähtsus:",
+    "description": "Tähtsuse silt"
+  },
+  "noData": {
+    "message": "Pole andmeid",
+    "description": "Sõnum kui graafikus pole andmeid"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Pole piisavalt andmeid soojuskaardi loomiseks",
+    "description": "Sõnum kui pole piisavalt andmeid soojuskaardile"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Pole piisavalt ülesannete andmeid hajuvusgraafiku loomiseks",
+    "description": "Sõnum kui pole piisavalt ülesannete andmeid hajuvusgraafikule"
+  },
+  "bytes": {
+    "message": "baiti",
+    "description": "Bait ühik"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Kilobait ühik"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Megabait ühik"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Gigabait ühik"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Terabait ühik"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Ülesannete oleku kontrollimise sagedus taustal",
+    "description": "Ülesannete oleku kontrollimise sageduse kirjeldus"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Näita kiireloomuliste ülesannete arvu laienduse ikoonil",
+    "description": "Ikooni märgi seadistuse kirjeldus"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Näita ülesannete meeldetuletuse teavet kui hiir on ikooni kohal",
+    "description": "Ikooni pealkirja seadistuse kirjeldus"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Topeltklõps tühjal alal",
+    "description": "Ülesande loomise juhend"
+  },
+  "editTaskInstruction": {
+    "message": "Redigeeri ülesannet:",
+    "description": "Ülesande redigeerimise juhend"
+  },
+  "hoverOverTask": {
+    "message": "Liiguta hiir ülesande kohale",
+    "description": "Ülesande üksikasjade näitamise juhend"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Klõpsa nimekirja ikoonil et näha kõiki ülesandeid",
+    "description": "Ülesannete haldurisse pääsemise juhend"
+  },
+  "clickChartIconForInsights": {
+    "message": "Klõpsa graafiku ikoonil et näha ülevaateid",
+    "description": "Analüüsi aruandesse pääsemise juhend"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Eisenhoweri ülesannete maatriks",
+    "description": "Eisenhoweri ülesannete maatriksi sektsiooni pealkiri"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Tähtis ja kiireloomuline",
+    "description": "Q1 kvadrandi pealkiri"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Tee kohe. Kriitilised ülesanded mis vajavad kohest tähelepanu.",
+    "description": "Q1 kvadrandi kirjeldus"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Tähtis aga mitte kiireloomuline",
+    "description": "Q2 kvadrandi pealkiri"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Planeeri aega. Strateegilised ülesanded pikaajalise planeerimise jaoks.",
+    "description": "Q2 kvadrandi kirjeldus"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Mitte tähtis aga kiireloomuline",
+    "description": "Q3 kvadrandi pealkiri"
+  },
+  "delegateItInterruptions": {
+    "message": "Delegeeri teistele. Katkestused mis saab teistega käsitleda.",
+    "description": "Q3 kvadrandi kirjeldus"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Mitte tähtis ega kiireloomuline",
+    "description": "Q4 kvadrandi pealkiri"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Kõrvalda. Aja raiskamine mida tuleks vältida.",
+    "description": "Q4 kvadrandi kirjeldus"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Luba meeldetuletus kui ülesandele jääb vähem aega kui see kestus",
+    "description": "Kiireloomulise meeldetuletuse läve seadistuse kirjeldus"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Meenuta ikooni muutmisega kui ülesanne läheneb tähtaegale",
+    "description": "Kiireloomulise meeldetuletuse seadistuse kirjeldus"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Luba kiireloomuliste ülesannete meeldetuletus",
+    "description": "Kiireloomuliste ülesannete meeldetuletuse lubamise märkeruudu silt"
+  },
+  "invalidDueDate": {
+    "message": "Vigane tähtaeg",
+    "description": "Vigase tähtaja veateatis"
+  },
+  "dueAt": {
+    "message": "Tähtaeg",
+    "description": "Eesliide ülesannetele mis lõpevad kindlal kuupäeval"
+  },
+  "dueIn": {
+    "message": "Tähtaeg",
+    "description": "Eesliide ülesannetele mis lõpevad kindlas ajas"
+  },
+  "completionRate": {
+    "message": "Lõpetamise määr",
+    "description": "Lõpetamise määra vahekaardi pealkiri"
+  },
+  "timeStatus": {
+    "message": "Aeg-Olek",
+    "description": "Aeg-olek vahekaardi pealkiri"
+  },
+  "timeTrend": {
+    "message": "Aja trend",
+    "description": "Aja trendi vahekaardi pealkiri"
+  },
+  "sourceCross": {
+    "message": "Allikas-Rist",
+    "description": "Allikas-rist vahekaardi pealkiri"
+  },
+  "completionRateQuantity": {
+    "message": "Lõpetamise määr - Kogus",
+    "description": "Lõpetamise määra graafiku pealkiri"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Ülesande allikas - Lõpetamise määr",
+    "description": "Ülesande allika lõpetamise määra graafiku pealkiri"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Aeg - Lõpetamise oleku hajuvusgraafik",
+    "description": "Aja-lõpetamise oleku hajuvusgraafiku pealkiri"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Nädalane/kuu trend",
+    "description": "Nädalase/kuu trendi graafiku pealkiri"
+  },
+  "weekly": {
+    "message": "Nädalane",
+    "description": "Nädalase perioodi nupp"
+  },
+  "monthly": {
+    "message": "Kuu",
+    "description": "Kuu perioodi nupp"
+  },
+  "source": {
+    "message": "Allikas",
+    "description": "Allika tabeli pealkiri"
+  },
+  "low": {
+    "message": "Madal (0-20%)",
+    "description": "Madala lõpetamise määra silt"
+  },
+  "mediumLow": {
+    "message": "Keskmine-madal (20-50%)",
+    "description": "Keskmise-madala lõpetamise määra silt"
+  },
+  "mediumHigh": {
+    "message": "Keskmine-kõrge (50-80%)",
+    "description": "Keskmise-kõrge lõpetamise määra silt"
+  },
+  "high": {
+    "message": "Kõrge (80-100%)",
+    "description": "Kõrge lõpetamise määra silt"
+  },
+  "taskCost": {
+    "message": "Ülesande maksumus (päeva)",
+    "description": "Ülesande maksumuse telje silt"
+  },
+  "taskImportance": {
+    "message": "Ülesande tähtsus",
+    "description": "Ülesande tähtsuse telje silt"
+  },
+  "taskCount": {
+    "message": "Ülesannete arv",
+    "description": "Ülesannete arvu telje silt"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Kvadrandi ülesannete aja statistika (päeva):",
+    "description": "Kvadrandi ülesannete aja statistika pealkiri"
+  },
+  "quadrant": {
+    "message": "Kvadrand",
+    "description": "Kvadrandi tabeli pealkiri"
+  },
+  "completedAvg": {
+    "message": "Lõpetatud (keskmine)",
+    "description": "Lõpetatud keskmise tabeli pealkiri"
+  },
+  "completedMedian": {
+    "message": "Lõpetatud (mediaan)",
+    "description": "Lõpetatud mediaani tabeli pealkiri"
+  },
+  "inProgressAvg": {
+    "message": "Töös (keskmine)",
+    "description": "Töös keskmise tabeli pealkiri"
+  },
+  "inProgressMedian": {
+    "message": "Töös (mediaan)",
+    "description": "Töös mediaani tabeli pealkiri"
+  },
+  "deepInsights": {
+    "message": "Sügavad ülevaated",
+    "description": "Sügavate ülevaadete sektsiooni pealkiri"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Praegu pole piisavalt andmeid ülevaadete loomiseks.",
+    "description": "Sõnum kui pole andmeid ülevaadetele"
+  },
+  "importantUrgent": {
+    "message": "Tähtis ja kiireloomuline",
+    "description": "Q1 kvadrandi silt"
+  },
+  "importantNotUrgent": {
+    "message": "Tähtis aga mitte kiireloomuline",
+    "description": "Q2 kvadrandi silt"
+  },
+  "notImportantNotUrgent": {
+    "message": "Mitte tähtis ega kiireloomuline",
+    "description": "Q3 kvadrandi silt"
+  },
+  "notImportantUrgent": {
+    "message": "Mitte tähtis aga kiireloomuline",
+    "description": "Q4 kvadrandi silt"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2 kvadrandi (tähtis aga mitte kiireloomuline) ülesannete lõpetamise määr on märkimisväärselt madalam kui teistel kvadranditel, peegeldades täitva eelarvamust «kiireloomuline tähtsam kui tähtis», mis võib viia pikaajaliste strateegiliste eesmärkide viivitamiseni.",
+    "description": "Ülevaade Q2 madalamast lõpetamise määrast"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3 kvadrandi (mitte tähtis ega kiireloomuline) ülesannete lõpetamise määr on liiga kõrge, palun pöörake tähelepanu «ebatõhusale tööhõivele» - kui liiga palju energiat kulutatakse tühisetele ülesannetele, see surub kokku aega põhiülesannetele.",
+    "description": "Ülevaade Q3 liiga kõrgest lõpetamise määrast"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1 kvadrandi (tähtis ja kiireloomuline) ülesanded moodustavad $percentage% kõigist ülesannetest, näidates ülesannete planeerimise paranemist, tähtsate ülesannete varajane käsitlemine kiireloomuliste olukordade vältimiseks.",
+    "description": "Ülevaade Q1 kõrgest ülesannete protsendist"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4 kvadrandi (mitte tähtis aga kiireloomuline) ülesanded moodustavad $percentage% kõigist ülesannetest, palun vaadake üle nende madala prioriteediga aga kiireloomuliste ülesannete allikad, optimeerige hädaolukordade vastamise protsess.",
+    "description": "Ülevaade Q4 kõrgest ülesannete protsendist"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "«$source» ülesanded saavutavad $q1Rate% lõpetamise määra Q1-s (tähtis ja kiireloomuline), aga ainult $q2Rate% Q2-s (tähtis aga mitte kiireloomuline), näidates et ülesannete täitmise prioriteet on juhitud «välise survega», mitte sisemise strateegilise fookusega.",
+    "description": "Ülevaade allika ülesannete Q1 vs Q2 lõpetamise määrast"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "«$source» ülesannetel on madal lõpetamise määr ($q4Rate%) Q4-s (mitte tähtis aga kiireloomuline), tuleb kinnitada kas on probleem «ajutiste ülesannete» prioriteedi määratlemisega.",
+    "description": "Ülevaade Q4 ülesannete madalast lõpetamise määrast"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "«$source» on väga kontsentreeritud $quadrant kvandrandis ($quadrantName), moodustades $percentage%. Palun vaadake üle ülesannete planeerimise ratsionaalsus.",
+    "description": "Ülevaade ülesannete kõrgest kontsentreerumisest ühte kvadrandi"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "«$highSource» on kõrgeim lõpetamise määr ($highRate%) $highQuadrant-s, samas kui «$lowSource» on madalaim ($lowRate%) $lowQuadrant-s, näidates selget erinevust erinevate ülesannete tüüpide töötlemise prioriteetides.",
+    "description": "Ülevaade allikate vahelisest lõpetamise määra erinevusest"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1-l (tähtis ja kiireloomuline) on $percentage% ootel ülesandeid mis võtavad üle 3 päeva, näidates võimalikku ressursside puudust või ootamatuid raskusi põhiülesannetega. Palun kaaluge ülesande jagamist või täiendavat tuge.",
+    "description": "Ülevaade Q1 ootel ülesannetest kõrge kulutatud ajaga"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Q4 (mitte tähtis aga kiireloomuline) lõpetatud ülesannete keskmine lõpetamise aeg on $q4Time päeva, ületades märkimisväärselt Q2 $q2Time päeva (tähtis aga mitte kiireloomuline), näidates et «ajutised kiireloomulised ülesanded» võtavad liiga palju ressursse. Palun optimeerige hädaolukordade vastamise protsess.",
+    "description": "Ülevaade Q4 vs Q2 ülesannete lõpetamise ajast"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Ootel ülesannete keskmine töötlemise aeg ($pendingTime päeva) on märkimisväärselt kõrgem kui lõpetatud ülesannete ($completedTime päeva). Palun keskenduge ülesannetele mis jäävad kauaks ootele ja kohandage strateegiat või ressursside jaotust vastavalt vajadusele.",
+    "description": "Ülevaade ootel vs lõpetatud ülesannete ajast"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabel ülesannete maht kõigub $from-st $to-sse $direction $rate%, näidates märkimisväärseid kõikumisi. Palun kaaluge keskendumist ülesannete jaotuse tasakaalule.",
+    "description": "Ülevaade kvadrandi ülesannete mahu kõikumisest"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabel ülesannete lõpetamise määr näitab püsivat ülespoole trendi, näidates töötegevuse paranemist.",
+    "description": "Ülevaade lõpetamise määra ülespoole trendist"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabel ülesannete lõpetamise määr näitab püsivat allapoole trendi, mis vajab tähelepanu täitva tegevuse probleemidele.",
+    "description": "Ülevaade lõpetamise määra allapoole trendist"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2 ülesanded (tähtis aga mitte kiireloomuline) jätkavad kuhjumist ilma lõpetamise määra paranemiseta, peegeldades et «strateegilised ülesanded» pole integreeritud tavalisse täitmise plaanisse, toomades riski «viivituste kuhjumisest».",
+    "description": "Ülevaade Q2 ülesannete kuhjumisest"
+  }
+}

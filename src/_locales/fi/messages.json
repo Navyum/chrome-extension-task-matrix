@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Ilmainen tehtävien hallinta ja työkalu",
+    "description": "Sovelluksen nimi"
+  },
+  "appDescription": {
+    "message": "Ilmainen Chrome-laajennus älykkäille tehtäville. Käytä tehokkaita työkaluja ja käyttäjäystävällistä käyttöliittymää tehtäviesi visualisointiin",
+    "description": "Sovelluksen kuvaus"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Sovelluksen otsikko"
+  },
+  "taskManager": {
+    "message": "Tehtävien hallinta",
+    "description": "Tehtävien hallinta -painikkeen otsikko"
+  },
+  "report": {
+    "message": "Raportti",
+    "description": "Raportti-painikkeen otsikko"
+  },
+  "settings": {
+    "message": "Asetukset",
+    "description": "Asetukset-painikkeen otsikko"
+  },
+  "help": {
+    "message": "Ohje",
+    "description": "Ohje-painikkeen otsikko"
+  },
+  "addTask": {
+    "message": "Lisää tehtävä",
+    "description": "Tehtävän lisäämisen painikkeen otsikko"
+  },
+  "close": {
+    "message": "Sulje",
+    "description": "Sulje-painikkeen teksti"
+  },
+  "editTask": {
+    "message": "Muokkaa tehtävää",
+    "description": "Tehtävän muokkausmodaalin otsikko"
+  },
+  "newTask": {
+    "message": "Uusi",
+    "description": "Uuden tehtävän tila"
+  },
+  "taskTitle": {
+    "message": "Tehtävän otsikko *",
+    "description": "Tehtävän otsikon etiketti"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Syötä tehtävän otsikko",
+    "description": "Tehtävän otsikon syöttökentän paikkamerkki"
+  },
+  "taskDescription": {
+    "message": "Tehtävän kuvaus",
+    "description": "Tehtävän kuvauksen etiketti"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Syötä tehtävän kuvaus (valinnainen)",
+    "description": "Tehtävän kuvauksen syöttökentän paikkamerkki"
+  },
+  "importanceLevel": {
+    "message": "Tärkeysaste *",
+    "description": "Tärkeysasteen etiketti"
+  },
+  "notImportant": {
+    "message": "Ei tärkeä",
+    "description": "Ei tärkeä -etiketti"
+  },
+  "veryImportant": {
+    "message": "Erittäin tärkeä",
+    "description": "Erittäin tärkeä -etiketti"
+  },
+  "dueDate": {
+    "message": "Määräaika *",
+    "description": "Määräajan etiketti"
+  },
+  "taskCategory": {
+    "message": "Tehtävän kategoria",
+    "description": "Tehtävän kategorian etiketti"
+  },
+  "work": {
+    "message": "Työ",
+    "description": "Työ-kategoria"
+  },
+  "personal": {
+    "message": "Henkilökohtainen",
+    "description": "Henkilökohtainen-kategoria"
+  },
+  "study": {
+    "message": "Opiskelu",
+    "description": "Opiskelu-kategoria"
+  },
+  "health": {
+    "message": "Terveys",
+    "description": "Terveys-kategoria"
+  },
+  "other": {
+    "message": "Muu",
+    "description": "Muu-kategoria"
+  },
+  "deleteTask": {
+    "message": "Poista tehtävä",
+    "description": "Tehtävän poistamisen painike"
+  },
+  "cancel": {
+    "message": "Peruuta",
+    "description": "Peruuta-painike"
+  },
+  "saveTask": {
+    "message": "Tallenna tehtävä",
+    "description": "Tehtävän tallentamisen painike"
+  },
+  "doing": {
+    "message": "Käynnissä",
+    "description": "Käynnissä-tila"
+  },
+  "overdue": {
+    "message": "Myöhässä",
+    "description": "Myöhässä-tila"
+  },
+  "completed": {
+    "message": "Valmis",
+    "description": "Valmis-tila"
+  },
+  "rejected": {
+    "message": "Hylätty",
+    "description": "Hylätty-tila"
+  },
+  "pending": {
+    "message": "Odottaa",
+    "description": "Odottaa-tilan etiketti"
+  },
+  "urgentTaskReminder": {
+    "message": "Kiireellisten tehtävien muistutus",
+    "description": "Kiireellisten tehtävien muistutuksen osion otsikko"
+  },
+  "enableUrgentReminder": {
+    "message": "Ota käyttöön kiireellisten tehtävien muistutus",
+    "description": "Kiireellisten tehtävien muistutuksen ottamisen käyttöön -valintaruutu"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Muistuta kuvakkeen muuttamalla kun tehtävä lähestyy määräaikaa",
+    "description": "Kiireellisten tehtävien muistutuksen ottamisen käyttöön -kuvaus"
+  },
+  "reminderThreshold": {
+    "message": "Muistutuksen kynnys (minuuttia)",
+    "description": "Muistutuksen kynnyksen etiketti"
+  },
+  "reminderThresholdDesc": {
+    "message": "Ota käyttöön muistutus kun tehtävään on jäljellä vähemmän aikaa kuin tämä kesto",
+    "description": "Muistutuksen kynnyksen kuvaus"
+  },
+  "reminderInterval": {
+    "message": "Muistutuksen väli (minuuttia)",
+    "description": "Muistutuksen välin etiketti"
+  },
+  "reminderIntervalDesc": {
+    "message": "Tehtävien tilan tarkistuksen taajuus taustalla",
+    "description": "Muistutuksen välin kuvaus"
+  },
+  "iconReminder": {
+    "message": "Kuvakkeen muistutus",
+    "description": "Kuvakkeen muistutuksen osion otsikko"
+  },
+  "showIconBadge": {
+    "message": "Näytä kuvakkeen merkki",
+    "description": "Kuvakkeen merkin näyttämisen valintaruutu"
+  },
+  "showIconBadgeDesc": {
+    "message": "Näytä kiireellisten tehtävien määrä laajennuksen kuvakkeessa",
+    "description": "Kuvakkeen merkin näyttämisen kuvaus"
+  },
+  "showIconTooltip": {
+    "message": "Näytä kuvakkeen työkaluvihje",
+    "description": "Kuvakkeen työkaluvihjeen näyttämisen valintaruutu"
+  },
+  "showIconTooltipDesc": {
+    "message": "Näytä tehtävien muistutustiedot kun hiiri on kuvakkeen päällä",
+    "description": "Kuvakkeen työkaluvihjeen näyttämisen kuvaus"
+  },
+  "save": {
+    "message": "Tallenna",
+    "description": "Tallenna-painike"
+  },
+  "quickStart": {
+    "message": "🚀 Pika-aloitus",
+    "description": "Pika-aloituksen osion otsikko"
+  },
+  "createTask": {
+    "message": "Luo tehtävä:",
+    "description": "Tehtävän luomisen ohje"
+  },
+  "createTaskDesc": {
+    "message": "Kaksoisklikkaa tyhjää aluetta",
+    "description": "Tehtävän luomisen kuvaus"
+  },
+  "editTaskDesc": {
+    "message": "Muokkaa tehtävää:",
+    "description": "Tehtävän muokkauksen ohje"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Kaksoisklikkaa olemassa olevaa tehtävää",
+    "description": "Tehtävän muokkausohjeen kuvaus"
+  },
+  "viewDetails": {
+    "message": "Näytä yksityiskohdat:",
+    "description": "Yksityiskohtien näyttämisen ohje"
+  },
+  "viewDetailsDesc": {
+    "message": "Vie hiiri tehtävän päälle",
+    "description": "Yksityiskohtien näyttämisen kuvaus"
+  },
+  "taskManagerDesc": {
+    "message": "Tehtävien hallinta:",
+    "description": "Tehtävien hallinnan ohje"
+  },
+  "taskManagerInstruction": {
+    "message": "Klikkaa listan kuvaketta nähdäksesi kaikki tehtävät",
+    "description": "Tehtävien hallinnan ohjeen kuvaus"
+  },
+  "analysisReport": {
+    "message": "Analyysiraportti:",
+    "description": "Analyysiraportin ohje"
+  },
+  "analysisReportDesc": {
+    "message": "Klikkaa kaavion kuvaketta nähdäksesi oivalluksia",
+    "description": "Analyysiraportin kuvaus"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Eisenhowerin tehtävämatriisi",
+    "description": "Eisenhower-matriisin osion otsikko"
+  },
+  "q1Title": {
+    "message": "Q1: Tärkeä ja kiireellinen",
+    "description": "Q1-kvadrantin otsikko"
+  },
+  "q1Desc": {
+    "message": "Tee nyt. Kriittiset tehtävät jotka vaativat välitöntä huomiota.",
+    "description": "Q1-kvadrantin kuvaus"
+  },
+  "q2Title": {
+    "message": "Q2: Tärkeä mutta ei kiireellinen",
+    "description": "Q2-kvadrantin otsikko"
+  },
+  "q2Desc": {
+    "message": "Ajoita aikaa. Strategiset tehtävät pitkän aikavälin suunnittelulle.",
+    "description": "Q2-kvadrantin kuvaus"
+  },
+  "q3Title": {
+    "message": "Q3: Ei tärkeä mutta kiireellinen",
+    "description": "Q3-kvadrantin otsikko"
+  },
+  "q3Desc": {
+    "message": "Delegoi muille. Keskeytykset jotka voidaan hoitaa muilla.",
+    "description": "Q3-kvadrantin kuvaus"
+  },
+  "q4Title": {
+    "message": "Q4: Ei tärkeä eikä kiireellinen",
+    "description": "Q4-kvadrantin otsikko"
+  },
+  "q4Desc": {
+    "message": "Poista. Ajanhukkaa jota pitäisi välttää.",
+    "description": "Q4-kvadrantin kuvaus"
+  },
+  "confirm": {
+    "message": "Vahvista",
+    "description": "Vahvista-painike"
+  },
+  "settingsSaved": {
+    "message": "Asetukset tallennettu onnistuneesti",
+    "description": "Asetusten tallentamisen ilmoitus"
+  },
+  "settingsSaveFailed": {
+    "message": "Asetusten tallentaminen epäonnistui",
+    "description": "Asetusten tallentamisen virheilmoitus"
+  },
+  "allTasksCleared": {
+    "message": "Kaikki tehtävät tyhjennetty",
+    "description": "Kaikkien tehtävien tyhjentämisen viesti"
+  },
+  "settingsApplied": {
+    "message": "Asetukset sovellettu",
+    "description": "Asetusten soveltamisen viesti"
+  },
+  "taskMonitoringStarted": {
+    "message": "Tehtävien seuranta aloitettu",
+    "description": "Tehtävien seurannan aloittamisen viesti"
+  },
+  "taskMonitoringStopped": {
+    "message": "Tehtävien seuranta pysähtyi",
+    "description": "Tehtävien seurannan pysähtymisen viesti"
+  },
+  "taskEditProcessed": {
+    "message": "Tehtävän muokkaus käsitelty",
+    "description": "Tehtävän muokkauksen käsittelyn viesti"
+  },
+  "taskAddProcessed": {
+    "message": "Tehtävän lisääminen käsitelty",
+    "description": "Tehtävän lisäämisen käsittelyn viesti"
+  },
+  "taskDeleteProcessed": {
+    "message": "Tehtävän poistaminen käsitelty",
+    "description": "Tehtävän poistamisen käsittelyn viesti"
+  },
+  "unknownMessageType": {
+    "message": "Tuntematon viestityyppi",
+    "description": "Tuntemattoman viestityypin virhe"
+  },
+  "openTaskMatrix": {
+    "message": "Avaa TaskMatrix Pro",
+    "description": "TaskMatrix Pron avaamiskomennon kuvaus"
+  },
+  "ready": {
+    "message": "Valmis",
+    "description": "Valmiuden viesti"
+  },
+  "initializationFailed": {
+    "message": "Alustus epäonnistui",
+    "description": "Alustuksen virheviesti"
+  },
+  "loading": {
+    "message": "Ladataan...",
+    "description": "Latauksen viesti"
+  },
+  "saving": {
+    "message": "Tallennetaan...",
+    "description": "Tallentamisen viesti"
+  },
+  "failedToGetFormData": {
+    "message": "Lomakkeen tietojen haku epäonnistui",
+    "description": "Lomakkeen tietojen haun virheviesti"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Ole hyvä ja syötä tehtävän otsikko",
+    "description": "Varoitus kun tehtävän otsikko on tyhjä"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Tehtävä päivitetty onnistuneesti",
+    "description": "Tehtävän päivityksen onnistumisviesti"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Tehtävä lisätty onnistuneesti",
+    "description": "Tehtävän lisäämisen onnistumisviesti"
+  },
+  "saveFailed": {
+    "message": "Tallentaminen epäonnistui",
+    "description": "Tallentamisen virheviesti"
+  },
+  "taskNotFound": {
+    "message": "Tehtävää ei löytynyt",
+    "description": "Virheviesti kun tehtävää ei löydy"
+  },
+  "failedToEditTask": {
+    "message": "Tehtävän muokkaus epäonnistui",
+    "description": "Tehtävän muokkauksen virheviesti"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Tehtävä valmistui onnistuneesti",
+    "description": "Tehtävän valmistumisen onnistumisviesti"
+  },
+  "failedToCompleteTask": {
+    "message": "Tehtävän valmistaminen epäonnistui",
+    "description": "Tehtävän valmistamisen virheviesti"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Oletko varma että haluat poistaa tämän tehtävän? Tätä toimintoa ei voi peruuttaa.",
+    "description": "Tehtävän poistamisen vahvistusviesti"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Tehtävä poistettu onnistuneesti",
+    "description": "Tehtävän poistamisen onnistumisviesti"
+  },
+  "failedToDeleteTask": {
+    "message": "Tehtävän poistaminen epäonnistui",
+    "description": "Tehtävän poistamisen virheviesti"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Asetukset tallennettu onnistuneesti",
+    "description": "Asetusten tallentamisen onnistumisviesti"
+  },
+  "failedToSaveSettings": {
+    "message": "Asetusten tallentaminen epäonnistui",
+    "description": "Asetusten tallentamisen virheviesti"
+  },
+  "loadingDataFailed": {
+    "message": "Tietojen lataaminen epäonnistui",
+    "description": "Tietojen lataamisen virheviesti"
+  },
+  "noTaskFound": {
+    "message": "Tehtävää ei löytynyt",
+    "description": "Tyhjän tilan viesti kun tehtäviä ei löydy"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Klikkaa plus-kuvaketta lisätäksesi ensimmäinen tehtäväsi",
+    "description": "Ensimmäisen tehtävän lisäämisen ohje tyhjälle tilalle"
+  },
+  "allCaughtUp": {
+    "message": "Kaikki ajan tasalla!",
+    "description": "Tyhjän tilan viesti kun ei ole myöhässä olevia tehtäviä"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Ei myöhässä olevia tehtäviä. Erinomaista työtä pitämällä kaikki kunnossa!",
+    "description": "Tyhjän tilan viesti kun ei ole myöhässä olevia tehtäviä"
+  },
+  "noCompletedTasks": {
+    "message": "Ei valmiita tehtäviä",
+    "description": "Tyhjän tilan viesti kun ei ole valmiita tehtäviä"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Kaksoisklikkaa tehtävää ja klikkaa tilan etikettiä merkitäksesi sen valmiiksi",
+    "description": "Tehtävän merkitsemisen valmiiksi -ohje"
+  },
+  "noRejectedTasks": {
+    "message": "Ei hylättyjä tehtäviä",
+    "description": "Tyhjän tilan viesti kun ei ole hylättyjä tehtäviä"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Kaksoisklikkaa tehtävää ja klikkaa tilan etikettiä kahdesti merkitäksesi sen hylätyksi",
+    "description": "Tehtävän merkitsemisen hylätyksi -ohje"
+  },
+  "task": {
+    "message": "Tehtävä:",
+    "description": "Tehtävän etiketin etuliite"
+  },
+  "importance": {
+    "message": "Tärkeys:",
+    "description": "Tärkeyden etiketti"
+  },
+  "noData": {
+    "message": "Ei tietoja",
+    "description": "Viesti kun kaaviossa ei ole tietoja"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Ei tarpeeksi tietoja lämpökartan luomiseen",
+    "description": "Viesti kun ei ole tarpeeksi tietoja lämpökartalle"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Ei tarpeeksi tehtävätietoja sirontakaavion luomiseen",
+    "description": "Viesti kun ei ole tarpeeksi tehtävätietoja sirontakaaviolle"
+  },
+  "bytes": {
+    "message": "tavua",
+    "description": "Tavu-yksikkö"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Kilotavu-yksikkö"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Megatavu-yksikkö"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Gigatavu-yksikkö"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Teratavu-yksikkö"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Tehtävien tilan tarkistuksen taajuus taustalla",
+    "description": "Tehtävien tilan tarkistuksen taajuuden kuvaus"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Näytä kiireellisten tehtävien määrä laajennuksen kuvakkeessa",
+    "description": "Kuvakkeen merkin asetuksen kuvaus"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Näytä tehtävien muistutustiedot kun hiiri on kuvakkeen päällä",
+    "description": "Kuvakkeen otsikon asetuksen kuvaus"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Kaksoisklikkaa tyhjää aluetta",
+    "description": "Tehtävän luomisen ohje"
+  },
+  "editTaskInstruction": {
+    "message": "Muokkaa tehtävää:",
+    "description": "Tehtävän muokkauksen ohje"
+  },
+  "hoverOverTask": {
+    "message": "Vie hiiri tehtävän päälle",
+    "description": "Tehtävän yksityiskohtien näyttämisen ohje"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Klikkaa listan kuvaketta nähdäksesi kaikki tehtävät",
+    "description": "Tehtävien hallintaan pääsyn ohje"
+  },
+  "clickChartIconForInsights": {
+    "message": "Klikkaa kaavion kuvaketta nähdäksesi oivalluksia",
+    "description": "Analyysiraporttiin pääsyn ohje"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Eisenhowerin tehtävämatriisi",
+    "description": "Eisenhowerin tehtävämatriisin osion otsikko"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Tärkeä ja kiireellinen",
+    "description": "Q1-kvadrantin otsikko"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Tee nyt. Kriittiset tehtävät jotka vaativat välitöntä huomiota.",
+    "description": "Q1-kvadrantin kuvaus"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Tärkeä mutta ei kiireellinen",
+    "description": "Q2-kvadrantin otsikko"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Ajoita aikaa. Strategiset tehtävät pitkän aikavälin suunnittelulle.",
+    "description": "Q2-kvadrantin kuvaus"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Ei tärkeä mutta kiireellinen",
+    "description": "Q3-kvadrantin otsikko"
+  },
+  "delegateItInterruptions": {
+    "message": "Delegoi muille. Keskeytykset jotka voidaan hoitaa muilla.",
+    "description": "Q3-kvadrantin kuvaus"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Ei tärkeä eikä kiireellinen",
+    "description": "Q4-kvadrantin otsikko"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Poista. Ajanhukkaa jota pitäisi välttää.",
+    "description": "Q4-kvadrantin kuvaus"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Ota käyttöön muistutus kun tehtävään on jäljellä vähemmän aikaa kuin tämä kesto",
+    "description": "Kiireellisen muistutuksen kynnyksen asetuksen kuvaus"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Muistuta kuvakkeen muuttamalla kun tehtävä lähestyy määräaikaa",
+    "description": "Kiireellisen muistutuksen asetuksen kuvaus"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Ota käyttöön kiireellisten tehtävien muistutus",
+    "description": "Kiireellisten tehtävien muistutuksen ottamisen käyttöön -valintaruudun etiketti"
+  },
+  "invalidDueDate": {
+    "message": "Virheellinen määräaika",
+    "description": "Virheellisen määräajan virheviesti"
+  },
+  "dueAt": {
+    "message": "Määräaika",
+    "description": "Etuliite tehtäville jotka menevät erääntymään tiettynä päivänä"
+  },
+  "dueIn": {
+    "message": "Määräaika",
+    "description": "Etuliite tehtäville jotka menevät erääntymään tietyssä ajassa"
+  },
+  "completionRate": {
+    "message": "Valmistumisaste",
+    "description": "Valmistumisasteen välilehden otsikko"
+  },
+  "timeStatus": {
+    "message": "Aika-Tila",
+    "description": "Aika-tila-välilehden otsikko"
+  },
+  "timeTrend": {
+    "message": "Aikakehitys",
+    "description": "Aikakehityksen välilehden otsikko"
+  },
+  "sourceCross": {
+    "message": "Lähde-Ristiin",
+    "description": "Lähde-ristiin-välilehden otsikko"
+  },
+  "completionRateQuantity": {
+    "message": "Valmistumisaste - Määrä",
+    "description": "Valmistumisasteen kaavion otsikko"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Tehtävän lähde - Valmistumisaste",
+    "description": "Tehtävän lähteen valmistumisasteen kaavion otsikko"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Aika - Valmistumistilan sirontakaavio",
+    "description": "Aika-valmistumistilan sirontakaavion otsikko"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Viikoittainen/kuukausittainen kehitys",
+    "description": "Viikoittaisen/kuukausittaisen kehityksen kaavion otsikko"
+  },
+  "weekly": {
+    "message": "Viikoittainen",
+    "description": "Viikoittaisen jakson painike"
+  },
+  "monthly": {
+    "message": "Kuukausittainen",
+    "description": "Kuukausittaisen jakson painike"
+  },
+  "source": {
+    "message": "Lähde",
+    "description": "Lähteen taulukon otsikko"
+  },
+  "low": {
+    "message": "Matala (0-20%)",
+    "description": "Matalan valmistumisasteen etiketti"
+  },
+  "mediumLow": {
+    "message": "Keskimatala (20-50%)",
+    "description": "Keskimatalan valmistumisasteen etiketti"
+  },
+  "mediumHigh": {
+    "message": "Keskikorkea (50-80%)",
+    "description": "Keskikorkean valmistumisasteen etiketti"
+  },
+  "high": {
+    "message": "Korkea (80-100%)",
+    "description": "Korkean valmistumisasteen etiketti"
+  },
+  "taskCost": {
+    "message": "Tehtävän kustannus (päivää)",
+    "description": "Tehtävän kustannuksen akselin etiketti"
+  },
+  "taskImportance": {
+    "message": "Tehtävän tärkeys",
+    "description": "Tehtävän tärkeyden akselin etiketti"
+  },
+  "taskCount": {
+    "message": "Tehtävien määrä",
+    "description": "Tehtävien määrän akselin etiketti"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Kvadrantin tehtävien aikastatistiikat (päivää):",
+    "description": "Kvadrantin tehtävien aikastatistiikkojen otsikko"
+  },
+  "quadrant": {
+    "message": "Kvadrantti",
+    "description": "Kvadrantin taulukon otsikko"
+  },
+  "completedAvg": {
+    "message": "Valmis (keskiarvo)",
+    "description": "Valmiin keskiarvon taulukon otsikko"
+  },
+  "completedMedian": {
+    "message": "Valmis (mediaani)",
+    "description": "Valmiin mediaanin taulukon otsikko"
+  },
+  "inProgressAvg": {
+    "message": "Käynnissä (keskiarvo)",
+    "description": "Käynnissä olevan keskiarvon taulukon otsikko"
+  },
+  "inProgressMedian": {
+    "message": "Käynnissä (mediaani)",
+    "description": "Käynnissä olevan mediaanin taulukon otsikko"
+  },
+  "deepInsights": {
+    "message": "Syvät oivallukset",
+    "description": "Syvien oivallusten osion otsikko"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Tällä hetkellä ei ole tarpeeksi tietoja oivallusten luomiseen.",
+    "description": "Viesti kun ei ole tietoja oivalluksille"
+  },
+  "importantUrgent": {
+    "message": "Tärkeä ja kiireellinen",
+    "description": "Q1-kvadrantin etiketti"
+  },
+  "importantNotUrgent": {
+    "message": "Tärkeä mutta ei kiireellinen",
+    "description": "Q2-kvadrantin etiketti"
+  },
+  "notImportantNotUrgent": {
+    "message": "Ei tärkeä eikä kiireellinen",
+    "description": "Q3-kvadrantin etiketti"
+  },
+  "notImportantUrgent": {
+    "message": "Ei tärkeä mutta kiireellinen",
+    "description": "Q4-kvadrantin etiketti"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2-kvadrantin (tärkeä mutta ei kiireellinen) tehtävien valmistumisaste on merkittävästi alempi kuin muilla kvadranteilla, heijastaen toteuttavan ennakkoluuloa «kiireellinen tärkeämpi kuin tärkeä», joka voi johtaa pitkän aikavälin strategisten tavoitteiden viivästymiseen.",
+    "description": "Oivallus Q2:n alemmasta valmistumisasteen"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3-kvadrantin (ei tärkeä eikä kiireellinen) tehtävien valmistumisaste on liian korkea, ole hyvä ja kiinnitä huomiota «tehottomaan työllisyyteen» - jos liikaa energiaa käytetään vähäisiin tehtäviin, se puristaa aikaa ydintehtäviltä.",
+    "description": "Oivallus Q3:n liian korkeasta valmistumisasteen"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1-kvadrantin (tärkeä ja kiireellinen) tehtävät muodostavat $percentage% kaikista tehtävistä, osoittaen tehtävien suunnittelun parantumista, tärkeiden tehtävien aikainen käsittely välttääkseen kiireelliset tilanteet.",
+    "description": "Oivallus Q1:n korkeasta tehtävien prosentista"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4-kvadrantin (ei tärkeä mutta kiireellinen) tehtävät muodostavat $percentage% kaikista tehtävistä, ole hyvä ja tarkista näiden matalan prioriteetin mutta kiireellisten tehtävien lähteet, optimoi hätätilanteiden vastausprosessi.",
+    "description": "Oivallus Q4:n korkeasta tehtävien prosentista"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "«$source»-tehtävät saavuttavat $q1Rate% valmistumisasteen Q1:ssä (tärkeä ja kiireellinen), mutta vain $q2Rate% Q2:ssa (tärkeä mutta ei kiireellinen), osoittaen että tehtävien toteutusprioriteetti ohjataan «ulkoisella paineella», ei sisäisellä strategisella fokuksella.",
+    "description": "Oivallus lähteen tehtävien Q1 vs Q2 valmistumisasteen"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "«$source»-tehtävillä on matala valmistumisaste ($q4Rate%) Q4:ssä (ei tärkeä mutta kiireellinen), täytyy vahvistaa onko ongelma «väliaikaisten tehtävien» prioriteetin määrittelyssä.",
+    "description": "Oivallus Q4:n tehtävien matalasta valmistumisasteen"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "«$source» on erittäin keskittynyt $quadrant-kvadranttiin ($quadrantName), muodostaen $percentage%. Ole hyvä ja tarkista tehtävien suunnittelun järkevyys.",
+    "description": "Oivallus tehtävien korkeasta keskittymisestä yhteen kvadranttiin"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "«$highSource»:lla on korkein valmistumisaste ($highRate%) $highQuadrant:ssa, kun «$lowSource»:lla on matalin ($lowRate%) $lowQuadrant:ssa, näyttäen selkeän eron eri tehtävätyyppien käsittelyprioriteeteissa.",
+    "description": "Oivallus lähteiden välisestä valmistumisasteen erosta"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1:llä (tärkeä ja kiireellinen) on $percentage% odottavia tehtäviä jotka vievät yli 3 päivää, osoittaen mahdollista resurssipulaa tai odottamattomia vaikeuksia ydintehtävien kanssa. Ole hyvä ja harkitse tehtävän hajottamista tai lisätukea.",
+    "description": "Oivallus Q1:n odottavista tehtävistä korkealla käytettynä ajalla"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Q4:n (ei tärkeä mutta kiireellinen) valmiiden tehtävien keskimääräinen valmistumisaika on $q4Time päivää, ylittäen huomattavasti Q2:n $q2Time päivää (tärkeä mutta ei kiireellinen), osoittaen että «väliaikaiset kiireelliset tehtävät» vievät liikaa resursseja. Ole hyvä ja optimoi hätätilanteiden vastausprosessi.",
+    "description": "Oivallus Q4 vs Q2:n tehtävien valmistumisajasta"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Odotettavien tehtävien keskimääräinen käsittelyaika ($pendingTime päivää) on merkittävästi korkeampi kuin valmiiden tehtävien ($completedTime päivää). Ole hyvä ja keskity pitkään odottaviin tehtäviin ja säädä strategiaa tai resurssien allokointia tarpeen mukaan.",
+    "description": "Oivallus odottavien vs valmiiden tehtävien ajasta"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabel-tehtävien määrä vaihtelee $from:sta $to:hon $direction $rate%, näyttäen merkittäviä vaihteluita. Ole hyvä ja harkitse keskittymistä tehtävien allokointitasapainoon.",
+    "description": "Oivallus kvadrantin tehtävien määrän vaihtelusta"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabel-tehtävien valmistumisaste näyttää kestävää nousutrendiä, osoittaen työtoiminnan parantumista.",
+    "description": "Oivallus valmistumisasteen nousutrendistä"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabel-tehtävien valmistumisaste näyttää kestävää laskutrendiä, joka vaatii huomiota toteuttavan toiminnan ongelmiin.",
+    "description": "Oivallus valmistumisasteen laskutrendistä"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2-tehtävät (tärkeä mutta ei kiireellinen) jatkavat kertymistä ilman valmistumisasteen parantumista, heijastaen että «strategiset tehtävät» eivät ole integroitu säännölliseen toteutussuunnitelmaan, tuoden riskin «viivästysten kertymisestä».",
+    "description": "Oivallus Q2:n tehtävien kertymisestä"
+  }
+}

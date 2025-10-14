@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: 無料タスクマネージャー＆ツール",
+    "description": "アプリケーションの名前"
+  },
+  "appDescription": {
+    "message": "インテリジェントなタスクのための無料Chromeブラウザ拡張機能。強力なツールと画面フレンドリーなインターフェースでタスクを可視化",
+    "description": "アプリケーションの説明"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "アプリケーションのタイトル"
+  },
+  "taskManager": {
+    "message": "タスクマネージャー",
+    "description": "タスクマネージャーボタンのタイトル"
+  },
+  "report": {
+    "message": "レポート",
+    "description": "レポートボタンのタイトル"
+  },
+  "settings": {
+    "message": "設定",
+    "description": "設定ボタンのタイトル"
+  },
+  "help": {
+    "message": "ヘルプ",
+    "description": "ヘルプボタンのタイトル"
+  },
+  "addTask": {
+    "message": "タスクを追加",
+    "description": "タスクを追加ボタンのタイトル"
+  },
+  "close": {
+    "message": "閉じる",
+    "description": "閉じるボタンのテキスト"
+  },
+  "editTask": {
+    "message": "タスクを編集",
+    "description": "タスクを編集モーダルのタイトル"
+  },
+  "newTask": {
+    "message": "新規",
+    "description": "新規タスクステータス"
+  },
+  "taskTitle": {
+    "message": "タスクタイトル *",
+    "description": "タスクタイトルラベル"
+  },
+  "taskTitlePlaceholder": {
+    "message": "タスクタイトルを入力",
+    "description": "タスクタイトル入力プレースホルダー"
+  },
+  "taskDescription": {
+    "message": "タスクの説明",
+    "description": "タスクの説明ラベル"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "タスクの説明を入力（オプション）",
+    "description": "タスクの説明入力プレースホルダー"
+  },
+  "importanceLevel": {
+    "message": "重要度レベル *",
+    "description": "重要度レベルラベル"
+  },
+  "notImportant": {
+    "message": "重要でない",
+    "description": "重要でないラベル"
+  },
+  "veryImportant": {
+    "message": "非常に重要",
+    "description": "非常に重要ラベル"
+  },
+  "dueDate": {
+    "message": "期限 *",
+    "description": "期限ラベル"
+  },
+  "taskCategory": {
+    "message": "タスクカテゴリ",
+    "description": "タスクカテゴリラベル"
+  },
+  "work": {
+    "message": "仕事",
+    "description": "仕事カテゴリ"
+  },
+  "personal": {
+    "message": "個人",
+    "description": "個人カテゴリ"
+  },
+  "study": {
+    "message": "学習",
+    "description": "学習カテゴリ"
+  },
+  "health": {
+    "message": "健康",
+    "description": "健康カテゴリ"
+  },
+  "other": {
+    "message": "その他",
+    "description": "その他カテゴリ"
+  },
+  "deleteTask": {
+    "message": "タスクを削除",
+    "description": "タスクを削除ボタン"
+  },
+  "cancel": {
+    "message": "キャンセル",
+    "description": "キャンセルボタン"
+  },
+  "saveTask": {
+    "message": "タスクを保存",
+    "description": "タスクを保存ボタン"
+  },
+  "doing": {
+    "message": "実行中",
+    "description": "実行中ステータス"
+  },
+  "overdue": {
+    "message": "期限切れ",
+    "description": "期限切れステータス"
+  },
+  "completed": {
+    "message": "完了",
+    "description": "完了ステータス"
+  },
+  "rejected": {
+    "message": "却下",
+    "description": "却下ステータス"
+  },
+  "pending": {
+    "message": "保留中",
+    "description": "保留中ステータスラベル"
+  },
+  "urgentTaskReminder": {
+    "message": "緊急タスクリマインダー",
+    "description": "緊急タスクリマインダーセクションタイトル"
+  },
+  "enableUrgentReminder": {
+    "message": "緊急タスクリマインダーを有効にする",
+    "description": "緊急タスクリマインダーを有効にするチェックボックス"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "タスクが期限切れになる前に、アイコンの変更でリマインダーを表示",
+    "description": "緊急タスクリマインダーを有効にする説明"
+  },
+  "reminderThreshold": {
+    "message": "リマインダーしきい値（分）",
+    "description": "リマインダーしきい値ラベル"
+  },
+  "reminderThresholdDesc": {
+    "message": "タスクの残り時間がこの時間より短い場合、リマインダーを発動",
+    "description": "リマインダーしきい値の説明"
+  },
+  "reminderInterval": {
+    "message": "リマインダー間隔（分）",
+    "description": "リマインダー間隔ラベル"
+  },
+  "reminderIntervalDesc": {
+    "message": "バックグラウンドでタスクステータスをチェックする頻度",
+    "description": "リマインダー間隔の説明"
+  },
+  "iconReminder": {
+    "message": "アイコンリマインダー",
+    "description": "アイコンリマインダーセクションタイトル"
+  },
+  "showIconBadge": {
+    "message": "アイコンバッジを表示",
+    "description": "アイコンバッジを表示チェックボックス"
+  },
+  "showIconBadgeDesc": {
+    "message": "プラグインアイコンに緊急タスクの数を表示",
+    "description": "アイコンバッジを表示する説明"
+  },
+  "showIconTooltip": {
+    "message": "アイコンツールチップを表示",
+    "description": "アイコンツールチップを表示チェックボックス"
+  },
+  "showIconTooltipDesc": {
+    "message": "アイコンにマウスを合わせたときにタスクリマインダー情報を表示",
+    "description": "アイコンツールチップを表示する説明"
+  },
+  "save": {
+    "message": "保存",
+    "description": "保存ボタン"
+  },
+  "quickStart": {
+    "message": "🚀 クイックスタート",
+    "description": "クイックスタートセクションタイトル"
+  },
+  "createTask": {
+    "message": "タスクを作成：",
+    "description": "タスクを作成する指示"
+  },
+  "createTaskDesc": {
+    "message": "空のエリアをダブルクリック",
+    "description": "タスクを作成する説明"
+  },
+  "editTaskDesc": {
+    "message": "タスクを編集：",
+    "description": "タスクを編集する指示"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "既存のタスクをダブルクリック",
+    "description": "タスクを編集する指示の説明"
+  },
+  "viewDetails": {
+    "message": "詳細を表示：",
+    "description": "詳細を表示する指示"
+  },
+  "viewDetailsDesc": {
+    "message": "タスクにマウスを合わせる",
+    "description": "詳細を表示する説明"
+  },
+  "taskManagerDesc": {
+    "message": "タスクマネージャー：",
+    "description": "タスクマネージャーの指示"
+  },
+  "taskManagerInstruction": {
+    "message": "すべてのタスクのリストアイコンをクリック",
+    "description": "タスクマネージャーの指示の説明"
+  },
+  "analysisReport": {
+    "message": "分析レポート：",
+    "description": "分析レポートの指示"
+  },
+  "analysisReportDesc": {
+    "message": "インサイトのチャートアイコンをクリック",
+    "description": "分析レポートの説明"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 アイゼンハワータスクマトリックス",
+    "description": "アイゼンハワーマトリックスセクションタイトル"
+  },
+  "q1Title": {
+    "message": "Q1：重要かつ緊急",
+    "description": "Q1象限タイトル"
+  },
+  "q1Desc": {
+    "message": "今すぐ実行。即座の注意を必要とする重要なタスク。",
+    "description": "Q1象限の説明"
+  },
+  "q2Title": {
+    "message": "Q2：重要だが緊急でない",
+    "description": "Q2象限タイトル"
+  },
+  "q2Desc": {
+    "message": "スケジュール。長期計画のための戦略的タスク。",
+    "description": "Q2象限の説明"
+  },
+  "q3Title": {
+    "message": "Q3：重要でないが緊急",
+    "description": "Q3象限タイトル"
+  },
+  "q3Desc": {
+    "message": "委任。他の人が処理できる割り込み。",
+    "description": "Q3象限の説明"
+  },
+  "q4Title": {
+    "message": "Q4：重要でなく緊急でもない",
+    "description": "Q4象限タイトル"
+  },
+  "q4Desc": {
+    "message": "排除。避けるべき時間の無駄。",
+    "description": "Q4象限の説明"
+  },
+  "confirm": {
+    "message": "確認",
+    "description": "確認ボタン"
+  },
+  "settingsSaved": {
+    "message": "設定が正常に保存されました",
+    "description": "設定保存通知"
+  },
+  "settingsSaveFailed": {
+    "message": "設定の保存に失敗しました",
+    "description": "設定保存失敗通知"
+  },
+  "allTasksCleared": {
+    "message": "すべてのタスクがクリアされました",
+    "description": "すべてのタスクがクリアされたメッセージ"
+  },
+  "settingsApplied": {
+    "message": "設定が適用されました",
+    "description": "設定が適用されたメッセージ"
+  },
+  "taskMonitoringStarted": {
+    "message": "タスク監視が開始されました",
+    "description": "タスク監視開始メッセージ"
+  },
+  "taskMonitoringStopped": {
+    "message": "タスク監視が停止されました",
+    "description": "タスク監視停止メッセージ"
+  },
+  "taskEditProcessed": {
+    "message": "タスク編集が処理されました",
+    "description": "タスク編集処理メッセージ"
+  },
+  "taskAddProcessed": {
+    "message": "タスク追加が処理されました",
+    "description": "タスク追加処理メッセージ"
+  },
+  "taskDeleteProcessed": {
+    "message": "タスク削除が処理されました",
+    "description": "タスク削除処理メッセージ"
+  },
+  "unknownMessageType": {
+    "message": "不明なメッセージタイプ",
+    "description": "不明なメッセージタイプエラー"
+  },
+  "openTaskMatrix": {
+    "message": "TaskMatrix Proを開く",
+    "description": "TaskMatrix Proを開くコマンドの説明"
+  },
+  "ready": {
+    "message": "準備完了",
+    "description": "準備完了ステータスメッセージ"
+  },
+  "initializationFailed": {
+    "message": "初期化に失敗しました",
+    "description": "初期化失敗ステータスメッセージ"
+  },
+  "loading": {
+    "message": "読み込み中...",
+    "description": "読み込み中ステータスメッセージ"
+  },
+  "saving": {
+    "message": "保存中...",
+    "description": "保存中ステータスメッセージ"
+  },
+  "failedToGetFormData": {
+    "message": "フォームデータの取得に失敗しました",
+    "description": "フォームデータが取得できない場合のエラーメッセージ"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "タスクタイトルを入力してください",
+    "description": "タスクタイトルが空の場合の警告メッセージ"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "タスクが正常に更新されました",
+    "description": "タスクが更新されたときの成功メッセージ"
+  },
+  "taskAddedSuccessfully": {
+    "message": "タスクが正常に追加されました",
+    "description": "タスクが追加されたときの成功メッセージ"
+  },
+  "saveFailed": {
+    "message": "保存に失敗しました",
+    "description": "保存操作が失敗した場合のエラーメッセージ"
+  },
+  "taskNotFound": {
+    "message": "タスクが見つかりません",
+    "description": "タスクが見つからない場合のエラーメッセージ"
+  },
+  "failedToEditTask": {
+    "message": "タスクの編集に失敗しました",
+    "description": "タスク編集が失敗した場合のエラーメッセージ"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "タスクが正常に完了しました",
+    "description": "タスクが完了したときの成功メッセージ"
+  },
+  "failedToCompleteTask": {
+    "message": "タスクの完了に失敗しました",
+    "description": "タスク完了が失敗した場合のエラーメッセージ"
+  },
+  "areYouSureDeleteTask": {
+    "message": "このタスクを削除してもよろしいですか？この操作は元に戻せません。",
+    "description": "タスク削除の確認メッセージ"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "タスクが正常に削除されました",
+    "description": "タスクが削除されたときの成功メッセージ"
+  },
+  "failedToDeleteTask": {
+    "message": "タスクの削除に失敗しました",
+    "description": "タスク削除が失敗した場合のエラーメッセージ"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "設定が正常に保存されました",
+    "description": "設定が保存されたときの成功メッセージ"
+  },
+  "failedToSaveSettings": {
+    "message": "設定の保存に失敗しました",
+    "description": "設定保存が失敗した場合のエラーメッセージ"
+  },
+  "loadingDataFailed": {
+    "message": "データの読み込みに失敗しました",
+    "description": "データ読み込みが失敗した場合のエラーメッセージ"
+  },
+  "noTaskFound": {
+    "message": "タスクが見つかりません",
+    "description": "タスクが見つからない場合の空の状態メッセージ"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "プラスアイコンをクリックして最初のタスクを追加",
+    "description": "最初のタスクを追加するための空の状態指示"
+  },
+  "allCaughtUp": {
+    "message": "すべて完了！",
+    "description": "期限切れタスクがない場合の空の状態メッセージ"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "期限切れタスクはありません。すべてを順調に進めている素晴らしい仕事です！",
+    "description": "期限切れタスクがない場合の空の状態メッセージ"
+  },
+  "noCompletedTasks": {
+    "message": "完了したタスクはありません",
+    "description": "完了したタスクがない場合の空の状態メッセージ"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "タスクをダブルクリックしてステータスラベルをクリックし、完了としてマーク",
+    "description": "タスクを完了としてマークする指示"
+  },
+  "noRejectedTasks": {
+    "message": "却下されたタスクはありません",
+    "description": "却下されたタスクがない場合の空の状態メッセージ"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "タスクをダブルクリックしてステータスラベルを2回クリックし、却下としてマーク",
+    "description": "タスクを却下としてマークする指示"
+  },
+  "task": {
+    "message": "タスク：",
+    "description": "タスクラベルプレフィックス"
+  },
+  "importance": {
+    "message": "重要度：",
+    "description": "重要度ラベル"
+  },
+  "noData": {
+    "message": "データなし",
+    "description": "チャート用のデータなしメッセージ"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "ヒートマップを生成するのに十分なデータがありません",
+    "description": "ヒートマップ用のデータが不足している場合のメッセージ"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "散布図を生成するのに十分なタスクデータがありません",
+    "description": "散布図用のデータが不足している場合のメッセージ"
+  },
+  "bytes": {
+    "message": "バイト",
+    "description": "バイト単位"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "キロバイト単位"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "メガバイト単位"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "ギガバイト単位"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "テラバイト単位"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "バックグラウンドでタスクステータスをチェックする頻度",
+    "description": "タスクステータスチェック頻度の説明"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "プラグインアイコンに緊急タスクの数を表示",
+    "description": "アイコンバッジ設定の説明"
+  },
+  "displayTaskReminderInformation": {
+    "message": "アイコンにマウスを合わせたときにタスクリマインダー情報を表示",
+    "description": "アイコンタイトル設定の説明"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "空のエリアをダブルクリック",
+    "description": "タスクを作成する指示"
+  },
+  "editTaskInstruction": {
+    "message": "タスクを編集：",
+    "description": "タスクを編集する指示"
+  },
+  "hoverOverTask": {
+    "message": "タスクにマウスを合わせる",
+    "description": "タスクの詳細を表示する指示"
+  },
+  "clickListIconForAllTasks": {
+    "message": "すべてのタスクのリストアイコンをクリック",
+    "description": "タスクマネージャーにアクセスする指示"
+  },
+  "clickChartIconForInsights": {
+    "message": "インサイトのチャートアイコンをクリック",
+    "description": "分析レポートにアクセスする指示"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 アイゼンハワータスクマトリックス",
+    "description": "アイゼンハワータスクマトリックスセクションタイトル"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1：重要かつ緊急",
+    "description": "Q1象限タイトル"
+  },
+  "doItNowCriticalTasks": {
+    "message": "今すぐ実行。即座の注意を必要とする重要なタスク。",
+    "description": "Q1象限の説明"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2：重要だが緊急でない",
+    "description": "Q2象限タイトル"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "スケジュール。長期計画のための戦略的タスク。",
+    "description": "Q2象限の説明"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3：重要でないが緊急",
+    "description": "Q3象限タイトル"
+  },
+  "delegateItInterruptions": {
+    "message": "委任。他の人が処理できる割り込み。",
+    "description": "Q3象限の説明"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4：重要でなく緊急でもない",
+    "description": "Q4象限タイトル"
+  },
+  "eliminateItTimeWasters": {
+    "message": "排除。避けるべき時間の無駄。",
+    "description": "Q4象限の説明"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "タスクの残り時間がこの時間より短い場合、リマインダーを発動",
+    "description": "緊急リマインダーしきい値設定の説明"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "タスクが期限切れになる前に、アイコンの変更でリマインダーを表示",
+    "description": "緊急リマインダー設定の説明"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "緊急タスクリマインダーを有効にする",
+    "description": "緊急タスクリマインダーを有効にするチェックボックスラベル"
+  },
+  "invalidDueDate": {
+    "message": "無効な期限",
+    "description": "無効な期限のエラーメッセージ"
+  },
+  "dueAt": {
+    "message": "期限：",
+    "description": "特定の日付に期限があるタスクの期限プレフィックス"
+  },
+  "dueIn": {
+    "message": "期限まで：",
+    "description": "特定の時間に期限があるタスクの期限プレフィックス"
+  },
+  "completionRate": {
+    "message": "完了率",
+    "description": "完了率タブタイトル"
+  },
+  "timeStatus": {
+    "message": "時間-ステータス",
+    "description": "時間-ステータスタブタイトル"
+  },
+  "timeTrend": {
+    "message": "時間-トレンド",
+    "description": "時間-トレンドタブタイトル"
+  },
+  "sourceCross": {
+    "message": "ソース-クロス",
+    "description": "ソース-クロスタブタイトル"
+  },
+  "completionRateQuantity": {
+    "message": "完了率 - 数量",
+    "description": "完了率チャートタイトル"
+  },
+  "taskSourceCompletionRate": {
+    "message": "タスクソース - 完了率",
+    "description": "タスクソース完了率チャートタイトル"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "時間 - 完了ステータス散布図",
+    "description": "時間完了ステータス散布図チャートタイトル"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "週次/月次トレンド",
+    "description": "週次月次トレンドチャートタイトル"
+  },
+  "weekly": {
+    "message": "週次",
+    "description": "週次期間ボタン"
+  },
+  "monthly": {
+    "message": "月次",
+    "description": "月次期間ボタン"
+  },
+  "source": {
+    "message": "ソース",
+    "description": "ソーステーブルヘッダー"
+  },
+  "low": {
+    "message": "低（0-20%）",
+    "description": "低完了率ラベル"
+  },
+  "mediumLow": {
+    "message": "中-低（20-50%）",
+    "description": "中-低完了率ラベル"
+  },
+  "mediumHigh": {
+    "message": "中-高（50-80%）",
+    "description": "中-高完了率ラベル"
+  },
+  "high": {
+    "message": "高（80-100%）",
+    "description": "高完了率ラベル"
+  },
+  "taskCost": {
+    "message": "タスクコスト（日）",
+    "description": "タスクコスト軸ラベル"
+  },
+  "taskImportance": {
+    "message": "タスク重要度",
+    "description": "タスク重要度軸ラベル"
+  },
+  "taskCount": {
+    "message": "タスク数",
+    "description": "タスク数軸ラベル"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "象限タスク時間統計（日）：",
+    "description": "象限タスク時間統計タイトル"
+  },
+  "quadrant": {
+    "message": "象限",
+    "description": "象限テーブルヘッダー"
+  },
+  "completedAvg": {
+    "message": "完了（平均）",
+    "description": "完了平均テーブルヘッダー"
+  },
+  "completedMedian": {
+    "message": "完了（中央値）",
+    "description": "完了中央値テーブルヘッダー"
+  },
+  "inProgressAvg": {
+    "message": "進行中（平均）",
+    "description": "進行中平均テーブルヘッダー"
+  },
+  "inProgressMedian": {
+    "message": "進行中（中央値）",
+    "description": "進行中中央値テーブルヘッダー"
+  },
+  "deepInsights": {
+    "message": "深いインサイト",
+    "description": "深いインサイトセクションタイトル"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "現在、インサイトを生成するのに十分なデータがありません。",
+    "description": "インサイト用のデータなしメッセージ"
+  },
+  "importantUrgent": {
+    "message": "重要かつ緊急",
+    "description": "Q1象限ラベル"
+  },
+  "importantNotUrgent": {
+    "message": "重要だが緊急でない",
+    "description": "Q2象限ラベル"
+  },
+  "notImportantNotUrgent": {
+    "message": "重要でなく緊急でもない",
+    "description": "Q3象限ラベル"
+  },
+  "notImportantUrgent": {
+    "message": "重要でないが緊急",
+    "description": "Q4象限ラベル"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2（重要だが緊急でない）象限タスクの完了率は他の象限より大幅に低く、「緊急が重要より優先」の実行バイアスを反映しており、長期的には戦略的目標の遅延につながる可能性があります。",
+    "description": "Q2完了率が低いことに関するインサイト"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3（重要でなく緊急でもない）象限タスクの完了率が高すぎます。「非効率な忙しさ」に注意してください - 些細なタスクに過度のエネルギーが消費され、コアタスクの時間を圧迫している可能性があります。",
+    "description": "Q3完了率が高すぎることに関するインサイト"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1（重要かつ緊急）象限タスクが全タスクの$percentage%を占めており、タスク計画の改善を示唆しています。緊急な状況を避けるため、重要なタスクを早期に処理してください。",
+    "description": "Q1タスクの高い割合に関するインサイト"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4（重要でないが緊急）象限タスクが全タスクの$percentage%を占めており、これらの低優先度だが緊急なタスクのソースを確認し、緊急対応プロセスを最適化してください。",
+    "description": "Q4タスクの高い割合に関するインサイト"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "Q1（重要かつ緊急）の「$source」タスクは$q1Rate%の完了率を達成していますが、Q2（重要だが緊急でない）では$q2Rate%のみで、タスク実行の優先順位が内部の戦略的焦点ではなく「外部圧力」によって駆動されていることを示しています。",
+    "description": "ソースタスクのQ1対Q2完了率に関するインサイト"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "Q4（重要でないが緊急）の「$source」タスクは低い完了率（$q4Rate%）を持っており、「一時的なタスク」に優先度定義の問題があるかどうかを確認する必要があります。",
+    "description": "Q4タスクの低完了率に関するインサイト"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "「$source」は$quadrant（$quadrantName）象限に高度に集中しており、$percentage%を占めています。タスク計画の合理性を確認してください。",
+    "description": "タスクが1つの象限に集中していることに関するインサイト"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "$highQuadrantの「$highSource」は最高の完了率（$highRate%）を持ち、$lowQuadrantの「$lowSource」は最低（$lowRate%）で、異なるタスクタイプの処理優先順位に明確な違いがあることを示しています。",
+    "description": "ソース間の完了率の違いに関するインサイト"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1（重要かつ緊急）は3日以上かかる保留タスクが$percentage%あり、コアタスクでの潜在的なリソース不足や予期しない困難を示しています。タスクの分解や追加サポートを検討してください。",
+    "description": "Q1保留タスクが時間をかけすぎることに関するインサイト"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Q4（重要でないが緊急）の完了タスクは平均$q4Time日で、Q2（重要だが緊急でない）の$q2Time日を大幅に上回り、「一時的な緊急タスク」がリソースを過度に占有していることを示しています。緊急対応プロセスを最適化してください。",
+    "description": "Q4対Q2タスク完了時間に関するインサイト"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "保留タスクの平均処理時間（$pendingTime日）は完了タスク（$completedTime日）より大幅に高くなっています。長期間停滞しているタスクに焦点を当て、必要に応じて戦略やリソース配分を調整してください。",
+    "description": "保留対完了タスク時間に関するインサイト"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabelタスクボリュームが$fromから$toまで$rate%$directionし、大きな変動を示しています。タスク配分バランスに焦点を当てることを検討してください。",
+    "description": "タスクボリューム変動に関するインサイト"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabelタスクの完了率は持続的な上昇トレンドを示し、作業効率の改善を示しています。",
+    "description": "完了率上昇トレンドに関するインサイト"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabelタスクの完了率は持続的な下降トレンドを示し、実行効率の問題に注意が必要です。",
+    "description": "完了率下降トレンドに関するインサイト"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2（重要だが緊急でない）タスクは完了率の改善なしに蓄積し続けており、「戦略的タスク」が定期的な実行計画に統合されていないことを反映し、「先延ばし蓄積」のリスクを提示しています。",
+    "description": "Q2タスク蓄積に関するインサイト"
+  }
+}

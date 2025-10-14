@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Gestore di Attività Gratuito e Strumenti",
+    "description": "Il nome dell'applicazione"
+  },
+  "appDescription": {
+    "message": "Estensione gratuita del browser Chrome per attività intelligenti. Visualizza le tue attività con strumenti potenti e interfaccia user-friendly",
+    "description": "La descrizione dell'applicazione"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Il titolo dell'applicazione"
+  },
+  "taskManager": {
+    "message": "Gestore Attività",
+    "description": "Titolo del pulsante Gestore Attività"
+  },
+  "report": {
+    "message": "Rapporto",
+    "description": "Titolo del pulsante Rapporto"
+  },
+  "settings": {
+    "message": "Impostazioni",
+    "description": "Titolo del pulsante Impostazioni"
+  },
+  "help": {
+    "message": "Aiuto",
+    "description": "Titolo del pulsante Aiuto"
+  },
+  "addTask": {
+    "message": "Aggiungi Attività",
+    "description": "Titolo del pulsante Aggiungi Attività"
+  },
+  "close": {
+    "message": "Chiudi",
+    "description": "Testo del pulsante Chiudi"
+  },
+  "editTask": {
+    "message": "Modifica Attività",
+    "description": "Titolo del modale Modifica Attività"
+  },
+  "newTask": {
+    "message": "Nuovo",
+    "description": "Stato nuova attività"
+  },
+  "taskTitle": {
+    "message": "Titolo Attività *",
+    "description": "Etichetta titolo attività"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Inserisci il titolo dell'attività",
+    "description": "Segnaposto input titolo attività"
+  },
+  "taskDescription": {
+    "message": "Descrizione Attività",
+    "description": "Etichetta descrizione attività"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Inserisci la descrizione dell'attività (opzionale)",
+    "description": "Segnaposto input descrizione attività"
+  },
+  "importanceLevel": {
+    "message": "Livello di Importanza *",
+    "description": "Etichetta livello di importanza"
+  },
+  "notImportant": {
+    "message": "Non Importante",
+    "description": "Etichetta non importante"
+  },
+  "veryImportant": {
+    "message": "Molto Importante",
+    "description": "Etichetta molto importante"
+  },
+  "dueDate": {
+    "message": "Data di Scadenza *",
+    "description": "Etichetta data di scadenza"
+  },
+  "taskCategory": {
+    "message": "Categoria Attività",
+    "description": "Etichetta categoria attività"
+  },
+  "work": {
+    "message": "Lavoro",
+    "description": "Categoria lavoro"
+  },
+  "personal": {
+    "message": "Personale",
+    "description": "Categoria personale"
+  },
+  "study": {
+    "message": "Studio",
+    "description": "Categoria studio"
+  },
+  "health": {
+    "message": "Salute",
+    "description": "Categoria salute"
+  },
+  "other": {
+    "message": "Altro",
+    "description": "Categoria altro"
+  },
+  "deleteTask": {
+    "message": "Elimina Attività",
+    "description": "Pulsante elimina attività"
+  },
+  "cancel": {
+    "message": "Annulla",
+    "description": "Pulsante annulla"
+  },
+  "saveTask": {
+    "message": "Salva Attività",
+    "description": "Pulsante salva attività"
+  },
+  "doing": {
+    "message": "In Corso",
+    "description": "Stato in corso"
+  },
+  "overdue": {
+    "message": "Scaduto",
+    "description": "Stato scaduto"
+  },
+  "completed": {
+    "message": "Completato",
+    "description": "Stato completato"
+  },
+  "rejected": {
+    "message": "Rifiutato",
+    "description": "Stato rifiutato"
+  },
+  "pending": {
+    "message": "In Attesa",
+    "description": "Etichetta stato in attesa"
+  },
+  "urgentTaskReminder": {
+    "message": "Promemoria Attività Urgenti",
+    "description": "Titolo sezione promemoria attività urgenti"
+  },
+  "enableUrgentReminder": {
+    "message": "Abilita Promemoria Attività Urgenti",
+    "description": "Casella di controllo abilita promemoria attività urgenti"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Quando un'attività sta per scadere, ricordalo attraverso i cambiamenti dell'icona",
+    "description": "Descrizione abilita promemoria attività urgenti"
+  },
+  "reminderThreshold": {
+    "message": "Soglia Promemoria (minuti)",
+    "description": "Etichetta soglia promemoria"
+  },
+  "reminderThresholdDesc": {
+    "message": "Quando il tempo rimanente dell'attività è inferiore a questa durata, attiva il promemoria",
+    "description": "Descrizione soglia promemoria"
+  },
+  "reminderInterval": {
+    "message": "Intervallo Promemoria (minuti)",
+    "description": "Etichetta intervallo promemoria"
+  },
+  "reminderIntervalDesc": {
+    "message": "Frequenza di controllo dello stato dell'attività in background",
+    "description": "Descrizione intervallo promemoria"
+  },
+  "iconReminder": {
+    "message": "Promemoria Icona",
+    "description": "Titolo sezione promemoria icona"
+  },
+  "showIconBadge": {
+    "message": "Mostra Badge Icona",
+    "description": "Casella di controllo mostra badge icona"
+  },
+  "showIconBadgeDesc": {
+    "message": "Visualizza il numero di attività urgenti sull'icona del plugin",
+    "description": "Descrizione mostra badge icona"
+  },
+  "showIconTooltip": {
+    "message": "Mostra Tooltip Icona",
+    "description": "Casella di controllo mostra tooltip icona"
+  },
+  "showIconTooltipDesc": {
+    "message": "Visualizza le informazioni del promemoria attività passando il mouse sull'icona",
+    "description": "Descrizione mostra tooltip icona"
+  },
+  "save": {
+    "message": "Salva",
+    "description": "Pulsante salva"
+  },
+  "quickStart": {
+    "message": "🚀 Avvio Rapido",
+    "description": "Titolo sezione avvio rapido"
+  },
+  "createTask": {
+    "message": "Crea Attività:",
+    "description": "Istruzione crea attività"
+  },
+  "createTaskDesc": {
+    "message": "Doppio clic su area vuota",
+    "description": "Descrizione crea attività"
+  },
+  "editTaskDesc": {
+    "message": "Modifica Attività:",
+    "description": "Istruzione modifica attività"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Doppio clic su attività esistente",
+    "description": "Descrizione istruzione modifica attività"
+  },
+  "viewDetails": {
+    "message": "Visualizza Dettagli:",
+    "description": "Istruzione visualizza dettagli"
+  },
+  "viewDetailsDesc": {
+    "message": "Passa il mouse sull'attività",
+    "description": "Descrizione visualizza dettagli"
+  },
+  "taskManagerDesc": {
+    "message": "Gestore Attività:",
+    "description": "Istruzione gestore attività"
+  },
+  "taskManagerInstruction": {
+    "message": "Clicca sull'icona lista per tutte le attività",
+    "description": "Descrizione istruzione gestore attività"
+  },
+  "analysisReport": {
+    "message": "Rapporto di Analisi:",
+    "description": "Istruzione rapporto di analisi"
+  },
+  "analysisReportDesc": {
+    "message": "Clicca sull'icona grafico per insights",
+    "description": "Descrizione rapporto di analisi"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Matrice Attività Eisenhower",
+    "description": "Titolo sezione matrice Eisenhower"
+  },
+  "q1Title": {
+    "message": "Q1: Importante e Urgente",
+    "description": "Titolo quadrante Q1"
+  },
+  "q1Desc": {
+    "message": "Fallo ora. Attività critiche che richiedono attenzione immediata.",
+    "description": "Descrizione quadrante Q1"
+  },
+  "q2Title": {
+    "message": "Q2: Importante e Non Urgente",
+    "description": "Titolo quadrante Q2"
+  },
+  "q2Desc": {
+    "message": "Programmalo. Attività strategiche per la pianificazione a lungo termine.",
+    "description": "Descrizione quadrante Q2"
+  },
+  "q3Title": {
+    "message": "Q3: Non Importante e Urgente",
+    "description": "Titolo quadrante Q3"
+  },
+  "q3Desc": {
+    "message": "Delegalo. Interruzioni che possono essere gestite da altri.",
+    "description": "Descrizione quadrante Q3"
+  },
+  "q4Title": {
+    "message": "Q4: Non Importante e Non Urgente",
+    "description": "Titolo quadrante Q4"
+  },
+  "q4Desc": {
+    "message": "Eliminalo. Sprechi di tempo che dovrebbero essere evitati.",
+    "description": "Descrizione quadrante Q4"
+  },
+  "confirm": {
+    "message": "Conferma",
+    "description": "Pulsante conferma"
+  },
+  "settingsSaved": {
+    "message": "Impostazioni salvate con successo",
+    "description": "Notifica impostazioni salvate"
+  },
+  "settingsSaveFailed": {
+    "message": "Impossibile salvare le impostazioni",
+    "description": "Notifica errore salvataggio impostazioni"
+  },
+  "allTasksCleared": {
+    "message": "Tutte le attività cancellate",
+    "description": "Messaggio tutte le attività cancellate"
+  },
+  "settingsApplied": {
+    "message": "Impostazioni applicate",
+    "description": "Messaggio impostazioni applicate"
+  },
+  "taskMonitoringStarted": {
+    "message": "Monitoraggio attività avviato",
+    "description": "Messaggio monitoraggio attività avviato"
+  },
+  "taskMonitoringStopped": {
+    "message": "Monitoraggio attività fermato",
+    "description": "Messaggio monitoraggio attività fermato"
+  },
+  "taskEditProcessed": {
+    "message": "Modifica attività elaborata",
+    "description": "Messaggio modifica attività elaborata"
+  },
+  "taskAddProcessed": {
+    "message": "Aggiunta attività elaborata",
+    "description": "Messaggio aggiunta attività elaborata"
+  },
+  "taskDeleteProcessed": {
+    "message": "Eliminazione attività elaborata",
+    "description": "Messaggio eliminazione attività elaborata"
+  },
+  "unknownMessageType": {
+    "message": "Tipo di messaggio sconosciuto",
+    "description": "Errore tipo di messaggio sconosciuto"
+  },
+  "openTaskMatrix": {
+    "message": "Apri TaskMatrix Pro",
+    "description": "Descrizione comando per aprire TaskMatrix Pro"
+  },
+  "ready": {
+    "message": "Pronto",
+    "description": "Messaggio stato pronto"
+  },
+  "initializationFailed": {
+    "message": "Inizializzazione Fallita",
+    "description": "Messaggio stato inizializzazione fallita"
+  },
+  "loading": {
+    "message": "Caricamento...",
+    "description": "Messaggio stato caricamento"
+  },
+  "saving": {
+    "message": "Salvataggio...",
+    "description": "Messaggio stato salvataggio"
+  },
+  "failedToGetFormData": {
+    "message": "Impossibile ottenere i dati del modulo",
+    "description": "Messaggio di errore quando i dati del modulo non possono essere ottenuti"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Inserisci un titolo per l'attività",
+    "description": "Messaggio di avvertimento quando il titolo dell'attività è vuoto"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Attività aggiornata con successo",
+    "description": "Messaggio di successo quando l'attività è aggiornata"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Attività aggiunta con successo",
+    "description": "Messaggio di successo quando l'attività è aggiunta"
+  },
+  "saveFailed": {
+    "message": "Salvataggio fallito",
+    "description": "Messaggio di errore quando l'operazione di salvataggio fallisce"
+  },
+  "taskNotFound": {
+    "message": "Attività non trovata",
+    "description": "Messaggio di errore quando l'attività non è trovata"
+  },
+  "failedToEditTask": {
+    "message": "Impossibile modificare l'attività",
+    "description": "Messaggio di errore quando la modifica dell'attività fallisce"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Attività completata con successo",
+    "description": "Messaggio di successo quando l'attività è completata"
+  },
+  "failedToCompleteTask": {
+    "message": "Impossibile completare l'attività",
+    "description": "Messaggio di errore quando il completamento dell'attività fallisce"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Sei sicuro di voler eliminare questa attività? Questa azione non può essere annullata.",
+    "description": "Messaggio di conferma per l'eliminazione dell'attività"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Attività eliminata con successo",
+    "description": "Messaggio di successo quando l'attività è eliminata"
+  },
+  "failedToDeleteTask": {
+    "message": "Impossibile eliminare l'attività",
+    "description": "Messaggio di errore quando l'eliminazione dell'attività fallisce"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Impostazioni salvate con successo",
+    "description": "Messaggio di successo quando le impostazioni sono salvate"
+  },
+  "failedToSaveSettings": {
+    "message": "Impossibile salvare le impostazioni",
+    "description": "Messaggio di errore quando il salvataggio delle impostazioni fallisce"
+  },
+  "loadingDataFailed": {
+    "message": "Impossibile caricare i dati",
+    "description": "Messaggio di errore quando il caricamento dei dati fallisce"
+  },
+  "noTaskFound": {
+    "message": "Nessuna Attività Trovata",
+    "description": "Messaggio stato vuoto quando nessuna attività è trovata"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Clicca sull'icona più per aggiungere la tua prima attività",
+    "description": "Istruzione stato vuoto per aggiungere la prima attività"
+  },
+  "allCaughtUp": {
+    "message": "Tutto Aggiornato!",
+    "description": "Messaggio stato vuoto quando nessuna attività è in ritardo"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Nessuna attività in ritardo. Ottimo lavoro nel mantenere tutto in ordine!",
+    "description": "Messaggio stato vuoto per nessuna attività in ritardo"
+  },
+  "noCompletedTasks": {
+    "message": "Nessuna Attività Completata",
+    "description": "Messaggio stato vuoto quando nessuna attività è completata"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Doppio clic su un'attività e clicca sull'etichetta di stato per contrassegnarla come completata",
+    "description": "Istruzione per contrassegnare le attività come completate"
+  },
+  "noRejectedTasks": {
+    "message": "Nessuna Attività Rifiutata",
+    "description": "Messaggio stato vuoto quando nessuna attività è rifiutata"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Doppio clic su un'attività e clicca due volte sull'etichetta di stato per contrassegnarla come rifiutata",
+    "description": "Istruzione per contrassegnare le attività come rifiutate"
+  },
+  "task": {
+    "message": "Attività:",
+    "description": "Prefisso etichetta attività"
+  },
+  "importance": {
+    "message": "Importanza:",
+    "description": "Etichetta importanza"
+  },
+  "noData": {
+    "message": "Nessun Dato",
+    "description": "Messaggio nessun dato per i grafici"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Dati insufficienti per generare la mappa di calore",
+    "description": "Messaggio quando non ci sono abbastanza dati per la mappa di calore"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Dati attività insufficienti per generare il grafico a dispersione",
+    "description": "Messaggio quando non ci sono abbastanza dati per il grafico a dispersione"
+  },
+  "bytes": {
+    "message": "Byte",
+    "description": "Unità byte"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Unità kilobyte"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Unità megabyte"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Unità gigabyte"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Unità terabyte"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Frequenza di controllo dello stato dell'attività in background",
+    "description": "Descrizione per la frequenza di controllo dello stato dell'attività"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Visualizza il numero di attività urgenti sull'icona del plugin",
+    "description": "Descrizione per l'impostazione del badge dell'icona"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Visualizza le informazioni del promemoria attività passando il mouse sull'icona",
+    "description": "Descrizione per l'impostazione del titolo dell'icona"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Doppio clic su area vuota",
+    "description": "Istruzione per creare un'attività"
+  },
+  "editTaskInstruction": {
+    "message": "Modifica Attività:",
+    "description": "Istruzione modifica attività"
+  },
+  "hoverOverTask": {
+    "message": "Passa il mouse sull'attività",
+    "description": "Istruzione per visualizzare i dettagli dell'attività"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Clicca sull'icona lista per tutte le attività",
+    "description": "Istruzione per accedere al gestore attività"
+  },
+  "clickChartIconForInsights": {
+    "message": "Clicca sull'icona grafico per insights",
+    "description": "Istruzione per accedere al rapporto di analisi"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Matrice Attività Eisenhower",
+    "description": "Titolo sezione matrice attività Eisenhower"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Importante e Urgente",
+    "description": "Titolo quadrante Q1"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Fallo ora. Attività critiche che richiedono attenzione immediata.",
+    "description": "Descrizione quadrante Q1"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Importante e Non Urgente",
+    "description": "Titolo quadrante Q2"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Programmalo. Attività strategiche per la pianificazione a lungo termine.",
+    "description": "Descrizione quadrante Q2"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Non Importante e Urgente",
+    "description": "Titolo quadrante Q3"
+  },
+  "delegateItInterruptions": {
+    "message": "Delegalo. Interruzioni che possono essere gestite da altri.",
+    "description": "Descrizione quadrante Q3"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Non Importante e Non Urgente",
+    "description": "Titolo quadrante Q4"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Eliminalo. Sprechi di tempo che dovrebbero essere evitati.",
+    "description": "Descrizione quadrante Q4"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Quando il tempo rimanente dell'attività è inferiore a questa durata, attiva il promemoria",
+    "description": "Descrizione per l'impostazione della soglia del promemoria urgente"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Quando un'attività sta per scadere, ricordalo attraverso i cambiamenti dell'icona",
+    "description": "Descrizione per l'impostazione del promemoria urgente"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Abilita Promemoria Attività Urgenti",
+    "description": "Etichetta casella di controllo abilita promemoria attività urgenti"
+  },
+  "invalidDueDate": {
+    "message": "Data di scadenza non valida",
+    "description": "Messaggio di errore per data di scadenza non valida"
+  },
+  "dueAt": {
+    "message": "Scadenza il",
+    "description": "Prefisso scadenza il per attività che scadono in una data specifica"
+  },
+  "dueIn": {
+    "message": "Scadenza tra",
+    "description": "Prefisso scadenza tra per attività che scadono in un tempo specifico"
+  },
+  "completionRate": {
+    "message": "Tasso di Completamento",
+    "description": "Titolo scheda tasso di completamento"
+  },
+  "timeStatus": {
+    "message": "Stato-Tempo",
+    "description": "Titolo scheda stato-tempo"
+  },
+  "timeTrend": {
+    "message": "Tendenza-Tempo",
+    "description": "Titolo scheda tendenza-tempo"
+  },
+  "sourceCross": {
+    "message": "Croce-Sorgente",
+    "description": "Titolo scheda croce-sorgente"
+  },
+  "completionRateQuantity": {
+    "message": "Tasso di Completamento - Quantità",
+    "description": "Titolo grafico tasso di completamento"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Sorgente Attività - Tasso di Completamento",
+    "description": "Titolo grafico tasso di completamento sorgente attività"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Tempo - Grafico a Dispersione Stato Completamento",
+    "description": "Titolo grafico a dispersione stato completamento tempo"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Tendenza Settimanale/Mensile",
+    "description": "Titolo grafico tendenza settimanale mensile"
+  },
+  "weekly": {
+    "message": "Settimanale",
+    "description": "Pulsante periodo settimanale"
+  },
+  "monthly": {
+    "message": "Mensile",
+    "description": "Pulsante periodo mensile"
+  },
+  "source": {
+    "message": "Sorgente",
+    "description": "Intestazione tabella sorgente"
+  },
+  "low": {
+    "message": "Basso (0-20%)",
+    "description": "Etichetta tasso di completamento basso"
+  },
+  "mediumLow": {
+    "message": "Medio-Basso (20-50%)",
+    "description": "Etichetta tasso di completamento medio-basso"
+  },
+  "mediumHigh": {
+    "message": "Medio-Alto (50-80%)",
+    "description": "Etichetta tasso di completamento medio-alto"
+  },
+  "high": {
+    "message": "Alto (80-100%)",
+    "description": "Etichetta tasso di completamento alto"
+  },
+  "taskCost": {
+    "message": "Costo Attività (giorni)",
+    "description": "Etichetta asse costo attività"
+  },
+  "taskImportance": {
+    "message": "Importanza Attività",
+    "description": "Etichetta asse importanza attività"
+  },
+  "taskCount": {
+    "message": "Conteggio Attività",
+    "description": "Etichetta asse conteggio attività"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Statistiche Tempo Attività per Quadrante (Giorni):",
+    "description": "Titolo statistiche tempo attività per quadrante"
+  },
+  "quadrant": {
+    "message": "Quadrante",
+    "description": "Intestazione tabella quadrante"
+  },
+  "completedAvg": {
+    "message": "Completato (Media)",
+    "description": "Intestazione tabella media completato"
+  },
+  "completedMedian": {
+    "message": "Completato (Mediana)",
+    "description": "Intestazione tabella mediana completato"
+  },
+  "inProgressAvg": {
+    "message": "In Corso (Media)",
+    "description": "Intestazione tabella media in corso"
+  },
+  "inProgressMedian": {
+    "message": "In Corso (Mediana)",
+    "description": "Intestazione tabella mediana in corso"
+  },
+  "deepInsights": {
+    "message": "Insights Profondi",
+    "description": "Titolo sezione insights profondi"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Attualmente non ci sono abbastanza dati per generare insights.",
+    "description": "Messaggio nessun dato per insights"
+  },
+  "importantUrgent": {
+    "message": "Importante e Urgente",
+    "description": "Etichetta quadrante Q1"
+  },
+  "importantNotUrgent": {
+    "message": "Importante e Non Urgente",
+    "description": "Etichetta quadrante Q2"
+  },
+  "notImportantNotUrgent": {
+    "message": "Non Importante e Non Urgente",
+    "description": "Etichetta quadrante Q3"
+  },
+  "notImportantUrgent": {
+    "message": "Non Importante e Urgente",
+    "description": "Etichetta quadrante Q4"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Il tasso di completamento delle attività del quadrante Q2 (Importante e Non Urgente) è significativamente inferiore agli altri quadranti, riflettendo un bias di esecuzione \"urgente sopra importante\", che può portare a ritardi negli obiettivi strategici a lungo termine.",
+    "description": "Insight sul tasso di completamento di Q2 che è inferiore"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Il tasso di completamento delle attività del quadrante Q3 (Non Importante e Non Urgente) è troppo alto, attenzione all'\"occupazione inefficace\" - se troppa energia viene consumata su attività banali, comprimendo il tempo delle attività centrali.",
+    "description": "Insight sul tasso di completamento di Q3 che è troppo alto"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Le attività del quadrante Q1 (Importante e Urgente) rappresentano $percentage% del totale delle attività, suggerendo un miglioramento nella pianificazione delle attività, gestisci le attività importanti presto per evitare situazioni urgenti.",
+    "description": "Insight sull'alta percentuale di attività Q1"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Le attività del quadrante Q4 (Non Importante e Urgente) rappresentano $percentage% del totale delle attività, rivedi le fonti di queste attività a bassa priorità ma urgenti, ottimizza i processi di risposta di emergenza.",
+    "description": "Insight sull'alta percentuale di attività Q4"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "Le attività \"$source\" in Q1 (Importante e Urgente) raggiungono $q1Rate% di tasso di completamento, ma solo $q2Rate% in Q2 (Importante e Non Urgente), indicando che la priorità di esecuzione delle attività è guidata dalla \"pressione esterna\" piuttosto che dal focus strategico interno.",
+    "description": "Insight sui tassi di completamento delle attività sorgente Q1 vs Q2"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "Le attività \"$source\" in Q4 (Non Importante e Urgente) hanno un basso tasso di completamento ($q4Rate%), devono confermare se le \"attività temporanee\" hanno problemi di definizione della priorità.",
+    "description": "Insight sul basso tasso di completamento delle attività Q4"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "\"$source\" sono altamente concentrate nel quadrante $quadrant ($quadrantName), rappresentando $percentage%. Rivedi la pianificazione delle attività per la ragionevolezza.",
+    "description": "Insight sulle attività altamente concentrate in un quadrante"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "\"$highSource\" in $highQuadrant ha il tasso di completamento più alto ($highRate%), mentre \"$lowSource\" in $lowQuadrant ha il più basso ($lowRate%), mostrando chiare differenze nella priorità di elaborazione per diversi tipi di attività.",
+    "description": "Insight sulle differenze di tasso di completamento tra sorgenti"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (Importante e Urgente) ha $percentage% di attività in attesa che richiedono più di 3 giorni, indicando una potenziale carenza di risorse o difficoltà inaspettate nelle attività centrali. Considera la scomposizione delle attività o supporto aggiuntivo.",
+    "description": "Insight sulle attività in attesa Q1 che richiedono troppo tempo"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Le attività completate di Q4 (Non Importante e Urgente) in media $q4Time giorni, superando di gran lunga Q2 (Importante e Non Urgente) a $q2Time giorni, indicando che le \"attività urgenti temporanee\" sovra-occupano le risorse. Ottimizza i processi di risposta di emergenza.",
+    "description": "Insight sui tempi di completamento delle attività Q4 vs Q2"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Il tempo di elaborazione medio per le attività in attesa ($pendingTime giorni) è significativamente più alto delle attività completate ($completedTime giorni). Concentrati sulle attività bloccate da tempo e aggiusta la strategia o l'allocazione delle risorse quando necessario.",
+    "description": "Insight sui tempi delle attività in attesa vs completate"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "Il volume delle attività $quadrantLabel $direction del $rate% da $from a $to, mostrando una fluttuazione significativa. Considera di concentrarti sull'equilibrio dell'allocazione delle attività.",
+    "description": "Insight sulla fluttuazione del volume delle attività"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "Il tasso di completamento delle attività $quadrantLabel mostra una tendenza ascendente sostenuta, indicando un'efficienza lavorativa migliorata.",
+    "description": "Insight sulla tendenza ascendente del tasso di completamento"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "Il tasso di completamento delle attività $quadrantLabel mostra una tendenza discendente sostenuta, richiedendo attenzione ai problemi di efficienza di esecuzione.",
+    "description": "Insight sulla tendenza discendente del tasso di completamento"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Le attività Q2 (Importante e Non Urgente) continuano ad accumularsi senza miglioramento del tasso di completamento, riflettendo che le \"attività strategiche\" non sono integrate nei piani di esecuzione regolari, presentando un rischio di \"accumulo di procrastinazione\".",
+    "description": "Insight sull'accumulo delle attività Q2"
+  }
+}

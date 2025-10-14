@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Bezmaksas uzdevumu pārvaldnieks un rīks",
+    "description": "Lietotnes nosaukums"
+  },
+  "appDescription": {
+    "message": "Bezmaksas Chrome paplašinājums gudriem uzdevumiem. Izmantojiet jaudīgus rīkus un lietotājam draudzīgu saskarni uzdevumu vizualizācijai",
+    "description": "Lietotnes apraksts"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Lietotnes nosaukums"
+  },
+  "taskManager": {
+    "message": "Uzdevumu pārvaldnieks",
+    "description": "Uzdevumu pārvaldnieka pogas nosaukums"
+  },
+  "report": {
+    "message": "Ziņojums",
+    "description": "Ziņojuma pogas nosaukums"
+  },
+  "settings": {
+    "message": "Iestatījumi",
+    "description": "Iestatījumu pogas nosaukums"
+  },
+  "help": {
+    "message": "Palīdzība",
+    "description": "Palīdzības pogas nosaukums"
+  },
+  "addTask": {
+    "message": "Pievienot uzdevumu",
+    "description": "Uzdevuma pievienošanas pogas nosaukums"
+  },
+  "close": {
+    "message": "Aizvērt",
+    "description": "Aizvēršanas pogas teksts"
+  },
+  "editTask": {
+    "message": "Rediģēt uzdevumu",
+    "description": "Uzdevuma rediģēšanas modālā loga nosaukums"
+  },
+  "newTask": {
+    "message": "Jauns",
+    "description": "Jauna uzdevuma statuss"
+  },
+  "taskTitle": {
+    "message": "Uzdevuma nosaukums *",
+    "description": "Uzdevuma nosaukuma etiķete"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Ievadiet uzdevuma nosaukumu",
+    "description": "Uzdevuma nosaukuma ievades lauka aizvietotājs"
+  },
+  "taskDescription": {
+    "message": "Uzdevuma apraksts",
+    "description": "Uzdevuma apraksta etiķete"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Ievadiet uzdevuma aprakstu (neobligāti)",
+    "description": "Uzdevuma apraksta ievades lauka aizvietotājs"
+  },
+  "importanceLevel": {
+    "message": "Svarīguma līmenis *",
+    "description": "Svarīguma līmeņa etiķete"
+  },
+  "notImportant": {
+    "message": "Nav svarīgi",
+    "description": "Nav svarīgi etiķete"
+  },
+  "veryImportant": {
+    "message": "Ļoti svarīgi",
+    "description": "Ļoti svarīgi etiķete"
+  },
+  "dueDate": {
+    "message": "Termiņš *",
+    "description": "Termiņa etiķete"
+  },
+  "taskCategory": {
+    "message": "Uzdevuma kategorija",
+    "description": "Uzdevuma kategorijas etiķete"
+  },
+  "work": {
+    "message": "Darbs",
+    "description": "Darba kategorija"
+  },
+  "personal": {
+    "message": "Personīgs",
+    "description": "Personīgā kategorija"
+  },
+  "study": {
+    "message": "Mācīšanās",
+    "description": "Mācīšanās kategorija"
+  },
+  "health": {
+    "message": "Veselība",
+    "description": "Veselības kategorija"
+  },
+  "other": {
+    "message": "Cits",
+    "description": "Citas kategorija"
+  },
+  "deleteTask": {
+    "message": "Dzēst uzdevumu",
+    "description": "Uzdevuma dzēšanas poga"
+  },
+  "cancel": {
+    "message": "Atcelt",
+    "description": "Atcelšanas poga"
+  },
+  "saveTask": {
+    "message": "Saglabāt uzdevumu",
+    "description": "Uzdevuma saglabāšanas poga"
+  },
+  "doing": {
+    "message": "Tiek darīts",
+    "description": "Tiek darīts statuss"
+  },
+  "overdue": {
+    "message": "Nokavēts",
+    "description": "Nokavēts statuss"
+  },
+  "completed": {
+    "message": "Pabeigts",
+    "description": "Pabeigts statuss"
+  },
+  "rejected": {
+    "message": "Noraidīts",
+    "description": "Noraidīts statuss"
+  },
+  "pending": {
+    "message": "Gaida",
+    "description": "Gaidīšanas statusa etiķete"
+  },
+  "urgentTaskReminder": {
+    "message": "Steidzama uzdevuma atgādinājums",
+    "description": "Steidzama uzdevuma atgādinājuma sadaļas nosaukums"
+  },
+  "enableUrgentReminder": {
+    "message": "Iespējot steidzama uzdevuma atgādinājumu",
+    "description": "Steidzama uzdevuma atgādinājuma iespējošanas apstiprinājuma lauks"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Atgādināt, mainot ikonu, kad uzdevums tuvojas termiņam",
+    "description": "Steidzama uzdevuma atgādinājuma iespējošanas apraksts"
+  },
+  "reminderThreshold": {
+    "message": "Atgādinājuma slieksnis (minūtes)",
+    "description": "Atgādinājuma sliekšņa etiķete"
+  },
+  "reminderThresholdDesc": {
+    "message": "Iespējot atgādinājumu, kad uzdevumam paliek mazāk laika nekā šis ilgums",
+    "description": "Atgādinājuma sliekšņa apraksts"
+  },
+  "reminderInterval": {
+    "message": "Atgādinājuma intervāls (minūtes)",
+    "description": "Atgādinājuma intervāla etiķete"
+  },
+  "reminderIntervalDesc": {
+    "message": "Uzdevumu statusa pārbaudes biežums fonā",
+    "description": "Atgādinājuma intervāla apraksts"
+  },
+  "iconReminder": {
+    "message": "Ikonas atgādinājums",
+    "description": "Ikonas atgādinājuma sadaļas nosaukums"
+  },
+  "showIconBadge": {
+    "message": "Rādīt ikonas zīmi",
+    "description": "Ikonas zīmes rādīšanas apstiprinājuma lauks"
+  },
+  "showIconBadgeDesc": {
+    "message": "Rādīt steidzamo uzdevumu skaitu paplašinājuma ikonā",
+    "description": "Ikonas zīmes rādīšanas apraksts"
+  },
+  "showIconTooltip": {
+    "message": "Rādīt ikonas tooltip",
+    "description": "Ikonas tooltip rādīšanas apstiprinājuma lauks"
+  },
+  "showIconTooltipDesc": {
+    "message": "Rādīt uzdevumu atgādinājuma informāciju, novietojot peli virs ikonas",
+    "description": "Ikonas tooltip rādīšanas apraksts"
+  },
+  "save": {
+    "message": "Saglabāt",
+    "description": "Saglabāšanas poga"
+  },
+  "quickStart": {
+    "message": "🚀 Ātrs sākums",
+    "description": "Ātrā sākuma sadaļas nosaukums"
+  },
+  "createTask": {
+    "message": "Izveidot uzdevumu:",
+    "description": "Uzdevuma izveides instrukcija"
+  },
+  "createTaskDesc": {
+    "message": "Dubultklikšķis uz tukšas zonas",
+    "description": "Uzdevuma izveides apraksts"
+  },
+  "editTaskDesc": {
+    "message": "Rediģēt uzdevumu:",
+    "description": "Uzdevuma rediģēšanas instrukcija"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Dubultklikšķis uz esoša uzdevuma",
+    "description": "Uzdevuma rediģēšanas instrukcijas apraksts"
+  },
+  "viewDetails": {
+    "message": "Skatīt detaļas:",
+    "description": "Detaļu skatīšanas instrukcija"
+  },
+  "viewDetailsDesc": {
+    "message": "Novietojiet peli virs uzdevuma",
+    "description": "Detaļu skatīšanas apraksts"
+  },
+  "taskManagerDesc": {
+    "message": "Uzdevumu pārvaldnieks:",
+    "description": "Uzdevumu pārvaldnieka instrukcija"
+  },
+  "taskManagerInstruction": {
+    "message": "Klikšķiniet uz saraksta ikonas, lai redzētu visus uzdevumus",
+    "description": "Uzdevumu pārvaldnieka instrukcijas apraksts"
+  },
+  "analysisReport": {
+    "message": "Analīzes ziņojums:",
+    "description": "Analīzes ziņojuma instrukcija"
+  },
+  "analysisReportDesc": {
+    "message": "Klikšķiniet uz diagrammas ikonas, lai redzētu ieskatus",
+    "description": "Analīzes ziņojuma apraksts"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Eisenhower uzdevumu matrica",
+    "description": "Eisenhower matricas sadaļas nosaukums"
+  },
+  "q1Title": {
+    "message": "Q1: Svarīgi un steidzami",
+    "description": "Q1 kvadranta nosaukums"
+  },
+  "q1Desc": {
+    "message": "Dariet tagad. Kritiski uzdevumi, kas prasa tūlītēju uzmanību.",
+    "description": "Q1 kvadranta apraksts"
+  },
+  "q2Title": {
+    "message": "Q2: Svarīgi, bet ne steidzami",
+    "description": "Q2 kvadranta nosaukums"
+  },
+  "q2Desc": {
+    "message": "Ieplānojiet laiku. Stratēģiski uzdevumi ilgtermiņa plānošanai.",
+    "description": "Q2 kvadranta apraksts"
+  },
+  "q3Title": {
+    "message": "Q3: Nav svarīgi, bet steidzami",
+    "description": "Q3 kvadranta nosaukums"
+  },
+  "q3Desc": {
+    "message": "Deleģējiet citiem. Traucējumi, ko var apstrādāt citi.",
+    "description": "Q3 kvadranta apraksts"
+  },
+  "q4Title": {
+    "message": "Q4: Nav svarīgi un nav steidzami",
+    "description": "Q4 kvadranta nosaukums"
+  },
+  "q4Desc": {
+    "message": "Eliminējiet. Laika izšķērdēšana, ko vajag izvairīties.",
+    "description": "Q4 kvadranta apraksts"
+  },
+  "confirm": {
+    "message": "Apstiprināt",
+    "description": "Apstiprināšanas poga"
+  },
+  "settingsSaved": {
+    "message": "Iestatījumi veiksmīgi saglabāti",
+    "description": "Iestatījumu saglabāšanas paziņojums"
+  },
+  "settingsSaveFailed": {
+    "message": "Iestatījumu saglabāšana neizdevās",
+    "description": "Iestatījumu saglabāšanas kļūdas paziņojums"
+  },
+  "allTasksCleared": {
+    "message": "Visi uzdevumi dzēsti",
+    "description": "Visu uzdevumu dzēšanas paziņojums"
+  },
+  "settingsApplied": {
+    "message": "Iestatījumi piemēroti",
+    "description": "Iestatījumu piemērošanas paziņojums"
+  },
+  "taskMonitoringStarted": {
+    "message": "Uzdevumu uzraudzība sākta",
+    "description": "Uzdevumu uzraudzības sākšanas paziņojums"
+  },
+  "taskMonitoringStopped": {
+    "message": "Uzdevumu uzraudzība apturēta",
+    "description": "Uzdevumu uzraudzības apturēšanas paziņojums"
+  },
+  "taskEditProcessed": {
+    "message": "Uzdevuma rediģēšana apstrādāta",
+    "description": "Uzdevuma rediģēšanas apstrādes paziņojums"
+  },
+  "taskAddProcessed": {
+    "message": "Uzdevuma pievienošana apstrādāta",
+    "description": "Uzdevuma pievienošanas apstrādes paziņojums"
+  },
+  "taskDeleteProcessed": {
+    "message": "Uzdevuma dzēšana apstrādāta",
+    "description": "Uzdevuma dzēšanas apstrādes paziņojums"
+  },
+  "unknownMessageType": {
+    "message": "Nezināms ziņojuma tips",
+    "description": "Nezināma ziņojuma tipa kļūda"
+  },
+  "openTaskMatrix": {
+    "message": "Atvērt TaskMatrix Pro",
+    "description": "TaskMatrix Pro atvēršanas komandas apraksts"
+  },
+  "ready": {
+    "message": "Gatavs",
+    "description": "Gatavības paziņojums"
+  },
+  "initializationFailed": {
+    "message": "Inicializācija neizdevās",
+    "description": "Inicializācijas kļūdas paziņojums"
+  },
+  "loading": {
+    "message": "Ielādē...",
+    "description": "Ielādes paziņojums"
+  },
+  "saving": {
+    "message": "Saglabā...",
+    "description": "Saglabāšanas paziņojums"
+  },
+  "failedToGetFormData": {
+    "message": "Formas datu iegūšana neizdevās",
+    "description": "Formas datu iegūšanas kļūdas paziņojums"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Lūdzu, ievadiet uzdevuma nosaukumu",
+    "description": "Brīdinājums, kad uzdevuma nosaukums ir tukšs"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Uzdevums veiksmīgi atjaunots",
+    "description": "Uzdevuma atjaunināšanas veiksmes paziņojums"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Uzdevums veiksmīgi pievienots",
+    "description": "Uzdevuma pievienošanas veiksmes paziņojums"
+  },
+  "saveFailed": {
+    "message": "Saglabāšana neizdevās",
+    "description": "Saglabāšanas kļūdas paziņojums"
+  },
+  "taskNotFound": {
+    "message": "Uzdevums nav atrasts",
+    "description": "Uzdevuma neatradšanas kļūdas paziņojums"
+  },
+  "failedToEditTask": {
+    "message": "Uzdevuma rediģēšana neizdevās",
+    "description": "Uzdevuma rediģēšanas kļūdas paziņojums"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Uzdevums veiksmīgi pabeigts",
+    "description": "Uzdevuma pabeigšanas veiksmes paziņojums"
+  },
+  "failedToCompleteTask": {
+    "message": "Uzdevuma pabeigšana neizdevās",
+    "description": "Uzdevuma pabeigšanas kļūdas paziņojums"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Vai tiešām vēlaties dzēst šo uzdevumu? Šo darbību nevar atsaukt.",
+    "description": "Uzdevuma dzēšanas apstiprinājuma paziņojums"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Uzdevums veiksmīgi dzēsts",
+    "description": "Uzdevuma dzēšanas veiksmes paziņojums"
+  },
+  "failedToDeleteTask": {
+    "message": "Uzdevuma dzēšana neizdevās",
+    "description": "Uzdevuma dzēšanas kļūdas paziņojums"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Iestatījumi veiksmīgi saglabāti",
+    "description": "Iestatījumu saglabāšanas veiksmes paziņojums"
+  },
+  "failedToSaveSettings": {
+    "message": "Iestatījumu saglabāšana neizdevās",
+    "description": "Iestatījumu saglabāšanas kļūdas paziņojums"
+  },
+  "loadingDataFailed": {
+    "message": "Datu ielāde neizdevās",
+    "description": "Datu ielādes kļūdas paziņojums"
+  },
+  "noTaskFound": {
+    "message": "Uzdevums nav atrasts",
+    "description": "Tukšas stāvokļa paziņojums, kad uzdevumi nav atrasti"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Klikšķiniet uz plusa ikonas, lai pievienotu savu pirmo uzdevumu",
+    "description": "Pirmā uzdevuma pievienošanas instrukcija tukšam stāvoklim"
+  },
+  "allCaughtUp": {
+    "message": "Viss atjaunots!",
+    "description": "Tukšas stāvokļa paziņojums, kad nav nokavētu uzdevumu"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Nav nokavētu uzdevumu. Lielisks darbs, uzturot visu kārtībā!",
+    "description": "Tukšas stāvokļa paziņojums, kad nav nokavētu uzdevumu"
+  },
+  "noCompletedTasks": {
+    "message": "Nav pabeigtu uzdevumu",
+    "description": "Tukšas stāvokļa paziņojums, kad nav pabeigtu uzdevumu"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Dubultklikšķiniet uz uzdevuma un klikšķiniet uz statusa zīmes, lai atzīmētu to kā pabeigtu",
+    "description": "Uzdevuma atzīmēšanas kā pabeigta instrukcija"
+  },
+  "noRejectedTasks": {
+    "message": "Nav noraidītu uzdevumu",
+    "description": "Tukšas stāvokļa paziņojums, kad nav noraidītu uzdevumu"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Dubultklikšķiniet uz uzdevuma un dubultklikšķiniet uz statusa zīmes, lai atzīmētu to kā noraidītu",
+    "description": "Uzdevuma atzīmēšanas kā noraidīta instrukcija"
+  },
+  "task": {
+    "message": "Uzdevums:",
+    "description": "Uzdevuma zīmes prefikss"
+  },
+  "importance": {
+    "message": "Svarīgums:",
+    "description": "Svarīguma etiķete"
+  },
+  "noData": {
+    "message": "Nav datu",
+    "description": "Paziņojums, kad diagrammā nav datu"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Nepietiek datu siltuma kartei izveidot",
+    "description": "Paziņojums, kad nepietiek datu siltuma kartei"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Nepietiek uzdevumu datu izkliedes diagrammai izveidot",
+    "description": "Paziņojums, kad nepietiek uzdevumu datu izkliedes diagrammai"
+  },
+  "bytes": {
+    "message": "baitu",
+    "description": "Baitu vienība"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Kilobaitu vienība"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Megabaitu vienība"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Gigabaitu vienība"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Terabaitu vienība"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Uzdevumu statusa pārbaudes biežums fonā",
+    "description": "Uzdevumu statusa pārbaudes biežuma apraksts"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Rādīt steidzamo uzdevumu skaitu paplašinājuma ikonā",
+    "description": "Ikonas zīmes iestatījuma apraksts"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Rādīt uzdevumu atgādinājuma informāciju, novietojot peli virs ikonas",
+    "description": "Ikonas virsraksta iestatījuma apraksts"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Dubultklikšķis uz tukšas zonas",
+    "description": "Uzdevuma izveides instrukcija"
+  },
+  "editTaskInstruction": {
+    "message": "Rediģēt uzdevumu:",
+    "description": "Uzdevuma rediģēšanas instrukcija"
+  },
+  "hoverOverTask": {
+    "message": "Novietojiet peli virs uzdevuma",
+    "description": "Uzdevuma detaļu skatīšanas instrukcija"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Klikšķiniet uz saraksta ikonas, lai redzētu visus uzdevumus",
+    "description": "Uzdevumu pārvaldnieka piekļuves instrukcija"
+  },
+  "clickChartIconForInsights": {
+    "message": "Klikšķiniet uz diagrammas ikonas, lai redzētu ieskatus",
+    "description": "Analīzes ziņojuma piekļuves instrukcija"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Eisenhower uzdevumu matrica",
+    "description": "Eisenhower uzdevumu matricas sadaļas nosaukums"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Svarīgi un steidzami",
+    "description": "Q1 kvadranta nosaukums"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Dariet tagad. Kritiski uzdevumi, kas prasa tūlītēju uzmanību.",
+    "description": "Q1 kvadranta apraksts"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Svarīgi, bet ne steidzami",
+    "description": "Q2 kvadranta nosaukums"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Ieplānojiet laiku. Stratēģiski uzdevumi ilgtermiņa plānošanai.",
+    "description": "Q2 kvadranta apraksts"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Nav svarīgi, bet steidzami",
+    "description": "Q3 kvadranta nosaukums"
+  },
+  "delegateItInterruptions": {
+    "message": "Deleģējiet citiem. Traucējumi, ko var apstrādāt citi.",
+    "description": "Q3 kvadranta apraksts"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Nav svarīgi un nav steidzami",
+    "description": "Q4 kvadranta nosaukums"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Eliminējiet. Laika izšķērdēšana, ko vajag izvairīties.",
+    "description": "Q4 kvadranta apraksts"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Iespējot atgādinājumu, kad uzdevumam paliek mazāk laika nekā šis ilgums",
+    "description": "Steidzama atgādinājuma sliekšņa iestatījuma apraksts"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Atgādināt, mainot ikonu, kad uzdevums tuvojas termiņam",
+    "description": "Steidzama atgādinājuma iestatījuma apraksts"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Iespējot steidzama uzdevuma atgādinājumu",
+    "description": "Steidzama uzdevuma atgādinājuma iespējošanas apstiprinājuma lauka etiķete"
+  },
+  "invalidDueDate": {
+    "message": "Nederīgs termiņš",
+    "description": "Nederīga termiņa kļūdas paziņojums"
+  },
+  "dueAt": {
+    "message": "Termiņš",
+    "description": "Prefikss uzdevumiem, kas beidzas noteiktā datumā"
+  },
+  "dueIn": {
+    "message": "Termiņš pēc",
+    "description": "Prefikss uzdevumiem, kas beidzas pēc noteikta laika"
+  },
+  "completionRate": {
+    "message": "Pabeigšanas līmenis",
+    "description": "Pabeigšanas līmeņa kartes nosaukums"
+  },
+  "timeStatus": {
+    "message": "Laiks-Statuss",
+    "description": "Laika-statusa kartes nosaukums"
+  },
+  "timeTrend": {
+    "message": "Laika tendence",
+    "description": "Laika tendences kartes nosaukums"
+  },
+  "sourceCross": {
+    "message": "Avots-Krusts",
+    "description": "Avota-krusta kartes nosaukums"
+  },
+  "completionRateQuantity": {
+    "message": "Pabeigšanas līmenis - Daudzums",
+    "description": "Pabeigšanas līmeņa diagrammas nosaukums"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Uzdevuma avots - Pabeigšanas līmenis",
+    "description": "Uzdevuma avota pabeigšanas līmeņa diagrammas nosaukums"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Laiks - Pabeigšanas statusa izkliedes diagramma",
+    "description": "Laika-pabeigšanas statusa izkliedes diagrammas nosaukums"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Nedēļas/mēneša tendence",
+    "description": "Nedēļas/mēneša tendences diagrammas nosaukums"
+  },
+  "weekly": {
+    "message": "Nedēļas",
+    "description": "Nedēļas perioda poga"
+  },
+  "monthly": {
+    "message": "Mēneša",
+    "description": "Mēneša perioda poga"
+  },
+  "source": {
+    "message": "Avots",
+    "description": "Avota tabulas nosaukums"
+  },
+  "low": {
+    "message": "Zems (0-20%)",
+    "description": "Zema pabeigšanas līmeņa etiķete"
+  },
+  "mediumLow": {
+    "message": "Vidējs-zems (20-50%)",
+    "description": "Vidēja-zema pabeigšanas līmeņa etiķete"
+  },
+  "mediumHigh": {
+    "message": "Vidējs-augsts (50-80%)",
+    "description": "Vidēja-augsta pabeigšanas līmeņa etiķete"
+  },
+  "high": {
+    "message": "Augsts (80-100%)",
+    "description": "Augsta pabeigšanas līmeņa etiķete"
+  },
+  "taskCost": {
+    "message": "Uzdevuma izmaksas (dienas)",
+    "description": "Uzdevuma izmaksu ass etiķete"
+  },
+  "taskImportance": {
+    "message": "Uzdevuma svarīgums",
+    "description": "Uzdevuma svarīguma ass etiķete"
+  },
+  "taskCount": {
+    "message": "Uzdevumu skaits",
+    "description": "Uzdevumu skaita ass etiķete"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Kvadranta uzdevumu laika statistika (dienas):",
+    "description": "Kvadranta uzdevumu laika statistikas nosaukums"
+  },
+  "quadrant": {
+    "message": "Kvadrants",
+    "description": "Kvadranta tabulas nosaukums"
+  },
+  "completedAvg": {
+    "message": "Pabeigts (vidējais)",
+    "description": "Pabeigta vidējā tabulas nosaukums"
+  },
+  "completedMedian": {
+    "message": "Pabeigts (mediāna)",
+    "description": "Pabeigtas mediānas tabulas nosaukums"
+  },
+  "inProgressAvg": {
+    "message": "Tiek darīts (vidējais)",
+    "description": "Tiek darīta vidējā tabulas nosaukums"
+  },
+  "inProgressMedian": {
+    "message": "Tiek darīts (mediāna)",
+    "description": "Tiek darītas mediānas tabulas nosaukums"
+  },
+  "deepInsights": {
+    "message": "Dziļi ieskati",
+    "description": "Dziļo ieskatu sadaļas nosaukums"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Pašlaik nepietiek datu ieskatu izveidei.",
+    "description": "Paziņojums, kad nav datu ieskatiem"
+  },
+  "importantUrgent": {
+    "message": "Svarīgi un steidzami",
+    "description": "Q1 kvadranta etiķete"
+  },
+  "importantNotUrgent": {
+    "message": "Svarīgi, bet ne steidzami",
+    "description": "Q2 kvadranta etiķete"
+  },
+  "notImportantNotUrgent": {
+    "message": "Nav svarīgi un nav steidzami",
+    "description": "Q3 kvadranta etiķete"
+  },
+  "notImportantUrgent": {
+    "message": "Nav svarīgi, bet steidzami",
+    "description": "Q4 kvadranta etiķete"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2 kvadranta (svarīgi, bet ne steidzami) uzdevumu pabeigšanas līmenis ir ievērojami zemāks nekā citiem kvadrantiem, atspoguļojot izpildītāja neobjektivitāti «steidzami svarīgāk nekā svarīgi», kas var novest pie ilgtermiņa stratēģisko mērķu kavēšanās.",
+    "description": "Ieskats par zemāku Q2 pabeigšanas līmeni"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3 kvadranta (nav svarīgi un nav steidzami) uzdevumu pabeigšanas līmenis ir pārāk augsts, lūdzu, pievērsiet uzmanību «neefektīvam nodarbinātībai» - ja pārāk daudz enerģijas tiek iztērēts triviāliem uzdevumiem, tas saspiež laiku galvenajiem uzdevumiem.",
+    "description": "Ieskats par pārāk augstu Q3 pabeigšanas līmeni"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1 kvadranta (svarīgi un steidzami) uzdevumi veido $percentage% no visiem uzdevumiem, rādot uzdevumu plānošanas uzlabošanos, agri risinot svarīgus uzdevumus, lai izvairītos no steidzamiem situācijām.",
+    "description": "Ieskats par augstu Q1 uzdevumu procentu"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4 kvadranta (nav svarīgi, bet steidzami) uzdevumi veido $percentage% no visiem uzdevumiem, lūdzu, pārskatiet šo zemas prioritātes, bet steidzamo uzdevumu avotus, optimizējiet steidzamo gadījumu atbildes procesu.",
+    "description": "Ieskats par augstu Q4 uzdevumu procentu"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "«$source» uzdevumi sasniedz $q1Rate% pabeigšanas līmeni Q1 (svarīgi un steidzami), bet tikai $q2Rate% Q2 (svarīgi, bet ne steidzami), rādot, ka uzdevumu izpildes prioritāte ir vadīta «ārējā spiediena», nevis iekšējā stratēģiskā fokusa.",
+    "description": "Ieskats par Q1 vs Q2 avota uzdevumu pabeigšanas līmeni"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "«$source» uzdevumiem ir zems pabeigšanas līmenis ($q4Rate%) Q4 (nav svarīgi, bet steidzami), jāapstiprina, vai ir problēma ar «pagaidu uzdevumu» prioritātes definīciju.",
+    "description": "Ieskats par zemu Q4 uzdevumu pabeigšanas līmeni"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "«$source» ir ļoti koncentrēts $quadrant kvadrantā ($quadrantName), veidojot $percentage%. Lūdzu, pārskatiet uzdevumu plānošanas racionalitāti.",
+    "description": "Ieskats par augstu uzdevumu koncentrāciju vienā kvadrantā"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "«$highSource» ir augstākais pabeigšanas līmenis ($highRate%) $highQuadrant, bet «$lowSource» ir zemākais ($lowRate%) $lowQuadrant, rādot acīmredzamu atšķirību dažādu tipu uzdevumu apstrādes prioritātēs.",
+    "description": "Ieskats par pabeigšanas līmeņa atšķirību starp avotiem"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (svarīgi un steidzami) ir $percentage% uzdevumu gaidīšanā, kas ilgst ilgāk nekā 3 dienas, rādot iespējamo resursu trūkumu vai negaidītus grūtības ar galvenajiem uzdevumiem. Lūdzu, apsveriet uzdevuma sadalīšanu vai papildu atbalstu.",
+    "description": "Ieskats par Q1 gaidīšanas uzdevumiem ar augstu iztērēto laiku"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Vidējais Q4 (nav svarīgi, bet steidzami) pabeigto uzdevumu pabeigšanas laiks ir $q4Time dienas, ievērojami pārsniedzot $q2Time dienu Q2 (svarīgi, bet ne steidzami), rādot, ka «pagaidu steidzami uzdevumi» pārāk daudz aizņem resursus. Lūdzu, optimizējiet steidzamo gadījumu atbildes procesu.",
+    "description": "Ieskats par Q4 vs Q2 pabeigšanas laiku"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Vidējais gaidīšanas uzdevumu apstrādes laiks ($pendingTime dienas) ir ievērojami lielāks nekā pabeigto uzdevumu ($completedTime dienas). Lūdzu, koncentrējieties uz uzdevumiem, kas ilgi gaida, un pēc vajadzības pielāgojiet stratēģiju vai resursu piešķiršanu.",
+    "description": "Ieskats par gaidīšanas vs pabeigto uzdevumu laiku"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabel uzdevumu apjoms svārstās no $from līdz $to $direction $rate%, rādot ievērojamus svārstības. Lūdzu, apsveriet koncentrēties uz uzdevumu piešķiršanas līdzsvaru.",
+    "description": "Ieskats par kvadranta uzdevumu apjoma svārstībām"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabel uzdevumu pabeigšanas līmenis rāda ilgtspējīgu augošu tendenci, rādot darba aktivitātes uzlabošanos.",
+    "description": "Ieskats par augošu pabeigšanas līmeņa tendenci"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabel uzdevumu pabeigšanas līmenis rāda ilgtspējīgu dilstošu tendenci, kas prasa uzmanību izpildītās aktivitātes problēmām.",
+    "description": "Ieskats par dilstošu pabeigšanas līmeņa tendenci"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2 (svarīgi, bet ne steidzami) uzdevumi turpina uzkrāties bez pabeigšanas līmeņa uzlabošanas, atspoguļojot, ka «stratēģiskie uzdevumi» nav integrēti regulārā izpildes plānā, nesot «kavēšanās uzkrāšanās» risku.",
+    "description": "Ieskats par Q2 uzdevumu uzkrāšanos"
+  }
+}

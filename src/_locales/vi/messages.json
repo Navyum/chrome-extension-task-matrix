@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Trình Quản Lý Nhiệm Vụ & Công Cụ Miễn Phí",
+    "description": "Tên ứng dụng"
+  },
+  "appDescription": {
+    "message": "Tiện ích mở rộng Chrome miễn phí cho các nhiệm vụ thông minh. Trực quan hóa nhiệm vụ của bạn với các công cụ mạnh mẽ và giao diện thân thiện với người dùng",
+    "description": "Mô tả ứng dụng"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Tiêu đề ứng dụng"
+  },
+  "taskManager": {
+    "message": "Trình Quản Lý Nhiệm Vụ",
+    "description": "Tiêu đề nút trình quản lý nhiệm vụ"
+  },
+  "report": {
+    "message": "Báo Cáo",
+    "description": "Tiêu đề nút báo cáo"
+  },
+  "settings": {
+    "message": "Cài Đặt",
+    "description": "Tiêu đề nút cài đặt"
+  },
+  "help": {
+    "message": "Trợ Giúp",
+    "description": "Tiêu đề nút trợ giúp"
+  },
+  "addTask": {
+    "message": "Thêm Nhiệm Vụ",
+    "description": "Tiêu đề nút thêm nhiệm vụ"
+  },
+  "close": {
+    "message": "Đóng",
+    "description": "Văn bản nút đóng"
+  },
+  "editTask": {
+    "message": "Chỉnh Sửa Nhiệm Vụ",
+    "description": "Tiêu đề modal chỉnh sửa nhiệm vụ"
+  },
+  "newTask": {
+    "message": "Mới",
+    "description": "Trạng thái nhiệm vụ mới"
+  },
+  "taskTitle": {
+    "message": "Tiêu Đề Nhiệm Vụ *",
+    "description": "Nhãn tiêu đề nhiệm vụ"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Nhập tiêu đề nhiệm vụ",
+    "description": "Placeholder trường nhập tiêu đề nhiệm vụ"
+  },
+  "taskDescription": {
+    "message": "Mô Tả Nhiệm Vụ",
+    "description": "Nhãn mô tả nhiệm vụ"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Nhập mô tả nhiệm vụ (tùy chọn)",
+    "description": "Placeholder trường nhập mô tả nhiệm vụ"
+  },
+  "importanceLevel": {
+    "message": "Mức Độ Quan Trọng *",
+    "description": "Nhãn mức độ quan trọng"
+  },
+  "notImportant": {
+    "message": "Không Quan Trọng",
+    "description": "Nhãn không quan trọng"
+  },
+  "veryImportant": {
+    "message": "Rất Quan Trọng",
+    "description": "Nhãn rất quan trọng"
+  },
+  "dueDate": {
+    "message": "Ngày Hết Hạn *",
+    "description": "Nhãn ngày hết hạn"
+  },
+  "taskCategory": {
+    "message": "Danh Mục Nhiệm Vụ",
+    "description": "Nhãn danh mục nhiệm vụ"
+  },
+  "work": {
+    "message": "Công Việc",
+    "description": "Danh mục công việc"
+  },
+  "personal": {
+    "message": "Cá Nhân",
+    "description": "Danh mục cá nhân"
+  },
+  "study": {
+    "message": "Học Tập",
+    "description": "Danh mục học tập"
+  },
+  "health": {
+    "message": "Sức Khỏe",
+    "description": "Danh mục sức khỏe"
+  },
+  "other": {
+    "message": "Khác",
+    "description": "Danh mục khác"
+  },
+  "deleteTask": {
+    "message": "Xóa Nhiệm Vụ",
+    "description": "Nút xóa nhiệm vụ"
+  },
+  "cancel": {
+    "message": "Hủy",
+    "description": "Nút hủy"
+  },
+  "saveTask": {
+    "message": "Lưu Nhiệm Vụ",
+    "description": "Nút lưu nhiệm vụ"
+  },
+  "doing": {
+    "message": "Đang Thực Hiện",
+    "description": "Trạng thái đang thực hiện"
+  },
+  "overdue": {
+    "message": "Quá Hạn",
+    "description": "Trạng thái quá hạn"
+  },
+  "completed": {
+    "message": "Hoàn Thành",
+    "description": "Trạng thái hoàn thành"
+  },
+  "rejected": {
+    "message": "Từ Chối",
+    "description": "Trạng thái từ chối"
+  },
+  "pending": {
+    "message": "Chờ Xử Lý",
+    "description": "Nhãn trạng thái chờ xử lý"
+  },
+  "urgentTaskReminder": {
+    "message": "Nhắc Nhở Nhiệm Vụ Khẩn Cấp",
+    "description": "Tiêu đề phần nhắc nhở nhiệm vụ khẩn cấp"
+  },
+  "enableUrgentReminder": {
+    "message": "Bật Nhắc Nhở Nhiệm Vụ Khẩn Cấp",
+    "description": "Hộp kiểm bật nhắc nhở nhiệm vụ khẩn cấp"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Khi một nhiệm vụ sắp hết hạn, nhắc nhở thông qua thay đổi biểu tượng",
+    "description": "Mô tả bật nhắc nhở nhiệm vụ khẩn cấp"
+  },
+  "reminderThreshold": {
+    "message": "Ngưỡng Nhắc Nhở (phút)",
+    "description": "Nhãn ngưỡng nhắc nhở"
+  },
+  "reminderThresholdDesc": {
+    "message": "Khi thời gian còn lại của nhiệm vụ ít hơn thời lượng này, kích hoạt nhắc nhở",
+    "description": "Mô tả ngưỡng nhắc nhở"
+  },
+  "reminderInterval": {
+    "message": "Khoảng Cách Nhắc Nhở (phút)",
+    "description": "Nhãn khoảng cách nhắc nhở"
+  },
+  "reminderIntervalDesc": {
+    "message": "Tần suất kiểm tra trạng thái nhiệm vụ trong nền",
+    "description": "Mô tả khoảng cách nhắc nhở"
+  },
+  "iconReminder": {
+    "message": "Nhắc Nhở Biểu Tượng",
+    "description": "Tiêu đề phần nhắc nhở biểu tượng"
+  },
+  "showIconBadge": {
+    "message": "Hiển Thị Badge Biểu Tượng",
+    "description": "Hộp kiểm hiển thị badge biểu tượng"
+  },
+  "showIconBadgeDesc": {
+    "message": "Hiển thị số lượng nhiệm vụ khẩn cấp trên biểu tượng tiện ích",
+    "description": "Mô tả hiển thị badge biểu tượng"
+  },
+  "showIconTooltip": {
+    "message": "Hiển Thị Tooltip Biểu Tượng",
+    "description": "Hộp kiểm hiển thị tooltip biểu tượng"
+  },
+  "showIconTooltipDesc": {
+    "message": "Hiển thị thông tin nhắc nhở nhiệm vụ khi di chuột qua biểu tượng",
+    "description": "Mô tả hiển thị tooltip biểu tượng"
+  },
+  "save": {
+    "message": "Lưu",
+    "description": "Nút lưu"
+  },
+  "quickStart": {
+    "message": "🚀 Bắt Đầu Nhanh",
+    "description": "Tiêu đề phần bắt đầu nhanh"
+  },
+  "createTask": {
+    "message": "Tạo Nhiệm Vụ:",
+    "description": "Hướng dẫn tạo nhiệm vụ"
+  },
+  "createTaskDesc": {
+    "message": "Nhấp đúp vào vùng trống",
+    "description": "Mô tả tạo nhiệm vụ"
+  },
+  "editTaskDesc": {
+    "message": "Chỉnh Sửa Nhiệm Vụ:",
+    "description": "Hướng dẫn chỉnh sửa nhiệm vụ"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Nhấp đúp vào nhiệm vụ hiện có",
+    "description": "Mô tả hướng dẫn chỉnh sửa nhiệm vụ"
+  },
+  "viewDetails": {
+    "message": "Xem Chi Tiết:",
+    "description": "Hướng dẫn xem chi tiết"
+  },
+  "viewDetailsDesc": {
+    "message": "Di chuột qua nhiệm vụ",
+    "description": "Mô tả xem chi tiết"
+  },
+  "taskManagerDesc": {
+    "message": "Trình Quản Lý Nhiệm Vụ:",
+    "description": "Hướng dẫn trình quản lý nhiệm vụ"
+  },
+  "taskManagerInstruction": {
+    "message": "Nhấp vào biểu tượng danh sách cho tất cả nhiệm vụ",
+    "description": "Mô tả hướng dẫn trình quản lý nhiệm vụ"
+  },
+  "analysisReport": {
+    "message": "Báo Cáo Phân Tích:",
+    "description": "Hướng dẫn báo cáo phân tích"
+  },
+  "analysisReportDesc": {
+    "message": "Nhấp vào biểu tượng biểu đồ để xem thông tin chi tiết",
+    "description": "Mô tả báo cáo phân tích"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Ma Trận Nhiệm Vụ Eisenhower",
+    "description": "Tiêu đề phần ma trận Eisenhower"
+  },
+  "q1Title": {
+    "message": "Q1: Quan Trọng và Khẩn Cấp",
+    "description": "Tiêu đề góc phần tư Q1"
+  },
+  "q1Desc": {
+    "message": "Làm ngay bây giờ. Các nhiệm vụ quan trọng cần chú ý ngay lập tức.",
+    "description": "Mô tả góc phần tư Q1"
+  },
+  "q2Title": {
+    "message": "Q2: Quan Trọng và Không Khẩn Cấp",
+    "description": "Tiêu đề góc phần tư Q2"
+  },
+  "q2Desc": {
+    "message": "Lên lịch cho nó. Các nhiệm vụ chiến lược cho kế hoạch dài hạn.",
+    "description": "Mô tả góc phần tư Q2"
+  },
+  "q3Title": {
+    "message": "Q3: Không Quan Trọng và Khẩn Cấp",
+    "description": "Tiêu đề góc phần tư Q3"
+  },
+  "q3Desc": {
+    "message": "Ủy thác cho người khác. Các gián đoạn có thể được xử lý bởi người khác.",
+    "description": "Mô tả góc phần tư Q3"
+  },
+  "q4Title": {
+    "message": "Q4: Không Quan Trọng và Không Khẩn Cấp",
+    "description": "Tiêu đề góc phần tư Q4"
+  },
+  "q4Desc": {
+    "message": "Loại bỏ nó. Lãng phí thời gian nên tránh.",
+    "description": "Mô tả góc phần tư Q4"
+  },
+  "confirm": {
+    "message": "Xác Nhận",
+    "description": "Nút xác nhận"
+  },
+  "settingsSaved": {
+    "message": "Cài đặt đã được lưu thành công",
+    "description": "Thông báo cài đặt đã được lưu"
+  },
+  "settingsSaveFailed": {
+    "message": "Không thể lưu cài đặt",
+    "description": "Thông báo lưu cài đặt thất bại"
+  },
+  "allTasksCleared": {
+    "message": "Tất cả nhiệm vụ đã được xóa",
+    "description": "Thông báo tất cả nhiệm vụ đã được xóa"
+  },
+  "settingsApplied": {
+    "message": "Cài đặt đã được áp dụng",
+    "description": "Thông báo cài đặt đã được áp dụng"
+  },
+  "taskMonitoringStarted": {
+    "message": "Giám sát nhiệm vụ đã bắt đầu",
+    "description": "Thông báo giám sát nhiệm vụ đã bắt đầu"
+  },
+  "taskMonitoringStopped": {
+    "message": "Giám sát nhiệm vụ đã dừng",
+    "description": "Thông báo giám sát nhiệm vụ đã dừng"
+  },
+  "taskEditProcessed": {
+    "message": "Chỉnh sửa nhiệm vụ đã được xử lý",
+    "description": "Thông báo chỉnh sửa nhiệm vụ đã được xử lý"
+  },
+  "taskAddProcessed": {
+    "message": "Thêm nhiệm vụ đã được xử lý",
+    "description": "Thông báo thêm nhiệm vụ đã được xử lý"
+  },
+  "taskDeleteProcessed": {
+    "message": "Xóa nhiệm vụ đã được xử lý",
+    "description": "Thông báo xóa nhiệm vụ đã được xử lý"
+  },
+  "unknownMessageType": {
+    "message": "Loại tin nhắn không xác định",
+    "description": "Lỗi loại tin nhắn không xác định"
+  },
+  "openTaskMatrix": {
+    "message": "Mở TaskMatrix Pro",
+    "description": "Mô tả lệnh mở TaskMatrix Pro"
+  },
+  "ready": {
+    "message": "Sẵn Sàng",
+    "description": "Thông báo trạng thái sẵn sàng"
+  },
+  "initializationFailed": {
+    "message": "Khởi Tạo Thất Bại",
+    "description": "Thông báo trạng thái khởi tạo thất bại"
+  },
+  "loading": {
+    "message": "Đang Tải...",
+    "description": "Thông báo trạng thái đang tải"
+  },
+  "saving": {
+    "message": "Đang Lưu...",
+    "description": "Thông báo trạng thái đang lưu"
+  },
+  "failedToGetFormData": {
+    "message": "Không thể lấy dữ liệu biểu mẫu",
+    "description": "Thông báo lỗi khi không thể lấy dữ liệu biểu mẫu"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Vui lòng nhập tiêu đề nhiệm vụ",
+    "description": "Thông báo cảnh báo khi tiêu đề nhiệm vụ trống"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Nhiệm vụ đã được cập nhật thành công",
+    "description": "Thông báo thành công khi nhiệm vụ được cập nhật"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Nhiệm vụ đã được thêm thành công",
+    "description": "Thông báo thành công khi nhiệm vụ được thêm"
+  },
+  "saveFailed": {
+    "message": "Lưu thất bại",
+    "description": "Thông báo lỗi khi thao tác lưu thất bại"
+  },
+  "taskNotFound": {
+    "message": "Không tìm thấy nhiệm vụ",
+    "description": "Thông báo lỗi khi không tìm thấy nhiệm vụ"
+  },
+  "failedToEditTask": {
+    "message": "Không thể chỉnh sửa nhiệm vụ",
+    "description": "Thông báo lỗi khi chỉnh sửa nhiệm vụ thất bại"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Nhiệm vụ đã được hoàn thành thành công",
+    "description": "Thông báo thành công khi nhiệm vụ được hoàn thành"
+  },
+  "failedToCompleteTask": {
+    "message": "Không thể hoàn thành nhiệm vụ",
+    "description": "Thông báo lỗi khi hoàn thành nhiệm vụ thất bại"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Bạn có chắc chắn muốn xóa nhiệm vụ này không? Hành động này không thể hoàn tác.",
+    "description": "Thông báo xác nhận để xóa nhiệm vụ"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Nhiệm vụ đã được xóa thành công",
+    "description": "Thông báo thành công khi nhiệm vụ được xóa"
+  },
+  "failedToDeleteTask": {
+    "message": "Không thể xóa nhiệm vụ",
+    "description": "Thông báo lỗi khi xóa nhiệm vụ thất bại"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Cài đặt đã được lưu thành công",
+    "description": "Thông báo thành công khi cài đặt được lưu"
+  },
+  "failedToSaveSettings": {
+    "message": "Không thể lưu cài đặt",
+    "description": "Thông báo lỗi khi lưu cài đặt thất bại"
+  },
+  "loadingDataFailed": {
+    "message": "Không thể tải dữ liệu",
+    "description": "Thông báo lỗi khi tải dữ liệu thất bại"
+  },
+  "noTaskFound": {
+    "message": "Không Tìm Thấy Nhiệm Vụ",
+    "description": "Thông báo trạng thái trống khi không tìm thấy nhiệm vụ"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Nhấp vào biểu tượng dấu cộng để thêm nhiệm vụ đầu tiên của bạn",
+    "description": "Hướng dẫn trạng thái trống để thêm nhiệm vụ đầu tiên"
+  },
+  "allCaughtUp": {
+    "message": "Tất Cả Đã Cập Nhật!",
+    "description": "Thông báo trạng thái trống khi không có nhiệm vụ quá hạn"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Không có nhiệm vụ quá hạn. Làm tốt lắm trong việc giữ mọi thứ đúng hướng!",
+    "description": "Thông báo trạng thái trống cho không có nhiệm vụ quá hạn"
+  },
+  "noCompletedTasks": {
+    "message": "Không Có Nhiệm Vụ Hoàn Thành",
+    "description": "Thông báo trạng thái trống khi không có nhiệm vụ hoàn thành"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Nhấp đúp vào nhiệm vụ và nhấp vào nhãn trạng thái để đánh dấu là hoàn thành",
+    "description": "Hướng dẫn để đánh dấu nhiệm vụ là hoàn thành"
+  },
+  "noRejectedTasks": {
+    "message": "Không Có Nhiệm Vụ Từ Chối",
+    "description": "Thông báo trạng thái trống khi không có nhiệm vụ từ chối"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Nhấp đúp vào nhiệm vụ và nhấp hai lần vào nhãn trạng thái để đánh dấu là từ chối",
+    "description": "Hướng dẫn để đánh dấu nhiệm vụ là từ chối"
+  },
+  "task": {
+    "message": "Nhiệm Vụ:",
+    "description": "Tiền tố nhãn nhiệm vụ"
+  },
+  "importance": {
+    "message": "Tầm Quan Trọng:",
+    "description": "Nhãn tầm quan trọng"
+  },
+  "noData": {
+    "message": "Không Có Dữ Liệu",
+    "description": "Thông báo không có dữ liệu cho biểu đồ"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Không đủ dữ liệu để tạo bản đồ nhiệt",
+    "description": "Thông báo khi không đủ dữ liệu cho bản đồ nhiệt"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Không đủ dữ liệu nhiệm vụ để tạo biểu đồ phân tán",
+    "description": "Thông báo khi không đủ dữ liệu cho biểu đồ phân tán"
+  },
+  "bytes": {
+    "message": "Bytes",
+    "description": "Đơn vị bytes"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Đơn vị kilobytes"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Đơn vị megabytes"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Đơn vị gigabytes"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Đơn vị terabytes"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Tần suất kiểm tra trạng thái nhiệm vụ trong nền",
+    "description": "Mô tả cho tần suất kiểm tra trạng thái nhiệm vụ"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Hiển thị số lượng nhiệm vụ khẩn cấp trên biểu tượng tiện ích",
+    "description": "Mô tả cho cài đặt badge biểu tượng"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Hiển thị thông tin nhắc nhở nhiệm vụ khi di chuột qua biểu tượng",
+    "description": "Mô tả cho cài đặt tiêu đề biểu tượng"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Nhấp đúp vào vùng trống",
+    "description": "Hướng dẫn để tạo nhiệm vụ"
+  },
+  "editTaskInstruction": {
+    "message": "Chỉnh Sửa Nhiệm Vụ:",
+    "description": "Hướng dẫn chỉnh sửa nhiệm vụ"
+  },
+  "hoverOverTask": {
+    "message": "Di chuột qua nhiệm vụ",
+    "description": "Hướng dẫn để hiển thị chi tiết nhiệm vụ"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Nhấp vào biểu tượng danh sách cho tất cả nhiệm vụ",
+    "description": "Hướng dẫn để truy cập trình quản lý nhiệm vụ"
+  },
+  "clickChartIconForInsights": {
+    "message": "Nhấp vào biểu tượng biểu đồ để xem thông tin chi tiết",
+    "description": "Hướng dẫn để truy cập báo cáo phân tích"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Ma Trận Nhiệm Vụ Eisenhower",
+    "description": "Tiêu đề phần ma trận nhiệm vụ Eisenhower"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Quan Trọng và Khẩn Cấp",
+    "description": "Tiêu đề góc phần tư Q1"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Làm ngay bây giờ. Các nhiệm vụ quan trọng cần chú ý ngay lập tức.",
+    "description": "Mô tả góc phần tư Q1"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Quan Trọng và Không Khẩn Cấp",
+    "description": "Tiêu đề góc phần tư Q2"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Lên lịch cho nó. Các nhiệm vụ chiến lược cho kế hoạch dài hạn.",
+    "description": "Mô tả góc phần tư Q2"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Không Quan Trọng và Khẩn Cấp",
+    "description": "Tiêu đề góc phần tư Q3"
+  },
+  "delegateItInterruptions": {
+    "message": "Ủy thác cho người khác. Các gián đoạn có thể được xử lý bởi người khác.",
+    "description": "Mô tả góc phần tư Q3"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Không Quan Trọng và Không Khẩn Cấp",
+    "description": "Tiêu đề góc phần tư Q4"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Loại bỏ nó. Lãng phí thời gian nên tránh.",
+    "description": "Mô tả góc phần tư Q4"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Khi thời gian còn lại của nhiệm vụ ít hơn thời lượng này, kích hoạt nhắc nhở",
+    "description": "Mô tả cho cài đặt ngưỡng nhắc nhở khẩn cấp"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Khi một nhiệm vụ sắp hết hạn, nhắc nhở thông qua thay đổi biểu tượng",
+    "description": "Mô tả cho cài đặt nhắc nhở khẩn cấp"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Bật Nhắc Nhở Nhiệm Vụ Khẩn Cấp",
+    "description": "Nhãn hộp kiểm bật nhắc nhở nhiệm vụ khẩn cấp"
+  },
+  "invalidDueDate": {
+    "message": "Ngày hết hạn không hợp lệ",
+    "description": "Thông báo lỗi cho ngày hết hạn không hợp lệ"
+  },
+  "dueAt": {
+    "message": "Hết hạn vào",
+    "description": "Tiền tố hết hạn vào cho nhiệm vụ hết hạn vào một ngày cụ thể"
+  },
+  "dueIn": {
+    "message": "Hết hạn trong",
+    "description": "Tiền tố hết hạn trong cho nhiệm vụ hết hạn trong một thời gian cụ thể"
+  },
+  "completionRate": {
+    "message": "Tỷ Lệ Hoàn Thành",
+    "description": "Tiêu đề tab tỷ lệ hoàn thành"
+  },
+  "timeStatus": {
+    "message": "Thời Gian-Trạng Thái",
+    "description": "Tiêu đề tab thời gian-trạng thái"
+  },
+  "timeTrend": {
+    "message": "Xu Hướng Thời Gian",
+    "description": "Tiêu đề tab xu hướng thời gian"
+  },
+  "sourceCross": {
+    "message": "Nguồn-Chéo",
+    "description": "Tiêu đề tab nguồn-chéo"
+  },
+  "completionRateQuantity": {
+    "message": "Tỷ Lệ Hoàn Thành - Số Lượng",
+    "description": "Tiêu đề biểu đồ tỷ lệ hoàn thành"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Nguồn Nhiệm Vụ - Tỷ Lệ Hoàn Thành",
+    "description": "Tiêu đề biểu đồ tỷ lệ hoàn thành nguồn nhiệm vụ"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Thời Gian - Trạng Thái Hoàn Thành Biểu Đồ Phân Tán",
+    "description": "Tiêu đề biểu đồ phân tán trạng thái hoàn thành thời gian"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Xu Hướng Hàng Tuần/Hàng Tháng",
+    "description": "Tiêu đề biểu đồ xu hướng hàng tuần hàng tháng"
+  },
+  "weekly": {
+    "message": "Hàng Tuần",
+    "description": "Nút thời kỳ hàng tuần"
+  },
+  "monthly": {
+    "message": "Hàng Tháng",
+    "description": "Nút thời kỳ hàng tháng"
+  },
+  "source": {
+    "message": "Nguồn",
+    "description": "Tiêu đề bảng nguồn"
+  },
+  "low": {
+    "message": "Thấp (0-20%)",
+    "description": "Nhãn tỷ lệ hoàn thành thấp"
+  },
+  "mediumLow": {
+    "message": "Trung Bình-Thấp (20-50%)",
+    "description": "Nhãn tỷ lệ hoàn thành trung bình-thấp"
+  },
+  "mediumHigh": {
+    "message": "Trung Bình-Cao (50-80%)",
+    "description": "Nhãn tỷ lệ hoàn thành trung bình-cao"
+  },
+  "high": {
+    "message": "Cao (80-100%)",
+    "description": "Nhãn tỷ lệ hoàn thành cao"
+  },
+  "taskCost": {
+    "message": "Chi Phí Nhiệm Vụ (ngày)",
+    "description": "Nhãn trục chi phí nhiệm vụ"
+  },
+  "taskImportance": {
+    "message": "Tầm Quan Trọng Nhiệm Vụ",
+    "description": "Nhãn trục tầm quan trọng nhiệm vụ"
+  },
+  "taskCount": {
+    "message": "Số Lượng Nhiệm Vụ",
+    "description": "Nhãn trục số lượng nhiệm vụ"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Thống Kê Thời Gian Nhiệm Vụ Góc Phần Tư (Ngày):",
+    "description": "Tiêu đề thống kê thời gian nhiệm vụ góc phần tư"
+  },
+  "quadrant": {
+    "message": "Góc Phần Tư",
+    "description": "Tiêu đề bảng góc phần tư"
+  },
+  "completedAvg": {
+    "message": "Hoàn Thành (Trung Bình)",
+    "description": "Tiêu đề bảng hoàn thành trung bình"
+  },
+  "completedMedian": {
+    "message": "Hoàn Thành (Trung Vị)",
+    "description": "Tiêu đề bảng hoàn thành trung vị"
+  },
+  "inProgressAvg": {
+    "message": "Đang Thực Hiện (Trung Bình)",
+    "description": "Tiêu đề bảng đang thực hiện trung bình"
+  },
+  "inProgressMedian": {
+    "message": "Đang Thực Hiện (Trung Vị)",
+    "description": "Tiêu đề bảng đang thực hiện trung vị"
+  },
+  "deepInsights": {
+    "message": "Thông Tin Chi Tiết Sâu",
+    "description": "Tiêu đề phần thông tin chi tiết sâu"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Hiện tại không đủ dữ liệu để tạo thông tin chi tiết.",
+    "description": "Thông báo không có dữ liệu cho thông tin chi tiết"
+  },
+  "importantUrgent": {
+    "message": "Quan Trọng và Khẩn Cấp",
+    "description": "Nhãn góc phần tư Q1"
+  },
+  "importantNotUrgent": {
+    "message": "Quan Trọng và Không Khẩn Cấp",
+    "description": "Nhãn góc phần tư Q2"
+  },
+  "notImportantNotUrgent": {
+    "message": "Không Quan Trọng và Không Khẩn Cấp",
+    "description": "Nhãn góc phần tư Q3"
+  },
+  "notImportantUrgent": {
+    "message": "Không Quan Trọng và Khẩn Cấp",
+    "description": "Nhãn góc phần tư Q4"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2 (Quan Trọng và Không Khẩn Cấp) góc phần tư tỷ lệ hoàn thành nhiệm vụ thấp hơn đáng kể so với các góc phần tư khác, phản ánh sự thiên vị thực hiện \"khẩn cấp trên quan trọng\", có thể dẫn đến chậm trễ mục tiêu chiến lược trong dài hạn.",
+    "description": "Thông tin chi tiết về tỷ lệ hoàn thành Q2 thấp hơn"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3 (Không Quan Trọng và Không Khẩn Cấp) góc phần tư tỷ lệ hoàn thành nhiệm vụ quá cao, hãy cẩn thận với \"việc làm không hiệu quả\" - nếu quá nhiều năng lượng được sử dụng cho các nhiệm vụ tầm thường, điều này nén thời gian cho các nhiệm vụ cốt lõi.",
+    "description": "Thông tin chi tiết về tỷ lệ hoàn thành Q3 quá cao"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1 (Quan Trọng và Khẩn Cấp) góc phần tư nhiệm vụ chiếm $percentage% tổng số nhiệm vụ, cho thấy cải thiện trong lập kế hoạch nhiệm vụ, xử lý các nhiệm vụ quan trọng sớm để tránh các tình huống khẩn cấp.",
+    "description": "Thông tin chi tiết về phần trăm nhiệm vụ Q1 cao"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4 (Không Quan Trọng và Khẩn Cấp) góc phần tư nhiệm vụ chiếm $percentage% tổng số nhiệm vụ, xem xét nguồn gốc của những nhiệm vụ ưu tiên thấp nhưng khẩn cấp này, tối ưu hóa các quy trình phản ứng khẩn cấp.",
+    "description": "Thông tin chi tiết về phần trăm nhiệm vụ Q4 cao"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "\"$source\" nhiệm vụ trong Q1 (Quan Trọng và Khẩn Cấp) đạt $q1Rate% tỷ lệ hoàn thành, nhưng chỉ $q2Rate% trong Q2 (Quan Trọng và Không Khẩn Cấp), cho thấy ưu tiên thực hiện nhiệm vụ được điều khiển bởi \"áp lực bên ngoài\" thay vì tập trung chiến lược nội bộ.",
+    "description": "Thông tin chi tiết về tỷ lệ hoàn thành nhiệm vụ nguồn Q1 vs Q2"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "\"$source\" nhiệm vụ trong Q4 (Không Quan Trọng và Khẩn Cấp) có tỷ lệ hoàn thành thấp ($q4Rate%), cần xác nhận xem \"nhiệm vụ tạm thời\" có vấn đề định nghĩa ưu tiên hay không.",
+    "description": "Thông tin chi tiết về tỷ lệ hoàn thành nhiệm vụ Q4 thấp"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "\"$source\" tập trung cao độ trong góc phần tư $quadrant ($quadrantName), chiếm $percentage%. Xem xét lập kế hoạch nhiệm vụ về tính hợp lý.",
+    "description": "Thông tin chi tiết về nhiệm vụ tập trung cao độ trong một góc phần tư"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "\"$highSource\" trong $highQuadrant có tỷ lệ hoàn thành cao nhất ($highRate%), trong khi \"$lowSource\" trong $lowQuadrant có thấp nhất ($lowRate%), cho thấy sự khác biệt rõ ràng trong ưu tiên xử lý cho các loại nhiệm vụ khác nhau.",
+    "description": "Thông tin chi tiết về sự khác biệt tỷ lệ hoàn thành giữa các nguồn"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (Quan Trọng và Khẩn Cấp) có $percentage% nhiệm vụ chờ xử lý mất hơn 3 ngày, cho thấy thiếu hụt tài nguyên tiềm ẩn hoặc khó khăn bất ngờ trong các nhiệm vụ cốt lõi. Xem xét chia nhỏ nhiệm vụ hoặc hỗ trợ thêm.",
+    "description": "Thông tin chi tiết về nhiệm vụ chờ xử lý Q1 mất quá nhiều thời gian"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Q4 (Không Quan Trọng và Khẩn Cấp) nhiệm vụ hoàn thành trung bình $q4Time ngày, vượt xa Q2 (Quan Trọng và Không Khẩn Cấp) ở $q2Time ngày, cho thấy \"nhiệm vụ khẩn cấp tạm thời\" chiếm quá nhiều tài nguyên. Tối ưu hóa các quy trình phản ứng khẩn cấp.",
+    "description": "Thông tin chi tiết về thời gian hoàn thành nhiệm vụ Q4 vs Q2"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Thời gian xử lý trung bình của nhiệm vụ chờ xử lý ($pendingTime ngày) cao hơn đáng kể so với nhiệm vụ hoàn thành ($completedTime ngày). Tập trung vào các nhiệm vụ bị kẹt lâu và điều chỉnh chiến lược hoặc phân bổ tài nguyên khi cần thiết.",
+    "description": "Thông tin chi tiết về thời gian nhiệm vụ chờ xử lý vs hoàn thành"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabel khối lượng nhiệm vụ $direction $rate% từ $from đến $to, cho thấy biến động đáng kể. Xem xét tập trung vào cân bằng phân bổ nhiệm vụ.",
+    "description": "Thông tin chi tiết về biến động khối lượng nhiệm vụ góc phần tư"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabel tỷ lệ hoàn thành nhiệm vụ cho thấy xu hướng tăng liên tục, cho thấy hoạt động làm việc được cải thiện.",
+    "description": "Thông tin chi tiết về xu hướng tăng tỷ lệ hoàn thành"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabel tỷ lệ hoàn thành nhiệm vụ cho thấy xu hướng giảm liên tục, cần chú ý đến các vấn đề hoạt động thực hiện.",
+    "description": "Thông tin chi tiết về xu hướng giảm tỷ lệ hoàn thành"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2 (Quan Trọng và Không Khẩn Cấp) nhiệm vụ tiếp tục tích lũy mà không cải thiện tỷ lệ hoàn thành, phản ánh rằng \"nhiệm vụ chiến lược\" không được tích hợp vào các chương trình thực hiện thường xuyên, điều này tạo ra rủi ro \"tích lũy chậm trễ\".",
+    "description": "Thông tin chi tiết về sự tích lũy nhiệm vụ Q2"
+  }
+}

@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Darmowy Menedżer Zadań i Narzędzia",
+    "description": "Nazwa aplikacji"
+  },
+  "appDescription": {
+    "message": "Darmowe rozszerzenie Chrome do inteligentnych zadań. Wizualizuj swoje zadania za pomocą potężnych narzędzi i przyjaznego interfejsu",
+    "description": "Opis aplikacji"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Tytuł aplikacji"
+  },
+  "taskManager": {
+    "message": "Menedżer Zadań",
+    "description": "Tytuł przycisku menedżera zadań"
+  },
+  "report": {
+    "message": "Raport",
+    "description": "Tytuł przycisku raportu"
+  },
+  "settings": {
+    "message": "Ustawienia",
+    "description": "Tytuł przycisku ustawień"
+  },
+  "help": {
+    "message": "Pomoc",
+    "description": "Tytuł przycisku pomocy"
+  },
+  "addTask": {
+    "message": "Dodaj Zadanie",
+    "description": "Tytuł przycisku dodaj zadanie"
+  },
+  "close": {
+    "message": "Zamknij",
+    "description": "Tekst przycisku zamknij"
+  },
+  "editTask": {
+    "message": "Edytuj Zadanie",
+    "description": "Tytuł modala edytuj zadanie"
+  },
+  "newTask": {
+    "message": "Nowe",
+    "description": "Status nowego zadania"
+  },
+  "taskTitle": {
+    "message": "Tytuł Zadania *",
+    "description": "Etykieta tytułu zadania"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Wprowadź tytuł zadania",
+    "description": "Placeholder pola tytułu zadania"
+  },
+  "taskDescription": {
+    "message": "Opis Zadania",
+    "description": "Etykieta opisu zadania"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Wprowadź opis zadania (opcjonalnie)",
+    "description": "Placeholder pola opisu zadania"
+  },
+  "importanceLevel": {
+    "message": "Poziom Ważności *",
+    "description": "Etykieta poziomu ważności"
+  },
+  "notImportant": {
+    "message": "Nieważne",
+    "description": "Etykieta nieważne"
+  },
+  "veryImportant": {
+    "message": "Bardzo Ważne",
+    "description": "Etykieta bardzo ważne"
+  },
+  "dueDate": {
+    "message": "Termin Wykonania *",
+    "description": "Etykieta terminu wykonania"
+  },
+  "taskCategory": {
+    "message": "Kategoria Zadania",
+    "description": "Etykieta kategorii zadania"
+  },
+  "work": {
+    "message": "Praca",
+    "description": "Kategoria praca"
+  },
+  "personal": {
+    "message": "Osobiste",
+    "description": "Kategoria osobiste"
+  },
+  "study": {
+    "message": "Nauka",
+    "description": "Kategoria nauka"
+  },
+  "health": {
+    "message": "Zdrowie",
+    "description": "Kategoria zdrowie"
+  },
+  "other": {
+    "message": "Inne",
+    "description": "Kategoria inne"
+  },
+  "deleteTask": {
+    "message": "Usuń Zadanie",
+    "description": "Przycisk usuń zadanie"
+  },
+  "cancel": {
+    "message": "Anuluj",
+    "description": "Przycisk anuluj"
+  },
+  "saveTask": {
+    "message": "Zapisz Zadanie",
+    "description": "Przycisk zapisz zadanie"
+  },
+  "doing": {
+    "message": "W Trakcie",
+    "description": "Status w trakcie"
+  },
+  "overdue": {
+    "message": "Przeterminowane",
+    "description": "Status przeterminowane"
+  },
+  "completed": {
+    "message": "Ukończone",
+    "description": "Status ukończone"
+  },
+  "rejected": {
+    "message": "Odrzucone",
+    "description": "Status odrzucone"
+  },
+  "pending": {
+    "message": "Oczekujące",
+    "description": "Etykieta statusu oczekujące"
+  },
+  "urgentTaskReminder": {
+    "message": "Przypomnienie o Pilnych Zadaniach",
+    "description": "Tytuł sekcji przypomnienia o pilnych zadaniach"
+  },
+  "enableUrgentReminder": {
+    "message": "Włącz Przypomnienie o Pilnych Zadaniach",
+    "description": "Checkbox włącz przypomnienie o pilnych zadaniach"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Gdy zadanie ma się wkrótce zakończyć, przypomnij poprzez zmiany ikon",
+    "description": "Opis włącz przypomnienie o pilnych zadaniach"
+  },
+  "reminderThreshold": {
+    "message": "Próg Przypomnienia (minuty)",
+    "description": "Etykieta progu przypomnienia"
+  },
+  "reminderThresholdDesc": {
+    "message": "Gdy pozostały czas zadania jest mniejszy niż ten czas trwania, aktywuj przypomnienie",
+    "description": "Opis progu przypomnienia"
+  },
+  "reminderInterval": {
+    "message": "Interwał Przypomnienia (minuty)",
+    "description": "Etykieta interwału przypomnienia"
+  },
+  "reminderIntervalDesc": {
+    "message": "Częstotliwość sprawdzania statusu zadań w tle",
+    "description": "Opis interwału przypomnienia"
+  },
+  "iconReminder": {
+    "message": "Przypomnienie Ikony",
+    "description": "Tytuł sekcji przypomnienia ikony"
+  },
+  "showIconBadge": {
+    "message": "Pokaż Badge Ikony",
+    "description": "Checkbox pokaż badge ikony"
+  },
+  "showIconBadgeDesc": {
+    "message": "Pokaż liczbę pilnych zadań na ikonie wtyczki",
+    "description": "Opis pokaż badge ikony"
+  },
+  "showIconTooltip": {
+    "message": "Pokaż Tooltip Ikony",
+    "description": "Checkbox pokaż tooltip ikony"
+  },
+  "showIconTooltipDesc": {
+    "message": "Pokaż informacje o przypomnieniu zadania przy najechaniu na ikonę",
+    "description": "Opis pokaż tooltip ikony"
+  },
+  "save": {
+    "message": "Zapisz",
+    "description": "Przycisk zapisz"
+  },
+  "quickStart": {
+    "message": "🚀 Szybki Start",
+    "description": "Tytuł sekcji szybki start"
+  },
+  "createTask": {
+    "message": "Utwórz Zadanie:",
+    "description": "Instrukcja utwórz zadanie"
+  },
+  "createTaskDesc": {
+    "message": "Kliknij dwukrotnie na pusty obszar",
+    "description": "Opis utwórz zadanie"
+  },
+  "editTaskDesc": {
+    "message": "Edytuj Zadanie:",
+    "description": "Instrukcja edytuj zadanie"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Kliknij dwukrotnie na istniejące zadanie",
+    "description": "Opis instrukcji edytuj zadanie"
+  },
+  "viewDetails": {
+    "message": "Zobacz Szczegóły:",
+    "description": "Instrukcja zobacz szczegóły"
+  },
+  "viewDetailsDesc": {
+    "message": "Najedź na zadanie",
+    "description": "Opis zobacz szczegóły"
+  },
+  "taskManagerDesc": {
+    "message": "Menedżer Zadań:",
+    "description": "Instrukcja menedżera zadań"
+  },
+  "taskManagerInstruction": {
+    "message": "Kliknij na ikonę listy dla wszystkich zadań",
+    "description": "Opis instrukcji menedżera zadań"
+  },
+  "analysisReport": {
+    "message": "Raport Analizy:",
+    "description": "Instrukcja raportu analizy"
+  },
+  "analysisReportDesc": {
+    "message": "Kliknij na ikonę wykresu dla wglądu",
+    "description": "Opis raportu analizy"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Macierz Zadań Eisenhower",
+    "description": "Tytuł sekcji macierzy Eisenhower"
+  },
+  "q1Title": {
+    "message": "Q1: Ważne i Pilne",
+    "description": "Tytuł kwadrantu Q1"
+  },
+  "q1Desc": {
+    "message": "Zrób to teraz. Krytyczne zadania wymagające natychmiastowej uwagi.",
+    "description": "Opis kwadrantu Q1"
+  },
+  "q2Title": {
+    "message": "Q2: Ważne i Nie Pilne",
+    "description": "Tytuł kwadrantu Q2"
+  },
+  "q2Desc": {
+    "message": "Zaplanuj to. Zadania strategiczne do długoterminowego planowania.",
+    "description": "Opis kwadrantu Q2"
+  },
+  "q3Title": {
+    "message": "Q3: Nieważne i Pilne",
+    "description": "Tytuł kwadrantu Q3"
+  },
+  "q3Desc": {
+    "message": "Deleguj to. Przerwy, które mogą być obsłużone przez innych.",
+    "description": "Opis kwadrantu Q3"
+  },
+  "q4Title": {
+    "message": "Q4: Nieważne i Nie Pilne",
+    "description": "Tytuł kwadrantu Q4"
+  },
+  "q4Desc": {
+    "message": "Wyeliminuj to. Poświęcanie czasu, które należy unikać.",
+    "description": "Opis kwadrantu Q4"
+  },
+  "confirm": {
+    "message": "Potwierdź",
+    "description": "Przycisk potwierdź"
+  },
+  "settingsSaved": {
+    "message": "Ustawienia zapisane pomyślnie",
+    "description": "Powiadomienie o zapisanych ustawieniach"
+  },
+  "settingsSaveFailed": {
+    "message": "Nie udało się zapisać ustawień",
+    "description": "Powiadomienie o nieudanym zapisie ustawień"
+  },
+  "allTasksCleared": {
+    "message": "Wszystkie zadania wyczyszczone",
+    "description": "Wiadomość o wyczyszczeniu wszystkich zadań"
+  },
+  "settingsApplied": {
+    "message": "Ustawienia zastosowane",
+    "description": "Wiadomość o zastosowanych ustawieniach"
+  },
+  "taskMonitoringStarted": {
+    "message": "Monitorowanie zadań rozpoczęte",
+    "description": "Wiadomość o rozpoczęciu monitorowania zadań"
+  },
+  "taskMonitoringStopped": {
+    "message": "Monitorowanie zadań zatrzymane",
+    "description": "Wiadomość o zatrzymaniu monitorowania zadań"
+  },
+  "taskEditProcessed": {
+    "message": "Edycja zadania przetworzona",
+    "description": "Wiadomość o przetworzeniu edycji zadania"
+  },
+  "taskAddProcessed": {
+    "message": "Dodanie zadania przetworzone",
+    "description": "Wiadomość o przetworzeniu dodania zadania"
+  },
+  "taskDeleteProcessed": {
+    "message": "Usunięcie zadania przetworzone",
+    "description": "Wiadomość o przetworzeniu usunięcia zadania"
+  },
+  "unknownMessageType": {
+    "message": "Nieznany typ wiadomości",
+    "description": "Błąd nieznanego typu wiadomości"
+  },
+  "openTaskMatrix": {
+    "message": "Otwórz TaskMatrix Pro",
+    "description": "Opis polecenia otwórz TaskMatrix Pro"
+  },
+  "ready": {
+    "message": "Gotowy",
+    "description": "Wiadomość statusu gotowy"
+  },
+  "initializationFailed": {
+    "message": "Inicjalizacja Nieudana",
+    "description": "Wiadomość statusu nieudanej inicjalizacji"
+  },
+  "loading": {
+    "message": "Ładowanie...",
+    "description": "Wiadomość statusu ładowania"
+  },
+  "saving": {
+    "message": "Zapisywanie...",
+    "description": "Wiadomość statusu zapisywania"
+  },
+  "failedToGetFormData": {
+    "message": "Nie udało się pobrać danych formularza",
+    "description": "Wiadomość błędu gdy nie można pobrać danych formularza"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Proszę wprowadzić tytuł zadania",
+    "description": "Wiadomość ostrzeżenia gdy tytuł zadania jest pusty"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Zadanie zaktualizowane pomyślnie",
+    "description": "Wiadomość sukcesu gdy zadanie jest aktualizowane"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Zadanie dodane pomyślnie",
+    "description": "Wiadomość sukcesu gdy zadanie jest dodawane"
+  },
+  "saveFailed": {
+    "message": "Zapis nieudany",
+    "description": "Wiadomość błędu gdy operacja zapisu nie udaje się"
+  },
+  "taskNotFound": {
+    "message": "Zadanie nie znalezione",
+    "description": "Wiadomość błędu gdy zadanie nie zostanie znalezione"
+  },
+  "failedToEditTask": {
+    "message": "Nie udało się edytować zadania",
+    "description": "Wiadomość błędu gdy edycja zadania nie udaje się"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Zadanie ukończone pomyślnie",
+    "description": "Wiadomość sukcesu gdy zadanie jest ukończane"
+  },
+  "failedToCompleteTask": {
+    "message": "Nie udało się ukończyć zadania",
+    "description": "Wiadomość błędu gdy ukończenie zadania nie udaje się"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Czy na pewno chcesz usunąć to zadanie? Ta akcja nie może być cofnięta.",
+    "description": "Wiadomość potwierdzenia dla usunięcia zadania"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Zadanie usunięte pomyślnie",
+    "description": "Wiadomość sukcesu gdy zadanie jest usuwane"
+  },
+  "failedToDeleteTask": {
+    "message": "Nie udało się usunąć zadania",
+    "description": "Wiadomość błędu gdy usunięcie zadania nie udaje się"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Ustawienia zapisane pomyślnie",
+    "description": "Wiadomość sukcesu gdy ustawienia są zapisywane"
+  },
+  "failedToSaveSettings": {
+    "message": "Nie udało się zapisać ustawień",
+    "description": "Wiadomość błędu gdy zapis ustawień nie udaje się"
+  },
+  "loadingDataFailed": {
+    "message": "Nie udało się załadować danych",
+    "description": "Wiadomość błędu gdy ładowanie danych nie udaje się"
+  },
+  "noTaskFound": {
+    "message": "Nie Znaleziono Zadania",
+    "description": "Wiadomość stanu pustego gdy nie znaleziono zadań"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Kliknij na ikonę plus, aby dodać swoje pierwsze zadanie",
+    "description": "Instrukcja stanu pustego dla dodania pierwszego zadania"
+  },
+  "allCaughtUp": {
+    "message": "Wszystko Zaktualizowane!",
+    "description": "Wiadomość stanu pustego gdy nie ma przeterminowanych zadań"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Brak przeterminowanych zadań. Świetna robota z utrzymywaniem wszystkiego na właściwym torze!",
+    "description": "Wiadomość stanu pustego dla braku przeterminowanych zadań"
+  },
+  "noCompletedTasks": {
+    "message": "Brak Ukończonych Zadań",
+    "description": "Wiadomość stanu pustego gdy nie ma ukończonych zadań"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Kliknij dwukrotnie na zadanie i kliknij na etykietę statusu, aby oznaczyć je jako ukończone",
+    "description": "Instrukcja dla oznaczania zadań jako ukończone"
+  },
+  "noRejectedTasks": {
+    "message": "Brak Odrzuconych Zadań",
+    "description": "Wiadomość stanu pustego gdy nie ma odrzuconych zadań"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Kliknij dwukrotnie na zadanie i kliknij dwukrotnie na etykietę statusu, aby oznaczyć je jako odrzucone",
+    "description": "Instrukcja dla oznaczania zadań jako odrzucone"
+  },
+  "task": {
+    "message": "Zadanie:",
+    "description": "Prefiks etykiety zadania"
+  },
+  "importance": {
+    "message": "Ważność:",
+    "description": "Etykieta ważności"
+  },
+  "noData": {
+    "message": "Brak Danych",
+    "description": "Wiadomość braku danych dla wykresu"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Niewystarczająco danych do wygenerowania mapy cieplnej",
+    "description": "Wiadomość gdy nie ma wystarczająco danych dla mapy cieplnej"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Niewystarczająco danych zadań do wygenerowania wykresu rozrzutu",
+    "description": "Wiadomość gdy nie ma wystarczająco danych dla wykresu rozrzutu"
+  },
+  "bytes": {
+    "message": "Bajty",
+    "description": "Jednostka bajty"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Jednostka kilobajty"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Jednostka megabajty"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Jednostka gigabajty"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Jednostka terabajty"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Częstotliwość sprawdzania statusu zadań w tle",
+    "description": "Opis dla częstotliwości sprawdzania statusu zadań"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Pokaż liczbę pilnych zadań na ikonie wtyczki",
+    "description": "Opis dla ustawienia badge ikony"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Pokaż informacje o przypomnieniu zadania przy najechaniu na ikonę",
+    "description": "Opis dla ustawienia tytułu ikony"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Kliknij dwukrotnie na pusty obszar",
+    "description": "Instrukcja dla utworzenia zadania"
+  },
+  "editTaskInstruction": {
+    "message": "Edytuj Zadanie:",
+    "description": "Instrukcja edytuj zadanie"
+  },
+  "hoverOverTask": {
+    "message": "Najedź na zadanie",
+    "description": "Instrukcja dla wyświetlenia szczegółów zadania"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Kliknij na ikonę listy dla wszystkich zadań",
+    "description": "Instrukcja dla dostępu do menedżera zadań"
+  },
+  "clickChartIconForInsights": {
+    "message": "Kliknij na ikonę wykresu dla wglądu",
+    "description": "Instrukcja dla dostępu do raportu analizy"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Macierz Zadań Eisenhower",
+    "description": "Tytuł sekcji macierzy zadań Eisenhower"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Ważne i Pilne",
+    "description": "Tytuł kwadrantu Q1"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Zrób to teraz. Krytyczne zadania wymagające natychmiastowej uwagi.",
+    "description": "Opis kwadrantu Q1"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Ważne i Nie Pilne",
+    "description": "Tytuł kwadrantu Q2"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Zaplanuj to. Zadania strategiczne do długoterminowego planowania.",
+    "description": "Opis kwadrantu Q2"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Nieważne i Pilne",
+    "description": "Tytuł kwadrantu Q3"
+  },
+  "delegateItInterruptions": {
+    "message": "Deleguj to. Przerwy, które mogą być obsłużone przez innych.",
+    "description": "Opis kwadrantu Q3"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Nieważne i Nie Pilne",
+    "description": "Tytuł kwadrantu Q4"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Wyeliminuj to. Poświęcanie czasu, które należy unikać.",
+    "description": "Opis kwadrantu Q4"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Gdy pozostały czas zadania jest mniejszy niż ten czas trwania, aktywuj przypomnienie",
+    "description": "Opis dla ustawienia progu przypomnienia pilnych zadań"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Gdy zadanie ma się wkrótce zakończyć, przypomnij poprzez zmiany ikon",
+    "description": "Opis dla ustawienia przypomnienia pilnych zadań"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Włącz Przypomnienie o Pilnych Zadaniach",
+    "description": "Etykieta checkbox włącz przypomnienie o pilnych zadaniach"
+  },
+  "invalidDueDate": {
+    "message": "Nieprawidłowa data terminu",
+    "description": "Wiadomość błędu dla nieprawidłowej daty terminu"
+  },
+  "dueAt": {
+    "message": "Termin",
+    "description": "Prefiks termin dla zadań z terminem w określonym dniu"
+  },
+  "dueIn": {
+    "message": "Termin za",
+    "description": "Prefiks termin za dla zadań z terminem za określony czas"
+  },
+  "completionRate": {
+    "message": "Wskaźnik Ukończenia",
+    "description": "Tytuł zakładki wskaźnika ukończenia"
+  },
+  "timeStatus": {
+    "message": "Czas-Status",
+    "description": "Tytuł zakładki czas-status"
+  },
+  "timeTrend": {
+    "message": "Trend Czasu",
+    "description": "Tytuł zakładki trend czasu"
+  },
+  "sourceCross": {
+    "message": "Źródło-Krzyż",
+    "description": "Tytuł zakładki źródło-krzyż"
+  },
+  "completionRateQuantity": {
+    "message": "Wskaźnik Ukończenia - Ilość",
+    "description": "Tytuł wykresu wskaźnika ukończenia"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Źródło Zadania - Wskaźnik Ukończenia",
+    "description": "Tytuł wykresu wskaźnika ukończenia źródła zadania"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Czas - Status Ukończenia Wykres Rozrzutu",
+    "description": "Tytuł wykresu rozrzutu statusu ukończenia czasu"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Trend Tygodniowy/Miesięczny",
+    "description": "Tytuł wykresu trendu tygodniowego miesięcznego"
+  },
+  "weekly": {
+    "message": "Tygodniowy",
+    "description": "Przycisk okresu tygodniowego"
+  },
+  "monthly": {
+    "message": "Miesięczny",
+    "description": "Przycisk okresu miesięcznego"
+  },
+  "source": {
+    "message": "Źródło",
+    "description": "Nagłówek tabeli źródło"
+  },
+  "low": {
+    "message": "Niski (0-20%)",
+    "description": "Etykieta niskiego wskaźnika ukończenia"
+  },
+  "mediumLow": {
+    "message": "Średnio-Niski (20-50%)",
+    "description": "Etykieta średnio-niskiego wskaźnika ukończenia"
+  },
+  "mediumHigh": {
+    "message": "Średnio-Wysoki (50-80%)",
+    "description": "Etykieta średnio-wysokiego wskaźnika ukończenia"
+  },
+  "high": {
+    "message": "Wysoki (80-100%)",
+    "description": "Etykieta wysokiego wskaźnika ukończenia"
+  },
+  "taskCost": {
+    "message": "Koszt Zadania (dni)",
+    "description": "Etykieta osi kosztu zadania"
+  },
+  "taskImportance": {
+    "message": "Ważność Zadania",
+    "description": "Etykieta osi ważności zadania"
+  },
+  "taskCount": {
+    "message": "Liczba Zadań",
+    "description": "Etykieta osi liczby zadań"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Statystyki Czasu Zadań Kwadrantu (Dni):",
+    "description": "Tytuł statystyk czasu zadań kwadrantu"
+  },
+  "quadrant": {
+    "message": "Kwadrant",
+    "description": "Nagłówek tabeli kwadrant"
+  },
+  "completedAvg": {
+    "message": "Ukończone (Średnia)",
+    "description": "Nagłówek tabeli ukończone średnia"
+  },
+  "completedMedian": {
+    "message": "Ukończone (Mediana)",
+    "description": "Nagłówek tabeli ukończone mediana"
+  },
+  "inProgressAvg": {
+    "message": "W Trakcie (Średnia)",
+    "description": "Nagłówek tabeli w trakcie średnia"
+  },
+  "inProgressMedian": {
+    "message": "W Trakcie (Mediana)",
+    "description": "Nagłówek tabeli w trakcie mediana"
+  },
+  "deepInsights": {
+    "message": "Głębokie Wglądy",
+    "description": "Tytuł sekcji głębokie wglądy"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Obecnie nie ma wystarczająco danych do wygenerowania wglądów.",
+    "description": "Wiadomość braku danych dla wglądów"
+  },
+  "importantUrgent": {
+    "message": "Ważne i Pilne",
+    "description": "Etykieta kwadrantu Q1"
+  },
+  "importantNotUrgent": {
+    "message": "Ważne i Nie Pilne",
+    "description": "Etykieta kwadrantu Q2"
+  },
+  "notImportantNotUrgent": {
+    "message": "Nieważne i Nie Pilne",
+    "description": "Etykieta kwadrantu Q3"
+  },
+  "notImportantUrgent": {
+    "message": "Nieważne i Pilne",
+    "description": "Etykieta kwadrantu Q4"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2 (Ważne i Nie Pilne) kwadrant wskaźnik ukończenia zadań jest znacznie niższy niż inne kwadranty, co odzwierciedla bias wykonania \"pilne nad ważne\", co może prowadzić do strategicznych opóźnień celów w długim okresie.",
+    "description": "Wgląd o niższym wskaźniku ukończenia Q2"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3 (Nieważne i Nie Pilne) kwadrant wskaźnik ukończenia zadań jest zbyt wysoki, uważaj na \"nieefektywne zatrudnienie\" - jeśli zbyt dużo energii jest zużywane na trywialne zadania, co kompresuje czas na zadania kluczowe.",
+    "description": "Wgląd o zbyt wysokim wskaźniku ukończenia Q3"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1 (Ważne i Pilne) kwadrant zadania stanowią $percentage% wszystkich zadań, co wskazuje na poprawę w planowaniu zadań, obsługuj ważne zadania wcześnie, aby uniknąć sytuacji pilnych.",
+    "description": "Wgląd o wysokim procencie zadań Q1"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4 (Nieważne i Pilne) kwadrant zadania stanowią $percentage% wszystkich zadań, przejrzyj źródła tych zadań o niskim priorytecie ale pilnych, zoptymalizuj procesy reagowania na sytuacje awaryjne.",
+    "description": "Wgląd o wysokim procencie zadań Q4"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "\"$source\" zadania w Q1 (Ważne i Pilne) osiągają $q1Rate% wskaźnik ukończenia, ale tylko $q2Rate% w Q2 (Ważne i Nie Pilne), co wskazuje, że priorytet wykonania zadań jest napędzany przez \"zewnętrzną presję\" raczej niż wewnętrzne strategiczne skupienie.",
+    "description": "Wgląd o wskaźnikach ukończenia zadań źródła Q1 vs Q2"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "\"$source\" zadania w Q4 (Nieważne i Pilne) mają niski wskaźnik ukończenia ($q4Rate%), potrzebują potwierdzenia czy \"tymczasowe zadania\" mają problem z definicją priorytetów.",
+    "description": "Wgląd o niskim wskaźniku ukończenia zadań Q4"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "\"$source\" jest wysoko skoncentrowane w $quadrant ($quadrantName) kwadrancie, stanowiąc $percentage%. Przejrzyj planowanie zadań pod kątem rozsądności.",
+    "description": "Wgląd o zadaniach wysoko skoncentrowanych w jednym kwadrancie"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "\"$highSource\" w $highQuadrant ma najwyższy wskaźnik ukończenia ($highRate%), podczas gdy \"$lowSource\" w $lowQuadrant ma najniższy ($lowRate%), co pokazuje wyraźne różnice w priorytecie przetwarzania dla różnych typów zadań.",
+    "description": "Wgląd o różnicach wskaźnika ukończenia między źródłami"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (Ważne i Pilne) ma $percentage% oczekujących zadań, które zajmują więcej niż 3 dni, co wskazuje na potencjalny brak zasobów lub nieoczekiwane trudności w zadaniach kluczowych. Rozważ podział zadań lub dodatkowe wsparcie.",
+    "description": "Wgląd o oczekujących zadaniach Q1 zajmujących zbyt dużo czasu"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Q4 (Nieważne i Pilne) ukończone zadania średnio $q4Time dni, znacznie przekraczając Q2 (Ważne i Nie Pilne) na $q2Time dni, co wskazuje, że \"tymczasowe pilne zadania\" nadmiernie zajmują zasoby. Zoptymalizuj procesy reagowania na sytuacje awaryjne.",
+    "description": "Wgląd o czasach ukończenia zadań Q4 vs Q2"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Średni czas przetwarzania oczekujących zadań ($pendingTime dni) jest znacznie wyższy niż ukończonych zadań ($completedTime dni). Skup się na zadaniach długo zalegających i dostosuj strategię lub alokację zasobów w razie potrzeby.",
+    "description": "Wgląd o czasach oczekujących vs ukończonych zadań"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabel objętość zadań $direction $rate% od $from do $to, co pokazuje znaczną fluktuację. Rozważ skupienie się na równowadze alokacji zadań.",
+    "description": "Wgląd o fluktuacji objętości zadań kwadrantu"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabel wskaźnik ukończenia zadań pokazuje trwały trend wzrostowy, co wskazuje na poprawę aktywności pracy.",
+    "description": "Wgląd o trendzie wzrostowym wskaźnika ukończenia"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabel wskaźnik ukończenia zadań pokazuje trwały trend spadkowy, co wymaga uwagi na problemy aktywności wykonania.",
+    "description": "Wgląd o trendzie spadkowym wskaźnika ukończenia"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2 (Ważne i Nie Pilne) zadania nadal się gromadzą bez poprawy wskaźnika ukończenia, co odzwierciedla, że \"zadania strategiczne\" nie są zintegrowane z regularnymi programami wykonania, co przedstawia ryzyko \"akumulacji opóźnień\".",
+    "description": "Wgląd o akumulacji zadań Q2"
+  }
+}

@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Brezplačen upravitelj in orodje za naloge",
+    "description": "Ime aplikacije"
+  },
+  "appDescription": {
+    "message": "Brezplačna Chrome razširitev za pametne naloge. Uporabite močna orodja in uporabniku prijazen vmesnik za vizualizacijo vaših nalog",
+    "description": "Opis aplikacije"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Ime aplikacije"
+  },
+  "taskManager": {
+    "message": "Upravitelj nalog",
+    "description": "Ime gumba upravitelja nalog"
+  },
+  "report": {
+    "message": "Poročilo",
+    "description": "Ime gumba poročila"
+  },
+  "settings": {
+    "message": "Nastavitve",
+    "description": "Ime gumba nastavitev"
+  },
+  "help": {
+    "message": "Pomoč",
+    "description": "Ime gumba pomoči"
+  },
+  "addTask": {
+    "message": "Dodaj nalogo",
+    "description": "Ime gumba za dodajanje naloge"
+  },
+  "close": {
+    "message": "Zapri",
+    "description": "Besedilo gumba za zapiranje"
+  },
+  "editTask": {
+    "message": "Uredi nalogo",
+    "description": "Ime modalnega okna za urejanje naloge"
+  },
+  "newTask": {
+    "message": "Nova",
+    "description": "Status nove naloge"
+  },
+  "taskTitle": {
+    "message": "Naslov naloge *",
+    "description": "Oznaka naslova naloge"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Vnesite naslov naloge",
+    "description": "Nadomestno besedilo polja za vnos naslova naloge"
+  },
+  "taskDescription": {
+    "message": "Opis naloge",
+    "description": "Oznaka opisa naloge"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Vnesite opis naloge (neobvezno)",
+    "description": "Nadomestno besedilo polja za vnos opisa naloge"
+  },
+  "importanceLevel": {
+    "message": "Raven pomembnosti *",
+    "description": "Oznaka ravni pomembnosti"
+  },
+  "notImportant": {
+    "message": "Ni pomembno",
+    "description": "Oznaka ni pomembno"
+  },
+  "veryImportant": {
+    "message": "Zelo pomembno",
+    "description": "Oznaka zelo pomembno"
+  },
+  "dueDate": {
+    "message": "Rok *",
+    "description": "Oznaka roka"
+  },
+  "taskCategory": {
+    "message": "Kategorija naloge",
+    "description": "Oznaka kategorije naloge"
+  },
+  "work": {
+    "message": "Delo",
+    "description": "Kategorija dela"
+  },
+  "personal": {
+    "message": "Osebno",
+    "description": "Osebna kategorija"
+  },
+  "study": {
+    "message": "Študij",
+    "description": "Kategorija študija"
+  },
+  "health": {
+    "message": "Zdravje",
+    "description": "Kategorija zdravja"
+  },
+  "other": {
+    "message": "Drugo",
+    "description": "Druga kategorija"
+  },
+  "deleteTask": {
+    "message": "Izbriši nalogo",
+    "description": "Gumb za brisanje naloge"
+  },
+  "cancel": {
+    "message": "Prekliči",
+    "description": "Gumb za preklic"
+  },
+  "saveTask": {
+    "message": "Shrani nalogo",
+    "description": "Gumb za shranjevanje naloge"
+  },
+  "doing": {
+    "message": "V teku",
+    "description": "Status v teku"
+  },
+  "overdue": {
+    "message": "Zamujeno",
+    "description": "Status zamujeno"
+  },
+  "completed": {
+    "message": "Dokončano",
+    "description": "Status dokončano"
+  },
+  "rejected": {
+    "message": "Zavrnjeno",
+    "description": "Status zavrnjeno"
+  },
+  "pending": {
+    "message": "Čaka",
+    "description": "Oznaka statusa čaka"
+  },
+  "urgentTaskReminder": {
+    "message": "Opozorilo za nujne naloge",
+    "description": "Ime sekcije opozorila za nujne naloge"
+  },
+  "enableUrgentReminder": {
+    "message": "Omogoči opozorilo za nujne naloge",
+    "description": "Potrditveno polje za omogočanje opozorila za nujne naloge"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Spremeni ikono in opozori, ko se približuje rok naloge",
+    "description": "Opis omogočanja opozorila za nujne naloge"
+  },
+  "reminderThreshold": {
+    "message": "Prag opozorila (minute)",
+    "description": "Oznaka praga opozorila"
+  },
+  "reminderThresholdDesc": {
+    "message": "Začni opozorilo, ko ima naloga manj časa od tega obdobja",
+    "description": "Opis praga opozorila"
+  },
+  "reminderInterval": {
+    "message": "Interval opozorila (minute)",
+    "description": "Oznaka intervala opozorila"
+  },
+  "reminderIntervalDesc": {
+    "message": "Pogostost preverjanja statusa naloge v ozadju",
+    "description": "Opis intervala opozorila"
+  },
+  "iconReminder": {
+    "message": "Opozorilo ikone",
+    "description": "Ime sekcije opozorila ikone"
+  },
+  "showIconBadge": {
+    "message": "Prikaži oznako ikone",
+    "description": "Potrditveno polje za prikaz oznake ikone"
+  },
+  "showIconBadgeDesc": {
+    "message": "Prikaži število nujnih nalog na ikoni razširitve",
+    "description": "Opis prikaza oznake ikone"
+  },
+  "showIconTooltip": {
+    "message": "Prikaži namig ikone",
+    "description": "Potrditveno polje za prikaz namiga ikone"
+  },
+  "showIconTooltipDesc": {
+    "message": "Prikaži informacije o opozorilu naloge pri premikanju miške čez ikono",
+    "description": "Opis prikaza namiga ikone"
+  },
+  "save": {
+    "message": "Shrani",
+    "description": "Gumb za shranjevanje"
+  },
+  "quickStart": {
+    "message": "🚀 Hitri začetek",
+    "description": "Ime sekcije hitrega začetka"
+  },
+  "createTask": {
+    "message": "Ustvari nalogo:",
+    "description": "Navodilo za ustvarjanje naloge"
+  },
+  "createTaskDesc": {
+    "message": "Dvokliknite na prazno območje",
+    "description": "Opis ustvarjanja naloge"
+  },
+  "editTaskDesc": {
+    "message": "Uredi nalogo:",
+    "description": "Navodilo za urejanje naloge"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Dvokliknite na obstoječo nalogo",
+    "description": "Opis navodila za urejanje naloge"
+  },
+  "viewDetails": {
+    "message": "Poglej podrobnosti:",
+    "description": "Navodilo za ogled podrobnosti"
+  },
+  "viewDetailsDesc": {
+    "message": "Premaknite miško čez nalogo",
+    "description": "Opis ogleda podrobnosti"
+  },
+  "taskManagerDesc": {
+    "message": "Upravitelj nalog:",
+    "description": "Navodilo upravitelja nalog"
+  },
+  "taskManagerInstruction": {
+    "message": "Kliknite na ikono seznama za ogled vseh nalog",
+    "description": "Opis navodila upravitelja nalog"
+  },
+  "analysisReport": {
+    "message": "Analitično poročilo:",
+    "description": "Navodilo analitičnega poročila"
+  },
+  "analysisReportDesc": {
+    "message": "Kliknite na ikono grafikona za ogled vpogledov",
+    "description": "Opis analitičnega poročila"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Eisenhower matrika nalog",
+    "description": "Ime sekcije Eisenhower matrike"
+  },
+  "q1Title": {
+    "message": "Q1: Pomembno in nujno",
+    "description": "Ime kvadranta Q1"
+  },
+  "q1Desc": {
+    "message": "Naredi zdaj. Kritične naloge, ki zahtevajo takojšnjo pozornost.",
+    "description": "Opis kvadranta Q1"
+  },
+  "q2Title": {
+    "message": "Q2: Pomembno vendar ne nujno",
+    "description": "Ime kvadranta Q2"
+  },
+  "q2Desc": {
+    "message": "Načrtuj čas. Strateške naloge za dolgoročno načrtovanje.",
+    "description": "Opis kvadranta Q2"
+  },
+  "q3Title": {
+    "message": "Q3: Ne pomembno vendar nujno",
+    "description": "Ime kvadranta Q3"
+  },
+  "q3Desc": {
+    "message": "Dodeli drugim. Motnje, ki jih lahko upravljajo drugi.",
+    "description": "Opis kvadranta Q3"
+  },
+  "q4Title": {
+    "message": "Q4: Ne pomembno in ne nujno",
+    "description": "Ime kvadranta Q4"
+  },
+  "q4Desc": {
+    "message": "Odstrani. Časovni zapravljanje, ki ga je treba izogniti.",
+    "description": "Opis kvadranta Q4"
+  },
+  "confirm": {
+    "message": "Potrdi",
+    "description": "Gumb za potrditev"
+  },
+  "settingsSaved": {
+    "message": "Nastavitve so bile uspešno shranjene",
+    "description": "Obvestilo o shranjevanju nastavitev"
+  },
+  "settingsSaveFailed": {
+    "message": "Shranjevanje nastavitev je spodletelo",
+    "description": "Obvestilo o napaki pri shranjevanju nastavitev"
+  },
+  "allTasksCleared": {
+    "message": "Vse naloge so bile počistene",
+    "description": "Sporočilo o čiščenju vseh nalog"
+  },
+  "settingsApplied": {
+    "message": "Nastavitve so bile uporabljene",
+    "description": "Sporočilo o uporabi nastavitev"
+  },
+  "taskMonitoringStarted": {
+    "message": "Spremljanje nalog se je začelo",
+    "description": "Sporočilo o začetku spremljanja nalog"
+  },
+  "taskMonitoringStopped": {
+    "message": "Spremljanje nalog se je ustavilo",
+    "description": "Sporočilo o ustavljanju spremljanja nalog"
+  },
+  "taskEditProcessed": {
+    "message": "Urejanje naloge je bilo obdelano",
+    "description": "Sporočilo o obdelavi urejanja naloge"
+  },
+  "taskAddProcessed": {
+    "message": "Dodajanje naloge je bilo obdelano",
+    "description": "Sporočilo o obdelavi dodajanja naloge"
+  },
+  "taskDeleteProcessed": {
+    "message": "Brisanje naloge je bilo obdelano",
+    "description": "Sporočilo o obdelavi brisanja naloge"
+  },
+  "unknownMessageType": {
+    "message": "Neznana vrsta sporočila",
+    "description": "Napaka neznane vrste sporočila"
+  },
+  "openTaskMatrix": {
+    "message": "Odpri TaskMatrix Pro",
+    "description": "Opis ukaza za odpiranje TaskMatrix Pro"
+  },
+  "ready": {
+    "message": "Pripravljen",
+    "description": "Sporočilo o pripravljenosti"
+  },
+  "initializationFailed": {
+    "message": "Inicializacija je spodletela",
+    "description": "Sporočilo o napaki inicializacije"
+  },
+  "loading": {
+    "message": "Nalaganje...",
+    "description": "Sporočilo o nalaganju"
+  },
+  "saving": {
+    "message": "Shranjevanje...",
+    "description": "Sporočilo o shranjevanju"
+  },
+  "failedToGetFormData": {
+    "message": "Pridobivanje podatkov obrazca je spodletelo",
+    "description": "Sporočilo o napaki pri pridobivanju podatkov obrazca"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Prosimo, vnesite naslov naloge",
+    "description": "Opozorilo, ko je naslov naloge prazen"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Naloga je bila uspešno posodobljena",
+    "description": "Sporočilo o uspešnem posodabljanju naloge"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Naloga je bila uspešno dodana",
+    "description": "Sporočilo o uspešnem dodajanju naloge"
+  },
+  "saveFailed": {
+    "message": "Shranjevanje je spodletelo",
+    "description": "Sporočilo o napaki pri shranjevanju"
+  },
+  "taskNotFound": {
+    "message": "Naloga ni bila najdena",
+    "description": "Sporočilo o napaki, ko naloga ni najdena"
+  },
+  "failedToEditTask": {
+    "message": "Urejanje naloge je spodletelo",
+    "description": "Sporočilo o napaki pri urejanju naloge"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Naloga je bila uspešno dokončana",
+    "description": "Sporočilo o uspešnem dokončanju naloge"
+  },
+  "failedToCompleteTask": {
+    "message": "Dokončanje naloge je spodletelo",
+    "description": "Sporočilo o napaki pri dokončanju naloge"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Ali ste prepričani, da želite izbrisati to nalogo? Tega dejanja ni mogoče razveljaviti.",
+    "description": "Potrditveno sporočilo za brisanje naloge"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Naloga je bila uspešno izbrisana",
+    "description": "Sporočilo o uspešnem brisanju naloge"
+  },
+  "failedToDeleteTask": {
+    "message": "Brisanje naloge je spodletelo",
+    "description": "Sporočilo o napaki pri brisanju naloge"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Nastavitve so bile uspešno shranjene",
+    "description": "Sporočilo o uspešnem shranjevanju nastavitev"
+  },
+  "failedToSaveSettings": {
+    "message": "Shranjevanje nastavitev je spodletelo",
+    "description": "Sporočilo o napaki pri shranjevanju nastavitev"
+  },
+  "loadingDataFailed": {
+    "message": "Nalaganje podatkov je spodletelo",
+    "description": "Sporočilo o napaki pri nalaganju podatkov"
+  },
+  "noTaskFound": {
+    "message": "Naloga ni bila najdena",
+    "description": "Sporočilo o praznem stanju, ko ni najdenih nalog"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Kliknite na ikono plus za dodajanje vaše prve naloge",
+    "description": "Navodilo za dodajanje prve naloge v praznem stanju"
+  },
+  "allCaughtUp": {
+    "message": "Vse je posodobljeno!",
+    "description": "Sporočilo o praznem stanju brez zamujenih nalog"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Ni zamujenih nalog. Odlično delo pri ohranjanju vsega v redu!",
+    "description": "Sporočilo o praznem stanju brez zamujenih nalog"
+  },
+  "noCompletedTasks": {
+    "message": "Ni dokončanih nalog",
+    "description": "Sporočilo o praznem stanju brez dokončanih nalog"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Dvokliknite na nalogo in kliknite na statusno oznako za označitev naloge kot dokončane",
+    "description": "Navodilo za označitev naloge kot dokončane"
+  },
+  "noRejectedTasks": {
+    "message": "Ni zavrnjenih nalog",
+    "description": "Sporočilo o praznem stanju brez zavrnjenih nalog"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Dvokliknite na nalogo in dvokliknite na statusno oznako za označitev naloge kot zavrnjene",
+    "description": "Navodilo za označitev naloge kot zavrnjene"
+  },
+  "task": {
+    "message": "Naloga:",
+    "description": "Predpona oznake naloge"
+  },
+  "importance": {
+    "message": "Pomembnost:",
+    "description": "Oznaka pomembnosti"
+  },
+  "noData": {
+    "message": "Ni podatkov",
+    "description": "Sporočilo, ko v grafikonu ni podatkov"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Ni dovolj podatkov za ustvarjanje toplotne karte",
+    "description": "Sporočilo, ko ni dovolj podatkov za toplotno karto"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Ni dovolj podatkov nalog za ustvarjanje razpršilnega grafikona",
+    "description": "Sporočilo, ko ni dovolj podatkov nalog za razpršilni grafikon"
+  },
+  "bytes": {
+    "message": "bajti",
+    "description": "Enota bajtov"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Enota kilobajtov"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Enota megabajtov"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Enota gigabajtov"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Enota terabajtov"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Pogostost preverjanja statusa naloge v ozadju",
+    "description": "Opis pogostosti preverjanja statusa naloge"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Prikaži število nujnih nalog na ikoni razširitve",
+    "description": "Opis nastavitve oznake ikone"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Prikaži informacije o opozorilu naloge pri premikanju miške čez ikono",
+    "description": "Opis nastavitve glave ikone"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Dvokliknite na prazno območje",
+    "description": "Navodilo za ustvarjanje naloge"
+  },
+  "editTaskInstruction": {
+    "message": "Uredi nalogo:",
+    "description": "Navodilo za urejanje naloge"
+  },
+  "hoverOverTask": {
+    "message": "Premaknite miško čez nalogo",
+    "description": "Navodilo za ogled podrobnosti naloge"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Kliknite na ikono seznama za ogled vseh nalog",
+    "description": "Navodilo za dostop do upravitelja nalog"
+  },
+  "clickChartIconForInsights": {
+    "message": "Kliknite na ikono grafikona za ogled vpogledov",
+    "description": "Navodilo za dostop do analitičnega poročila"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Eisenhower matrika nalog",
+    "description": "Ime sekcije Eisenhower matrike nalog"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Pomembno in nujno",
+    "description": "Ime kvadranta Q1"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Naredi zdaj. Kritične naloge, ki zahtevajo takojšnjo pozornost.",
+    "description": "Opis kvadranta Q1"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Pomembno vendar ne nujno",
+    "description": "Ime kvadranta Q2"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Načrtuj čas. Strateške naloge za dolgoročno načrtovanje.",
+    "description": "Opis kvadranta Q2"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Ne pomembno vendar nujno",
+    "description": "Ime kvadranta Q3"
+  },
+  "delegateItInterruptions": {
+    "message": "Dodeli drugim. Motnje, ki jih lahko upravljajo drugi.",
+    "description": "Opis kvadranta Q3"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Ne pomembno in ne nujno",
+    "description": "Ime kvadranta Q4"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Odstrani. Časovno zapravljanje, ki ga je treba izogniti.",
+    "description": "Opis kvadranta Q4"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Začni nujno opozorilo, ko ima naloga manj časa od tega obdobja",
+    "description": "Opis nastavitve praga nujnega opozorila"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Spremeni ikono in opozori, ko se približuje rok naloge",
+    "description": "Opis nastavitve nujnega opozorila"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Omogoči opozorilo za nujne naloge",
+    "description": "Oznaka potrditvenega polja za omogočanje opozorila za nujne naloge"
+  },
+  "invalidDueDate": {
+    "message": "Neveljaven rok",
+    "description": "Sporočilo o napaki neveljavnega roka"
+  },
+  "dueAt": {
+    "message": "Rok",
+    "description": "Predpona za naloge, ki se končajo na določen datum"
+  },
+  "dueIn": {
+    "message": "Rok v",
+    "description": "Predpona za naloge, ki se končajo v določenem času"
+  },
+  "completionRate": {
+    "message": "Stopnja dokončanja",
+    "description": "Ime kartice stopnje dokončanja"
+  },
+  "timeStatus": {
+    "message": "Čas-status",
+    "description": "Ime kartice časa-statusa"
+  },
+  "timeTrend": {
+    "message": "Časovni trend",
+    "description": "Ime kartice časovnega trenda"
+  },
+  "sourceCross": {
+    "message": "Vir-križ",
+    "description": "Ime kartice vira-križa"
+  },
+  "completionRateQuantity": {
+    "message": "Stopnja dokončanja - količina",
+    "description": "Ime grafikona stopnje dokončanja"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Vir naloge - stopnja dokončanja",
+    "description": "Ime grafikona stopnje dokončanja vira naloge"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Čas - status dokončanja razpršilni grafikon",
+    "description": "Ime razpršilnega grafikona časa-statusa dokončanja"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Tedenski/mesečni trend",
+    "description": "Ime grafikona tedenskega/mesečnega trenda"
+  },
+  "weekly": {
+    "message": "Tedenski",
+    "description": "Gumb za tedenski časovni okvir"
+  },
+  "monthly": {
+    "message": "Mesečni",
+    "description": "Gumb za mesečni časovni okvir"
+  },
+  "source": {
+    "message": "Vir",
+    "description": "Ime tabele vira"
+  },
+  "low": {
+    "message": "Nizka (0-20%)",
+    "description": "Oznaka nizke stopnje dokončanja"
+  },
+  "mediumLow": {
+    "message": "Srednja-nizka (20-50%)",
+    "description": "Oznaka srednje-nizke stopnje dokončanja"
+  },
+  "mediumHigh": {
+    "message": "Srednja-visoka (50-80%)",
+    "description": "Oznaka srednje-visoke stopnje dokončanja"
+  },
+  "high": {
+    "message": "Visoka (80-100%)",
+    "description": "Oznaka visoke stopnje dokončanja"
+  },
+  "taskCost": {
+    "message": "Strošek naloge (dnevi)",
+    "description": "Oznaka osi stroška naloge"
+  },
+  "taskImportance": {
+    "message": "Pomembnost naloge",
+    "description": "Oznaka osi pomembnosti naloge"
+  },
+  "taskCount": {
+    "message": "Število nalog",
+    "description": "Oznaka osi števila nalog"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Statistika časa nalog kvadranta (dnevi):",
+    "description": "Ime statistike časa nalog kvadranta"
+  },
+  "quadrant": {
+    "message": "Kvadrant",
+    "description": "Ime tabele kvadranta"
+  },
+  "completedAvg": {
+    "message": "Dokončano (povprečje)",
+    "description": "Ime tabele povprečja dokončanih"
+  },
+  "completedMedian": {
+    "message": "Dokončano (mediana)",
+    "description": "Ime tabele mediane dokončanih"
+  },
+  "inProgressAvg": {
+    "message": "V teku (povprečje)",
+    "description": "Ime tabele povprečja v teku"
+  },
+  "inProgressMedian": {
+    "message": "V teku (mediana)",
+    "description": "Ime tabele mediane v teku"
+  },
+  "deepInsights": {
+    "message": "Globoki vpogledi",
+    "description": "Ime sekcije globokih vpogledov"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Trenutno ni dovolj podatkov za ustvarjanje vpogledov.",
+    "description": "Sporočilo, ko ni podatkov za vpoglede"
+  },
+  "importantUrgent": {
+    "message": "Pomembno in nujno",
+    "description": "Oznaka kvadranta Q1"
+  },
+  "importantNotUrgent": {
+    "message": "Pomembno vendar ne nujno",
+    "description": "Oznaka kvadranta Q2"
+  },
+  "notImportantNotUrgent": {
+    "message": "Ne pomembno in ne nujno",
+    "description": "Oznaka kvadranta Q3"
+  },
+  "notImportantUrgent": {
+    "message": "Ne pomembno vendar nujno",
+    "description": "Oznaka kvadranta Q4"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Kvadrant Q2 (pomembno vendar ne nujno) ima bistveno nižjo stopnjo dokončanja nalog kot drugi kvadranti, kar odraža izvršniško pristranskost «nujno je pomembnejše od pomembnega», kar lahko vodi v zamudo dolgoročnih strateških ciljev.",
+    "description": "Vpogled o nižji stopnji dokončanja Q2"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Kvadrant Q3 (ne pomembno in ne nujno) ima previsoko stopnjo dokončanja nalog, prosimo, da se osredotočite na «neučinkovito zaposlovanje» - če se porabi preveč energije na običajne naloge, to zmanjša čas za pomembne naloge.",
+    "description": "Vpogled o previsoki stopnji dokončanja Q3"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Kvadrant Q1 (pomembno in nujno) predstavlja $percentage% vseh nalog, kar kaže na izboljšanje načrtovanja nalog z hitrim reševanjem pomembnih nalog za preprečevanje nujnih situacij.",
+    "description": "Vpogled o visokem odstotku nalog Q1"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Kvadrant Q4 (ne pomembno vendar nujno) predstavlja $percentage% vseh nalog, prosimo, da pregledate vire teh nizko prioritetnih vendar nujnih nalog in optimizirate proces odzivanja na nujne primere.",
+    "description": "Vpogled o visokem odstotku nalog Q4"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "Naloge «$source» dosegajo $q1Rate% stopnjo dokončanja v Q1 (pomembno in nujno), vendar le $q2Rate% v Q2 (pomembno vendar ne nujno), kar kaže, da je prioriteta izvajanja nalog nadzorovana z «zunanjim pritiskom», ne z notranjim strateškim fokusom.",
+    "description": "Vpogled o stopnji dokončanja nalog vira Q1 vs Q2"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "Naloge «$source» imajo nizko stopnjo dokončanja ($q4Rate%) v Q4 (ne pomembno vendar nujno), prosimo, da preverite, ali je problem v definiciji prioritete «začasnih nalog».",
+    "description": "Vpogled o nizki stopnji dokončanja nalog Q4"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "«$source» je zelo koncentriran v kvadrantu $quadrant ($quadrantName), predstavlja $percentage%. Prosimo, da pregledate racionalnost načrtovanja nalog.",
+    "description": "Vpogled o visoki koncentraciji nalog v enem kvadrantu"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "«$highSource» ima najvišjo stopnjo dokončanja ($highRate%) v $highQuadrant, «$lowSource» ima najnižjo ($lowRate%) v $lowQuadrant, kar kaže na jasno razliko v prioritetah obdelave različnih vrst nalog.",
+    "description": "Vpogled o razliki v stopnji dokončanja med viri"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "$percentage% nalog v Q1 (pomembno in nujno) je v čakanju več kot 3 dni, kar kaže na morebitno pomanjkanje virov za pomembne naloge ali nepričakovane težave. Prosimo, da razmislite o razdelitvi nalog ali dodatni podpori.",
+    "description": "Vpogled o visokem času, porabljenem za naloge Q1 v čakanju"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Povprečni čas dokončanja dokončanih nalog Q4 (ne pomembno vendar nujno) je $q4Time dni, kar bistveno presega $q2Time dni Q2 (pomembno vendar ne nujno), kar kaže, da «začasne nujne naloge» porabljajo več virov. Prosimo, da optimizirate proces odzivanja na nujne primere.",
+    "description": "Vpogled o času dokončanja Q4 vs Q2"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Povprečni čas obdelave nalog v čakanju ($pendingTime dni) je bistveno višji od dokončanih nalog ($completedTime dni). Prosimo, da se osredotočite na naloge, ki so dolgo v čakanju, in prilagodite strategijo ali dodelitev virov po potrebi.",
+    "description": "Vpogled o času nalog v čakanju vs dokončanih"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "Obseg nalog $quadrantLabel se je spremenil od $from do $to za $direction $rate%, kar kaže na pomembne nihanja. Prosimo, da se osredotočite na ravnovesje dodelitve nalog.",
+    "description": "Vpogled o nihanju obsega nalog kvadranta"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "Stopnja dokončanja nalog $quadrantLabel kaže na stabilen trend rasti, kar kaže na izboljšanje delovne aktivnosti.",
+    "description": "Vpogled o trendu rasti stopnje dokončanja"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "Stopnja dokončanja nalog $quadrantLabel kaže na stabilen trend padanja, kar zahteva pozornost na probleme izvršne aktivnosti.",
+    "description": "Vpogled o trendu padanja stopnje dokončanja"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Naloge Q2 (pomembno vendar ne nujno) se še naprej kopičijo brez izboljšanja stopnje dokončanja, kar odraža, da «strateške naloge» niso integrirane v običajni načrt izvajanja, kar prinaša tveganje «kopičenja zamud».",
+    "description": "Vpogled o kopičenju nalog Q2"
+  }
+}

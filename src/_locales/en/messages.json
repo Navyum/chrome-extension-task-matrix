@@ -1,0 +1,736 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Free Task Manager & Tools",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Free Chrome browser extension for intelligent tasks. Visualize your tasks with powerful tools and screen-friendly interface",
+    "description": "The description of the application"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "The title of the application"
+  },
+  "taskManager": {
+    "message": "Task Manager",
+    "description": "Task Manager button title"
+  },
+  "report": {
+    "message": "Report",
+    "description": "Report button title"
+  },
+  "settings": {
+    "message": "Settings",
+    "description": "Settings button title"
+  },
+  "help": {
+    "message": "Help",
+    "description": "Help button title"
+  },
+  "addTask": {
+    "message": "Add Task",
+    "description": "Add Task button title"
+  },
+  "close": {
+    "message": "Close",
+    "description": "Close button text"
+  },
+  "editTask": {
+    "message": "Edit Task",
+    "description": "Edit Task modal title"
+  },
+  "newTask": {
+    "message": "New",
+    "description": "New task status"
+  },
+  "taskTitle": {
+    "message": "Task Title *",
+    "description": "Task title label"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Enter task title",
+    "description": "Task title input placeholder"
+  },
+  "taskDescription": {
+    "message": "Task Description",
+    "description": "Task description label"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Enter task description (optional)",
+    "description": "Task description input placeholder"
+  },
+  "importanceLevel": {
+    "message": "Importance Level *",
+    "description": "Importance level label"
+  },
+  "notImportant": {
+    "message": "Not Important",
+    "description": "Not important label"
+  },
+  "veryImportant": {
+    "message": "Very Important",
+    "description": "Very important label"
+  },
+  "dueDate": {
+    "message": "Due Date *",
+    "description": "Due date label"
+  },
+  "taskCategory": {
+    "message": "Task Category",
+    "description": "Task category label"
+  },
+  "work": {
+    "message": "Work",
+    "description": "Work category"
+  },
+  "personal": {
+    "message": "Personal",
+    "description": "Personal category"
+  },
+  "study": {
+    "message": "Study",
+    "description": "Study category"
+  },
+  "health": {
+    "message": "Health",
+    "description": "Health category"
+  },
+  "other": {
+    "message": "Other",
+    "description": "Other category"
+  },
+  "deleteTask": {
+    "message": "Delete Task",
+    "description": "Delete task button"
+  },
+  "cancel": {
+    "message": "Cancel",
+    "description": "Cancel button"
+  },
+  "saveTask": {
+    "message": "Save Task",
+    "description": "Save task button"
+  },
+  "doing": {
+    "message": "Doing",
+    "description": "Doing status"
+  },
+  "overdue": {
+    "message": "Overdue",
+    "description": "Overdue status"
+  },
+  "completed": {
+    "message": "Completed",
+    "description": "Completed status"
+  },
+  "rejected": {
+    "message": "Rejected",
+    "description": "Rejected status"
+  },
+  "pending": {
+    "message": "Pending",
+    "description": "Pending status label"
+  },
+  "urgentTaskReminder": {
+    "message": "Urgent Task Reminder",
+    "description": "Urgent task reminder section title"
+  },
+  "enableUrgentReminder": {
+    "message": "Enable Urgent Task Reminder",
+    "description": "Enable urgent task reminder checkbox"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "When a task is about to expire, remind you through icon changes",
+    "description": "Enable urgent task reminder description"
+  },
+  "reminderThreshold": {
+    "message": "Reminder Threshold (minutes)",
+    "description": "Reminder threshold label"
+  },
+  "reminderThresholdDesc": {
+    "message": "When the task remaining time is less than this duration, trigger reminder",
+    "description": "Reminder threshold description"
+  },
+  "reminderInterval": {
+    "message": "Reminder Interval (minutes)",
+    "description": "Reminder interval label"
+  },
+  "reminderIntervalDesc": {
+    "message": "Frequency of checking task status in the background",
+    "description": "Reminder interval description"
+  },
+  "iconReminder": {
+    "message": "Icon Reminder",
+    "description": "Icon reminder section title"
+  },
+  "showIconBadge": {
+    "message": "Show Icon Badge",
+    "description": "Show icon badge checkbox"
+  },
+  "showIconBadgeDesc": {
+    "message": "Display the number of urgent tasks on the plugin icon",
+    "description": "Show icon badge description"
+  },
+  "showIconTooltip": {
+    "message": "Show Icon Tooltip",
+    "description": "Show icon tooltip checkbox"
+  },
+  "showIconTooltipDesc": {
+    "message": "Display task reminder information when hovering over the icon",
+    "description": "Show icon tooltip description"
+  },
+  "save": {
+    "message": "Save",
+    "description": "Save button"
+  },
+  "quickStart": {
+    "message": "🚀 Quick Start",
+    "description": "Quick start section title"
+  },
+  "createTask": {
+    "message": "Create Task:",
+    "description": "Create task instruction"
+  },
+  "createTaskDesc": {
+    "message": "Double-click on empty area",
+    "description": "Create task description"
+  },
+  "editTaskDesc": {
+    "message": "Edit Task:",
+    "description": "Edit task instruction"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Double-click on existing task",
+    "description": "Edit task instruction description"
+  },
+  "viewDetails": {
+    "message": "View Details:",
+    "description": "View details instruction"
+  },
+  "viewDetailsDesc": {
+    "message": "Hover over task",
+    "description": "View details description"
+  },
+  "taskManagerDesc": {
+    "message": "Task Manager:",
+    "description": "Task manager instruction"
+  },
+  "taskManagerInstruction": {
+    "message": "Click the list icon for all tasks",
+    "description": "Task manager instruction description"
+  },
+  "analysisReport": {
+    "message": "Analysis Report:",
+    "description": "Analysis report instruction"
+  },
+  "analysisReportDesc": {
+    "message": "Click the chart icon for insights",
+    "description": "Analysis report description"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Eisenhower Task Matrix",
+    "description": "Eisenhower matrix section title"
+  },
+  "q1Title": {
+    "message": "Q1: Important & Urgent",
+    "description": "Q1 quadrant title"
+  },
+  "q1Desc": {
+    "message": "Do it now. Critical tasks requiring immediate attention.",
+    "description": "Q1 quadrant description"
+  },
+  "q2Title": {
+    "message": "Q2: Important & Not Urgent",
+    "description": "Q2 quadrant title"
+  },
+  "q2Desc": {
+    "message": "Schedule it. Strategic tasks for long-term planning.",
+    "description": "Q2 quadrant description"
+  },
+  "q3Title": {
+    "message": "Q3: Not Important & Urgent",
+    "description": "Q3 quadrant title"
+  },
+  "q3Desc": {
+    "message": "Delegate it. Interruptions that can be handled by others.",
+    "description": "Q3 quadrant description"
+  },
+  "q4Title": {
+    "message": "Q4: Not Important & Not Urgent",
+    "description": "Q4 quadrant title"
+  },
+  "q4Desc": {
+    "message": "Eliminate it. Time-wasters that should be avoided.",
+    "description": "Q4 quadrant description"
+  },
+  "confirm": {
+    "message": "Confirm",
+    "description": "Confirm button"
+  },
+  "settingsSaved": {
+    "message": "Settings saved successfully",
+    "description": "Settings saved notification"
+  },
+  "settingsSaveFailed": {
+    "message": "Failed to save settings",
+    "description": "Settings save failed notification"
+  },
+  "allTasksCleared": {
+    "message": "All tasks cleared",
+    "description": "All tasks cleared message"
+  },
+  "settingsApplied": {
+    "message": "Settings applied",
+    "description": "Settings applied message"
+  },
+  "taskMonitoringStarted": {
+    "message": "Task monitoring started",
+    "description": "Task monitoring started message"
+  },
+  "taskMonitoringStopped": {
+    "message": "Task monitoring stopped",
+    "description": "Task monitoring stopped message"
+  },
+  "taskEditProcessed": {
+    "message": "Task edit processed",
+    "description": "Task edit processed message"
+  },
+  "taskAddProcessed": {
+    "message": "Task add processed",
+    "description": "Task add processed message"
+  },
+  "taskDeleteProcessed": {
+    "message": "Task delete processed",
+    "description": "Task delete processed message"
+  },
+  "unknownMessageType": {
+    "message": "Unknown message type",
+    "description": "Unknown message type error"
+  },
+  "openTaskMatrix": {
+    "message": "Open TaskMatrix Pro",
+    "description": "Command description for opening TaskMatrix Pro"
+  },
+  "ready": {
+    "message": "Ready",
+    "description": "Ready status message"
+  },
+  "initializationFailed": {
+    "message": "Initialization Failed",
+    "description": "Initialization failed status message"
+  },
+  "loading": {
+    "message": "Loading...",
+    "description": "Loading status message"
+  },
+  "saving": {
+    "message": "Saving...",
+    "description": "Saving status message"
+  },
+  "failedToGetFormData": {
+    "message": "Failed to get form data",
+    "description": "Error message when form data cannot be retrieved"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Please enter a task title",
+    "description": "Warning message when task title is empty"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Task updated successfully",
+    "description": "Success message when task is updated"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Task added successfully",
+    "description": "Success message when task is added"
+  },
+  "saveFailed": {
+    "message": "Save failed",
+    "description": "Error message when save operation fails"
+  },
+  "taskNotFound": {
+    "message": "Task not found",
+    "description": "Error message when task is not found"
+  },
+  "failedToEditTask": {
+    "message": "Failed to edit task",
+    "description": "Error message when task editing fails"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Task completed successfully",
+    "description": "Success message when task is completed"
+  },
+  "failedToCompleteTask": {
+    "message": "Failed to complete task",
+    "description": "Error message when task completion fails"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Are you sure you want to delete this task? This action cannot be undone.",
+    "description": "Confirmation message for task deletion"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Task deleted successfully",
+    "description": "Success message when task is deleted"
+  },
+  "failedToDeleteTask": {
+    "message": "Failed to delete task",
+    "description": "Error message when task deletion fails"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Settings saved successfully",
+    "description": "Success message when settings are saved"
+  },
+  "failedToSaveSettings": {
+    "message": "Failed to save settings",
+    "description": "Error message when settings save fails"
+  },
+  "loadingDataFailed": {
+    "message": "Failed to load data",
+    "description": "Error message when data loading fails"
+  },
+  "noTaskFound": {
+    "message": "No Task Found",
+    "description": "Empty state message when no tasks are found"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Click the plus icon to add your first task",
+    "description": "Empty state instruction for adding first task"
+  },
+  "allCaughtUp": {
+    "message": "All Caught Up!",
+    "description": "Empty state message when no overdue tasks"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "No overdue tasks. Great job keeping everything on track!",
+    "description": "Empty state message for no overdue tasks"
+  },
+  "noCompletedTasks": {
+    "message": "No Completed Tasks",
+    "description": "Empty state message when no completed tasks"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Double-click on a task and click the status label to mark it as completed",
+    "description": "Instruction for marking tasks as completed"
+  },
+  "noRejectedTasks": {
+    "message": "No Rejected Tasks",
+    "description": "Empty state message when no rejected tasks"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Double-click on a task and click the status label twice to mark it as rejected",
+    "description": "Instruction for marking tasks as rejected"
+  },
+  "task": {
+    "message": "Task:",
+    "description": "Task label prefix"
+  },
+  "importance": {
+    "message": "Importance:",
+    "description": "Importance label"
+  },
+  "noData": {
+    "message": "No Data",
+    "description": "No data message for charts"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Not enough data to generate heatmap",
+    "description": "Message when there's not enough data for heatmap"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Not enough task data to generate scatter plot",
+    "description": "Message when there's not enough data for scatter plot"
+  },
+  "bytes": {
+    "message": "Bytes",
+    "description": "Bytes unit"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Kilobytes unit"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Megabytes unit"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Gigabytes unit"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Terabytes unit"
+  },
+
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Frequency of checking task status in the background",
+    "description": "Description for task status checking frequency"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Display the number of urgent tasks on the plugin icon",
+    "description": "Description for icon badge setting"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Display task reminder information when hovering over the icon",
+    "description": "Description for icon title setting"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Double-click on empty area",
+    "description": "Instruction for creating task"
+  },
+  "editTaskInstruction": {
+    "message": "Edit Task:",
+    "description": "Edit task instruction"
+  },
+  "hoverOverTask": {
+    "message": "Hover over task",
+    "description": "Instruction for viewing task details"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Click the list icon for all tasks",
+    "description": "Instruction for accessing task manager"
+  },
+  "clickChartIconForInsights": {
+    "message": "Click the chart icon for insights",
+    "description": "Instruction for accessing analysis report"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Eisenhower Task Matrix",
+    "description": "Eisenhower task matrix section title"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Important & Urgent",
+    "description": "Q1 quadrant title"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Do it now. Critical tasks requiring immediate attention.",
+    "description": "Q1 quadrant description"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Important & Not Urgent",
+    "description": "Q2 quadrant title"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Schedule it. Strategic tasks for long-term planning.",
+    "description": "Q2 quadrant description"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Not Important & Urgent",
+    "description": "Q3 quadrant title"
+  },
+  "delegateItInterruptions": {
+    "message": "Delegate it. Interruptions that can be handled by others.",
+    "description": "Q3 quadrant description"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Not Important & Not Urgent",
+    "description": "Q4 quadrant title"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Eliminate it. Time-wasters that should be avoided.",
+    "description": "Q4 quadrant description"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "When the task remaining time is less than this duration, trigger reminder",
+    "description": "Description for urgent reminder threshold setting"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "When a task is about to expire, remind you through icon changes",
+    "description": "Description for urgent reminder setting"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Enable Urgent Task Reminder",
+    "description": "Enable urgent task reminder checkbox label"
+  },
+  "invalidDueDate": {
+    "message": "Invalid due date",
+    "description": "Error message for invalid due date"
+  },
+  "dueAt": {
+    "message": "Due at",
+    "description": "Due at prefix for tasks due on specific date"
+  },
+  "dueIn": {
+    "message": "Due in",
+    "description": "Due in prefix for tasks due in specific time"
+  },
+
+  "completionRate": {
+    "message": "Completion-Rate",
+    "description": "Completion rate tab title"
+  },
+  "timeStatus": {
+    "message": "Time-Status",
+    "description": "Time status tab title"
+  },
+  "timeTrend": {
+    "message": "Time-Trend",
+    "description": "Time trend tab title"
+  },
+  "sourceCross": {
+    "message": "Source-Cross",
+    "description": "Source cross tab title"
+  },
+  "completionRateQuantity": {
+    "message": "Completion Rate - Quantity",
+    "description": "Completion rate chart title"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Task Source - Completion Rate",
+    "description": "Task source completion rate chart title"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Time - Completion Status Scatter",
+    "description": "Time completion status scatter chart title"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Weekly/Monthly Trend",
+    "description": "Weekly monthly trend chart title"
+  },
+  "weekly": {
+    "message": "Weekly",
+    "description": "Weekly period button"
+  },
+  "monthly": {
+    "message": "Monthly",
+    "description": "Monthly period button"
+  },
+  "source": {
+    "message": "Source",
+    "description": "Source table header"
+  },
+  "low": {
+    "message": "Low (0-20%)",
+    "description": "Low completion rate label"
+  },
+  "mediumLow": {
+    "message": "Medium-Low (20-50%)",
+    "description": "Medium-low completion rate label"
+  },
+  "mediumHigh": {
+    "message": "Medium-High (50-80%)",
+    "description": "Medium-high completion rate label"
+  },
+  "high": {
+    "message": "High (80-100%)",
+    "description": "High completion rate label"
+  },
+  "taskCost": {
+    "message": "Task Cost (days)",
+    "description": "Task cost axis label"
+  },
+  "taskImportance": {
+    "message": "Task Importance",
+    "description": "Task importance axis label"
+  },
+  "taskCount": {
+    "message": "Task Count",
+    "description": "Task count axis label"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Quadrant Task Time Statistics (Days):",
+    "description": "Quadrant task time statistics title"
+  },
+  "quadrant": {
+    "message": "Quadrant",
+    "description": "Quadrant table header"
+  },
+  "completedAvg": {
+    "message": "Completed (Avg)",
+    "description": "Completed average table header"
+  },
+  "completedMedian": {
+    "message": "Completed (Median)",
+    "description": "Completed median table header"
+  },
+  "inProgressAvg": {
+    "message": "In Progress (Avg)",
+    "description": "In progress average table header"
+  },
+  "inProgressMedian": {
+    "message": "In Progress (Median)",
+    "description": "In progress median table header"
+  },
+  "deepInsights": {
+    "message": "Deep Insights",
+    "description": "Deep insights section title"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Currently there is not enough data to generate insights.",
+    "description": "No data message for insights"
+  },
+  "importantUrgent": {
+    "message": "Important & Urgent",
+    "description": "Q1 quadrant label"
+  },
+  "importantNotUrgent": {
+    "message": "Important & Not Urgent",
+    "description": "Q2 quadrant label"
+  },
+  "notImportantNotUrgent": {
+    "message": "Not Important & Not Urgent",
+    "description": "Q3 quadrant label"
+  },
+  "notImportantUrgent": {
+    "message": "Not Important & Urgent",
+    "description": "Q4 quadrant label"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2 (Important & Not Urgent) quadrant task completion rate is significantly lower than other quadrants, reflecting \"urgent over important\" execution bias, which may lead to strategic goal delays in the long term.",
+    "description": "Insight about Q2 completion rate being lower"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3 (Not Important & Not Urgent) quadrant task completion rate is too high, beware of \"ineffective busyness\" - whether too much energy is consumed on trivial tasks, squeezing core task time.",
+    "description": "Insight about Q3 completion rate being too high"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1 (Important & Urgent) quadrant tasks account for $percentage% of total tasks, suggesting improvement in task planning, handle important tasks early to avoid urgent situations.",
+    "description": "Insight about Q1 tasks percentage being high"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4 (Not Important & Urgent) quadrant tasks account for $percentage% of total tasks, review the sources of these low-priority but urgent tasks, optimize emergency response processes.",
+    "description": "Insight about Q4 tasks percentage being high"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "\"$source\" tasks in Q1 (Important & Urgent) achieve $q1Rate% completion rate, but only $q2Rate% in Q2 (Important & Not Urgent), indicating task execution priority is driven by \"external pressure\" rather than internal strategic focus.",
+    "description": "Insight about source tasks Q1 vs Q2 completion rates"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "\"$source\" tasks in Q4 (Not Important & Urgent) have low completion rate ($q4Rate%), need to confirm if \"temporary tasks\" have priority definition issues.",
+    "description": "Insight about Q4 tasks low completion rate"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "\"$source\" are highly concentrated in $quadrant ($quadrantName) quadrant, accounting for $percentage%. Review task planning for reasonableness.",
+    "description": "Insight about tasks being concentrated in one quadrant"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "\"$highSource\" in $highQuadrant has highest completion rate ($highRate%), while \"$lowSource\" in $lowQuadrant has lowest ($lowRate%), showing clear differences in processing priority for different task types.",
+    "description": "Insight about completion rate differences between sources"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (Important & Urgent) has $percentage% of pending tasks taking over 3 days, indicating potential resource shortage or unexpected difficulty in core tasks. Consider task breakdown or additional support.",
+    "description": "Insight about Q1 pending tasks taking too long"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Q4 (Not Important & Urgent) completed tasks average $q4Time days, far exceeding Q2 (Important & Not Urgent) at $q2Time days, indicating \"temporary urgent tasks\" over-occupying resources. Optimize emergency response processes.",
+    "description": "Insight about Q4 vs Q2 task completion times"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Average processing time for pending tasks ($pendingTime days) is significantly higher than completed tasks ($completedTime days). Focus on long-stuck tasks and adjust strategy or resource allocation when necessary.",
+    "description": "Insight about pending vs completed task times"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabel task volume $direction by $rate% from $from to $to, showing significant fluctuation. Consider focusing on task allocation balance.",
+    "description": "Insight about task volume fluctuation"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabel task completion rate shows a sustained upward trend, indicating improved work efficiency.",
+    "description": "Insight about completion rate upward trend"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabel task completion rate shows a sustained downward trend, requiring attention to execution efficiency issues.",
+    "description": "Insight about completion rate downward trend"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2 (Important & Not Urgent) tasks continue to accumulate without improvement in completion rate, reflecting that \"strategic tasks\" are not integrated into regular execution plans, posing a \"procrastination accumulation\" risk.",
+    "description": "Insight about Q2 tasks accumulation"
+  }
+}
