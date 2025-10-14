@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Ingyenes Feladatkezelő és Eszközök",
+    "description": "Alkalmazás neve"
+  },
+  "appDescription": {
+    "message": "Ingyenes Chrome böngészőbővítmény intelligens feladatokhoz. Vizuálisan jelenítse meg feladatait hatékony eszközökkel és felhasználóbarát felülettel",
+    "description": "Alkalmazás leírása"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Alkalmazás címe"
+  },
+  "taskManager": {
+    "message": "Feladatkezelő",
+    "description": "Feladatkezelő gomb címe"
+  },
+  "report": {
+    "message": "Jelentés",
+    "description": "Jelentés gomb címe"
+  },
+  "settings": {
+    "message": "Beállítások",
+    "description": "Beállítások gomb címe"
+  },
+  "help": {
+    "message": "Súgó",
+    "description": "Súgó gomb címe"
+  },
+  "addTask": {
+    "message": "Feladat Hozzáadása",
+    "description": "Feladat hozzáadása gomb címe"
+  },
+  "close": {
+    "message": "Bezárás",
+    "description": "Bezárás gomb szövege"
+  },
+  "editTask": {
+    "message": "Feladat Szerkesztése",
+    "description": "Feladat szerkesztése modal címe"
+  },
+  "newTask": {
+    "message": "Új",
+    "description": "Új feladat státusza"
+  },
+  "taskTitle": {
+    "message": "Feladat Címe *",
+    "description": "Feladat címe címke"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Adja meg a feladat címét",
+    "description": "Feladat címe beviteli mező placeholder"
+  },
+  "taskDescription": {
+    "message": "Feladat Leírása",
+    "description": "Feladat leírása címke"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Adja meg a feladat leírását (opcionális)",
+    "description": "Feladat leírása beviteli mező placeholder"
+  },
+  "importanceLevel": {
+    "message": "Fontossági Szint *",
+    "description": "Fontossági szint címke"
+  },
+  "notImportant": {
+    "message": "Nem Fontos",
+    "description": "Nem fontos címke"
+  },
+  "veryImportant": {
+    "message": "Nagyon Fontos",
+    "description": "Nagyon fontos címke"
+  },
+  "dueDate": {
+    "message": "Határidő *",
+    "description": "Határidő címke"
+  },
+  "taskCategory": {
+    "message": "Feladat Kategória",
+    "description": "Feladat kategória címke"
+  },
+  "work": {
+    "message": "Munka",
+    "description": "Munka kategória"
+  },
+  "personal": {
+    "message": "Személyes",
+    "description": "Személyes kategória"
+  },
+  "study": {
+    "message": "Tanulás",
+    "description": "Tanulás kategória"
+  },
+  "health": {
+    "message": "Egészség",
+    "description": "Egészség kategória"
+  },
+  "other": {
+    "message": "Egyéb",
+    "description": "Egyéb kategória"
+  },
+  "deleteTask": {
+    "message": "Feladat Törlése",
+    "description": "Feladat törlése gomb"
+  },
+  "cancel": {
+    "message": "Mégse",
+    "description": "Mégse gomb"
+  },
+  "saveTask": {
+    "message": "Feladat Mentése",
+    "description": "Feladat mentése gomb"
+  },
+  "doing": {
+    "message": "Folyamatban",
+    "description": "Folyamatban státusz"
+  },
+  "overdue": {
+    "message": "Lejárt",
+    "description": "Lejárt státusz"
+  },
+  "completed": {
+    "message": "Befejezve",
+    "description": "Befejezve státusz"
+  },
+  "rejected": {
+    "message": "Elutasítva",
+    "description": "Elutasítva státusz"
+  },
+  "pending": {
+    "message": "Függőben",
+    "description": "Függőben státusz címke"
+  },
+  "urgentTaskReminder": {
+    "message": "Sürgős Feladat Emlékeztető",
+    "description": "Sürgős feladat emlékeztető szekció címe"
+  },
+  "enableUrgentReminder": {
+    "message": "Sürgős Feladat Emlékeztető Engedélyezése",
+    "description": "Sürgős feladat emlékeztető engedélyezése jelölőnégyzet"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Amikor egy feladat hamarosan lejár, emlékeztessen ikon változtatásokkal",
+    "description": "Sürgős feladat emlékeztető engedélyezése leírása"
+  },
+  "reminderThreshold": {
+    "message": "Emlékeztető Küszöb (perc)",
+    "description": "Emlékeztető küszöb címke"
+  },
+  "reminderThresholdDesc": {
+    "message": "Amikor a feladat hátralévő ideje kevesebb, mint ez az időtartam, aktiválja az emlékeztetőt",
+    "description": "Emlékeztető küszöb leírása"
+  },
+  "reminderInterval": {
+    "message": "Emlékeztető Intervallum (perc)",
+    "description": "Emlékeztető intervallum címke"
+  },
+  "reminderIntervalDesc": {
+    "message": "Feladat státusz ellenőrzésének gyakorisága a háttérben",
+    "description": "Emlékeztető intervallum leírása"
+  },
+  "iconReminder": {
+    "message": "Ikon Emlékeztető",
+    "description": "Ikon emlékeztető szekció címe"
+  },
+  "showIconBadge": {
+    "message": "Ikon Badge Megjelenítése",
+    "description": "Ikon badge megjelenítése jelölőnégyzet"
+  },
+  "showIconBadgeDesc": {
+    "message": "Sürgős feladatok számának megjelenítése a bővítmény ikonján",
+    "description": "Ikon badge megjelenítése leírása"
+  },
+  "showIconTooltip": {
+    "message": "Ikon Tooltip Megjelenítése",
+    "description": "Ikon tooltip megjelenítése jelölőnégyzet"
+  },
+  "showIconTooltipDesc": {
+    "message": "Feladat emlékeztető információk megjelenítése az ikon fölé húzáskor",
+    "description": "Ikon tooltip megjelenítése leírása"
+  },
+  "save": {
+    "message": "Mentés",
+    "description": "Mentés gomb"
+  },
+  "quickStart": {
+    "message": "🚀 Gyors Indítás",
+    "description": "Gyors indítás szekció címe"
+  },
+  "createTask": {
+    "message": "Feladat Létrehozása:",
+    "description": "Feladat létrehozása utasítás"
+  },
+  "createTaskDesc": {
+    "message": "Dupla kattintás üres területre",
+    "description": "Feladat létrehozása leírása"
+  },
+  "editTaskDesc": {
+    "message": "Feladat Szerkesztése:",
+    "description": "Feladat szerkesztése utasítás"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Dupla kattintás meglévő feladatra",
+    "description": "Feladat szerkesztése utasítás leírása"
+  },
+  "viewDetails": {
+    "message": "Részletek Megtekintése:",
+    "description": "Részletek megtekintése utasítás"
+  },
+  "viewDetailsDesc": {
+    "message": "Húzza az egeret a feladat fölé",
+    "description": "Részletek megtekintése leírása"
+  },
+  "taskManagerDesc": {
+    "message": "Feladatkezelő:",
+    "description": "Feladatkezelő utasítás"
+  },
+  "taskManagerInstruction": {
+    "message": "Kattintson a lista ikonra az összes feladathoz",
+    "description": "Feladatkezelő utasítás leírása"
+  },
+  "analysisReport": {
+    "message": "Elemzési Jelentés:",
+    "description": "Elemzési jelentés utasítás"
+  },
+  "analysisReportDesc": {
+    "message": "Kattintson a diagram ikonra betekintésért",
+    "description": "Elemzési jelentés leírása"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Eisenhower Feladat Mátrix",
+    "description": "Eisenhower mátrix szekció címe"
+  },
+  "q1Title": {
+    "message": "Q1: Fontos és Sürgős",
+    "description": "Q1 kvadráns címe"
+  },
+  "q1Desc": {
+    "message": "Csináld most. Kritikus feladatok, amelyek azonnali figyelmet igényelnek.",
+    "description": "Q1 kvadráns leírása"
+  },
+  "q2Title": {
+    "message": "Q2: Fontos és Nem Sürgős",
+    "description": "Q2 kvadráns címe"
+  },
+  "q2Desc": {
+    "message": "Ütemezd be. Stratégiai feladatok hosszú távú tervezéshez.",
+    "description": "Q2 kvadráns leírása"
+  },
+  "q3Title": {
+    "message": "Q3: Nem Fontos és Sürgős",
+    "description": "Q3 kvadráns címe"
+  },
+  "q3Desc": {
+    "message": "Delegáld. Megszakítások, amelyeket mások is kezelhetnek.",
+    "description": "Q3 kvadráns leírása"
+  },
+  "q4Title": {
+    "message": "Q4: Nem Fontos és Nem Sürgős",
+    "description": "Q4 kvadráns címe"
+  },
+  "q4Desc": {
+    "message": "Elimináld. Időpazarlás, amelyet el kell kerülni.",
+    "description": "Q4 kvadráns leírása"
+  },
+  "confirm": {
+    "message": "Megerősítés",
+    "description": "Megerősítés gomb"
+  },
+  "settingsSaved": {
+    "message": "Beállítások sikeresen mentve",
+    "description": "Beállítások mentve értesítés"
+  },
+  "settingsSaveFailed": {
+    "message": "Beállítások mentése sikertelen",
+    "description": "Beállítások mentése sikertelen értesítés"
+  },
+  "allTasksCleared": {
+    "message": "Minden feladat törölve",
+    "description": "Minden feladat törölve üzenet"
+  },
+  "settingsApplied": {
+    "message": "Beállítások alkalmazva",
+    "description": "Beállítások alkalmazva üzenet"
+  },
+  "taskMonitoringStarted": {
+    "message": "Feladat figyelés elindítva",
+    "description": "Feladat figyelés elindítva üzenet"
+  },
+  "taskMonitoringStopped": {
+    "message": "Feladat figyelés leállítva",
+    "description": "Feladat figyelés leállítva üzenet"
+  },
+  "taskEditProcessed": {
+    "message": "Feladat szerkesztés feldolgozva",
+    "description": "Feladat szerkesztés feldolgozva üzenet"
+  },
+  "taskAddProcessed": {
+    "message": "Feladat hozzáadás feldolgozva",
+    "description": "Feladat hozzáadás feldolgozva üzenet"
+  },
+  "taskDeleteProcessed": {
+    "message": "Feladat törlés feldolgozva",
+    "description": "Feladat törlés feldolgozva üzenet"
+  },
+  "unknownMessageType": {
+    "message": "Ismeretlen üzenet típus",
+    "description": "Ismeretlen üzenet típus hiba"
+  },
+  "openTaskMatrix": {
+    "message": "TaskMatrix Pro Megnyitása",
+    "description": "TaskMatrix Pro megnyitása parancs leírása"
+  },
+  "ready": {
+    "message": "Kész",
+    "description": "Kész státusz üzenet"
+  },
+  "initializationFailed": {
+    "message": "Inicializálás Sikertelen",
+    "description": "Inicializálás sikertelen státusz üzenet"
+  },
+  "loading": {
+    "message": "Betöltés...",
+    "description": "Betöltés státusz üzenet"
+  },
+  "saving": {
+    "message": "Mentés...",
+    "description": "Mentés státusz üzenet"
+  },
+  "failedToGetFormData": {
+    "message": "Nem sikerült lekérni az űrlap adatokat",
+    "description": "Hibaüzenet amikor az űrlap adatok nem kérhetők le"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Kérjük, adja meg a feladat címét",
+    "description": "Figyelmeztető üzenet amikor a feladat címe üres"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Feladat sikeresen frissítve",
+    "description": "Sikeres üzenet amikor a feladat frissül"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Feladat sikeresen hozzáadva",
+    "description": "Sikeres üzenet amikor a feladat hozzáadásra kerül"
+  },
+  "saveFailed": {
+    "message": "Mentés sikertelen",
+    "description": "Hibaüzenet amikor a mentés művelet sikertelen"
+  },
+  "taskNotFound": {
+    "message": "Feladat nem található",
+    "description": "Hibaüzenet amikor a feladat nem található"
+  },
+  "failedToEditTask": {
+    "message": "Nem sikerült szerkeszteni a feladatot",
+    "description": "Hibaüzenet amikor a feladat szerkesztése sikertelen"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Feladat sikeresen befejezve",
+    "description": "Sikeres üzenet amikor a feladat befejezésre kerül"
+  },
+  "failedToCompleteTask": {
+    "message": "Nem sikerült befejezni a feladatot",
+    "description": "Hibaüzenet amikor a feladat befejezése sikertelen"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Biztos benne, hogy törölni szeretné ezt a feladatot? Ez a művelet nem vonható vissza.",
+    "description": "Megerősítő üzenet a feladat törléséhez"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Feladat sikeresen törölve",
+    "description": "Sikeres üzenet amikor a feladat törlésre kerül"
+  },
+  "failedToDeleteTask": {
+    "message": "Nem sikerült törölni a feladatot",
+    "description": "Hibaüzenet amikor a feladat törlése sikertelen"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Beállítások sikeresen mentve",
+    "description": "Sikeres üzenet amikor a beállítások mentésre kerülnek"
+  },
+  "failedToSaveSettings": {
+    "message": "Nem sikerült menteni a beállításokat",
+    "description": "Hibaüzenet amikor a beállítások mentése sikertelen"
+  },
+  "loadingDataFailed": {
+    "message": "Nem sikerült betölteni az adatokat",
+    "description": "Hibaüzenet amikor az adatok betöltése sikertelen"
+  },
+  "noTaskFound": {
+    "message": "Nincs Feladat Megtalálva",
+    "description": "Üres állapot üzenet amikor nincsenek feladatok"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Kattintson a plusz ikonra az első feladat hozzáadásához",
+    "description": "Üres állapot utasítás az első feladat hozzáadásához"
+  },
+  "allCaughtUp": {
+    "message": "Minden Frissítve!",
+    "description": "Üres állapot üzenet amikor nincsenek lejárt feladatok"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Nincsenek lejárt feladatok. Kiváló munka minden rendben tartásával!",
+    "description": "Üres állapot üzenet nincs lejárt feladat esetén"
+  },
+  "noCompletedTasks": {
+    "message": "Nincsenek Befejezett Feladatok",
+    "description": "Üres állapot üzenet amikor nincsenek befejezett feladatok"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Dupla kattintás a feladatra és kattintás a státusz címkére a befejezettként való megjelöléshez",
+    "description": "Utasítás a feladatok befejezettként való megjelöléséhez"
+  },
+  "noRejectedTasks": {
+    "message": "Nincsenek Elutasított Feladatok",
+    "description": "Üres állapot üzenet amikor nincsenek elutasított feladatok"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Dupla kattintás a feladatra és dupla kattintás a státusz címkére az elutasítottként való megjelöléshez",
+    "description": "Utasítás a feladatok elutasítottként való megjelöléséhez"
+  },
+  "task": {
+    "message": "Feladat:",
+    "description": "Feladat címke előtag"
+  },
+  "importance": {
+    "message": "Fontosság:",
+    "description": "Fontosság címke"
+  },
+  "noData": {
+    "message": "Nincs Adat",
+    "description": "Nincs adat üzenet diagramhoz"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Nincs elég adat a hőtérkép generálásához",
+    "description": "Üzenet amikor nincs elég adat a hőtérképhez"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Nincs elég feladat adat a szórásdiagram generálásához",
+    "description": "Üzenet amikor nincs elég adat a szórásdiagramhoz"
+  },
+  "bytes": {
+    "message": "Bájt",
+    "description": "Bájt egység"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Kilobájt egység"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Megabájt egység"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Gigabájt egység"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Terabájt egység"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Feladat státusz ellenőrzésének gyakorisága a háttérben",
+    "description": "Leírás a feladat státusz ellenőrzés gyakoriságához"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Sürgős feladatok számának megjelenítése a bővítmény ikonján",
+    "description": "Leírás az ikon badge beállításhoz"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Feladat emlékeztető információk megjelenítése az ikon fölé húzáskor",
+    "description": "Leírás az ikon cím beállításhoz"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Dupla kattintás üres területre",
+    "description": "Utasítás feladat létrehozásához"
+  },
+  "editTaskInstruction": {
+    "message": "Feladat Szerkesztése:",
+    "description": "Feladat szerkesztése utasítás"
+  },
+  "hoverOverTask": {
+    "message": "Húzza az egeret a feladat fölé",
+    "description": "Utasítás a feladat részletek megjelenítéséhez"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Kattintson a lista ikonra az összes feladathoz",
+    "description": "Utasítás a feladatkezelő eléréséhez"
+  },
+  "clickChartIconForInsights": {
+    "message": "Kattintson a diagram ikonra betekintésért",
+    "description": "Utasítás az elemzési jelentés eléréséhez"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Eisenhower Feladat Mátrix",
+    "description": "Eisenhower feladat mátrix szekció címe"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Fontos és Sürgős",
+    "description": "Q1 kvadráns címe"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Csináld most. Kritikus feladatok, amelyek azonnali figyelmet igényelnek.",
+    "description": "Q1 kvadráns leírása"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Fontos és Nem Sürgős",
+    "description": "Q2 kvadráns címe"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Ütemezd be. Stratégiai feladatok hosszú távú tervezéshez.",
+    "description": "Q2 kvadráns leírása"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Nem Fontos és Sürgős",
+    "description": "Q3 kvadráns címe"
+  },
+  "delegateItInterruptions": {
+    "message": "Delegáld. Megszakítások, amelyeket mások is kezelhetnek.",
+    "description": "Q3 kvadráns leírása"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Nem Fontos és Nem Sürgős",
+    "description": "Q4 kvadráns címe"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Elimináld. Időpazarlás, amelyet el kell kerülni.",
+    "description": "Q4 kvadráns leírása"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Amikor a feladat hátralévő ideje kevesebb, mint ez az időtartam, aktiválja az emlékeztetőt",
+    "description": "Leírás a sürgős emlékeztető küszöb beállításhoz"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Amikor egy feladat hamarosan lejár, emlékeztessen ikon változtatásokkal",
+    "description": "Leírás a sürgős emlékeztető beállításhoz"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Sürgős Feladat Emlékeztető Engedélyezése",
+    "description": "Sürgős feladat emlékeztető engedélyezése jelölőnégyzet címke"
+  },
+  "invalidDueDate": {
+    "message": "Érvénytelen határidő",
+    "description": "Hibaüzenet érvénytelen határidőhöz"
+  },
+  "dueAt": {
+    "message": "Határidő",
+    "description": "Határidő előtag feladatokhoz, amelyek egy adott napon járnak le"
+  },
+  "dueIn": {
+    "message": "Határidő",
+    "description": "Határidő előtag feladatokhoz, amelyek egy adott idő múlva járnak le"
+  },
+  "completionRate": {
+    "message": "Befejezési Arány",
+    "description": "Befejezési arány fül címe"
+  },
+  "timeStatus": {
+    "message": "Idő-Státusz",
+    "description": "Idő-státusz fül címe"
+  },
+  "timeTrend": {
+    "message": "Idő Trend",
+    "description": "Idő trend fül címe"
+  },
+  "sourceCross": {
+    "message": "Forrás-Kereszt",
+    "description": "Forrás-kereszt fül címe"
+  },
+  "completionRateQuantity": {
+    "message": "Befejezési Arány - Mennyiség",
+    "description": "Befejezési arány diagram címe"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Feladat Forrás - Befejezési Arány",
+    "description": "Feladat forrás befejezési arány diagram címe"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Idő - Befejezési Státusz Szórásdiagram",
+    "description": "Idő befejezési státusz szórásdiagram címe"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Heti/Havi Trend",
+    "description": "Heti havi trend diagram címe"
+  },
+  "weekly": {
+    "message": "Heti",
+    "description": "Heti időszak gomb"
+  },
+  "monthly": {
+    "message": "Havi",
+    "description": "Havi időszak gomb"
+  },
+  "source": {
+    "message": "Forrás",
+    "description": "Forrás táblázat fejléc"
+  },
+  "low": {
+    "message": "Alacsony (0-20%)",
+    "description": "Alacsony befejezési arány címke"
+  },
+  "mediumLow": {
+    "message": "Közepes-Alacsony (20-50%)",
+    "description": "Közepes-alacsony befejezési arány címke"
+  },
+  "mediumHigh": {
+    "message": "Közepes-Magas (50-80%)",
+    "description": "Közepes-magas befejezési arány címke"
+  },
+  "high": {
+    "message": "Magas (80-100%)",
+    "description": "Magas befejezési arány címke"
+  },
+  "taskCost": {
+    "message": "Feladat Költség (nap)",
+    "description": "Feladat költség tengely címke"
+  },
+  "taskImportance": {
+    "message": "Feladat Fontosság",
+    "description": "Feladat fontosság tengely címke"
+  },
+  "taskCount": {
+    "message": "Feladat Szám",
+    "description": "Feladat szám tengely címke"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Kvadráns Feladat Idő Statisztikák (Nap):",
+    "description": "Kvadráns feladat idő statisztikák címe"
+  },
+  "quadrant": {
+    "message": "Kvadráns",
+    "description": "Kvadráns táblázat fejléc"
+  },
+  "completedAvg": {
+    "message": "Befejezve (Átlag)",
+    "description": "Befejezve átlag táblázat fejléc"
+  },
+  "completedMedian": {
+    "message": "Befejezve (Medián)",
+    "description": "Befejezve medián táblázat fejléc"
+  },
+  "inProgressAvg": {
+    "message": "Folyamatban (Átlag)",
+    "description": "Folyamatban átlag táblázat fejléc"
+  },
+  "inProgressMedian": {
+    "message": "Folyamatban (Medián)",
+    "description": "Folyamatban medián táblázat fejléc"
+  },
+  "deepInsights": {
+    "message": "Mély Belepillantások",
+    "description": "Mély belepillantások szekció címe"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Jelenleg nincs elég adat a belepillantások generálásához.",
+    "description": "Nincs adat üzenet a belepillantásokhoz"
+  },
+  "importantUrgent": {
+    "message": "Fontos és Sürgős",
+    "description": "Q1 kvadráns címke"
+  },
+  "importantNotUrgent": {
+    "message": "Fontos és Nem Sürgős",
+    "description": "Q2 kvadráns címke"
+  },
+  "notImportantNotUrgent": {
+    "message": "Nem Fontos és Nem Sürgős",
+    "description": "Q3 kvadráns címke"
+  },
+  "notImportantUrgent": {
+    "message": "Nem Fontos és Sürgős",
+    "description": "Q4 kvadráns címke"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2 (Fontos és Nem Sürgős) kvadráns feladat befejezési aránya jelentősen alacsonyabb, mint a többi kvadráns, ami egy \"sürgős fontos felett\" végrehajtási elfogultságot tükröz, ami hosszú távon stratégiai cél késésekhez vezethet.",
+    "description": "Belepillantás a Q2 befejezési arányról, amely alacsonyabb"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3 (Nem Fontos és Nem Sürgős) kvadráns feladat befejezési aránya túl magas, legyen óvatos a \"hatékonytalan foglalkoztatással\" - ha túl sok energia fogy el jelentéktelen feladatokra, ami összenyomja az időt a kulcs feladatokra.",
+    "description": "Belepillantás a Q3 befejezési arányról, amely túl magas"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1 (Fontos és Sürgős) kvadráns feladatok $percentage%-ot tesznek ki az összes feladatból, ami javulást jelez a feladat tervezésben, kezelje a fontos feladatokat korán, hogy elkerülje a sürgős helyzeteket.",
+    "description": "Belepillantás a magas Q1 feladatok százalékáról"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4 (Nem Fontos és Sürgős) kvadráns feladatok $percentage%-ot tesznek ki az összes feladatból, tekintse át ezeknek az alacsony prioritású de sürgős feladatoknak a forrásait, optimalizálja a vészhelyzeti válasz folyamatokat.",
+    "description": "Belepillantás a magas Q4 feladatok százalékáról"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "\"$source\" feladatok a Q1-ben (Fontos és Sürgős) $q1Rate% befejezési arányt érnek el, de csak $q2Rate%-ot a Q2-ben (Fontos és Nem Sürgős), ami azt jelzi, hogy a feladat végrehajtási prioritás \"külső nyomás\" által van vezérelve, nem pedig belső stratégiai fókusz által.",
+    "description": "Belepillantás a forrás feladatok Q1 vs Q2 befejezési arányairól"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "\"$source\" feladatok a Q4-ben (Nem Fontos és Sürgős) alacsony befejezési aránnyal rendelkeznek ($q4Rate%), szükség van megerősítésre, hogy a \"ideiglenes feladatok\" prioritás definíciós problémával rendelkeznek-e.",
+    "description": "Belepillantás a Q4 feladatok alacsony befejezési arányáról"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "\"$source\" magasan koncentrálódik a $quadrant ($quadrantName) kvadránsban, $percentage%-ot tesz ki. Tekintse át a feladat tervezést az ésszerűségért.",
+    "description": "Belepillantás a feladatokról, amelyek magasan koncentrálódnak egy kvadránsban"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "\"$highSource\" a $highQuadrant-ban a legmagasabb befejezési aránnyal rendelkezik ($highRate%), míg \"$lowSource\" a $lowQuadrant-ban a legalacsonyabbal ($lowRate%), ami egyértelmű különbségeket mutat a feldolgozási prioritásban a különböző feladat típusokhoz.",
+    "description": "Belepillantás a befejezési arány különbségekről a források között"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (Fontos és Sürgős) $percentage% függőben lévő feladattal rendelkezik, amelyek több mint 3 napot vesznek igénybe, ami potenciális erőforrás hiányt vagy váratlan nehézségeket jelez a kulcs feladatokban. Fontolja meg a feladat felosztást vagy további támogatást.",
+    "description": "Belepillantás a Q1 függőben lévő feladatokról, amelyek túl sokáig tartanak"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Q4 (Nem Fontos és Sürgős) befejezett feladatok átlagosan $q4Time napot vesznek igénybe, jelentősen meghaladva a Q2-t (Fontos és Nem Sürgős) $q2Time nappal, ami azt jelzi, hogy az \"ideiglenes sürgős feladatok\" túlzottan lefoglalják az erőforrásokat. Optimalizálja a vészhelyzeti válasz folyamatokat.",
+    "description": "Belepillantás a Q4 vs Q2 feladat befejezési időkről"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "A függőben lévő feladatok átlagos feldolgozási ideje ($pendingTime nap) jelentősen magasabb, mint a befejezett feladatoké ($completedTime nap). Összpontosítson a hosszú ideje stagnáló feladatokra és szükség szerint állítsa be a stratégiát vagy erőforrás allokációt.",
+    "description": "Belepillantás a függőben lévő vs befejezett feladat időkről"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabel feladat mennyiség $direction $rate%-kal $from-tól $to-ig, ami jelentős ingadozást mutat. Fontolja meg a feladat allokáció egyensúlyára való összpontosítást.",
+    "description": "Belepillantás a kvadráns feladat mennyiség ingadozásról"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabel feladat befejezési arány tartós emelkedő trendet mutat, ami javuló munkatevékenységet jelez.",
+    "description": "Belepillantás a befejezési arány emelkedő trendről"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabel feladat befejezési arány tartós csökkenő trendet mutat, ami figyelmet igényel a végrehajtási tevékenység problémáira.",
+    "description": "Belepillantás a befejezési arány csökkenő trendről"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2 (Fontos és Nem Sürgős) feladatok továbbra is felhalmozódnak befejezési arány javulás nélkül, ami azt tükrözi, hogy a \"stratégiai feladatok\" nincsenek integrálva a rendszeres végrehajtási programokba, ami \"késés felhalmozódás\" kockázatot jelent.",
+    "description": "Belepillantás a Q2 feladatok felhalmozódásáról"
+  }
+}

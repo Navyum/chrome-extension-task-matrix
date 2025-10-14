@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Pengurus Tugas & Alat Percuma",
+    "description": "Nama aplikasi"
+  },
+  "appDescription": {
+    "message": "Sambungan Chrome percuma untuk tugas pintar. Visualisasikan tugas anda dengan alat yang berkuasa dan antara muka yang mesra pengguna",
+    "description": "Penerangan aplikasi"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Tajuk aplikasi"
+  },
+  "taskManager": {
+    "message": "Pengurus Tugas",
+    "description": "Tajuk butang pengurus tugas"
+  },
+  "report": {
+    "message": "Laporan",
+    "description": "Tajuk butang laporan"
+  },
+  "settings": {
+    "message": "Tetapan",
+    "description": "Tajuk butang tetapan"
+  },
+  "help": {
+    "message": "Bantuan",
+    "description": "Tajuk butang bantuan"
+  },
+  "addTask": {
+    "message": "Tambah Tugas",
+    "description": "Tajuk butang tambah tugas"
+  },
+  "close": {
+    "message": "Tutup",
+    "description": "Teks butang tutup"
+  },
+  "editTask": {
+    "message": "Edit Tugas",
+    "description": "Tajuk modal edit tugas"
+  },
+  "newTask": {
+    "message": "Baru",
+    "description": "Status tugas baru"
+  },
+  "taskTitle": {
+    "message": "Tajuk Tugas *",
+    "description": "Label tajuk tugas"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Masukkan tajuk tugas",
+    "description": "Placeholder medan input tajuk tugas"
+  },
+  "taskDescription": {
+    "message": "Penerangan Tugas",
+    "description": "Label penerangan tugas"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Masukkan penerangan tugas (pilihan)",
+    "description": "Placeholder medan input penerangan tugas"
+  },
+  "importanceLevel": {
+    "message": "Tahap Kepentingan *",
+    "description": "Label tahap kepentingan"
+  },
+  "notImportant": {
+    "message": "Tidak Penting",
+    "description": "Label tidak penting"
+  },
+  "veryImportant": {
+    "message": "Sangat Penting",
+    "description": "Label sangat penting"
+  },
+  "dueDate": {
+    "message": "Tarikh Tamat *",
+    "description": "Label tarikh tamat"
+  },
+  "taskCategory": {
+    "message": "Kategori Tugas",
+    "description": "Label kategori tugas"
+  },
+  "work": {
+    "message": "Kerja",
+    "description": "Kategori kerja"
+  },
+  "personal": {
+    "message": "Peribadi",
+    "description": "Kategori peribadi"
+  },
+  "study": {
+    "message": "Belajar",
+    "description": "Kategori belajar"
+  },
+  "health": {
+    "message": "Kesihatan",
+    "description": "Kategori kesihatan"
+  },
+  "other": {
+    "message": "Lain-lain",
+    "description": "Kategori lain-lain"
+  },
+  "deleteTask": {
+    "message": "Padam Tugas",
+    "description": "Butang padam tugas"
+  },
+  "cancel": {
+    "message": "Batal",
+    "description": "Butang batal"
+  },
+  "saveTask": {
+    "message": "Simpan Tugas",
+    "description": "Butang simpan tugas"
+  },
+  "doing": {
+    "message": "Sedang Dijalankan",
+    "description": "Status sedang dijalankan"
+  },
+  "overdue": {
+    "message": "Terlewat",
+    "description": "Status terlewat"
+  },
+  "completed": {
+    "message": "Selesai",
+    "description": "Status selesai"
+  },
+  "rejected": {
+    "message": "Ditolak",
+    "description": "Status ditolak"
+  },
+  "pending": {
+    "message": "Menunggu",
+    "description": "Label status menunggu"
+  },
+  "urgentTaskReminder": {
+    "message": "Peringatan Tugas Mendesak",
+    "description": "Tajuk bahagian peringatan tugas mendesak"
+  },
+  "enableUrgentReminder": {
+    "message": "Dayakan Peringatan Tugas Mendesak",
+    "description": "Kotak semak dayakan peringatan tugas mendesak"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Apabila tugas akan tamat, ingatkan melalui perubahan ikon",
+    "description": "Penerangan dayakan peringatan tugas mendesak"
+  },
+  "reminderThreshold": {
+    "message": "Ambang Peringatan (minit)",
+    "description": "Label ambang peringatan"
+  },
+  "reminderThresholdDesc": {
+    "message": "Apabila masa baki tugas kurang daripada tempoh ini, dayakan peringatan",
+    "description": "Penerangan ambang peringatan"
+  },
+  "reminderInterval": {
+    "message": "Selang Peringatan (minit)",
+    "description": "Label selang peringatan"
+  },
+  "reminderIntervalDesc": {
+    "message": "Kekerapan memeriksa status tugas di latar belakang",
+    "description": "Penerangan selang peringatan"
+  },
+  "iconReminder": {
+    "message": "Peringatan Ikon",
+    "description": "Tajuk bahagian peringatan ikon"
+  },
+  "showIconBadge": {
+    "message": "Tunjukkan Badge Ikon",
+    "description": "Kotak semak tunjukkan badge ikon"
+  },
+  "showIconBadgeDesc": {
+    "message": "Tunjukkan bilangan tugas mendesak pada ikon plugin",
+    "description": "Penerangan tunjukkan badge ikon"
+  },
+  "showIconTooltip": {
+    "message": "Tunjukkan Tooltip Ikon",
+    "description": "Kotak semak tunjukkan tooltip ikon"
+  },
+  "showIconTooltipDesc": {
+    "message": "Tunjukkan maklumat peringatan tugas apabila mengarahkan tetikus ke ikon",
+    "description": "Penerangan tunjukkan tooltip ikon"
+  },
+  "save": {
+    "message": "Simpan",
+    "description": "Butang simpan"
+  },
+  "quickStart": {
+    "message": "🚀 Mulakan Pantas",
+    "description": "Tajuk bahagian mulakan pantas"
+  },
+  "createTask": {
+    "message": "Cipta Tugas:",
+    "description": "Arahan cipta tugas"
+  },
+  "createTaskDesc": {
+    "message": "Klik dua kali pada kawasan kosong",
+    "description": "Penerangan cipta tugas"
+  },
+  "editTaskDesc": {
+    "message": "Edit Tugas:",
+    "description": "Arahan edit tugas"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Klik dua kali pada tugas yang sedia ada",
+    "description": "Penerangan arahan edit tugas"
+  },
+  "viewDetails": {
+    "message": "Lihat Butiran:",
+    "description": "Arahan lihat butiran"
+  },
+  "viewDetailsDesc": {
+    "message": "Arahkan tetikus ke tugas",
+    "description": "Penerangan lihat butiran"
+  },
+  "taskManagerDesc": {
+    "message": "Pengurus Tugas:",
+    "description": "Arahan pengurus tugas"
+  },
+  "taskManagerInstruction": {
+    "message": "Klik pada ikon senarai untuk semua tugas",
+    "description": "Penerangan arahan pengurus tugas"
+  },
+  "analysisReport": {
+    "message": "Laporan Analisis:",
+    "description": "Arahan laporan analisis"
+  },
+  "analysisReportDesc": {
+    "message": "Klik pada ikon graf untuk pandangan",
+    "description": "Penerangan laporan analisis"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Matriks Tugas Eisenhower",
+    "description": "Tajuk bahagian matriks Eisenhower"
+  },
+  "q1Title": {
+    "message": "Q1: Penting dan Mendesak",
+    "description": "Tajuk kuadran Q1"
+  },
+  "q1Desc": {
+    "message": "Lakukan sekarang. Tugas kritikal yang memerlukan perhatian segera.",
+    "description": "Penerangan kuadran Q1"
+  },
+  "q2Title": {
+    "message": "Q2: Penting dan Tidak Mendesak",
+    "description": "Tajuk kuadran Q2"
+  },
+  "q2Desc": {
+    "message": "Jadualkan. Tugas strategik untuk perancangan jangka panjang.",
+    "description": "Penerangan kuadran Q2"
+  },
+  "q3Title": {
+    "message": "Q3: Tidak Penting dan Mendesak",
+    "description": "Tajuk kuadran Q3"
+  },
+  "q3Desc": {
+    "message": "Delegasikan. Gangguan yang boleh diuruskan oleh orang lain.",
+    "description": "Penerangan kuadran Q3"
+  },
+  "q4Title": {
+    "message": "Q4: Tidak Penting dan Tidak Mendesak",
+    "description": "Tajuk kuadran Q4"
+  },
+  "q4Desc": {
+    "message": "Eliminasi. Pembaziran masa yang harus dielakkan.",
+    "description": "Penerangan kuadran Q4"
+  },
+  "confirm": {
+    "message": "Sahkan",
+    "description": "Butang sahkan"
+  },
+  "settingsSaved": {
+    "message": "Tetapan berjaya disimpan",
+    "description": "Notifikasi tetapan disimpan"
+  },
+  "settingsSaveFailed": {
+    "message": "Gagal menyimpan tetapan",
+    "description": "Notifikasi gagal menyimpan tetapan"
+  },
+  "allTasksCleared": {
+    "message": "Semua tugas dibersihkan",
+    "description": "Mesej semua tugas dibersihkan"
+  },
+  "settingsApplied": {
+    "message": "Tetapan digunakan",
+    "description": "Mesej tetapan digunakan"
+  },
+  "taskMonitoringStarted": {
+    "message": "Pemantauan tugas dimulakan",
+    "description": "Mesej pemantauan tugas dimulakan"
+  },
+  "taskMonitoringStopped": {
+    "message": "Pemantauan tugas dihentikan",
+    "description": "Mesej pemantauan tugas dihentikan"
+  },
+  "taskEditProcessed": {
+    "message": "Edit tugas diproses",
+    "description": "Mesej edit tugas diproses"
+  },
+  "taskAddProcessed": {
+    "message": "Penambahan tugas diproses",
+    "description": "Mesej penambahan tugas diproses"
+  },
+  "taskDeleteProcessed": {
+    "message": "Pemadaman tugas diproses",
+    "description": "Mesej pemadaman tugas diproses"
+  },
+  "unknownMessageType": {
+    "message": "Jenis mesej tidak diketahui",
+    "description": "Ralat jenis mesej tidak diketahui"
+  },
+  "openTaskMatrix": {
+    "message": "Buka TaskMatrix Pro",
+    "description": "Penerangan arahan buka TaskMatrix Pro"
+  },
+  "ready": {
+    "message": "Sedia",
+    "description": "Mesej status sedia"
+  },
+  "initializationFailed": {
+    "message": "Permulaan Gagal",
+    "description": "Mesej status permulaan gagal"
+  },
+  "loading": {
+    "message": "Memuatkan...",
+    "description": "Mesej status memuatkan"
+  },
+  "saving": {
+    "message": "Menyimpan...",
+    "description": "Mesej status menyimpan"
+  },
+  "failedToGetFormData": {
+    "message": "Gagal mendapatkan data borang",
+    "description": "Mesej ralat apabila tidak dapat mendapatkan data borang"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Sila masukkan tajuk tugas",
+    "description": "Mesej amaran apabila tajuk tugas kosong"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Tugas berjaya dikemas kini",
+    "description": "Mesej kejayaan apabila tugas dikemas kini"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Tugas berjaya ditambah",
+    "description": "Mesej kejayaan apabila tugas ditambah"
+  },
+  "saveFailed": {
+    "message": "Simpan gagal",
+    "description": "Mesej ralat apabila operasi simpan gagal"
+  },
+  "taskNotFound": {
+    "message": "Tugas tidak dijumpai",
+    "description": "Mesej ralat apabila tugas tidak dijumpai"
+  },
+  "failedToEditTask": {
+    "message": "Gagal mengedit tugas",
+    "description": "Mesej ralat apabila edit tugas gagal"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Tugas berjaya diselesaikan",
+    "description": "Mesej kejayaan apabila tugas diselesaikan"
+  },
+  "failedToCompleteTask": {
+    "message": "Gagal menyelesaikan tugas",
+    "description": "Mesej ralat apabila menyelesaikan tugas gagal"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Adakah anda pasti mahu memadam tugas ini? Tindakan ini tidak boleh dibatalkan.",
+    "description": "Mesej pengesahan untuk memadam tugas"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Tugas berjaya dipadam",
+    "description": "Mesej kejayaan apabila tugas dipadam"
+  },
+  "failedToDeleteTask": {
+    "message": "Gagal memadam tugas",
+    "description": "Mesej ralat apabila memadam tugas gagal"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Tetapan berjaya disimpan",
+    "description": "Mesej kejayaan apabila tetapan disimpan"
+  },
+  "failedToSaveSettings": {
+    "message": "Gagal menyimpan tetapan",
+    "description": "Mesej ralat apabila menyimpan tetapan gagal"
+  },
+  "loadingDataFailed": {
+    "message": "Gagal memuatkan data",
+    "description": "Mesej ralat apabila memuatkan data gagal"
+  },
+  "noTaskFound": {
+    "message": "Tiada Tugas Dijumpai",
+    "description": "Mesej status kosong apabila tiada tugas dijumpai"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Klik pada ikon plus untuk menambah tugas pertama anda",
+    "description": "Arahan status kosong untuk menambah tugas pertama"
+  },
+  "allCaughtUp": {
+    "message": "Semua Terkini!",
+    "description": "Mesej status kosong apabila tiada tugas terlewat"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Tiada tugas terlewat. Kerja yang bagus dalam mengekalkan semuanya pada landasan yang betul!",
+    "description": "Mesej status kosong untuk tiada tugas terlewat"
+  },
+  "noCompletedTasks": {
+    "message": "Tiada Tugas Selesai",
+    "description": "Mesej status kosong apabila tiada tugas selesai"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Klik dua kali pada tugas dan klik pada label status untuk menandakan sebagai selesai",
+    "description": "Arahan untuk menandakan tugas sebagai selesai"
+  },
+  "noRejectedTasks": {
+    "message": "Tiada Tugas Ditolak",
+    "description": "Mesej status kosong apabila tiada tugas ditolak"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Klik dua kali pada tugas dan klik dua kali pada label status untuk menandakan sebagai ditolak",
+    "description": "Arahan untuk menandakan tugas sebagai ditolak"
+  },
+  "task": {
+    "message": "Tugas:",
+    "description": "Awalan label tugas"
+  },
+  "importance": {
+    "message": "Kepentingan:",
+    "description": "Label kepentingan"
+  },
+  "noData": {
+    "message": "Tiada Data",
+    "description": "Mesej tiada data untuk graf"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Data tidak mencukupi untuk menghasilkan peta haba",
+    "description": "Mesej apabila data tidak mencukupi untuk peta haba"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Data tugas tidak mencukupi untuk menghasilkan plot serakan",
+    "description": "Mesej apabila data tidak mencukupi untuk plot serakan"
+  },
+  "bytes": {
+    "message": "Bait",
+    "description": "Unit bait"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Unit kilobait"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Unit megabait"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Unit gigabait"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Unit terabait"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Kekerapan memeriksa status tugas di latar belakang",
+    "description": "Penerangan untuk kekerapan pemeriksaan status tugas"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Tunjukkan bilangan tugas mendesak pada ikon plugin",
+    "description": "Penerangan untuk tetapan badge ikon"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Tunjukkan maklumat peringatan tugas apabila mengarahkan tetikus ke ikon",
+    "description": "Penerangan untuk tetapan tajuk ikon"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Klik dua kali pada kawasan kosong",
+    "description": "Arahan untuk mencipta tugas"
+  },
+  "editTaskInstruction": {
+    "message": "Edit Tugas:",
+    "description": "Arahan edit tugas"
+  },
+  "hoverOverTask": {
+    "message": "Arahkan tetikus ke tugas",
+    "description": "Arahan untuk memaparkan butiran tugas"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Klik pada ikon senarai untuk semua tugas",
+    "description": "Arahan untuk mengakses pengurus tugas"
+  },
+  "clickChartIconForInsights": {
+    "message": "Klik pada ikon graf untuk pandangan",
+    "description": "Arahan untuk mengakses laporan analisis"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Matriks Tugas Eisenhower",
+    "description": "Tajuk bahagian matriks tugas Eisenhower"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Penting dan Mendesak",
+    "description": "Tajuk kuadran Q1"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Lakukan sekarang. Tugas kritikal yang memerlukan perhatian segera.",
+    "description": "Penerangan kuadran Q1"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Penting dan Tidak Mendesak",
+    "description": "Tajuk kuadran Q2"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Jadualkan. Tugas strategik untuk perancangan jangka panjang.",
+    "description": "Penerangan kuadran Q2"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Tidak Penting dan Mendesak",
+    "description": "Tajuk kuadran Q3"
+  },
+  "delegateItInterruptions": {
+    "message": "Delegasikan. Gangguan yang boleh diuruskan oleh orang lain.",
+    "description": "Penerangan kuadran Q3"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Tidak Penting dan Tidak Mendesak",
+    "description": "Tajuk kuadran Q4"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Eliminasi. Pembaziran masa yang harus dielakkan.",
+    "description": "Penerangan kuadran Q4"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Apabila masa baki tugas kurang daripada tempoh ini, dayakan peringatan",
+    "description": "Penerangan untuk tetapan ambang peringatan tugas mendesak"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Apabila tugas akan tamat, ingatkan melalui perubahan ikon",
+    "description": "Penerangan untuk tetapan peringatan tugas mendesak"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Dayakan Peringatan Tugas Mendesak",
+    "description": "Label kotak semak dayakan peringatan tugas mendesak"
+  },
+  "invalidDueDate": {
+    "message": "Tarikh tamat tidak sah",
+    "description": "Mesej ralat untuk tarikh tamat tidak sah"
+  },
+  "dueAt": {
+    "message": "Tamat pada",
+    "description": "Awalan tamat pada untuk tugas yang tamat pada tarikh tertentu"
+  },
+  "dueIn": {
+    "message": "Tamat dalam",
+    "description": "Awalan tamat dalam untuk tugas yang tamat dalam masa tertentu"
+  },
+  "completionRate": {
+    "message": "Kadar Penyelesaian",
+    "description": "Tajuk tab kadar penyelesaian"
+  },
+  "timeStatus": {
+    "message": "Masa-Status",
+    "description": "Tajuk tab masa-status"
+  },
+  "timeTrend": {
+    "message": "Trend Masa",
+    "description": "Tajuk tab trend masa"
+  },
+  "sourceCross": {
+    "message": "Sumber-Silang",
+    "description": "Tajuk tab sumber-silang"
+  },
+  "completionRateQuantity": {
+    "message": "Kadar Penyelesaian - Kuantiti",
+    "description": "Tajuk graf kadar penyelesaian"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Sumber Tugas - Kadar Penyelesaian",
+    "description": "Tajuk graf kadar penyelesaian sumber tugas"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Masa - Status Penyelesaian Plot Serakan",
+    "description": "Tajuk plot serakan status penyelesaian masa"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Trend Mingguan/Bulanan",
+    "description": "Tajuk graf trend mingguan bulanan"
+  },
+  "weekly": {
+    "message": "Mingguan",
+    "description": "Butang tempoh mingguan"
+  },
+  "monthly": {
+    "message": "Bulanan",
+    "description": "Butang tempoh bulanan"
+  },
+  "source": {
+    "message": "Sumber",
+    "description": "Header jadual sumber"
+  },
+  "low": {
+    "message": "Rendah (0-20%)",
+    "description": "Label kadar penyelesaian rendah"
+  },
+  "mediumLow": {
+    "message": "Sederhana-Rendah (20-50%)",
+    "description": "Label kadar penyelesaian sederhana-rendah"
+  },
+  "mediumHigh": {
+    "message": "Sederhana-Tinggi (50-80%)",
+    "description": "Label kadar penyelesaian sederhana-tinggi"
+  },
+  "high": {
+    "message": "Tinggi (80-100%)",
+    "description": "Label kadar penyelesaian tinggi"
+  },
+  "taskCost": {
+    "message": "Kos Tugas (hari)",
+    "description": "Label paksi kos tugas"
+  },
+  "taskImportance": {
+    "message": "Kepentingan Tugas",
+    "description": "Label paksi kepentingan tugas"
+  },
+  "taskCount": {
+    "message": "Bilangan Tugas",
+    "description": "Label paksi bilangan tugas"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Statistik Masa Tugas Kuadran (Hari):",
+    "description": "Tajuk statistik masa tugas kuadran"
+  },
+  "quadrant": {
+    "message": "Kuadran",
+    "description": "Header jadual kuadran"
+  },
+  "completedAvg": {
+    "message": "Selesai (Purata)",
+    "description": "Header jadual selesai purata"
+  },
+  "completedMedian": {
+    "message": "Selesai (Median)",
+    "description": "Header jadual selesai median"
+  },
+  "inProgressAvg": {
+    "message": "Sedang Dijalankan (Purata)",
+    "description": "Header jadual sedang dijalankan purata"
+  },
+  "inProgressMedian": {
+    "message": "Sedang Dijalankan (Median)",
+    "description": "Header jadual sedang dijalankan median"
+  },
+  "deepInsights": {
+    "message": "Pandangan Mendalam",
+    "description": "Tajuk bahagian pandangan mendalam"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Pada masa ini data tidak mencukupi untuk menghasilkan pandangan.",
+    "description": "Mesej tiada data untuk pandangan"
+  },
+  "importantUrgent": {
+    "message": "Penting dan Mendesak",
+    "description": "Label kuadran Q1"
+  },
+  "importantNotUrgent": {
+    "message": "Penting dan Tidak Mendesak",
+    "description": "Label kuadran Q2"
+  },
+  "notImportantNotUrgent": {
+    "message": "Tidak Penting dan Tidak Mendesak",
+    "description": "Label kuadran Q3"
+  },
+  "notImportantUrgent": {
+    "message": "Tidak Penting dan Mendesak",
+    "description": "Label kuadran Q4"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2 (Penting dan Tidak Mendesak) kuadran kadar penyelesaian tugas secara signifikan lebih rendah daripada kuadran lain, yang mencerminkan bias pelaksanaan \"mendesak atas penting\", yang boleh menyebabkan kelewatan matlamat strategik dalam jangka panjang.",
+    "description": "Pandangan tentang kadar penyelesaian Q2 yang lebih rendah"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3 (Tidak Penting dan Tidak Mendesak) kuadran kadar penyelesaian tugas terlalu tinggi, berhati-hati dengan \"pekerjaan tidak cekap\" - jika terlalu banyak tenaga dibelanjakan untuk tugas remeh, yang memampatkan masa untuk tugas teras.",
+    "description": "Pandangan tentang kadar penyelesaian Q3 yang terlalu tinggi"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1 (Penting dan Mendesak) kuadran tugas menyumbang $percentage% daripada jumlah tugas, yang menunjukkan peningkatan dalam perancangan tugas, uruskan tugas penting lebih awal untuk mengelakkan situasi mendesak.",
+    "description": "Pandangan tentang peratusan tugas Q1 yang tinggi"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4 (Tidak Penting dan Mendesak) kuadran tugas menyumbang $percentage% daripada jumlah tugas, semak sumber tugas keutamaan rendah tetapi mendesak ini, optimalkan proses respons kecemasan.",
+    "description": "Pandangan tentang peratusan tugas Q4 yang tinggi"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "\"$source\" tugas di Q1 (Penting dan Mendesak) mencapai $q1Rate% kadar penyelesaian, tetapi hanya $q2Rate% di Q2 (Penting dan Tidak Mendesak), yang menunjukkan bahawa keutamaan pelaksanaan tugas didorong oleh \"tekanan luaran\" daripada fokus strategik dalaman.",
+    "description": "Pandangan tentang kadar penyelesaian tugas sumber Q1 vs Q2"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "\"$source\" tugas di Q4 (Tidak Penting dan Mendesak) mempunyai kadar penyelesaian rendah ($q4Rate%), perlu mengesahkan sama ada \"tugas sementara\" mempunyai masalah definisi keutamaan.",
+    "description": "Pandangan tentang kadar penyelesaian tugas Q4 yang rendah"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "\"$source\" sangat tertumpu di kuadran $quadrant ($quadrantName), menyumbang $percentage%. Semak perancangan tugas untuk kewajaran.",
+    "description": "Pandangan tentang tugas yang sangat tertumpu di satu kuadran"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "\"$highSource\" di $highQuadrant mempunyai kadar penyelesaian tertinggi ($highRate%), sementara \"$lowSource\" di $lowQuadrant mempunyai terendah ($lowRate%), yang menunjukkan perbezaan jelas dalam keutamaan pemprosesan untuk pelbagai jenis tugas.",
+    "description": "Pandangan tentang perbezaan kadar penyelesaian antara sumber"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (Penting dan Mendesak) mempunyai $percentage% tugas menunggu yang mengambil masa lebih daripada 3 hari, yang menunjukkan potensi kekurangan sumber atau kesukaran tidak dijangka dalam tugas teras. Pertimbangkan pembahagian tugas atau sokongan tambahan.",
+    "description": "Pandangan tentang tugas menunggu Q1 yang mengambil masa terlalu lama"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Q4 (Tidak Penting dan Mendesak) tugas selesai purata $q4Time hari, jauh melebihi Q2 (Penting dan Tidak Mendesak) di $q2Time hari, yang menunjukkan bahawa \"tugas mendesak sementara\" terlalu menguasai sumber. Optimalkan proses respons kecemasan.",
+    "description": "Pandangan tentang masa penyelesaian tugas Q4 vs Q2"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Masa pemprosesan purata tugas menunggu ($pendingTime hari) secara signifikan lebih tinggi daripada tugas selesai ($completedTime hari). Fokus pada tugas yang terperangkap lama dan sesuaikan strategi atau peruntukan sumber mengikut keperluan.",
+    "description": "Pandangan tentang masa tugas menunggu vs selesai"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabel isipadu tugas $direction $rate% dari $from ke $to, menunjukkan turun naik signifikan. Pertimbangkan fokus pada keseimbangan peruntukan tugas.",
+    "description": "Pandangan tentang turun naik isipadu tugas kuadran"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabel kadar penyelesaian tugas menunjukkan trend menaik yang berterusan, yang menunjukkan peningkatan aktiviti kerja.",
+    "description": "Pandangan tentang trend menaik kadar penyelesaian"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabel kadar penyelesaian tugas menunjukkan trend menurun yang berterusan, yang memerlukan perhatian pada masalah aktiviti pelaksanaan.",
+    "description": "Pandangan tentang trend menurun kadar penyelesaian"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2 (Penting dan Tidak Mendesak) tugas terus terkumpul tanpa peningkatan kadar penyelesaian, yang mencerminkan bahawa \"tugas strategik\" tidak diintegrasikan ke dalam program pelaksanaan rutin, yang menimbulkan risiko \"pengumpulan kelewatan\".",
+    "description": "Pandangan tentang pengumpulan tugas Q2"
+  }
+}

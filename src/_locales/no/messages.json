@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Gratis Oppgavehåndterer & Verktøy",
+    "description": "Applikasjonens navn"
+  },
+  "appDescription": {
+    "message": "Gratis Chrome nettleserutvidelse for intelligente oppgaver. Visualiser oppgavene dine med kraftige verktøy og skjermvennlig grensesnitt",
+    "description": "Applikasjonens beskrivelse"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Applikasjonens tittel"
+  },
+  "taskManager": {
+    "message": "Oppgavehåndterer",
+    "description": "Oppgavehåndterer knapp tittel"
+  },
+  "report": {
+    "message": "Rapport",
+    "description": "Rapport knapp tittel"
+  },
+  "settings": {
+    "message": "Innstillinger",
+    "description": "Innstillinger knapp tittel"
+  },
+  "help": {
+    "message": "Hjelp",
+    "description": "Hjelp knapp tittel"
+  },
+  "addTask": {
+    "message": "Legg til Oppgave",
+    "description": "Legg til oppgave knapp tittel"
+  },
+  "close": {
+    "message": "Lukk",
+    "description": "Lukk knapp tekst"
+  },
+  "editTask": {
+    "message": "Rediger Oppgave",
+    "description": "Rediger oppgave modal tittel"
+  },
+  "newTask": {
+    "message": "Ny",
+    "description": "Ny oppgave status"
+  },
+  "taskTitle": {
+    "message": "Oppgavetittel *",
+    "description": "Oppgavetittel etikett"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Skriv inn oppgavetittel",
+    "description": "Oppgavetittel inndata placeholder"
+  },
+  "taskDescription": {
+    "message": "Oppgavebeskrivelse",
+    "description": "Oppgavebeskrivelse etikett"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Skriv inn oppgavebeskrivelse (valgfritt)",
+    "description": "Oppgavebeskrivelse inndata placeholder"
+  },
+  "importanceLevel": {
+    "message": "Viktighetsnivå *",
+    "description": "Viktighetsnivå etikett"
+  },
+  "notImportant": {
+    "message": "Ikke Viktig",
+    "description": "Ikke viktig etikett"
+  },
+  "veryImportant": {
+    "message": "Svært Viktig",
+    "description": "Svært viktig etikett"
+  },
+  "dueDate": {
+    "message": "Forfallsdato *",
+    "description": "Forfallsdato etikett"
+  },
+  "taskCategory": {
+    "message": "Oppgavekategori",
+    "description": "Oppgavekategori etikett"
+  },
+  "work": {
+    "message": "Arbeid",
+    "description": "Arbeid kategori"
+  },
+  "personal": {
+    "message": "Personlig",
+    "description": "Personlig kategori"
+  },
+  "study": {
+    "message": "Studier",
+    "description": "Studier kategori"
+  },
+  "health": {
+    "message": "Helse",
+    "description": "Helse kategori"
+  },
+  "other": {
+    "message": "Annet",
+    "description": "Annet kategori"
+  },
+  "deleteTask": {
+    "message": "Slett Oppgave",
+    "description": "Slett oppgave knapp"
+  },
+  "cancel": {
+    "message": "Avbryt",
+    "description": "Avbryt knapp"
+  },
+  "saveTask": {
+    "message": "Lagre Oppgave",
+    "description": "Lagre oppgave knapp"
+  },
+  "doing": {
+    "message": "Pågår",
+    "description": "Pågår status"
+  },
+  "overdue": {
+    "message": "Forfalt",
+    "description": "Forfalt status"
+  },
+  "completed": {
+    "message": "Fullført",
+    "description": "Fullført status"
+  },
+  "rejected": {
+    "message": "Avvist",
+    "description": "Avvist status"
+  },
+  "pending": {
+    "message": "Venter",
+    "description": "Venter status etikett"
+  },
+  "urgentTaskReminder": {
+    "message": "Haster Oppgave Påminnelse",
+    "description": "Haster oppgave påminnelse seksjon tittel"
+  },
+  "enableUrgentReminder": {
+    "message": "Aktiver Haster Oppgave Påminnelse",
+    "description": "Aktiver haster oppgave påminnelse avkrysningsboks"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Når en oppgave holder på å gå ut, påminn gjennom ikonendringer",
+    "description": "Aktiver haster oppgave påminnelse beskrivelse"
+  },
+  "reminderThreshold": {
+    "message": "Påminnelseterskel (minutter)",
+    "description": "Påminnelseterskel etikett"
+  },
+  "reminderThresholdDesc": {
+    "message": "Når gjenværende tid for oppgaven er mindre enn denne varigheten, aktiver påminnelse",
+    "description": "Påminnelseterskel beskrivelse"
+  },
+  "reminderInterval": {
+    "message": "Påminnelseintervall (minutter)",
+    "description": "Påminnelseintervall etikett"
+  },
+  "reminderIntervalDesc": {
+    "message": "Frekvens for å kontrollere oppgavestatus i bakgrunnen",
+    "description": "Påminnelseintervall beskrivelse"
+  },
+  "iconReminder": {
+    "message": "Ikon Påminnelse",
+    "description": "Ikon påminnelse seksjon tittel"
+  },
+  "showIconBadge": {
+    "message": "Vis Ikon Badge",
+    "description": "Vis ikon badge avkrysningsboks"
+  },
+  "showIconBadgeDesc": {
+    "message": "Vis antallet haster oppgaver på plugin-ikonet",
+    "description": "Vis ikon badge beskrivelse"
+  },
+  "showIconTooltip": {
+    "message": "Vis Ikon Tooltip",
+    "description": "Vis ikon tooltip avkrysningsboks"
+  },
+  "showIconTooltipDesc": {
+    "message": "Vis oppgavepåminnelseinformasjon ved hovering over ikonet",
+    "description": "Vis ikon tooltip beskrivelse"
+  },
+  "save": {
+    "message": "Lagre",
+    "description": "Lagre knapp"
+  },
+  "quickStart": {
+    "message": "🚀 Rask Start",
+    "description": "Rask start seksjon tittel"
+  },
+  "createTask": {
+    "message": "Opprett Oppgave:",
+    "description": "Opprett oppgave instruksjon"
+  },
+  "createTaskDesc": {
+    "message": "Dobbeltklikk på tomt område",
+    "description": "Opprett oppgave beskrivelse"
+  },
+  "editTaskDesc": {
+    "message": "Rediger Oppgave:",
+    "description": "Rediger oppgave instruksjon"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Dobbeltklikk på eksisterende oppgave",
+    "description": "Rediger oppgave instruksjon beskrivelse"
+  },
+  "viewDetails": {
+    "message": "Vis Detaljer:",
+    "description": "Vis detaljer instruksjon"
+  },
+  "viewDetailsDesc": {
+    "message": "Hover over oppgave",
+    "description": "Vis detaljer beskrivelse"
+  },
+  "taskManagerDesc": {
+    "message": "Oppgavehåndterer:",
+    "description": "Oppgavehåndterer instruksjon"
+  },
+  "taskManagerInstruction": {
+    "message": "Klikk på listeikonet for alle oppgaver",
+    "description": "Oppgavehåndterer instruksjon beskrivelse"
+  },
+  "analysisReport": {
+    "message": "Analyse Rapport:",
+    "description": "Analyse rapport instruksjon"
+  },
+  "analysisReportDesc": {
+    "message": "Klikk på diagramikonet for innsikter",
+    "description": "Analyse rapport beskrivelse"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Eisenhower Oppgavematrise",
+    "description": "Eisenhower matrise seksjon tittel"
+  },
+  "q1Title": {
+    "message": "Q1: Viktig & Haster",
+    "description": "Q1 kvadrant tittel"
+  },
+  "q1Desc": {
+    "message": "Gjør det nå. Kritiske oppgaver som krever umiddelbar oppmerksomhet.",
+    "description": "Q1 kvadrant beskrivelse"
+  },
+  "q2Title": {
+    "message": "Q2: Viktig & Ikke Haster",
+    "description": "Q2 kvadrant tittel"
+  },
+  "q2Desc": {
+    "message": "Planlegg det. Strategiske oppgaver for langsiktig planlegging.",
+    "description": "Q2 kvadrant beskrivelse"
+  },
+  "q3Title": {
+    "message": "Q3: Ikke Viktig & Haster",
+    "description": "Q3 kvadrant tittel"
+  },
+  "q3Desc": {
+    "message": "Deleger det. Avbrytelser som kan håndteres av andre.",
+    "description": "Q3 kvadrant beskrivelse"
+  },
+  "q4Title": {
+    "message": "Q4: Ikke Viktig & Ikke Haster",
+    "description": "Q4 kvadrant tittel"
+  },
+  "q4Desc": {
+    "message": "Eliminer det. Tidsfordriv som bør unngås.",
+    "description": "Q4 kvadrant beskrivelse"
+  },
+  "confirm": {
+    "message": "Bekreft",
+    "description": "Bekreft knapp"
+  },
+  "settingsSaved": {
+    "message": "Innstillinger lagret vellykket",
+    "description": "Innstillinger lagret notifikasjon"
+  },
+  "settingsSaveFailed": {
+    "message": "Kunne ikke lagre innstillinger",
+    "description": "Innstillinger lagre mislyktes notifikasjon"
+  },
+  "allTasksCleared": {
+    "message": "Alle oppgaver ryddet",
+    "description": "Alle oppgaver ryddet melding"
+  },
+  "settingsApplied": {
+    "message": "Innstillinger anvendt",
+    "description": "Innstillinger anvendt melding"
+  },
+  "taskMonitoringStarted": {
+    "message": "Oppgaveovervåking startet",
+    "description": "Oppgaveovervåking startet melding"
+  },
+  "taskMonitoringStopped": {
+    "message": "Oppgaveovervåking stoppet",
+    "description": "Oppgaveovervåking stoppet melding"
+  },
+  "taskEditProcessed": {
+    "message": "Oppgaveredigering behandlet",
+    "description": "Oppgaveredigering behandlet melding"
+  },
+  "taskAddProcessed": {
+    "message": "Oppgavetillegg behandlet",
+    "description": "Oppgavetillegg behandlet melding"
+  },
+  "taskDeleteProcessed": {
+    "message": "Oppgavesletting behandlet",
+    "description": "Oppgavesletting behandlet melding"
+  },
+  "unknownMessageType": {
+    "message": "Ukjent meldingstype",
+    "description": "Ukjent meldingstype feil"
+  },
+  "openTaskMatrix": {
+    "message": "Åpne TaskMatrix Pro",
+    "description": "Kommando beskrivelse for å åpne TaskMatrix Pro"
+  },
+  "ready": {
+    "message": "Klar",
+    "description": "Klar status melding"
+  },
+  "initializationFailed": {
+    "message": "Initialisering Mislyktes",
+    "description": "Initialisering mislyktes status melding"
+  },
+  "loading": {
+    "message": "Laster...",
+    "description": "Laster status melding"
+  },
+  "saving": {
+    "message": "Lagrer...",
+    "description": "Lagrer status melding"
+  },
+  "failedToGetFormData": {
+    "message": "Kunne ikke hente skjemadata",
+    "description": "Feilmelding når skjemadata ikke kan hentes"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Vennligst skriv inn en oppgavetittel",
+    "description": "Advarselsmelding når oppgavetittel er tom"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Oppgave oppdatert vellykket",
+    "description": "Suksessmelding når oppgave oppdateres"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Oppgave lagt til vellykket",
+    "description": "Suksessmelding når oppgave legges til"
+  },
+  "saveFailed": {
+    "message": "Lagre mislyktes",
+    "description": "Feilmelding når lagre operasjon mislykkes"
+  },
+  "taskNotFound": {
+    "message": "Oppgave ikke funnet",
+    "description": "Feilmelding når oppgave ikke finnes"
+  },
+  "failedToEditTask": {
+    "message": "Kunne ikke redigere oppgave",
+    "description": "Feilmelding når oppgaveredigering mislykkes"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Oppgave fullført vellykket",
+    "description": "Suksessmelding når oppgave fullføres"
+  },
+  "failedToCompleteTask": {
+    "message": "Kunne ikke fullføre oppgave",
+    "description": "Feilmelding når oppgavefullføring mislykkes"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Er du sikker på at du vil slette denne oppgaven? Denne handlingen kan ikke angres.",
+    "description": "Bekreftelsesmelding for oppgavesletting"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Oppgave slettet vellykket",
+    "description": "Suksessmelding når oppgave slettes"
+  },
+  "failedToDeleteTask": {
+    "message": "Kunne ikke slette oppgave",
+    "description": "Feilmelding når oppgavesletting mislykkes"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Innstillinger lagret vellykket",
+    "description": "Suksessmelding når innstillinger lagres"
+  },
+  "failedToSaveSettings": {
+    "message": "Kunne ikke lagre innstillinger",
+    "description": "Feilmelding når innstillingslagring mislykkes"
+  },
+  "loadingDataFailed": {
+    "message": "Kunne ikke laste data",
+    "description": "Feilmelding når datalasting mislykkes"
+  },
+  "noTaskFound": {
+    "message": "Ingen Oppgave Funnet",
+    "description": "Tom tilstand melding når ingen oppgaver finnes"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Klikk på plusikonet for å legge til din første oppgave",
+    "description": "Tom tilstand instruksjon for å legge til første oppgave"
+  },
+  "allCaughtUp": {
+    "message": "Alt Oppdatert!",
+    "description": "Tom tilstand melding når ingen forfalte oppgaver"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Ingen forfalte oppgaver. Bra jobbet med å holde alt på rett kjøl!",
+    "description": "Tom tilstand melding for ingen forfalte oppgaver"
+  },
+  "noCompletedTasks": {
+    "message": "Ingen Fullførte Oppgaver",
+    "description": "Tom tilstand melding når ingen fullførte oppgaver"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Dobbeltklikk på en oppgave og klikk på statusetiketten for å markere den som fullført",
+    "description": "Instruksjon for å markere oppgaver som fullførte"
+  },
+  "noRejectedTasks": {
+    "message": "Ingen Avviste Oppgaver",
+    "description": "Tom tilstand melding når ingen avviste oppgaver"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Dobbeltklikk på en oppgave og klikk to ganger på statusetiketten for å markere den som avvist",
+    "description": "Instruksjon for å markere oppgaver som avviste"
+  },
+  "task": {
+    "message": "Oppgave:",
+    "description": "Oppgave etikett prefiks"
+  },
+  "importance": {
+    "message": "Viktighet:",
+    "description": "Viktighet etikett"
+  },
+  "noData": {
+    "message": "Ingen Data",
+    "description": "Ingen data melding for diagram"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Ikke nok data for å generere varmekart",
+    "description": "Melding når det ikke er nok data for varmekart"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Ikke nok oppgavedata for å generere spredningsdiagram",
+    "description": "Melding når det ikke er nok data for spredningsdiagram"
+  },
+  "bytes": {
+    "message": "Bytes",
+    "description": "Bytes enhet"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Kilobytes enhet"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Megabytes enhet"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Gigabytes enhet"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Terabytes enhet"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Frekvens for å kontrollere oppgavestatus i bakgrunnen",
+    "description": "Beskrivelse for oppgavestatus kontrollfrekvens"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Vis antallet haster oppgaver på plugin-ikonet",
+    "description": "Beskrivelse for ikon badge innstilling"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Vis oppgavepåminnelseinformasjon ved hovering over ikonet",
+    "description": "Beskrivelse for ikon tittel innstilling"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Dobbeltklikk på tomt område",
+    "description": "Instruksjon for å opprette en oppgave"
+  },
+  "editTaskInstruction": {
+    "message": "Rediger Oppgave:",
+    "description": "Rediger oppgave instruksjon"
+  },
+  "hoverOverTask": {
+    "message": "Hover over oppgave",
+    "description": "Instruksjon for å vise oppgavedetaljer"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Klikk på listeikonet for alle oppgaver",
+    "description": "Instruksjon for å få tilgang til oppgavehåndterer"
+  },
+  "clickChartIconForInsights": {
+    "message": "Klikk på diagramikonet for innsikter",
+    "description": "Instruksjon for å få tilgang til analyse rapport"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Eisenhower Oppgavematrise",
+    "description": "Eisenhower oppgavematrise seksjon tittel"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Viktig & Haster",
+    "description": "Q1 kvadrant tittel"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Gjør det nå. Kritiske oppgaver som krever umiddelbar oppmerksomhet.",
+    "description": "Q1 kvadrant beskrivelse"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Viktig & Ikke Haster",
+    "description": "Q2 kvadrant tittel"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Planlegg det. Strategiske oppgaver for langsiktig planlegging.",
+    "description": "Q2 kvadrant beskrivelse"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Ikke Viktig & Haster",
+    "description": "Q3 kvadrant tittel"
+  },
+  "delegateItInterruptions": {
+    "message": "Deleger det. Avbrytelser som kan håndteres av andre.",
+    "description": "Q3 kvadrant beskrivelse"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Ikke Viktig & Ikke Haster",
+    "description": "Q4 kvadrant tittel"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Eliminer det. Tidsfordriv som bør unngås.",
+    "description": "Q4 kvadrant beskrivelse"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Når gjenværende tid for oppgaven er mindre enn denne varigheten, aktiver påminnelse",
+    "description": "Beskrivelse for haster påminnelseterskel innstilling"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Når en oppgave holder på å gå ut, påminn gjennom ikonendringer",
+    "description": "Beskrivelse for haster påminnelse innstilling"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Aktiver Haster Oppgave Påminnelse",
+    "description": "Haster oppgave påminnelse aktiver avkrysningsboks etikett"
+  },
+  "invalidDueDate": {
+    "message": "Ugyldig forfallsdato",
+    "description": "Feilmelding for ugyldig forfallsdato"
+  },
+  "dueAt": {
+    "message": "Forfaller den",
+    "description": "Forfaller den prefiks for oppgaver som forfaller på et spesifikt dato"
+  },
+  "dueIn": {
+    "message": "Forfaller om",
+    "description": "Forfaller om prefiks for oppgaver som forfaller om en spesifikk tid"
+  },
+  "completionRate": {
+    "message": "Fullføringsgrad",
+    "description": "Fullføringsgrad fane tittel"
+  },
+  "timeStatus": {
+    "message": "Tid-Status",
+    "description": "Tid-status fane tittel"
+  },
+  "timeTrend": {
+    "message": "Tid-Trend",
+    "description": "Tid-trend fane tittel"
+  },
+  "sourceCross": {
+    "message": "Kilde-Kors",
+    "description": "Kilde-kors fane tittel"
+  },
+  "completionRateQuantity": {
+    "message": "Fullføringsgrad - Kvantitet",
+    "description": "Fullføringsgrad diagram tittel"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Oppgavekilde - Fullføringsgrad",
+    "description": "Oppgavekilde fullføringsgrad diagram tittel"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Tid - Fullføringsstatus Spredningsdiagram",
+    "description": "Tid fullføringsstatus spredningsdiagram tittel"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Ukentlig/Månedlig Trend",
+    "description": "Ukentlig månedlig trend diagram tittel"
+  },
+  "weekly": {
+    "message": "Ukentlig",
+    "description": "Ukentlig periode knapp"
+  },
+  "monthly": {
+    "message": "Månedlig",
+    "description": "Månedlig periode knapp"
+  },
+  "source": {
+    "message": "Kilde",
+    "description": "Kilde tabell header"
+  },
+  "low": {
+    "message": "Lav (0-20%)",
+    "description": "Lav fullføringsgrad etikett"
+  },
+  "mediumLow": {
+    "message": "Medium-Lav (20-50%)",
+    "description": "Medium-lav fullføringsgrad etikett"
+  },
+  "mediumHigh": {
+    "message": "Medium-Høy (50-80%)",
+    "description": "Medium-høy fullføringsgrad etikett"
+  },
+  "high": {
+    "message": "Høy (80-100%)",
+    "description": "Høy fullføringsgrad etikett"
+  },
+  "taskCost": {
+    "message": "Oppgavekostnad (dager)",
+    "description": "Oppgavekostnad akse etikett"
+  },
+  "taskImportance": {
+    "message": "Oppgaveviktighet",
+    "description": "Oppgaveviktighet akse etikett"
+  },
+  "taskCount": {
+    "message": "Oppgaveantall",
+    "description": "Oppgaveantall akse etikett"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Kvadrant Oppgavetid Statistikk (Dager):",
+    "description": "Kvadrant oppgavetid statistikk tittel"
+  },
+  "quadrant": {
+    "message": "Kvadrant",
+    "description": "Kvadrant tabell header"
+  },
+  "completedAvg": {
+    "message": "Fullført (Gjennomsnitt)",
+    "description": "Fullført gjennomsnitt tabell header"
+  },
+  "completedMedian": {
+    "message": "Fullført (Median)",
+    "description": "Fullført median tabell header"
+  },
+  "inProgressAvg": {
+    "message": "Pågår (Gjennomsnitt)",
+    "description": "Pågår gjennomsnitt tabell header"
+  },
+  "inProgressMedian": {
+    "message": "Pågår (Median)",
+    "description": "Pågår median tabell header"
+  },
+  "deepInsights": {
+    "message": "Dype Innsikter",
+    "description": "Dype innsikter seksjon tittel"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "For øyeblikket er det ikke nok data for å generere innsikter.",
+    "description": "Ingen data melding for innsikter"
+  },
+  "importantUrgent": {
+    "message": "Viktig & Haster",
+    "description": "Q1 kvadrant etikett"
+  },
+  "importantNotUrgent": {
+    "message": "Viktig & Ikke Haster",
+    "description": "Q2 kvadrant etikett"
+  },
+  "notImportantNotUrgent": {
+    "message": "Ikke Viktig & Ikke Haster",
+    "description": "Q3 kvadrant etikett"
+  },
+  "notImportantUrgent": {
+    "message": "Ikke Viktig & Haster",
+    "description": "Q4 kvadrant etikett"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2 (Viktig & Ikke Haster) kvadrant oppgavefullføringsgrad er betydelig lavere enn andre kvadranter, som reflekterer en \"haster over viktig\" utførelsesbias, som kan føre til strategiske målforsinkelser på lang sikt.",
+    "description": "Innsikt om Q2 fullføringsgrad som er lavere"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3 (Ikke Viktig & Ikke Haster) kvadrant oppgavefullføringsgrad er for høy, vær forsiktig med \"ineffektiv sysselsetting\" - hvis for mye energi forbrukes på trivielle oppgaver, som komprimerer tid for kjerneoppgaver.",
+    "description": "Innsikt om Q3 fullføringsgrad som er for høy"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1 (Viktig & Haster) kvadrant oppgaver utgjør $percentage% av totale oppgaver, som tyder på forbedring i oppgaveplanlegging, håndter viktige oppgaver tidlig for å unngå haster situasjoner.",
+    "description": "Innsikt om høy Q1 oppgaver prosent"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4 (Ikke Viktig & Haster) kvadrant oppgaver utgjør $percentage% av totale oppgaver, gjennomgå kildene til disse lavprioritets men haster oppgaver, optimaliser nødsituasjonsresponsprosesser.",
+    "description": "Innsikt om høy Q4 oppgaver prosent"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "\"$source\" oppgaver i Q1 (Viktig & Haster) oppnår $q1Rate% fullføringsgrad, men bare $q2Rate% i Q2 (Viktig & Ikke Haster), som indikerer at oppgaveutførelseprioritet drives av \"ekstern press\" snarere enn intern strategisk fokus.",
+    "description": "Innsikt om kilde oppgaver Q1 vs Q2 fullføringsgrader"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "\"$source\" oppgaver i Q4 (Ikke Viktig & Haster) har lav fullføringsgrad ($q4Rate%), trenger å bekrefte om \"midlertidige oppgaver\" har prioriteringsdefinisjonsproblem.",
+    "description": "Innsikt om Q4 oppgaver lav fullføringsgrad"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "\"$source\" er høyt konsentrert i $quadrant ($quadrantName) kvadrant, som utgjør $percentage%. Gjennomgå oppgaveplanlegging for rimelighet.",
+    "description": "Innsikt om oppgaver som er høyt konsentrert i en kvadrant"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "\"$highSource\" i $highQuadrant har høyeste fullføringsgrad ($highRate%), mens \"$lowSource\" i $lowQuadrant har laveste ($lowRate%), som viser tydelige forskjeller i behandlingsprioritet for forskjellige oppgavetyper.",
+    "description": "Innsikt om fullføringsgradsforskjeller mellom kilder"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (Viktig & Haster) har $percentage% ventende oppgaver som tar mer enn 3 dager, som indikerer potensiell ressursmangel eller uventede vanskeligheter i kjerneoppgaver. Vurder oppgaveoppdeling eller ytterligere støtte.",
+    "description": "Innsikt om Q1 ventende oppgaver som tar for lang tid"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Q4 (Ikke Viktig & Haster) fullførte oppgaver i gjennomsnitt $q4Time dager, langt overstiger Q2 (Viktig & Ikke Haster) på $q2Time dager, som indikerer at \"midlertidige haster oppgaver\" over-okkuperer ressurser. Optimaliser nødsituasjonsresponsprosesser.",
+    "description": "Innsikt om Q4 vs Q2 oppgavefullføringstider"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Gjennomsnittlig behandlingstid for ventende oppgaver ($pendingTime dager) er betydelig høyere enn fullførte oppgaver ($completedTime dager). Fokuser på langt fastsittende oppgaver og juster strategi eller ressursallokering ved behov.",
+    "description": "Innsikt om ventende vs fullførte oppgavetider"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabel oppgavevolum $direction $rate% fra $from til $to, som viser betydelig fluktuasjon. Vurder å fokusere på oppgaveallokeringsbalanse.",
+    "description": "Innsikt om oppgavevolumfluktuasjon"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabel oppgavefullføringsgrad viser en vedvarende oppadgående trend, som indikerer forbedret arbeidsverksamhet.",
+    "description": "Innsikt om fullføringsgrad oppadgående trend"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabel oppgavefullføringsgrad viser en vedvarende nedadgående trend, som krever oppmerksomhet på utførelsesverksamhetsproblem.",
+    "description": "Innsikt om fullføringsgrad nedadgående trend"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2 (Viktig & Ikke Haster) oppgaver fortsetter å akkumulere uten forbedring i fullføringsgrad, som reflekterer at \"strategiske oppgaver\" ikke er integrert i regelmessige utførelseprogrammer, som presenterer en \"forsinkelsesakkumulering\" risiko.",
+    "description": "Innsikt om Q2 oppgaver akkumulering"
+  }
+}

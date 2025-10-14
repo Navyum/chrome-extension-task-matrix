@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Msimamizi wa Kazi wa Bure na Chombo",
+    "description": "Jina la programu"
+  },
+  "appDescription": {
+    "message": "Ugani wa Chrome wa bure kwa kazi za busara. Tumia vifaa vya nguvu na kiolesura cha kirafiki cha mtumiaji ili kuonyesha kazi zako",
+    "description": "Maelezo ya programu"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Jina la programu"
+  },
+  "taskManager": {
+    "message": "Msimamizi wa Kazi",
+    "description": "Jina la kitufe cha msimamizi wa kazi"
+  },
+  "report": {
+    "message": "Ripoti",
+    "description": "Jina la kitufe cha ripoti"
+  },
+  "settings": {
+    "message": "Mipangilio",
+    "description": "Jina la kitufe cha mipangilio"
+  },
+  "help": {
+    "message": "Msaada",
+    "description": "Jina la kitufe cha msaada"
+  },
+  "addTask": {
+    "message": "Ongeza Kazi",
+    "description": "Jina la kitufe cha kuongeza kazi"
+  },
+  "close": {
+    "message": "Funga",
+    "description": "Maandishi ya kitufe cha kufunga"
+  },
+  "editTask": {
+    "message": "Hariri Kazi",
+    "description": "Jina la dirisha la kuhariri kazi"
+  },
+  "newTask": {
+    "message": "Mpya",
+    "description": "Hali ya kazi mpya"
+  },
+  "taskTitle": {
+    "message": "Kichwa cha Kazi *",
+    "description": "Lebo ya kichwa cha kazi"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Ingiza kichwa cha kazi",
+    "description": "Maandishi ya kujaza kichwa cha kazi"
+  },
+  "taskDescription": {
+    "message": "Maelezo ya Kazi",
+    "description": "Lebo ya maelezo ya kazi"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Ingiza maelezo ya kazi (si lazima)",
+    "description": "Maandishi ya kujaza maelezo ya kazi"
+  },
+  "importanceLevel": {
+    "message": "Kiwango cha Umuhimu *",
+    "description": "Lebo ya kiwango cha umuhimu"
+  },
+  "notImportant": {
+    "message": "Si Muhimu",
+    "description": "Lebo ya si muhimu"
+  },
+  "veryImportant": {
+    "message": "Muhimu Sana",
+    "description": "Lebo ya muhimu sana"
+  },
+  "dueDate": {
+    "message": "Tarehe ya Mwisho *",
+    "description": "Lebo ya tarehe ya mwisho"
+  },
+  "taskCategory": {
+    "message": "Kategoria ya Kazi",
+    "description": "Lebo ya kategoria ya kazi"
+  },
+  "work": {
+    "message": "Kazi",
+    "description": "Kategoria ya kazi"
+  },
+  "personal": {
+    "message": "Binafsi",
+    "description": "Kategoria ya kibinafsi"
+  },
+  "study": {
+    "message": "Masomo",
+    "description": "Kategoria ya masomo"
+  },
+  "health": {
+    "message": "Afya",
+    "description": "Kategoria ya afya"
+  },
+  "other": {
+    "message": "Nyingine",
+    "description": "Kategoria nyingine"
+  },
+  "deleteTask": {
+    "message": "Futa Kazi",
+    "description": "Kitufe cha kufuta kazi"
+  },
+  "cancel": {
+    "message": "Ghairi",
+    "description": "Kitufe cha kughairi"
+  },
+  "saveTask": {
+    "message": "Hifadhi Kazi",
+    "description": "Kitufe cha kuhifadhi kazi"
+  },
+  "doing": {
+    "message": "Inafanywa",
+    "description": "Hali ya inafanywa"
+  },
+  "overdue": {
+    "message": "Imechelewa",
+    "description": "Hali ya imechelewa"
+  },
+  "completed": {
+    "message": "Imekamilika",
+    "description": "Hali ya imekamilika"
+  },
+  "rejected": {
+    "message": "Imekataliwa",
+    "description": "Hali ya imekataliwa"
+  },
+  "pending": {
+    "message": "Inasubiri",
+    "description": "Lebo ya hali ya inasubiri"
+  },
+  "urgentTaskReminder": {
+    "message": "Kikumbuzi cha Kazi za Haraka",
+    "description": "Jina la sehemu ya kikumbuzi cha kazi za haraka"
+  },
+  "enableUrgentReminder": {
+    "message": "Washa Kikumbuzi cha Kazi za Haraka",
+    "description": "Sehemu ya kuthibitisha kuwasha kikumbuzi cha kazi za haraka"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Badilisha ikoni na kukumbusha wakati tarehe ya mwisho ya kazi inakaribia",
+    "description": "Maelezo ya kuwasha kikumbuzi cha kazi za haraka"
+  },
+  "reminderThreshold": {
+    "message": "Kizingiti cha Kikumbuzi (dakika)",
+    "description": "Lebo ya kizingiti cha kikumbuzi"
+  },
+  "reminderThresholdDesc": {
+    "message": "Anza kikumbuzi wakati kazi ina muda mfupi zaidi ya kipindi hiki",
+    "description": "Maelezo ya kizingiti cha kikumbuzi"
+  },
+  "reminderInterval": {
+    "message": "Muda wa Kikumbuzi (dakika)",
+    "description": "Lebo ya muda wa kikumbuzi"
+  },
+  "reminderIntervalDesc": {
+    "message": "Mzunguko wa kuangalia hali ya kazi nyuma ya pazia",
+    "description": "Maelezo ya muda wa kikumbuzi"
+  },
+  "iconReminder": {
+    "message": "Kikumbuzi cha Ikoni",
+    "description": "Jina la sehemu ya kikumbuzi cha ikoni"
+  },
+  "showIconBadge": {
+    "message": "Onyesha Alama ya Ikoni",
+    "description": "Sehemu ya kuthibitisha kuonyesha alama ya ikoni"
+  },
+  "showIconBadgeDesc": {
+    "message": "Onyesha idadi ya kazi za haraka kwenye ikoni ya ugani",
+    "description": "Maelezo ya kuonyesha alama ya ikoni"
+  },
+  "showIconTooltip": {
+    "message": "Onyesha Kidokezo cha Ikoni",
+    "description": "Sehemu ya kuthibitisha kuonyesha kidokezo cha ikoni"
+  },
+  "showIconTooltipDesc": {
+    "message": "Onyesha taarifa za kikumbuzi cha kazi wakati wa kuweka panya juu ya ikoni",
+    "description": "Maelezo ya kuonyesha kidokezo cha ikoni"
+  },
+  "save": {
+    "message": "Hifadhi",
+    "description": "Kitufe cha kuhifadhi"
+  },
+  "quickStart": {
+    "message": "🚀 Anza Haraka",
+    "description": "Jina la sehemu ya kuanza haraka"
+  },
+  "createTask": {
+    "message": "Unda Kazi:",
+    "description": "Maagizo ya kuunda kazi"
+  },
+  "createTaskDesc": {
+    "message": "Bonyeza mara mbili kwenye eneo tupu",
+    "description": "Maelezo ya kuunda kazi"
+  },
+  "editTaskDesc": {
+    "message": "Hariri Kazi:",
+    "description": "Maagizo ya kuhariri kazi"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Bonyeza mara mbili kwenye kazi iliyopo",
+    "description": "Maelezo ya maagizo ya kuhariri kazi"
+  },
+  "viewDetails": {
+    "message": "Angalia Maelezo:",
+    "description": "Maagizo ya kuangalia maelezo"
+  },
+  "viewDetailsDesc": {
+    "message": "Weka panya juu ya kazi",
+    "description": "Maelezo ya kuangalia maelezo"
+  },
+  "taskManagerDesc": {
+    "message": "Msimamizi wa Kazi:",
+    "description": "Maagizo ya msimamizi wa kazi"
+  },
+  "taskManagerInstruction": {
+    "message": "Bonyeza kwenye ikoni ya orodha ili kuangalia kazi zote",
+    "description": "Maelezo ya maagizo ya msimamizi wa kazi"
+  },
+  "analysisReport": {
+    "message": "Ripoti ya Uchambuzi:",
+    "description": "Maagizo ya ripoti ya uchambuzi"
+  },
+  "analysisReportDesc": {
+    "message": "Bonyeza kwenye ikoni ya chati ili kuangalia ufahamu",
+    "description": "Maelezo ya ripoti ya uchambuzi"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Matriki ya Kazi ya Eisenhower",
+    "description": "Jina la sehemu ya matriki ya Eisenhower"
+  },
+  "q1Title": {
+    "message": "Q1: Muhimu na Haraka",
+    "description": "Jina la roboduara Q1"
+  },
+  "q1Desc": {
+    "message": "Fanya sasa. Kazi muhimu zinazohitaji umakini wa haraka.",
+    "description": "Maelezo ya roboduara Q1"
+  },
+  "q2Title": {
+    "message": "Q2: Muhimu lakini si Haraka",
+    "description": "Jina la roboduara Q2"
+  },
+  "q2Desc": {
+    "message": "Panga muda. Kazi za kimkakati za mipango ya muda mrefu.",
+    "description": "Maelezo ya roboduara Q2"
+  },
+  "q3Title": {
+    "message": "Q3: Si Muhimu lakini Haraka",
+    "description": "Jina la roboduara Q3"
+  },
+  "q3Desc": {
+    "message": "Kabidhi wengine. Vipingamizi ambavyo wengine wanaweza kusimamia.",
+    "description": "Maelezo ya roboduara Q3"
+  },
+  "q4Title": {
+    "message": "Q4: Si Muhimu wala Haraka",
+    "description": "Jina la roboduara Q4"
+  },
+  "q4Desc": {
+    "message": "Ondoa. Upotevu wa muda ambao unapaswa kuepukwa.",
+    "description": "Maelezo ya roboduara Q4"
+  },
+  "confirm": {
+    "message": "Thibitisha",
+    "description": "Kitufe cha kuthibitisha"
+  },
+  "settingsSaved": {
+    "message": "Mipangilio imehifadhiwa kwa mafanikio",
+    "description": "Arifa ya kuhifadhi mipangilio"
+  },
+  "settingsSaveFailed": {
+    "message": "Kuhifadhi mipangilio kumeshindwa",
+    "description": "Arifa ya hitilafu ya kuhifadhi mipangilio"
+  },
+  "allTasksCleared": {
+    "message": "Kazi zote zimefutwa",
+    "description": "Ujumbe wa kufuta kazi zote"
+  },
+  "settingsApplied": {
+    "message": "Mipangilio imetumika",
+    "description": "Ujumbe wa kutumia mipangilio"
+  },
+  "taskMonitoringStarted": {
+    "message": "Ufuatiliaji wa kazi umeanza",
+    "description": "Ujumbe wa kuanza ufuatiliaji wa kazi"
+  },
+  "taskMonitoringStopped": {
+    "message": "Ufuatiliaji wa kazi umesimama",
+    "description": "Ujumbe wa kusimama ufuatiliaji wa kazi"
+  },
+  "taskEditProcessed": {
+    "message": "Uhariri wa kazi umefanywa",
+    "description": "Ujumbe wa kufanya uhariri wa kazi"
+  },
+  "taskAddProcessed": {
+    "message": "Kuongeza kazi kumefanywa",
+    "description": "Ujumbe wa kufanya kuongeza kazi"
+  },
+  "taskDeleteProcessed": {
+    "message": "Kufuta kazi kumefanywa",
+    "description": "Ujumbe wa kufanya kufuta kazi"
+  },
+  "unknownMessageType": {
+    "message": "Aina ya ujumbe isiyojulikana",
+    "description": "Hitilafu ya aina ya ujumbe isiyojulikana"
+  },
+  "openTaskMatrix": {
+    "message": "Fungua TaskMatrix Pro",
+    "description": "Maelezo ya amri ya kufungua TaskMatrix Pro"
+  },
+  "ready": {
+    "message": "Tayari",
+    "description": "Ujumbe wa utayari"
+  },
+  "initializationFailed": {
+    "message": "Uanzishaji umeshindwa",
+    "description": "Ujumbe wa hitilafu ya uanzishaji"
+  },
+  "loading": {
+    "message": "Inapakia...",
+    "description": "Ujumbe wa kupakia"
+  },
+  "saving": {
+    "message": "Inahifadhi...",
+    "description": "Ujumbe wa kuhifadhi"
+  },
+  "failedToGetFormData": {
+    "message": "Kupata data ya fomu kumeshindwa",
+    "description": "Ujumbe wa hitilafu ya kupata data ya fomu"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Tafadhali ingiza kichwa cha kazi",
+    "description": "Onyo wakati kichwa cha kazi ni tupu"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Kazi imesasishwa kwa mafanikio",
+    "description": "Ujumbe wa mafanikio ya kusasisha kazi"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Kazi imeongezwa kwa mafanikio",
+    "description": "Ujumbe wa mafanikio ya kuongeza kazi"
+  },
+  "saveFailed": {
+    "message": "Kuhifadhi kumeshindwa",
+    "description": "Ujumbe wa hitilafu ya kuhifadhi"
+  },
+  "taskNotFound": {
+    "message": "Kazi haijapatikana",
+    "description": "Ujumbe wa hitilafu wakati kazi haijapatikana"
+  },
+  "failedToEditTask": {
+    "message": "Kuhariri kazi kumeshindwa",
+    "description": "Ujumbe wa hitilafu ya kuhariri kazi"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Kazi imekamilika kwa mafanikio",
+    "description": "Ujumbe wa mafanikio ya kukamilisha kazi"
+  },
+  "failedToCompleteTask": {
+    "message": "Kukamilisha kazi kumeshindwa",
+    "description": "Ujumbe wa hitilafu ya kukamilisha kazi"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Je, una uhakika unataka kufuta kazi hii? Kitendo hiki hakiwezi kubatilishwa.",
+    "description": "Ujumbe wa kuthibitisha kufuta kazi"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Kazi imefutwa kwa mafanikio",
+    "description": "Ujumbe wa mafanikio ya kufuta kazi"
+  },
+  "failedToDeleteTask": {
+    "message": "Kufuta kazi kumeshindwa",
+    "description": "Ujumbe wa hitilafu ya kufuta kazi"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Mipangilio imehifadhiwa kwa mafanikio",
+    "description": "Ujumbe wa mafanikio ya kuhifadhi mipangilio"
+  },
+  "failedToSaveSettings": {
+    "message": "Kuhifadhi mipangilio kumeshindwa",
+    "description": "Ujumbe wa hitilafu ya kuhifadhi mipangilio"
+  },
+  "loadingDataFailed": {
+    "message": "Kupakia data kumeshindwa",
+    "description": "Ujumbe wa hitilafu ya kupakia data"
+  },
+  "noTaskFound": {
+    "message": "Hakuna kazi iliyopatikana",
+    "description": "Ujumbe wa hali tupu wakati hakuna kazi zilizopatikana"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Bonyeza kwenye ikoni ya plus ili kuongeza kazi yako ya kwanza",
+    "description": "Maagizo ya kuongeza kazi ya kwanza katika hali tupu"
+  },
+  "allCaughtUp": {
+    "message": "Kila kitu kimesasishwa!",
+    "description": "Ujumbe wa hali tupu bila kazi za kuchelewa"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Hakuna kazi za kuchelewa. Kazi nzuri katika kushika kila kitu kwa mpangilio!",
+    "description": "Ujumbe wa hali tupu bila kazi za kuchelewa"
+  },
+  "noCompletedTasks": {
+    "message": "Hakuna kazi zilizokamilika",
+    "description": "Ujumbe wa hali tupu bila kazi zilizokamilika"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Bonyeza mara mbili kwenye kazi na bonyeza kwenye lebo ya hali ili kuashiria kazi kama imekamilika",
+    "description": "Maagizo ya kuashiria kazi kama imekamilika"
+  },
+  "noRejectedTasks": {
+    "message": "Hakuna kazi zilizokataliwa",
+    "description": "Ujumbe wa hali tupu bila kazi zilizokataliwa"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Bonyeza mara mbili kwenye kazi na bonyeza mara mbili kwenye lebo ya hali ili kuashiria kazi kama imekataliwa",
+    "description": "Maagizo ya kuashiria kazi kama imekataliwa"
+  },
+  "task": {
+    "message": "Kazi:",
+    "description": "Kiambishi cha lebo ya kazi"
+  },
+  "importance": {
+    "message": "Umuhimu:",
+    "description": "Lebo ya umuhimu"
+  },
+  "noData": {
+    "message": "Hakuna data",
+    "description": "Ujumbe wakati hakuna data katika chati"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Hakuna data ya kutosha ya kuunda ramani ya joto",
+    "description": "Ujumbe wakati hakuna data ya kutosha ya ramani ya joto"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Hakuna data ya kutosha ya kazi ya kuunda chati ya kutawanyika",
+    "description": "Ujumbe wakati hakuna data ya kutosha ya kazi ya chati ya kutawanyika"
+  },
+  "bytes": {
+    "message": "baiti",
+    "description": "Kipimo cha baiti"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Kipimo cha kilobaiti"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Kipimo cha megabaiti"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Kipimo cha gigabaiti"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Kipimo cha terabaiti"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Mzunguko wa kuangalia hali ya kazi nyuma ya pazia",
+    "description": "Maelezo ya mzunguko wa kuangalia hali ya kazi"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Onyesha idadi ya kazi za haraka kwenye ikoni ya ugani",
+    "description": "Maelezo ya mpangilio wa alama ya ikoni"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Onyesha taarifa za kikumbuzi cha kazi wakati wa kuweka panya juu ya ikoni",
+    "description": "Maelezo ya mpangilio wa kichwa cha ikoni"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Bonyeza mara mbili kwenye eneo tupu",
+    "description": "Maagizo ya kuunda kazi"
+  },
+  "editTaskInstruction": {
+    "message": "Hariri Kazi:",
+    "description": "Maagizo ya kuhariri kazi"
+  },
+  "hoverOverTask": {
+    "message": "Weka panya juu ya kazi",
+    "description": "Maagizo ya kuangalia maelezo ya kazi"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Bonyeza kwenye ikoni ya orodha ili kuangalia kazi zote",
+    "description": "Maagizo ya kufikia msimamizi wa kazi"
+  },
+  "clickChartIconForInsights": {
+    "message": "Bonyeza kwenye ikoni ya chati ili kuangalia ufahamu",
+    "description": "Maagizo ya kufikia ripoti ya uchambuzi"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Matriki ya Kazi ya Eisenhower",
+    "description": "Jina la sehemu ya matriki ya kazi ya Eisenhower"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Muhimu na Haraka",
+    "description": "Jina la roboduara Q1"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Fanya sasa. Kazi muhimu zinazohitaji umakini wa haraka.",
+    "description": "Maelezo ya roboduara Q1"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Muhimu lakini si Haraka",
+    "description": "Jina la roboduara Q2"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Panga muda. Kazi za kimkakati za mipango ya muda mrefu.",
+    "description": "Maelezo ya roboduara Q2"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Si Muhimu lakini Haraka",
+    "description": "Jina la roboduara Q3"
+  },
+  "delegateItInterruptions": {
+    "message": "Kabidhi wengine. Vipingamizi ambavyo wengine wanaweza kusimamia.",
+    "description": "Maelezo ya roboduara Q3"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Si Muhimu wala Haraka",
+    "description": "Jina la roboduara Q4"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Ondoa. Upotevu wa muda ambao unapaswa kuepukwa.",
+    "description": "Maelezo ya roboduara Q4"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Anza kikumbuzi cha haraka wakati kazi ina muda mfupi zaidi ya kipindi hiki",
+    "description": "Maelezo ya mpangilio wa kizingiti cha kikumbuzi cha haraka"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Badilisha ikoni na kukumbusha wakati tarehe ya mwisho ya kazi inakaribia",
+    "description": "Maelezo ya mpangilio wa kikumbuzi cha haraka"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Washa Kikumbuzi cha Kazi za Haraka",
+    "description": "Lebo ya sehemu ya kuthibitisha kuwasha kikumbuzi cha kazi za haraka"
+  },
+  "invalidDueDate": {
+    "message": "Tarehe ya mwisho si halali",
+    "description": "Ujumbe wa hitilafu ya tarehe ya mwisho si halali"
+  },
+  "dueAt": {
+    "message": "Mwisho",
+    "description": "Kiambishi cha kazi zinazokwisha kwenye tarehe maalum"
+  },
+  "dueIn": {
+    "message": "Mwisho katika",
+    "description": "Kiambishi cha kazi zinazokwisha katika muda maalum"
+  },
+  "completionRate": {
+    "message": "Kiwango cha Ukamilifu",
+    "description": "Jina la kadi ya kiwango cha ukamilifu"
+  },
+  "timeStatus": {
+    "message": "Muda-Hali",
+    "description": "Jina la kadi ya muda-hali"
+  },
+  "timeTrend": {
+    "message": "Mwelekeo wa Muda",
+    "description": "Jina la kadi ya mwelekeo wa muda"
+  },
+  "sourceCross": {
+    "message": "Chanzo-Msuluhu",
+    "description": "Jina la kadi ya chanzo-msuluhu"
+  },
+  "completionRateQuantity": {
+    "message": "Kiwango cha Ukamilifu - Kiasi",
+    "description": "Jina la chati ya kiwango cha ukamilifu"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Chanzo cha Kazi - Kiwango cha Ukamilifu",
+    "description": "Jina la chati ya kiwango cha ukamilifu cha chanzo cha kazi"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Muda - Hali ya Ukamilifu Chati ya Kutawanyika",
+    "description": "Jina la chati ya kutawanyika ya muda-hali ya ukamilifu"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Mwelekeo wa Wiki/Mwezi",
+    "description": "Jina la chati ya mwelekeo wa wiki/mwezi"
+  },
+  "weekly": {
+    "message": "Kila Wiki",
+    "description": "Kitufe cha muda wa wiki"
+  },
+  "monthly": {
+    "message": "Kila Mwezi",
+    "description": "Kitufe cha muda wa mwezi"
+  },
+  "source": {
+    "message": "Chanzo",
+    "description": "Jina la jedwali la chanzo"
+  },
+  "low": {
+    "message": "Chini (0-20%)",
+    "description": "Lebo ya kiwango cha ukamilifu cha chini"
+  },
+  "mediumLow": {
+    "message": "Wastani-Chini (20-50%)",
+    "description": "Lebo ya kiwango cha ukamilifu cha wastani-chini"
+  },
+  "mediumHigh": {
+    "message": "Wastani-Juu (50-80%)",
+    "description": "Lebo ya kiwango cha ukamilifu cha wastani-juu"
+  },
+  "high": {
+    "message": "Juu (80-100%)",
+    "description": "Lebo ya kiwango cha ukamilifu cha juu"
+  },
+  "taskCost": {
+    "message": "Gharama ya Kazi (siku)",
+    "description": "Lebo ya mhimili wa gharama ya kazi"
+  },
+  "taskImportance": {
+    "message": "Umuhimu wa Kazi",
+    "description": "Lebo ya mhimili wa umuhimu wa kazi"
+  },
+  "taskCount": {
+    "message": "Idadi ya Kazi",
+    "description": "Lebo ya mhimili wa idadi ya kazi"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Takwimu za Muda wa Kazi za Roboduara (siku):",
+    "description": "Jina la takwimu za muda wa kazi za roboduara"
+  },
+  "quadrant": {
+    "message": "Roboduara",
+    "description": "Jina la jedwali la roboduara"
+  },
+  "completedAvg": {
+    "message": "Imekamilika (Wastani)",
+    "description": "Jina la jedwali la wastani wa zilizokamilika"
+  },
+  "completedMedian": {
+    "message": "Imekamilika (Katikati)",
+    "description": "Jina la jedwali la katikati ya zilizokamilika"
+  },
+  "inProgressAvg": {
+    "message": "Inafanywa (Wastani)",
+    "description": "Jina la jedwali la wastani wa zinafanywa"
+  },
+  "inProgressMedian": {
+    "message": "Inafanywa (Katikati)",
+    "description": "Jina la jedwali la katikati ya zinafanywa"
+  },
+  "deepInsights": {
+    "message": "Ufahamu wa Kina",
+    "description": "Jina la sehemu ya ufahamu wa kina"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Kwa sasa hakuna data ya kutosha ya kuunda ufahamu.",
+    "description": "Ujumbe wakati hakuna data ya ufahamu"
+  },
+  "importantUrgent": {
+    "message": "Muhimu na Haraka",
+    "description": "Lebo ya roboduara Q1"
+  },
+  "importantNotUrgent": {
+    "message": "Muhimu lakini si Haraka",
+    "description": "Lebo ya roboduara Q2"
+  },
+  "notImportantNotUrgent": {
+    "message": "Si Muhimu wala Haraka",
+    "description": "Lebo ya roboduara Q3"
+  },
+  "notImportantUrgent": {
+    "message": "Si Muhimu lakini Haraka",
+    "description": "Lebo ya roboduara Q4"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Roboduara Q2 (muhimu lakini si haraka) ina kiwango cha ukamilifu cha kazi cha chini zaidi kuliko roboduara zingine, ikionyesha upendeleo wa utekelezaji wa «haraka ni muhimu zaidi ya muhimu», ambayo inaweza kusababisha kuchelewa kwa malengo ya kimkakati ya muda mrefu.",
+    "description": "Ufahamu kuhusu kiwango cha ukamilifu cha chini cha Q2"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Roboduara Q3 (si muhimu wala haraka) ina kiwango cha ukamilifu cha kazi cha juu sana, tafadhali zingatia «ajira isiyo na tija» - ikiwa nishati nyingi inatumika kwenye kazi za kawaida, hii inapunguza muda wa kazi muhimu.",
+    "description": "Ufahamu kuhusu kiwango cha ukamilifu cha juu sana cha Q3"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Roboduara Q1 (muhimu na haraka) ina $percentage% ya kazi zote, ikionyesha uboreshaji wa mipango ya kazi kwa kutatua haraka kazi muhimu ili kuzuia hali za haraka.",
+    "description": "Ufahamu kuhusu asilimia ya juu ya kazi za Q1"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Roboduara Q4 (si muhimu lakini haraka) ina $percentage% ya kazi zote, tafadhali chunguza vyanzo vya kazi hizi za kipaumbele cha chini lakini za haraka na uboreshe mchakato wa kujibu kesi za haraka.",
+    "description": "Ufahamu kuhusu asilimia ya juu ya kazi za Q4"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "Kazi za «$source» zinapata kiwango cha ukamilifu cha $q1Rate% katika Q1 (muhimu na haraka), lakini $q2Rate% tu katika Q2 (muhimu lakini si haraka), ikionyesha kwamba kipaumbele cha utekelezaji wa kazi kinadhibitiwa na «msukumo wa nje», si kwa lengo la kimkakati la ndani.",
+    "description": "Ufahamu kuhusu kiwango cha ukamilifu cha kazi za chanzo Q1 vs Q2"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "Kazi za «$source» zina kiwango cha ukamilifu cha chini ($q4Rate%) katika Q4 (si muhimu lakini haraka), tafadhali hakikisha kama kuna tatizo katika ufafanuzi wa kipaumbele cha «kazi za muda mfupi».",
+    "description": "Ufahamu kuhusu kiwango cha ukamilifu cha chini cha kazi za Q4"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "«$source» imejikita sana katika roboduara $quadrant ($quadrantName), ikionyesha $percentage%. Tafadhali chunguza mantiki ya mipango ya kazi.",
+    "description": "Ufahamu kuhusu mkusanyiko wa juu wa kazi katika roboduara moja"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "«$highSource» ina kiwango cha ukamilifu cha juu zaidi ($highRate%) katika $highQuadrant, «$lowSource» ina cha chini zaidi ($lowRate%) katika $lowQuadrant, ikionyesha tofauti ya wazi katika vipaumbele vya kusindika aina tofauti za kazi.",
+    "description": "Ufahamu kuhusu tofauti ya kiwango cha ukamilifu kati ya vyanzo"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "$percentage% ya kazi katika Q1 (muhimu na haraka) zinasubiri zaidi ya siku 3, ikionyesha uhaba wa rasilimali wa kazi muhimu au matatizo yasiyotarajiwa. Tafadhali fikiria kugawa kazi au msaada wa ziada.",
+    "description": "Ufahamu kuhusu muda wa juu uliotumika kwa kazi za Q1 zinazosubiri"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Muda wa wastani wa ukamilifu wa kazi zilizokamilika za Q4 (si muhimu lakini haraka) ni siku $q4Time, ikivuka sana siku $q2Time za Q2 (muhimu lakini si haraka), ikionyesha kwamba «kazi za haraka za muda mfupi» zinatumia rasilimali zaidi. Tafadhali uboreshe mchakato wa kujibu kesi za haraka.",
+    "description": "Ufahamu kuhusu muda wa ukamilifu wa Q4 vs Q2"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Muda wa wastani wa kusindika kazi zinazosubiri (siku $pendingTime) ni juu zaidi kuliko kazi zilizokamilika (siku $completedTime). Tafadhali zingatia kazi zilizosubiri kwa muda mrefu na ubadilishe mkakati au mgao wa rasilimali kulingana na hitaji.",
+    "description": "Ufahamu kuhusu muda wa kazi zinazosubiri vs zilizokamilika"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "Kiasi cha kazi za $quadrantLabel kimebadilika kutoka $from hadi $to kwa $direction $rate%, ikionyesha mabadiliko makubwa. Tafadhali zingatia usawa wa mgao wa kazi.",
+    "description": "Ufahamu kuhusu mabadiliko ya kiasi cha kazi za roboduara"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "Kiwango cha ukamilifu wa kazi za $quadrantLabel kinaonyesha mwelekeo thabiti wa kuongezeka, ikionyesha uboreshaji wa shughuli za kazi.",
+    "description": "Ufahamu kuhusu mwelekeo wa kuongezeka wa kiwango cha ukamilifu"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "Kiwango cha ukamilifu wa kazi za $quadrantLabel kinaonyesha mwelekeo thabiti wa kupungua, ikihitaji umakini kwenye matatizo ya shughuli za utekelezaji.",
+    "description": "Ufahamu kuhusu mwelekeo wa kupungua wa kiwango cha ukamilifu"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Kazi za Q2 (muhimu lakini si haraka) zinaendelea kukusanyika bila uboreshaji wa kiwango cha ukamilifu, ikionyesha kwamba «kazi za kimkakati» hazijaingizwa katika mpango wa kawaida wa utekelezaji, ikileta hatari ya «kusanyiko la kuchelewa».",
+    "description": "Ufahamu kuhusu kusanyiko la kazi za Q2"
+  }
+}

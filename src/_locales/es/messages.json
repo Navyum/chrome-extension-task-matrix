@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Administrador de Tareas Gratuito y Herramientas",
+    "description": "El nombre de la aplicación"
+  },
+  "appDescription": {
+    "message": "Extensión gratuita del navegador Chrome para tareas inteligentes. Visualiza tus tareas con herramientas poderosas e interfaz amigable para la pantalla",
+    "description": "La descripción de la aplicación"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "El título de la aplicación"
+  },
+  "taskManager": {
+    "message": "Administrador de Tareas",
+    "description": "Título del botón Administrador de Tareas"
+  },
+  "report": {
+    "message": "Informe",
+    "description": "Título del botón Informe"
+  },
+  "settings": {
+    "message": "Configuración",
+    "description": "Título del botón Configuración"
+  },
+  "help": {
+    "message": "Ayuda",
+    "description": "Título del botón Ayuda"
+  },
+  "addTask": {
+    "message": "Agregar Tarea",
+    "description": "Título del botón Agregar Tarea"
+  },
+  "close": {
+    "message": "Cerrar",
+    "description": "Texto del botón Cerrar"
+  },
+  "editTask": {
+    "message": "Editar Tarea",
+    "description": "Título del modal Editar Tarea"
+  },
+  "newTask": {
+    "message": "Nuevo",
+    "description": "Estado de tarea nueva"
+  },
+  "taskTitle": {
+    "message": "Título de la Tarea *",
+    "description": "Etiqueta del título de la tarea"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Ingresa el título de la tarea",
+    "description": "Marcador de posición del input del título de la tarea"
+  },
+  "taskDescription": {
+    "message": "Descripción de la Tarea",
+    "description": "Etiqueta de la descripción de la tarea"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Ingresa la descripción de la tarea (opcional)",
+    "description": "Marcador de posición del input de la descripción de la tarea"
+  },
+  "importanceLevel": {
+    "message": "Nivel de Importancia *",
+    "description": "Etiqueta del nivel de importancia"
+  },
+  "notImportant": {
+    "message": "No Importante",
+    "description": "Etiqueta no importante"
+  },
+  "veryImportant": {
+    "message": "Muy Importante",
+    "description": "Etiqueta muy importante"
+  },
+  "dueDate": {
+    "message": "Fecha de Vencimiento *",
+    "description": "Etiqueta de fecha de vencimiento"
+  },
+  "taskCategory": {
+    "message": "Categoría de Tarea",
+    "description": "Etiqueta de categoría de tarea"
+  },
+  "work": {
+    "message": "Trabajo",
+    "description": "Categoría trabajo"
+  },
+  "personal": {
+    "message": "Personal",
+    "description": "Categoría personal"
+  },
+  "study": {
+    "message": "Estudio",
+    "description": "Categoría estudio"
+  },
+  "health": {
+    "message": "Salud",
+    "description": "Categoría salud"
+  },
+  "other": {
+    "message": "Otro",
+    "description": "Categoría otro"
+  },
+  "deleteTask": {
+    "message": "Eliminar Tarea",
+    "description": "Botón eliminar tarea"
+  },
+  "cancel": {
+    "message": "Cancelar",
+    "description": "Botón cancelar"
+  },
+  "saveTask": {
+    "message": "Guardar Tarea",
+    "description": "Botón guardar tarea"
+  },
+  "doing": {
+    "message": "En Progreso",
+    "description": "Estado en progreso"
+  },
+  "overdue": {
+    "message": "Vencida",
+    "description": "Estado vencida"
+  },
+  "completed": {
+    "message": "Completada",
+    "description": "Estado completada"
+  },
+  "rejected": {
+    "message": "Rechazada",
+    "description": "Estado rechazada"
+  },
+  "pending": {
+    "message": "Pendiente",
+    "description": "Etiqueta de estado pendiente"
+  },
+  "urgentTaskReminder": {
+    "message": "Recordatorio de Tareas Urgentes",
+    "description": "Título de la sección de recordatorio de tareas urgentes"
+  },
+  "enableUrgentReminder": {
+    "message": "Habilitar Recordatorio de Tareas Urgentes",
+    "description": "Casilla de verificación habilitar recordatorio de tareas urgentes"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Cuando una tarea esté por vencer, recordarte a través de cambios de icono",
+    "description": "Descripción del recordatorio de tareas urgentes habilitado"
+  },
+  "reminderThreshold": {
+    "message": "Umbral de Recordatorio (minutos)",
+    "description": "Etiqueta del umbral de recordatorio"
+  },
+  "reminderThresholdDesc": {
+    "message": "Cuando el tiempo restante de la tarea sea menor que esta duración, activar recordatorio",
+    "description": "Descripción del umbral de recordatorio"
+  },
+  "reminderInterval": {
+    "message": "Intervalo de Recordatorio (minutos)",
+    "description": "Etiqueta del intervalo de recordatorio"
+  },
+  "reminderIntervalDesc": {
+    "message": "Frecuencia de verificación del estado de la tarea en segundo plano",
+    "description": "Descripción del intervalo de recordatorio"
+  },
+  "iconReminder": {
+    "message": "Recordatorio de Icono",
+    "description": "Título de la sección de recordatorio de icono"
+  },
+  "showIconBadge": {
+    "message": "Mostrar Badge del Icono",
+    "description": "Casilla de verificación mostrar badge del icono"
+  },
+  "showIconBadgeDesc": {
+    "message": "Mostrar el número de tareas urgentes en el icono del plugin",
+    "description": "Descripción de mostrar badge del icono"
+  },
+  "showIconTooltip": {
+    "message": "Mostrar Tooltip del Icono",
+    "description": "Casilla de verificación mostrar tooltip del icono"
+  },
+  "showIconTooltipDesc": {
+    "message": "Mostrar información de recordatorio de tareas al pasar el cursor sobre el icono",
+    "description": "Descripción de mostrar tooltip del icono"
+  },
+  "save": {
+    "message": "Guardar",
+    "description": "Botón guardar"
+  },
+  "quickStart": {
+    "message": "🚀 Inicio Rápido",
+    "description": "Título de la sección de inicio rápido"
+  },
+  "createTask": {
+    "message": "Crear Tarea:",
+    "description": "Instrucción crear tarea"
+  },
+  "createTaskDesc": {
+    "message": "Doble clic en área vacía",
+    "description": "Descripción crear tarea"
+  },
+  "editTaskDesc": {
+    "message": "Editar Tarea:",
+    "description": "Instrucción editar tarea"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Doble clic en tarea existente",
+    "description": "Descripción de la instrucción editar tarea"
+  },
+  "viewDetails": {
+    "message": "Ver Detalles:",
+    "description": "Instrucción ver detalles"
+  },
+  "viewDetailsDesc": {
+    "message": "Pasar cursor sobre la tarea",
+    "description": "Descripción ver detalles"
+  },
+  "taskManagerDesc": {
+    "message": "Administrador de Tareas:",
+    "description": "Instrucción del administrador de tareas"
+  },
+  "taskManagerInstruction": {
+    "message": "Haz clic en el icono de lista para todas las tareas",
+    "description": "Descripción de la instrucción del administrador de tareas"
+  },
+  "analysisReport": {
+    "message": "Informe de Análisis:",
+    "description": "Instrucción del informe de análisis"
+  },
+  "analysisReportDesc": {
+    "message": "Haz clic en el icono de gráfico para insights",
+    "description": "Descripción del informe de análisis"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Matriz de Tareas Eisenhower",
+    "description": "Título de la sección de matriz Eisenhower"
+  },
+  "q1Title": {
+    "message": "Q1: Importante y Urgente",
+    "description": "Título del cuadrante Q1"
+  },
+  "q1Desc": {
+    "message": "Hazlo ahora. Tareas críticas que requieren atención inmediata.",
+    "description": "Descripción del cuadrante Q1"
+  },
+  "q2Title": {
+    "message": "Q2: Importante y No Urgente",
+    "description": "Título del cuadrante Q2"
+  },
+  "q2Desc": {
+    "message": "Programa. Tareas estratégicas para planificación a largo plazo.",
+    "description": "Descripción del cuadrante Q2"
+  },
+  "q3Title": {
+    "message": "Q3: No Importante y Urgente",
+    "description": "Título del cuadrante Q3"
+  },
+  "q3Desc": {
+    "message": "Delega. Interrupciones que pueden ser manejadas por otros.",
+    "description": "Descripción del cuadrante Q3"
+  },
+  "q4Title": {
+    "message": "Q4: No Importante y No Urgente",
+    "description": "Título del cuadrante Q4"
+  },
+  "q4Desc": {
+    "message": "Elimina. Perdedores de tiempo que deben evitarse.",
+    "description": "Descripción del cuadrante Q4"
+  },
+  "confirm": {
+    "message": "Confirmar",
+    "description": "Botón confirmar"
+  },
+  "settingsSaved": {
+    "message": "Configuración guardada exitosamente",
+    "description": "Notificación de configuración guardada"
+  },
+  "settingsSaveFailed": {
+    "message": "Error al guardar configuración",
+    "description": "Notificación de error al guardar configuración"
+  },
+  "allTasksCleared": {
+    "message": "Todas las tareas eliminadas",
+    "description": "Mensaje de todas las tareas eliminadas"
+  },
+  "settingsApplied": {
+    "message": "Configuración aplicada",
+    "description": "Mensaje de configuración aplicada"
+  },
+  "taskMonitoringStarted": {
+    "message": "Monitoreo de tareas iniciado",
+    "description": "Mensaje de monitoreo de tareas iniciado"
+  },
+  "taskMonitoringStopped": {
+    "message": "Monitoreo de tareas detenido",
+    "description": "Mensaje de monitoreo de tareas detenido"
+  },
+  "taskEditProcessed": {
+    "message": "Edición de tarea procesada",
+    "description": "Mensaje de edición de tarea procesada"
+  },
+  "taskAddProcessed": {
+    "message": "Adición de tarea procesada",
+    "description": "Mensaje de adición de tarea procesada"
+  },
+  "taskDeleteProcessed": {
+    "message": "Eliminación de tarea procesada",
+    "description": "Mensaje de eliminación de tarea procesada"
+  },
+  "unknownMessageType": {
+    "message": "Tipo de mensaje desconocido",
+    "description": "Error de tipo de mensaje desconocido"
+  },
+  "openTaskMatrix": {
+    "message": "Abrir TaskMatrix Pro",
+    "description": "Descripción del comando para abrir TaskMatrix Pro"
+  },
+  "ready": {
+    "message": "Listo",
+    "description": "Mensaje de estado listo"
+  },
+  "initializationFailed": {
+    "message": "Inicialización Fallida",
+    "description": "Mensaje de estado de inicialización fallida"
+  },
+  "loading": {
+    "message": "Cargando...",
+    "description": "Mensaje de estado cargando"
+  },
+  "saving": {
+    "message": "Guardando...",
+    "description": "Mensaje de estado guardando"
+  },
+  "failedToGetFormData": {
+    "message": "Error al obtener datos del formulario",
+    "description": "Mensaje de error cuando no se pueden obtener datos del formulario"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Por favor ingresa un título de tarea",
+    "description": "Mensaje de advertencia cuando el título de la tarea está vacío"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Tarea actualizada exitosamente",
+    "description": "Mensaje de éxito cuando la tarea es actualizada"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Tarea agregada exitosamente",
+    "description": "Mensaje de éxito cuando la tarea es agregada"
+  },
+  "saveFailed": {
+    "message": "Error al guardar",
+    "description": "Mensaje de error cuando la operación de guardar falla"
+  },
+  "taskNotFound": {
+    "message": "Tarea no encontrada",
+    "description": "Mensaje de error cuando la tarea no se encuentra"
+  },
+  "failedToEditTask": {
+    "message": "Error al editar tarea",
+    "description": "Mensaje de error cuando la edición de tarea falla"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Tarea completada exitosamente",
+    "description": "Mensaje de éxito cuando la tarea es completada"
+  },
+  "failedToCompleteTask": {
+    "message": "Error al completar tarea",
+    "description": "Mensaje de error cuando la finalización de tarea falla"
+  },
+  "areYouSureDeleteTask": {
+    "message": "¿Estás seguro de que quieres eliminar esta tarea? Esta acción no se puede deshacer.",
+    "description": "Mensaje de confirmación para eliminación de tarea"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Tarea eliminada exitosamente",
+    "description": "Mensaje de éxito cuando la tarea es eliminada"
+  },
+  "failedToDeleteTask": {
+    "message": "Error al eliminar tarea",
+    "description": "Mensaje de error cuando la eliminación de tarea falla"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Configuración guardada exitosamente",
+    "description": "Mensaje de éxito cuando la configuración es guardada"
+  },
+  "failedToSaveSettings": {
+    "message": "Error al guardar configuración",
+    "description": "Mensaje de error cuando el guardado de configuración falla"
+  },
+  "loadingDataFailed": {
+    "message": "Error al cargar datos",
+    "description": "Mensaje de error cuando la carga de datos falla"
+  },
+  "noTaskFound": {
+    "message": "No se Encontró Tarea",
+    "description": "Mensaje de estado vacío cuando no se encuentran tareas"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Haz clic en el icono de más para agregar tu primera tarea",
+    "description": "Instrucción de estado vacío para agregar la primera tarea"
+  },
+  "allCaughtUp": {
+    "message": "¡Todo al Día!",
+    "description": "Mensaje de estado vacío cuando no hay tareas vencidas"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "No hay tareas vencidas. ¡Excelente trabajo manteniendo todo en orden!",
+    "description": "Mensaje de estado vacío para no hay tareas vencidas"
+  },
+  "noCompletedTasks": {
+    "message": "No hay Tareas Completadas",
+    "description": "Mensaje de estado vacío cuando no hay tareas completadas"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Haz doble clic en una tarea y haz clic en la etiqueta de estado para marcarla como completada",
+    "description": "Instrucción para marcar tareas como completadas"
+  },
+  "noRejectedTasks": {
+    "message": "No hay Tareas Rechazadas",
+    "description": "Mensaje de estado vacío cuando no hay tareas rechazadas"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Haz doble clic en una tarea y haz clic en la etiqueta de estado dos veces para marcarla como rechazada",
+    "description": "Instrucción para marcar tareas como rechazadas"
+  },
+  "task": {
+    "message": "Tarea:",
+    "description": "Prefijo de etiqueta de tarea"
+  },
+  "importance": {
+    "message": "Importancia:",
+    "description": "Etiqueta de importancia"
+  },
+  "noData": {
+    "message": "Sin Datos",
+    "description": "Mensaje sin datos para gráficos"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "No hay suficientes datos para generar mapa de calor",
+    "description": "Mensaje cuando no hay suficientes datos para mapa de calor"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "No hay suficientes datos de tareas para generar gráfico de dispersión",
+    "description": "Mensaje cuando no hay suficientes datos para gráfico de dispersión"
+  },
+  "bytes": {
+    "message": "Bytes",
+    "description": "Unidad bytes"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Unidad kilobytes"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Unidad megabytes"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Unidad gigabytes"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Unidad terabytes"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Frecuencia de verificación del estado de la tarea en segundo plano",
+    "description": "Descripción para la frecuencia de verificación del estado de la tarea"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Mostrar el número de tareas urgentes en el icono del plugin",
+    "description": "Descripción para la configuración del badge del icono"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Mostrar información de recordatorio de tareas al pasar el cursor sobre el icono",
+    "description": "Descripción para la configuración del título del icono"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Doble clic en área vacía",
+    "description": "Instrucción para crear tarea"
+  },
+  "editTaskInstruction": {
+    "message": "Editar Tarea:",
+    "description": "Instrucción editar tarea"
+  },
+  "hoverOverTask": {
+    "message": "Pasar cursor sobre la tarea",
+    "description": "Instrucción para ver detalles de la tarea"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Haz clic en el icono de lista para todas las tareas",
+    "description": "Instrucción para acceder al administrador de tareas"
+  },
+  "clickChartIconForInsights": {
+    "message": "Haz clic en el icono de gráfico para insights",
+    "description": "Instrucción para acceder al informe de análisis"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Matriz de Tareas Eisenhower",
+    "description": "Título de la sección de matriz de tareas Eisenhower"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Importante y Urgente",
+    "description": "Título del cuadrante Q1"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Hazlo ahora. Tareas críticas que requieren atención inmediata.",
+    "description": "Descripción del cuadrante Q1"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Importante y No Urgente",
+    "description": "Título del cuadrante Q2"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Programa. Tareas estratégicas para planificación a largo plazo.",
+    "description": "Descripción del cuadrante Q2"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: No Importante y Urgente",
+    "description": "Título del cuadrante Q3"
+  },
+  "delegateItInterruptions": {
+    "message": "Delega. Interrupciones que pueden ser manejadas por otros.",
+    "description": "Descripción del cuadrante Q3"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: No Importante y No Urgente",
+    "description": "Título del cuadrante Q4"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Elimina. Perdedores de tiempo que deben evitarse.",
+    "description": "Descripción del cuadrante Q4"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Cuando el tiempo restante de la tarea sea menor que esta duración, activar recordatorio",
+    "description": "Descripción para la configuración del umbral de recordatorio urgente"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Cuando una tarea esté por vencer, recordarte a través de cambios de icono",
+    "description": "Descripción para la configuración de recordatorio urgente"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Habilitar Recordatorio de Tareas Urgentes",
+    "description": "Etiqueta de casilla de verificación habilitar recordatorio de tareas urgentes"
+  },
+  "invalidDueDate": {
+    "message": "Fecha de vencimiento inválida",
+    "description": "Mensaje de error para fecha de vencimiento inválida"
+  },
+  "dueAt": {
+    "message": "Vence el",
+    "description": "Prefijo vence el para tareas que vencen en fecha específica"
+  },
+  "dueIn": {
+    "message": "Vence en",
+    "description": "Prefijo vence en para tareas que vencen en tiempo específico"
+  },
+  "completionRate": {
+    "message": "Tasa de Finalización",
+    "description": "Título de pestaña de tasa de finalización"
+  },
+  "timeStatus": {
+    "message": "Estado-Tiempo",
+    "description": "Título de pestaña de estado-tiempo"
+  },
+  "timeTrend": {
+    "message": "Tendencia-Tiempo",
+    "description": "Título de pestaña de tendencia-tiempo"
+  },
+  "sourceCross": {
+    "message": "Cruce-Fuente",
+    "description": "Título de pestaña de cruce-fuente"
+  },
+  "completionRateQuantity": {
+    "message": "Tasa de Finalización - Cantidad",
+    "description": "Título del gráfico de tasa de finalización"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Fuente de Tarea - Tasa de Finalización",
+    "description": "Título del gráfico de tasa de finalización de fuente de tarea"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Tiempo - Dispersión de Estado de Finalización",
+    "description": "Título del gráfico de dispersión de estado de finalización de tiempo"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Tendencia Semanal/Mensual",
+    "description": "Título del gráfico de tendencia semanal mensual"
+  },
+  "weekly": {
+    "message": "Semanal",
+    "description": "Botón de período semanal"
+  },
+  "monthly": {
+    "message": "Mensual",
+    "description": "Botón de período mensual"
+  },
+  "source": {
+    "message": "Fuente",
+    "description": "Encabezado de tabla fuente"
+  },
+  "low": {
+    "message": "Bajo (0-20%)",
+    "description": "Etiqueta de tasa de finalización baja"
+  },
+  "mediumLow": {
+    "message": "Medio-Bajo (20-50%)",
+    "description": "Etiqueta de tasa de finalización medio-baja"
+  },
+  "mediumHigh": {
+    "message": "Medio-Alto (50-80%)",
+    "description": "Etiqueta de tasa de finalización medio-alta"
+  },
+  "high": {
+    "message": "Alto (80-100%)",
+    "description": "Etiqueta de tasa de finalización alta"
+  },
+  "taskCost": {
+    "message": "Costo de Tarea (días)",
+    "description": "Etiqueta de eje de costo de tarea"
+  },
+  "taskImportance": {
+    "message": "Importancia de Tarea",
+    "description": "Etiqueta de eje de importancia de tarea"
+  },
+  "taskCount": {
+    "message": "Conteo de Tareas",
+    "description": "Etiqueta de eje de conteo de tareas"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Estadísticas de Tiempo de Tareas por Cuadrante (Días):",
+    "description": "Título de estadísticas de tiempo de tareas por cuadrante"
+  },
+  "quadrant": {
+    "message": "Cuadrante",
+    "description": "Encabezado de tabla cuadrante"
+  },
+  "completedAvg": {
+    "message": "Completado (Promedio)",
+    "description": "Encabezado de tabla promedio completado"
+  },
+  "completedMedian": {
+    "message": "Completado (Mediana)",
+    "description": "Encabezado de tabla mediana completado"
+  },
+  "inProgressAvg": {
+    "message": "En Progreso (Promedio)",
+    "description": "Encabezado de tabla promedio en progreso"
+  },
+  "inProgressMedian": {
+    "message": "En Progreso (Mediana)",
+    "description": "Encabezado de tabla mediana en progreso"
+  },
+  "deepInsights": {
+    "message": "Insights Profundos",
+    "description": "Título de la sección de insights profundos"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Actualmente no hay suficientes datos para generar insights.",
+    "description": "Mensaje sin datos para insights"
+  },
+  "importantUrgent": {
+    "message": "Importante y Urgente",
+    "description": "Etiqueta del cuadrante Q1"
+  },
+  "importantNotUrgent": {
+    "message": "Importante y No Urgente",
+    "description": "Etiqueta del cuadrante Q2"
+  },
+  "notImportantNotUrgent": {
+    "message": "No Importante y No Urgente",
+    "description": "Etiqueta del cuadrante Q3"
+  },
+  "notImportantUrgent": {
+    "message": "No Importante y Urgente",
+    "description": "Etiqueta del cuadrante Q4"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "La tasa de finalización de tareas del cuadrante Q2 (Importante y No Urgente) es significativamente menor que otros cuadrantes, reflejando un sesgo de ejecución \"urgente sobre importante\", lo que puede llevar a retrasos en objetivos estratégicos a largo plazo.",
+    "description": "Insight sobre la tasa de finalización de Q2 siendo menor"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "La tasa de finalización de tareas del cuadrante Q3 (No Importante y No Urgente) es demasiado alta, cuidado con la \"ocupación inefectiva\" - si se consume demasiada energía en tareas triviales, comprimiendo el tiempo de tareas centrales.",
+    "description": "Insight sobre la tasa de finalización de Q3 siendo demasiado alta"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Las tareas del cuadrante Q1 (Importante y Urgente) representan $percentage% del total de tareas, sugiriendo mejora en la planificación de tareas, manejar tareas importantes temprano para evitar situaciones urgentes.",
+    "description": "Insight sobre el alto porcentaje de tareas Q1"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Las tareas del cuadrante Q4 (No Importante y Urgente) representan $percentage% del total de tareas, revisar las fuentes de estas tareas de baja prioridad pero urgentes, optimizar procesos de respuesta de emergencia.",
+    "description": "Insight sobre el alto porcentaje de tareas Q4"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "Las tareas \"$source\" en Q1 (Importante y Urgente) logran $q1Rate% de tasa de finalización, pero solo $q2Rate% en Q2 (Importante y No Urgente), indicando que la prioridad de ejecución de tareas es impulsada por \"presión externa\" en lugar de enfoque estratégico interno.",
+    "description": "Insight sobre las tasas de finalización de tareas de fuente Q1 vs Q2"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "Las tareas \"$source\" en Q4 (No Importante y Urgente) tienen baja tasa de finalización ($q4Rate%), necesitan confirmar si las \"tareas temporales\" tienen problemas de definición de prioridad.",
+    "description": "Insight sobre la baja tasa de finalización de tareas Q4"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "\"$source\" están altamente concentradas en el cuadrante $quadrant ($quadrantName), representando $percentage%. Revisar la planificación de tareas por razonabilidad.",
+    "description": "Insight sobre tareas altamente concentradas en un cuadrante"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "\"$highSource\" en $highQuadrant tiene la tasa de finalización más alta ($highRate%), mientras que \"$lowSource\" en $lowQuadrant tiene la más baja ($lowRate%), mostrando claras diferencias en la prioridad de procesamiento para diferentes tipos de tareas.",
+    "description": "Insight sobre diferencias de tasa de finalización entre fuentes"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (Importante y Urgente) tiene $percentage% de tareas pendientes tomando más de 3 días, indicando posible escasez de recursos o dificultad inesperada en tareas centrales. Considerar desglose de tareas o apoyo adicional.",
+    "description": "Insight sobre tareas pendientes Q1 tomando demasiado tiempo"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Las tareas completadas de Q4 (No Importante y Urgente) promedian $q4Time días, excediendo por mucho Q2 (Importante y No Urgente) en $q2Time días, indicando que las \"tareas urgentes temporales\" sobre-ocupan recursos. Optimizar procesos de respuesta de emergencia.",
+    "description": "Insight sobre tiempos de finalización de tareas Q4 vs Q2"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "El tiempo promedio de procesamiento para tareas pendientes ($pendingTime días) es significativamente mayor que tareas completadas ($completedTime días). Enfocarse en tareas atascadas por mucho tiempo y ajustar estrategia o asignación de recursos cuando sea necesario.",
+    "description": "Insight sobre tiempos de tareas pendientes vs completadas"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "El volumen de tareas $quadrantLabel $direction por $rate% de $from a $to, mostrando fluctuación significativa. Considerar enfocarse en el balance de asignación de tareas.",
+    "description": "Insight sobre fluctuación de volumen de tareas"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "La tasa de finalización de tareas $quadrantLabel muestra una tendencia ascendente sostenida, indicando eficiencia de trabajo mejorada.",
+    "description": "Insight sobre tendencia ascendente de tasa de finalización"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "La tasa de finalización de tareas $quadrantLabel muestra una tendencia descendente sostenida, requiriendo atención a problemas de eficiencia de ejecución.",
+    "description": "Insight sobre tendencia descendente de tasa de finalización"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Las tareas Q2 (Importante y No Urgente) continúan acumulándose sin mejora en la tasa de finalización, reflejando que las \"tareas estratégicas\" no están integradas en planes de ejecución regulares, presentando un riesgo de \"acumulación de procrastinación\".",
+    "description": "Insight sobre acumulación de tareas Q2"
+  }
+}

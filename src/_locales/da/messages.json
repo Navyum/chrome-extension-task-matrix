@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Gratis Opgavehåndterer & Værktøj",
+    "description": "Applikationens navn"
+  },
+  "appDescription": {
+    "message": "Gratis Chrome browserudvidelse til intelligente opgaver. Visualiser dine opgaver med kraftfulde værktøjer og skærmvenligt grænseflade",
+    "description": "Applikationens beskrivelse"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Applikationens titel"
+  },
+  "taskManager": {
+    "message": "Opgavehåndterer",
+    "description": "Opgavehåndterer knap titel"
+  },
+  "report": {
+    "message": "Rapport",
+    "description": "Rapport knap titel"
+  },
+  "settings": {
+    "message": "Indstillinger",
+    "description": "Indstillinger knap titel"
+  },
+  "help": {
+    "message": "Hjælp",
+    "description": "Hjælp knap titel"
+  },
+  "addTask": {
+    "message": "Tilføj Opgave",
+    "description": "Tilføj opgave knap titel"
+  },
+  "close": {
+    "message": "Luk",
+    "description": "Luk knap tekst"
+  },
+  "editTask": {
+    "message": "Rediger Opgave",
+    "description": "Rediger opgave modal titel"
+  },
+  "newTask": {
+    "message": "Ny",
+    "description": "Ny opgave status"
+  },
+  "taskTitle": {
+    "message": "Opgavetitel *",
+    "description": "Opgavetitel etiket"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Indtast opgavetitel",
+    "description": "Opgavetitel input placeholder"
+  },
+  "taskDescription": {
+    "message": "Opgavebeskrivelse",
+    "description": "Opgavebeskrivelse etiket"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Indtast opgavebeskrivelse (valgfrit)",
+    "description": "Opgavebeskrivelse input placeholder"
+  },
+  "importanceLevel": {
+    "message": "Vigtighedsniveau *",
+    "description": "Vigtighedsniveau etiket"
+  },
+  "notImportant": {
+    "message": "Ikke Vigtig",
+    "description": "Ikke vigtig etiket"
+  },
+  "veryImportant": {
+    "message": "Meget Vigtig",
+    "description": "Meget vigtig etiket"
+  },
+  "dueDate": {
+    "message": "Forfaldsdato *",
+    "description": "Forfaldsdato etiket"
+  },
+  "taskCategory": {
+    "message": "Opgavekategori",
+    "description": "Opgavekategori etiket"
+  },
+  "work": {
+    "message": "Arbejde",
+    "description": "Arbejde kategori"
+  },
+  "personal": {
+    "message": "Personlig",
+    "description": "Personlig kategori"
+  },
+  "study": {
+    "message": "Studier",
+    "description": "Studier kategori"
+  },
+  "health": {
+    "message": "Sundhed",
+    "description": "Sundhed kategori"
+  },
+  "other": {
+    "message": "Andet",
+    "description": "Andet kategori"
+  },
+  "deleteTask": {
+    "message": "Slet Opgave",
+    "description": "Slet opgave knap"
+  },
+  "cancel": {
+    "message": "Annuller",
+    "description": "Annuller knap"
+  },
+  "saveTask": {
+    "message": "Gem Opgave",
+    "description": "Gem opgave knap"
+  },
+  "doing": {
+    "message": "I Gang",
+    "description": "I gang status"
+  },
+  "overdue": {
+    "message": "Forfalden",
+    "description": "Forfalden status"
+  },
+  "completed": {
+    "message": "Fuldført",
+    "description": "Fuldført status"
+  },
+  "rejected": {
+    "message": "Afvist",
+    "description": "Afvist status"
+  },
+  "pending": {
+    "message": "Afventer",
+    "description": "Afventer status etiket"
+  },
+  "urgentTaskReminder": {
+    "message": "Haster Opgave Påmindelse",
+    "description": "Haster opgave påmindelse sektion titel"
+  },
+  "enableUrgentReminder": {
+    "message": "Aktiver Haster Opgave Påmindelse",
+    "description": "Aktiver haster opgave påmindelse afkrydsningsboks"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Når en opgave holder på at gå ud, påmind gennem ikonændringer",
+    "description": "Aktiver haster opgave påmindelse beskrivelse"
+  },
+  "reminderThreshold": {
+    "message": "Påmindelsestærskel (minutter)",
+    "description": "Påmindelsestærskel etiket"
+  },
+  "reminderThresholdDesc": {
+    "message": "Når resterende tid for opgaven er mindre end denne varighed, aktiver påmindelse",
+    "description": "Påmindelsestærskel beskrivelse"
+  },
+  "reminderInterval": {
+    "message": "Påmindelseinterval (minutter)",
+    "description": "Påmindelseinterval etiket"
+  },
+  "reminderIntervalDesc": {
+    "message": "Frekvens for at kontrollere opgavestatus i baggrunden",
+    "description": "Påmindelseinterval beskrivelse"
+  },
+  "iconReminder": {
+    "message": "Ikon Påmindelse",
+    "description": "Ikon påmindelse sektion titel"
+  },
+  "showIconBadge": {
+    "message": "Vis Ikon Badge",
+    "description": "Vis ikon badge afkrydsningsboks"
+  },
+  "showIconBadgeDesc": {
+    "message": "Vis antallet af haster opgaver på plugin-ikonet",
+    "description": "Vis ikon badge beskrivelse"
+  },
+  "showIconTooltip": {
+    "message": "Vis Ikon Tooltip",
+    "description": "Vis ikon tooltip afkrydsningsboks"
+  },
+  "showIconTooltipDesc": {
+    "message": "Vis opgavepåmindelseinformation ved hovering over ikonet",
+    "description": "Vis ikon tooltip beskrivelse"
+  },
+  "save": {
+    "message": "Gem",
+    "description": "Gem knap"
+  },
+  "quickStart": {
+    "message": "🚀 Hurtig Start",
+    "description": "Hurtig start sektion titel"
+  },
+  "createTask": {
+    "message": "Opret Opgave:",
+    "description": "Opret opgave instruktion"
+  },
+  "createTaskDesc": {
+    "message": "Dobbeltklik på tomt område",
+    "description": "Opret opgave beskrivelse"
+  },
+  "editTaskDesc": {
+    "message": "Rediger Opgave:",
+    "description": "Rediger opgave instruktion"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Dobbeltklik på eksisterende opgave",
+    "description": "Rediger opgave instruktion beskrivelse"
+  },
+  "viewDetails": {
+    "message": "Vis Detaljer:",
+    "description": "Vis detaljer instruktion"
+  },
+  "viewDetailsDesc": {
+    "message": "Hover over opgave",
+    "description": "Vis detaljer beskrivelse"
+  },
+  "taskManagerDesc": {
+    "message": "Opgavehåndterer:",
+    "description": "Opgavehåndterer instruktion"
+  },
+  "taskManagerInstruction": {
+    "message": "Klik på listeikonet for alle opgaver",
+    "description": "Opgavehåndterer instruktion beskrivelse"
+  },
+  "analysisReport": {
+    "message": "Analyse Rapport:",
+    "description": "Analyse rapport instruktion"
+  },
+  "analysisReportDesc": {
+    "message": "Klik på diagramikonet for indsigt",
+    "description": "Analyse rapport beskrivelse"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Eisenhower Opgavematrix",
+    "description": "Eisenhower matrix sektion titel"
+  },
+  "q1Title": {
+    "message": "Q1: Vigtig & Haster",
+    "description": "Q1 kvadrant titel"
+  },
+  "q1Desc": {
+    "message": "Gør det nu. Kritiske opgaver der kræver øjeblikkelig opmærksomhed.",
+    "description": "Q1 kvadrant beskrivelse"
+  },
+  "q2Title": {
+    "message": "Q2: Vigtig & Ikke Haster",
+    "description": "Q2 kvadrant titel"
+  },
+  "q2Desc": {
+    "message": "Planlæg det. Strategiske opgaver til langsigtet planlægning.",
+    "description": "Q2 kvadrant beskrivelse"
+  },
+  "q3Title": {
+    "message": "Q3: Ikke Vigtig & Haster",
+    "description": "Q3 kvadrant titel"
+  },
+  "q3Desc": {
+    "message": "Deleger det. Afbrydelser der kan håndteres af andre.",
+    "description": "Q3 kvadrant beskrivelse"
+  },
+  "q4Title": {
+    "message": "Q4: Ikke Vigtig & Ikke Haster",
+    "description": "Q4 kvadrant titel"
+  },
+  "q4Desc": {
+    "message": "Eliminer det. Tidsfordriv der bør undgås.",
+    "description": "Q4 kvadrant beskrivelse"
+  },
+  "confirm": {
+    "message": "Bekræft",
+    "description": "Bekræft knap"
+  },
+  "settingsSaved": {
+    "message": "Indstillinger gemt succesfuldt",
+    "description": "Indstillinger gemt notifikation"
+  },
+  "settingsSaveFailed": {
+    "message": "Kunne ikke gemme indstillinger",
+    "description": "Indstillinger gem mislykkedes notifikation"
+  },
+  "allTasksCleared": {
+    "message": "Alle opgaver ryddet",
+    "description": "Alle opgaver ryddet besked"
+  },
+  "settingsApplied": {
+    "message": "Indstillinger anvendt",
+    "description": "Indstillinger anvendt besked"
+  },
+  "taskMonitoringStarted": {
+    "message": "Opgaveovervågning startet",
+    "description": "Opgaveovervågning startet besked"
+  },
+  "taskMonitoringStopped": {
+    "message": "Opgaveovervågning stoppet",
+    "description": "Opgaveovervågning stoppet besked"
+  },
+  "taskEditProcessed": {
+    "message": "Opgave redigering behandlet",
+    "description": "Opgave redigering behandlet besked"
+  },
+  "taskAddProcessed": {
+    "message": "Opgave tilføjelse behandlet",
+    "description": "Opgave tilføjelse behandlet besked"
+  },
+  "taskDeleteProcessed": {
+    "message": "Opgave sletning behandlet",
+    "description": "Opgave sletning behandlet besked"
+  },
+  "unknownMessageType": {
+    "message": "Ukendt beskedtype",
+    "description": "Ukendt beskedtype fejl"
+  },
+  "openTaskMatrix": {
+    "message": "Åbn TaskMatrix Pro",
+    "description": "Kommando beskrivelse for at åbne TaskMatrix Pro"
+  },
+  "ready": {
+    "message": "Klar",
+    "description": "Klar status besked"
+  },
+  "initializationFailed": {
+    "message": "Initialisering Mislykkedes",
+    "description": "Initialisering mislykkedes status besked"
+  },
+  "loading": {
+    "message": "Indlæser...",
+    "description": "Indlæser status besked"
+  },
+  "saving": {
+    "message": "Gemmer...",
+    "description": "Gemmer status besked"
+  },
+  "failedToGetFormData": {
+    "message": "Kunne ikke hente formulardata",
+    "description": "Fejlbesked når formulardata ikke kan hentes"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Indtast venligst en opgavetitel",
+    "description": "Advarselsbesked når opgavetitel er tom"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Opgave opdateret succesfuldt",
+    "description": "Succesbesked når opgave opdateres"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Opgave tilføjet succesfuldt",
+    "description": "Succesbesked når opgave tilføjes"
+  },
+  "saveFailed": {
+    "message": "Gem mislykkedes",
+    "description": "Fejlbesked når gem operation mislykkes"
+  },
+  "taskNotFound": {
+    "message": "Opgave ikke fundet",
+    "description": "Fejlbesked når opgave ikke findes"
+  },
+  "failedToEditTask": {
+    "message": "Kunne ikke redigere opgave",
+    "description": "Fejlbesked når opgave redigering mislykkes"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Opgave fuldført succesfuldt",
+    "description": "Succesbesked når opgave fuldføres"
+  },
+  "failedToCompleteTask": {
+    "message": "Kunne ikke fuldføre opgave",
+    "description": "Fejlbesked når opgave fuldførelse mislykkes"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Er du sikker på at du vil slette denne opgave? Denne handling kan ikke fortrydes.",
+    "description": "Bekræftelsesbesked for opgave sletning"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Opgave slettet succesfuldt",
+    "description": "Succesbesked når opgave slettes"
+  },
+  "failedToDeleteTask": {
+    "message": "Kunne ikke slette opgave",
+    "description": "Fejlbesked når opgave sletning mislykkes"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Indstillinger gemt succesfuldt",
+    "description": "Succesbesked når indstillinger gemmes"
+  },
+  "failedToSaveSettings": {
+    "message": "Kunne ikke gemme indstillinger",
+    "description": "Fejlbesked når indstillings gem mislykkes"
+  },
+  "loadingDataFailed": {
+    "message": "Kunne ikke indlæse data",
+    "description": "Fejlbesked når dataindlæsning mislykkes"
+  },
+  "noTaskFound": {
+    "message": "Ingen Opgave Fundet",
+    "description": "Tom tilstand besked når ingen opgaver findes"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Klik på plusikonet for at tilføje din første opgave",
+    "description": "Tom tilstand instruktion for at tilføje første opgave"
+  },
+  "allCaughtUp": {
+    "message": "Alt Opdateret!",
+    "description": "Tom tilstand besked når ingen forfaldne opgaver"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Ingen forfaldne opgaver. Godt klaret med at holde alt på rette spor!",
+    "description": "Tom tilstand besked for ingen forfaldne opgaver"
+  },
+  "noCompletedTasks": {
+    "message": "Ingen Fuldførte Opgaver",
+    "description": "Tom tilstand besked når ingen fuldførte opgaver"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Dobbeltklik på en opgave og klik på statusetiketten for at markere den som fuldført",
+    "description": "Instruktion for at markere opgaver som fuldførte"
+  },
+  "noRejectedTasks": {
+    "message": "Ingen Afviste Opgaver",
+    "description": "Tom tilstand besked når ingen afviste opgaver"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Dobbeltklik på en opgave og klik to gange på statusetiketten for at markere den som afvist",
+    "description": "Instruktion for at markere opgaver som afviste"
+  },
+  "task": {
+    "message": "Opgave:",
+    "description": "Opgave etiket præfiks"
+  },
+  "importance": {
+    "message": "Vigtighed:",
+    "description": "Vigtighed etiket"
+  },
+  "noData": {
+    "message": "Ingen Data",
+    "description": "Ingen data besked for diagram"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Ikke nok data til at generere varmekort",
+    "description": "Besked når der ikke er nok data til varmekort"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Ikke nok opgavedata til at generere spredningsdiagram",
+    "description": "Besked når der ikke er nok data til spredningsdiagram"
+  },
+  "bytes": {
+    "message": "Bytes",
+    "description": "Bytes enhed"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Kilobytes enhed"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Megabytes enhed"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Gigabytes enhed"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Terabytes enhed"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Frekvens for at kontrollere opgavestatus i baggrunden",
+    "description": "Beskrivelse for opgavestatus kontrolfrekvens"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Vis antallet af haster opgaver på plugin-ikonet",
+    "description": "Beskrivelse for ikon badge indstilling"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Vis opgavepåmindelseinformation ved hovering over ikonet",
+    "description": "Beskrivelse for ikon titel indstilling"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Dobbeltklik på tomt område",
+    "description": "Instruktion for at oprette en opgave"
+  },
+  "editTaskInstruction": {
+    "message": "Rediger Opgave:",
+    "description": "Rediger opgave instruktion"
+  },
+  "hoverOverTask": {
+    "message": "Hover over opgave",
+    "description": "Instruktion for at vise opgavedetaljer"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Klik på listeikonet for alle opgaver",
+    "description": "Instruktion for at få adgang til opgavehåndterer"
+  },
+  "clickChartIconForInsights": {
+    "message": "Klik på diagramikonet for indsigt",
+    "description": "Instruktion for at få adgang til analyse rapport"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Eisenhower Opgavematrix",
+    "description": "Eisenhower opgavematrix sektion titel"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Vigtig & Haster",
+    "description": "Q1 kvadrant titel"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Gør det nu. Kritiske opgaver der kræver øjeblikkelig opmærksomhed.",
+    "description": "Q1 kvadrant beskrivelse"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Vigtig & Ikke Haster",
+    "description": "Q2 kvadrant titel"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Planlæg det. Strategiske opgaver til langsigtet planlægning.",
+    "description": "Q2 kvadrant beskrivelse"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Ikke Vigtig & Haster",
+    "description": "Q3 kvadrant titel"
+  },
+  "delegateItInterruptions": {
+    "message": "Deleger det. Afbrydelser der kan håndteres af andre.",
+    "description": "Q3 kvadrant beskrivelse"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Ikke Vigtig & Ikke Haster",
+    "description": "Q4 kvadrant titel"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Eliminer det. Tidsfordriv der bør undgås.",
+    "description": "Q4 kvadrant beskrivelse"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Når resterende tid for opgaven er mindre end denne varighed, aktiver påmindelse",
+    "description": "Beskrivelse for haster påmindelsestærskel indstilling"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Når en opgave holder på at gå ud, påmind gennem ikonændringer",
+    "description": "Beskrivelse for haster påmindelse indstilling"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Aktiver Haster Opgave Påmindelse",
+    "description": "Haster opgave påmindelse aktiver afkrydsningsboks etiket"
+  },
+  "invalidDueDate": {
+    "message": "Ugyldig forfaldsdato",
+    "description": "Fejlbesked for ugyldig forfaldsdato"
+  },
+  "dueAt": {
+    "message": "Forfalder den",
+    "description": "Forfalder den præfiks for opgaver der forfalder på et specifikt dato"
+  },
+  "dueIn": {
+    "message": "Forfalder om",
+    "description": "Forfalder om præfiks for opgaver der forfalder om en specifik tid"
+  },
+  "completionRate": {
+    "message": "Fuldførelsesgrad",
+    "description": "Fuldførelsesgrad fane titel"
+  },
+  "timeStatus": {
+    "message": "Tid-Status",
+    "description": "Tid-status fane titel"
+  },
+  "timeTrend": {
+    "message": "Tid-Trend",
+    "description": "Tid-trend fane titel"
+  },
+  "sourceCross": {
+    "message": "Kilde-Kors",
+    "description": "Kilde-kors fane titel"
+  },
+  "completionRateQuantity": {
+    "message": "Fuldførelsesgrad - Kvantitet",
+    "description": "Fuldførelsesgrad diagram titel"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Opgavekilde - Fuldførelsesgrad",
+    "description": "Opgavekilde fuldførelsesgrad diagram titel"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Tid - Fuldførelsesstatus Spredningsdiagram",
+    "description": "Tid fuldførelsesstatus spredningsdiagram titel"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Ugentlig/Månedlig Trend",
+    "description": "Ugentlig månedlig trend diagram titel"
+  },
+  "weekly": {
+    "message": "Ugentlig",
+    "description": "Ugentlig periode knap"
+  },
+  "monthly": {
+    "message": "Månedlig",
+    "description": "Månedlig periode knap"
+  },
+  "source": {
+    "message": "Kilde",
+    "description": "Kilde tabel header"
+  },
+  "low": {
+    "message": "Lav (0-20%)",
+    "description": "Lav fuldførelsesgrad etiket"
+  },
+  "mediumLow": {
+    "message": "Medium-Lav (20-50%)",
+    "description": "Medium-lav fuldførelsesgrad etiket"
+  },
+  "mediumHigh": {
+    "message": "Medium-Høj (50-80%)",
+    "description": "Medium-høj fuldførelsesgrad etiket"
+  },
+  "high": {
+    "message": "Høj (80-100%)",
+    "description": "Høj fuldførelsesgrad etiket"
+  },
+  "taskCost": {
+    "message": "Opgaveomkostning (dage)",
+    "description": "Opgaveomkostning akse etiket"
+  },
+  "taskImportance": {
+    "message": "Opgavevigtighed",
+    "description": "Opgavevigtighed akse etiket"
+  },
+  "taskCount": {
+    "message": "Opgaveantal",
+    "description": "Opgaveantal akse etiket"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Kvadrant Opgavetid Statistik (Dage):",
+    "description": "Kvadrant opgavetid statistik titel"
+  },
+  "quadrant": {
+    "message": "Kvadrant",
+    "description": "Kvadrant tabel header"
+  },
+  "completedAvg": {
+    "message": "Fuldført (Gennemsnit)",
+    "description": "Fuldført gennemsnit tabel header"
+  },
+  "completedMedian": {
+    "message": "Fuldført (Median)",
+    "description": "Fuldført median tabel header"
+  },
+  "inProgressAvg": {
+    "message": "I Gang (Gennemsnit)",
+    "description": "I gang gennemsnit tabel header"
+  },
+  "inProgressMedian": {
+    "message": "I Gang (Median)",
+    "description": "I gang median tabel header"
+  },
+  "deepInsights": {
+    "message": "Dybe Indsigt",
+    "description": "Dybe indsigt sektion titel"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "I øjeblikket er der ikke nok data til at generere indsigt.",
+    "description": "Ingen data besked for indsigt"
+  },
+  "importantUrgent": {
+    "message": "Vigtig & Haster",
+    "description": "Q1 kvadrant etiket"
+  },
+  "importantNotUrgent": {
+    "message": "Vigtig & Ikke Haster",
+    "description": "Q2 kvadrant etiket"
+  },
+  "notImportantNotUrgent": {
+    "message": "Ikke Vigtig & Ikke Haster",
+    "description": "Q3 kvadrant etiket"
+  },
+  "notImportantUrgent": {
+    "message": "Ikke Vigtig & Haster",
+    "description": "Q4 kvadrant etiket"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2 (Vigtig & Ikke Haster) kvadrant opgavefuldførelsesgrad er betydeligt lavere end andre kvadranter, som reflekterer en \"haster over vigtig\" udførelsesbias, som kan føre til strategiske målforsinkelser på lang sigt.",
+    "description": "Indsigt om Q2 fuldførelsesgrad som er lavere"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3 (Ikke Vigtig & Ikke Haster) kvadrant opgavefuldførelsesgrad er for høj, vær forsigtig med \"ineffektiv beskæftigelse\" - hvis for meget energi forbruges på trivielle opgaver, som komprimerer tid for kerneopgaver.",
+    "description": "Indsigt om Q3 fuldførelsesgrad som er for høj"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1 (Vigtig & Haster) kvadrant opgaver udgør $percentage% af totale opgaver, som tyder på forbedring i opgaveplanlægning, håndter vigtige opgaver tidligt for at undgå haster situationer.",
+    "description": "Indsigt om høj Q1 opgaver procent"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4 (Ikke Vigtig & Haster) kvadrant opgaver udgør $percentage% af totale opgaver, gennemgå kilderne til disse lavprioritets men haster opgaver, optimer nødsituationsresponsprocesser.",
+    "description": "Indsigt om høj Q4 opgaver procent"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "\"$source\" opgaver i Q1 (Vigtig & Haster) opnår $q1Rate% fuldførelsesgrad, men kun $q2Rate% i Q2 (Vigtig & Ikke Haster), som indikerer at opgaveudførelseprioritet drives af \"ekstern pres\" snarere end intern strategisk fokus.",
+    "description": "Indsigt om kilde opgaver Q1 vs Q2 fuldførelsesgrader"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "\"$source\" opgaver i Q4 (Ikke Vigtig & Haster) har lav fuldførelsesgrad ($q4Rate%), behøver at bekræfte om \"midlertidige opgaver\" har prioriteringsdefinitionsproblem.",
+    "description": "Indsigt om Q4 opgaver lav fuldførelsesgrad"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "\"$source\" er højt koncentreret i $quadrant ($quadrantName) kvadrant, som udgør $percentage%. Gennemgå opgaveplanlægning for rimelighed.",
+    "description": "Indsigt om opgaver der er højt koncentreret i en kvadrant"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "\"$highSource\" i $highQuadrant har højeste fuldførelsesgrad ($highRate%), mens \"$lowSource\" i $lowQuadrant har laveste ($lowRate%), som viser tydelige forskelle i behandlingsprioritet for forskellige opgavetyper.",
+    "description": "Indsigt om fuldførelsesgradsforskelle mellem kilder"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (Vigtig & Haster) har $percentage% afventende opgaver der tager mere end 3 dage, som indikerer potentiel ressursmangel eller uventede vanskeligheder i kerneopgaver. Overvej opgaveopdeling eller yderligere støtte.",
+    "description": "Indsigt om Q1 afventende opgaver der tager for lang tid"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Q4 (Ikke Vigtig & Haster) fuldførte opgaver i gennemsnit $q4Time dage, langt overstiger Q2 (Vigtig & Ikke Haster) på $q2Time dage, som indikerer at \"midlertidige haster opgaver\" over-okkuperer ressourcer. Optimér nødsituationsresponsprocesser.",
+    "description": "Indsigt om Q4 vs Q2 opgavefuldførelsetider"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Gennemsnitlig behandlingstid for afventende opgaver ($pendingTime dage) er betydeligt højere end fuldførte opgaver ($completedTime dage). Fokuser på langt fastsiddende opgaver og juster strategi eller ressursallokering efter behov.",
+    "description": "Indsigt om afventende vs fuldførte opgavetider"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabel opgavevolumen $direction $rate% fra $from til $to, som viser betydelig fluktuation. Overvej at fokusere på opgaveallokeringsbalance.",
+    "description": "Indsigt om opgavevolumenfluktuation"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabel opgavefuldførelsesgrad viser en vedvarende opadgående trend, som indikerer forbedret arbejdsverksamhed.",
+    "description": "Indsigt om fuldførelsesgrad opadgående trend"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabel opgavefuldførelsesgrad viser en vedvarende nedadgående trend, som kræver opmærksomhed på udførelsesverksamhedsproblem.",
+    "description": "Indsigt om fuldførelsesgrad nedadgående trend"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2 (Vigtig & Ikke Haster) opgaver fortsætter med at akkumulere uden forbedring i fuldførelsesgrad, som reflekterer at \"strategiske opgaver\" ikke er integreret i regelmæssige udførelseprogrammer, som præsenterer en \"forsinkelsesakkumulering\" risiko.",
+    "description": "Indsigt om Q2 opgaver akkumulering"
+  }
+}

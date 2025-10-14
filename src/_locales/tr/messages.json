@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Ücretsiz Görev Yöneticisi ve Araçlar",
+    "description": "Uygulama adı"
+  },
+  "appDescription": {
+    "message": "Akıllı görevler için ücretsiz Chrome tarayıcı uzantısı. Görevlerinizi güçlü araçlar ve kullanıcı dostu arayüzle görselleştirin",
+    "description": "Uygulama açıklaması"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Uygulama başlığı"
+  },
+  "taskManager": {
+    "message": "Görev Yöneticisi",
+    "description": "Görev yöneticisi düğme başlığı"
+  },
+  "report": {
+    "message": "Rapor",
+    "description": "Rapor düğme başlığı"
+  },
+  "settings": {
+    "message": "Ayarlar",
+    "description": "Ayarlar düğme başlığı"
+  },
+  "help": {
+    "message": "Yardım",
+    "description": "Yardım düğme başlığı"
+  },
+  "addTask": {
+    "message": "Görev Ekle",
+    "description": "Görev ekle düğme başlığı"
+  },
+  "close": {
+    "message": "Kapat",
+    "description": "Kapat düğme metni"
+  },
+  "editTask": {
+    "message": "Görev Düzenle",
+    "description": "Görev düzenle modal başlığı"
+  },
+  "newTask": {
+    "message": "Yeni",
+    "description": "Yeni görev durumu"
+  },
+  "taskTitle": {
+    "message": "Görev Başlığı *",
+    "description": "Görev başlığı etiketi"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Görev başlığını girin",
+    "description": "Görev başlığı giriş alanı placeholder"
+  },
+  "taskDescription": {
+    "message": "Görev Açıklaması",
+    "description": "Görev açıklaması etiketi"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Görev açıklamasını girin (isteğe bağlı)",
+    "description": "Görev açıklaması giriş alanı placeholder"
+  },
+  "importanceLevel": {
+    "message": "Önem Seviyesi *",
+    "description": "Önem seviyesi etiketi"
+  },
+  "notImportant": {
+    "message": "Önemli Değil",
+    "description": "Önemli değil etiketi"
+  },
+  "veryImportant": {
+    "message": "Çok Önemli",
+    "description": "Çok önemli etiketi"
+  },
+  "dueDate": {
+    "message": "Bitiş Tarihi *",
+    "description": "Bitiş tarihi etiketi"
+  },
+  "taskCategory": {
+    "message": "Görev Kategorisi",
+    "description": "Görev kategorisi etiketi"
+  },
+  "work": {
+    "message": "İş",
+    "description": "İş kategorisi"
+  },
+  "personal": {
+    "message": "Kişisel",
+    "description": "Kişisel kategorisi"
+  },
+  "study": {
+    "message": "Çalışma",
+    "description": "Çalışma kategorisi"
+  },
+  "health": {
+    "message": "Sağlık",
+    "description": "Sağlık kategorisi"
+  },
+  "other": {
+    "message": "Diğer",
+    "description": "Diğer kategorisi"
+  },
+  "deleteTask": {
+    "message": "Görev Sil",
+    "description": "Görev sil düğmesi"
+  },
+  "cancel": {
+    "message": "İptal",
+    "description": "İptal düğmesi"
+  },
+  "saveTask": {
+    "message": "Görev Kaydet",
+    "description": "Görev kaydet düğmesi"
+  },
+  "doing": {
+    "message": "Devam Ediyor",
+    "description": "Devam ediyor durumu"
+  },
+  "overdue": {
+    "message": "Gecikmiş",
+    "description": "Gecikmiş durumu"
+  },
+  "completed": {
+    "message": "Tamamlandı",
+    "description": "Tamamlandı durumu"
+  },
+  "rejected": {
+    "message": "Reddedildi",
+    "description": "Reddedildi durumu"
+  },
+  "pending": {
+    "message": "Beklemede",
+    "description": "Beklemede durum etiketi"
+  },
+  "urgentTaskReminder": {
+    "message": "Acil Görev Hatırlatıcısı",
+    "description": "Acil görev hatırlatıcısı bölüm başlığı"
+  },
+  "enableUrgentReminder": {
+    "message": "Acil Görev Hatırlatıcısını Etkinleştir",
+    "description": "Acil görev hatırlatıcısını etkinleştir onay kutusu"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Bir görev sona ermek üzereyken, ikon değişiklikleriyle hatırlat",
+    "description": "Acil görev hatırlatıcısını etkinleştir açıklaması"
+  },
+  "reminderThreshold": {
+    "message": "Hatırlatıcı Eşiği (dakika)",
+    "description": "Hatırlatıcı eşiği etiketi"
+  },
+  "reminderThresholdDesc": {
+    "message": "Görevin kalan süresi bu süreden az olduğunda, hatırlatıcıyı etkinleştir",
+    "description": "Hatırlatıcı eşiği açıklaması"
+  },
+  "reminderInterval": {
+    "message": "Hatırlatıcı Aralığı (dakika)",
+    "description": "Hatırlatıcı aralığı etiketi"
+  },
+  "reminderIntervalDesc": {
+    "message": "Arka planda görev durumunu kontrol etme sıklığı",
+    "description": "Hatırlatıcı aralığı açıklaması"
+  },
+  "iconReminder": {
+    "message": "İkon Hatırlatıcısı",
+    "description": "İkon hatırlatıcısı bölüm başlığı"
+  },
+  "showIconBadge": {
+    "message": "İkon Rozetini Göster",
+    "description": "İkon rozetini göster onay kutusu"
+  },
+  "showIconBadgeDesc": {
+    "message": "Eklenti ikonunda acil görevlerin sayısını göster",
+    "description": "İkon rozetini göster açıklaması"
+  },
+  "showIconTooltip": {
+    "message": "İkon Tooltip'ini Göster",
+    "description": "İkon tooltip'ini göster onay kutusu"
+  },
+  "showIconTooltipDesc": {
+    "message": "İkon üzerine gelindiğinde görev hatırlatıcı bilgilerini göster",
+    "description": "İkon tooltip'ini göster açıklaması"
+  },
+  "save": {
+    "message": "Kaydet",
+    "description": "Kaydet düğmesi"
+  },
+  "quickStart": {
+    "message": "🚀 Hızlı Başlangıç",
+    "description": "Hızlı başlangıç bölüm başlığı"
+  },
+  "createTask": {
+    "message": "Görev Oluştur:",
+    "description": "Görev oluştur talimatı"
+  },
+  "createTaskDesc": {
+    "message": "Boş alana çift tıklayın",
+    "description": "Görev oluştur açıklaması"
+  },
+  "editTaskDesc": {
+    "message": "Görev Düzenle:",
+    "description": "Görev düzenle talimatı"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Mevcut göreve çift tıklayın",
+    "description": "Görev düzenle talimat açıklaması"
+  },
+  "viewDetails": {
+    "message": "Detayları Görüntüle:",
+    "description": "Detayları görüntüle talimatı"
+  },
+  "viewDetailsDesc": {
+    "message": "Görev üzerine gelin",
+    "description": "Detayları görüntüle açıklaması"
+  },
+  "taskManagerDesc": {
+    "message": "Görev Yöneticisi:",
+    "description": "Görev yöneticisi talimatı"
+  },
+  "taskManagerInstruction": {
+    "message": "Tüm görevler için liste ikonuna tıklayın",
+    "description": "Görev yöneticisi talimat açıklaması"
+  },
+  "analysisReport": {
+    "message": "Analiz Raporu:",
+    "description": "Analiz raporu talimatı"
+  },
+  "analysisReportDesc": {
+    "message": "İçgörüler için grafik ikonuna tıklayın",
+    "description": "Analiz raporu açıklaması"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Eisenhower Görev Matrisi",
+    "description": "Eisenhower matrisi bölüm başlığı"
+  },
+  "q1Title": {
+    "message": "Q1: Önemli ve Acil",
+    "description": "Q1 kadran başlığı"
+  },
+  "q1Desc": {
+    "message": "Şimdi yap. Acil dikkat gerektiren kritik görevler.",
+    "description": "Q1 kadran açıklaması"
+  },
+  "q2Title": {
+    "message": "Q2: Önemli ve Acil Değil",
+    "description": "Q2 kadran başlığı"
+  },
+  "q2Desc": {
+    "message": "Planla. Uzun vadeli planlama için stratejik görevler.",
+    "description": "Q2 kadran açıklaması"
+  },
+  "q3Title": {
+    "message": "Q3: Önemli Değil ve Acil",
+    "description": "Q3 kadran başlığı"
+  },
+  "q3Desc": {
+    "message": "Delege et. Başkaları tarafından halledilebilecek kesintiler.",
+    "description": "Q3 kadran açıklaması"
+  },
+  "q4Title": {
+    "message": "Q4: Önemli Değil ve Acil Değil",
+    "description": "Q4 kadran başlığı"
+  },
+  "q4Desc": {
+    "message": "Elimine et. Kaçınılması gereken zaman kaybı.",
+    "description": "Q4 kadran açıklaması"
+  },
+  "confirm": {
+    "message": "Onayla",
+    "description": "Onayla düğmesi"
+  },
+  "settingsSaved": {
+    "message": "Ayarlar başarıyla kaydedildi",
+    "description": "Ayarlar kaydedildi bildirimi"
+  },
+  "settingsSaveFailed": {
+    "message": "Ayarlar kaydedilemedi",
+    "description": "Ayarlar kaydetme başarısız bildirimi"
+  },
+  "allTasksCleared": {
+    "message": "Tüm görevler temizlendi",
+    "description": "Tüm görevler temizlendi mesajı"
+  },
+  "settingsApplied": {
+    "message": "Ayarlar uygulandı",
+    "description": "Ayarlar uygulandı mesajı"
+  },
+  "taskMonitoringStarted": {
+    "message": "Görev izleme başlatıldı",
+    "description": "Görev izleme başlatıldı mesajı"
+  },
+  "taskMonitoringStopped": {
+    "message": "Görev izleme durduruldu",
+    "description": "Görev izleme durduruldu mesajı"
+  },
+  "taskEditProcessed": {
+    "message": "Görev düzenleme işlendi",
+    "description": "Görev düzenleme işlendi mesajı"
+  },
+  "taskAddProcessed": {
+    "message": "Görev ekleme işlendi",
+    "description": "Görev ekleme işlendi mesajı"
+  },
+  "taskDeleteProcessed": {
+    "message": "Görev silme işlendi",
+    "description": "Görev silme işlendi mesajı"
+  },
+  "unknownMessageType": {
+    "message": "Bilinmeyen mesaj türü",
+    "description": "Bilinmeyen mesaj türü hatası"
+  },
+  "openTaskMatrix": {
+    "message": "TaskMatrix Pro'yu Aç",
+    "description": "TaskMatrix Pro'yu aç komut açıklaması"
+  },
+  "ready": {
+    "message": "Hazır",
+    "description": "Hazır durum mesajı"
+  },
+  "initializationFailed": {
+    "message": "Başlatma Başarısız",
+    "description": "Başlatma başarısız durum mesajı"
+  },
+  "loading": {
+    "message": "Yükleniyor...",
+    "description": "Yükleniyor durum mesajı"
+  },
+  "saving": {
+    "message": "Kaydediliyor...",
+    "description": "Kaydediliyor durum mesajı"
+  },
+  "failedToGetFormData": {
+    "message": "Form verileri alınamadı",
+    "description": "Form verileri alınamadığında hata mesajı"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Lütfen bir görev başlığı girin",
+    "description": "Görev başlığı boş olduğunda uyarı mesajı"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Görev başarıyla güncellendi",
+    "description": "Görev güncellendiğinde başarı mesajı"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Görev başarıyla eklendi",
+    "description": "Görev eklendiğinde başarı mesajı"
+  },
+  "saveFailed": {
+    "message": "Kaydetme başarısız",
+    "description": "Kaydetme işlemi başarısız olduğunda hata mesajı"
+  },
+  "taskNotFound": {
+    "message": "Görev bulunamadı",
+    "description": "Görev bulunamadığında hata mesajı"
+  },
+  "failedToEditTask": {
+    "message": "Görev düzenlenemedi",
+    "description": "Görev düzenleme başarısız olduğunda hata mesajı"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Görev başarıyla tamamlandı",
+    "description": "Görev tamamlandığında başarı mesajı"
+  },
+  "failedToCompleteTask": {
+    "message": "Görev tamamlanamadı",
+    "description": "Görev tamamlama başarısız olduğunda hata mesajı"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Bu görevi silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+    "description": "Görev silme için onay mesajı"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Görev başarıyla silindi",
+    "description": "Görev silindiğinde başarı mesajı"
+  },
+  "failedToDeleteTask": {
+    "message": "Görev silinemedi",
+    "description": "Görev silme başarısız olduğunda hata mesajı"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Ayarlar başarıyla kaydedildi",
+    "description": "Ayarlar kaydedildiğinde başarı mesajı"
+  },
+  "failedToSaveSettings": {
+    "message": "Ayarlar kaydedilemedi",
+    "description": "Ayarlar kaydetme başarısız olduğunda hata mesajı"
+  },
+  "loadingDataFailed": {
+    "message": "Veriler yüklenemedi",
+    "description": "Veri yükleme başarısız olduğunda hata mesajı"
+  },
+  "noTaskFound": {
+    "message": "Görev Bulunamadı",
+    "description": "Görev bulunamadığında boş durum mesajı"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "İlk görevinizi eklemek için artı ikonuna tıklayın",
+    "description": "İlk görev ekleme için boş durum talimatı"
+  },
+  "allCaughtUp": {
+    "message": "Her Şey Güncel!",
+    "description": "Gecikmiş görev olmadığında boş durum mesajı"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Gecikmiş görev yok. Her şeyi yolunda tutmakta harika iş çıkarıyorsunuz!",
+    "description": "Gecikmiş görev olmadığında boş durum mesajı"
+  },
+  "noCompletedTasks": {
+    "message": "Tamamlanmış Görev Yok",
+    "description": "Tamamlanmış görev olmadığında boş durum mesajı"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Tamamlandı olarak işaretlemek için göreve çift tıklayın ve durum etiketine tıklayın",
+    "description": "Görevleri tamamlandı olarak işaretleme talimatı"
+  },
+  "noRejectedTasks": {
+    "message": "Reddedilmiş Görev Yok",
+    "description": "Reddedilmiş görev olmadığında boş durum mesajı"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Reddedilmiş olarak işaretlemek için göreve çift tıklayın ve durum etiketine iki kez tıklayın",
+    "description": "Görevleri reddedilmiş olarak işaretleme talimatı"
+  },
+  "task": {
+    "message": "Görev:",
+    "description": "Görev etiket öneki"
+  },
+  "importance": {
+    "message": "Önem:",
+    "description": "Önem etiketi"
+  },
+  "noData": {
+    "message": "Veri Yok",
+    "description": "Grafik için veri yok mesajı"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Isı haritası oluşturmak için yeterli veri yok",
+    "description": "Isı haritası için yeterli veri olmadığında mesaj"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Dağılım grafiği oluşturmak için yeterli görev verisi yok",
+    "description": "Dağılım grafiği için yeterli veri olmadığında mesaj"
+  },
+  "bytes": {
+    "message": "Bayt",
+    "description": "Bayt birimi"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Kilobayt birimi"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Megabayt birimi"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Gigabayt birimi"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Terabayt birimi"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Arka planda görev durumunu kontrol etme sıklığı",
+    "description": "Görev durumu kontrol sıklığı açıklaması"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Eklenti ikonunda acil görevlerin sayısını göster",
+    "description": "İkon rozet ayarı açıklaması"
+  },
+  "displayTaskReminderInformation": {
+    "message": "İkon üzerine gelindiğinde görev hatırlatıcı bilgilerini göster",
+    "description": "İkon başlık ayarı açıklaması"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Boş alana çift tıklayın",
+    "description": "Görev oluşturma talimatı"
+  },
+  "editTaskInstruction": {
+    "message": "Görev Düzenle:",
+    "description": "Görev düzenleme talimatı"
+  },
+  "hoverOverTask": {
+    "message": "Görev üzerine gelin",
+    "description": "Görev detaylarını görüntüleme talimatı"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Tüm görevler için liste ikonuna tıklayın",
+    "description": "Görev yöneticisine erişim talimatı"
+  },
+  "clickChartIconForInsights": {
+    "message": "İçgörüler için grafik ikonuna tıklayın",
+    "description": "Analiz raporuna erişim talimatı"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Eisenhower Görev Matrisi",
+    "description": "Eisenhower görev matrisi bölüm başlığı"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Önemli ve Acil",
+    "description": "Q1 kadran başlığı"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Şimdi yap. Acil dikkat gerektiren kritik görevler.",
+    "description": "Q1 kadran açıklaması"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Önemli ve Acil Değil",
+    "description": "Q2 kadran başlığı"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Planla. Uzun vadeli planlama için stratejik görevler.",
+    "description": "Q2 kadran açıklaması"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Önemli Değil ve Acil",
+    "description": "Q3 kadran başlığı"
+  },
+  "delegateItInterruptions": {
+    "message": "Delege et. Başkaları tarafından halledilebilecek kesintiler.",
+    "description": "Q3 kadran açıklaması"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Önemli Değil ve Acil Değil",
+    "description": "Q4 kadran başlığı"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Elimine et. Kaçınılması gereken zaman kaybı.",
+    "description": "Q4 kadran açıklaması"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Görevin kalan süresi bu süreden az olduğunda, hatırlatıcıyı etkinleştir",
+    "description": "Acil hatırlatıcı eşiği ayarı açıklaması"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Bir görev sona ermek üzereyken, ikon değişiklikleriyle hatırlat",
+    "description": "Acil hatırlatıcı ayarı açıklaması"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Acil Görev Hatırlatıcısını Etkinleştir",
+    "description": "Acil görev hatırlatıcısını etkinleştir onay kutusu etiketi"
+  },
+  "invalidDueDate": {
+    "message": "Geçersiz bitiş tarihi",
+    "description": "Geçersiz bitiş tarihi için hata mesajı"
+  },
+  "dueAt": {
+    "message": "Bitiş tarihi",
+    "description": "Belirli bir günde biten görevler için bitiş tarihi öneki"
+  },
+  "dueIn": {
+    "message": "Bitiş süresi",
+    "description": "Belirli bir süre sonra biten görevler için bitiş süresi öneki"
+  },
+  "completionRate": {
+    "message": "Tamamlanma Oranı",
+    "description": "Tamamlanma oranı sekme başlığı"
+  },
+  "timeStatus": {
+    "message": "Zaman-Durum",
+    "description": "Zaman-durum sekme başlığı"
+  },
+  "timeTrend": {
+    "message": "Zaman Trendi",
+    "description": "Zaman trendi sekme başlığı"
+  },
+  "sourceCross": {
+    "message": "Kaynak-Çapraz",
+    "description": "Kaynak-çapraz sekme başlığı"
+  },
+  "completionRateQuantity": {
+    "message": "Tamamlanma Oranı - Miktar",
+    "description": "Tamamlanma oranı grafik başlığı"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Görev Kaynağı - Tamamlanma Oranı",
+    "description": "Görev kaynağı tamamlanma oranı grafik başlığı"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Zaman - Tamamlanma Durumu Dağılım Grafiği",
+    "description": "Zaman tamamlanma durumu dağılım grafiği başlığı"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Haftalık/Aylık Trend",
+    "description": "Haftalık aylık trend grafik başlığı"
+  },
+  "weekly": {
+    "message": "Haftalık",
+    "description": "Haftalık dönem düğmesi"
+  },
+  "monthly": {
+    "message": "Aylık",
+    "description": "Aylık dönem düğmesi"
+  },
+  "source": {
+    "message": "Kaynak",
+    "description": "Kaynak tablo başlığı"
+  },
+  "low": {
+    "message": "Düşük (0-20%)",
+    "description": "Düşük tamamlanma oranı etiketi"
+  },
+  "mediumLow": {
+    "message": "Orta-Düşük (20-50%)",
+    "description": "Orta-düşük tamamlanma oranı etiketi"
+  },
+  "mediumHigh": {
+    "message": "Orta-Yüksek (50-80%)",
+    "description": "Orta-yüksek tamamlanma oranı etiketi"
+  },
+  "high": {
+    "message": "Yüksek (80-100%)",
+    "description": "Yüksek tamamlanma oranı etiketi"
+  },
+  "taskCost": {
+    "message": "Görev Maliyeti (gün)",
+    "description": "Görev maliyeti eksen etiketi"
+  },
+  "taskImportance": {
+    "message": "Görev Önemi",
+    "description": "Görev önemi eksen etiketi"
+  },
+  "taskCount": {
+    "message": "Görev Sayısı",
+    "description": "Görev sayısı eksen etiketi"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Kadran Görev Zamanı İstatistikleri (Gün):",
+    "description": "Kadran görev zamanı istatistikleri başlığı"
+  },
+  "quadrant": {
+    "message": "Kadran",
+    "description": "Kadran tablo başlığı"
+  },
+  "completedAvg": {
+    "message": "Tamamlandı (Ortalama)",
+    "description": "Tamamlandı ortalama tablo başlığı"
+  },
+  "completedMedian": {
+    "message": "Tamamlandı (Medyan)",
+    "description": "Tamamlandı medyan tablo başlığı"
+  },
+  "inProgressAvg": {
+    "message": "Devam Ediyor (Ortalama)",
+    "description": "Devam ediyor ortalama tablo başlığı"
+  },
+  "inProgressMedian": {
+    "message": "Devam Ediyor (Medyan)",
+    "description": "Devam ediyor medyan tablo başlığı"
+  },
+  "deepInsights": {
+    "message": "Derin İçgörüler",
+    "description": "Derin içgörüler bölüm başlığı"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Şu anda içgörüler oluşturmak için yeterli veri yok.",
+    "description": "İçgörüler için veri yok mesajı"
+  },
+  "importantUrgent": {
+    "message": "Önemli ve Acil",
+    "description": "Q1 kadran etiketi"
+  },
+  "importantNotUrgent": {
+    "message": "Önemli ve Acil Değil",
+    "description": "Q2 kadran etiketi"
+  },
+  "notImportantNotUrgent": {
+    "message": "Önemli Değil ve Acil Değil",
+    "description": "Q3 kadran etiketi"
+  },
+  "notImportantUrgent": {
+    "message": "Önemli Değil ve Acil",
+    "description": "Q4 kadran etiketi"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2 (Önemli ve Acil Değil) kadran görev tamamlanma oranı diğer kadranlardan önemli ölçüde düşük, bu \"acil önemli üzerinde\" yürütme önyargısını yansıtıyor, bu da uzun vadede stratejik hedef gecikmelerine yol açabilir.",
+    "description": "Q2 tamamlanma oranının daha düşük olduğu hakkında içgörü"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3 (Önemli Değil ve Acil Değil) kadran görev tamamlanma oranı çok yüksek, \"verimsiz istihdam\" konusunda dikkatli olun - eğer çok fazla enerji önemsiz görevlere harcanıyorsa, bu ana görevler için zamanı sıkıştırır.",
+    "description": "Q3 tamamlanma oranının çok yüksek olduğu hakkında içgörü"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1 (Önemli ve Acil) kadran görevleri toplam görevlerin $percentage%'ini oluşturuyor, bu görev planlamasında iyileşmeyi gösteriyor, acil durumlardan kaçınmak için önemli görevleri erken ele alın.",
+    "description": "Q1 görevlerinin yüksek yüzdesi hakkında içgörü"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4 (Önemli Değil ve Acil) kadran görevleri toplam görevlerin $percentage%'ini oluşturuyor, bu düşük öncelikli ama acil görevlerin kaynaklarını gözden geçirin, acil durum yanıt süreçlerini optimize edin.",
+    "description": "Q4 görevlerinin yüksek yüzdesi hakkında içgörü"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "\"$source\" görevleri Q1'de (Önemli ve Acil) $q1Rate% tamamlanma oranına ulaşıyor, ancak Q2'de (Önemli ve Acil Değil) sadece $q2Rate%, bu görev yürütme önceliğinin \"dış baskı\" tarafından yönlendirildiğini, iç stratejik odaklanma yerine gösteriyor.",
+    "description": "Kaynak görevlerin Q1 vs Q2 tamamlanma oranları hakkında içgörü"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "\"$source\" görevleri Q4'te (Önemli Değil ve Acil) düşük tamamlanma oranına sahip ($q4Rate%), \"geçici görevlerin\" öncelik tanımı problemi olup olmadığını doğrulamak gerekiyor.",
+    "description": "Q4 görevlerinin düşük tamamlanma oranı hakkında içgörü"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "\"$source\" $quadrant ($quadrantName) kadranında yüksek oranda konsantre, $percentage% oluşturuyor. Görev planlamasını makul olup olmadığı için gözden geçirin.",
+    "description": "Bir kadranda yüksek oranda konsantre olan görevler hakkında içgörü"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "\"$highSource\" $highQuadrant'ta en yüksek tamamlanma oranına sahip ($highRate%), \"$lowSource\" ise $lowQuadrant'ta en düşüğe sahip ($lowRate%), bu farklı görev türleri için işleme önceliğinde açık farklılıkları gösteriyor.",
+    "description": "Kaynaklar arası tamamlanma oranı farklılıkları hakkında içgörü"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (Önemli ve Acil) $percentage% beklemedeki göreve sahip, bunlar 3 günden fazla sürüyor, bu ana görevlerde potansiyel kaynak eksikliği veya beklenmeyen zorlukları gösteriyor. Görev bölümünü veya ek desteği düşünün.",
+    "description": "Q1 beklemedeki görevlerin çok uzun sürdüğü hakkında içgörü"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Q4 (Önemli Değil ve Acil) tamamlanan görevler ortalama $q4Time gün sürüyor, Q2'yi (Önemli ve Acil Değil) $q2Time günle önemli ölçüde aşıyor, bu \"geçici acil görevlerin\" kaynakları aşırı işgal ettiğini gösteriyor. Acil durum yanıt süreçlerini optimize edin.",
+    "description": "Q4 vs Q2 görev tamamlanma süreleri hakkında içgörü"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Beklemedeki görevlerin ortalama işleme süresi ($pendingTime gün) tamamlanan görevlerden ($completedTime gün) önemli ölçüde yüksek. Uzun süre takılı kalan görevlere odaklanın ve gerektiğinde strateji veya kaynak tahsisini ayarlayın.",
+    "description": "Beklemedeki vs tamamlanan görev süreleri hakkında içgörü"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabel görev hacmi $from'dan $to'ya $direction $rate%, önemli dalgalanma gösteriyor. Görev tahsisi dengesine odaklanmayı düşünün.",
+    "description": "Kadran görev hacmi dalgalanması hakkında içgörü"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabel görev tamamlanma oranı sürekli yükselen trend gösteriyor, bu gelişen iş aktivitesini gösteriyor.",
+    "description": "Tamamlanma oranı yükselen trendi hakkında içgörü"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabel görev tamamlanma oranı sürekli düşen trend gösteriyor, bu yürütme aktivitesi problemlerine dikkat gerektiriyor.",
+    "description": "Tamamlanma oranı düşen trendi hakkında içgörü"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2 (Önemli ve Acil Değil) görevleri tamamlanma oranında iyileşme olmadan birikmeye devam ediyor, bu \"stratejik görevlerin\" düzenli yürütme programlarına entegre edilmediğini yansıtıyor, bu \"gecikme birikimi\" riski sunuyor.",
+    "description": "Q2 görevlerinin birikimi hakkında içgörü"
+  }
+}

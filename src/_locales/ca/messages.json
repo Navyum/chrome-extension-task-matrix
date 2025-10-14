@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Gestor de tasques gratuït i eina",
+    "description": "Nom de l'aplicació"
+  },
+  "appDescription": {
+    "message": "Extensió Chrome gratuïta per a tasques intel·ligents. Utilitzeu eines potents i una interfície amigable per visualitzar les vostres tasques",
+    "description": "Descripció de l'aplicació"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Nom de l'aplicació"
+  },
+  "taskManager": {
+    "message": "Gestor de tasques",
+    "description": "Nom del botó del gestor de tasques"
+  },
+  "report": {
+    "message": "Informe",
+    "description": "Nom del botó d'informe"
+  },
+  "settings": {
+    "message": "Configuració",
+    "description": "Nom del botó de configuració"
+  },
+  "help": {
+    "message": "Ajuda",
+    "description": "Nom del botó d'ajuda"
+  },
+  "addTask": {
+    "message": "Afegir tasca",
+    "description": "Nom del botó per afegir tasca"
+  },
+  "close": {
+    "message": "Tancar",
+    "description": "Text del botó de tancar"
+  },
+  "editTask": {
+    "message": "Editar tasca",
+    "description": "Nom de la finestra modal d'edició de tasca"
+  },
+  "newTask": {
+    "message": "Nova",
+    "description": "Estat de tasca nova"
+  },
+  "taskTitle": {
+    "message": "Títol de la tasca *",
+    "description": "Etiqueta del títol de la tasca"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Introduïu el títol de la tasca",
+    "description": "Text de marcador de posició del camp d'entrada del títol de la tasca"
+  },
+  "taskDescription": {
+    "message": "Descripció de la tasca",
+    "description": "Etiqueta de la descripció de la tasca"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Introduïu la descripció de la tasca (opcional)",
+    "description": "Text de marcador de posició del camp d'entrada de la descripció de la tasca"
+  },
+  "importanceLevel": {
+    "message": "Nivell d'importància *",
+    "description": "Etiqueta del nivell d'importància"
+  },
+  "notImportant": {
+    "message": "No important",
+    "description": "Etiqueta no important"
+  },
+  "veryImportant": {
+    "message": "Molt important",
+    "description": "Etiqueta molt important"
+  },
+  "dueDate": {
+    "message": "Data de venciment *",
+    "description": "Etiqueta de la data de venciment"
+  },
+  "taskCategory": {
+    "message": "Categoria de la tasca",
+    "description": "Etiqueta de la categoria de la tasca"
+  },
+  "work": {
+    "message": "Treball",
+    "description": "Categoria de treball"
+  },
+  "personal": {
+    "message": "Personal",
+    "description": "Categoria personal"
+  },
+  "study": {
+    "message": "Estudi",
+    "description": "Categoria d'estudi"
+  },
+  "health": {
+    "message": "Salut",
+    "description": "Categoria de salut"
+  },
+  "other": {
+    "message": "Altres",
+    "description": "Categoria d'altres"
+  },
+  "deleteTask": {
+    "message": "Eliminar tasca",
+    "description": "Botó per eliminar tasca"
+  },
+  "cancel": {
+    "message": "Cancel·lar",
+    "description": "Botó de cancel·lar"
+  },
+  "saveTask": {
+    "message": "Desar tasca",
+    "description": "Botó per desar tasca"
+  },
+  "doing": {
+    "message": "Fent",
+    "description": "Estat fent"
+  },
+  "overdue": {
+    "message": "Vençuda",
+    "description": "Estat vençuda"
+  },
+  "completed": {
+    "message": "Completada",
+    "description": "Estat completada"
+  },
+  "rejected": {
+    "message": "Rebutjada",
+    "description": "Estat rebutjada"
+  },
+  "pending": {
+    "message": "Pendent",
+    "description": "Etiqueta d'estat pendent"
+  },
+  "urgentTaskReminder": {
+    "message": "Recordatori de tasques urgents",
+    "description": "Nom de la secció de recordatori de tasques urgents"
+  },
+  "enableUrgentReminder": {
+    "message": "Activar recordatori urgent",
+    "description": "Casella de verificació per activar recordatori urgent"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Canvieu la icona i recordeu quan s'apropi la data de venciment de la tasca",
+    "description": "Descripció per activar recordatori urgent"
+  },
+  "reminderThreshold": {
+    "message": "Llindar de recordatori (minuts)",
+    "description": "Etiqueta del llindar de recordatori"
+  },
+  "reminderThresholdDesc": {
+    "message": "Inicieu recordatori quan la tasca tingui menys temps que aquest període",
+    "description": "Descripció del llindar de recordatori"
+  },
+  "reminderInterval": {
+    "message": "Interval de recordatori (minuts)",
+    "description": "Etiqueta de l'interval de recordatori"
+  },
+  "reminderIntervalDesc": {
+    "message": "Freqüència de verificació de l'estat de la tasca en segon pla",
+    "description": "Descripció de l'interval de recordatori"
+  },
+  "iconReminder": {
+    "message": "Recordatori d'icona",
+    "description": "Nom de la secció de recordatori d'icona"
+  },
+  "showIconBadge": {
+    "message": "Mostrar distintiu d'icona",
+    "description": "Casella de verificació per mostrar distintiu d'icona"
+  },
+  "showIconBadgeDesc": {
+    "message": "Mostreu el nombre de tasques urgents a la icona de l'extensió",
+    "description": "Descripció per mostrar distintiu d'icona"
+  },
+  "showIconTooltip": {
+    "message": "Mostrar tooltip d'icona",
+    "description": "Casella de verificació per mostrar tooltip d'icona"
+  },
+  "showIconTooltipDesc": {
+    "message": "Mostreu informació del recordatori de tasca en passar el ratolí per sobre de la icona",
+    "description": "Descripció per mostrar tooltip d'icona"
+  },
+  "save": {
+    "message": "Desar",
+    "description": "Botó de desar"
+  },
+  "quickStart": {
+    "message": "🚀 Inici ràpid",
+    "description": "Nom de la secció d'inici ràpid"
+  },
+  "createTask": {
+    "message": "Crear tasca:",
+    "description": "Instrucció per crear tasca"
+  },
+  "createTaskDesc": {
+    "message": "Feu doble clic a l'àrea buida",
+    "description": "Descripció per crear tasca"
+  },
+  "editTaskDesc": {
+    "message": "Editar tasca:",
+    "description": "Instrucció per editar tasca"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Feu doble clic a la tasca existent",
+    "description": "Descripció de la instrucció per editar tasca"
+  },
+  "viewDetails": {
+    "message": "Veure detalls:",
+    "description": "Instrucció per veure detalls"
+  },
+  "viewDetailsDesc": {
+    "message": "Passeu el ratolí per sobre de la tasca",
+    "description": "Descripció per veure detalls"
+  },
+  "taskManagerDesc": {
+    "message": "Gestor de tasques:",
+    "description": "Instrucció del gestor de tasques"
+  },
+  "taskManagerInstruction": {
+    "message": "Feu clic a la icona de llista per veure totes les tasques",
+    "description": "Descripció de la instrucció del gestor de tasques"
+  },
+  "analysisReport": {
+    "message": "Informe d'anàlisi:",
+    "description": "Instrucció d'informe d'anàlisi"
+  },
+  "analysisReportDesc": {
+    "message": "Feu clic a la icona de gràfic per veure insights",
+    "description": "Descripció d'informe d'anàlisi"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Matriu de tasques Eisenhower",
+    "description": "Nom de la secció de matriu Eisenhower"
+  },
+  "q1Title": {
+    "message": "Q1: Important i urgent",
+    "description": "Nom del quadrant Q1"
+  },
+  "q1Desc": {
+    "message": "Feu-ho ara. Tasques crítiques que requereixen atenció immediata.",
+    "description": "Descripció del quadrant Q1"
+  },
+  "q2Title": {
+    "message": "Q2: Important però no urgent",
+    "description": "Nom del quadrant Q2"
+  },
+  "q2Desc": {
+    "message": "Programeu temps. Tasques estratègiques per a planificació a llarg termini.",
+    "description": "Descripció del quadrant Q2"
+  },
+  "q3Title": {
+    "message": "Q3: No important però urgent",
+    "description": "Nom del quadrant Q3"
+  },
+  "q3Desc": {
+    "message": "Delegueu a altres. Interrupcions que altres poden gestionar.",
+    "description": "Descripció del quadrant Q3"
+  },
+  "q4Title": {
+    "message": "Q4: No important i no urgent",
+    "description": "Nom del quadrant Q4"
+  },
+  "q4Desc": {
+    "message": "Elimineu. Desperdici de temps que s'ha d'evitar.",
+    "description": "Descripció del quadrant Q4"
+  },
+  "confirm": {
+    "message": "Confirmar",
+    "description": "Botó de confirmar"
+  },
+  "settingsSaved": {
+    "message": "Configuració desada amb èxit",
+    "description": "Notificació de desar configuració"
+  },
+  "settingsSaveFailed": {
+    "message": "Error al desar configuració",
+    "description": "Notificació d'error de desar configuració"
+  },
+  "allTasksCleared": {
+    "message": "Totes les tasques s'han esborrat",
+    "description": "Missatge d'esborrar totes les tasques"
+  },
+  "settingsApplied": {
+    "message": "Configuració aplicada",
+    "description": "Missatge d'aplicar configuració"
+  },
+  "taskMonitoringStarted": {
+    "message": "Monitoratge de tasques iniciat",
+    "description": "Missatge d'iniciar monitoratge de tasques"
+  },
+  "taskMonitoringStopped": {
+    "message": "Monitoratge de tasques aturat",
+    "description": "Missatge d'aturar monitoratge de tasques"
+  },
+  "taskEditProcessed": {
+    "message": "Edició de tasca processada",
+    "description": "Missatge de processar edició de tasca"
+  },
+  "taskAddProcessed": {
+    "message": "Afegir tasca processat",
+    "description": "Missatge de processar afegir tasca"
+  },
+  "taskDeleteProcessed": {
+    "message": "Eliminar tasca processat",
+    "description": "Missatge de processar eliminar tasca"
+  },
+  "unknownMessageType": {
+    "message": "Tipus de missatge desconegut",
+    "description": "Error de tipus de missatge desconegut"
+  },
+  "openTaskMatrix": {
+    "message": "Obrir TaskMatrix Pro",
+    "description": "Descripció de comando per obrir TaskMatrix Pro"
+  },
+  "ready": {
+    "message": "Llest",
+    "description": "Missatge de preparació"
+  },
+  "initializationFailed": {
+    "message": "Inicialització fallida",
+    "description": "Missatge d'error d'inicialització"
+  },
+  "loading": {
+    "message": "Carregant...",
+    "description": "Missatge de carregament"
+  },
+  "saving": {
+    "message": "Desant...",
+    "description": "Missatge de desar"
+  },
+  "failedToGetFormData": {
+    "message": "Error al obtenir dades del formulari",
+    "description": "Missatge d'error d'obtenir dades del formulari"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Si us plau, introduïu el títol de la tasca",
+    "description": "Advertència quan el títol de la tasca està buit"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Tasca actualitzada amb èxit",
+    "description": "Missatge d'èxit d'actualitzar tasca"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Tasca afegida amb èxit",
+    "description": "Missatge d'èxit d'afegir tasca"
+  },
+  "saveFailed": {
+    "message": "Error al desar",
+    "description": "Missatge d'error de desar"
+  },
+  "taskNotFound": {
+    "message": "Tasca no trobada",
+    "description": "Missatge d'error quan la tasca no es troba"
+  },
+  "failedToEditTask": {
+    "message": "Error al editar tasca",
+    "description": "Missatge d'error d'editar tasca"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Tasca completada amb èxit",
+    "description": "Missatge d'èxit de completar tasca"
+  },
+  "failedToCompleteTask": {
+    "message": "Error al completar tasca",
+    "description": "Missatge d'error de completar tasca"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Esteu segurs que voleu eliminar aquesta tasca? Aquesta acció no es pot desfer.",
+    "description": "Missatge de confirmació per eliminar tasca"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Tasca eliminada amb èxit",
+    "description": "Missatge d'èxit d'eliminar tasca"
+  },
+  "failedToDeleteTask": {
+    "message": "Error al eliminar tasca",
+    "description": "Missatge d'error d'eliminar tasca"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Configuració desada amb èxit",
+    "description": "Missatge d'èxit de desar configuració"
+  },
+  "failedToSaveSettings": {
+    "message": "Error al desar configuració",
+    "description": "Missatge d'error de desar configuració"
+  },
+  "loadingDataFailed": {
+    "message": "Error al carregar dades",
+    "description": "Missatge d'error de carregar dades"
+  },
+  "noTaskFound": {
+    "message": "No s'ha trobat cap tasca",
+    "description": "Missatge d'estat buit quan no es troben tasques"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Feu clic a la icona més per afegir la vostra primera tasca",
+    "description": "Instrucció per afegir primera tasca en estat buit"
+  },
+  "allCaughtUp": {
+    "message": "Tot actualitzat!",
+    "description": "Missatge d'estat buit sense tasques vençudes"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "No hi ha tasques vençudes. Bon treball mantenint tot en ordre!",
+    "description": "Missatge d'estat buit sense tasques vençudes"
+  },
+  "noCompletedTasks": {
+    "message": "No hi ha tasques completades",
+    "description": "Missatge d'estat buit sense tasques completades"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Feu doble clic a la tasca i feu clic a l'etiqueta d'estat per marcar la tasca com completada",
+    "description": "Instrucció per marcar tasca com completada"
+  },
+  "noRejectedTasks": {
+    "message": "No hi ha tasques rebutjades",
+    "description": "Missatge d'estat buit sense tasques rebutjades"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Feu doble clic a la tasca i feu doble clic a l'etiqueta d'estat per marcar la tasca com rebutjada",
+    "description": "Instrucció per marcar tasca com rebutjada"
+  },
+  "task": {
+    "message": "Tasca:",
+    "description": "Prefix d'etiqueta de tasca"
+  },
+  "importance": {
+    "message": "Importància:",
+    "description": "Etiqueta d'importància"
+  },
+  "noData": {
+    "message": "Sense dades",
+    "description": "Missatge quan no hi ha dades al gràfic"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "No hi ha prou dades per crear mapa de calor",
+    "description": "Missatge quan no hi ha prou dades per mapa de calor"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "No hi ha prou dades de tasca per crear gràfic de dispersió",
+    "description": "Missatge quan no hi ha prou dades de tasca per gràfic de dispersió"
+  },
+  "bytes": {
+    "message": "bytes",
+    "description": "Unitat de bytes"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Unitat de kilobytes"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Unitat de megabytes"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Unitat de gigabytes"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Unitat de terabytes"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Freqüència de verificació de l'estat de la tasca en segon pla",
+    "description": "Descripció de la freqüència de verificació de l'estat de la tasca"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Mostreu el nombre de tasques urgents a la icona de l'extensió",
+    "description": "Descripció de configuració de distintiu d'icona"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Mostreu informació del recordatori de tasca en passar el ratolí per sobre de la icona",
+    "description": "Descripció de configuració de capçalera d'icona"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Feu doble clic a l'àrea buida",
+    "description": "Instrucció per crear tasca"
+  },
+  "editTaskInstruction": {
+    "message": "Editar tasca:",
+    "description": "Instrucció per editar tasca"
+  },
+  "hoverOverTask": {
+    "message": "Passeu el ratolí per sobre de la tasca",
+    "description": "Instrucció per veure detalls de la tasca"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Feu clic a la icona de llista per veure totes les tasques",
+    "description": "Instrucció d'accés al gestor de tasques"
+  },
+  "clickChartIconForInsights": {
+    "message": "Feu clic a la icona de gràfic per veure insights",
+    "description": "Instrucció d'accés a l'informe d'anàlisi"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Matriu de tasques Eisenhower",
+    "description": "Nom de la secció de matriu de tasques Eisenhower"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Important i urgent",
+    "description": "Nom del quadrant Q1"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Feu-ho ara. Tasques crítiques que requereixen atenció immediata.",
+    "description": "Descripció del quadrant Q1"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Important però no urgent",
+    "description": "Nom del quadrant Q2"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Programeu temps. Tasques estratègiques per a planificació a llarg termini.",
+    "description": "Descripció del quadrant Q2"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: No important però urgent",
+    "description": "Nom del quadrant Q3"
+  },
+  "delegateItInterruptions": {
+    "message": "Delegueu a altres. Interrupcions que altres poden gestionar.",
+    "description": "Descripció del quadrant Q3"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: No important i no urgent",
+    "description": "Nom del quadrant Q4"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Elimineu. Desperdici de temps que s'ha d'evitar.",
+    "description": "Descripció del quadrant Q4"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Inicieu recordatori urgent quan la tasca tingui menys temps que aquest període",
+    "description": "Descripció de configuració de llindar de recordatori urgent"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Canvieu la icona i recordeu quan s'apropi la data de venciment de la tasca",
+    "description": "Descripció de configuració de recordatori urgent"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Activar recordatori de tasca urgent",
+    "description": "Etiqueta de casella de verificació per activar recordatori de tasca urgent"
+  },
+  "invalidDueDate": {
+    "message": "Data de venciment no vàlida",
+    "description": "Missatge d'error de data de venciment no vàlida"
+  },
+  "dueAt": {
+    "message": "Venciment",
+    "description": "Prefix per tasques que vençen en una data específica"
+  },
+  "dueIn": {
+    "message": "Venciment en",
+    "description": "Prefix per tasques que vençen en un temps específic"
+  },
+  "completionRate": {
+    "message": "Taxa de finalització",
+    "description": "Nom de la targeta de taxa de finalització"
+  },
+  "timeStatus": {
+    "message": "Temps-estat",
+    "description": "Nom de la targeta de temps-estat"
+  },
+  "timeTrend": {
+    "message": "Tendència temporal",
+    "description": "Nom de la targeta de tendència temporal"
+  },
+  "sourceCross": {
+    "message": "Font-creu",
+    "description": "Nom de la targeta de font-creu"
+  },
+  "completionRateQuantity": {
+    "message": "Taxa de finalització - Quantitat",
+    "description": "Nom del gràfic de taxa de finalització"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Font de tasca - Taxa de finalització",
+    "description": "Nom del gràfic de taxa de finalització de font de tasca"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Temps - Estat de finalització gràfic de dispersió",
+    "description": "Nom del gràfic de dispersió de temps-estat de finalització"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Tendència setmanal/mensual",
+    "description": "Nom del gràfic de tendència setmanal/mensual"
+  },
+  "weekly": {
+    "message": "Setmanal",
+    "description": "Botó de marc temporal setmanal"
+  },
+  "monthly": {
+    "message": "Mensual",
+    "description": "Botó de marc temporal mensual"
+  },
+  "source": {
+    "message": "Font",
+    "description": "Nom de la taula de font"
+  },
+  "low": {
+    "message": "Baix (0-20%)",
+    "description": "Etiqueta de taxa de finalització baixa"
+  },
+  "mediumLow": {
+    "message": "Mitjà-baix (20-50%)",
+    "description": "Etiqueta de taxa de finalització mitjà-baixa"
+  },
+  "mediumHigh": {
+    "message": "Mitjà-alt (50-80%)",
+    "description": "Etiqueta de taxa de finalització mitjà-alta"
+  },
+  "high": {
+    "message": "Alt (80-100%)",
+    "description": "Etiqueta de taxa de finalització alta"
+  },
+  "taskCost": {
+    "message": "Cost de la tasca (dies)",
+    "description": "Etiqueta de l'eix de cost de la tasca"
+  },
+  "taskImportance": {
+    "message": "Importància de la tasca",
+    "description": "Etiqueta de l'eix d'importància de la tasca"
+  },
+  "taskCount": {
+    "message": "Nombre de tasques",
+    "description": "Etiqueta de l'eix de nombre de tasques"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Estadístiques de temps de tasques de quadrant (dies):",
+    "description": "Nom de les estadístiques de temps de tasques de quadrant"
+  },
+  "quadrant": {
+    "message": "Quadrant",
+    "description": "Nom de la taula de quadrant"
+  },
+  "completedAvg": {
+    "message": "Completada (mitjana)",
+    "description": "Nom de la taula de mitjana de completades"
+  },
+  "completedMedian": {
+    "message": "Completada (mediana)",
+    "description": "Nom de la taula de mediana de completades"
+  },
+  "inProgressAvg": {
+    "message": "En progrés (mitjana)",
+    "description": "Nom de la taula de mitjana en progrés"
+  },
+  "inProgressMedian": {
+    "message": "En progrés (mediana)",
+    "description": "Nom de la taula de mediana en progrés"
+  },
+  "deepInsights": {
+    "message": "Insights profunds",
+    "description": "Nom de la secció d'insights profunds"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Actualment no hi ha prou dades per crear insights.",
+    "description": "Missatge quan no hi ha dades per insights"
+  },
+  "importantUrgent": {
+    "message": "Important i urgent",
+    "description": "Etiqueta del quadrant Q1"
+  },
+  "importantNotUrgent": {
+    "message": "Important però no urgent",
+    "description": "Etiqueta del quadrant Q2"
+  },
+  "notImportantNotUrgent": {
+    "message": "No important i no urgent",
+    "description": "Etiqueta del quadrant Q3"
+  },
+  "notImportantUrgent": {
+    "message": "No important però urgent",
+    "description": "Etiqueta del quadrant Q4"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "El quadrant Q2 (important però no urgent) té una taxa de finalització de tasques significativament menor que altres quadrants, reflectint el biaix executiu de «urgent és més important que important», que pot portar a retard en objectius estratègics a llarg termini.",
+    "description": "Insight sobre la menor taxa de finalització de Q2"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "El quadrant Q3 (no important i no urgent) té una taxa de finalització de tasques massa alta, si us plau, centreu-vos en «ocupació ineficient» - si es gasta massa energia en tasques ordinàries, això redueix el temps per a tasques importants.",
+    "description": "Insight sobre la taxa de finalització massa alta de Q3"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "El quadrant Q1 (important i urgent) representa $percentage% de totes les tasques, mostrant millora en la planificació de tasques resolent ràpidament tasques importants per prevenir situacions urgents.",
+    "description": "Insight sobre l'alt percentatge de tasques de Q1"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "El quadrant Q4 (no important però urgent) representa $percentage% de totes les tasques, si us plau, reviseu les fonts d'aquestes tasques de baixa prioritat però urgents i optimitzeu el procés de resposta a casos urgents.",
+    "description": "Insight sobre l'alt percentatge de tasques de Q4"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "Les tasques «$source» aconsegueixen una taxa de finalització de $q1Rate% en Q1 (important i urgent), però només $q2Rate% en Q2 (important però no urgent), mostrant que la prioritat d'execució de tasques està controlada per «pressió externa», no per focus estratègic intern.",
+    "description": "Insight sobre la taxa de finalització de tasques de font Q1 vs Q2"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "Les tasques «$source» tenen una taxa de finalització baixa ($q4Rate%) en Q4 (no important però urgent), si us plau, verifiqueu si hi ha un problema en la definició de prioritat de «tasques temporals».",
+    "description": "Insight sobre la taxa de finalització baixa de tasques de Q4"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "«$source» està altament concentrat en el quadrant $quadrant ($quadrantName), representant $percentage%. Si us plau, reviseu la racionalitat de la planificació de tasques.",
+    "description": "Insight sobre l'alta concentració de tasques en un quadrant"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "«$highSource» té la taxa de finalització més alta ($highRate%) en $highQuadrant, «$lowSource» té la més baixa ($lowRate%) en $lowQuadrant, mostrant una clara diferència en les prioritats de processament de diferents tipus de tasques.",
+    "description": "Insight sobre la diferència de taxa de finalització entre fonts"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "$percentage% de tasques en Q1 (important i urgent) estan pendents durant més de 3 dies, mostrant possible escassetat de recursos per a tasques importants o dificultats inesperades. Si us plau, considereu la divisió de tasques o suport addicional.",
+    "description": "Insight sobre l'alt temps gastat en tasques pendents de Q1"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "El temps mitjà de finalització de tasques completades de Q4 (no important però urgent) és $q4Time dies, superant significativament els $q2Time dies de Q2 (important però no urgent), mostrant que «tasques urgents temporals» estan utilitzant més recursos. Si us plau, optimitzeu el procés de resposta a casos urgents.",
+    "description": "Insight sobre el temps de finalització de Q4 vs Q2"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "El temps mitjà de processament de tasques pendents ($pendingTime dies) és significativament més alt que les tasques completades ($completedTime dies). Si us plau, centreu-vos en tasques que han estat pendents durant molt temps i ajusteu l'estratègia o l'assignació de recursos segons sigui necessari.",
+    "description": "Insight sobre el temps de tasques pendents vs completades"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "El volum de tasques de $quadrantLabel ha fluctuat de $from a $to per $direction $rate%, mostrant fluctuacions significatives. Si us plau, centreu-vos en l'equilibri de l'assignació de tasques.",
+    "description": "Insight sobre la fluctuació del volum de tasques de quadrant"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "La taxa de finalització de tasques de $quadrantLabel mostra una tendència estable d'augment, mostrant millora en l'activitat laboral.",
+    "description": "Insight sobre la tendència d'augment de la taxa de finalització"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "La taxa de finalització de tasques de $quadrantLabel mostra una tendència estable de disminució, requerint atenció en problemes d'activitat executiva.",
+    "description": "Insight sobre la tendència de disminució de la taxa de finalització"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Les tasques de Q2 (important però no urgent) continuen acumulant-se sense millora en la taxa de finalització, reflectint que «tasques estratègiques» no estan integrades en el pla d'execució ordinari, portant risc d'«acumulació de retards».",
+    "description": "Insight sobre l'acumulació de tasques de Q2"
+  }
+}

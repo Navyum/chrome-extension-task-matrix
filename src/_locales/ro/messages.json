@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Manager de sarcini gratuit și instrument",
+    "description": "Numele aplicației"
+  },
+  "appDescription": {
+    "message": "Extensie Chrome gratuită pentru sarcini inteligente. Folosește instrumente puternice și interfață prietenoasă pentru a vizualiza sarcinile tale",
+    "description": "Descrierea aplicației"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Titlul aplicației"
+  },
+  "taskManager": {
+    "message": "Manager de sarcini",
+    "description": "Titlul butonului manager de sarcini"
+  },
+  "report": {
+    "message": "Raport",
+    "description": "Titlul butonului raport"
+  },
+  "settings": {
+    "message": "Setări",
+    "description": "Titlul butonului setări"
+  },
+  "help": {
+    "message": "Ajutor",
+    "description": "Titlul butonului ajutor"
+  },
+  "addTask": {
+    "message": "Adaugă sarcină",
+    "description": "Titlul butonului adăugare sarcină"
+  },
+  "close": {
+    "message": "Închide",
+    "description": "Textul butonului închidere"
+  },
+  "editTask": {
+    "message": "Editează sarcina",
+    "description": "Titlul ferestrei modale de editare sarcină"
+  },
+  "newTask": {
+    "message": "Nou",
+    "description": "Statusul sarcinii noi"
+  },
+  "taskTitle": {
+    "message": "Titlul sarcinii *",
+    "description": "Eticheta titlului sarcinii"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Introdu titlul sarcinii",
+    "description": "Textul placeholder pentru câmpul de introducere titlu sarcină"
+  },
+  "taskDescription": {
+    "message": "Descrierea sarcinii",
+    "description": "Eticheta descrierii sarcinii"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Introdu descrierea sarcinii (opțional)",
+    "description": "Textul placeholder pentru câmpul de introducere descriere sarcină"
+  },
+  "importanceLevel": {
+    "message": "Nivelul de importanță *",
+    "description": "Eticheta nivelului de importanță"
+  },
+  "notImportant": {
+    "message": "Nu este important",
+    "description": "Eticheta nu este important"
+  },
+  "veryImportant": {
+    "message": "Foarte important",
+    "description": "Eticheta foarte important"
+  },
+  "dueDate": {
+    "message": "Data limită *",
+    "description": "Eticheta datei limite"
+  },
+  "taskCategory": {
+    "message": "Categoria sarcinii",
+    "description": "Eticheta categoriei sarcinii"
+  },
+  "work": {
+    "message": "Muncă",
+    "description": "Categoria muncă"
+  },
+  "personal": {
+    "message": "Personal",
+    "description": "Categoria personal"
+  },
+  "study": {
+    "message": "Studiu",
+    "description": "Categoria studiu"
+  },
+  "health": {
+    "message": "Sănătate",
+    "description": "Categoria sănătate"
+  },
+  "other": {
+    "message": "Altele",
+    "description": "Categoria altele"
+  },
+  "deleteTask": {
+    "message": "Șterge sarcina",
+    "description": "Butonul de ștergere sarcină"
+  },
+  "cancel": {
+    "message": "Anulează",
+    "description": "Butonul de anulare"
+  },
+  "saveTask": {
+    "message": "Salvează sarcina",
+    "description": "Butonul de salvare sarcină"
+  },
+  "doing": {
+    "message": "În desfășurare",
+    "description": "Statusul în desfășurare"
+  },
+  "overdue": {
+    "message": "Întârziat",
+    "description": "Statusul întârziat"
+  },
+  "completed": {
+    "message": "Completat",
+    "description": "Statusul completat"
+  },
+  "rejected": {
+    "message": "Respins",
+    "description": "Statusul respins"
+  },
+  "pending": {
+    "message": "În așteptare",
+    "description": "Eticheta statusului în așteptare"
+  },
+  "urgentTaskReminder": {
+    "message": "Memento pentru sarcini urgente",
+    "description": "Titlul secțiunii memento pentru sarcini urgente"
+  },
+  "enableUrgentReminder": {
+    "message": "Activează memento pentru sarcini urgente",
+    "description": "Caseta de selectare pentru activarea memento sarcini urgente"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Amintește prin schimbarea iconiței când sarcina se apropie de termen",
+    "description": "Descrierea activării memento pentru sarcini urgente"
+  },
+  "reminderThreshold": {
+    "message": "Pragul de memento (minute)",
+    "description": "Eticheta pragului de memento"
+  },
+  "reminderThresholdDesc": {
+    "message": "Activează memento când rămâne mai puțin de această durată până la sarcină",
+    "description": "Descrierea pragului de memento"
+  },
+  "reminderInterval": {
+    "message": "Intervalul de memento (minute)",
+    "description": "Eticheta intervalului de memento"
+  },
+  "reminderIntervalDesc": {
+    "message": "Frecvența verificării statusului sarcinilor în fundal",
+    "description": "Descrierea intervalului de memento"
+  },
+  "iconReminder": {
+    "message": "Memento iconiță",
+    "description": "Titlul secțiunii memento iconiță"
+  },
+  "showIconBadge": {
+    "message": "Afișează insigna iconiței",
+    "description": "Caseta de selectare pentru afișarea insignei iconiței"
+  },
+  "showIconBadgeDesc": {
+    "message": "Afișează numărul de sarcini urgente pe iconița extensiei",
+    "description": "Descrierea afișării insignei iconiței"
+  },
+  "showIconTooltip": {
+    "message": "Afișează tooltip-ul iconiței",
+    "description": "Caseta de selectare pentru afișarea tooltip-ului iconiței"
+  },
+  "showIconTooltipDesc": {
+    "message": "Afișează informațiile de memento pentru sarcini când treci cu mouse-ul peste iconiță",
+    "description": "Descrierea afișării tooltip-ului iconiței"
+  },
+  "save": {
+    "message": "Salvează",
+    "description": "Butonul de salvare"
+  },
+  "quickStart": {
+    "message": "🚀 Start rapid",
+    "description": "Titlul secțiunii start rapid"
+  },
+  "createTask": {
+    "message": "Creează sarcină:",
+    "description": "Instrucțiunea de creare sarcină"
+  },
+  "createTaskDesc": {
+    "message": "Dublu click pe zona goală",
+    "description": "Descrierea creării sarcinii"
+  },
+  "editTaskDesc": {
+    "message": "Editează sarcina:",
+    "description": "Instrucțiunea de editare sarcină"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Dublu click pe sarcina existentă",
+    "description": "Descrierea instrucțiunii de editare sarcină"
+  },
+  "viewDetails": {
+    "message": "Vezi detaliile:",
+    "description": "Instrucțiunea de vizualizare detalii"
+  },
+  "viewDetailsDesc": {
+    "message": "Treci cu mouse-ul peste sarcină",
+    "description": "Descrierea vizualizării detaliilor"
+  },
+  "taskManagerDesc": {
+    "message": "Manager de sarcini:",
+    "description": "Instrucțiunea manager de sarcini"
+  },
+  "taskManagerInstruction": {
+    "message": "Apasă iconița listei pentru a vedea toate sarcinile",
+    "description": "Descrierea instrucțiunii manager de sarcini"
+  },
+  "analysisReport": {
+    "message": "Raport de analiză:",
+    "description": "Instrucțiunea raport de analiză"
+  },
+  "analysisReportDesc": {
+    "message": "Apasă iconița graficului pentru a vedea insight-urile",
+    "description": "Descrierea raportului de analiză"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Matricea sarcinilor Eisenhower",
+    "description": "Titlul secțiunii matricei Eisenhower"
+  },
+  "q1Title": {
+    "message": "Q1: Important și urgent",
+    "description": "Titlul cadranului Q1"
+  },
+  "q1Desc": {
+    "message": "Fă-o acum. Sarcini critice care necesită atenție imediată.",
+    "description": "Descrierea cadranului Q1"
+  },
+  "q2Title": {
+    "message": "Q2: Important dar nu urgent",
+    "description": "Titlul cadranului Q2"
+  },
+  "q2Desc": {
+    "message": "Programează timp. Sarcini strategice pentru planificare pe termen lung.",
+    "description": "Descrierea cadranului Q2"
+  },
+  "q3Title": {
+    "message": "Q3: Nu este important dar urgent",
+    "description": "Titlul cadranului Q3"
+  },
+  "q3Desc": {
+    "message": "Deleagă altora. Intreruperi care pot fi gestionate de alții.",
+    "description": "Descrierea cadranului Q3"
+  },
+  "q4Title": {
+    "message": "Q4: Nu este important și nu este urgent",
+    "description": "Titlul cadranului Q4"
+  },
+  "q4Desc": {
+    "message": "Elimină. Pierderi de timp care ar trebui evitate.",
+    "description": "Descrierea cadranului Q4"
+  },
+  "confirm": {
+    "message": "Confirmă",
+    "description": "Butonul de confirmare"
+  },
+  "settingsSaved": {
+    "message": "Setările au fost salvate cu succes",
+    "description": "Notificarea de salvare setări"
+  },
+  "settingsSaveFailed": {
+    "message": "Salvarea setărilor a eșuat",
+    "description": "Notificarea de eroare la salvarea setărilor"
+  },
+  "allTasksCleared": {
+    "message": "Toate sarcinile au fost șterse",
+    "description": "Mesajul de ștergere a tuturor sarcinilor"
+  },
+  "settingsApplied": {
+    "message": "Setările au fost aplicate",
+    "description": "Mesajul de aplicare setări"
+  },
+  "taskMonitoringStarted": {
+    "message": "Monitorizarea sarcinilor a început",
+    "description": "Mesajul de începere monitorizare sarcini"
+  },
+  "taskMonitoringStopped": {
+    "message": "Monitorizarea sarcinilor s-a oprit",
+    "description": "Mesajul de oprire monitorizare sarcini"
+  },
+  "taskEditProcessed": {
+    "message": "Editarea sarcinii a fost procesată",
+    "description": "Mesajul de procesare editare sarcină"
+  },
+  "taskAddProcessed": {
+    "message": "Adăugarea sarcinii a fost procesată",
+    "description": "Mesajul de procesare adăugare sarcină"
+  },
+  "taskDeleteProcessed": {
+    "message": "Ștergerea sarcinii a fost procesată",
+    "description": "Mesajul de procesare ștergere sarcină"
+  },
+  "unknownMessageType": {
+    "message": "Tip de mesaj necunoscut",
+    "description": "Eroarea tipului de mesaj necunoscut"
+  },
+  "openTaskMatrix": {
+    "message": "Deschide TaskMatrix Pro",
+    "description": "Descrierea comenzii de deschidere TaskMatrix Pro"
+  },
+  "ready": {
+    "message": "Gata",
+    "description": "Mesajul de gata"
+  },
+  "initializationFailed": {
+    "message": "Inițializarea a eșuat",
+    "description": "Mesajul de eroare la inițializare"
+  },
+  "loading": {
+    "message": "Se încarcă...",
+    "description": "Mesajul de încărcare"
+  },
+  "saving": {
+    "message": "Se salvează...",
+    "description": "Mesajul de salvare"
+  },
+  "failedToGetFormData": {
+    "message": "Nu s-au putut obține datele formularului",
+    "description": "Mesajul de eroare la obținerea datelor formularului"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Te rog introdu titlul sarcinii",
+    "description": "Mesajul de avertizare când titlul sarcinii este gol"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Sarcina a fost actualizată cu succes",
+    "description": "Mesajul de succes la actualizarea sarcinii"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Sarcina a fost adăugată cu succes",
+    "description": "Mesajul de succes la adăugarea sarcinii"
+  },
+  "saveFailed": {
+    "message": "Salvarea a eșuat",
+    "description": "Mesajul de eroare la salvare"
+  },
+  "taskNotFound": {
+    "message": "Sarcina nu a fost găsită",
+    "description": "Mesajul de eroare când sarcina nu este găsită"
+  },
+  "failedToEditTask": {
+    "message": "Editarea sarcinii a eșuat",
+    "description": "Mesajul de eroare la editarea sarcinii"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Sarcina a fost completată cu succes",
+    "description": "Mesajul de succes la completarea sarcinii"
+  },
+  "failedToCompleteTask": {
+    "message": "Completarea sarcinii a eșuat",
+    "description": "Mesajul de eroare la completarea sarcinii"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Ești sigur că vrei să ștergi această sarcină? Această acțiune nu poate fi anulată.",
+    "description": "Mesajul de confirmare pentru ștergerea sarcinii"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Sarcina a fost ștearsă cu succes",
+    "description": "Mesajul de succes la ștergerea sarcinii"
+  },
+  "failedToDeleteTask": {
+    "message": "Ștergerea sarcinii a eșuat",
+    "description": "Mesajul de eroare la ștergerea sarcinii"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Setările au fost salvate cu succes",
+    "description": "Mesajul de succes la salvarea setărilor"
+  },
+  "failedToSaveSettings": {
+    "message": "Salvarea setărilor a eșuat",
+    "description": "Mesajul de eroare la salvarea setărilor"
+  },
+  "loadingDataFailed": {
+    "message": "Încărcarea datelor a eșuat",
+    "description": "Mesajul de eroare la încărcarea datelor"
+  },
+  "noTaskFound": {
+    "message": "Nu a fost găsită nicio sarcină",
+    "description": "Mesajul de stare goală când nu sunt găsite sarcini"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Apasă iconița plus pentru a adăuga prima ta sarcină",
+    "description": "Instrucțiunea de adăugare a primei sarcini pentru starea goală"
+  },
+  "allCaughtUp": {
+    "message": "Totul este la zi!",
+    "description": "Mesajul de stare goală când nu sunt sarcini întârziate"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Nu sunt sarcini întârziate. Treabă excelentă în menținerea tuturor în ordine!",
+    "description": "Mesajul de stare goală când nu sunt sarcini întârziate"
+  },
+  "noCompletedTasks": {
+    "message": "Nu sunt sarcini completate",
+    "description": "Mesajul de stare goală când nu sunt sarcini completate"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Dublu click pe sarcină și apasă eticheta de status pentru a marca ca completată",
+    "description": "Instrucțiunea de marcare a sarcinii ca completată"
+  },
+  "noRejectedTasks": {
+    "message": "Nu sunt sarcini respinse",
+    "description": "Mesajul de stare goală când nu sunt sarcini respinse"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Dublu click pe sarcină și apasă de două ori eticheta de status pentru a marca ca respinsă",
+    "description": "Instrucțiunea de marcare a sarcinii ca respinsă"
+  },
+  "task": {
+    "message": "Sarcină:",
+    "description": "Prefixul etichetei sarcinii"
+  },
+  "importance": {
+    "message": "Importanță:",
+    "description": "Eticheta importanței"
+  },
+  "noData": {
+    "message": "Nu sunt date",
+    "description": "Mesajul când nu sunt date în grafic"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Nu sunt suficiente date pentru a genera harta termică",
+    "description": "Mesajul când nu sunt suficiente date pentru harta termică"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Nu sunt suficiente date de sarcini pentru a genera graficul de dispersie",
+    "description": "Mesajul când nu sunt suficiente date de sarcini pentru graficul de dispersie"
+  },
+  "bytes": {
+    "message": "octeți",
+    "description": "Unitatea octeți"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Unitatea kiloocteți"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Unitatea megaocteți"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Unitatea gigaocteți"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Unitatea teraocteți"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Frecvența verificării statusului sarcinilor în fundal",
+    "description": "Descrierea frecvenței verificării statusului sarcinilor"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Afișează numărul de sarcini urgente pe iconița extensiei",
+    "description": "Descrierea setării insignei iconiței"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Afișează informațiile de memento pentru sarcini când treci cu mouse-ul peste iconiță",
+    "description": "Descrierea setării titlului iconiței"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Dublu click pe zona goală",
+    "description": "Instrucțiunea de creare sarcină"
+  },
+  "editTaskInstruction": {
+    "message": "Editează sarcina:",
+    "description": "Instrucțiunea de editare sarcină"
+  },
+  "hoverOverTask": {
+    "message": "Treci cu mouse-ul peste sarcină",
+    "description": "Instrucțiunea de afișare detalii sarcină"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Apasă iconița listei pentru a vedea toate sarcinile",
+    "description": "Instrucțiunea de acces la manager de sarcini"
+  },
+  "clickChartIconForInsights": {
+    "message": "Apasă iconița graficului pentru a vedea insight-urile",
+    "description": "Instrucțiunea de acces la raport de analiză"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Matricea sarcinilor Eisenhower",
+    "description": "Titlul secțiunii matricei sarcinilor Eisenhower"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Important și urgent",
+    "description": "Titlul cadranului Q1"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Fă-o acum. Sarcini critice care necesită atenție imediată.",
+    "description": "Descrierea cadranului Q1"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Important dar nu urgent",
+    "description": "Titlul cadranului Q2"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Programează timp. Sarcini strategice pentru planificare pe termen lung.",
+    "description": "Descrierea cadranului Q2"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Nu este important dar urgent",
+    "description": "Titlul cadranului Q3"
+  },
+  "delegateItInterruptions": {
+    "message": "Deleagă altora. Intreruperi care pot fi gestionate de alții.",
+    "description": "Descrierea cadranului Q3"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Nu este important și nu este urgent",
+    "description": "Titlul cadranului Q4"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Elimină. Pierderi de timp care ar trebui evitate.",
+    "description": "Descrierea cadranului Q4"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Activează memento când rămâne mai puțin de această durată până la sarcină",
+    "description": "Descrierea setării pragului memento urgent"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Amintește prin schimbarea iconiței când sarcina se apropie de termen",
+    "description": "Descrierea setării memento urgent"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Activează memento pentru sarcini urgente",
+    "description": "Eticheta casetei de selectare pentru activarea memento sarcini urgente"
+  },
+  "invalidDueDate": {
+    "message": "Data limită invalidă",
+    "description": "Mesajul de eroare pentru data limită invalidă"
+  },
+  "dueAt": {
+    "message": "Termen la",
+    "description": "Prefixul pentru sarcinile cu termen la o anumită dată"
+  },
+  "dueIn": {
+    "message": "Termen în",
+    "description": "Prefixul pentru sarcinile cu termen într-un anumit timp"
+  },
+  "completionRate": {
+    "message": "Rata de completare",
+    "description": "Titlul tab-ului ratei de completare"
+  },
+  "timeStatus": {
+    "message": "Timp-Status",
+    "description": "Titlul tab-ului timp-status"
+  },
+  "timeTrend": {
+    "message": "Tendința timpului",
+    "description": "Titlul tab-ului tendinței timpului"
+  },
+  "sourceCross": {
+    "message": "Sursă-Încrucișat",
+    "description": "Titlul tab-ului sursă-încrucișat"
+  },
+  "completionRateQuantity": {
+    "message": "Rata de completare - Cantitate",
+    "description": "Titlul graficului ratei de completare"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Sursa sarcinii - Rata de completare",
+    "description": "Titlul graficului ratei de completare a sursei sarcinii"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Timp - Grafic de dispersie status completare",
+    "description": "Titlul graficului de dispersie timp-status completare"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Tendința săptămânală/lunară",
+    "description": "Titlul graficului tendinței săptămânale/lunare"
+  },
+  "weekly": {
+    "message": "Săptămânal",
+    "description": "Butonul perioadei săptămânale"
+  },
+  "monthly": {
+    "message": "Lunar",
+    "description": "Butonul perioadei lunare"
+  },
+  "source": {
+    "message": "Sursă",
+    "description": "Titlul tabelului sursă"
+  },
+  "low": {
+    "message": "Scăzut (0-20%)",
+    "description": "Eticheta ratei de completare scăzute"
+  },
+  "mediumLow": {
+    "message": "Mediu-scăzut (20-50%)",
+    "description": "Eticheta ratei de completare mediu-scăzute"
+  },
+  "mediumHigh": {
+    "message": "Mediu-înalt (50-80%)",
+    "description": "Eticheta ratei de completare mediu-înalte"
+  },
+  "high": {
+    "message": "Înalt (80-100%)",
+    "description": "Eticheta ratei de completare înalte"
+  },
+  "taskCost": {
+    "message": "Costul sarcinii (zile)",
+    "description": "Eticheta axei costului sarcinii"
+  },
+  "taskImportance": {
+    "message": "Importanța sarcinii",
+    "description": "Eticheta axei importanței sarcinii"
+  },
+  "taskCount": {
+    "message": "Numărul de sarcini",
+    "description": "Eticheta axei numărului de sarcini"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Statisticile timpului sarcinilor cadranului (zile):",
+    "description": "Titlul statisticilor timpului sarcinilor cadranului"
+  },
+  "quadrant": {
+    "message": "Cadran",
+    "description": "Titlul tabelului cadran"
+  },
+  "completedAvg": {
+    "message": "Completat (medie)",
+    "description": "Titlul tabelului completat medie"
+  },
+  "completedMedian": {
+    "message": "Completat (mediană)",
+    "description": "Titlul tabelului completat mediană"
+  },
+  "inProgressAvg": {
+    "message": "În desfășurare (medie)",
+    "description": "Titlul tabelului în desfășurare medie"
+  },
+  "inProgressMedian": {
+    "message": "În desfășurare (mediană)",
+    "description": "Titlul tabelului în desfășurare mediană"
+  },
+  "deepInsights": {
+    "message": "Insight-uri profunde",
+    "description": "Titlul secțiunii insight-uri profunde"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "În prezent nu sunt suficiente date pentru a genera insight-uri.",
+    "description": "Mesajul când nu sunt date pentru insight-uri"
+  },
+  "importantUrgent": {
+    "message": "Important și urgent",
+    "description": "Eticheta cadranului Q1"
+  },
+  "importantNotUrgent": {
+    "message": "Important dar nu urgent",
+    "description": "Eticheta cadranului Q2"
+  },
+  "notImportantNotUrgent": {
+    "message": "Nu este important și nu este urgent",
+    "description": "Eticheta cadranului Q3"
+  },
+  "notImportantUrgent": {
+    "message": "Nu este important dar urgent",
+    "description": "Eticheta cadranului Q4"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Rata de completare a sarcinilor cadranului Q2 (important dar nu urgent) este semnificativ mai mică decât celelalte cadrane, reflectând prejudecata executivă «urgent mai important decât important», care poate duce la întârzierea obiectivelor strategice pe termen lung.",
+    "description": "Insight despre rata de completare mai mică a Q2"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Rata de completare a sarcinilor cadranului Q3 (nu este important și nu este urgent) este prea mare, te rog să fii atent la «ocuparea ineficientă» - dacă prea multă energie este cheltuită pe sarcini mărunte, aceasta comprimă timpul pentru sarcinile de bază.",
+    "description": "Insight despre rata de completare prea mare a Q3"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Sarcinile cadranului Q1 (important și urgent) reprezintă $percentage% din totalul sarcinilor, indicând o îmbunătățire a planificării sarcinilor, rezolvarea timpurie a sarcinilor importante pentru a evita situațiile urgente.",
+    "description": "Insight despre procentul mare de sarcini Q1"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Sarcinile cadranului Q4 (nu este important dar urgent) reprezintă $percentage% din totalul sarcinilor, te rog să revizuiești sursele acestor sarcini cu prioritate mică dar urgente, optimizează procesul de răspuns la urgențe.",
+    "description": "Insight despre procentul mare de sarcini Q4"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "Sarcinile «$source» ating $q1Rate% rata de completare în Q1 (important și urgent), dar doar $q2Rate% în Q2 (important dar nu urgent), indicând că prioritatea executării sarcinilor este condusă de «presiunea externă», nu de focusul strategic intern.",
+    "description": "Insight despre rata de completare Q1 vs Q2 a sarcinilor sursă"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "Sarcinile «$source» au o rată de completare mică ($q4Rate%) în Q4 (nu este important dar urgent), trebuie să confirmi dacă există o problemă cu definirea priorității «sarcinilor temporare».",
+    "description": "Insight despre rata de completare mică a sarcinilor Q4"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "«$source» este foarte concentrat în cadranul $quadrant ($quadrantName), reprezentând $percentage%. Te rog să revizuiești raționalitatea planificării sarcinilor.",
+    "description": "Insight despre concentrarea mare a sarcinilor într-un singur cadran"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "«$highSource» are cea mai mare rată de completare ($highRate%) în $highQuadrant, în timp ce «$lowSource» are cea mai mică ($lowRate%) în $lowQuadrant, arătând o diferență evidentă în prioritățile de procesare a diferitelor tipuri de sarcini.",
+    "description": "Insight despre diferența ratei de completare între surse"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (important și urgent) are $percentage% sarcini în așteptare care durează mai mult de 3 zile, indicând posibila lipsă de resurse sau dificultăți neașteptate cu sarcinile de bază. Te rog să iei în considerare descompunerea sarcinii sau suportul suplimentar.",
+    "description": "Insight despre sarcinile Q1 în așteptare cu timp mare petrecut"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Timpul mediu de completare a sarcinilor completate Q4 (nu este important dar urgent) este de $q4Time zile, depășind cu mult $q2Time zilele Q2 (important dar nu urgent), indicând că «sarcinile urgente temporare» ocupă excesiv resursele. Te rog să optimizezi procesul de răspuns la urgențe.",
+    "description": "Insight despre timpul de completare Q4 vs Q2"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Timpul mediu de procesare a sarcinilor în așteptare ($pendingTime zile) este semnificativ mai mare decât sarcinile completate ($completedTime zile). Te rog să te concentrezi pe sarcinile care rămân mult timp în așteptare și să ajustezi strategia sau alocarea resurselor după cum este necesar.",
+    "description": "Insight despre timpul sarcinilor în așteptare vs completate"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "Volumul sarcinilor $quadrantLabel fluctuează de la $from la $to $direction $rate%, arătând fluctuații semnificative. Te rog să iei în considerare concentrarea pe echilibrul alocării sarcinilor.",
+    "description": "Insight despre fluctuația volumului sarcinilor cadranului"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "Rata de completare a sarcinilor $quadrantLabel arată o tendință susținută ascendentă, indicând o îmbunătățire a activității de lucru.",
+    "description": "Insight despre tendința ascendentă a ratei de completare"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "Rata de completare a sarcinilor $quadrantLabel arată o tendință susținută descendentă, care necesită atenție la problemele activității executive.",
+    "description": "Insight despre tendința descendentă a ratei de completare"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Sarcinile Q2 (important dar nu urgent) continuă să se acumuleze fără îmbunătățirea ratei de completare, reflectând faptul că «sarcinile strategice» nu sunt integrate în planul regulat de execuție, ceea ce aduce riscul «acumulării întârzierilor».",
+    "description": "Insight despre acumularea sarcinilor Q2"
+  }
+}

@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Gratis Taakbeheer & Tools",
+    "description": "De naam van de applicatie"
+  },
+  "appDescription": {
+    "message": "Gratis Chrome browser extensie voor intelligente taken. Visualiseer je taken met krachtige tools en schermvriendelijke interface",
+    "description": "De beschrijving van de applicatie"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "De titel van de applicatie"
+  },
+  "taskManager": {
+    "message": "Taakbeheer",
+    "description": "Taakbeheer knop titel"
+  },
+  "report": {
+    "message": "Rapport",
+    "description": "Rapport knop titel"
+  },
+  "settings": {
+    "message": "Instellingen",
+    "description": "Instellingen knop titel"
+  },
+  "help": {
+    "message": "Hulp",
+    "description": "Hulp knop titel"
+  },
+  "addTask": {
+    "message": "Taak Toevoegen",
+    "description": "Taak toevoegen knop titel"
+  },
+  "close": {
+    "message": "Sluiten",
+    "description": "Sluiten knop tekst"
+  },
+  "editTask": {
+    "message": "Taak Bewerken",
+    "description": "Taak bewerken modal titel"
+  },
+  "newTask": {
+    "message": "Nieuw",
+    "description": "Nieuwe taak status"
+  },
+  "taskTitle": {
+    "message": "Taak Titel *",
+    "description": "Taak titel label"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Voer taak titel in",
+    "description": "Taak titel invoer placeholder"
+  },
+  "taskDescription": {
+    "message": "Taak Beschrijving",
+    "description": "Taak beschrijving label"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Voer taak beschrijving in (optioneel)",
+    "description": "Taak beschrijving invoer placeholder"
+  },
+  "importanceLevel": {
+    "message": "Belangrijkheidsniveau *",
+    "description": "Belangrijkheidsniveau label"
+  },
+  "notImportant": {
+    "message": "Niet Belangrijk",
+    "description": "Niet belangrijk label"
+  },
+  "veryImportant": {
+    "message": "Zeer Belangrijk",
+    "description": "Zeer belangrijk label"
+  },
+  "dueDate": {
+    "message": "Vervaldatum *",
+    "description": "Vervaldatum label"
+  },
+  "taskCategory": {
+    "message": "Taak Categorie",
+    "description": "Taak categorie label"
+  },
+  "work": {
+    "message": "Werk",
+    "description": "Werk categorie"
+  },
+  "personal": {
+    "message": "Persoonlijk",
+    "description": "Persoonlijk categorie"
+  },
+  "study": {
+    "message": "Studie",
+    "description": "Studie categorie"
+  },
+  "health": {
+    "message": "Gezondheid",
+    "description": "Gezondheid categorie"
+  },
+  "other": {
+    "message": "Anders",
+    "description": "Anders categorie"
+  },
+  "deleteTask": {
+    "message": "Taak Verwijderen",
+    "description": "Taak verwijderen knop"
+  },
+  "cancel": {
+    "message": "Annuleren",
+    "description": "Annuleren knop"
+  },
+  "saveTask": {
+    "message": "Taak Opslaan",
+    "description": "Taak opslaan knop"
+  },
+  "doing": {
+    "message": "Bezig",
+    "description": "Bezig status"
+  },
+  "overdue": {
+    "message": "Achterstallig",
+    "description": "Achterstallig status"
+  },
+  "completed": {
+    "message": "Voltooid",
+    "description": "Voltooid status"
+  },
+  "rejected": {
+    "message": "Afgewezen",
+    "description": "Afgewezen status"
+  },
+  "pending": {
+    "message": "In behandeling",
+    "description": "In behandeling status label"
+  },
+  "urgentTaskReminder": {
+    "message": "Urgente Taak Herinnering",
+    "description": "Urgente taak herinnering sectie titel"
+  },
+  "enableUrgentReminder": {
+    "message": "Urgente Taak Herinnering Inschakelen",
+    "description": "Urgente taak herinnering inschakelen checkbox"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Wanneer een taak bijna verloopt, herinneren via icoon wijzigingen",
+    "description": "Urgente taak herinnering inschakelen beschrijving"
+  },
+  "reminderThreshold": {
+    "message": "Herinnering Drempel (minuten)",
+    "description": "Herinnering drempel label"
+  },
+  "reminderThresholdDesc": {
+    "message": "Wanneer de resterende tijd van de taak minder is dan deze duur, herinnering activeren",
+    "description": "Herinnering drempel beschrijving"
+  },
+  "reminderInterval": {
+    "message": "Herinnering Interval (minuten)",
+    "description": "Herinnering interval label"
+  },
+  "reminderIntervalDesc": {
+    "message": "Frequentie van het controleren van taak status op de achtergrond",
+    "description": "Herinnering interval beschrijving"
+  },
+  "iconReminder": {
+    "message": "Icoon Herinnering",
+    "description": "Icoon herinnering sectie titel"
+  },
+  "showIconBadge": {
+    "message": "Icoon Badge Tonen",
+    "description": "Icoon badge tonen checkbox"
+  },
+  "showIconBadgeDesc": {
+    "message": "Toon het aantal urgente taken op het plugin icoon",
+    "description": "Icoon badge tonen beschrijving"
+  },
+  "showIconTooltip": {
+    "message": "Icoon Tooltip Tonen",
+    "description": "Icoon tooltip tonen checkbox"
+  },
+  "showIconTooltipDesc": {
+    "message": "Toon taak herinnering informatie bij hoveren over het icoon",
+    "description": "Icoon tooltip tonen beschrijving"
+  },
+  "save": {
+    "message": "Opslaan",
+    "description": "Opslaan knop"
+  },
+  "quickStart": {
+    "message": "🚀 Snelle Start",
+    "description": "Snelle start sectie titel"
+  },
+  "createTask": {
+    "message": "Taak Aanmaken:",
+    "description": "Taak aanmaken instructie"
+  },
+  "createTaskDesc": {
+    "message": "Dubbelklik op leeg gebied",
+    "description": "Taak aanmaken beschrijving"
+  },
+  "editTaskDesc": {
+    "message": "Taak Bewerken:",
+    "description": "Taak bewerken instructie"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Dubbelklik op bestaande taak",
+    "description": "Taak bewerken instructie beschrijving"
+  },
+  "viewDetails": {
+    "message": "Details Bekijken:",
+    "description": "Details bekijken instructie"
+  },
+  "viewDetailsDesc": {
+    "message": "Hover over taak",
+    "description": "Details bekijken beschrijving"
+  },
+  "taskManagerDesc": {
+    "message": "Taakbeheer:",
+    "description": "Taakbeheer instructie"
+  },
+  "taskManagerInstruction": {
+    "message": "Klik op het lijst icoon voor alle taken",
+    "description": "Taakbeheer instructie beschrijving"
+  },
+  "analysisReport": {
+    "message": "Analyse Rapport:",
+    "description": "Analyse rapport instructie"
+  },
+  "analysisReportDesc": {
+    "message": "Klik op het grafiek icoon voor inzichten",
+    "description": "Analyse rapport beschrijving"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Eisenhower Taak Matrix",
+    "description": "Eisenhower matrix sectie titel"
+  },
+  "q1Title": {
+    "message": "Q1: Belangrijk & Urgent",
+    "description": "Q1 kwadrant titel"
+  },
+  "q1Desc": {
+    "message": "Doe het nu. Kritieke taken die onmiddellijke aandacht vereisen.",
+    "description": "Q1 kwadrant beschrijving"
+  },
+  "q2Title": {
+    "message": "Q2: Belangrijk & Niet Urgent",
+    "description": "Q2 kwadrant titel"
+  },
+  "q2Desc": {
+    "message": "Plan het in. Strategische taken voor langetermijnplanning.",
+    "description": "Q2 kwadrant beschrijving"
+  },
+  "q3Title": {
+    "message": "Q3: Niet Belangrijk & Urgent",
+    "description": "Q3 kwadrant titel"
+  },
+  "q3Desc": {
+    "message": "Delegeer het. Onderbrekingen die door anderen kunnen worden afgehandeld.",
+    "description": "Q3 kwadrant beschrijving"
+  },
+  "q4Title": {
+    "message": "Q4: Niet Belangrijk & Niet Urgent",
+    "description": "Q4 kwadrant titel"
+  },
+  "q4Desc": {
+    "message": "Elimineer het. Tijdverspillers die vermeden moeten worden.",
+    "description": "Q4 kwadrant beschrijving"
+  },
+  "confirm": {
+    "message": "Bevestigen",
+    "description": "Bevestigen knop"
+  },
+  "settingsSaved": {
+    "message": "Instellingen succesvol opgeslagen",
+    "description": "Instellingen opgeslagen notificatie"
+  },
+  "settingsSaveFailed": {
+    "message": "Instellingen opslaan mislukt",
+    "description": "Instellingen opslaan mislukt notificatie"
+  },
+  "allTasksCleared": {
+    "message": "Alle taken gewist",
+    "description": "Alle taken gewist bericht"
+  },
+  "settingsApplied": {
+    "message": "Instellingen toegepast",
+    "description": "Instellingen toegepast bericht"
+  },
+  "taskMonitoringStarted": {
+    "message": "Taak monitoring gestart",
+    "description": "Taak monitoring gestart bericht"
+  },
+  "taskMonitoringStopped": {
+    "message": "Taak monitoring gestopt",
+    "description": "Taak monitoring gestopt bericht"
+  },
+  "taskEditProcessed": {
+    "message": "Taak bewerking verwerkt",
+    "description": "Taak bewerking verwerkt bericht"
+  },
+  "taskAddProcessed": {
+    "message": "Taak toevoeging verwerkt",
+    "description": "Taak toevoeging verwerkt bericht"
+  },
+  "taskDeleteProcessed": {
+    "message": "Taak verwijdering verwerkt",
+    "description": "Taak verwijdering verwerkt bericht"
+  },
+  "unknownMessageType": {
+    "message": "Onbekend bericht type",
+    "description": "Onbekend bericht type fout"
+  },
+  "openTaskMatrix": {
+    "message": "TaskMatrix Pro Openen",
+    "description": "Commando beschrijving voor het openen van TaskMatrix Pro"
+  },
+  "ready": {
+    "message": "Klaar",
+    "description": "Klaar status bericht"
+  },
+  "initializationFailed": {
+    "message": "Initialisatie Mislukt",
+    "description": "Initialisatie mislukt status bericht"
+  },
+  "loading": {
+    "message": "Laden...",
+    "description": "Laden status bericht"
+  },
+  "saving": {
+    "message": "Opslaan...",
+    "description": "Opslaan status bericht"
+  },
+  "failedToGetFormData": {
+    "message": "Formulier gegevens ophalen mislukt",
+    "description": "Fout bericht wanneer formulier gegevens niet kunnen worden opgehaald"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Voer een taak titel in",
+    "description": "Waarschuwingsbericht wanneer taak titel leeg is"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Taak succesvol bijgewerkt",
+    "description": "Succes bericht wanneer taak wordt bijgewerkt"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Taak succesvol toegevoegd",
+    "description": "Succes bericht wanneer taak wordt toegevoegd"
+  },
+  "saveFailed": {
+    "message": "Opslaan mislukt",
+    "description": "Fout bericht wanneer opslaan operatie mislukt"
+  },
+  "taskNotFound": {
+    "message": "Taak niet gevonden",
+    "description": "Fout bericht wanneer taak niet wordt gevonden"
+  },
+  "failedToEditTask": {
+    "message": "Taak bewerken mislukt",
+    "description": "Fout bericht wanneer taak bewerken mislukt"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Taak succesvol voltooid",
+    "description": "Succes bericht wanneer taak wordt voltooid"
+  },
+  "failedToCompleteTask": {
+    "message": "Taak voltooien mislukt",
+    "description": "Fout bericht wanneer taak voltooien mislukt"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Weet je zeker dat je deze taak wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
+    "description": "Bevestigingsbericht voor taak verwijdering"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Taak succesvol verwijderd",
+    "description": "Succes bericht wanneer taak wordt verwijderd"
+  },
+  "failedToDeleteTask": {
+    "message": "Taak verwijderen mislukt",
+    "description": "Fout bericht wanneer taak verwijderen mislukt"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Instellingen succesvol opgeslagen",
+    "description": "Succes bericht wanneer instellingen worden opgeslagen"
+  },
+  "failedToSaveSettings": {
+    "message": "Instellingen opslaan mislukt",
+    "description": "Fout bericht wanneer instellingen opslaan mislukt"
+  },
+  "loadingDataFailed": {
+    "message": "Gegevens laden mislukt",
+    "description": "Fout bericht wanneer gegevens laden mislukt"
+  },
+  "noTaskFound": {
+    "message": "Geen Taak Gevonden",
+    "description": "Lege staat bericht wanneer geen taken worden gevonden"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Klik op het plus icoon om je eerste taak toe te voegen",
+    "description": "Lege staat instructie voor het toevoegen van de eerste taak"
+  },
+  "allCaughtUp": {
+    "message": "Alles Bijgewerkt!",
+    "description": "Lege staat bericht wanneer geen achterstallige taken"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Geen achterstallige taken. Geweldig werk om alles op orde te houden!",
+    "description": "Lege staat bericht voor geen achterstallige taken"
+  },
+  "noCompletedTasks": {
+    "message": "Geen Voltooide Taken",
+    "description": "Lege staat bericht wanneer geen voltooide taken"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Dubbelklik op een taak en klik op het status label om het als voltooid te markeren",
+    "description": "Instructie voor het markeren van taken als voltooid"
+  },
+  "noRejectedTasks": {
+    "message": "Geen Afgewezen Taken",
+    "description": "Lege staat bericht wanneer geen afgewezen taken"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Dubbelklik op een taak en klik tweemaal op het status label om het als afgewezen te markeren",
+    "description": "Instructie voor het markeren van taken als afgewezen"
+  },
+  "task": {
+    "message": "Taak:",
+    "description": "Taak label prefix"
+  },
+  "importance": {
+    "message": "Belangrijkheid:",
+    "description": "Belangrijkheid label"
+  },
+  "noData": {
+    "message": "Geen Gegevens",
+    "description": "Geen gegevens bericht voor grafieken"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Niet genoeg gegevens om heatmap te genereren",
+    "description": "Bericht wanneer er niet genoeg gegevens zijn voor heatmap"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Niet genoeg taak gegevens om spreidingsgrafiek te genereren",
+    "description": "Bericht wanneer er niet genoeg gegevens zijn voor spreidingsgrafiek"
+  },
+  "bytes": {
+    "message": "Bytes",
+    "description": "Bytes eenheid"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Kilobytes eenheid"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Megabytes eenheid"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Gigabytes eenheid"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Terabytes eenheid"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Frequentie van het controleren van taak status op de achtergrond",
+    "description": "Beschrijving voor taak status controle frequentie"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Toon het aantal urgente taken op het plugin icoon",
+    "description": "Beschrijving voor icoon badge instelling"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Toon taak herinnering informatie bij hoveren over het icoon",
+    "description": "Beschrijving voor icoon titel instelling"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Dubbelklik op leeg gebied",
+    "description": "Instructie voor het aanmaken van een taak"
+  },
+  "editTaskInstruction": {
+    "message": "Taak Bewerken:",
+    "description": "Taak bewerken instructie"
+  },
+  "hoverOverTask": {
+    "message": "Hover over taak",
+    "description": "Instructie voor het bekijken van taak details"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Klik op het lijst icoon voor alle taken",
+    "description": "Instructie voor toegang tot taakbeheer"
+  },
+  "clickChartIconForInsights": {
+    "message": "Klik op het grafiek icoon voor inzichten",
+    "description": "Instructie voor toegang tot analyse rapport"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Eisenhower Taak Matrix",
+    "description": "Eisenhower taak matrix sectie titel"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Belangrijk & Urgent",
+    "description": "Q1 kwadrant titel"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Doe het nu. Kritieke taken die onmiddellijke aandacht vereisen.",
+    "description": "Q1 kwadrant beschrijving"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Belangrijk & Niet Urgent",
+    "description": "Q2 kwadrant titel"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Plan het in. Strategische taken voor langetermijnplanning.",
+    "description": "Q2 kwadrant beschrijving"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Niet Belangrijk & Urgent",
+    "description": "Q3 kwadrant titel"
+  },
+  "delegateItInterruptions": {
+    "message": "Delegeer het. Onderbrekingen die door anderen kunnen worden afgehandeld.",
+    "description": "Q3 kwadrant beschrijving"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Niet Belangrijk & Niet Urgent",
+    "description": "Q4 kwadrant titel"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Elimineer het. Tijdverspillers die vermeden moeten worden.",
+    "description": "Q4 kwadrant beschrijving"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Wanneer de resterende tijd van de taak minder is dan deze duur, herinnering activeren",
+    "description": "Beschrijving voor urgente herinnering drempel instelling"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Wanneer een taak bijna verloopt, herinneren via icoon wijzigingen",
+    "description": "Beschrijving voor urgente herinnering instelling"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Urgente Taak Herinnering Inschakelen",
+    "description": "Urgente taak herinnering inschakelen checkbox label"
+  },
+  "invalidDueDate": {
+    "message": "Ongeldige vervaldatum",
+    "description": "Fout bericht voor ongeldige vervaldatum"
+  },
+  "dueAt": {
+    "message": "Vervalt op",
+    "description": "Vervalt op prefix voor taken die vervallen op een specifieke datum"
+  },
+  "dueIn": {
+    "message": "Vervalt over",
+    "description": "Vervalt over prefix voor taken die vervallen over een specifieke tijd"
+  },
+  "completionRate": {
+    "message": "Voltooiingspercentage",
+    "description": "Voltooiingspercentage tab titel"
+  },
+  "timeStatus": {
+    "message": "Tijd-Status",
+    "description": "Tijd-status tab titel"
+  },
+  "timeTrend": {
+    "message": "Tijd-Trend",
+    "description": "Tijd-trend tab titel"
+  },
+  "sourceCross": {
+    "message": "Bron-Kruis",
+    "description": "Bron-kruis tab titel"
+  },
+  "completionRateQuantity": {
+    "message": "Voltooiingspercentage - Hoeveelheid",
+    "description": "Voltooiingspercentage grafiek titel"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Taak Bron - Voltooiingspercentage",
+    "description": "Taak bron voltooiingspercentage grafiek titel"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Tijd - Voltooiingsstatus Spreidingsgrafiek",
+    "description": "Tijd voltooiingsstatus spreidingsgrafiek titel"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Wekelijks/Maandelijks Trend",
+    "description": "Wekelijks maandelijks trend grafiek titel"
+  },
+  "weekly": {
+    "message": "Wekelijks",
+    "description": "Wekelijks periode knop"
+  },
+  "monthly": {
+    "message": "Maandelijks",
+    "description": "Maandelijks periode knop"
+  },
+  "source": {
+    "message": "Bron",
+    "description": "Bron tabel header"
+  },
+  "low": {
+    "message": "Laag (0-20%)",
+    "description": "Laag voltooiingspercentage label"
+  },
+  "mediumLow": {
+    "message": "Gemiddeld-Laag (20-50%)",
+    "description": "Gemiddeld-laag voltooiingspercentage label"
+  },
+  "mediumHigh": {
+    "message": "Gemiddeld-Hoog (50-80%)",
+    "description": "Gemiddeld-hoog voltooiingspercentage label"
+  },
+  "high": {
+    "message": "Hoog (80-100%)",
+    "description": "Hoog voltooiingspercentage label"
+  },
+  "taskCost": {
+    "message": "Taak Kosten (dagen)",
+    "description": "Taak kosten as label"
+  },
+  "taskImportance": {
+    "message": "Taak Belangrijkheid",
+    "description": "Taak belangrijkheid as label"
+  },
+  "taskCount": {
+    "message": "Taak Aantal",
+    "description": "Taak aantal as label"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Kwadrant Taak Tijd Statistieken (Dagen):",
+    "description": "Kwadrant taak tijd statistieken titel"
+  },
+  "quadrant": {
+    "message": "Kwadrant",
+    "description": "Kwadrant tabel header"
+  },
+  "completedAvg": {
+    "message": "Voltooid (Gemiddeld)",
+    "description": "Voltooid gemiddeld tabel header"
+  },
+  "completedMedian": {
+    "message": "Voltooid (Mediaan)",
+    "description": "Voltooid mediaan tabel header"
+  },
+  "inProgressAvg": {
+    "message": "Bezig (Gemiddeld)",
+    "description": "Bezig gemiddeld tabel header"
+  },
+  "inProgressMedian": {
+    "message": "Bezig (Mediaan)",
+    "description": "Bezig mediaan tabel header"
+  },
+  "deepInsights": {
+    "message": "Diepe Inzichten",
+    "description": "Diepe inzichten sectie titel"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Momenteel zijn er niet genoeg gegevens om inzichten te genereren.",
+    "description": "Geen gegevens bericht voor inzichten"
+  },
+  "importantUrgent": {
+    "message": "Belangrijk & Urgent",
+    "description": "Q1 kwadrant label"
+  },
+  "importantNotUrgent": {
+    "message": "Belangrijk & Niet Urgent",
+    "description": "Q2 kwadrant label"
+  },
+  "notImportantNotUrgent": {
+    "message": "Niet Belangrijk & Niet Urgent",
+    "description": "Q3 kwadrant label"
+  },
+  "notImportantUrgent": {
+    "message": "Niet Belangrijk & Urgent",
+    "description": "Q4 kwadrant label"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2 (Belangrijk & Niet Urgent) kwadrant taak voltooiingspercentage is significant lager dan andere kwadranten, wat een \"urgent boven belangrijk\" uitvoeringsbias weerspiegelt, wat kan leiden tot strategische doelvertragingen op lange termijn.",
+    "description": "Inzicht over Q2 voltooiingspercentage dat lager is"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3 (Niet Belangrijk & Niet Urgent) kwadrant taak voltooiingspercentage is te hoog, pas op voor \"ineffectieve drukte\" - of er te veel energie wordt verbruikt aan triviale taken, wat de tijd voor kerntaken comprimeert.",
+    "description": "Inzicht over Q3 voltooiingspercentage dat te hoog is"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1 (Belangrijk & Urgent) kwadrant taken vertegenwoordigen $percentage% van alle taken, wat een verbetering in taakplanning suggereert, behandel belangrijke taken vroeg om urgente situaties te vermijden.",
+    "description": "Inzicht over hoge Q1 taken percentage"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4 (Niet Belangrijk & Urgent) kwadrant taken vertegenwoordigen $percentage% van alle taken, bekijk de bronnen van deze lage prioriteit maar urgente taken, optimaliseer noodsituatie responsprocessen.",
+    "description": "Inzicht over hoge Q4 taken percentage"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "\"$source\" taken in Q1 (Belangrijk & Urgent) bereiken $q1Rate% voltooiingspercentage, maar slechts $q2Rate% in Q2 (Belangrijk & Niet Urgent), wat aangeeft dat taak uitvoeringsprioriteit wordt aangedreven door \"externe druk\" in plaats van interne strategische focus.",
+    "description": "Inzicht over bron taken Q1 vs Q2 voltooiingspercentages"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "\"$source\" taken in Q4 (Niet Belangrijk & Urgent) hebben laag voltooiingspercentage ($q4Rate%), moeten bevestigen of \"tijdelijke taken\" prioriteitsdefinitie problemen hebben.",
+    "description": "Inzicht over Q4 taken laag voltooiingspercentage"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "\"$source\" zijn hoog geconcentreerd in $quadrant ($quadrantName) kwadrant, vertegenwoordigend $percentage%. Bekijk taakplanning voor redelijkheid.",
+    "description": "Inzicht over taken die hoog geconcentreerd zijn in één kwadrant"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "\"$highSource\" in $highQuadrant heeft hoogste voltooiingspercentage ($highRate%), terwijl \"$lowSource\" in $lowQuadrant laagste ($lowRate%) heeft, wat duidelijke verschillen toont in verwerkingsprioriteit voor verschillende taaktypen.",
+    "description": "Inzicht over voltooiingspercentage verschillen tussen bronnen"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (Belangrijk & Urgent) heeft $percentage% van in behandeling zijnde taken die meer dan 3 dagen duren, wat wijst op mogelijke resource tekort of onverwachte moeilijkheden in kerntaken. Overweeg taak opsplitsing of extra ondersteuning.",
+    "description": "Inzicht over Q1 in behandeling zijnde taken die te lang duren"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Q4 (Niet Belangrijk & Urgent) voltooide taken gemiddeld $q4Time dagen, ver overschrijdend Q2 (Belangrijk & Niet Urgent) op $q2Time dagen, wat aangeeft dat \"tijdelijke urgente taken\" resources over-occupieren. Optimaliseer noodsituatie responsprocessen.",
+    "description": "Inzicht over Q4 vs Q2 taak voltooiingstijden"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Gemiddelde verwerkingstijd voor in behandeling zijnde taken ($pendingTime dagen) is significant hoger dan voltooide taken ($completedTime dagen). Focus op lang vastzittende taken en pas strategie of resource allocatie aan wanneer nodig.",
+    "description": "Inzicht over in behandeling zijnde vs voltooide taaktijden"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabel taak volume $direction $rate% van $from naar $to, wat significante fluctuatie toont. Overweeg focus op taak allocatie balans.",
+    "description": "Inzicht over taak volume fluctuatie"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabel taak voltooiingspercentage toont een aanhoudende opwaartse trend, wat verbeterde werkefficiëntie aangeeft.",
+    "description": "Inzicht over voltooiingspercentage opwaartse trend"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabel taak voltooiingspercentage toont een aanhoudende neerwaartse trend, wat aandacht vereist voor uitvoeringsefficiëntie problemen.",
+    "description": "Inzicht over voltooiingspercentage neerwaartse trend"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2 (Belangrijk & Niet Urgent) taken blijven zich ophopen zonder verbetering in voltooiingspercentage, wat weerspiegelt dat \"strategische taken\" niet zijn geïntegreerd in reguliere uitvoeringsplannen, wat een \"uitstel accumulatie\" risico presenteert.",
+    "description": "Inzicht over Q2 taken accumulatie"
+  }
+}

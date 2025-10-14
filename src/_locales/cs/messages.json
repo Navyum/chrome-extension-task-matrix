@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Bezplatný Správce Úkolů a Nástroje",
+    "description": "Název aplikace"
+  },
+  "appDescription": {
+    "message": "Bezplatné rozšíření Chrome pro inteligentní úkoly. Vizualizujte své úkoly pomocí výkonných nástrojů a uživatelsky přívětivého rozhraní",
+    "description": "Popis aplikace"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Název aplikace"
+  },
+  "taskManager": {
+    "message": "Správce Úkolů",
+    "description": "Název tlačítka správce úkolů"
+  },
+  "report": {
+    "message": "Zpráva",
+    "description": "Název tlačítka zprávy"
+  },
+  "settings": {
+    "message": "Nastavení",
+    "description": "Název tlačítka nastavení"
+  },
+  "help": {
+    "message": "Nápověda",
+    "description": "Název tlačítka nápovědy"
+  },
+  "addTask": {
+    "message": "Přidat Úkol",
+    "description": "Název tlačítka přidat úkol"
+  },
+  "close": {
+    "message": "Zavřít",
+    "description": "Text tlačítka zavřít"
+  },
+  "editTask": {
+    "message": "Upravit Úkol",
+    "description": "Název modalu upravit úkol"
+  },
+  "newTask": {
+    "message": "Nový",
+    "description": "Status nového úkolu"
+  },
+  "taskTitle": {
+    "message": "Název Úkolu *",
+    "description": "Štítek názvu úkolu"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Zadejte název úkolu",
+    "description": "Placeholder pole názvu úkolu"
+  },
+  "taskDescription": {
+    "message": "Popis Úkolu",
+    "description": "Štítek popisu úkolu"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Zadejte popis úkolu (volitelné)",
+    "description": "Placeholder pole popisu úkolu"
+  },
+  "importanceLevel": {
+    "message": "Úroveň Důležitosti *",
+    "description": "Štítek úrovně důležitosti"
+  },
+  "notImportant": {
+    "message": "Nedůležité",
+    "description": "Štítek nedůležité"
+  },
+  "veryImportant": {
+    "message": "Velmi Důležité",
+    "description": "Štítek velmi důležité"
+  },
+  "dueDate": {
+    "message": "Termín Splnění *",
+    "description": "Štítek termínu splnění"
+  },
+  "taskCategory": {
+    "message": "Kategorie Úkolu",
+    "description": "Štítek kategorie úkolu"
+  },
+  "work": {
+    "message": "Práce",
+    "description": "Kategorie práce"
+  },
+  "personal": {
+    "message": "Osobní",
+    "description": "Kategorie osobní"
+  },
+  "study": {
+    "message": "Studium",
+    "description": "Kategorie studium"
+  },
+  "health": {
+    "message": "Zdraví",
+    "description": "Kategorie zdraví"
+  },
+  "other": {
+    "message": "Jiné",
+    "description": "Kategorie jiné"
+  },
+  "deleteTask": {
+    "message": "Smazat Úkol",
+    "description": "Tlačítko smazat úkol"
+  },
+  "cancel": {
+    "message": "Zrušit",
+    "description": "Tlačítko zrušit"
+  },
+  "saveTask": {
+    "message": "Uložit Úkol",
+    "description": "Tlačítko uložit úkol"
+  },
+  "doing": {
+    "message": "Probíhá",
+    "description": "Status probíhá"
+  },
+  "overdue": {
+    "message": "Po Termínu",
+    "description": "Status po termínu"
+  },
+  "completed": {
+    "message": "Dokončeno",
+    "description": "Status dokončeno"
+  },
+  "rejected": {
+    "message": "Odmítnuto",
+    "description": "Status odmítnuto"
+  },
+  "pending": {
+    "message": "Čekající",
+    "description": "Štítek statusu čekající"
+  },
+  "urgentTaskReminder": {
+    "message": "Připomínka Naléhavých Úkolů",
+    "description": "Název sekce připomínky naléhavých úkolů"
+  },
+  "enableUrgentReminder": {
+    "message": "Povolit Připomínku Naléhavých Úkolů",
+    "description": "Zaškrtávací pole povolit připomínku naléhavých úkolů"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Když se úkol blíží k vypršení, připomeňte změnami ikon",
+    "description": "Popis povolit připomínku naléhavých úkolů"
+  },
+  "reminderThreshold": {
+    "message": "Práh Připomínky (minuty)",
+    "description": "Štítek prahu připomínky"
+  },
+  "reminderThresholdDesc": {
+    "message": "Když zbývající čas úkolu je menší než tato doba trvání, aktivujte připomínku",
+    "description": "Popis prahu připomínky"
+  },
+  "reminderInterval": {
+    "message": "Interval Připomínky (minuty)",
+    "description": "Štítek intervalu připomínky"
+  },
+  "reminderIntervalDesc": {
+    "message": "Frekvence kontroly stavu úkolů na pozadí",
+    "description": "Popis intervalu připomínky"
+  },
+  "iconReminder": {
+    "message": "Připomínka Ikony",
+    "description": "Název sekce připomínky ikony"
+  },
+  "showIconBadge": {
+    "message": "Zobrazit Badge Ikony",
+    "description": "Zaškrtávací pole zobrazit badge ikony"
+  },
+  "showIconBadgeDesc": {
+    "message": "Zobrazit počet naléhavých úkolů na ikoně zásuvného modulu",
+    "description": "Popis zobrazit badge ikony"
+  },
+  "showIconTooltip": {
+    "message": "Zobrazit Tooltip Ikony",
+    "description": "Zaškrtávací pole zobrazit tooltip ikony"
+  },
+  "showIconTooltipDesc": {
+    "message": "Zobrazit informace o připomínce úkolu při najetí na ikonu",
+    "description": "Popis zobrazit tooltip ikony"
+  },
+  "save": {
+    "message": "Uložit",
+    "description": "Tlačítko uložit"
+  },
+  "quickStart": {
+    "message": "🚀 Rychlý Start",
+    "description": "Název sekce rychlý start"
+  },
+  "createTask": {
+    "message": "Vytvořit Úkol:",
+    "description": "Instrukce vytvořit úkol"
+  },
+  "createTaskDesc": {
+    "message": "Dvakrát klikněte na prázdnou oblast",
+    "description": "Popis vytvořit úkol"
+  },
+  "editTaskDesc": {
+    "message": "Upravit Úkol:",
+    "description": "Instrukce upravit úkol"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Dvakrát klikněte na existující úkol",
+    "description": "Popis instrukce upravit úkol"
+  },
+  "viewDetails": {
+    "message": "Zobrazit Podrobnosti:",
+    "description": "Instrukce zobrazit podrobnosti"
+  },
+  "viewDetailsDesc": {
+    "message": "Najedete na úkol",
+    "description": "Popis zobrazit podrobnosti"
+  },
+  "taskManagerDesc": {
+    "message": "Správce Úkolů:",
+    "description": "Instrukce správce úkolů"
+  },
+  "taskManagerInstruction": {
+    "message": "Klikněte na ikonu seznamu pro všechny úkoly",
+    "description": "Popis instrukce správce úkolů"
+  },
+  "analysisReport": {
+    "message": "Zpráva Analýzy:",
+    "description": "Instrukce zprávy analýzy"
+  },
+  "analysisReportDesc": {
+    "message": "Klikněte na ikonu grafu pro přehled",
+    "description": "Popis zprávy analýzy"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Eisenhower Matice Úkolů",
+    "description": "Název sekce Eisenhower matice"
+  },
+  "q1Title": {
+    "message": "Q1: Důležité a Naléhavé",
+    "description": "Název kvadrantu Q1"
+  },
+  "q1Desc": {
+    "message": "Udělej to teď. Kritické úkoly vyžadující okamžitou pozornost.",
+    "description": "Popis kvadrantu Q1"
+  },
+  "q2Title": {
+    "message": "Q2: Důležité a Ne Naléhavé",
+    "description": "Název kvadrantu Q2"
+  },
+  "q2Desc": {
+    "message": "Naplánuj to. Strategické úkoly pro dlouhodobé plánování.",
+    "description": "Popis kvadrantu Q2"
+  },
+  "q3Title": {
+    "message": "Q3: Nedůležité a Naléhavé",
+    "description": "Název kvadrantu Q3"
+  },
+  "q3Desc": {
+    "message": "Deleguj to. Přerušení, která mohou být řešena jinými.",
+    "description": "Popis kvadrantu Q3"
+  },
+  "q4Title": {
+    "message": "Q4: Nedůležité a Ne Naléhavé",
+    "description": "Název kvadrantu Q4"
+  },
+  "q4Desc": {
+    "message": "Eliminuj to. Plýtvání časem, kterému je třeba se vyhnout.",
+    "description": "Popis kvadrantu Q4"
+  },
+  "confirm": {
+    "message": "Potvrdit",
+    "description": "Tlačítko potvrdit"
+  },
+  "settingsSaved": {
+    "message": "Nastavení uloženo úspěšně",
+    "description": "Oznámení o uložených nastaveních"
+  },
+  "settingsSaveFailed": {
+    "message": "Nepodařilo se uložit nastavení",
+    "description": "Oznámení o neúspěšném uložení nastavení"
+  },
+  "allTasksCleared": {
+    "message": "Všechny úkoly vymazány",
+    "description": "Zpráva o vymazání všech úkolů"
+  },
+  "settingsApplied": {
+    "message": "Nastavení aplikováno",
+    "description": "Zpráva o aplikovaných nastaveních"
+  },
+  "taskMonitoringStarted": {
+    "message": "Sledování úkolů zahájeno",
+    "description": "Zpráva o zahájení sledování úkolů"
+  },
+  "taskMonitoringStopped": {
+    "message": "Sledování úkolů zastaveno",
+    "description": "Zpráva o zastavení sledování úkolů"
+  },
+  "taskEditProcessed": {
+    "message": "Úprava úkolu zpracována",
+    "description": "Zpráva o zpracování úpravy úkolu"
+  },
+  "taskAddProcessed": {
+    "message": "Přidání úkolu zpracováno",
+    "description": "Zpráva o zpracování přidání úkolu"
+  },
+  "taskDeleteProcessed": {
+    "message": "Smazání úkolu zpracováno",
+    "description": "Zpráva o zpracování smazání úkolu"
+  },
+  "unknownMessageType": {
+    "message": "Neznámý typ zprávy",
+    "description": "Chyba neznámého typu zprávy"
+  },
+  "openTaskMatrix": {
+    "message": "Otevřít TaskMatrix Pro",
+    "description": "Popis příkazu otevřít TaskMatrix Pro"
+  },
+  "ready": {
+    "message": "Připraveno",
+    "description": "Zpráva statusu připraveno"
+  },
+  "initializationFailed": {
+    "message": "Inicializace Neúspěšná",
+    "description": "Zpráva statusu neúspěšné inicializace"
+  },
+  "loading": {
+    "message": "Načítání...",
+    "description": "Zpráva statusu načítání"
+  },
+  "saving": {
+    "message": "Ukládání...",
+    "description": "Zpráva statusu ukládání"
+  },
+  "failedToGetFormData": {
+    "message": "Nepodařilo se získat data formuláře",
+    "description": "Chybová zpráva když nelze získat data formuláře"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Prosím zadejte název úkolu",
+    "description": "Varovná zpráva když je název úkolu prázdný"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Úkol úspěšně aktualizován",
+    "description": "Zpráva o úspěchu když je úkol aktualizován"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Úkol úspěšně přidán",
+    "description": "Zpráva o úspěchu když je úkol přidán"
+  },
+  "saveFailed": {
+    "message": "Uložení neúspěšné",
+    "description": "Chybová zpráva když operace uložení neuspěje"
+  },
+  "taskNotFound": {
+    "message": "Úkol nenalezen",
+    "description": "Chybová zpráva když úkol není nalezen"
+  },
+  "failedToEditTask": {
+    "message": "Nepodařilo se upravit úkol",
+    "description": "Chybová zpráva když úprava úkolu neuspěje"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Úkol úspěšně dokončen",
+    "description": "Zpráva o úspěchu když je úkol dokončen"
+  },
+  "failedToCompleteTask": {
+    "message": "Nepodařilo se dokončit úkol",
+    "description": "Chybová zpráva když dokončení úkolu neuspěje"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Jste si jisti, že chcete smazat tento úkol? Tuto akci nelze vrátit zpět.",
+    "description": "Zpráva potvrzení pro smazání úkolu"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Úkol úspěšně smazán",
+    "description": "Zpráva o úspěchu když je úkol smazán"
+  },
+  "failedToDeleteTask": {
+    "message": "Nepodařilo se smazat úkol",
+    "description": "Chybová zpráva když smazání úkolu neuspěje"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Nastavení úspěšně uloženo",
+    "description": "Zpráva o úspěchu když jsou nastavení uložena"
+  },
+  "failedToSaveSettings": {
+    "message": "Nepodařilo se uložit nastavení",
+    "description": "Chybová zpráva když uložení nastavení neuspěje"
+  },
+  "loadingDataFailed": {
+    "message": "Nepodařilo se načíst data",
+    "description": "Chybová zpráva když načítání dat neuspěje"
+  },
+  "noTaskFound": {
+    "message": "Žádný Úkol Nenalezen",
+    "description": "Zpráva prázdného stavu když nejsou nalezeny žádné úkoly"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Klikněte na ikonu plus pro přidání vašeho prvního úkolu",
+    "description": "Instrukce prázdného stavu pro přidání prvního úkolu"
+  },
+  "allCaughtUp": {
+    "message": "Vše Aktualizováno!",
+    "description": "Zpráva prázdného stavu když nejsou žádné po termínu úkoly"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Žádné po termínu úkoly. Skvělá práce s udržováním všeho na správné cestě!",
+    "description": "Zpráva prázdného stavu pro žádné po termínu úkoly"
+  },
+  "noCompletedTasks": {
+    "message": "Žádné Dokončené Úkoly",
+    "description": "Zpráva prázdného stavu když nejsou žádné dokončené úkoly"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Dvakrát klikněte na úkol a klikněte na štítek statusu pro označení jako dokončený",
+    "description": "Instrukce pro označení úkolů jako dokončené"
+  },
+  "noRejectedTasks": {
+    "message": "Žádné Odmítnuté Úkoly",
+    "description": "Zpráva prázdného stavu když nejsou žádné odmítnuté úkoly"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Dvakrát klikněte na úkol a dvakrát klikněte na štítek statusu pro označení jako odmítnutý",
+    "description": "Instrukce pro označení úkolů jako odmítnuté"
+  },
+  "task": {
+    "message": "Úkol:",
+    "description": "Předpona štítku úkolu"
+  },
+  "importance": {
+    "message": "Důležitost:",
+    "description": "Štítek důležitosti"
+  },
+  "noData": {
+    "message": "Žádná Data",
+    "description": "Zpráva žádná data pro graf"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Nedostatek dat pro generování tepelné mapy",
+    "description": "Zpráva když není dostatek dat pro tepelnou mapu"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Nedostatek dat úkolů pro generování bodového grafu",
+    "description": "Zpráva když není dostatek dat pro bodový graf"
+  },
+  "bytes": {
+    "message": "Bajty",
+    "description": "Jednotka bajty"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Jednotka kilobajty"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Jednotka megabajty"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Jednotka gigabajty"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Jednotka terabajty"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Frekvence kontroly stavu úkolů na pozadí",
+    "description": "Popis pro frekvenci kontroly stavu úkolů"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Zobrazit počet naléhavých úkolů na ikoně zásuvného modulu",
+    "description": "Popis pro nastavení badge ikony"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Zobrazit informace o připomínce úkolu při najetí na ikonu",
+    "description": "Popis pro nastavení názvu ikony"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Dvakrát klikněte na prázdnou oblast",
+    "description": "Instrukce pro vytvoření úkolu"
+  },
+  "editTaskInstruction": {
+    "message": "Upravit Úkol:",
+    "description": "Instrukce upravit úkol"
+  },
+  "hoverOverTask": {
+    "message": "Najedete na úkol",
+    "description": "Instrukce pro zobrazení podrobností úkolu"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Klikněte na ikonu seznamu pro všechny úkoly",
+    "description": "Instrukce pro přístup ke správci úkolů"
+  },
+  "clickChartIconForInsights": {
+    "message": "Klikněte na ikonu grafu pro přehled",
+    "description": "Instrukce pro přístup ke zprávě analýzy"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Eisenhower Matice Úkolů",
+    "description": "Název sekce Eisenhower matice úkolů"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Důležité a Naléhavé",
+    "description": "Název kvadrantu Q1"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Udělej to teď. Kritické úkoly vyžadující okamžitou pozornost.",
+    "description": "Popis kvadrantu Q1"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Důležité a Ne Naléhavé",
+    "description": "Název kvadrantu Q2"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Naplánuj to. Strategické úkoly pro dlouhodobé plánování.",
+    "description": "Popis kvadrantu Q2"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Nedůležité a Naléhavé",
+    "description": "Název kvadrantu Q3"
+  },
+  "delegateItInterruptions": {
+    "message": "Deleguj to. Přerušení, která mohou být řešena jinými.",
+    "description": "Popis kvadrantu Q3"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Nedůležité a Ne Naléhavé",
+    "description": "Název kvadrantu Q4"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Eliminuj to. Plýtvání časem, kterému je třeba se vyhnout.",
+    "description": "Popis kvadrantu Q4"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Když zbývající čas úkolu je menší než tato doba trvání, aktivujte připomínku",
+    "description": "Popis pro nastavení prahu připomínky naléhavých úkolů"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Když se úkol blíží k vypršení, připomeňte změnami ikon",
+    "description": "Popis pro nastavení připomínky naléhavých úkolů"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Povolit Připomínku Naléhavých Úkolů",
+    "description": "Štítek zaškrtávacího pole povolit připomínku naléhavých úkolů"
+  },
+  "invalidDueDate": {
+    "message": "Neplatné datum splatnosti",
+    "description": "Chybová zpráva pro neplatné datum splatnosti"
+  },
+  "dueAt": {
+    "message": "Splatné",
+    "description": "Předpona splatné pro úkoly splatné v určitý den"
+  },
+  "dueIn": {
+    "message": "Splatné za",
+    "description": "Předpona splatné za pro úkoly splatné za určitý čas"
+  },
+  "completionRate": {
+    "message": "Míra Dokončení",
+    "description": "Název záložky míry dokončení"
+  },
+  "timeStatus": {
+    "message": "Čas-Status",
+    "description": "Název záložky čas-status"
+  },
+  "timeTrend": {
+    "message": "Trend Času",
+    "description": "Název záložky trend času"
+  },
+  "sourceCross": {
+    "message": "Zdroj-Kříž",
+    "description": "Název záložky zdroj-kříž"
+  },
+  "completionRateQuantity": {
+    "message": "Míra Dokončení - Množství",
+    "description": "Název grafu míry dokončení"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Zdroj Úkolu - Míra Dokončení",
+    "description": "Název grafu míry dokončení zdroje úkolu"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Čas - Status Dokončení Bodový Graf",
+    "description": "Název bodového grafu statusu dokončení času"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Týdenní/Měsíční Trend",
+    "description": "Název grafu týdenního měsíčního trendu"
+  },
+  "weekly": {
+    "message": "Týdenní",
+    "description": "Tlačítko týdenního období"
+  },
+  "monthly": {
+    "message": "Měsíční",
+    "description": "Tlačítko měsíčního období"
+  },
+  "source": {
+    "message": "Zdroj",
+    "description": "Hlavička tabulky zdroj"
+  },
+  "low": {
+    "message": "Nízká (0-20%)",
+    "description": "Štítek nízké míry dokončení"
+  },
+  "mediumLow": {
+    "message": "Středně-Nízká (20-50%)",
+    "description": "Štítek středně-nízké míry dokončení"
+  },
+  "mediumHigh": {
+    "message": "Středně-Vysoká (50-80%)",
+    "description": "Štítek středně-vysoké míry dokončení"
+  },
+  "high": {
+    "message": "Vysoká (80-100%)",
+    "description": "Štítek vysoké míry dokončení"
+  },
+  "taskCost": {
+    "message": "Náklady Úkolu (dny)",
+    "description": "Štítek osi nákladů úkolu"
+  },
+  "taskImportance": {
+    "message": "Důležitost Úkolu",
+    "description": "Štítek osi důležitosti úkolu"
+  },
+  "taskCount": {
+    "message": "Počet Úkolů",
+    "description": "Štítek osi počtu úkolů"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Statistiky Času Úkolů Kvadrantu (Dny):",
+    "description": "Název statistik času úkolů kvadrantu"
+  },
+  "quadrant": {
+    "message": "Kvadrant",
+    "description": "Hlavička tabulky kvadrant"
+  },
+  "completedAvg": {
+    "message": "Dokončeno (Průměr)",
+    "description": "Hlavička tabulky dokončeno průměr"
+  },
+  "completedMedian": {
+    "message": "Dokončeno (Medián)",
+    "description": "Hlavička tabulky dokončeno medián"
+  },
+  "inProgressAvg": {
+    "message": "Probíhá (Průměr)",
+    "description": "Hlavička tabulky probíhá průměr"
+  },
+  "inProgressMedian": {
+    "message": "Probíhá (Medián)",
+    "description": "Hlavička tabulky probíhá medián"
+  },
+  "deepInsights": {
+    "message": "Hluboké Přehledy",
+    "description": "Název sekce hluboké přehledy"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "V současné době není dostatek dat pro generování přehledů.",
+    "description": "Zpráva žádná data pro přehledy"
+  },
+  "importantUrgent": {
+    "message": "Důležité a Naléhavé",
+    "description": "Štítek kvadrantu Q1"
+  },
+  "importantNotUrgent": {
+    "message": "Důležité a Ne Naléhavé",
+    "description": "Štítek kvadrantu Q2"
+  },
+  "notImportantNotUrgent": {
+    "message": "Nedůležité a Ne Naléhavé",
+    "description": "Štítek kvadrantu Q3"
+  },
+  "notImportantUrgent": {
+    "message": "Nedůležité a Naléhavé",
+    "description": "Štítek kvadrantu Q4"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Q2 (Důležité a Ne Naléhavé) kvadrant míra dokončení úkolů je výrazně nižší než ostatní kvadranty, což odráží bias provedení \"naléhavé nad důležité\", což může vést k strategickým zpožděním cílů v dlouhodobém horizontu.",
+    "description": "Přehled o nižší míře dokončení Q2"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Q3 (Nedůležité a Ne Naléhavé) kvadrant míra dokončení úkolů je příliš vysoká, buďte opatrní s \"neefektivním zaměstnáním\" - pokud se příliš mnoho energie spotřebovává na triviální úkoly, což komprimuje čas na klíčové úkoly.",
+    "description": "Přehled o příliš vysoké míře dokončení Q3"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Q1 (Důležité a Naléhavé) kvadrant úkoly tvoří $percentage% všech úkolů, což naznačuje zlepšení v plánování úkolů, řešte důležité úkoly brzy, abyste se vyhnuli naléhavým situacím.",
+    "description": "Přehled o vysokém procentu úkolů Q1"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Q4 (Nedůležité a Naléhavé) kvadrant úkoly tvoří $percentage% všech úkolů, zkontrolujte zdroje těchto nízkoprioritních ale naléhavých úkolů, optimalizujte procesy reakce na nouzové situace.",
+    "description": "Přehled o vysokém procentu úkolů Q4"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "\"$source\" úkoly v Q1 (Důležité a Naléhavé) dosahují $q1Rate% míry dokončení, ale pouze $q2Rate% v Q2 (Důležité a Ne Naléhavé), což naznačuje, že priorita provedení úkolu je řízena \"externím tlakem\" spíše než interním strategickým zaměřením.",
+    "description": "Přehled o mírách dokončení úkolů zdroje Q1 vs Q2"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "\"$source\" úkoly v Q4 (Nedůležité a Naléhavé) mají nízkou míru dokončení ($q4Rate%), potřebují potvrzení, zda \"dočasné úkoly\" mají problém s definicí priorit.",
+    "description": "Přehled o nízké míře dokončení úkolů Q4"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "\"$source\" je vysoce koncentrováno v $quadrant ($quadrantName) kvadrantu, tvoříc $percentage%. Zkontrolujte plánování úkolů pro rozumnost.",
+    "description": "Přehled o úkolech vysoce koncentrovaných v jednom kvadrantu"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "\"$highSource\" v $highQuadrant má nejvyšší míru dokončení ($highRate%), zatímco \"$lowSource\" v $lowQuadrant má nejnižší ($lowRate%), což ukazuje jasné rozdíly v prioritě zpracování pro různé typy úkolů.",
+    "description": "Přehled o rozdílech míry dokončení mezi zdroji"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (Důležité a Naléhavé) má $percentage% čekajících úkolů, které trvají více než 3 dny, což naznačuje potenciální nedostatek zdrojů nebo neočekávané obtíže v klíčových úkolech. Zvažte rozdělení úkolů nebo další podporu.",
+    "description": "Přehled o čekajících úkolech Q1 trvajících příliš dlouho"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Q4 (Nedůležité a Naléhavé) dokončené úkoly v průměru $q4Time dní, výrazně překračující Q2 (Důležité a Ne Naléhavé) na $q2Time dní, což naznačuje, že \"dočasné naléhavé úkoly\" nadměrně okupují zdroje. Optimalizujte procesy reakce na nouzové situace.",
+    "description": "Přehled o časech dokončení úkolů Q4 vs Q2"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Průměrný čas zpracování čekajících úkolů ($pendingTime dní) je výrazně vyšší než dokončených úkolů ($completedTime dní). Zaměřte se na dlouho stagnující úkoly a upravte strategii nebo alokaci zdrojů podle potřeby.",
+    "description": "Přehled o časech čekajících vs dokončených úkolů"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "$quadrantLabel objem úkolů $direction $rate% od $from do $to, což ukazuje významnou fluktuaci. Zvažte zaměření na rovnováhu alokace úkolů.",
+    "description": "Přehled o fluktuaci objemu úkolů kvadrantu"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "$quadrantLabel míra dokončení úkolů vykazuje trvalý vzestupný trend, což naznačuje zlepšenou pracovní aktivitu.",
+    "description": "Přehled o vzestupném trendu míry dokončení"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "$quadrantLabel míra dokončení úkolů vykazuje trvalý sestupný trend, což vyžaduje pozornost na problémy aktivity provedení.",
+    "description": "Přehled o sestupném trendu míry dokončení"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Q2 (Důležité a Ne Naléhavé) úkoly nadále akumulují bez zlepšení míry dokončení, což odráží, že \"strategické úkoly\" nejsou integrovány do pravidelných programů provedení, což představuje riziko \"akumulace zpoždění\".",
+    "description": "Přehled o akumulaci úkolů Q2"
+  }
+}

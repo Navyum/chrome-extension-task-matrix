@@ -1,0 +1,734 @@
+{
+  "appName": {
+    "message": "TaskMatrix Pro: Besplatni upravitelj zadataka i alat",
+    "description": "Naziv aplikacije"
+  },
+  "appDescription": {
+    "message": "Besplatno Chrome proširenje za pametne zadatke. Koristite moćne alate i korisničko prijateljsko sučelje za vizualizaciju vaših zadataka",
+    "description": "Opis aplikacije"
+  },
+  "appTitle": {
+    "message": "TaskMatrix Pro",
+    "description": "Naslov aplikacije"
+  },
+  "taskManager": {
+    "message": "Upravitelj zadataka",
+    "description": "Naslov gumba upravitelja zadataka"
+  },
+  "report": {
+    "message": "Izvještaj",
+    "description": "Naslov gumba izvještaja"
+  },
+  "settings": {
+    "message": "Postavke",
+    "description": "Naslov gumba postavki"
+  },
+  "help": {
+    "message": "Pomoć",
+    "description": "Naslov gumba pomoći"
+  },
+  "addTask": {
+    "message": "Dodaj zadatak",
+    "description": "Naslov gumba dodavanja zadatka"
+  },
+  "close": {
+    "message": "Zatvori",
+    "description": "Tekst gumba zatvaranja"
+  },
+  "editTask": {
+    "message": "Uredi zadatak",
+    "description": "Naslov modalnog prozora za uređivanje zadatka"
+  },
+  "newTask": {
+    "message": "Novi",
+    "description": "Status novog zadatka"
+  },
+  "taskTitle": {
+    "message": "Naslov zadatka *",
+    "description": "Oznaka naslova zadatka"
+  },
+  "taskTitlePlaceholder": {
+    "message": "Unesite naslov zadatka",
+    "description": "Zamjenski tekst polja za unos naslova zadatka"
+  },
+  "taskDescription": {
+    "message": "Opis zadatka",
+    "description": "Oznaka opisa zadatka"
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Unesite opis zadatka (opcionalno)",
+    "description": "Zamjenski tekst polja za unos opisa zadatka"
+  },
+  "importanceLevel": {
+    "message": "Razina važnosti *",
+    "description": "Oznaka razine važnosti"
+  },
+  "notImportant": {
+    "message": "Nije važno",
+    "description": "Oznaka nije važno"
+  },
+  "veryImportant": {
+    "message": "Vrlo važno",
+    "description": "Oznaka vrlo važno"
+  },
+  "dueDate": {
+    "message": "Rok *",
+    "description": "Oznaka roka"
+  },
+  "taskCategory": {
+    "message": "Kategorija zadatka",
+    "description": "Oznaka kategorije zadatka"
+  },
+  "work": {
+    "message": "Posao",
+    "description": "Kategorija posao"
+  },
+  "personal": {
+    "message": "Osobno",
+    "description": "Kategorija osobno"
+  },
+  "study": {
+    "message": "Učenje",
+    "description": "Kategorija učenje"
+  },
+  "health": {
+    "message": "Zdravlje",
+    "description": "Kategorija zdravlje"
+  },
+  "other": {
+    "message": "Ostalo",
+    "description": "Kategorija ostalo"
+  },
+  "deleteTask": {
+    "message": "Obriši zadatak",
+    "description": "Gumb za brisanje zadatka"
+  },
+  "cancel": {
+    "message": "Odustani",
+    "description": "Gumb za odustajanje"
+  },
+  "saveTask": {
+    "message": "Spremi zadatak",
+    "description": "Gumb za spremanje zadatka"
+  },
+  "doing": {
+    "message": "U tijeku",
+    "description": "Status u tijeku"
+  },
+  "overdue": {
+    "message": "Zakašnjeno",
+    "description": "Status zakašnjeno"
+  },
+  "completed": {
+    "message": "Završeno",
+    "description": "Status završeno"
+  },
+  "rejected": {
+    "message": "Odbijeno",
+    "description": "Status odbijeno"
+  },
+  "pending": {
+    "message": "Na čekanju",
+    "description": "Oznaka statusa na čekanju"
+  },
+  "urgentTaskReminder": {
+    "message": "Podsjetnik za hitne zadatke",
+    "description": "Naslov sekcije podsjetnika za hitne zadatke"
+  },
+  "enableUrgentReminder": {
+    "message": "Omogući podsjetnik za hitne zadatke",
+    "description": "Potvrdni okvir za omogućavanje podsjetnika za hitne zadatke"
+  },
+  "enableUrgentReminderDesc": {
+    "message": "Podsjeti promjenom ikone kada se zadatak približava roku",
+    "description": "Opis omogućavanja podsjetnika za hitne zadatke"
+  },
+  "reminderThreshold": {
+    "message": "Prag podsjetnika (minute)",
+    "description": "Oznaka praga podsjetnika"
+  },
+  "reminderThresholdDesc": {
+    "message": "Omogući podsjetnik kada ostaje manje vremena od ovog trajanja za zadatak",
+    "description": "Opis praga podsjetnika"
+  },
+  "reminderInterval": {
+    "message": "Interval podsjetnika (minute)",
+    "description": "Oznaka intervala podsjetnika"
+  },
+  "reminderIntervalDesc": {
+    "message": "Učestalost provjere statusa zadataka u pozadini",
+    "description": "Opis intervala podsjetnika"
+  },
+  "iconReminder": {
+    "message": "Podsjetnik ikone",
+    "description": "Naslov sekcije podsjetnika ikone"
+  },
+  "showIconBadge": {
+    "message": "Prikaži oznaku ikone",
+    "description": "Potvrdni okvir za prikaz oznake ikone"
+  },
+  "showIconBadgeDesc": {
+    "message": "Prikaži broj hitnih zadataka na ikoni proširenja",
+    "description": "Opis prikaza oznake ikone"
+  },
+  "showIconTooltip": {
+    "message": "Prikaži tooltip ikone",
+    "description": "Potvrdni okvir za prikaz tooltip-a ikone"
+  },
+  "showIconTooltipDesc": {
+    "message": "Prikaži informacije o podsjetniku zadataka kada se miš prebacuje preko ikone",
+    "description": "Opis prikaza tooltip-a ikone"
+  },
+  "save": {
+    "message": "Spremi",
+    "description": "Gumb za spremanje"
+  },
+  "quickStart": {
+    "message": "🚀 Brzi početak",
+    "description": "Naslov sekcije brzog početka"
+  },
+  "createTask": {
+    "message": "Stvori zadatak:",
+    "description": "Uputa za stvaranje zadatka"
+  },
+  "createTaskDesc": {
+    "message": "Dvostruki klik na prazno područje",
+    "description": "Opis stvaranja zadatka"
+  },
+  "editTaskDesc": {
+    "message": "Uredi zadatak:",
+    "description": "Uputa za uređivanje zadatka"
+  },
+  "doubleClickOnExistingTask": {
+    "message": "Dvostruki klik na postojeći zadatak",
+    "description": "Opis upute za uređivanje zadatka"
+  },
+  "viewDetails": {
+    "message": "Prikaži detalje:",
+    "description": "Uputa za prikaz detalja"
+  },
+  "viewDetailsDesc": {
+    "message": "Prebaci miš preko zadatka",
+    "description": "Opis prikaza detalja"
+  },
+  "taskManagerDesc": {
+    "message": "Upravitelj zadataka:",
+    "description": "Uputa za upravitelja zadataka"
+  },
+  "taskManagerInstruction": {
+    "message": "Klikni na ikonu popisa da vidiš sve zadatke",
+    "description": "Opis upute za upravitelja zadataka"
+  },
+  "analysisReport": {
+    "message": "Analitički izvještaj:",
+    "description": "Uputa za analitički izvještaj"
+  },
+  "analysisReportDesc": {
+    "message": "Klikni na ikonu grafikona da vidiš uvide",
+    "description": "Opis analitičkog izvještaja"
+  },
+  "eisenhowerMatrix": {
+    "message": "📊 Eisenhowerova matrica zadataka",
+    "description": "Naslov sekcije Eisenhowerove matrice"
+  },
+  "q1Title": {
+    "message": "Q1: Važno i hitno",
+    "description": "Naslov kvadranta Q1"
+  },
+  "q1Desc": {
+    "message": "Učini sada. Kritični zadaci koji zahtijevaju trenutnu pažnju.",
+    "description": "Opis kvadranta Q1"
+  },
+  "q2Title": {
+    "message": "Q2: Važno, ali ne hitno",
+    "description": "Naslov kvadranta Q2"
+  },
+  "q2Desc": {
+    "message": "Zakazuj vrijeme. Strateški zadaci za dugoročno planiranje.",
+    "description": "Opis kvadranta Q2"
+  },
+  "q3Title": {
+    "message": "Q3: Nije važno, ali hitno",
+    "description": "Naslov kvadranta Q3"
+  },
+  "q3Desc": {
+    "message": "Delegiraj drugima. Prekidi koji se mogu obraditi od strane drugih.",
+    "description": "Opis kvadranta Q3"
+  },
+  "q4Title": {
+    "message": "Q4: Nije važno i nije hitno",
+    "description": "Naslov kvadranta Q4"
+  },
+  "q4Desc": {
+    "message": "Eliminiraj. Gubitak vremena koji se treba izbjeći.",
+    "description": "Opis kvadranta Q4"
+  },
+  "confirm": {
+    "message": "Potvrdi",
+    "description": "Gumb za potvrdu"
+  },
+  "settingsSaved": {
+    "message": "Postavke su uspješno spremljene",
+    "description": "Obavijest o spremanju postavki"
+  },
+  "settingsSaveFailed": {
+    "message": "Spremanje postavki nije uspjelo",
+    "description": "Obavijest o grešci pri spremanju postavki"
+  },
+  "allTasksCleared": {
+    "message": "Svi zadaci su obrisani",
+    "description": "Poruka o brisanju svih zadataka"
+  },
+  "settingsApplied": {
+    "message": "Postavke su primijenjene",
+    "description": "Poruka o primjeni postavki"
+  },
+  "taskMonitoringStarted": {
+    "message": "Praćenje zadataka je pokrenuto",
+    "description": "Poruka o pokretanju praćenja zadataka"
+  },
+  "taskMonitoringStopped": {
+    "message": "Praćenje zadataka je zaustavljeno",
+    "description": "Poruka o zaustavljanju praćenja zadataka"
+  },
+  "taskEditProcessed": {
+    "message": "Uređivanje zadatka je obrađeno",
+    "description": "Poruka o obradi uređivanja zadatka"
+  },
+  "taskAddProcessed": {
+    "message": "Dodavanje zadatka je obrađeno",
+    "description": "Poruka o obradi dodavanja zadatka"
+  },
+  "taskDeleteProcessed": {
+    "message": "Brisanje zadatka je obrađeno",
+    "description": "Poruka o obradi brisanja zadatka"
+  },
+  "unknownMessageType": {
+    "message": "Nepoznat tip poruke",
+    "description": "Greška nepoznatog tipa poruke"
+  },
+  "openTaskMatrix": {
+    "message": "Otvori TaskMatrix Pro",
+    "description": "Opis naredbe za otvaranje TaskMatrix Pro"
+  },
+  "ready": {
+    "message": "Spremno",
+    "description": "Poruka o spremnosti"
+  },
+  "initializationFailed": {
+    "message": "Inicijalizacija nije uspjela",
+    "description": "Poruka o grešci pri inicijalizaciji"
+  },
+  "loading": {
+    "message": "Učitavanje...",
+    "description": "Poruka o učitavanju"
+  },
+  "saving": {
+    "message": "Spremanje...",
+    "description": "Poruka o spremanju"
+  },
+  "failedToGetFormData": {
+    "message": "Dohvaćanje podataka forme nije uspjelo",
+    "description": "Poruka o grešci pri dohvaćanju podataka forme"
+  },
+  "pleaseEnterTaskTitle": {
+    "message": "Molimo unesite naslov zadatka",
+    "description": "Upozorenje kada je naslov zadatka prazan"
+  },
+  "taskUpdatedSuccessfully": {
+    "message": "Zadatak je uspješno ažuriran",
+    "description": "Poruka o uspjehu pri ažuriranju zadatka"
+  },
+  "taskAddedSuccessfully": {
+    "message": "Zadatak je uspješno dodan",
+    "description": "Poruka o uspjehu pri dodavanju zadatka"
+  },
+  "saveFailed": {
+    "message": "Spremanje nije uspjelo",
+    "description": "Poruka o grešci pri spremanju"
+  },
+  "taskNotFound": {
+    "message": "Zadatak nije pronađen",
+    "description": "Poruka o grešci kada zadatak nije pronađen"
+  },
+  "failedToEditTask": {
+    "message": "Uređivanje zadatka nije uspjelo",
+    "description": "Poruka o grešci pri uređivanju zadatka"
+  },
+  "taskCompletedSuccessfully": {
+    "message": "Zadatak je uspješno završen",
+    "description": "Poruka o uspjehu pri završavanju zadatka"
+  },
+  "failedToCompleteTask": {
+    "message": "Završavanje zadatka nije uspjelo",
+    "description": "Poruka o grešci pri završavanju zadatka"
+  },
+  "areYouSureDeleteTask": {
+    "message": "Jeste li sigurni da želite obrisati ovaj zadatak? Ova radnja se ne može poništiti.",
+    "description": "Poruka potvrde za brisanje zadatka"
+  },
+  "taskDeletedSuccessfully": {
+    "message": "Zadatak je uspješno obrisan",
+    "description": "Poruka o uspjehu pri brisanju zadatka"
+  },
+  "failedToDeleteTask": {
+    "message": "Brisanje zadatka nije uspjelo",
+    "description": "Poruka o grešci pri brisanju zadatka"
+  },
+  "settingsSavedSuccessfully": {
+    "message": "Postavke su uspješno spremljene",
+    "description": "Poruka o uspjehu pri spremanju postavki"
+  },
+  "failedToSaveSettings": {
+    "message": "Spremanje postavki nije uspjelo",
+    "description": "Poruka o grešci pri spremanju postavki"
+  },
+  "loadingDataFailed": {
+    "message": "Učitavanje podataka nije uspjelo",
+    "description": "Poruka o grešci pri učitavanju podataka"
+  },
+  "noTaskFound": {
+    "message": "Zadatak nije pronađen",
+    "description": "Poruka praznog stanja kada zadaci nisu pronađeni"
+  },
+  "clickPlusIconToAddFirstTask": {
+    "message": "Klikni na ikonu plus da dodaš svoj prvi zadatak",
+    "description": "Uputa za dodavanje prvog zadatka za prazno stanje"
+  },
+  "allCaughtUp": {
+    "message": "Sve je ažurno!",
+    "description": "Poruka praznog stanja kada nema zakašnjelih zadataka"
+  },
+  "noOverdueTasksGreatJob": {
+    "message": "Nema zakašnjelih zadataka. Odličan posao u održavanju svega u redu!",
+    "description": "Poruka praznog stanja kada nema zakašnjelih zadataka"
+  },
+  "noCompletedTasks": {
+    "message": "Nema završenih zadataka",
+    "description": "Poruka praznog stanja kada nema završenih zadataka"
+  },
+  "doubleClickTaskAndClickStatus": {
+    "message": "Dvostruki klik na zadatak i klik na oznaku statusa da ga označiš kao završen",
+    "description": "Uputa za označavanje zadatka kao završen"
+  },
+  "noRejectedTasks": {
+    "message": "Nema odbijenih zadataka",
+    "description": "Poruka praznog stanja kada nema odbijenih zadataka"
+  },
+  "doubleClickTaskAndClickStatusTwice": {
+    "message": "Dvostruki klik na zadatak i dvostruki klik na oznaku statusa da ga označiš kao odbijen",
+    "description": "Uputa za označavanje zadatka kao odbijen"
+  },
+  "task": {
+    "message": "Zadatak:",
+    "description": "Prefiks oznake zadatka"
+  },
+  "importance": {
+    "message": "Važnost:",
+    "description": "Oznaka važnosti"
+  },
+  "noData": {
+    "message": "Nema podataka",
+    "description": "Poruka kada u grafikonu nema podataka"
+  },
+  "notEnoughDataForHeatmap": {
+    "message": "Nema dovoljno podataka za stvaranje toplinske karte",
+    "description": "Poruka kada nema dovoljno podataka za toplinsku kartu"
+  },
+  "notEnoughTaskDataForScatterPlot": {
+    "message": "Nema dovoljno podataka o zadacima za stvaranje dijagrama raspršenosti",
+    "description": "Poruka kada nema dovoljno podataka o zadacima za dijagram raspršenosti"
+  },
+  "bytes": {
+    "message": "bajtova",
+    "description": "Jedinica bajt"
+  },
+  "kb": {
+    "message": "KB",
+    "description": "Jedinica kilobajt"
+  },
+  "mb": {
+    "message": "MB",
+    "description": "Jedinica megabajt"
+  },
+  "gb": {
+    "message": "GB",
+    "description": "Jedinica gigabajt"
+  },
+  "tb": {
+    "message": "TB",
+    "description": "Jedinica terabajt"
+  },
+  "frequencyOfCheckingTaskStatus": {
+    "message": "Učestalost provjere statusa zadataka u pozadini",
+    "description": "Opis učestalosti provjere statusa zadataka"
+  },
+  "displayNumberOfUrgentTasks": {
+    "message": "Prikaži broj hitnih zadataka na ikoni proširenja",
+    "description": "Opis postavke oznake ikone"
+  },
+  "displayTaskReminderInformation": {
+    "message": "Prikaži informacije o podsjetniku zadataka kada se miš prebacuje preko ikone",
+    "description": "Opis postavke naslova ikone"
+  },
+  "doubleClickOnEmptyArea": {
+    "message": "Dvostruki klik na prazno područje",
+    "description": "Uputa za stvaranje zadatka"
+  },
+  "editTaskInstruction": {
+    "message": "Uredi zadatak:",
+    "description": "Uputa za uređivanje zadatka"
+  },
+  "hoverOverTask": {
+    "message": "Prebaci miš preko zadatka",
+    "description": "Uputa za prikaz detalja zadatka"
+  },
+  "clickListIconForAllTasks": {
+    "message": "Klikni na ikonu popisa da vidiš sve zadatke",
+    "description": "Uputa za pristup upravitelju zadataka"
+  },
+  "clickChartIconForInsights": {
+    "message": "Klikni na ikonu grafikona da vidiš uvide",
+    "description": "Uputa za pristup analitičkom izvještaju"
+  },
+  "eisenhowerTaskMatrix": {
+    "message": "📊 Eisenhowerova matrica zadataka",
+    "description": "Naslov sekcije Eisenhowerove matrice zadataka"
+  },
+  "q1ImportantUrgent": {
+    "message": "Q1: Važno i hitno",
+    "description": "Naslov kvadranta Q1"
+  },
+  "doItNowCriticalTasks": {
+    "message": "Učini sada. Kritični zadaci koji zahtijevaju trenutnu pažnju.",
+    "description": "Opis kvadranta Q1"
+  },
+  "q2ImportantNotUrgent": {
+    "message": "Q2: Važno, ali ne hitno",
+    "description": "Naslov kvadranta Q2"
+  },
+  "scheduleItStrategicTasks": {
+    "message": "Zakazuj vrijeme. Strateški zadaci za dugoročno planiranje.",
+    "description": "Opis kvadranta Q2"
+  },
+  "q3NotImportantUrgent": {
+    "message": "Q3: Nije važno, ali hitno",
+    "description": "Naslov kvadranta Q3"
+  },
+  "delegateItInterruptions": {
+    "message": "Delegiraj drugima. Prekidi koji se mogu obraditi od strane drugih.",
+    "description": "Opis kvadranta Q3"
+  },
+  "q4NotImportantNotUrgent": {
+    "message": "Q4: Nije važno i nije hitno",
+    "description": "Naslov kvadranta Q4"
+  },
+  "eliminateItTimeWasters": {
+    "message": "Eliminiraj. Gubitak vremena koji se treba izbjeći.",
+    "description": "Opis kvadranta Q4"
+  },
+  "whenTaskRemainingTimeLessThanDuration": {
+    "message": "Omogući podsjetnik kada ostaje manje vremena od ovog trajanja za zadatak",
+    "description": "Opis postavke praga hitnog podsjetnika"
+  },
+  "whenTaskAboutToExpireRemindThroughIcon": {
+    "message": "Podsjeti promjenom ikone kada se zadatak približava roku",
+    "description": "Opis postavke hitnog podsjetnika"
+  },
+  "enableUrgentTaskReminder": {
+    "message": "Omogući podsjetnik za hitne zadatke",
+    "description": "Oznaka potvrdnog okvira za omogućavanje podsjetnika za hitne zadatke"
+  },
+  "invalidDueDate": {
+    "message": "Nevaljan rok",
+    "description": "Poruka o grešci za nevaljan rok"
+  },
+  "dueAt": {
+    "message": "Rok u",
+    "description": "Prefiks za zadatke koji istječu na određeni datum"
+  },
+  "dueIn": {
+    "message": "Rok u",
+    "description": "Prefiks za zadatke koji istječu u određeno vrijeme"
+  },
+  "completionRate": {
+    "message": "Stopa završavanja",
+    "description": "Naslov kartice stope završavanja"
+  },
+  "timeStatus": {
+    "message": "Vrijeme-Status",
+    "description": "Naslov kartice vrijeme-status"
+  },
+  "timeTrend": {
+    "message": "Vremenski trend",
+    "description": "Naslov kartice vremenskog trenda"
+  },
+  "sourceCross": {
+    "message": "Izvor-Križanje",
+    "description": "Naslov kartice izvor-križanje"
+  },
+  "completionRateQuantity": {
+    "message": "Stopa završavanja - Količina",
+    "description": "Naslov grafikona stope završavanja"
+  },
+  "taskSourceCompletionRate": {
+    "message": "Izvor zadatka - Stopa završavanja",
+    "description": "Naslov grafikona stope završavanja izvora zadatka"
+  },
+  "timeCompletionStatusScatter": {
+    "message": "Vrijeme - Dijagram raspršenosti statusa završavanja",
+    "description": "Naslov dijagrama raspršenosti vremena-statusa završavanja"
+  },
+  "weeklyMonthlyTrend": {
+    "message": "Tjedni/mjesečni trend",
+    "description": "Naslov grafikona tjednog/mjesečnog trenda"
+  },
+  "weekly": {
+    "message": "Tjedni",
+    "description": "Gumb tjednog razdoblja"
+  },
+  "monthly": {
+    "message": "Mjesečni",
+    "description": "Gumb mjesečnog razdoblja"
+  },
+  "source": {
+    "message": "Izvor",
+    "description": "Naslov tablice izvor"
+  },
+  "low": {
+    "message": "Niska (0-20%)",
+    "description": "Oznaka niske stope završavanja"
+  },
+  "mediumLow": {
+    "message": "Srednja-niska (20-50%)",
+    "description": "Oznaka srednje-niske stope završavanja"
+  },
+  "mediumHigh": {
+    "message": "Srednja-visoka (50-80%)",
+    "description": "Oznaka srednje-visoke stope završavanja"
+  },
+  "high": {
+    "message": "Visoka (80-100%)",
+    "description": "Oznaka visoke stope završavanja"
+  },
+  "taskCost": {
+    "message": "Trošak zadatka (dani)",
+    "description": "Oznaka osi troška zadatka"
+  },
+  "taskImportance": {
+    "message": "Važnost zadatka",
+    "description": "Oznaka osi važnosti zadatka"
+  },
+  "taskCount": {
+    "message": "Broj zadataka",
+    "description": "Oznaka osi broja zadataka"
+  },
+  "quadrantTaskTimeStatistics": {
+    "message": "Statistika vremena zadataka kvadranta (dani):",
+    "description": "Naslov statistike vremena zadataka kvadranta"
+  },
+  "quadrant": {
+    "message": "Kvadrant",
+    "description": "Naslov tablice kvadrant"
+  },
+  "completedAvg": {
+    "message": "Završeno (prosjek)",
+    "description": "Naslov tablice završeno prosjek"
+  },
+  "completedMedian": {
+    "message": "Završeno (medijan)",
+    "description": "Naslov tablice završeno medijan"
+  },
+  "inProgressAvg": {
+    "message": "U tijeku (prosjek)",
+    "description": "Naslov tablice u tijeku prosjek"
+  },
+  "inProgressMedian": {
+    "message": "U tijeku (medijan)",
+    "description": "Naslov tablice u tijeku medijan"
+  },
+  "deepInsights": {
+    "message": "Duboki uvidi",
+    "description": "Naslov sekcije dubokih uvida"
+  },
+  "currentlyNotEnoughDataForInsights": {
+    "message": "Trenutno nema dovoljno podataka za stvaranje uvida.",
+    "description": "Poruka kada nema podataka za uvide"
+  },
+  "importantUrgent": {
+    "message": "Važno i hitno",
+    "description": "Oznaka kvadranta Q1"
+  },
+  "importantNotUrgent": {
+    "message": "Važno, ali ne hitno",
+    "description": "Oznaka kvadranta Q2"
+  },
+  "notImportantNotUrgent": {
+    "message": "Nije važno i nije hitno",
+    "description": "Oznaka kvadranta Q3"
+  },
+  "notImportantUrgent": {
+    "message": "Nije važno, ali hitno",
+    "description": "Oznaka kvadranta Q4"
+  },
+  "q2CompletionRateLowerThanOthers": {
+    "message": "Stopa završavanja zadataka kvadranta Q2 (važno, ali ne hitno) značajno je niža od drugih kvadranata, odražavajući izvršnu predrasudu «hitno važnije od važnog», što može dovesti do kašnjenja dugoročnih strateških ciljeva.",
+    "description": "Uvid o nižoj stopi završavanja Q2"
+  },
+  "q3CompletionRateTooHigh": {
+    "message": "Stopa završavanja zadataka kvadranta Q3 (nije važno i nije hitno) previsoka je, molimo obratite pažnju na «neučinkovitu zaposlenost» - ako se previše energije troši na trivijalne zadatke, to komprimira vrijeme za glavne zadatke.",
+    "description": "Uvid o previsokoj stopi završavanja Q3"
+  },
+  "q1TasksAccountForHighPercentage": {
+    "message": "Zadaci kvadranta Q1 (važno i hitno) čine $percentage% od ukupnog broja zadataka, pokazujući poboljšanje u planiranju zadataka, rano rješavanje važnih zadataka za izbjegavanje hitnih situacija.",
+    "description": "Uvid o visokom postotku zadataka Q1"
+  },
+  "q4TasksAccountForHighPercentage": {
+    "message": "Zadaci kvadranta Q4 (nije važno, ali hitno) čine $percentage% od ukupnog broja zadataka, molimo pregledajte izvore ovih zadataka niskog prioriteta, ali hitnih, optimizirajte proces odgovora na hitne slučajeve.",
+    "description": "Uvid o visokom postotku zadataka Q4"
+  },
+  "sourceTasksQ1HighQ2Low": {
+    "message": "Zadaci «$source» postižu $q1Rate% stopu završavanja u Q1 (važno i hitno), ali samo $q2Rate% u Q2 (važno, ali ne hitno), pokazujući da je prioritet izvršavanja zadataka vođen «vanjskim pritiskom», a ne unutarnjim strateškim fokusom.",
+    "description": "Uvid o stopi završavanja Q1 vs Q2 zadataka izvora"
+  },
+  "sourceTasksQ4LowCompletionRate": {
+    "message": "Zadaci «$source» imaju nisku stopu završavanja ($q4Rate%) u Q4 (nije važno, ali hitno), treba potvrditi postoji li problem s definiranjem prioriteta «privremenih zadataka».",
+    "description": "Uvid o niskoj stopi završavanja zadataka Q4"
+  },
+  "sourceTasksHighlyConcentratedInQuadrant": {
+    "message": "«$source» je visoko koncentriran u kvadrantu $quadrant ($quadrantName), čineći $percentage%. Molimo pregledajte racionalnost planiranja zadataka.",
+    "description": "Uvid o visokoj koncentraciji zadataka u jednom kvadrantu"
+  },
+  "sourceTasksCompletionRateDifference": {
+    "message": "«$highSource» ima najvišu stopu završavanja ($highRate%) u $highQuadrant, dok «$lowSource» ima najnižu ($lowRate%) u $lowQuadrant, pokazujući očitu razliku u prioritetima obrade različitih tipova zadataka.",
+    "description": "Uvid o razlici stope završavanja između izvora"
+  },
+  "q1PendingTasksHighTimeSpent": {
+    "message": "Q1 (važno i hitno) ima $percentage% zadataka na čekanju koji traju više od 3 dana, pokazujući mogući nedostatak resursa ili neočekivane poteškoće s glavnim zadacima. Molimo razmotrite razbijanje zadatka ili dodatnu podršku.",
+    "description": "Uvid o zadacima Q1 na čekanju s visokim utrošenim vremenom"
+  },
+  "q4CompletedTasksExceedQ2Time": {
+    "message": "Prosječno vrijeme završavanja završenih zadataka Q4 (nije važno, ali hitno) je $q4Time dana, značajno premašujući $q2Time dana Q2 (važno, ali ne hitno), pokazujući da «privremeni hitni zadaci» prekomjerno zauzimaju resurse. Molimo optimizirajte proces odgovora na hitne slučajeve.",
+    "description": "Uvid o vremenu završavanja Q4 vs Q2"
+  },
+  "pendingTasksAverageTimeHigher": {
+    "message": "Prosječno vrijeme obrade zadataka na čekanju ($pendingTime dana) značajno je više od završenih zadataka ($completedTime dana). Molimo fokusirajte se na zadatke koji ostaju na čekanju dugo vrijeme i prilagodite strategiju ili alokaciju resursa prema potrebi.",
+    "description": "Uvid o vremenu zadataka na čekanju vs završenih"
+  },
+  "quadrantTaskVolumeFluctuation": {
+    "message": "Volumen zadataka $quadrantLabel fluktuira od $from do $to $direction $rate%, pokazujući značajne fluktuacije. Molimo razmotrite fokusiranje na ravnotežu alokacije zadataka.",
+    "description": "Uvid o fluktuaciji volumena zadataka kvadranta"
+  },
+  "quadrantCompletionRateUpwardTrend": {
+    "message": "Stopa završavanja zadataka $quadrantLabel pokazuje održiv uzlazni trend, pokazujući poboljšanje radne aktivnosti.",
+    "description": "Uvid o uzlaznom trendu stope završavanja"
+  },
+  "quadrantCompletionRateDownwardTrend": {
+    "message": "Stopa završavanja zadataka $quadrantLabel pokazuje održiv silazni trend, koji zahtijeva pažnju na probleme izvršne aktivnosti.",
+    "description": "Uvid o silaznom trendu stope završavanja"
+  },
+  "q2TasksContinueToAccumulate": {
+    "message": "Zadaci Q2 (važno, ali ne hitno) nastavljaju se nakupljati bez poboljšanja stope završavanja, odražavajući da «strateški zadaci» nisu integrirani u redovni plan izvršavanja, što donosi rizik «nakupljanja kašnjenja».",
+    "description": "Uvid o nakupljanju zadataka Q2"
+  }
+}
