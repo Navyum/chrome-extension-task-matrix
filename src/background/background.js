@@ -5,6 +5,7 @@
 
 import { StorageManager } from '../services/StorageManager.js';
 import { Task } from '../models/Task.js';
+import { i18n } from '../utils/i18n.js';
 
 // 浏览器API适配器
 const browserAPI = (() => {
@@ -84,7 +85,7 @@ class BackgroundService {
         case 'clearAllTasks': {
           // 清空所有任务
           this.clearAllTasks().then(result => {
-            sendResponse({ success: true, message: 'All tasks cleared' });
+            sendResponse({ success: true, message: i18n.getMessage('allTasksCleared') });
           }).catch(error => {
             sendResponse({ success: false, error: error.message });
           });
@@ -96,7 +97,7 @@ class BackgroundService {
           this.loadSettings().then(() => {
             console.log('Settings updated, restarting monitoring with new configuration');
             this.restartTaskMonitoring();
-            sendResponse({ success: true, message: 'Settings applied' });
+            sendResponse({ success: true, message: i18n.getMessage('settingsApplied') });
           }).catch(error => {
             sendResponse({ success: false, error: error.message });
           });
@@ -105,19 +106,19 @@ class BackgroundService {
           
         case 'startMonitoring':
           this.startTaskMonitoring();
-          sendResponse({ success: true, message: 'Task monitoring started' });
+          sendResponse({ success: true, message: i18n.getMessage('taskMonitoringStarted') });
           break;
           
         case 'stopMonitoring':
           this.stopTaskMonitoring();
-          sendResponse({ success: true, message: 'Task monitoring stopped' });
+          sendResponse({ success: true, message: i18n.getMessage('taskMonitoringStopped') });
           break;
           
         case 'editTask': {
           // 任务被编辑，重新检查紧急任务
           console.log('Task edited, checking urgent tasks...');
           this.checkUrgentTasks();
-          sendResponse({ success: true, message: 'Task edit processed' });
+          sendResponse({ success: true, message: i18n.getMessage('taskEditProcessed') });
           break;
         }
         
@@ -125,7 +126,7 @@ class BackgroundService {
           // 任务被添加，重新检查紧急任务
           console.log('Task added, checking urgent tasks...');
           this.checkUrgentTasks();
-          sendResponse({ success: true, message: 'Task add processed' });
+          sendResponse({ success: true, message: i18n.getMessage('taskAddProcessed') });
           break;
         }
         
@@ -133,12 +134,12 @@ class BackgroundService {
           // 任务被删除，重新检查紧急任务
           console.log('Task deleted, checking urgent tasks...');
           this.checkUrgentTasks();
-          sendResponse({ success: true, message: 'Task delete processed' });
+          sendResponse({ success: true, message: i18n.getMessage('taskDeleteProcessed') });
           break;
         }
           
         default:
-          sendResponse({ success: false, error: 'Unknown message type' });
+          sendResponse({ success: false, error: i18n.getMessage('unknownMessageType') });
       }
       
       return true; // 保持消息通道开放
@@ -364,7 +365,7 @@ class BackgroundService {
       
       // 设置默认工具提示
       actionAPI.setTitle({
-        title: 'TaskMatrix Pro - 智能任务管理'
+        title: i18n.getMessage('appName')
       });
 
       actionAPI.setIcon({

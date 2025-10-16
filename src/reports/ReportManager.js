@@ -2,6 +2,7 @@
  * 报告管理器
  * 负责初始化和管理所有报告模块
  */
+import { i18n } from '../utils/i18n.js';
 import { CompletionRateChart } from './modules/CompletionRateChart.js';
 import { TimeStatusChart } from './modules/TimeStatusChart.js';
 import { TrendChart } from './modules/TrendChart.js';
@@ -46,7 +47,7 @@ export class ReportManager {
     
     modalContent.innerHTML = `
       <div class="modal-header">
-        <h3>Analysis Report</h3>
+        <h3>${i18n.getMessage('analysisReport')}</h3>
         <button class="modal-close" id="closeReportModal">
           <img src="assets/icons/close.svg" alt="Close" width="20" height="20">
         </button>
@@ -54,10 +55,10 @@ export class ReportManager {
       <div class="report-content">
         <!-- 报告Tab切换 -->
         <div class="report-tabs">
-          <div class="tab-button active" data-tab="module1">Completion-Rate</div>
-          <div class="tab-button" data-tab="module2">Time-Status</div>
-          <div class="tab-button" data-tab="module3">Time-Trend</div>
-          <div class="tab-button" data-tab="module4">Source-Cross</div>
+          <div class="tab-button active" data-tab="module1">${i18n.getMessage('completionRate')}</div>
+          <div class="tab-button" data-tab="module2">${i18n.getMessage('timeStatus')}</div>
+          <div class="tab-button" data-tab="module3">${i18n.getMessage('timeTrend')}</div>
+          <div class="tab-button" data-tab="module4">${i18n.getMessage('sourceCross')}</div>
         </div>
         
         <!-- 报告内容区域 -->

@@ -3,6 +3,7 @@
  * 负责艾森豪威尔矩阵的可视化渲染
  */
 import * as d3 from 'd3';
+import { i18n } from '../utils/i18n.js';
 
 export class MatrixRenderer {
   constructor(container) {
@@ -924,7 +925,7 @@ export class MatrixRenderer {
       .style('overflow', 'hidden')
       .style('text-overflow', 'ellipsis')
       .style('white-space', 'nowrap')
-      .text(`Task: ${task.title}`);
+      .text(`${i18n.getMessage('task')} ${task.title}`);
     
     // 添加描述容器
     const descriptionContainer = tooltip.append('div')
@@ -993,7 +994,7 @@ export class MatrixRenderer {
     
     importanceContainer.append('span')
       .style('font-size', '11px')
-      .text('Importance:');
+      .text(i18n.getMessage('importance'));
     
     importanceContainer.append('div')
       .style('line-height', '1')

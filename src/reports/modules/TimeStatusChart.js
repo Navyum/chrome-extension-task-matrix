@@ -1,6 +1,8 @@
 /**
  * 任务耗时-状态散点图模块
  */
+import { i18n } from '../../utils/i18n.js';
+
 export class TimeStatusChart {
   constructor(utils) {
     this.utils = utils;
@@ -15,7 +17,7 @@ export class TimeStatusChart {
   initContainer(container) {
     if (!container) return;
     
-    const elements = this.utils.createModuleContainer(container, 'Time - Completion Status Scatter');
+    const elements = this.utils.createModuleContainer(container, i18n.getMessage('timeCompletionStatusScatter'));
     if (elements) {
       this.chartContainer = elements.chartContainer;
       this.insightContainer = elements.insightContainer;
@@ -85,7 +87,7 @@ export class TimeStatusChart {
   createScatterPlot(taskData) {
     if (!this.chartContainer || taskData.length === 0) {
       if (this.chartContainer) {
-        this.chartContainer.innerHTML = '<div style="text-align: center; padding: 50px;">Not enough task data to generate scatter plot</div>';
+        this.chartContainer.innerHTML = `<div style="text-align: center; padding: 50px;">${i18n.getMessage('notEnoughTaskDataForScatterPlot')}</div>`;
       }
       return;
     }
@@ -106,10 +108,10 @@ export class TimeStatusChart {
 
     // 定义象限标签
     const quadrantLabels = {
-      q1: 'Important & Urgent',
-      q2: 'Important & Not Urgent',
-      q3: 'Not Important & Not Urgent',
-      q4: 'Not Important & Urgent'
+      q1: i18n.getMessage('importantUrgent'),
+      q2: i18n.getMessage('importantNotUrgent'),
+      q3: i18n.getMessage('notImportantNotUrgent'),
+      q4: i18n.getMessage('notImportantUrgent')
     };
     
     // 创建散点图的SVG
@@ -144,7 +146,7 @@ export class TimeStatusChart {
           y="${svgHeight - 10}" 
           text-anchor="middle" 
           font-size="12"
-        >Task Cost (days)</text>
+        >${i18n.getMessage('taskCost')}</text>
         
         <text 
           x="${15}" 
@@ -152,7 +154,7 @@ export class TimeStatusChart {
           text-anchor="middle" 
           font-size="12" 
           transform="rotate(-90, 15, ${svgHeight / 2})"
-        >Task Importance</text>
+        >${i18n.getMessage('taskImportance')}</text>
     `;
     
     // 绘制数据点
@@ -239,12 +241,12 @@ export class TimeStatusChart {
     const statusItems = [
       {
         color: '#050505',
-        label: 'Completed'
+        label: i18n.getMessage('completed')
       },
       
       {
         color: '#f5f5f5',
-        label: 'Pending'
+        label: i18n.getMessage('doing')
       },
       
     ]
@@ -333,22 +335,22 @@ export class TimeStatusChart {
     });
     
     // 创建统计表格
-    let statsHTML = `<div style="font-size: 15px; font-weight: bold; margin-top: 50px;">Quadrant Task Time Statistics (Days):</div>
+    let statsHTML = `<div style="font-size: 15px; font-weight: bold; margin-top: 50px;">${i18n.getMessage('quadrantTaskTimeStatistics')}</div>
       <table style="width: 100%; border-collapse: collapse; font-size: 12px;">
         <tr>
-          <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">Quadrant</th>
-          <th style="border: 1px solid #ddd; padding: 6px; text-align: center;">Completed (Avg)</th>
-          <th style="border: 1px solid #ddd; padding: 6px; text-align: center;">Completed (Median)</th>
-          <th style="border: 1px solid #ddd; padding: 6px; text-align: center;">In Progress (Avg)</th>
-          <th style="border: 1px solid #ddd; padding: 6px; text-align: center;">In Progress (Median)</th>
+          <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">${i18n.getMessage('quadrant')}</th>
+          <th style="border: 1px solid #ddd; padding: 6px; text-align: center;">${i18n.getMessage('completedAvg')}</th>
+          <th style="border: 1px solid #ddd; padding: 6px; text-align: center;">${i18n.getMessage('completedMedian')}</th>
+          <th style="border: 1px solid #ddd; padding: 6px; text-align: center;">${i18n.getMessage('inProgressAvg')}</th>
+          <th style="border: 1px solid #ddd; padding: 6px; text-align: center;">${i18n.getMessage('inProgressMedian')}</th>
         </tr>
     `;
     
     const quadrantLabels = {
-      q1: 'Important & Urgent',
-      q2: 'Important & Not Urgent',
-      q3: 'Not Important & Not Urgent',
-      q4: 'Not Important & Urgent'
+      q1: i18n.getMessage('importantUrgent'),
+      q2: i18n.getMessage('importantNotUrgent'),
+      q3: i18n.getMessage('notImportantNotUrgent'),
+      q4: i18n.getMessage('notImportantUrgent')
     };
     
     Object.keys(quadrantLabels).forEach(quadrant => {
@@ -376,6 +378,15 @@ export class TimeStatusChart {
   
   /**
    * 生成洞察
+   * 
+   * 洞察分析说明：
+   * 本模块分析任务的时间效率，通过对比不同象限和状态的任务耗时，
+   * 识别时间管理中的效率问题和资源分配不当。
+   * 
+   * 分析依据：
+   * 1. 时间效率分析：核心任务应优先获得资源，避免长时间未完成
+   * 2. 象限时间对比：不同象限任务的时间投入应反映其重要性
+   * 3. 完成率与耗时关系：长期未完成任务可能表明规划或执行问题
    */
   generateInsights(taskData, quadrantData) {
     if (!this.insightContainer) return;
@@ -396,18 +407,26 @@ export class TimeStatusChart {
     });
     
     // 分析Q1中未完成任务的耗时情况
+    // 依据：Q1任务作为核心任务，长时间未完成可能表明资源不足或存在意外困难
+    // 阈值：超过50%的Q1进行中任务耗时>3天 且 至少2个任务
+    // 理论基础：根据项目管理理论，关键任务应优先分配资源，长时间未完成需要关注
     const q1Pending = tasksByQuadrant.q1.pending;
     if (q1Pending.length > 0) {
       // 计算高耗时任务的比例
       const highTimeSpentTasks = q1Pending.filter(task => task.timeSpent > 3); // 超过3天
       const highTimeSpentRatio = highTimeSpentTasks.length / q1Pending.length;
       
-              if (highTimeSpentRatio > 0.5 && highTimeSpentTasks.length >= 2) {
-          insights.push(`Q1 (Important & Urgent) has ${Math.round(highTimeSpentRatio * 100)}% of pending tasks taking over 3 days, indicating potential resource shortage or unexpected difficulty in core tasks. Consider task breakdown or additional support.`);
+      if (highTimeSpentRatio > 0.5 && highTimeSpentTasks.length >= 2) {
+          insights.push(i18n.getMessage('q1PendingTasksHighTimeSpent', [
+            Math.round(highTimeSpentRatio * 100) 
+          ]));
         }
     }
     
     // 比较Q4和Q2已完成任务的平均耗时
+    // 依据：Q4任务（不重要但紧急）不应占用过多时间，Q2任务（重要但不紧急）应获得更多时间投入
+    // 阈值：Q4平均耗时 > Q2平均耗时 × 1.5
+    // 理论基础：根据艾森豪威尔矩阵，Q2任务应获得更多时间投入，Q4任务应快速处理
     const q4Completed = tasksByQuadrant.q4.completed;
     const q2Completed = tasksByQuadrant.q2.completed;
     
@@ -415,21 +434,30 @@ export class TimeStatusChart {
       const q4AvgTime = q4Completed.reduce((sum, data) => sum + data.timeSpent, 0) / q4Completed.length;
       const q2AvgTime = q2Completed.reduce((sum, data) => sum + data.timeSpent, 0) / q2Completed.length;
       
-              if (q4AvgTime > q2AvgTime * 1.5) {
-          insights.push(`Q4 (Not Important & Urgent) completed tasks average ${Math.round(q4AvgTime * 10) / 10} days, far exceeding Q2 (Important & Not Urgent) at ${Math.round(q2AvgTime * 10) / 10} days, indicating "temporary urgent tasks" over-occupying resources. Optimize emergency response processes.`);
+      if (q4AvgTime > q2AvgTime * 1.5) {
+          insights.push(i18n.getMessage('q4CompletedTasksExceedQ2Time', [
+            Math.round(q4AvgTime * 10) / 10, 
+            Math.round(q2AvgTime * 10) / 10 
+          ]));
         }
     }
     
     // 分析任务完成率与耗时的关系
+    // 依据：进行中任务耗时过长可能表明任务规划不合理或执行效率低下
+    // 阈值：进行中任务平均时间 > 已完成任务平均时间 × 2 且 至少3个进行中任务
+    // 理论基础：根据敏捷开发理论，应关注任务完成率而非任务数量，长期卡住的任务需要关注
     const completedTasks = taskData.filter(data => data.isCompleted);
     const pendingTasks = taskData.filter(data => !data.isCompleted);
     
     if (completedTasks.length > 0 && pendingTasks.length > 0) {
       const avgCompletedTime = completedTasks.reduce((sum, data) => sum + data.timeSpent, 0) / completedTasks.length;
       const avgPendingTime = pendingTasks.reduce((sum, data) => sum + data.timeSpent, 0) / pendingTasks.length;
-      
+
       if (avgPendingTime > avgCompletedTime * 2 && pendingTasks.length >= 3) {
-        insights.push(`Average processing time for pending tasks (${Math.round(avgPendingTime * 10) / 10} days) is significantly higher than completed tasks (${Math.round(avgCompletedTime * 10) / 10} days). Focus on long-stuck tasks and adjust strategy or resource allocation when necessary.`);
+        insights.push(i18n.getMessage('pendingTasksAverageTimeHigher', [ 
+          Math.round(avgPendingTime * 10) / 10, 
+          Math.round(avgCompletedTime * 10) / 10 
+        ]));
       }
     }
     

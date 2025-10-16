@@ -1,6 +1,8 @@
 /**
  * 时间趋势图模块
  */
+import { i18n } from '../../utils/i18n.js';
+
 export class TrendChart {
   constructor(utils) {
     this.utils = utils;
@@ -16,7 +18,7 @@ export class TrendChart {
   initContainer(container) {
     if (!container) return;
     
-    const elements = this.utils.createModuleContainer(container, 'Weekly/Monthly Trend');
+    const elements = this.utils.createModuleContainer(container, i18n.getMessage('weeklyMonthlyTrend'));
     if (elements) {
       this.chartContainer = elements.chartContainer;
       this.insightContainer = elements.insightContainer;
@@ -25,8 +27,8 @@ export class TrendChart {
       this.periodContainer = document.createElement('div');
       this.periodContainer.className = 'period-selector';
       this.periodContainer.innerHTML = `
-        <button class="period-btn active" data-period="week">Weekly</button>
-        <button class="period-btn" data-period="month">Monthly</button>
+        <button class="period-btn active" data-period="week">${i18n.getMessage('weekly')}</button>
+        <button class="period-btn" data-period="month">${i18n.getMessage('monthly')}</button>
       `;
       
       // 将周期选择器插入到图表容器的父节点（section）中，在图表容器之前
@@ -161,10 +163,10 @@ export class TrendChart {
     
     // 为每个象限准备数据
     const quadrantData = {
-      q1: { label: 'Important & Urgent', timePoints: {} },
-      q2: { label: 'Important & Not Urgent', timePoints: {} },
-      q3: { label: 'Not Important & Not Urgent', timePoints: {} },
-      q4: { label: 'Not Important & Urgent', timePoints: {} }
+      q1: { label: i18n.getMessage('importantUrgent'), timePoints: {} },
+      q2: { label: i18n.getMessage('importantNotUrgent'), timePoints: {} },
+      q3: { label: i18n.getMessage('notImportantNotUrgent'), timePoints: {} },
+      q4: { label: i18n.getMessage('notImportantUrgent'), timePoints: {} }
     };
     
     // 初始化数据结构
@@ -329,7 +331,7 @@ export class TrendChart {
       const timePoints = quadrantInfo.timePoints;
       if (!timePoints || timePoints.length === 0) {
         const noDataDiv = document.createElement('div');
-        noDataDiv.textContent = 'No Data';
+        noDataDiv.textContent = i18n.getMessage('noData');
         noDataDiv.style.textAlign = 'center';
         noDataDiv.style.paddingTop = '50px';
         noDataDiv.style.color = '#666';
@@ -430,7 +432,7 @@ export class TrendChart {
           font-size="8" 
           fill="#666"
           transform="rotate(-90, ${padding.left - 15}, ${yAxisCenter})"
-        >Task Count</text>
+        >${i18n.getMessage('taskCount')}</text>
       `;
       
       // 结束SVG
@@ -453,11 +455,11 @@ export class TrendChart {
       const legend = `
         <div style="display: flex; align-items: center; gap: 5px;">
           <div style="width: 8px; height: 8px; background-color: ${statusColors.completed}; border-radius: 2px;"></div>
-          <span>Completed</span>
+          <span>${i18n.getMessage('completed')}</span>
         </div>
         <div style="display: flex; align-items: center; gap: 5px;">
           <div style="width: 8px; height: 8px; background-color: ${statusColors.pending}; border-radius: 2px;"></div>
-          <span>Pending</span>
+          <span>${i18n.getMessage('pending')}</span>
         </div>
       `;
       
@@ -474,6 +476,15 @@ export class TrendChart {
   
   /**
    * 生成趋势洞察
+   * 
+   * 洞察分析说明：
+   * 本模块分析任务管理的时间趋势，通过追踪各象限任务量和完成率的变化，
+   * 识别任务管理策略的有效性和需要改进的方向。
+   * 
+   * 分析依据：
+   * 1. 趋势稳定性：稳定的任务分配有助于提高执行效率
+   * 2. 完成率趋势：持续改善表明策略有效，持续下降需要调整
+   * 3. 任务积累：Q2任务持续积累反映战略任务未纳入常规执行计划
    */
   generateInsights(trendData) {
     if (!this.insightContainer) return;
@@ -489,6 +500,9 @@ export class TrendChart {
       // 至少需要2个时间点才能分析趋势
       if (timePoints.length >= 2) {
         // 任务增长波动检测
+        // 依据：任务量剧烈波动可能表明任务规划不稳定或外部干扰过多
+        // 阈值：任务量变化幅度 > 50%
+        // 理论基础：稳定的任务分配有助于提高执行效率，剧烈波动需要关注
         if (timePoints.length >= 3) {
           const fluctuations = [];
           
@@ -519,11 +533,20 @@ export class TrendChart {
             const direction = maxFluctuation.rate > 0 ? 'increased' : 'decreased';
             const quadrantLabel = quadrantInfo.label;
             
-            insights.push(`${quadrantLabel} task volume ${direction} by ${Math.round(Math.abs(maxFluctuation.rate))}% from ${maxFluctuation.from} to ${maxFluctuation.to}, showing significant fluctuation. Consider focusing on task allocation balance.`);
+            insights.push(i18n.getMessage('quadrantTaskVolumeFluctuation', [
+              quadrantLabel, 
+              direction, 
+              Math.round(Math.abs(maxFluctuation.rate)), 
+              maxFluctuation.from, 
+              maxFluctuation.to 
+            ]));
           }
         }
         
         // 完成率趋势分析
+        // 依据：完成率持续上升表明工作效率改善，持续下降需要关注执行效率问题
+        // 阈值：连续3个周期完成率上升/下降趋势 >= 70%
+        // 理论基础：趋势分析是评估任务管理策略有效性的重要指标
         if (timePoints.length >= 3) {
           const completionRates = timePoints.map(point => 
             point.total > 0 ? (point.completed / point.total) * 100 : 0);
@@ -544,14 +567,21 @@ export class TrendChart {
           const totalChanges = increaseCount + decreaseCount;
           if (totalChanges > 0) {
             if (increaseCount / totalChanges >= 0.7) {
-              insights.push(`${quadrantInfo.label} task completion rate shows a sustained upward trend, indicating improved work efficiency.`);
+              insights.push(i18n.getMessage('quadrantCompletionRateUpwardTrend', [
+                quadrantInfo.label 
+              ]));
             } else if (decreaseCount / totalChanges >= 0.7) {
-              insights.push(`${quadrantInfo.label} task completion rate shows a sustained downward trend, requiring attention to execution efficiency issues.`);
+              insights.push(i18n.getMessage('quadrantCompletionRateDownwardTrend', [
+                quadrantInfo.label 
+              ]));
             }
           }
         }
         
         // 分析Q2任务积累情况
+        // 依据：Q2任务持续积累且完成率无改善反映"战略任务"未纳入常规执行计划
+        // 阈值：70%的时间点Q2任务数量增加
+        // 理论基础：Q2任务积累存在"拖延积累"风险，需要将战略任务纳入日常执行计划
         if (quadrant === 'q2' && timePoints.length >= 3) {
           let accumulationCount = 0;
           
@@ -565,7 +595,7 @@ export class TrendChart {
           }
           
           if (accumulationCount >= timePoints.length * 0.7) {
-            insights.push(`Q2 (Important & Not Urgent) tasks continue to accumulate without improvement in completion rate, reflecting that "strategic tasks" are not integrated into regular execution plans, posing a "procrastination accumulation" risk.`);
+            insights.push(i18n.getMessage('q2TasksContinueToAccumulate'));
           }
         }
       }

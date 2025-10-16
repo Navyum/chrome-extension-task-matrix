@@ -50,7 +50,8 @@ module.exports = (env, argv) => {
       new CopyPlugin({
         patterns: [
           { from: `manifests/${browser}.json`, to: 'manifest.json' },
-          { from: 'assets/icons', to: 'assets/icons' }
+          { from: 'assets/icons', to: 'assets/icons' },
+          { from: 'src/_locales', to: '_locales' }
         ]
       }),
       new HtmlWebpackPlugin({

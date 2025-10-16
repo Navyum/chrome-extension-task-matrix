@@ -1,6 +1,7 @@
 /**
  * 任务数据模型
  */
+import { i18n } from '../utils/i18n.js';
 // 浏览器API适配器
 const browserAPI = (() => {
   if (typeof browser !== 'undefined') {
@@ -189,7 +190,7 @@ export class Task {
         isNaNResult: isNaN(this.dueDate)
       });
       // ====================
-      return 'Invalid due date';
+      return i18n.getMessage('invalidDueDate');
     }
     
     const remaining = this.getTimeRemaining(); // 毫秒
@@ -204,14 +205,14 @@ export class Task {
       if (overdueDays >= 1) {
         // 超期大于1天，显示具体超期日期
         const overdueDate = new Date(this.dueDate);
-        return `Overdue ${overdueDate.toLocaleDateString()}`;
+        return `${i18n.getMessage('overdue')} ${overdueDate.toLocaleDateString()}`;
       } else if (overdueHours >= 1) {
         // 超期1小时到1天，显示小时和分钟
         const minutes = overdueMinutes % 60;
-        return `Overdue ${overdueHours}h ${minutes}m`;
+        return `${i18n.getMessage('overdue')} ${overdueHours}h ${minutes}m`;
       } else {
         // 超期不到1小时，显示分钟
-        return `Overdue ${overdueMinutes}m`;
+        return `${i18n.getMessage('overdue')} ${overdueMinutes}m`;
       }
     }
     
@@ -224,13 +225,13 @@ export class Task {
     if (days >= 1) {
       // 剩余大于1天，显示具体到期日期
       const dueDate = new Date(this.dueDate);
-      return `Due at ${dueDate.toLocaleDateString()}`;
+      return `${i18n.getMessage('dueAt')} ${dueDate.toLocaleDateString()}`;
     } else if (hours >= 1) {
       // 剩余1小时到1天，显示小时和分钟
-      return `Due in ${hours}h ${minutes}m`;
+      return `${i18n.getMessage('dueIn')} ${hours}h ${minutes}m`;
     } else {
       // 剩余不到1小时，显示分钟
-      return `Due in ${minutes}m`;
+      return `${i18n.getMessage('dueIn')} ${minutes}m`;
     }
   }
 

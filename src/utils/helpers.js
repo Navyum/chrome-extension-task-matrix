@@ -1,6 +1,7 @@
 /**
  * 通用工具函数
  */
+import { i18n } from './i18n.js';
 
 /**
  * 防抖函数
@@ -277,10 +278,10 @@ export function generateShortId() {
  * 格式化文件大小
  */
 export function formatFileSize(bytes) {
-  if (bytes === 0) return '0 Bytes';
+  if (bytes === 0) return '0 ' + i18n.getMessage('bytes');
   
   const k = 1024;
-  const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+  const sizes = [i18n.getMessage('bytes'), i18n.getMessage('kb'), i18n.getMessage('mb'), i18n.getMessage('gb'), i18n.getMessage('tb')];
   const i = Math.floor(Math.log(bytes) / Math.log(k));
   
   return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
@@ -488,7 +489,7 @@ export function showNotification(message, type = 'info', duration = 3000) {
 /**
  * 确认对话框
  */
-export function confirmDialog(message, title = '确认') {
+export function confirmDialog(message, title = null) {
   return new Promise((resolve) => {
     const dialog = document.createElement('div');
     dialog.className = 'confirm-dialog-overlay';
@@ -516,48 +517,56 @@ export function confirmDialog(message, title = '确认') {
       box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
     `;
     
-    content.innerHTML = `
-      <h3 style="margin: 0 0 16px 0; font-size: 18px; font-weight: 600;">${title}</h3>
-      <p style="margin: 0 0 24px 0; color: #6B7280; line-height: 1.5;">${message}</p>
-      <div style="display: flex; gap: 12px; justify-content: flex-end;">
-        <button class="btn-cancel" style="
-          padding: 8px 16px;
-          border: 1px solid #D1D5DB;
-          background: white;
-          border-radius: 6px;
-          cursor: pointer;
-          font-size: 14px;
-        ">Cancel</button>
-        <button class="btn-confirm" style="
-          padding: 8px 16px;
-          border: none;
-          background: #EF4444;
-          color: white;
-          border-radius: 6px;
-          cursor: pointer;
-          font-size: 14px;
-        ">Confirm</button>
-      </div>
-    `;
+    // 动态导入i18n以获取多语言支持
+    import('../utils/i18n.js').then(({ i18n }) => {
+      const dialogTitle = title || i18n.getMessage('confirm');
+      const cancelText = i18n.getMessage('cancel');
+      const confirmText = i18n.getMessage('confirm');
+      
+      content.innerHTML = `
+        <h3 style="margin: 0 0 16px 0; font-size: 18px; font-weight: 600;">${dialogTitle}</h3>
+        <p style="margin: 0 0 24px 0; color: #6B7280; line-height: 1.5;">${message}</p>
+        <div style="display: flex; gap: 12px; justify-content: flex-end;">
+          <button class="btn-cancel" style="
+            padding: 8px 16px;
+            border: 1px solid #D1D5DB;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+          ">${cancelText}</button>
+          <button class="btn-confirm" style="
+            padding: 8px 16px;
+            border: none;
+            background: #EF4444;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+          ">${confirmText}</button>
+        </div>
+      `;
+      
+      // 绑定事件
+      const cancelBtn = content.querySelector('.btn-cancel');
+      const confirmBtn = content.querySelector('.btn-confirm');
+      
+      const closeDialog = (result) => {
+        document.body.removeChild(dialog);
+        resolve(result);
+      };
+      
+      cancelBtn.addEventListener('click', () => closeDialog(false));
+      confirmBtn.addEventListener('click', () => closeDialog(true));
+      
+      dialog.addEventListener('click', (e) => {
+        if (e.target === dialog) {
+          closeDialog(false);
+        }
+      });
+    });
     
     dialog.appendChild(content);
     document.body.appendChild(dialog);
-    
-    const cancelBtn = content.querySelector('.btn-cancel');
-    const confirmBtn = content.querySelector('.btn-confirm');
-    
-    const closeDialog = (result) => {
-      document.body.removeChild(dialog);
-      resolve(result);
-    };
-    
-    cancelBtn.addEventListener('click', () => closeDialog(false));
-    confirmBtn.addEventListener('click', () => closeDialog(true));
-    
-    dialog.addEventListener('click', (e) => {
-      if (e.target === dialog) {
-        closeDialog(false);
-      }
-    });
   });
 } 
