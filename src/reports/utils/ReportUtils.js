@@ -2,6 +2,7 @@
  * 报告工具类
  * 提供报告模块公共的工具函数
  */
+import { i18n } from '../../utils/i18n.js';
 export class ReportUtils {
   constructor() {
     this.importanceThreshold = 5.5; // 1-10分，大于等于5.5视为重要
@@ -14,10 +15,10 @@ export class ReportUtils {
   analyzeTasksByQuadrant(tasks) {
     // 按象限分类任务
     const quadrants = {
-      q1: { name: 'Important & Urgent', tasks: [], completed: 0, total: 0, timeSpent: 0, overdue: 0, rejected: 0 },
-      q2: { name: 'Important & Not Urgent', tasks: [], completed: 0, total: 0, timeSpent: 0, overdue: 0, rejected: 0 },
-      q3: { name: 'Not Important & Not Urgent', tasks: [], completed: 0, total: 0, timeSpent: 0, overdue: 0, rejected: 0 },
-      q4: { name: 'Not Important & Urgent', tasks: [], completed: 0, total: 0, timeSpent: 0, overdue: 0, rejected: 0 }
+      q1: { name: i18n.getMessage('importantUrgent'), tasks: [], completed: 0, total: 0, timeSpent: 0, overdue: 0, rejected: 0 },
+      q2: { name: i18n.getMessage('importantNotUrgent'), tasks: [], completed: 0, total: 0, timeSpent: 0, overdue: 0, rejected: 0 },
+      q3: { name: i18n.getMessage('notImportantNotUrgent'), tasks: [], completed: 0, total: 0, timeSpent: 0, overdue: 0, rejected: 0 },
+      q4: { name: i18n.getMessage('notImportantUrgent'), tasks: [], completed: 0, total: 0, timeSpent: 0, overdue: 0, rejected: 0 }
     };
     
     tasks.forEach(task => {
@@ -100,11 +101,11 @@ export class ReportUtils {
    */
   getSourceDisplayName(source) {
     const sourceLabels = {
-      'work': 'Work Tasks',
-      'personal': 'Personal Plans',
-      'study': 'Study Tasks',
-      'health': 'Health Related',
-      'other': 'Other Tasks'
+      'work': i18n.getMessage('work'),
+      'personal': i18n.getMessage('personal'),
+      'study': i18n.getMessage('study'),
+      'health': i18n.getMessage('health'),
+      'other': i18n.getMessage('other')
     };
     
     return sourceLabels[source] || source;
@@ -125,7 +126,7 @@ export class ReportUtils {
       <h4>${title}</h4>
       <div class="chart-container"></div>
       <div class="insight-container">
-        <h5>Deep Insights</h5>
+        <h5>${i18n.getMessage('deepInsights')}</h5>
         <div class="insight-content"></div>
       </div>
     `;
@@ -143,7 +144,7 @@ export class ReportUtils {
    */
   generateInsightsHTML(insights) {
     if (insights.length === 0) {
-      return '<div class="insight-item">Currently there is not enough data to generate insights.</div>';
+      return `<div class="insight-item">${i18n.getMessage('currentlyNotEnoughDataForInsights')}</div>`;
     }
     
     return insights.map(insight => `<div class="insight-item">${insight}</div>`).join('');

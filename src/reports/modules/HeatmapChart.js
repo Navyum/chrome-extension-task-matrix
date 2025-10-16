@@ -1,6 +1,8 @@
 /**
  * 任务来源-完成率热力图模块
  */
+import { i18n } from '../../utils/i18n.js';
+
 export class HeatmapChart {
   constructor(utils) {
     this.utils = utils;
@@ -14,7 +16,7 @@ export class HeatmapChart {
   initContainer(container) {
     if (!container) return;
     
-    const elements = this.utils.createModuleContainer(container, 'Task Source - Completion Rate');
+    const elements = this.utils.createModuleContainer(container, i18n.getMessage('taskSourceCompletionRate'));
     if (elements) {
       this.chartContainer = elements.chartContainer;
       this.insightContainer = elements.insightContainer;
@@ -118,7 +120,7 @@ export class HeatmapChart {
     this.chartContainer.innerHTML = '';
     
     if (sourceData.sources.length === 0) {
-      this.chartContainer.innerHTML = '<div style="text-align: center; padding: 50px;">No enough data to generate heatmap</div>';
+      this.chartContainer.innerHTML = `<div style="text-align: center; padding: 50px;">${i18n.getMessage('notEnoughDataForHeatmap')}</div>`;
       return;
     }
     
@@ -138,19 +140,19 @@ export class HeatmapChart {
 
     // 定义象限标签
     const quadrantLabels = {
-      q1: 'Important & Urgent',
-      q2: 'Important & Not Urgent',
-      q3: 'Not Important & Not Urgent',
-      q4: 'Not Important & Urgent'
+      q1: i18n.getMessage('importantUrgent'),
+      q2: i18n.getMessage('importantNotUrgent'),
+      q3: i18n.getMessage('notImportantNotUrgent'),
+      q4: i18n.getMessage('notImportantUrgent')
     };
     
     // 来源标题美化
     const sourceLabels = {
-      'work': 'Work',
-      'personal': 'Personal',
-      'study': 'Study',
-      'health': 'Health',
-      'other': 'Other'
+      'work': i18n.getMessage('work'),
+      'personal': i18n.getMessage('personal'),
+      'study': i18n.getMessage('study'),
+      'health': i18n.getMessage('health'),
+      'other': i18n.getMessage('other')
     };
     
     // 创建表格
@@ -158,7 +160,7 @@ export class HeatmapChart {
       <table class="heatmap-table" style="width: 100%; border-collapse: collapse; margin-top: 15px;">
         <thead>
           <tr>
-            <th style="border: 1px solid #ddd; padding: 10px; background-color: #f8f9fa; text-align: left;">Source</th>
+            <th style="border: 1px solid #ddd; padding: 10px; background-color: #f8f9fa; text-align: left;">${i18n.getMessage('source')}</th>
     `;
     
     // 添加表头
@@ -206,23 +208,23 @@ export class HeatmapChart {
     const levelItems = [
       {
         color: 'rgba(239, 68, 68, 0.5)',
-        label: 'Low (0-20%)'
+        label: i18n.getMessage('low')
       },
       
       {
         color: 'rgba(245, 158, 11, 0.5)',
-        label: 'Medium-Low (20-50%)'
+        label: i18n.getMessage('mediumLow')
       },
       
       {
         color: 'rgba(59, 130, 246, 0.5)',
-        label: 'Medium-High (50-80%)'
+        label: i18n.getMessage('mediumHigh')
       },
       
       
       {
         color: 'rgba(16, 185, 129, 0.5)',
-        label: 'High (80-100%)'
+        label: i18n.getMessage('high')
       },
     ]
 
@@ -263,6 +265,15 @@ export class HeatmapChart {
   
   /**
    * 生成洞察
+   * 
+   * 洞察分析说明：
+   * 本模块分析不同任务来源在各象限的完成率分布，识别任务来源与象限匹配度，
+   * 发现任务规划中的来源偏好和优先级偏差。
+   * 
+   * 分析依据：
+   * 1. 来源交叉分析：不同来源任务应均衡分布在各个象限
+   * 2. 优先级一致性：同一来源任务在不同象限的完成率应反映其重要性
+   * 3. 多元化原则：避免单一来源任务过度集中在某一象限
    */
   generateInsights(sourceData) {
     if (!this.insightContainer) return;
@@ -291,40 +302,63 @@ export class HeatmapChart {
       if (!q1Cell || !q2Cell || !q3Cell || !q4Cell) return;
       
       // 检查是否存在Q1完成率高而Q2低的情况
+      // 依据：不同象限完成率差异反映任务执行优先级由"外部压力"驱动而非内部战略重点
+      // 阈值：Q1完成率 >= 80% 且 Q2完成率 <= 40%
+      // 理论基础：理想情况下Q2任务应获得更高完成率，Q1高Q2低表明存在"紧急优先于重要"的偏差
       if (q1Cell.total > 0 && q2Cell.total > 0 && 
           q1Cell.completionRate >= 80 && q2Cell.completionRate <= 40) {
         const sourceLabel = this.utils.getSourceDisplayName(source);
-        insights.push(`"${sourceLabel}" tasks in Q1 (Important & Urgent) achieve ${q1Cell.completionRate}% completion rate, but only ${q2Cell.completionRate}% in Q2 (Important & Not Urgent), indicating task execution priority is driven by "external pressure" rather than internal strategic focus.`);
+        insights.push(i18n.getMessage('sourceTasksQ1HighQ2Low', [ 
+          sourceLabel, 
+          q1Cell.completionRate, 
+          q2Cell.completionRate 
+        ]));
       }
       
       // 检查Q4（低优高急）完成率低的情况
+      // 依据：Q4任务完成率过低可能表明任务优先级定义存在问题
+      // 阈值：Q4任务数 >= 3 且 完成率 < 40%
+      // 理论基础：Q4任务虽然不重要但紧急，完成率过低可能表明存在过多不必要的紧急任务
       if (q4Cell.total >= 3 && q4Cell.completionRate < 40) {
         const sourceLabel = this.utils.getSourceDisplayName(source);
-        insights.push(`"${sourceLabel}" tasks in Q4 (Not Important & Urgent) have low completion rate (${q4Cell.completionRate}%), need to confirm if "temporary tasks" have priority definition issues.`);
+        insights.push(i18n.getMessage('sourceTasksQ4LowCompletionRate', [           sourceLabel, 
+           q4Cell.completionRate 
+        ]));
       }
       
-              // 检查任务是否集中在特定象限
-        const totalTasks = q1Cell.total + q2Cell.total + q3Cell.total + q4Cell.total;
-        if (totalTasks >= 5) { // 至少有5个任务才有意义进行分析
-          const quadrantShares = [
-            { quadrant: 'Q1', name: 'Important & Urgent', share: q1Cell.total / totalTasks },
-            { quadrant: 'Q2', name: 'Important & Not Urgent', share: q2Cell.total / totalTasks },
-            { quadrant: 'Q3', name: 'Not Important & Not Urgent', share: q3Cell.total / totalTasks },
-            { quadrant: 'Q4', name: 'Not Important & Urgent', share: q4Cell.total / totalTasks }
-          ];
+      // 检查任务是否集中在特定象限
+      // 依据：任务来源过度集中可能导致任务规划缺乏多样性
+      // 阈值：单一象限占比 >= 60% 且 总任务数 >= 5
+      // 理论基础：多元化原则，应平衡不同象限的任务分布，避免单一来源任务过度集中
+      const totalTasks = q1Cell.total + q2Cell.total + q3Cell.total + q4Cell.total;
+      if (totalTasks >= 5) { // 至少有5个任务才有意义进行分析
+        const quadrantShares = [
+          { quadrant: 'Q1', name: i18n.getMessage('importantUrgent'), share: q1Cell.total / totalTasks },
+          { quadrant: 'Q2', name: i18n.getMessage('importantNotUrgent'), share: q2Cell.total / totalTasks },
+          { quadrant: 'Q3', name: i18n.getMessage('notImportantNotUrgent'), share: q3Cell.total / totalTasks },
+          { quadrant: 'Q4', name: i18n.getMessage('notImportantUrgent'), share: q4Cell.total / totalTasks }
+        ];
+        
+        // 找出占比最大的象限
+        const maxShare = quadrantShares.reduce((max, current) => 
+          current.share > max.share ? current : max, quadrantShares[0]);
           
-          // 找出占比最大的象限
-          const maxShare = quadrantShares.reduce((max, current) => 
-            current.share > max.share ? current : max, quadrantShares[0]);
-            
-          if (maxShare.share >= 0.6) { // 一个象限占比超过60%
-            const sourceLabel = this.utils.getSourceDisplayName(source);
-            insights.push(`"${sourceLabel}" are highly concentrated in ${maxShare.quadrant} (${maxShare.name}) quadrant, accounting for ${Math.round(maxShare.share * 100)}%. Review task planning for reasonableness.`);
-          }
+        if (maxShare.share >= 0.6) { // 一个象限占比超过60%
+          const sourceLabel = this.utils.getSourceDisplayName(source);
+          insights.push(i18n.getMessage('sourceTasksHighlyConcentratedInQuadrant', [ 
+             sourceLabel, 
+             maxShare.quadrant, 
+             maxShare.name, 
+             Math.round(maxShare.share * 100) 
+          ]));
         }
+      }
     });
     
     // 分析整体完成率最高和最低的来源-象限组合
+    // 依据：完成率差异过大表明不同任务类型的处理优先级存在明显差异
+    // 阈值：最高完成率 - 最低完成率 >= 50%
+    // 理论基础：不同来源任务应获得相对公平的关注，完成率差异过大可能影响整体效率
     const allCells = sourceData.matrix.flat();
     const cellsWithData = allCells.filter(cell => cell.total >= 3); // 至少有3个任务
     
@@ -341,7 +375,14 @@ export class HeatmapChart {
         const highSourceLabel = this.utils.getSourceDisplayName(highestCell.source);
         const lowSourceLabel = this.utils.getSourceDisplayName(lowestCell.source);
         
-        insights.push(`"${highSourceLabel}" in ${quadrantLabelsMap[highestCell.quadrant]} has highest completion rate (${highestCell.completionRate}%), while "${lowSourceLabel}" in ${quadrantLabelsMap[lowestCell.quadrant]} has lowest (${lowestCell.completionRate}%), showing clear differences in processing priority for different task types.`);
+        insights.push(i18n.getMessage('sourceTasksCompletionRateDifference', [
+          highSourceLabel, 
+          quadrantLabelsMap[highestCell.quadrant], 
+          highestCell.completionRate, 
+          lowSourceLabel, 
+          quadrantLabelsMap[lowestCell.quadrant], 
+          lowestCell.completionRate 
+        ]));
       }
     }
     

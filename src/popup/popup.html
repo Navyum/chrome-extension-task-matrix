@@ -16,16 +16,16 @@
         <div class="current-time" id="currentTime"></div>
       </div>
       <div class="header-right">
-        <button class="icon-button" id="taskManagerBtn" title="Task Manager">
+        <button class="icon-button" id="taskManagerBtn" data-i18n-title="taskManager">
           <!-- SVG 将由 JavaScript 动态添加 -->
         </button>
-        <button class="icon-button" id="reportBtn" title="Report">
+        <button class="icon-button" id="reportBtn" data-i18n-title="report">
           <!-- SVG 将由 JavaScript 动态添加 -->
         </button>
-        <button class="icon-button" id="settingsBtn" title="Settings">
+        <button class="icon-button" id="settingsBtn" data-i18n-title="settings">
           <!-- SVG 将由 JavaScript 动态添加 -->
         </button>
-        <button class="icon-button" id="helpBtn" title="Help">
+        <button class="icon-button" id="helpBtn" data-i18n-title="help">
           <!-- SVG 将由 JavaScript 动态添加 -->
         </button>
       </div>
@@ -47,7 +47,7 @@
   <div class="modal" id="taskManagerModal">
     <div class="modal-content task-manager-modal">
       <div class="modal-header">
-        <h3>Task Manager</h3>
+        <h3 data-i18n="taskManager">Task Manager</h3>
         <button class="modal-close" id="closeTaskManagerModal">
           <img src="#" alt="Close">
         </button>
@@ -56,10 +56,10 @@
           <!-- 过滤器和搜索 -->
           <div class="task-controls">
             <div id="taskFilter" class="tab-buttons">
-              <button class="tab-button active" data-filter="doing">Doing</button>
-              <button class="tab-button" data-filter="overdue">Overdue</button>
-              <button class="tab-button" data-filter="completed">Completed</button>
-              <button class="tab-button" data-filter="rejected">Rejected</button>
+              <button class="tab-button active" data-filter="doing" data-i18n="doing">Doing</button>
+              <button class="tab-button" data-filter="overdue" data-i18n="overdue">Overdue</button>
+              <button class="tab-button" data-filter="completed" data-i18n="completed">Completed</button>
+              <button class="tab-button" data-filter="rejected" data-i18n="rejected">Rejected</button>
             </div>
           </div>
 
@@ -71,7 +71,7 @@
         </div>
         
         <!-- 添加任务浮动按钮 (在任务管理模态框内) -->
-        <button class="add-task-fab modal-fab" id="addTaskFab" title="Add Task">
+        <button class="add-task-fab modal-fab" id="addTaskFab" data-i18n-title="addTask">
           <!-- SVG 将由 JavaScript 动态添加 -->
         </button>
 
@@ -84,7 +84,7 @@
   <div class="modal" id="settingsModal">
     <div class="modal-content settings-modal">
       <div class="modal-header">
-        <h3>Settings</h3>
+        <h3 data-i18n="settings">Settings</h3>
         <button class="modal-close" id="closeSettingsModal">
           <img src="assets/icons/close.svg" alt="Close" width="20" height="20">
         </button>
@@ -93,58 +93,58 @@
         <form id="settingsForm">
           <!-- 紧急任务提醒配置 -->
           <div class="settings-section">
-            <h4>Urgent Task Reminder</h4>
+            <h4 data-i18n="urgentTaskReminder">Urgent Task Reminder</h4>
             
             <div class="form-group">
               <label class="checkbox-label">
                 <input type="checkbox" id="enableUrgentReminder" name="enableUrgentReminder">
                 <span class="checkmark"></span>
-                Enable Urgent Task Reminder
+                <span data-i18n="enableUrgentTaskReminder">Enable Urgent Task Reminder</span>
               </label>
-              <small>When a task is about to expire, remind you through icon changes</small>
+              <small data-i18n="whenTaskAboutToExpireRemindThroughIcon">When a task is about to expire, remind you through icon changes</small>
             </div>
             
             <div class="form-group">
-              <label for="urgentReminderThreshold">Reminder Threshold (minutes)</label>
+              <label for="urgentReminderThreshold" data-i18n="reminderThreshold">Reminder Threshold (minutes)</label>
               <input type="number" id="urgentReminderThreshold" name="urgentReminderThreshold" 
                      min="1" max="1440" step="1" value="30">
-              <small>When the task remaining time is less than this duration, trigger reminder</small>
+              <small data-i18n="whenTaskRemainingTimeLessThanDuration">When the task remaining time is less than this duration, trigger reminder</small>
             </div>
             
             <div class="form-group">
-              <label for="urgentReminderInterval">Reminder Interval (minutes)</label>
+              <label for="urgentReminderInterval" data-i18n="reminderInterval">Reminder Interval (minutes)</label>
               <input type="number" id="urgentReminderInterval" name="urgentReminderInterval" 
                      min="1" max="60" step="1" value="10">
-              <small>Frequency of checking task status in the background</small>
+              <small data-i18n="frequencyOfCheckingTaskStatus">Frequency of checking task status in the background</small>
             </div>
           </div>
           
           <!-- 图标提醒配置 -->
           <div class="settings-section">
-            <h4>Icon Reminder</h4>
+            <h4 data-i18n="iconReminder">Icon Reminder</h4>
             
             <div class="form-group">
               <label class="checkbox-label">
                 <input type="checkbox" id="enableIconBadge" name="enableIconBadge">
                 <span class="checkmark"></span>
-                Show Icon Badge
+                <span data-i18n="showIconBadge">Show Icon Badge</span>
               </label>
-              <small>Display the number of urgent tasks on the plugin icon</small>
+              <small data-i18n="displayNumberOfUrgentTasks">Display the number of urgent tasks on the plugin icon</small>
             </div>
             
             <div class="form-group">
               <label class="checkbox-label">
                 <input type="checkbox" id="enableIconTitle" name="enableIconTitle">
                 <span class="checkmark"></span>
-                Show Icon Tooltip
+                <span data-i18n="showIconTooltip">Show Icon Tooltip</span>
               </label>
-              <small>Display task reminder information when hovering over the icon</small>
+              <small data-i18n="displayTaskReminderInformation">Display task reminder information when hovering over the icon</small>
             </div>
           </div>
           
           <div class="form-actions">
-            <button type="button" class="btn btn-secondary" id="cancelSettings">Cancel</button>
-            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-secondary" id="cancelSettings" data-i18n="cancel">Cancel</button>
+            <button type="submit" class="btn btn-primary" data-i18n="save">Save</button>
           </div>
         </form>
       </div>
@@ -160,53 +160,106 @@
   <div class="modal" id="helpModal">
     <div class="modal-content">
       <div class="modal-header">
-        <h3>Help</h3>
+        <h3 data-i18n="help">Help</h3>
         <button class="modal-close" id="closeHelpModal">
           <img src="assets/icons/close.svg" alt="Close" width="20" height="20">
         </button>
       </div>
       <div class="help-content">
         <div class="help-section">
-          <h4>🚀 Quick Start</h4>
-          <ul>
-            <li><strong>Create Task:</strong> Double-click on empty area</li>
-            <li><strong>Edit Task:</strong> Double-click on existing task</li>
-            <li><strong>View Details:</strong> Hover over task</li>
-            <li><strong>Task Manager:</strong> Click the list icon for all tasks</li>
-            <li><strong>Analysis Report:</strong> Click the chart icon for insights</li>
-          </ul>
+          <h4 data-i18n="quickStart">🚀 Quick Start</h4>
+          <div class="quick-start-content">
+            <ul>
+              <li><strong data-i18n="createTask">Create Task:</strong> <span data-i18n="doubleClickOnEmptyArea">Double-click on empty area</span></li>
+              <li><strong data-i18n="editTaskInstruction">Edit Task:</strong> <span data-i18n="doubleClickOnExistingTask">Double-click on existing task</span></li>
+              <li><strong data-i18n="viewDetails">View Details:</strong> <span data-i18n="hoverOverTask">Hover over task</span></li>
+              <li><strong data-i18n="taskManagerInstruction">Task Manager:</strong> <span data-i18n="clickListIconForAllTasks">Click the list icon for all tasks</span></li>
+              <li><strong data-i18n="analysisReport">Analysis Report:</strong> <span data-i18n="clickChartIconForInsights">Click the chart icon for insights</span></li>
+            </ul>
+          </div>
         </div>
         
         <div class="help-section">
-          <h4>📊 Eisenhower Task Matrix</h4>
+          <h4 data-i18n="eisenhowerTaskMatrix">📊 Eisenhower Task Matrix</h4>
           <div class="quadrant-help">
             <div class="quadrant-item q1">
               <div class="quadrant-color"></div>
               <div class="quadrant-info">
-                <h5>Q1: Important & Urgent</h5>
-                <p>Do it now. Critical tasks requiring immediate attention.</p>
+                <h5 data-i18n="q1ImportantUrgent">Q1: Important & Urgent</h5>
+                <p data-i18n="doItNowCriticalTasks">Do it now. Critical tasks requiring immediate attention.</p>
               </div>
             </div>
             <div class="quadrant-item q2">
               <div class="quadrant-color"></div>
               <div class="quadrant-info">
-                <h5>Q2: Important & Not Urgent</h5>
-                <p>Schedule it. Strategic tasks for long-term planning.</p>
+                <h5 data-i18n="q2ImportantNotUrgent">Q2: Important & Not Urgent</h5>
+                <p data-i18n="scheduleItStrategicTasks">Schedule it. Strategic tasks for long-term planning.</p>
               </div>
             </div>
             <div class="quadrant-item q3">
               <div class="quadrant-color"></div>
               <div class="quadrant-info">
-                <h5>Q3: Not Important & Urgent</h5>
-                <p>Delegate it. Interruptions that can be handled by others.</p>
+                <h5 data-i18n="q3NotImportantUrgent">Q3: Not Important & Urgent</h5>
+                <p data-i18n="delegateItInterruptions">Delegate it. Interruptions that can be handled by others.</p>
               </div>
             </div>
             <div class="quadrant-item q4">
               <div class="quadrant-color"></div>
               <div class="quadrant-info">
-                <h5>Q4: Not Important & Not Urgent</h5>
-                <p>Eliminate it. Time-wasters that should be avoided.</p>
+                <h5 data-i18n="q4NotImportantNotUrgent">Q4: Not Important & Not Urgent</h5>
+                <p data-i18n="eliminateItTimeWasters">Eliminate it. Time-wasters that should be avoided.</p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="help-section">
+          <h4 data-i18n="insightAnalysisRules">🔍 洞察分析规则</h4>
+          
+          <div class="insight-rules-container">
+            <div class="insight-module">
+              <h5 data-i18n="completionRateAnalysis">完成率分析</h5>
+              <p data-i18n="completionRateAnalysisGoal">分析目标：基于艾森豪威尔矩阵理论分析各象限任务完成率分布</p>
+              <p data-i18n="completionRateAnalysisRules">主要洞察规则：</p>
+              <ul>
+                <li data-i18n="q2LowCompletionRateRule">Q2完成率过低检测（\&lt;70%其他象限平均）</li>
+                <li data-i18n="q3HighCompletionRateRule">Q3完成率过高检测（\&gt;85%且\&gt;Q1的120%）</li>
+                <li data-i18n="q1q4HighPercentageRule">Q1/Q4任务占比过高检测（\&gt;40%/\&gt;30%）</li>
+              </ul>
+            </div>
+
+            <div class="insight-module">
+              <h5 data-i18n="sourceCrossAnalysis">来源交叉分析</h5>
+              <p data-i18n="sourceCrossAnalysisGoal">分析目标：分析不同任务来源在各象限的完成率分布</p>
+              <p data-i18n="sourceCrossAnalysisRules">主要洞察规则：</p>
+              <ul>
+                <li data-i18n="q1q2CompletionRateDiffRule">Q1高Q2低完成率差异检测</li>
+                <li data-i18n="q4LowCompletionRateRule">Q4完成率过低检测</li>
+                <li data-i18n="sourceConcentrationRule">任务来源过度集中检测（>60%）</li>
+                <li data-i18n="sourceCompletionRateDiffRule">来源间完成率差异检测（>50%）</li>
+              </ul>
+            </div>
+
+            <div class="insight-module">
+              <h5 data-i18n="timeEfficiencyAnalysis">时间效率分析</h5>
+              <p data-i18n="timeEfficiencyAnalysisGoal">分析目标：分析任务的时间效率和资源分配合理性</p>
+              <p data-i18n="timeEfficiencyAnalysisRules">主要洞察规则：</p>
+              <ul>
+                <li data-i18n="q1LongTimeSpentRule">Q1进行中任务耗时过长检测（>3天且>50%）</li>
+                <li data-i18n="q4q2TimeComparisonRule">Q4与Q2平均耗时对比检测（Q4>Q2×1.5）</li>
+                <li data-i18n="pendingCompletedTimeComparisonRule">进行中与已完成任务时间对比检测（>2倍）</li>
+              </ul>
+            </div>
+
+            <div class="insight-module">
+              <h5 data-i18n="trendAnalysis">趋势分析</h5>
+              <p data-i18n="trendAnalysisGoal">分析目标：追踪任务管理策略的有效性和改进方向</p>
+              <p data-i18n="trendAnalysisRules">主要洞察规则：</p>
+              <ul>
+                <li data-i18n="taskVolumeFluctuationRule">任务量波动检测（>50%变化）</li>
+                <li data-i18n="completionRateTrendRule">完成率趋势分析（连续3周期上升/下降）</li>
+                <li data-i18n="q2TaskAccumulationRule">Q2任务积累检测（70%时间点增加）</li>
+              </ul>
             </div>
           </div>
         </div>

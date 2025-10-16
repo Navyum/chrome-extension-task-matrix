@@ -805,10 +805,18 @@ body {
   margin-bottom: 16px;
 }
 
+/* Quick Start 部分样式 */
+.quick-start-content {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+}
+
 .help-section h5 {
   font-size: 14px;
   font-weight: 600;
-  color: #374151;
+  color: #111827;
   margin-bottom: 8px;
 }
 
@@ -829,7 +837,13 @@ body {
   gap: 8px;
   margin-bottom: 8px;
   font-size: 13px;
-  color: #6b7280;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.help-content strong {
+  font-weight: 600;
+  color: #111827;
 }
 
 .help-content kbd {
@@ -874,12 +888,6 @@ body {
   padding-bottom: 20px;
 }
 
-/* 帮助模态框内容区域 */
-.help-content {
-  padding: 20px;
-  overflow-y: auto;
-  flex-grow: 1;
-}
 
 /* 象限帮助样式 */
 .quadrant-help {
@@ -887,32 +895,18 @@ body {
   flex-direction: column;
   gap: 12px;
   margin-top: 12px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
 }
 
 .quadrant-item {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  padding: 12px;
-  background: #f8fafc;
-  border-radius: 8px;
+  padding: 8px 0;
   border-left: 4px solid transparent;
-}
-
-.quadrant-item.q1 {
-  border-left-color: #EF4444;
-}
-
-.quadrant-item.q2 {
-  border-left-color: #10B981;
-}
-
-.quadrant-item.q3 {
-  border-left-color: #F59E0B;
-}
-
-.quadrant-item.q4 {
-  border-left-color: #9CA3AF;
 }
 
 .quadrant-color {
@@ -948,9 +942,9 @@ body {
 
 .quadrant-info p {
   margin: 0;
-  font-size: 12px;
+  font-size: 13px;
   color: #6b7280;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 /* 动态创建的编辑任务模态框样式 */
@@ -1817,4 +1811,90 @@ body {
 
 .rejected-color {
   background-color: #8b5cf6;
+}
+
+/* 
+ * 帮助部分统一主题色彩方案
+ * 
+ * 主要颜色：
+ * - 主标题 (h4): #111827 (深灰色)
+ * - 子标题 (h5): #111827 (深灰色) 
+ * - 正文 (p): #6b7280 (中灰色)
+ * - 列表项 (li): #374151 (深灰色)
+ * - 强调文本 (strong): #111827 (深灰色)
+ * - 强调色: #3b82f6 (蓝色)
+ * - 背景色: #f8fafc (浅灰色)
+ * - 边框色: #e2e8f0 (浅灰色)
+ * 
+ * 字体大小：
+ * - 主标题: 16px
+ * - 子标题: 14px
+ * - 正文和列表: 13px
+ * - 行高: 1.5
+ * 
+ * 布局样式：
+ * - Quick Start: 带背景色的卡片样式，内容向右偏移16px
+ * - 艾森豪威尔矩阵: 带背景色的卡片样式
+ * - 洞察分析规则: 2列网格布局的卡片样式
+ * 
+ * 四象限颜色保持不变：
+ * - Q1: #EF4444 (红色)
+ * - Q2: #10B981 (绿色) 
+ * - Q3: #F59E0B (黄色)
+ * - Q4: #9CA3AF (灰色)
+ */
+
+/* 洞察分析规则样式 - 统一主题色彩 */
+.insight-rules-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.insight-module {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.insight-module h5 {
+  color: #111827;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  padding-bottom: 4px;
+}
+
+.insight-module p {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+.insight-module ul {
+  margin: 8px 0 0 0;
+  padding-left: 16px;
+}
+
+.insight-module li {
+  font-size: 12px;
+  color: #374151;
+  margin: 4px 0;
+  line-height: 1.4;
+}
+
+.insight-module strong {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+  .insight-rules-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 } 

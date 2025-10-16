@@ -8,6 +8,7 @@ import { MatrixManager } from '../services/MatrixManager.js';
 import { MatrixRenderer } from '../renderers/MatrixRenderer.js';
 import { ReportManager } from '../reports/ReportManager.js';
 import { showNotification, confirmDialog, debounce } from '../utils/helpers.js';
+import { i18n } from '../utils/i18n.js';
 // 导入图标
 import closeIcon from '../../assets/icons/close.svg';
 import detailIcon from '../../assets/icons/detail.svg';
@@ -51,6 +52,9 @@ class PopupApp {
    */
   async init() {
     try {
+      // 初始化多语言
+      await this.initI18n();
+      
       // 初始化矩阵渲染器
       this.initMatrixRenderer();
       
@@ -73,13 +77,22 @@ class PopupApp {
       this.startTimeUpdate();
       
       // 更新状态
-      this.updateStatus('Ready');
+      this.updateStatus(i18n.getMessage('ready'));
       
     } catch (error) {
       console.error('初始化失败:', error);
-      this.updateStatus('Initialization Failed');
+      this.updateStatus(i18n.getMessage('initializationFailed'));
     }
   }
+
+  /**
+   * 初始化多语言
+   */
+  async initI18n() {
+    // 调用i18n的初始化方法
+    await i18n.initI18n();
+  }
+
 
   /**
    * 初始化报告模态框
@@ -110,31 +123,31 @@ class PopupApp {
     const taskManagerBtn = document.getElementById('taskManagerBtn');
     if (taskManagerBtn) {
       // 清空内容并设置新图标
-      taskManagerBtn.innerHTML = `<img src="${detailIcon}" alt="Task Manager">`;
+      taskManagerBtn.innerHTML = `<img src="${detailIcon}" alt="${i18n.getMessage('taskManager')}">`;
     }
     
     // 设置按钮
     const settingsBtn = document.getElementById('settingsBtn');
     if (settingsBtn) {
-      settingsBtn.innerHTML = `<img src="${settingIcon}" alt="Settings">`;
+      settingsBtn.innerHTML = `<img src="${settingIcon}" alt="${i18n.getMessage('settings')}">`;
     }
     
     // 报告按钮
     const reportBtn = document.getElementById('reportBtn');
     if (reportBtn) {
-      reportBtn.innerHTML = `<img src="${reportIcon}" alt="Report">`;
+      reportBtn.innerHTML = `<img src="${reportIcon}" alt="${i18n.getMessage('report')}">`;
     }
     
     // 帮助按钮
     const helpBtn = document.getElementById('helpBtn');
     if (helpBtn) {
-      helpBtn.innerHTML = `<img src="${helpIcon}" alt="Help">`;
+      helpBtn.innerHTML = `<img src="${helpIcon}" alt="${i18n.getMessage('help')}">`;
     }
     
     // 添加任务按钮
     const addTaskFab = document.getElementById('addTaskFab');
     if (addTaskFab) {
-      addTaskFab.innerHTML = `<img src="${plusIcon}" alt="Add Task">`;
+      addTaskFab.innerHTML = `<img src="${plusIcon}" alt="${i18n.getMessage('addTask')}">`;
     }
   }
 
@@ -173,28 +186,28 @@ class PopupApp {
           <div class="modal-header">
             <div class="modal-header-content">
               <div class="modal-title-row">
-                <h3 id="modalTitle">Edit Task</h3>
-                <span class="status-value" id="taskStatusValue" style="display: none;">New</span>
+                <h3 id="modalTitle">${i18n.getMessage('editTask')}</h3>
+                <span class="status-value" id="taskStatusValue" style="display: none;">${i18n.getMessage('newTask')}</span>
               </div>
             </div>
             <button class="modal-close" id="closeEditModal">
-              <img src="${closeIcon}" alt="Close">
+              <img src="${closeIcon}" alt="${i18n.getMessage('close')}">
             </button>
           </div>
           <div class="edit-task-content" style="padding: 10px; overflow-y: auto; flex-grow: 1;">
             <form class="task-form" id="editTaskForm">
               <div class="form-group">
-                <label for="editTaskTitle">Task Title *</label>
-                <input type="text" id="editTaskTitle" name="title" required maxlength="50" placeholder="Enter task title">
+                <label for="editTaskTitle">${i18n.getMessage('taskTitle')}</label>
+                <input type="text" id="editTaskTitle" name="title" required maxlength="50" placeholder="${i18n.getMessage('taskTitlePlaceholder')}">
               </div>
               
               <div class="form-group">
-                <label for="editTaskDescription">Task Description</label>
-                <textarea id="editTaskDescription" name="description" maxlength="200" placeholder="Enter task description (optional)"></textarea>
+                <label for="editTaskDescription">${i18n.getMessage('taskDescription')}</label>
+                <textarea id="editTaskDescription" name="description" maxlength="200" placeholder="${i18n.getMessage('taskDescriptionPlaceholder')}"></textarea>
               </div>
               
               <div class="form-group">
-                <label>Importance Level *</label>
+                <label>${i18n.getMessage('importanceLevel')}</label>
                 <div class="importance-selector">
                   <button type="button" class="importance-btn" data-importance="1">1</button>
                   <button type="button" class="importance-btn" data-importance="2">2</button>
@@ -208,13 +221,13 @@ class PopupApp {
                   <button type="button" class="importance-btn" data-importance="10">10</button>
                 </div>
                 <div class="importance-labels">
-                  <span>Not Important</span>
-                  <span>Very Important</span>
+                  <span>${i18n.getMessage('notImportant')}</span>
+                  <span>${i18n.getMessage('veryImportant')}</span>
                 </div>
               </div>
               
               <div class="form-group">
-                <label for="editTaskDueDate">Due Date *</label>
+                <label for="editTaskDueDate">${i18n.getMessage('dueDate')}</label>
                 <div class="date-time-inputs">
                   <input type="date" id="editTaskDueDate" name="dueDate" required>
                   <input type="time" id="editTaskDueTime" name="dueTime" required>
@@ -222,13 +235,13 @@ class PopupApp {
               </div>
               
               <div class="form-group">
-                <label for="editTaskCategory">Task Category</label>
+                <label for="editTaskCategory">${i18n.getMessage('taskCategory')}</label>
                 <select id="editTaskCategory" name="category">
-                  <option value="work">Work</option>
-                  <option value="personal">Personal</option>
-                  <option value="study">Study</option>
-                  <option value="health">Health</option>
-                  <option value="other">Other</option>
+                  <option value="work">${i18n.getMessage('work')}</option>
+                  <option value="personal">${i18n.getMessage('personal')}</option>
+                  <option value="study">${i18n.getMessage('study')}</option>
+                  <option value="health">${i18n.getMessage('health')}</option>
+                  <option value="other">${i18n.getMessage('other')}</option>
                 </select>
               </div>
 
@@ -236,11 +249,11 @@ class PopupApp {
               
               <div class="form-actions">
                 <div class="form-actions-left">
-                  <button type="button" class="btn btn-danger" id="editDeleteTaskBtn" style="display: none;">Delete Task</button>
+                  <button type="button" class="btn btn-danger" id="editDeleteTaskBtn" style="display: none;">${i18n.getMessage('deleteTask')}</button>
                 </div>
                 <div class="form-actions-right">
-                  <button type="button" class="btn btn-secondary" id="editCancelTask">Cancel</button>
-                  <button type="submit" class="btn btn-primary">Save Task</button>
+                  <button type="button" class="btn btn-secondary" id="editCancelTask">${i18n.getMessage('cancel')}</button>
+                  <button type="submit" class="btn btn-primary">${i18n.getMessage('saveTask')}</button>
                 </div>
               </div>
             </form>
@@ -528,7 +541,7 @@ class PopupApp {
    */
   async loadData() {
     try {
-      this.updateStatus('加载中...');
+      this.updateStatus(i18n.getMessage('loading'));
       
       // 更新矩阵
       await this.matrixManager.updateMatrix();
@@ -541,7 +554,7 @@ class PopupApp {
       
     } catch (error) {
       console.error('加载数据失败:', error);
-      showNotification('加载数据失败', 'error');
+      showNotification(i18n.getMessage('loadingDataFailed'), 'error');
     }
   }
 
@@ -585,7 +598,7 @@ class PopupApp {
     this.resetTaskForm();
     
     // 设置标题
-    this.editModal.querySelector('#modalTitle').textContent = 'Add Task';
+    this.editModal.querySelector('#modalTitle').textContent = i18n.getMessage('addTask');
     
     // 隐藏编辑模式特有的元素
     this.hideEditModeElements();
@@ -629,7 +642,7 @@ class PopupApp {
     console.log('========================');
     
     // 设置标题
-    this.editModal.querySelector('#modalTitle').textContent = 'Edit Task';
+    this.editModal.querySelector('#modalTitle').textContent = i18n.getMessage('editTask');
     
     // 显示编辑模式特有的元素
     this.showEditModeElements(task);
@@ -730,7 +743,7 @@ class PopupApp {
     this.originalDefaults = { importance: defaultImportance, time: defaultTime }; // 存储毫秒
     
     // 设置标题
-    this.editModal.querySelector('#modalTitle').textContent = 'Add Task';
+    this.editModal.querySelector('#modalTitle').textContent = i18n.getMessage('addTask');
     
     // 显示模态框
     this.editModal.classList.add('show');
@@ -1042,16 +1055,16 @@ class PopupApp {
     try {
       const formData = this.getTaskFormData();
       if (!formData) {
-        showNotification('Failed to get form data', 'error');
+        showNotification(i18n.getMessage('failedToGetFormData'), 'error');
         return;
       }
 
       if (!formData.title.trim()) {
-        showNotification('Please enter a task title', 'warning');
+        showNotification(i18n.getMessage('pleaseEnterTaskTitle'), 'warning');
         return;
       }
 
-      this.updateStatus('Saving...');
+      this.updateStatus(i18n.getMessage('saving'));
 
       let result;
       if (this.selectedTask) {
@@ -1092,7 +1105,7 @@ class PopupApp {
           console.log('=== 任务更新成功 ===');
           console.log('更新后的任务:', result);
           console.log('===============================');
-          showNotification('Task updated successfully', 'success');
+          showNotification(i18n.getMessage('taskUpdatedSuccessfully'), 'success');
           // 清除重新计算的坐标信息
           this.recalculatedCoordinates = null;
           // 通知background script任务已编辑
@@ -1109,7 +1122,7 @@ class PopupApp {
         
         result = await this.taskManager.addTask(formData);
         if (result) {
-          showNotification('Task added successfully', 'success');
+          showNotification(i18n.getMessage('taskAddedSuccessfully'), 'success');
           // 通知background script任务已添加
           await this.sendMessageToBackground('addTask');
         }
@@ -1153,12 +1166,12 @@ class PopupApp {
           }
         }
       } else {
-        showNotification('Save failed', 'error');
+        showNotification(i18n.getMessage('saveFailed'), 'error');
       }
 
     } catch (error) {
       console.error('Failed to save task:', error);
-      showNotification('Save failed', 'error');
+      showNotification(i18n.getMessage('saveFailed'), 'error');
     }
   }
 
@@ -1264,11 +1277,11 @@ class PopupApp {
         task.fromTaskManager = true;
         this.editTask(task);
       } else {
-        showNotification('Task not found', 'error');
+        showNotification(i18n.getMessage('taskNotFound'), 'error');
       }
     } catch (error) {
       console.error('Failed to edit task:', error);
-      showNotification('Failed to edit task', 'error');
+      showNotification(i18n.getMessage('failedToEditTask'), 'error');
     }
   }
 
@@ -1333,11 +1346,11 @@ class PopupApp {
    */
   getStatusFromDisplayText(displayText) {
     const statusMap = {
-      'New': 'new',
-      'Doing': 'doing',
-      'Overdue': 'overdue',
-      'Complete': 'completed',
-      'Reject': 'rejected'
+      [i18n.getMessage('new')]: 'new',
+      [i18n.getMessage('doing')]: 'doing',
+      [i18n.getMessage('overdue')]: 'overdue',
+      [i18n.getMessage('completed')]: 'completed',
+      [i18n.getMessage('rejected')]: 'rejected'
     };
     return statusMap[displayText] || 'doing';
   }
@@ -1390,13 +1403,13 @@ class PopupApp {
    */
   getStatusDisplayText(status) {
     const statusMap = {
-      'new': 'New',
-      'doing': 'Doing',
-      'overdue': 'Overdue',
-      'completed': 'Complete',
-      'rejected': 'Reject'
+      'new': i18n.getMessage('new'),
+      'doing': i18n.getMessage('doing'),
+      'overdue': i18n.getMessage('overdue'),
+      'completed': i18n.getMessage('completed'),
+      'rejected': i18n.getMessage('rejected')
     };
-    return statusMap[status] || 'Doing';
+    return statusMap[status] || i18n.getMessage('doing');
   }
   /**
    * 显示模态框
@@ -1612,15 +1625,15 @@ class PopupApp {
         case 'doing':
           // Doing为空：显示添加任务的提示，使用蓝色图标
           emptyStateContent = `
-            <div class="empty-state-icon empty-state-doing" role="button" title="Add Task">
+            <div class="empty-state-icon empty-state-doing" role="button" title="${i18n.getMessage('addTask')}">
               <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 12H15" stroke="#007bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M12 9L12 15" stroke="#007bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M3 12C3 4.5885 4.5885 3 12 3C19.4115 3 21 4.5885 21 12C21 19.4115 19.4115 21 12 21C4.5885 21 3 19.4115 3 12Z" stroke="#007bff" stroke-width="2"/>
               </svg>
             </div>
-            <h3 class="empty-state-title">No Task Found</h3>
-            <p class="empty-state-message">Click the plus icon to add your first task</p>
+            <h3 class="empty-state-title">${i18n.getMessage('noTaskFound')}</h3>
+            <p class="empty-state-message">${i18n.getMessage('clickPlusIconToAddFirstTask')}</p>
           `;
           break;
           
@@ -1633,8 +1646,8 @@ class PopupApp {
                 <path d="M22 4L12 14.01L9 11.01" stroke="#6FCF97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
-            <h3 class="empty-state-title">All Caught Up!</h3>
-            <p class="empty-state-message">No overdue tasks. Great job keeping everything on track!</p>
+            <h3 class="empty-state-title">${i18n.getMessage('allCaughtUp')}</h3>
+            <p class="empty-state-message">${i18n.getMessage('noOverdueTasksGreatJob')}</p>
           `;
           break;
           
@@ -1648,8 +1661,8 @@ class PopupApp {
                 <path d="M12 8H12.01" stroke="#56CCF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
-            <h3 class="empty-state-title">No Completed Tasks</h3>
-            <p class="empty-state-message">Double-click on a task and click the status label to mark it as completed</p>
+            <h3 class="empty-state-title">${i18n.getMessage('noCompletedTasks')}</h3>
+            <p class="empty-state-message">${i18n.getMessage('doubleClickTaskAndClickStatus')}</p>
           `;
           break;
           
@@ -1663,22 +1676,22 @@ class PopupApp {
                 <path d="M15 9L9 15" stroke="#8A2BE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
-            <h3 class="empty-state-title">No Rejected Tasks</h3>
-            <p class="empty-state-message">Double-click on a task and click the status label twice to mark it as rejected</p>
+            <h3 class="empty-state-title">${i18n.getMessage('noRejectedTasks')}</h3>
+            <p class="empty-state-message">${i18n.getMessage('doubleClickTaskAndClickStatusTwice')}</p>
           `;
           break;
           
         default:
           // 默认情况：通用的没有找到任务提示
           emptyStateContent = `
-            <div class="empty-state-icon" role="button" title="Add Task">
+            <div class="empty-state-icon" role="button" title="${i18n.getMessage('addTask')}">
               <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 12H15" stroke="#8E9AAF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M12 9L12 15" stroke="#8E9AAF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M3 12C3 4.5885 4.5885 3 12 3C19.4115 3 21 4.5885 21 12C21 19.4115 19.4115 21 12 21C4.5885 21 3 19.4115 3 12Z" stroke="#8E9AAF" stroke-width="2"/>
               </svg>
             </div>
-            <h3 class="empty-state-title">No Task Found</h3>
+            <h3 class="empty-state-title">${i18n.getMessage('noTaskFound')}</h3>
           `;
       }
       
@@ -1747,11 +1760,11 @@ class PopupApp {
 
     taskDiv.innerHTML = `
       <div class="task-item-content">
-        <div class="task-item-title">Task: ${task.title}</div>
+        <div class="task-item-title">${i18n.getMessage('task')} ${task.title}</div>
         <div class="task-item-description">${description}</div>
         <div class="task-item-meta">
           <div class="task-item-importance">
-            <span>Importance:</span>
+            <span>${i18n.getMessage('importance')}</span>
             <div class="star-rating">
               ${starRatingHTML}
             </div>
@@ -1962,10 +1975,10 @@ class PopupApp {
       await this.taskManager.completeTask(taskId);
       await this.loadTaskManagerData();
       await this.loadData(); // 刷新主界面
-      showNotification('Task completed successfully', 'success');
+      showNotification(i18n.getMessage('taskCompletedSuccessfully'), 'success');
     } catch (error) {
       console.error('完成任务失败:', error);
-      showNotification('Failed to complete task', 'error');
+      showNotification(i18n.getMessage('failedToCompleteTask'), 'error');
     }
   }
 
@@ -1974,23 +1987,23 @@ class PopupApp {
   */
   async deleteTask(taskId) {
     try {
-      const confirmed = await confirmDialog('Are you sure you want to delete this task? This action cannot be undone.', 'Delete Task');
+      const confirmed = await confirmDialog(i18n.getMessage('areYouSureDeleteTask'), i18n.getMessage('deleteTask'));
       if (confirmed) {
         const success = await this.taskManager.deleteTask(taskId);
         if (success) {
-          showNotification('Task deleted successfully', 'success');
+          showNotification(i18n.getMessage('taskDeletedSuccessfully'), 'success');
           await this.loadTaskManagerData();
           await this.loadData();
           this.closeEditModal();
           // 通知background script任务已删除
           await this.sendMessageToBackground('deleteTask');
         } else {
-          showNotification('Failed to delete task', 'error');
+          showNotification(i18n.getMessage('failedToDeleteTask'), 'error');
         }
       }
     } catch (error) {
       console.error('Failed to delete task:', error);
-      showNotification('Failed to delete task', 'error');
+      showNotification(i18n.getMessage('failedToDeleteTask'), 'error');
     }
   }
 
@@ -2058,7 +2071,7 @@ class PopupApp {
 
       await this.storageManager.saveSettings(settings);
       this.closeSettingsModal();
-      showNotification('Settings saved successfully', 'success');
+      showNotification(i18n.getMessage('settingsSavedSuccessfully'), 'success');
       
       // 通知background script设置已更新
       if (browserAPI.runtime?.id) {
@@ -2074,7 +2087,7 @@ class PopupApp {
       
     } catch (error) {
       console.error('保存设置失败:', error);
-      showNotification('Failed to save settings', 'error');
+      showNotification(i18n.getMessage('failedToSaveSettings'), 'error');
     }
   }
 
@@ -2192,7 +2205,7 @@ class PopupApp {
     this.resetTaskForm();
     
     // 设置标题
-    this.editModal.querySelector('#modalTitle').textContent = 'Add Task';
+    this.editModal.querySelector('#modalTitle').textContent = i18n.getMessage('addTask');
     
     // 隐藏编辑模式特有的元素
     this.hideEditModeElements();

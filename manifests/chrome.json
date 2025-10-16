@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "TaskMatrix Pro: Free Task Manager & Tools",
-  "version": "1.2.6",
-  "description": "Free Chrome browser extension for intelligent tasks.Visualize your tasks with powerful tools and screen-friendly interface",
+  "name": "__MSG_appName__",
+  "version": "1.2.7",
+  "description": "__MSG_appDescription__",
+  "default_locale": "en",
   "homepage_url": "https://taskmatrix.camscanner.top",
   
   "permissions": [
@@ -16,7 +17,7 @@
   
   "action": {
     "default_popup": "popup.html",
-    "default_title": "TaskMatrix Pro: Free Task Manager & Tools",
+    "default_title": "__MSG_appName__",
     "default_icon": {
       "16": "assets/icons/icon16.png",
       "48": "assets/icons/icon48.png",
@@ -51,7 +52,7 @@
         "default": "Ctrl+Shift+T",
         "mac": "Command+Shift+T"
       },
-      "description": "Open TaskMatrix Pro"
+      "description": "__MSG_openTaskMatrix__"
     }
   }
 }

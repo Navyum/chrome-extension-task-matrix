@@ -4,6 +4,7 @@
  */
 
 import { Task } from '../models/Task';
+import { i18n } from '../utils/i18n.js';
 // 浏览器API适配器
 const browserAPI = (() => {
   if (typeof browser !== 'undefined') {
